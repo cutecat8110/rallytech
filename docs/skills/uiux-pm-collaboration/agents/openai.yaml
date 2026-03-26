@@ -1,0 +1,7 @@
+interface:
+  display_name: 'UIUX PM Collaboration'
+  short_description: '先討論再實作的 UIUX PM 協作流程'
+  default_prompt: 'Use $uiux-pm-collaboration 先討論範圍與取捨，再分階段實作。'
+
+policy:
+  allow_implicit_invocation: true

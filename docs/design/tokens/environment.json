@@ -1,0 +1,15 @@
+{
+  "版本號": {
+    "$type": "string",
+    "$value": "v1.0.0",
+    "$extensions": {
+      "com.figma.variableId": "VariableID:531:1561",
+      "com.figma.scopes": ["ALL_SCOPES"],
+      "com.figma.type": "string",
+      "com.figma.isOverride": true
+    }
+  },
+  "$extensions": {
+    "com.figma.modeName": "Mode 1"
+  }
+}
