@@ -1,31 +1,52 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/pi-server/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/pi-server/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
+- Block 05 Focus Tags [core]
+- Block 06 Accordion Highlights [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- PI Server
 
-#### Service Positioning
+## Block 02 Service Introduction [core]
 
-PI Server is framed as a data-centric industrial platform that supports optimization and intelligent decision-making at scale.
+- PI Server
+- Rally Technology uses PI Server to build practical plant-data infrastructure for monitoring, reporting, and cross-system integration.
+- The goal is not only to collect data, but to make data usable for operations, engineering, and management teams.
 
-#### Detailed Copy Blocks
+## Block 03 Sidebar Main Services [shared-layout]
 
-- Labels: Industrial Automation, Global Industry Impact, Expertise in PI Server, Data-Centric Systems
-- Numbered snippets:
-  - Driving Industrial Automation
-  - Empowering with PI Server
-  - Optimizing Operations
+- Core Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-#### Shared Layout Content
+## Block 04 Sidebar Contact [shared-layout]
 
-- Sidebar `Main Services` list
-- Sidebar contact block and standard footer
+- +886-3-552-9933
+- sales@rallytech.com.tw
 
-## Notes
+## Block 05 Focus Tags [core]
 
-- Source copy is high-level and marketing-oriented; implementation detail is limited.
+- Industrial Automation
+- Operational Visibility
+- PI Server Expertise
+- Data-Centric Operations
+
+## Block 06 Accordion Highlights [core]
+
+- 1. Driving Industrial Automation
+- Use PI Server to connect live plant data with reporting, dashboards, and operational visibility.
+- 2. Enabling PI Server Integration
+- 3. Optimizing Operations

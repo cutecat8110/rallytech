@@ -1,21 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/historians/
+- 最後更新: 2026-03-30
+- 來源網址: https://pentagoneng.com/service/historians/
 
-## 內容
+## 區塊總覽
 
-### 服務定位
+- 區塊 01 頁首主視覺 [主內容]
+- 區塊 02 服務導言 [主內容]
+- 區塊 03 側欄主要服務 [共用版型]
+- 區塊 04 側欄聯絡資訊 [共用版型]
 
-Historians 服務用於建立關鍵製程資料的長期保存、快速查詢與趨勢分析能力，支援營運優化與合規需求。
+## 區塊 01 頁首主視覺 [主內容]
 
-### 可交付內容
+- 歷史資料平台服務｜Historians
 
-- Historian 架構與資料留存策略
-- 在地備援與雲端同步設計
-- 查詢與可視化需求配置
-- 與告警、報表及分析流程整合
+## 區塊 02 服務導言 [主內容]
 
-### 導入價值
+- 歷史資料平台服務｜Historians
+- 雷力科技協助規劃 historian 架構，讓長期製程資料能穩定支援趨勢分析、報表、合規與跨單位決策。
+- 我們可支援本地冗餘與遠端存取架構，提升韌性，同時維持資料取得的便利性。
 
-- 提升異常追溯效率
-- 支撐稽核與法規需求
-- 讓歷史資料可直接轉化為改善行動
+## 區塊 03 側欄主要服務 [共用版型]
+
+- 主要服務
+- 監控與人機介面圖控服務｜SCADA and HMI Graphics
+- 儀電整合服務｜I&E Services
+- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration
+- 即時資料平台服務｜PI Server
+- 歷史資料平台服務｜Historians
+- 工業網路設計服務｜Network Design
+- 遠端監控與資料備援服務｜Remote Monitoring and Data
+- 告警監控服務｜Alarm Monitoring
+
+## 區塊 04 側欄聯絡資訊 [共用版型]
+
+- +886-3-552-9933
+- sales@rallytech.com.tw

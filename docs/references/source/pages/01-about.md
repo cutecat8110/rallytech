@@ -1,52 +1,45 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/about-us/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/about-us/
 
-## 原始可見文本
+## Block Map
 
-### Header 與頁面標題
+- Block 01 Page Hero [core]
+- Block 02 About Introduction [core]
+- Block 03 Capability Grid [core]
+- Block 04 Working Process [core]
 
-- `630.550.6902`
-- `info@pentagoneng.com`
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`About Us`
+## Block 01 Page Hero [core]
 
-### 主要敘事
+- About Us
 
-- 主標：`Cutting-Edge Automation, Expert Engineering`
-- 內文主軸：介紹公司在工業自動化與工程整合的定位、經驗與成長敘事
-- 額外可見字串：`Dmytro`
-- 服務延伸標題：`Elevating Your Experience with Top-Tier Services`
+## Block 02 About Introduction [core]
 
-### 能力卡片
+- About Us
+- Cutting-Edge Automation, Expert Engineering
+- Pentagon Engineering emerged with a vision to revolutionize industrial automation processes through state-of-the-art engineering and an unwavering commitment to quality. What began as a humble endeavor has evolved into a global powerhouse, boasting a team of passionate engineers, scientists, and industry experts who share a common goal: to empower industries with innovative Instrumentation and Controls engineering solutions.
+- Dmytro
 
-- `System Integration`
-- `I&E Services`
-- `Procurement / EPC`
-- `Security Systems`
-- `Industrial Panels Building`
-- `Wireless Infrastructure`
-- `UPS Systems Developing`
-- `Detailed Design & Modeling`
+### Notes
 
-### 流程與模板區
+- Primary introduction block captured after scrolling.
 
-- 區塊：`Our Working Process`
-- 步驟：`01 Client Requirements`、`02 Planning`、`03 Implementation`、`04 Evaluation`
-- 區塊：`What Our Client Say`
-- 區塊：`Our Expert Team`
-- 人名：`David Goliath`、`Caleb Fischer`、`Sepideh Taheri`、`Kiara Magarey`、`George Skertchly`、`David Huish`、`Dakota Budd`
+## Block 03 Capability Grid [core]
 
-### Footer
+- Elevating Your Experience with Top-Tier Services
+- System Integration
+- I&E Services
+- Procurement / EPC
+- Security Systems
+- Industrial Panels Building
+- Wireless Infrastructure
+- UPS Systems Developing
+- Detailed Design & Modeling
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
-- `© 2023 Pentagon Engineering. Powered by Fidelity Creative`
+## Block 04 Working Process [core]
 
-## 來源異常註記
-
-- Source anomaly：testimonial 文字含 lorem ipsum。
-- Source anomaly：團隊卡片連到外部模板網域。
-- Source anomaly：`Dmytro` 單獨出現，語意角色不明。
+- Work Process
+- Our Working Process
+- 01 Client Requirements
+- 02 Planning
+- 03 Implementation
+- 04 Evaluation

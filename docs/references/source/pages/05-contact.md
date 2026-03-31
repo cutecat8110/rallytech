@@ -1,42 +1,34 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/contact/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/contact/
 
-## 原始可見文本
+## Block Map
 
-### Header 與主文
+- Block 01 Page Hero [core]
+- Block 02 Contact Introduction [core]
+- Block 03 Contact Form [core]
+- Block 04 Direct Contact Details [core]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`Contact Us`
-- 副標：`Write Us Any Message`
-- 介紹文：邀請洽詢合作與自動化需求
-- 原句：`Let’s build the future together – contact us today!”`
+## Block 01 Page Hero [core]
 
-### 表單欄位
+- Contact Us
 
-- `Your Name *`
-- `Your Email *`
-- `Your Subject *`
-- `Contact Number`
-- `Message *`
+## Block 02 Contact Introduction [core]
 
-### 聯絡資訊
+- Contact Us
+- Write Us Any Message
+- Reach out to us for inquiries, collaborations, or to learn how our expert team can revolutionize your industrial processes with cutting-edge automation and engineering solutions.
+- Let’s build the future together – contact us today!”
 
-- `Phone Number`：`630.550.6902`
-- `Location`：`Chicago, Illinois`
-- `Email Address`：`info@pentagoneng.com`
-- 圖片 token：`bg-04`
+## Block 03 Contact Form [core]
 
-### Footer
+- Your Name \*
+- Your Email \*
+- Your Subject \*
+- Contact Number
+- Message \*
 
-- `Engineering + Design Experts`
-- `Contact Us`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
-- `© 2023 Pentagon Engineering. Powered by Fidelity Creative`
+## Block 04 Direct Contact Details [core]
 
-## 來源異常註記
-
-- Source anomaly：句尾引號與標點不一致。
-- Source anomaly：聯絡資訊在主文與 footer 重複出現。
+- Phone Number: 630.550.6902
+- Location: Chicago, Illinois
+- Email Address: info@pentagoneng.com

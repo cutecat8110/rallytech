@@ -1,22 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/scada-and-hmi-graphics/
+- 最後更新: 2026-03-30
+- 來源網址: https://pentagoneng.com/service/scada-and-hmi-graphics/
 
-## 內容
+## 區塊總覽
 
-### 服務定位
+- 區塊 01 頁首主視覺 [主內容]
+- 區塊 02 服務導言 [主內容]
+- 區塊 03 側欄主要服務 [共用版型]
+- 區塊 04 側欄聯絡資訊 [共用版型]
 
-SCADA / HMI 服務重點在於建立即時監控、操作控制與事件追溯能力，讓現場決策更快、更準。
+## 區塊 01 頁首主視覺 [主內容]
 
-### 可交付內容
+- 監控與人機介面圖控服務｜SCADA and HMI Graphics
 
-- 監控畫面與操作流程設計
-- 告警與事件呈現邏輯
-- 欄位與標籤命名規範
-- 與 PLC / DCS / Historian 的資料串接
-- FAT / SAT 相關驗證支援
+## 區塊 02 服務導言 [主內容]
 
-### 導入價值
+- 監控與人機介面圖控服務｜SCADA and HMI Graphics
+- 雷力科技規劃可讀性高、操作邏輯清楚的 SCADA 與 HMI 畫面，協助現場團隊更有效率地監看狀態、回應告警與執行操作。
+- 我們重視畫面層級、資訊排序與長期維護性，讓系統在試車完成後仍能穩定支援日常運轉。
 
-- 降低操作錯誤與人員訓練成本
-- 縮短異常判讀與處置時間
-- 建立跨班次一致的操作標準
+## 區塊 03 側欄主要服務 [共用版型]
+
+- 主要服務
+- 監控與人機介面圖控服務｜SCADA and HMI Graphics
+- 儀電整合服務｜I&E Services
+- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration
+- 即時資料平台服務｜PI Server
+- 歷史資料平台服務｜Historians
+- 工業網路設計服務｜Network Design
+- 遠端監控與資料備援服務｜Remote Monitoring and Data
+- 告警監控服務｜Alarm Monitoring
+
+## 區塊 04 側欄聯絡資訊 [共用版型]
+
+- +886-3-552-9933
+- sales@rallytech.com.tw

@@ -1,40 +1,31 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/faq/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/faq/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Placeholder Notice [core]
+- Block 03 Contact Form [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- FAQ
 
-#### Header
+## Block 02 Placeholder Notice [core]
 
-- Menu: About, FAQ, Services, OTE, Contact
-- Page H1: `FAQ`
-- Breadcrumb shows `Home > FAQ`
+- FAQ
+- Frequently Asked Questions in Preparation
 
-#### Main Content
+### Notes
 
-- Section title: `FAQ`
-- Current body state: `Coming Soon`
+- This page is currently a placeholder rather than a full FAQ.
 
-#### Contact Form Block
+## Block 03 Contact Form [core]
 
-- `Your Name *`
-- `Your Email *`
-- `Your Subject *`
-- `Contact Number`
-- `Message *`
-
-#### Footer
-
-- Engineering + Design Experts
-- Newsletter and Contacts
-- `+886-3-552-9933` / `sales@rallytech.com.tw`
-
-## Notes
-
-- FAQ content itself is not implemented (placeholder state).
-- Breadcrumb home link points to an external template domain.
+- Contact Us
+- Get in Touch
+- Your Name \*
+- Your Email \*
+- Your Subject \*
+- Contact Number
+- Message \*

@@ -1,52 +1,41 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/about-us/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/about-us/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 About Introduction [core]
+- Block 03 Capability Grid [core]
+- Block 04 Working Process [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- About Us
 
-#### Header
+## Block 02 About Introduction [core]
 
-- Topbar: `+886-3-552-9933`, `sales@rallytech.com.tw`
-- Menu: About, FAQ, Services, OTE, Contact
-- Page H1: `About Us`
+- About Us
+- Engineering-Led Automation Delivery
+- Rally Technology supports industrial clients with coordinated work across instrumentation, controls, commissioning, and plant data integration.
+- We bridge planning, field execution, and operational handover so teams can move from requirement to stable operation with fewer disconnects.
 
-#### Company Narrative
+## Block 03 Capability Grid [core]
 
-- Heading: `Cutting-Edge Automation, Expert Engineering`
-- Main paragraph: Rally Technology positions itself as an automation partner with a multidisciplinary team focused on Instrumentation and Controls engineering.
-- Additional visible heading: `Dmytro`
-- Service-intro heading: `Elevating Your Experience with Top-Tier Services`
-
-#### Capability Tiles
-
+- Integrated Delivery Capabilities
 - System Integration
 - I&E Services
-- Procurement / EPC
+- Procurement / EPC Coordination
 - Security Systems
-- Industrial Panels Building
+- Industrial Panel Building
 - Wireless Infrastructure
-- UPS Systems Developing
+- UPS System Development
 - Detailed Design & Modeling
 
-#### Process / Social Proof / Team
+## Block 04 Working Process [core]
 
-- Process: Client Requirements, Planning, Implementation, Evaluation
-- Testimonial section: `What Our Client Say`
-- Team section: `Our Expert Team`
-
-#### Footer
-
-- Engineering + Design Experts
-- Newsletter and Contacts
-- `+886-3-552-9933` / `sales@rallytech.com.tw`
-
-## Notes
-
-- Testimonial body copy uses lorem ipsum placeholders.
-- Team cards point to external template-domain profiles.
-- The standalone `Dmytro` heading appears without clear context.
+- Delivery Process
+- Our Working Process
+- 01 Requirements Alignment
+- 02 Technical Planning
+- 03 Implementation
+- 04 Validation and Handover

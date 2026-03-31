@@ -1,35 +1,45 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/plc-dcs-programming-and-migration/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/plc-dcs-programming-and-migration/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
+- Block 05 Key Capabilities [core]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`PLC & DCS Programming and Migration`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- PLC & DCS Programming and Migration
 
-- 主要段落：聚焦 PLC / DCS 程式、搬遷、優化與控制安全
-- 子標：`PLC and DCS Programming`
-- 子標：`System Migration and Optimization`
-- 子標：`Commitment to Innovation and Security`
-- KPI：`Consulting 65%`、`Development 80%`、`Management 55%`
+## Block 02 Service Introduction [core]
 
-### 模板殘留
+- PLC & DCS Programming and Migration
+- At Pentagon Engineering, we take pride in being at the forefront of industrial automation, specializing in PLC (Programmable Logic Controller) and DCS (Distributed Control System) programming and migration. With our extensive experience and commitment to innovation, we are your trusted partner in optimizing, upgrading, and securing your control systems for the future.
 
-- 卡片：`Apartment Design`（含 `Read more`）
+## Block 03 Sidebar Main Services [shared-layout]
 
-### Footer
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 04 Sidebar Contact [shared-layout]
 
-## 來源異常註記
+- 630.550.6902
+- info@pentagoneng.com
 
-- Source anomaly：`Apartment Design` 卡片與 PLC/DCS 主題無關。
+## Block 05 Key Capabilities [core]
+
+- PLC and DCS Programming
+- Specializing in Programmable Logic Controller and Distributed Control System programming, Pentagon Engineering offers expert solutions in automation control.
+- System Migration and Optimization
+- Our team excels in migrating and upgrading existing control systems to enhance efficiency and performance.
+- Commitment to Innovation and Security
+- With a strong focus on innovation, we ensure your control systems are not only optimized but also secured for future challenges.

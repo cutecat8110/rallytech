@@ -1,34 +1,35 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/remote-monitoring-and-data/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/remote-monitoring-and-data/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`Remote Monitoring and Data`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- Remote Monitoring and Data
 
-- 主段落：遠端監控與資料備援提升可靠性與營運連續性
-- 可見敘述：降低停機、支援安全與合規
-- 可見關鍵詞：`oil and gas`
-- KPI：`Consulting 65%`、`Development 80%`、`Management 55%`
+## Block 02 Service Introduction [core]
 
-### 模板殘留
+- Remote Monitoring and Data
+- Here at Pentagon Engineering, we make sure that remote monitoring and data backup are integral to the smooth and efficient operation of oil and gas companies. These technologies improve operational reliability, reduce downtime, enhance safety and compliance, and provide valuable data for optimization and decision-making. Additionally, our professional team offers peace of mind by ensuring data integrity and business continuity in the face of unexpected challenges.
 
-- 卡片：`Apartment Design`（含 `Read more`）
+## Block 03 Sidebar Main Services [shared-layout]
 
-### Footer
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 04 Sidebar Contact [shared-layout]
 
-## 來源異常註記
-
-- Source anomaly：頁面混入模板卡與通用樣板區塊。
+- 630.550.6902
+- info@pentagoneng.com

@@ -1,34 +1,35 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/alarm-monitoring/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/alarm-monitoring/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`Alarm Monitoring`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- Alarm Monitoring
 
-- 主段落：告警監控用於提升安全、效率、合規與營運韌性
-- 可見關鍵詞：`RNG facilities`
-- 語意重點：process optimization、preventive maintenance、environmental compliance
-- KPI：`Consulting 65%`、`Development 80%`、`Management 55%`
+## Block 02 Service Introduction [core]
 
-### 模板殘留
+- Alarm Monitoring
+- Alarm monitoring is essential for the safe, efficient, and compliant operation of RNG facilities. It contributes to safety, process optimization, preventive maintenance, environmental compliance, and overall operational resilience. Our team implements a comprehensive alarm monitoring system as a crucial step in ensuring the success and sustainability of RNG production operations.
 
-- 卡片：`Apartment Design`（含 `Read more`）
+## Block 03 Sidebar Main Services [shared-layout]
 
-### Footer
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 04 Sidebar Contact [shared-layout]
 
-## 來源異常註記
-
-- Source anomaly：服務語境偏 RNG 專屬，且混入模板殘留卡片。
+- 630.550.6902
+- info@pentagoneng.com

@@ -1,30 +1,36 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/historians/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/historians/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`Historians`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- Historians
 
-- 主要敘事：歷史資料對營運、法規、可持續性與決策支援的重要性
-- 可見關鍵詞：`RNG`、`oil and gas`
-- 可見敘述：`double-redundant microhistorian solution`
-- 可見敘述：`local redundant storage` + `cloud access`
+## Block 02 Service Introduction [core]
 
-### Footer
+- Historians
+- Historian data is pivotal in the seamless operation of oil and gas, specifically of RNG companies. It ensures operational efficiency, regulatory compliance, product quality, and informed decision-making. Moreover, it bolsters sustainability initiatives, facilitates resource optimization, and empowers these firms to advance towards a greener and more sustainable energy landscape.
+- Here at Pentagon Engineering, we developed a double-redundant microhistorian solution that provides you with local redundant storage as well as a cloud-based solution that allows you to have access to your data from any place on Earth without even being connected to the remote site.
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 03 Sidebar Main Services [shared-layout]
 
-## 來源異常註記
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- Source anomaly：產業語境偏窄（RNG / oil and gas）。
+## Block 04 Sidebar Contact [shared-layout]
+
+- 630.550.6902
+- info@pentagoneng.com

@@ -1,37 +1,31 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/faq/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/faq/
 
-## 原始可見文本
+## Block Map
 
-### Header 與標題
+- Block 01 Page Hero [core]
+- Block 02 Placeholder Notice [core]
+- Block 03 Contact Form [core]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`FAQ`
-- Breadcrumb：`Home` / `FAQ`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- FAQ
 
-- 區塊標題：`FAQ`
-- 可見狀態：`Coming Soon`
+## Block 02 Placeholder Notice [core]
 
-### 聯絡表單
+- FAQ
+- Coming Soon
 
-- `Get In Touch`
-- `Your Name *`
-- `Your Email *`
-- `Your Subject *`
-- `Contact Number`
-- `Message *`
+### Notes
 
-### Footer
+- The FAQ page currently renders a placeholder instead of actual FAQ entries.
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 03 Contact Form [core]
 
-## 來源異常註記
-
-- Source anomaly：FAQ 主內容尚未實作（Coming Soon）。
-- Source anomaly：breadcrumb 的 Home 連結有模板外站連結痕跡。
+- Contact us
+- Get In Touch
+- Your Name \*
+- Your Email \*
+- Your Subject \*
+- Contact Number
+- Message \*

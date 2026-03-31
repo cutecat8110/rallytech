@@ -1,28 +1,41 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/network-design/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/network-design/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
+- Block 05 Closing Statement [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- Network Design
 
-#### Service Positioning
+## Block 02 Service Introduction [core]
 
-Network design is described as planning and optimizing industrial communication systems to support data flow, control, and decision-making.
+- Network Design
+- Rally Technology plans industrial communication networks that support control traffic, field devices, and plant data systems in a structure that is readable, resilient, and maintainable.
+- We focus on segmentation, reliability, and future supportability so the network can grow with the facility rather than limit it.
 
-#### Detailed Copy Blocks
+## Block 03 Sidebar Main Services [shared-layout]
 
-- Emphasis on precision, scalability, security, and cost-efficiency
-- Visual KPI labels: Consulting 65%, Development 80%, Management 55%
+- Core Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-#### Shared Layout Content
+## Block 04 Sidebar Contact [shared-layout]
 
-- Sidebar `Main Services` list
-- Sidebar contact block and standard footer
+- +886-3-552-9933
+- sales@rallytech.com.tw
 
-## Notes
+## Block 05 Closing Statement [core]
 
-- Template cards titled `Apartment Design` appear and are unrelated to network-design delivery.
+- A strong network design gives automation systems the foundation they need for visibility, security, and reliable long-term operation.

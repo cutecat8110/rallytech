@@ -1,39 +1,40 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/one-touch-experience/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/one-touch-experience/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Data Integration [core]
+- Block 03 Call-Out System Integration and Commissioning [core]
+- Block 04 Vibration Analysis [core]
+- Block 05 Local/Cloud Historians Deployment [core]
+- Block 06 Manure Management System Integration [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- One-Touch Experience
 
-#### Header
+## Block 02 Data Integration [core]
 
-- Topbar: `+886-3-552-9933`, `sales@rallytech.com.tw`
-- Menu: About, FAQ, Services, OTE, Contact
-- Page H1: `One Touch Experience`
+- Data Integration
+- Rally Technology connects plant, equipment, and reporting data into a structure that operations, engineering, and management teams can use with confidence.
 
-#### Core Modules
+## Block 03 Call-Out System Integration and Commissioning [core]
 
-- Data Integration: unify multi-source data for project operations and decisions
-- Call-Out System Integration and Commissioning: end-to-end integration and operational readiness
-- Vibration Analysis: body text repeats call-out paragraph
-- Local/Cloud Historians Deployment: store, access, and analyze critical data
-- Manure Management System Integration: agriculture-focused integration narrative
+- Call-Out System Integration and Commissioning
+- We coordinate alarm call-out logic, notification routing, and commissioning checks so critical conditions reach the right people quickly and reliably.
 
-#### Additional Blocks
+## Block 04 Vibration Analysis [core]
 
-- Team Members / Our Expert Team block appears with template-profile cards
+- Vibration Analysis
+- We support vibration-monitoring workflows that help teams detect abnormal conditions earlier and improve maintenance planning for critical assets.
 
-#### Footer
+## Block 05 Local/Cloud Historians Deployment [core]
 
-- Engineering + Design Experts
-- Newsletter and Contacts
-- `+886-3-552-9933` / `sales@rallytech.com.tw`
+- Local/Cloud Historians Deployment
+- We deploy local and cloud historian environments that keep process data accessible for troubleshooting, reporting, and long-term operational improvement.
 
-## Notes
+## Block 06 Manure Management System Integration [core]
 
-- Vibration Analysis content duplicates the Call-Out paragraph.
-- Team-member content is template residual and not OTE-core content.
+- Manure Management System Integration
+- We integrate manure-management processes with monitoring, control, and reporting logic so operating teams can manage compliance and execution in one workflow.

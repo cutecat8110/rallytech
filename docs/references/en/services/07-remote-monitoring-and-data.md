@@ -1,29 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/remote-monitoring-and-data/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/remote-monitoring-and-data/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- Remote Monitoring and Data
 
-#### Service Positioning
+## Block 02 Service Introduction [core]
 
-Remote monitoring and data backup are presented as essential for reliability, downtime reduction, compliance, and business continuity.
+- Remote Monitoring and Data
+- Rally Technology helps clients build remote visibility and data-continuity workflows that reduce recovery risk, support business continuity, and keep critical information accessible across sites.
+- These solutions help teams monitor status, protect records, and act faster when unexpected issues occur.
 
-#### Detailed Copy Blocks
+## Block 03 Sidebar Main Services [shared-layout]
 
-- Source copy references oil and gas operations
-- Mentions safety/compliance and optimization benefits
-- Visual KPI labels: Consulting 65%, Development 80%, Management 55%
+- Core Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-#### Shared Layout Content
+## Block 04 Sidebar Contact [shared-layout]
 
-- Sidebar `Main Services` list
-- Sidebar contact block and standard footer
-
-## Notes
-
-- Template residual cards appear (`Apartment Design`) and dilute service focus.
+- +886-3-552-9933
+- sales@rallytech.com.tw

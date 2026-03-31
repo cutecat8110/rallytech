@@ -1,33 +1,40 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/network-design/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/network-design/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
+- Block 05 Closing Statement [core]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`Network Design`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- Network Design
 
-- 主段落：工業通訊系統的規劃、組織與優化
-- 強調詞：precision、scalability、security、cost-efficiency
-- KPI：`Consulting 65%`、`Development 80%`、`Management 55%`
+## Block 02 Service Introduction [core]
 
-### 模板殘留
+- Network Design
+- Network design in industrial automation involves the meticulous planning, organization, and optimization of communication systems. These networks are the lifeblood of industrial processes, facilitating data flow, control, and decision-making across the entire ecosystem.
 
-- 卡片：`Apartment Design`（含 `Read more`）
+## Block 03 Sidebar Main Services [shared-layout]
 
-### Footer
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 04 Sidebar Contact [shared-layout]
 
-## 來源異常註記
+- 630.550.6902
+- info@pentagoneng.com
 
-- Source anomaly：`Apartment Design` 模板內容與 Network Design 主題不符。
+## Block 05 Closing Statement [core]
+
+- Network design is the silent hero of industrial automation. It empowers precision, scalability, security, and cost-efficiency, all backed by our specialized expertise. When it comes to industrial automation, efficiency starts with network design.

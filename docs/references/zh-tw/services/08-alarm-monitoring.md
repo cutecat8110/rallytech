@@ -1,21 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/alarm-monitoring/
+- 最後更新: 2026-03-30
+- 來源網址: https://pentagoneng.com/service/alarm-monitoring/
 
-## 內容
+## 區塊總覽
 
-### 服務定位
+- 區塊 01 頁首主視覺 [主內容]
+- 區塊 02 服務導言 [主內容]
+- 區塊 03 側欄主要服務 [共用版型]
+- 區塊 04 側欄聯絡資訊 [共用版型]
 
-Alarm Monitoring 服務用於建立告警分級、通知機制與處置流程，讓異常事件可被及時偵測與回應。
+## 區塊 01 頁首主視覺 [主內容]
 
-### 可交付內容
+- 告警監控服務｜Alarm Monitoring
 
-- 告警邏輯與門檻設定
-- 告警分級與升級機制
-- 通知流程與值班規範
-- 告警紀錄與持續改善機制
+## 區塊 02 服務導言 [主內容]
 
-### 導入價值
+- 告警監控服務｜Alarm Monitoring
+- 雷力科技協助建立告警監控策略，提升自動化現場的反應速度、操作可視性與日常判斷效率。
+- 我們重視的是讓告警邏輯更容易管理，讓團隊在正確時機對正確條件做出回應。
 
-- 提升現場安全與製程穩定
-- 降低誤報/漏報造成的營運損失
-- 建立可持續優化的告警治理流程
+## 區塊 03 側欄主要服務 [共用版型]
+
+- 主要服務
+- 監控與人機介面圖控服務｜SCADA and HMI Graphics
+- 儀電整合服務｜I&E Services
+- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration
+- 即時資料平台服務｜PI Server
+- 歷史資料平台服務｜Historians
+- 工業網路設計服務｜Network Design
+- 遠端監控與資料備援服務｜Remote Monitoring and Data
+- 告警監控服務｜Alarm Monitoring
+
+## 區塊 04 側欄聯絡資訊 [共用版型]
+
+- +886-3-552-9933
+- sales@rallytech.com.tw

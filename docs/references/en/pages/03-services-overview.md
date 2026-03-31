@@ -1,39 +1,38 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/services/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/services/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Cards Grid [core]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- Services
 
-#### Header
-
-- Topbar: `+886-3-552-9933`, `sales@rallytech.com.tw`
-- Menu: About, FAQ, Services, OTE, Contact
-- Page H1: `Services`
-
-#### Service List
+## Block 02 Service Cards Grid [core]
 
 - SCADA and HMI Graphics
+- Operator-facing visualization for monitoring, alarms, and process control.
+- Learn More
 - I&E Services
+- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.
+- Learn More
 - PLC & DCS Programming and Migration
+- Control logic development, migration planning, and staged cutover support.
+- Learn More
 - PI Server
-- Network Design
+- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.
+- Learn More
 - Historians
+- Long-term process-data retention for trend analysis, reporting, and traceability.
+- Learn More
+- Network Design
+- Industrial communication planning for resilient, maintainable plant networks.
+- Learn More
 - Remote Monitoring and Data
+- Remote visibility and data-continuity support across distributed operations.
+- Learn More
 - Alarm Monitoring
-- Each card includes `Read more`
-
-#### Footer
-
-- Engineering + Design Experts
-- Newsletter and Contacts
-- `+886-3-552-9933` / `sales@rallytech.com.tw`
-
-## Notes
-
-- Service-overview page is mostly visual cards and has limited descriptive copy.
-- Order and semantics are not fully aligned with homepage card text.
+- Alarm strategy and notification workflows for safer, more stable operations.
+- Learn More

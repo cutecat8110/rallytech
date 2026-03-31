@@ -1,36 +1,55 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/pi-server/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/pi-server/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
+- Block 05 Focus Tags [core]
+- Block 06 Accordion Highlights [core]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`PI Server`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- PI Server
 
-- 主要敘事：資料導向自動化、全球產業影響、智慧決策
-- 可見標籤：
-  - `Industrial Automation`
-  - `Global Industry Impact`
-  - `Expertise in PI Server`
-  - `Data-Centric Systems`
-- 可見段落標題：
-  - `Driving Industrial Automation`
-  - `Empowering with PI Server`
-  - `Optimizing Operations`
+## Block 02 Service Introduction [core]
 
-### Footer
+- PI Server
+- Our team is dedicated to driving industrial automation to new heights, and our expertise extends to the powerful PI Server. With a wealth of experience and an unwavering commitment to excellence, we empower industries worldwide with robust, data-centric automation systems that optimize operations and facilitate intelligent decision-making.
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 03 Sidebar Main Services [shared-layout]
 
-## 來源異常註記
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- Source anomaly：文案偏高階宣傳，缺少可執行細節。
+## Block 04 Sidebar Contact [shared-layout]
+
+- 630.550.6902
+- info@pentagoneng.com
+
+## Block 05 Focus Tags [core]
+
+- Industrial Automation
+- Global Industry Impact
+- Expertise in PI Server
+- Data-Centric Systems
+
+## Block 06 Accordion Highlights [core]
+
+- 1. Driving Industrial Automation
+- Elevating automation with cutting-edge technology and expertise.
+- 2. Empowering with PI Server:
+- 3. Optimizing Operations
+
+### Notes
+
+- Only the first accordion item shows visible body copy in the current render.

@@ -1,34 +1,35 @@
-- 最後更新：2026-03-27
-- 來源網址：https://pentagoneng.com/service/scada-and-hmi-graphics/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/scada-and-hmi-graphics/
 
-## 原始可見文本
+## Block Map
 
-### Header / Sidebar
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Menu：`About`、`FAQ`、`Services`、`OTE`、`Contact`
-- H1：`SCADA and HMI Graphics`
-- `Main Services` 清單含 8 項服務
-- 側欄聯絡：`630.550.6902`、`info@pentagoneng.com`
+## Block 01 Page Hero [core]
 
-### 主要內容
+- SCADA and HMI Graphics
 
-- 主段落主軸：SCADA 為現代工業監控、控制與優化核心
-- 文案語意：即時監看、流程可視化、操作效率提升
-- 可見字串：`Seamless Automation and Precision Solutions`
+## Block 02 Service Introduction [core]
 
-### 額外可見區塊
+- SCADA and HMI Graphics
+- Our SCADA systems are the backbone of modern industrial processes, allowing you to monitor, control, and optimize your operations in real-time. Pentagon Engineering has a proven track record in designing, developing, and implementing SCADA systems. With years of experience in the field, we possess a deep understanding of the industry’s nuances and challenges.
 
-- 交叉服務卡與圖卡（含 `Read more`）
-- 可見主題：SCADA/HMI、PLC & DCS、PI、Historians、Network、Remote Monitoring、Alarm Monitoring
+## Block 03 Sidebar Main Services [shared-layout]
 
-### Footer
+- Main Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-- `Engineering + Design Experts`
-- `Newsletter`
-- `Contacts`
-- `630.550.6902`
-- `info@pentagoneng.com`
+## Block 04 Sidebar Contact [shared-layout]
 
-## 來源異常註記
-
-- Source anomaly：跨服務模板卡與 filler 文字稀釋本頁主軸。
+- 630.550.6902
+- info@pentagoneng.com

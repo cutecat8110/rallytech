@@ -1,15 +1,37 @@
 # 設計文件入口
 
-`design/` 保留 2 份主檔 + `tokens/`，避免規範分散。
+最後更新：2026-03-31
 
-## 先看哪兩份
+## 文件目的
+
+- 提供設計系統與前端落地的閱讀入口，讓設計、前端與 AI agent 使用同一套規則。
+- 把設計原則、Nuxt UI 落地與 preview 維運分成清楚兩份主檔。
+
+## 適用角色
+
+- 設計：確認品牌語意、色彩與元件邏輯。
+- 前端：確認 token 使用方式、Nuxt UI 覆寫順序與驗證清單。
+- AI agent：確認設計文件在 `docs/design/` 的分工，不重複解讀。
+
+## 先讀哪兩份
 
 1. [01-設計系統規則總綱.md](./01-設計系統規則總綱.md)
-   - 設計 token 用法、色彩治理、字體與 foundations 規則
 2. [02-AI切版與Preview維運規範.md](./02-AI切版與Preview維運規範.md)
-   - Nuxt UI 分層落地、AI 切版流程與 `/design-system` 維運
+
+## 各檔分工
+
+- `01`：設計系統原則、token 治理、色彩、字體與 foundations 規則。
+- `02`：Nuxt UI 落地、AI 切版流程、preview 維運與驗證清單。
+- `tokens/*.json`：設計數值鏡像與對照資料，不作執行期真實值。
 
 ## tokens 用途
 
-- `tokens/*.json` 是設計數值鏡像與對照資料
-- 執行期真實值仍以 `app/assets/css/main.css` 為準
+- `tokens/*.json` 只保留設計數值鏡像與內部對照用途。
+- 執行期真實值仍以 `app/assets/css/main.css` 為準。
+- 若 token 與前台實作不一致，應先修正主檔與程式碼，再更新鏡像檔。
+
+## 維護邊界
+
+- 設計方向與 token 治理改 `01`；切版流程與 preview 維運改 `02`。
+- 不在 `design/README` 重複維護完整規格，只做導覽與分工。
+- 若設計策略變更影響產品結構，需回到 `docs/project/` 同步更新。

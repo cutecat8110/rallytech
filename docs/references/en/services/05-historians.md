@@ -1,29 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/historians/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/historians/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- Historians
 
-#### Service Positioning
+## Block 02 Service Introduction [core]
 
-The page focuses on historian data for operational continuity, compliance, optimization, and sustainability support.
+- Historians
+- Rally Technology structures historian environments so long-term plant data remains available for trend review, reporting, compliance, and cross-team analysis.
+- We can support local redundancy and remote-access patterns that improve resilience without making data retrieval harder for operating teams.
 
-#### Detailed Copy Blocks
+## Block 03 Sidebar Main Services [shared-layout]
 
-- States value for oil and gas / RNG operations
-- Mentions a double-redundant microhistorian solution
-- Describes local redundant storage plus cloud access to remote data
+- Core Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-#### Shared Layout Content
+## Block 04 Sidebar Contact [shared-layout]
 
-- Sidebar `Main Services` list
-- Sidebar contact block and standard footer
-
-## Notes
-
-- Industry framing is narrow (RNG/oil-and-gas heavy) compared with a broader industrial-services narrative.
+- +886-3-552-9933
+- sales@rallytech.com.tw

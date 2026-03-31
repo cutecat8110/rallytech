@@ -22,21 +22,23 @@
 
 1. 現有程式碼與執行結果（含 `app/assets/css/main.css` 的 token 實作）
 2. `docs/project/` 最新決策文件
-3. `docs/design/` 設計規則與色彩治理文件
+3. `docs/design/` 設計規則文件
 4. 本檔（AGENTS）作為執行 SOP 與協作約束
 
-若規範文件與現況程式碼不一致，以「現有程式碼 + 最新 docs 決策」交叉判斷，並在 PR/回報中註明取捨。
+若規範文件與現況程式碼不一致，以「現有程式碼 + 最新 docs 決策」交叉判斷，並在 PR / 回報中註明取捨。
 
 ## 4. 優先參考文件
 
-1. `docs/project/01-專案基線.md`
-2. `docs/project/02-網站資訊架構.md`
-3. `docs/project/03-網站資訊架構-設計簡版.md`
-4. `docs/project/04-服務架構決策.md`
-5. `docs/design/01-設計規則整理.md`
-6. `docs/design/02-AI切版規則.md`
-7. `docs/design/04-色彩定版與治理.md`
-8. `docs/project/06-Commit-規則與格式.md`
+1. `docs/README.md`
+2. `docs/project/README.md`
+3. `docs/project/01-專案策略與基線總綱.md`
+4. `docs/project/02-網站資訊架構與頁面藍圖.md`
+5. `docs/project/03-服務架構與命名決策.md`
+6. `docs/project/04-協作與交付規範.md`
+7. `docs/design/01-設計系統規則總綱.md`
+8. `docs/design/02-AI切版與Preview維運規範.md`
+
+若任務涉及參考站對照或雙語文案，再補讀 `docs/references/README.md`。
 
 ## 5. 目錄導覽
 
@@ -45,8 +47,9 @@
 - `app/components/page/**`：頁面區塊元件
 - `app/layouts/`：layout 入口（frontend/backend）
 - `app/assets/css/main.css`：全域設計 token 與樣式工具
-- `docs/project/`：專案基線、IA、服務架構與提交規範
-- `docs/design/`：設計規則、AI 切版規範、色彩治理
+- `docs/project/`：專案策略、IA、服務命名與交付規範
+- `docs/design/`：設計系統、AI 切版與 preview 維運規範
+- `docs/references/`：參考站 `source / en / zh-tw` 對照工作台
 
 ## 6. 常用指令
 
@@ -68,7 +71,7 @@
    - 若需求未明確，先補齊必要條件再開始改動。
 3. Skill 判斷
    - 每一輪對話都重新判斷 skill（見第 8 節）。
-   - 前端/版面需求優先使用 `$uiux-pm-collaboration`；若不可用，改走第 9.4 節等價 UIUX 審視 Gate。
+   - 前端 / 版面需求優先使用 `$uiux-pm-collaboration`；若不可用，改走第 9.4 節等價 UIUX 審視 Gate。
    - 在回報中標記本輪使用的 skill 與用途。
 4. 實作
    - 依 Nuxt UI First 與分層覆寫原則實作（見第 9 節）。
@@ -87,7 +90,7 @@
 5. 若 skill 不可用、內容缺失或與現況衝突，必須先說明原因，再採替代方案。
 6. 回報時必須標記本輪使用的 skill 與用途；若未使用需給出可追蹤理由。
 7. 同時匹配多個 skill 時，選擇最小必要集合，並說明採用順序與分工。
-8. 前端/版面/產品需求任務，必須優先使用 `$uiux-pm-collaboration`（若環境可用）。
+8. 前端 / 版面 / 產品需求任務，必須優先使用 `$uiux-pm-collaboration`（若環境可用）。
 9. 若 `$uiux-pm-collaboration` 不可用，仍必須執行第 9.4 節 UIUX 審視 Gate，並在回報標註 fallback。
 
 情境處置（必須覆蓋）：
@@ -103,9 +106,9 @@
 ### 9.1 Nuxt UI First
 
 1. 優先使用 Nuxt UI 互動元件；可覆寫就不要手刻替代。
-2. 覆寫層級固定為：全域（`app.config.ts`）→ 頁面/區塊（`<UTheme>`）→ 單點例外（`:ui`/`class`）。
+2. 覆寫層級固定為：全域（`app.config.ts`）→ 頁面 / 區塊（`<UTheme>`）→ 單點例外（`:ui` / `class`）。
 3. 只有在 Nuxt UI 無對應能力時才可自製 UI，且需在元件以中文註釋說明原因與限制。
-4. 不得為了短期方便，改用原生 `button/input/select/dialog` 重做 Nuxt UI 可覆蓋能力。
+4. 不得為了短期方便，改用原生 `button / input / select / dialog` 重做 Nuxt UI 可覆蓋能力。
 
 ### 9.2 色彩與樣式
 
@@ -114,13 +117,13 @@
 3. `Primary` 主要用於核心互動與主要行動按鈕。
 4. 主要行動按鈕（白字）預設：`bg-primary-700 hover:bg-primary-600 active:bg-primary-800`。
 5. `UButton` 使用 `color="primary" + variant="solid"` 時，文字需維持白字。
-6. `Secondary` 用於深色容器與版面重心；頁面骨架優先 `700-950`（主背景優先 `900/950`）。
+6. `Secondary` 用於深色容器與版面重心；頁面骨架優先 `700-950`（主背景優先 `900 / 950`）。
 7. `Secondary` 的 `50-400` 僅低頻輔助，不作常規頁面底色。
 8. `Info`、`Accent` 低頻使用；狀態色僅表達狀態，不兼任品牌主色。
 
 ### 9.3 結構、註釋與型別
 
-1. 註釋以中文說明「目的與意圖」，避免只重述程式碼字面。
+1. 註釋以中文說明目的與意圖，避免只重述程式碼字面。
 2. 頁面層以組裝區塊為主，區塊內容優先就地放在元件內。
 3. `app/content` 預設不使用於少量頁面文案；僅在高複用且有必要時才評估抽離。
 4. 型別策略採推論優先與就近定義；跨模組共用或 API 契約才抽離共用型別。
@@ -142,7 +145,7 @@
 
 - IA 一致性
 - Nuxt UI First
-- token/色彩規範
+- token / 色彩規範
 - 主按鈕白字規範
 - RWD 響應式檢查
 - 文案語氣一致性
@@ -157,17 +160,17 @@
   `pnpm exec nuxt dev --host 127.0.0.1 --port 3000`
 - 若需比對參考站與本機實際渲染，優先以瀏覽器實查，不只靠程式碼推測
 
-## 11. Commit / PR 規範（引用為主）
+## 11. Commit / PR 規範
 
-- 唯一詳細來源：`docs/project/06-Commit-規則與格式.md`
-- 本節只保留最低執行門檻；白名單、範例與細節以 `docs/project/06-Commit-規則與格式.md` 為準。
+- 唯一詳細來源：`docs/project/04-協作與交付規範.md`
+- 本節只保留最低執行門檻；更細格式與交付規範以 `docs/project/04-協作與交付規範.md` 為準。
 
 ### 11.1 最低執行門檻（必須）
 
 1. Commit 與 PR Title 必須使用：
    `<type>(<scope>): <subject>`
-2. `type` 使用英文、`subject` 使用中文。
-3. Breaking change 必須使用 `type(scope)!: subject`，且 body/footer 含 `BREAKING CHANGE: <說明內容>`。
+2. `type` 使用英文，`subject` 使用中文。
+3. Breaking change 必須使用 `type(scope)!: subject`，且 body / footer 含 `BREAKING CHANGE: <說明內容>`。
 4. 提交前檢查順序固定為：
    - `pnpm exec prettier --check .`
    - `pnpm lint`

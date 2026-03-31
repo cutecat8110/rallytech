@@ -1,30 +1,36 @@
-- 最後更新：2026-03-27
-- 對照來源：https://pentagoneng.com/service/alarm-monitoring/
+- Last updated: 2026-03-30
+- Source URL: https://pentagoneng.com/service/alarm-monitoring/
 
-## Content
+## Block Map
 
-### Page Objective
+- Block 01 Page Hero [core]
+- Block 02 Service Introduction [core]
+- Block 03 Sidebar Main Services [shared-layout]
+- Block 04 Sidebar Contact [shared-layout]
 
-- Keep an English, source-aligned, implementation-ready text reference for this page.
+## Block 01 Page Hero [core]
 
-### Section Copy
+- Alarm Monitoring
 
-#### Service Positioning
+## Block 02 Service Introduction [core]
 
-Alarm monitoring is framed around safe, efficient, and compliant operation, with emphasis on proactive maintenance and resilience.
+- Alarm Monitoring
+- Rally Technology develops alarm-monitoring approaches that improve response speed, operational awareness, and day-to-day decision-making in automated facilities.
+- We focus on making alarm logic easier to manage so teams can act on the right conditions at the right time.
 
-#### Detailed Copy Blocks
+## Block 03 Sidebar Main Services [shared-layout]
 
-- Source context is RNG-facility oriented
-- Mentions process optimization, environmental compliance, and operational sustainability
-- Visual KPI labels: Consulting 65%, Development 80%, Management 55%
+- Core Services
+- SCADA and HMI Graphics
+- I&E Services
+- PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- Network Design
+- Remote Monitoring and Data
+- Alarm Monitoring
 
-#### Shared Layout Content
+## Block 04 Sidebar Contact [shared-layout]
 
-- Sidebar `Main Services` list
-- Sidebar contact block and standard footer
-
-## Notes
-
-- Industry language is narrowly RNG-specific for a general service category.
-- Template residual cards are present on the page.
+- +886-3-552-9933
+- sales@rallytech.com.tw
