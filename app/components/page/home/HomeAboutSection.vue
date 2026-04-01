@@ -1,92 +1,196 @@
 <script setup lang="ts">
-// About：核心條列（依 docs/references/pentagon/首頁文案整理.md）
 const aboutHighlights = [
   {
-    label: '專業',
-    description: '由具實務經驗的工程團隊提供技術判斷與執行支援。'
+    label: '專業能力',
+    description:
+      '控制、儀控、試車驗收與現場協調以同一條交付路徑管理。'
   },
   {
-    label: '技術',
-    description: '結合工程技術與自動化整合能力，提供穩定且有效率的方案。'
+    label: '技術基礎',
+    description:
+      '以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。'
   },
   {
-    label: '協作',
-    description: '與客戶及產業夥伴密切合作，確保專案順利落地。'
+    label: '協作方式',
+    description:
+      '讓業主、廠商與現場團隊對齊在同一組專案重點與時程節點上。'
   }
 ]
 </script>
 
 <template>
-  <section id="about" class="bg-neutral-100 section-sys-shell">
+  <section id="about" class="bg-neutral-50 section-sys-shell">
     <div class="page-sys-shell">
-      <div class="grid items-start gap-12 lg:grid-cols-[1.15fr,0.85fr]">
-        <article>
-          <h2 class="type-sys-display-m text-neutral-600">
-            工業自動化與儀控整合的專業團隊
+      <div class="mx-auto grid max-w-6xl items-start gap-12 lg:grid-cols-[1.05fr,0.95fr]">
+        <article class="home-sys-reveal">
+          <p class="type-sys-label-s text-primary-700 tracking-[0.18em] uppercase">
+            工業控制整合團隊
+          </p>
+          <h2 class="type-sys-display-m mt-4 max-w-[12ch] text-neutral-950">
+            值得信賴的儀控、控制與工業資料整合夥伴
           </h2>
 
-          <p class="type-sys-body-m mt-7 leading-9 text-neutral-600">
-            雷力科技深耕工業自動化領域，成立於 20XX
-            年，專注於儀控整合與控制系統建置。
-            我們結合工程技術與執行效率，協助企業優化現場運轉與管理效能。
+          <p class="type-sys-body-m mt-6 max-w-2xl text-neutral-700">
+            雷力科技協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成從啟動到交接都清楚可執行的交付路徑。
           </p>
 
-          <p class="type-sys-body-m mt-6 leading-9 text-neutral-600">
-            我們以專業、品質與長期合作為核心，持續為不同產業提供穩定可靠的工程服務與整合方案。
+          <p class="type-sys-body-m mt-5 max-w-2xl text-neutral-700">
+            我們把技術規劃、現場執行與操作就緒整合在同一條節奏上，降低設計意圖與現場落地之間的落差。
           </p>
 
           <ul class="mt-8 grid gap-4">
             <li
               v-for="highlight in aboutHighlights"
               :key="highlight.label"
-              class="rounded-sm border border-neutral-300 bg-white p-4"
+              class="border-t border-neutral-200 pt-4"
             >
-              <p class="type-sys-title-m text-neutral-700">
-                <span class="font-semibold">{{ highlight.label }}</span>
-                : {{ highlight.description }}
+              <p class="type-sys-title-m text-neutral-900">
+                {{ highlight.label }}
+              </p>
+              <p class="type-sys-body-s mt-2 text-neutral-600">
+                {{ highlight.description }}
               </p>
             </li>
           </ul>
         </article>
 
-        <!-- About 視覺佔位：對齊參考站影片區位置 -->
-        <div class="space-y-5">
-          <div
-            class="shadow-sys-md relative overflow-hidden rounded-[2rem] border border-secondary-700/35 bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-700 p-6"
-          >
-            <div
-              class="absolute top-4 right-4 h-14 w-14 rounded-full border border-white/30 bg-white/14"
-            />
-            <p class="type-sys-label-s tracking-widest text-white/72 uppercase">
-              主題視覺佔位
-            </p>
-            <div
-              class="mt-4 h-56 rounded-2xl border border-white/20 bg-white/8"
-            />
+        <div class="home-sys-reveal home-sys-about-stage" data-reveal-delay="2">
+          <div class="home-sys-about-frame" />
+
+          <div class="home-sys-about-panel home-sys-about-panel--dark">
+            <div class="home-sys-about-badge">Control Room</div>
           </div>
 
-          <article
-            class="shadow-sys-sm rounded-2xl border border-primary-300 bg-primary-50 p-5"
-          >
-            <p
-              class="type-sys-label-s tracking-widest text-primary-700 uppercase"
-            >
-              進一步了解
-            </p>
-            <p class="type-sys-body-s mt-2 text-primary-700">
-              了解雷力科技的一站式整合服務與導入流程。
-            </p>
-            <UButton
-              to="#one-touch-experience"
-              color="primary"
-              variant="solid"
-              class="type-sys-label-s mt-4 rounded-full px-6 text-sys-inverse"
-            >
-              進一步了解
-            </UButton>
-          </article>
+          <div class="home-sys-about-panel home-sys-about-panel--light">
+            <div class="home-sys-about-badge home-sys-about-badge--dark">
+              Field Network
+            </div>
+          </div>
+
+          <div class="home-sys-about-mesh" />
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.home-sys-about-stage {
+  position: relative;
+  min-height: 32rem;
+}
+
+.home-sys-about-frame {
+  position: absolute;
+  inset: 0;
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at 76% 18%, rgb(59 130 246 / 0.07), transparent 30%),
+    linear-gradient(180deg, rgb(255 255 255 / 0.58), transparent 35%);
+  opacity: 0.35;
+}
+
+.home-sys-about-panel {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 1.75rem;
+  box-shadow: var(--shadow-3);
+}
+
+.home-sys-about-panel--dark {
+  top: 0;
+  right: 0;
+  width: 76%;
+  height: 74%;
+  border: 1px solid rgb(255 255 255 / 0.42);
+  background:
+    linear-gradient(145deg, rgb(255 255 255 / 0.58), rgb(255 255 255 / 0.18)),
+    linear-gradient(180deg, rgb(227 234 235 / 0.94), rgb(147 182 255 / 0.82));
+}
+
+.home-sys-about-panel--light {
+  left: 0;
+  bottom: 0;
+  width: 54%;
+  height: 44%;
+  border: 1px solid rgb(63 84 92 / 0.16);
+  background:
+    linear-gradient(145deg, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.14)),
+    linear-gradient(180deg, rgb(135 163 169 / 0.92), rgb(26 49 104 / 0.94));
+}
+
+.home-sys-about-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(transparent 65%, rgb(10 18 22 / 0.3)),
+    linear-gradient(rgb(255 255 255 / 0.26) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 0.26) 1px, transparent 1px);
+  background-size: auto, 2rem 2rem, 2rem 2rem;
+}
+
+.home-sys-about-badge {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1rem;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.08);
+  padding: 0.5rem 0.82rem;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: white;
+}
+
+.home-sys-about-badge--dark {
+  background: rgb(255 255 255 / 0.72);
+  color: rgb(34 48 56 / 0.78);
+}
+
+.home-sys-about-mesh {
+  position: absolute;
+  inset: auto 2rem 4rem auto;
+  width: 11rem;
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: radial-gradient(
+    circle,
+    rgb(161 235 223 / 0.82),
+    rgb(161 235 223 / 0.08) 62%,
+    transparent 64%
+  );
+  opacity: 0.75;
+}
+
+@media (max-width: 1023px) {
+  .home-sys-about-stage {
+    min-height: 26rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-sys-about-stage {
+    min-height: 23rem;
+  }
+
+  .home-sys-about-frame {
+    inset-inline: 0.5rem;
+  }
+
+  .home-sys-about-panel--dark {
+    width: 78%;
+    height: 72%;
+  }
+
+  .home-sys-about-panel--light {
+    width: 58%;
+    height: 42%;
+  }
+
+  .home-sys-about-mesh {
+    width: 6.5rem;
+  }
+}
+</style>
