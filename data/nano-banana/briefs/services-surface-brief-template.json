@@ -1,0 +1,76 @@
+{
+  "slot": "services-surface",
+  "source_refs": [
+    "Project evidence: homepage Services section background image role",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "anti-stock-anti-hud",
+    "color-material-control"
+  ],
+  "business_goal": "Support the Services section with a low-distraction industrial background that strengthens credibility without overpowering copy",
+  "page_role": "Homepage Services section background surface",
+  "visual_message": "A restrained industrial geometry backdrop that feels real, technical, and compatible with a dense multi-column services layout",
+  "reference_roles": {
+    "image_1": "composition and background density reference",
+    "image_2": "industrial material and realism reference"
+  },
+  "overlay_policy": "services-grid-readable-no-embedded-text",
+  "iteration_hypothesis": "A lower-contrast industrial background with controlled geometry will preserve readability better than a literal busy switchboard photo",
+  "technical_signals": {
+    "lens": "35mm to 50mm industrial interior photography range",
+    "aperture": "f/4 to f/5.6 for readable depth without busy blur",
+    "light_source": "controlled industrial ambient light with restrained highlight accents",
+    "time_of_day": "neutral interior lighting",
+    "motion_rule": "still environment with no human action as focal subject"
+  },
+  "spatial_positioning": [
+    "industrial panel or systems geometry sits behind the service columns",
+    "contrast stays low enough for eight service items to remain readable",
+    "large foreground objects do not interrupt text zones",
+    "background rhythm supports structure without becoming a hero focal point"
+  ],
+  "visual_standard": "restrained corporate industrial photography for web background use",
+  "color_restriction": "charcoal, muted steel, matte grey, soft amber or cyan control accents only; avoid saturated neon or harsh color shifts",
+  "material_notes": [
+    "switchboard or industrial panel surfaces",
+    "matte coated metal",
+    "subtle glass or acrylic indicator covers",
+    "controlled highlights without glossy AI sheen"
+  ],
+  "reality_anchor": [
+    "credible industrial panel or systems surface",
+    "restrained control-room or electrical-infrastructure context",
+    "clear material realism",
+    "background-first composition"
+  ],
+  "composition_rule": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad readable zones for the Services heading and multi-column content",
+    "focal_structure": "no dominant hero focal point; background should support content hierarchy",
+    "camera": "industrial interior photography with stable perspective"
+  },
+  "lighting_rule": {
+    "style": "premium commercial industrial photography",
+    "mood": "technical, calm, dependable",
+    "contrast": "low to moderate for background usability",
+    "surface_behavior": "controlled highlights and believable industrial texture"
+  },
+  "disallowed_ai_signals": [
+    "high-contrast hero composition",
+    "fake floating UI panels",
+    "readable words or embedded text",
+    "busy action scene with operators dominating the frame",
+    "exaggerated sci-fi glow",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

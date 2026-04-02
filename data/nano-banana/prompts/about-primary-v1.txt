@@ -1,0 +1,46 @@
+{
+  "asset_type": "homepage about section primary image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic architectural image that communicates established engineering capability and modern technology credibility",
+  "reference_usage": {
+    "image_1": "preserve the overall composition and facade rhythm",
+    "image_2": "optional facade detail and material realism reference"
+  },
+  "scene": "A modern high-tech office tower or engineering facility exterior with clean architectural lines",
+  "subject": "The building facade itself is the hero, not street life or people",
+  "reality_anchors": [
+    "glass curtain wall",
+    "credible structural rhythm",
+    "modern engineering or technology facility character",
+    "clean reflective facade materials"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant facade mass with one supporting detail rhythm",
+    "camera": "architectural exterior photography, eye-level or slightly upward",
+    "cropping": "designed for a tall website media frame"
+  },
+  "lighting": {
+    "style": "premium commercial architectural photography",
+    "mood": "confident, precise, established",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "clean glass reflections, no plastic sheen"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must look photorealistic",
+    "must avoid visual clutter",
+    "must not feel like a generic skyline postcard",
+    "the image itself must contain no embedded text, no signage focus, and no website UI"
+  ],
+  "avoid": [
+    "crowded traffic or pedestrians dominating the frame",
+    "futuristic holograms",
+    "fake sci-fi building elements",
+    "headline text",
+    "website UI overlay",
+    "oversaturated sky",
+    "obvious AI artifacts"
+  ]
+}

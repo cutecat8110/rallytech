@@ -1,0 +1,14 @@
+{
+  "slot": "connector-image",
+  "liveSource": "stock",
+  "stock": {
+    "src": "",
+    "alt": "",
+    "label": "TBD Stock Asset",
+    "source": "TBD",
+    "assetPage": null,
+    "licenseNote": null,
+    "notes": "Replace with approved source/licensed visual before promotion."
+  },
+  "candidates": []
+}

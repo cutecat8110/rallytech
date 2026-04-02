@@ -2,7 +2,7 @@
 @import '@nuxt/ui';
 
 @theme static {
-  --font-sans: Inter, 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  --font-sans: 'IBM Plex Sans TC', sans-serif;
 
   --color-black: #000000;
   --color-white: #ffffff;
@@ -120,6 +120,7 @@
   --color-neutral-900: #18181b;
   --color-neutral-950: #09090b;
 
+  /* 鎖定 Nuxt UI rounded-* utility 對應值，維持 XS / S / M / L / XL token。 */
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -169,22 +170,55 @@
   --space-16: 16px;
   --space-24: 24px;
   --space-40: 40px;
+  --space-48: 48px;
   --space-80: 80px;
   --space-128: 128px;
 
   --radius-full: 999px;
-  --radius-xs: 2px;
-  --radius-s: 4px;
-  --radius-m: 8px;
-  --radius-l: 12px;
-  --radius-xl: 16px;
+  --radius-s: var(--radius-sm);
+  --radius-m: var(--radius-md);
+  --radius-l: var(--radius-lg);
 
-  --layout-page-padding-inline: var(--space-16);
+  --layout-content-max: 1360px;
+  --layout-header-max: 1824px;
+  --layout-content-padding-inline: var(--space-16);
+  --layout-wide-padding-inline: var(--space-16);
+  --layout-header-padding-inline: var(--space-16);
   --layout-grid-columns: 4;
   --layout-grid-gap: var(--space-16);
   --layout-section-padding-compact: var(--space-24);
   --layout-section-padding-default: var(--space-40);
   --layout-section-padding-hero: var(--space-80);
+
+  --home-media-mask-u-split: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    68% 100%,
+    68% 76%,
+    32% 76%,
+    32% 100%,
+    0 100%
+  );
+  --home-media-mask-trapezoid: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 18%);
+  --home-media-mask-protrude: polygon(
+    0 0,
+    86% 0,
+    100% 18%,
+    100% 100%,
+    14% 100%,
+    0 84%
+  );
+  --color-surface-signal-start: color-mix(
+    in srgb,
+    var(--color-primary-900) 74%,
+    var(--color-secondary-950)
+  );
+  --color-surface-signal-end: color-mix(
+    in srgb,
+    var(--color-primary-700) 86%,
+    var(--color-secondary-800)
+  );
 
   --layout-header-xl: 128px;
   --layout-header-l: 80px;
@@ -219,11 +253,11 @@
   --type-title-l-font-size: 18px;
   --type-title-l-line-height: 130%;
   --type-title-l-letter-spacing: 0;
-  --type-title-l-font-weight: 500;
+  --type-title-l-font-weight: 600;
   --type-title-m-font-size: 16px;
   --type-title-m-line-height: 130%;
   --type-title-m-letter-spacing: 0;
-  --type-title-m-font-weight: 500;
+  --type-title-m-font-weight: 600;
   --type-body-m-font-size: 16px;
   --type-body-m-line-height: 160%;
   --type-body-m-letter-spacing: 0;
@@ -240,6 +274,14 @@
   --type-label-s-line-height: 120%;
   --type-label-s-letter-spacing: 0.02em;
   --type-label-s-font-weight: 500;
+  --type-nav-font-size: 13px;
+  --type-nav-line-height: 130%;
+  --type-nav-letter-spacing: 0.04em;
+  --type-nav-font-weight: 600;
+  --type-kicker-font-size: 13px;
+  --type-kicker-line-height: 120%;
+  --type-kicker-letter-spacing: 0.1em;
+  --type-kicker-font-weight: 600;
 
   --ui-color-primary-50: var(--color-primary-50);
   --ui-color-primary-100: var(--color-primary-100);
@@ -325,6 +367,8 @@
   --ui-color-error-900: var(--color-danger-900);
   --ui-color-error-950: var(--color-danger-950);
 
+  --ui-primary: var(--ui-color-primary-700);
+  --ui-secondary: var(--ui-color-secondary-700);
   --ui-text-dimmed: var(--color-text-muted);
   --ui-text-muted: var(--color-text-secondary);
   --ui-text-toned: var(--color-text-secondary);
@@ -340,12 +384,37 @@
   --ui-border-muted: var(--color-border-subtle);
   --ui-border-accented: var(--color-border-default);
   --ui-border-inverted: var(--color-border-inverse);
-  --ui-radius: var(--radius-m);
+  --ui-container: var(--layout-content-max);
+  --ui-header-height: 4rem;
+  /* Nuxt UI 元件基準半徑採 S=4px；具體 rounded-* 比例以上方 token 為準。 */
+  --ui-radius: var(--radius-sm);
+}
+
+.dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-300);
+  --ui-text-dimmed: var(--color-neutral-500);
+  --ui-text-muted: var(--color-neutral-400);
+  --ui-text-toned: var(--color-neutral-300);
+  --ui-text: var(--color-neutral-200);
+  --ui-text-highlighted: var(--color-white);
+  --ui-text-inverted: var(--color-neutral-950);
+  --ui-bg: var(--color-neutral-950);
+  --ui-bg-muted: var(--color-neutral-900);
+  --ui-bg-elevated: var(--color-neutral-900);
+  --ui-bg-accented: var(--color-neutral-800);
+  --ui-bg-inverted: var(--color-white);
+  --ui-border: var(--color-neutral-800);
+  --ui-border-muted: var(--color-neutral-800);
+  --ui-border-accented: var(--color-neutral-700);
+  --ui-border-inverted: var(--color-white);
 }
 
 @media (min-width: 768px) {
   :root {
-    --layout-page-padding-inline: var(--space-40);
+    --layout-content-padding-inline: var(--space-24);
+    --layout-wide-padding-inline: var(--space-24);
+    --layout-header-padding-inline: var(--space-24);
     --layout-grid-columns: 8;
     --layout-grid-gap: var(--space-24);
     --layout-section-padding-compact: var(--space-40);
@@ -362,7 +431,8 @@
 
 @media (min-width: 1280px) {
   :root {
-    --layout-page-padding-inline: var(--space-80);
+    --layout-wide-padding-inline: var(--space-48);
+    --layout-header-padding-inline: var(--space-48);
   }
 }
 
@@ -388,39 +458,28 @@ body,
   color: inherit;
 }
 
-/* Nuxt UI 主要行動按鈕：提高選擇器權重，避免被 data-slot 基底樣式覆蓋。 */
-[data-slot='base'].btn-sys-primary-solid {
-  color: var(--color-text-inverse);
-  background-color: var(--color-primary-800);
-}
-
-[data-slot='base'].btn-sys-primary-solid:hover,
-[data-slot='base'].btn-sys-primary-solid:focus-visible {
-  background-color: var(--color-primary-700);
-}
-
-[data-slot='base'].btn-sys-primary-solid:active {
-  background-color: var(--color-primary-900);
-}
-
-[data-slot='base'].btn-sys-primary-solid:disabled,
-[data-slot='base'].btn-sys-primary-solid[aria-disabled='true'] {
-  background-color: var(--color-primary-800);
-}
-
-[data-slot='base'].btn-sys-primary-solid:focus-visible {
-  outline: 2px solid var(--color-primary-700);
-  outline-offset: 2px;
-}
-
 ::selection {
   background: color-mix(in srgb, var(--color-primary-500) 18%, transparent);
 }
 
 .page-sys-shell {
   width: 100%;
+  max-width: var(--layout-content-max);
   margin-inline: auto;
-  padding-inline: var(--layout-page-padding-inline);
+  padding-inline: var(--layout-content-padding-inline);
+}
+
+.page-sys-shell--wide {
+  width: 100%;
+  max-width: var(--layout-header-max);
+  margin-inline: auto;
+  padding-inline: var(--layout-header-padding-inline);
+}
+
+.content-sys-rail {
+  width: 100%;
+  max-width: var(--layout-content-max);
+  margin-inline: auto;
 }
 
 .section-sys-shell {
@@ -658,66 +717,27 @@ body,
   box-shadow: var(--shadow-2);
 }
 
-.about-sys-visual-stage {
-  position: relative;
-  min-height: 19.5rem;
-}
-
-.about-sys-visual-frame {
-  position: absolute;
-  inset-inline: 0.875rem;
-  top: 0.5rem;
-  height: 75%;
-  border-top: 10px solid var(--color-secondary-900);
-  border-left: 10px solid var(--color-secondary-900);
-  border-right: 10px solid var(--color-secondary-900);
-  border-bottom: 0;
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
-  opacity: 0.96;
-  pointer-events: none;
-}
-
-.about-sys-visual-panel {
+.home-sys-media-frame {
   position: relative;
   overflow: hidden;
-  border-radius: calc(var(--radius-l) + 2px);
-  box-shadow: var(--shadow-1);
+  isolation: isolate;
+  width: 100%;
+  box-shadow: var(--shadow-2);
 }
 
-.about-sys-visual-panel--dark {
-  border: 1px solid rgb(255 255 255 / 0.08);
-  background: linear-gradient(
-    155deg,
-    var(--color-secondary-950) 0%,
-    var(--color-secondary-900) 100%
-  );
+.home-sys-media-frame__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.02);
 }
 
-.about-sys-visual-panel--light {
-  border: 1px solid rgb(34 48 56 / 0.12);
-  background: linear-gradient(
-    160deg,
-    var(--color-neutral-50) 0%,
-    var(--color-secondary-200) 100%
-  );
-}
-
-@media (min-width: 768px) {
-  .about-sys-visual-stage {
-    min-height: 23rem;
-  }
-
-  .about-sys-visual-frame {
-    inset-inline: 1rem;
-    top: 0.65rem;
-    height: 78%;
-    border-top-width: 12px;
-    border-left-width: 12px;
-    border-right-width: 12px;
-    border-top-left-radius: 5.75rem;
-    border-top-right-radius: 5.75rem;
-  }
+.home-sys-media-frame__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
 }
 
 @utility type-sys-display-xl {
@@ -814,4 +834,20 @@ body,
   line-height: var(--type-label-s-line-height);
   letter-spacing: var(--type-label-s-letter-spacing);
   font-weight: var(--type-label-s-font-weight);
+}
+
+@utility type-sys-nav {
+  font-family: var(--font-sans);
+  font-size: var(--type-nav-font-size);
+  line-height: var(--type-nav-line-height);
+  letter-spacing: var(--type-nav-letter-spacing);
+  font-weight: var(--type-nav-font-weight);
+}
+
+@utility type-sys-kicker {
+  font-family: var(--font-sans);
+  font-size: var(--type-kicker-font-size);
+  line-height: var(--type-kicker-line-height);
+  letter-spacing: var(--type-kicker-letter-spacing);
+  font-weight: var(--type-kicker-font-weight);
 }

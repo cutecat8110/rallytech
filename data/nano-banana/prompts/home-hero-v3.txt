@@ -1,0 +1,55 @@
+{
+  "asset_type": "homepage hero background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic, commercially usable B2B website hero background image that looks real, modern, restrained, and trustworthy",
+  "reference_usage": {
+    "image_1": "preserve the overall room composition, spatial rhythm, and website-safe framing",
+    "image_2": "optional material or lighting reference only"
+  },
+  "scene": "A real industrial control center behind glass, with a clean integrated monitoring wall and modern engineering consoles",
+  "subject": "The room itself is the hero. One operator may appear only as a subtle scale cue, never as the main subject",
+  "reality_anchors": [
+    "glass-partitioned control room",
+    "credible SCADA-style monitoring wall",
+    "matte metal and composite console surfaces",
+    "modern industrial interior architecture",
+    "restrained, realistic process-control UI language"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "reserve the right side as empty architectural negative space only, suitable for later website headline and CTA overlay",
+    "focal_structure": "one primary focal point in the left-center, one secondary depth layer, no clutter",
+    "camera": "architectural interior photography, eye-level or slightly elevated, realistic wide-angle perspective",
+    "cropping": "designed for a modern homepage hero background, not a stock photo crop"
+  },
+  "lighting": {
+    "style": "premium commercial interior photography",
+    "mood": "calm, confident, high-trust, modern industrial",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "clean reflections, no plastic AI sheen"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must provide clean empty space for later web copy overlay",
+    "must avoid visual clutter",
+    "must not feel like concept art or synthetic office stock",
+    "the generated image itself must contain no embedded text, no button, and no website UI"
+  ],
+  "avoid": [
+    "futuristic HUD overlays",
+    "floating circuit graphics on glass",
+    "generic fake analytics dashboards",
+    "random whiteboards or fake engineering sketches",
+    "crowded desks dominating the frame",
+    "too many office chairs as visual focus",
+    "cyberpunk glow",
+    "cartoonish rendering",
+    "soft fake textures",
+    "obvious AI artifacts",
+    "headline text",
+    "call-to-action button",
+    "website mockup overlay",
+    "readable words or numbers"
+  ]
+}

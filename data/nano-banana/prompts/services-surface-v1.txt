@@ -1,0 +1,39 @@
+{
+  "asset_type": "homepage section background image",
+  "business_context": "Rally Technology, Taiwanese industrial automation and control systems company",
+  "goal": "Create a low-distraction industrial background that supports the Services section and preserves readability for a dense content layout",
+  "scene": "A restrained industrial panel or systems environment with believable geometry, materials, and controlled visual depth",
+  "subject": "The background surface and industrial structure are the subject; no dominant people, no hero focal point, no action scene",
+  "reality_anchors": [
+    "credible switchboard or industrial systems surface",
+    "matte coated metal and restrained panel detail",
+    "controlled industrial lighting",
+    "background-first composition for website content overlay"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad readable zones for a heading and eight services content items",
+    "focal_structure": "background support only; no strong hero focal point",
+    "camera": "industrial interior photography with stable perspective"
+  },
+  "lighting": {
+    "style": "premium commercial industrial photography",
+    "mood": "technical, calm, dependable",
+    "contrast": "low to moderate for text readability",
+    "surface_behavior": "controlled highlights without glossy plastic sheen"
+  },
+  "commercial_constraints": [
+    "must function as a section background rather than a standalone hero image",
+    "must support clear readability for a multi-column services layout",
+    "must look photorealistic and commercially usable",
+    "the image must contain no embedded text, no buttons, and no floating UI"
+  ],
+  "avoid": [
+    "busy action scene",
+    "dominant operator figure",
+    "fake dashboards or floating UI panels",
+    "high-contrast hero framing",
+    "neon sci-fi glow",
+    "obvious AI artifacts"
+  ]
+}

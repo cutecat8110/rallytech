@@ -1,0 +1,30 @@
+{
+  "slot": "mission-square",
+  "liveSource": "stock",
+  "states": {
+    "mission": {
+      "stock": {
+        "src": "/images/demo/home/mission-tab-mission.jpg",
+        "alt": "",
+        "label": "Mission State Stock Image",
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
+        "licenseNote": "Pexels License",
+        "notes": "Current approved stock image for the mission tab state."
+      },
+      "candidates": []
+    },
+    "join-us": {
+      "stock": {
+        "src": "/images/demo/home/mission-tab-join-us.jpg",
+        "alt": "",
+        "label": "Join Us State Stock Image",
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/female-engineer-with-equipment-3862635/",
+        "licenseNote": "Pexels License",
+        "notes": "Current approved stock image for the Join Us tab state."
+      },
+      "candidates": []
+    }
+  }
+}

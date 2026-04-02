@@ -1,0 +1,81 @@
+{
+  "slot": "home-hero",
+  "source_refs": [
+    "Google official Gemini image generation docs - model capability and product positioning",
+    "External methodology: The JSON Prompting Playbook (pattern summary only, not verbatim transcription)",
+    "External methodology: 20 Nano Banana 2 Prompts You Need to Start Using Immediately (pattern summary only, not verbatim transcription)",
+    "Project evidence: repo candidate review and promotion workflow"
+  ],
+  "recipe_ids": [
+    "hero-background-right-safe-area",
+    "operator-as-scale-only",
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "color-material-control"
+  ],
+  "business_goal": "Build trust in Rally Technology's industrial automation and control-integration capability",
+  "page_role": "Homepage hero image",
+  "visual_message": "A real, modern, commercially usable industrial control environment for a B2B technology website",
+  "reference_roles": {
+    "image_1": "composition and lens rhythm reference",
+    "image_2": "optional material and industrial credibility reference"
+  },
+  "overlay_policy": "empty-safe-area-no-embedded-text",
+  "iteration_hypothesis": "Using stronger realism anchors plus a right-side empty safe area will reduce AI-looking artifacts and improve homepage usability",
+  "technical_signals": {
+    "lens": "35mm to 50mm architectural interior photography range",
+    "aperture": "f/2.8 to f/4 for realistic depth without over-blur",
+    "light_source": "soft premium interior light with controlled screen glow",
+    "time_of_day": "late afternoon or controlled interior daylight-neutral mood",
+    "motion_rule": "mostly still scene; no dramatic motion blur unless intentionally testing atmosphere"
+  },
+  "spatial_positioning": [
+    "monitoring wall sits in the left-center visual field",
+    "right side remains open as clean negative space",
+    "operator appears only as a secondary scale cue",
+    "glass partition can sit in the foreground to create depth"
+  ],
+  "visual_standard": "architectural interior photography with corporate photography discipline",
+  "color_restriction": "restrained industrial neutrals, charcoal, matte grey, muted steel, controlled screen greens or cyans only; avoid purple-blue neon wash",
+  "material_notes": [
+    "matte metal consoles",
+    "glass partitions with realistic reflections",
+    "composite work surfaces",
+    "screen glow without plastic sheen"
+  ],
+  "reality_anchor": [
+    "glass-partitioned control room",
+    "credible SCADA-style monitoring wall",
+    "matte metal and composite console surfaces",
+    "restrained industrial interior architecture"
+  ],
+  "composition_rule": {
+    "format": "16:9",
+    "hero_safe_area": "right side reserved as empty safe area for later headline and CTA overlay",
+    "focal_structure": "one main focal point, one depth layer, no clutter",
+    "camera": "architectural interior photography, eye-level or slightly elevated"
+  },
+  "lighting_rule": {
+    "style": "premium commercial interior photography",
+    "mood": "calm, high-trust, modern industrial",
+    "contrast": "controlled",
+    "surface_behavior": "clean reflections, no plastic AI sheen"
+  },
+  "disallowed_ai_signals": [
+    "futuristic HUD overlays",
+    "floating circuit graphics on glass",
+    "generic fake analytics dashboards",
+    "random whiteboards",
+    "crowded desks",
+    "too many office chairs as focus",
+    "cyberpunk glow",
+    "cartoon textures",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

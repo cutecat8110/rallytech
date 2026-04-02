@@ -1,100 +1,175 @@
 <script setup lang="ts">
-// 服務：對齊 docs/references/pentagon/首頁文案整理.md
+import { brandGhostButtonTheme } from '~/utils/button-themes'
+
 const serviceItems = [
   {
-    title: 'SCADA 與 HMI 圖控',
-    description:
-      '提供 SCADA / HMI 圖控設計與監控畫面建置，提升現場可視化與操作效率。',
-    tone: 'primary'
+    icon: 'i-lucide-monitor-smartphone',
+    title: 'SCADA / HMI 圖控',
+    description: '建立可監看、可操作、可追溯的監控介面。'
   },
   {
-    title: 'I&E 服務',
-    description: '提供儀控與電氣工程服務，涵蓋 FAT / SAT 支援與現場問題排除。',
-    tone: 'secondary'
+    icon: 'i-lucide-briefcase-business',
+    title: '儀電整合',
+    description: '支援 FAT、SAT、試車驗收與現場故障排除。'
   },
   {
-    title: 'PLC / DCS 程式開發與系統移轉',
-    description: '提供 PLC / DCS 控制程式開發、升級與系統移轉服務。',
-    tone: 'neutral'
+    icon: 'i-lucide-cpu',
+    title: 'PLC / DCS 程式與搬遷',
+    description: '提供控制邏輯開發、搬遷規劃與分階段切換支援。'
   },
   {
+    icon: 'i-lucide-database-zap',
     title: 'PI Server',
-    description: '協助建置 PI 資料平台，提升資料整合與應用效率。',
-    tone: 'primary'
+    description: '建立即時資料採集、監看與跨系統整合基礎。'
   },
   {
-    title: 'Network Design',
-    description: '規劃工業通訊網路架構，強化系統穩定性與通訊效率。',
-    tone: 'secondary'
-  },
-  {
+    icon: 'i-lucide-database',
     title: 'Historians',
-    description: '建置 Historian 歷史資料系統，提升資料留存與應用價值。',
-    tone: 'neutral'
+    description: '支援長期資料保存、趨勢分析與追溯需求。'
   },
   {
-    title: 'Remote Monitoring and Data',
-    description: '建置遠端監控與資料備援機制，提升營運可靠度。',
-    tone: 'primary'
+    icon: 'i-lucide-network',
+    title: '工業網路設計',
+    description: '規劃穩定、可維護且具擴充性的工業通訊網路。'
   },
   {
-    title: 'Alarm Monitoring',
-    description: '透過告警監控機制，提升場域安全與即時應變能力。',
-    tone: 'secondary'
+    icon: 'i-lucide-radio-tower',
+    title: '遠端監控與資料備援',
+    description: '強化跨據點監看、資料持續性與備援能力。'
+  },
+  {
+    icon: 'i-lucide-bell-ring',
+    title: '告警監控',
+    description: '建立告警分級、通知邏輯與應變流程。'
   }
 ]
 </script>
 
 <template>
-  <section id="services" class="bg-neutral-100 section-sys-shell">
-    <div class="page-sys-shell">
-      <div class="text-center">
-        <p
-          class="type-sys-label-m tracking-[0.16em] text-primary-700 uppercase"
-        >
-          我們的服務
-        </p>
-        <h2 class="type-sys-display-m mt-4 text-neutral-600">
-          提供完整的工業自動化整合服務
-        </h2>
-      </div>
+  <section
+    id="services"
+    class="section-sys-shell relative overflow-hidden bg-sys-rally-services-surface text-white"
+  >
+    <div class="page-sys-shell--wide">
+      <div class="content-sys-rail">
+        <div class="mx-auto max-w-[38rem] text-center">
+          <p class="type-sys-kicker text-primary-300 uppercase">
+            Our Services
+          </p>
+          <h2 class="type-sys-headline-l mt-3 text-white">
+            支援工業自動化專案的整合型服務
+          </h2>
+        </div>
 
-      <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        <article
-          v-for="item in serviceItems"
-          :key="item.title"
-          class="shadow-sys-sm overflow-hidden rounded-2xl border border-neutral-300 bg-white"
-        >
-          <div
-            :class="{
-              'from-primary-700 to-primary-500': item.tone === 'primary',
-              'from-secondary-800 to-secondary-600': item.tone === 'secondary',
-              'from-neutral-600 to-neutral-500': item.tone === 'neutral'
-            }"
-            class="h-28 bg-gradient-to-br"
-          />
+        <div class="home-sys-services__grid">
+          <article
+            v-for="item in serviceItems"
+            :key="item.title"
+            class="home-sys-services__column"
+          >
+            <span class="home-sys-services__icon">
+              <UIcon :name="item.icon" class="size-4.5" />
+            </span>
 
-          <div class="p-5">
-            <h3 class="type-sys-headline-s text-neutral-700">
+            <h3 class="home-sys-services__title type-sys-title-m text-white">
               {{ item.title }}
             </h3>
             <p
-              class="type-sys-body-s mt-3 min-h-[5.5rem] leading-7 text-neutral-600"
+              class="home-sys-services__copy type-sys-body-s flex-1 text-white/72"
             >
               {{ item.description }}
             </p>
 
-            <UButton
-              to="#contact"
-              color="primary"
-              variant="ghost"
-              class="type-sys-label-s mt-4 px-0 text-primary-700 hover:text-primary-600"
-            >
-              閱讀更多
-            </UButton>
-          </div>
-        </article>
+            <UTheme :ui="brandGhostButtonTheme">
+              <UButton
+                to="#contact"
+                color="primary"
+                variant="ghost"
+                size="xs"
+                label="了解更多"
+                class="home-sys-services__action w-fit"
+              />
+            </UTheme>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.bg-sys-rally-services-surface {
+  background:
+    linear-gradient(180deg, rgb(4 9 14 / 0.68) 0%, rgb(4 9 14 / 0.9) 100%),
+    radial-gradient(circle at 78% 20%, rgb(48 187 165 / 0.08), transparent 26%),
+    url('/images/demo/home/services-industrial-panel-bg.jpg') 72% center / cover
+      no-repeat,
+    linear-gradient(145deg, rgb(255 255 255 / 0.02), rgb(255 255 255 / 0) 38%),
+    repeating-linear-gradient(
+      -34deg,
+      rgb(255 255 255 / 0.015) 0,
+      rgb(255 255 255 / 0.015) 18px,
+      transparent 18px,
+      transparent 44px
+    ),
+    linear-gradient(
+      165deg,
+      var(--color-secondary-950) 0%,
+      var(--color-secondary-900) 60%,
+      var(--color-secondary-800) 100%
+    );
+  background-blend-mode: normal, screen, soft-light, normal, normal, normal;
+}
+
+.home-sys-services__grid {
+  margin-top: 2.35rem;
+  display: grid;
+  gap: 2rem 1.75rem;
+}
+
+.home-sys-services__column {
+  display: flex;
+  min-height: 11.5rem;
+  flex-direction: column;
+  padding-top: 1rem;
+  border-top: 1px solid rgb(255 255 255 / 0.14);
+}
+
+.home-sys-services__icon {
+  display: inline-flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: rgb(161 235 223 / 0.94);
+  background: rgb(255 255 255 / 0.03);
+}
+
+.home-sys-services__title {
+  margin-top: 0.95rem;
+}
+
+.home-sys-services__copy {
+  max-width: 17rem;
+  margin-top: 0.65rem;
+}
+
+.home-sys-services__action {
+  margin-top: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .home-sys-services__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 2.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .home-sys-services__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.25rem 2rem;
+  }
+}
+</style>

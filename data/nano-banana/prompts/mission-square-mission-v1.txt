@@ -1,0 +1,45 @@
+{
+  "asset_type": "homepage mission tab square image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic square image for the Mission tab that communicates execution discipline and engineering trust",
+  "reference_usage": {
+    "image_1": "preserve subject crop and square framing logic",
+    "image_2": "optional equipment realism reference"
+  },
+  "scene": "A real engineering or technical work moment in an industrial environment",
+  "subject": "One technical subject or one tightly framed equipment interaction is the hero",
+  "reality_anchors": [
+    "credible engineering interaction",
+    "real industrial equipment context",
+    "compact square-friendly composition",
+    "commercially usable subject focus"
+  ],
+  "composition": {
+    "format": "1:1",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial subject-led engineering photography",
+    "cropping": "designed for a square website support image"
+  },
+  "lighting": {
+    "style": "premium commercial engineering photography",
+    "mood": "steady, reliable, execution-focused",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "real equipment and fabric textures"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must remain legible in a small square frame",
+    "must avoid clutter",
+    "the image itself must contain no embedded text and no website UI"
+  ],
+  "avoid": [
+    "generic office scene",
+    "crowded team photo",
+    "headline text",
+    "website UI overlay",
+    "plastic skin or fabric",
+    "obvious AI artifacts"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "slot": "mission-square",
+  "state_model": "state-aware",
+  "states": {
+    "mission": {
+      "source_refs": [
+        "Project evidence: homepage Mission tab image role",
+        "docs/references/首頁媒體素材來源.md",
+        "docs/references/Nano-Banana-提示詞與生成流程.md"
+      ],
+      "recipe_ids": [
+        "operator-as-scale-only",
+        "industrial-realism-anchors",
+        "composition-rescue",
+        "color-material-control"
+      ],
+      "business_goal": "Support the Mission tab with a compact, trustworthy engineering image that reinforces stable delivery and system discipline",
+      "page_role": "Homepage Mission tabs square image - mission state",
+      "visual_message": "A focused engineering action or equipment interaction that feels capable, disciplined, and operational",
+      "reference_roles": {
+        "image_1": "subject posture and crop reference",
+        "image_2": "equipment realism reference"
+      },
+      "overlay_policy": "square-image-no-embedded-text",
+      "iteration_hypothesis": "A tighter single-subject engineering image will reinforce the mission tab better than a wide environmental scene",
+      "technical_signals": {
+        "lens": "50mm to 85mm commercial subject photography range",
+        "aperture": "f/2.8 to f/4",
+        "light_source": "controlled industrial ambient light",
+        "time_of_day": "neutral interior light",
+        "motion_rule": "still or nearly still action, no dramatic motion"
+      },
+      "spatial_positioning": [
+        "subject fills the square crop cleanly",
+        "tooling or control surface can support context",
+        "background stays secondary and uncluttered",
+        "image must remain readable in a compact square frame"
+      ],
+      "visual_standard": "corporate engineering subject photography",
+      "color_restriction": "restrained industrial neutrals with controlled worksite accents only; avoid neon and hyper-saturation",
+      "material_notes": [
+        "real PPE and equipment textures",
+        "clean control hardware surfaces",
+        "no plastic sheen",
+        "believable subject edges"
+      ],
+      "reality_anchor": [
+        "credible engineer or technician interaction",
+        "real industrial equipment context",
+        "single clear subject emphasis",
+        "commercially usable square crop"
+      ],
+      "composition_rule": {
+        "format": "1:1",
+        "hero_safe_area": "not required",
+        "focal_structure": "one dominant subject with minimal background noise",
+        "camera": "commercial subject-led industrial photography"
+      },
+      "lighting_rule": {
+        "style": "premium commercial engineering photography",
+        "mood": "steady, reliable, execution-focused",
+        "contrast": "controlled and realistic",
+        "surface_behavior": "real subject and equipment response"
+      },
+      "disallowed_ai_signals": [
+        "generic office scene",
+        "crowded team photo",
+        "headline text",
+        "website UI",
+        "plastic skin or fabric",
+        "obvious AI artifacts"
+      ],
+      "change_log": {
+        "what_changed": "",
+        "why_changed": "",
+        "result_judgment": ""
+      },
+      "notes": ""
+    },
+    "join-us": {
+      "source_refs": [
+        "Project evidence: homepage Join Us tab image role",
+        "docs/references/首頁媒體素材來源.md",
+        "docs/references/Nano-Banana-提示詞與生成流程.md"
+      ],
+      "recipe_ids": [
+        "operator-as-scale-only",
+        "industrial-realism-anchors",
+        "named-visual-standard",
+        "color-material-control"
+      ],
+      "business_goal": "Support the Join Us collaboration state with a people-forward but still credible engineering image",
+      "page_role": "Homepage Mission tabs square image - join-us state",
+      "visual_message": "A collaborative engineering or technical subject that signals partnership, alignment, and field-ready teamwork",
+      "reference_roles": {
+        "image_1": "subject crop and human scale reference",
+        "image_2": "technical context reference"
+      },
+      "overlay_policy": "square-image-no-embedded-text",
+      "iteration_hypothesis": "A more collaborative technical subject will strengthen the Join Us state without drifting into generic recruiting stock",
+      "technical_signals": {
+        "lens": "50mm to 85mm commercial subject photography range",
+        "aperture": "f/2.8 to f/4",
+        "light_source": "soft controlled industrial or workshop light",
+        "time_of_day": "neutral indoor or shaded daylight",
+        "motion_rule": "calm and grounded, no exaggerated action pose"
+      },
+      "spatial_positioning": [
+        "subject remains primary in a square crop",
+        "technical environment supports the story without taking over",
+        "facial or posture cues should read collaborative rather than salesy",
+        "image must stay clean and credible at small size"
+      ],
+      "visual_standard": "commercial engineering collaboration photography",
+      "color_restriction": "restrained industrial neutrals with controlled human warmth; avoid fashion editorial or neon looks",
+      "material_notes": [
+        "real fabric and equipment materials",
+        "believable workshop or engineering textures",
+        "no beauty-retouch AI sheen",
+        "clean subject-background separation"
+      ],
+      "reality_anchor": [
+        "credible technical collaboration",
+        "real engineering or equipment context",
+        "human-led but still industrial",
+        "commercially usable square crop"
+      ],
+      "composition_rule": {
+        "format": "1:1",
+        "hero_safe_area": "not required",
+        "focal_structure": "one primary human subject with a clear support layer",
+        "camera": "commercial subject-led engineering photography"
+      },
+      "lighting_rule": {
+        "style": "premium commercial collaboration photography",
+        "mood": "approachable, capable, aligned",
+        "contrast": "controlled and realistic",
+        "surface_behavior": "real human and equipment textures"
+      },
+      "disallowed_ai_signals": [
+        "generic recruiting brochure smile",
+        "corporate office headshot feel",
+        "headline text",
+        "website UI",
+        "plastic skin or fake bokeh",
+        "obvious AI artifacts"
+      ],
+      "change_log": {
+        "what_changed": "",
+        "why_changed": "",
+        "result_judgment": ""
+      },
+      "notes": ""
+    }
+  }
+}

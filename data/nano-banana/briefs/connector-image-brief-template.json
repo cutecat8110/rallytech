@@ -1,0 +1,77 @@
+{
+  "slot": "connector-image",
+  "source_refs": [
+    "Project evidence: Engineering + Design Experts connector breakout image role",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "operator-as-scale-only",
+    "industrial-realism-anchors",
+    "composition-rescue",
+    "color-material-control"
+  ],
+  "business_goal": "Create a breakout-ready connector image that bridges the CTA band and footer with a credible engineering subject",
+  "page_role": "Homepage Engineering + Design Experts connector breakout image",
+  "visual_message": "A real engineering or field-operations subject with clear silhouette, cutout potential, and industrial credibility",
+  "reference_roles": {
+    "image_1": "subject posture and crop reference",
+    "image_2": "equipment or industrial realism reference"
+  },
+  "overlay_policy": "cutout-friendly-no-embedded-text",
+  "iteration_hypothesis": "A subject-led industrial image with strong silhouette control will work better as a breakout connector than a wide environmental scene",
+  "technical_signals": {
+    "lens": "50mm to 85mm commercial portrait range",
+    "aperture": "f/2.8 to f/4 with subject clarity",
+    "light_source": "controlled industrial ambient light or soft directional light",
+    "time_of_day": "neutral indoor or shaded exterior light",
+    "motion_rule": "still or nearly still subject; no dramatic action pose"
+  },
+  "spatial_positioning": [
+    "primary subject fills most of the frame height",
+    "background remains secondary and easy to separate visually",
+    "subject silhouette stays clean for later breakout treatment",
+    "equipment can support context without overpowering the figure"
+  ],
+  "visual_standard": "corporate engineering photography with strong subject isolation",
+  "color_restriction": "restrained industrial neutrals with controlled accent colors from PPE or equipment only; avoid neon and hyper-saturation",
+  "material_notes": [
+    "real fabric, PPE, and equipment materials",
+    "clean metal or industrial background surfaces",
+    "no plastic AI skin or sheen",
+    "subject edges remain believable and cutout-friendly"
+  ],
+  "reality_anchor": [
+    "credible engineer or technician subject",
+    "real industrial or equipment context",
+    "clear subject separation",
+    "commercially usable breakout silhouette"
+  ],
+  "composition_rule": {
+    "format": "4:5",
+    "hero_safe_area": "not required; subject silhouette and breakout potential come first",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial portrait or subject-led industrial photography"
+  },
+  "lighting_rule": {
+    "style": "premium commercial engineering portrait photography",
+    "mood": "reliable, capable, grounded",
+    "contrast": "controlled and punchy enough for silhouette separation",
+    "surface_behavior": "real subject textures and believable material response"
+  },
+  "disallowed_ai_signals": [
+    "generic smiling office portrait",
+    "crowded team group shot",
+    "over-stylized action pose",
+    "embedded copy or UI",
+    "plastic skin or fabric",
+    "cyberpunk lighting",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

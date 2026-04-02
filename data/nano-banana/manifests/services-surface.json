@@ -1,0 +1,14 @@
+{
+  "slot": "services-surface",
+  "liveSource": "stock",
+  "stock": {
+    "src": "/images/demo/home/services-industrial-panel-bg.jpg",
+    "alt": "工業面板背景",
+    "label": "Services Surface Stock Asset",
+    "source": "Pexels",
+    "assetPage": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
+    "licenseNote": "Pexels License",
+    "notes": "Canonical stock placeholder for the Services section background surface role."
+  },
+  "candidates": []
+}

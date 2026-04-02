@@ -1,92 +1,164 @@
 <script setup lang="ts">
-// About：核心條列（依 docs/references/pentagon/首頁文案整理.md）
-const aboutHighlights = [
+const aboutPoints = [
   {
-    label: '專業',
-    description: '由具實務經驗的工程團隊提供技術判斷與執行支援。'
+    icon: 'i-lucide-briefcase-business',
+    title: '專業能力',
+    description: '控制、儀控、試車驗收與現場協調以同一條交付路徑管理。'
   },
   {
-    label: '技術',
-    description: '結合工程技術與自動化整合能力，提供穩定且有效率的方案。'
+    icon: 'i-lucide-cpu',
+    title: '技術基礎',
+    description: '以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。'
   },
   {
-    label: '協作',
-    description: '與客戶及產業夥伴密切合作，確保專案順利落地。'
+    icon: 'i-lucide-handshake',
+    title: '協作方式',
+    description: '讓業主、廠商與現場團隊對齊在同一組專案重點上。'
   }
 ]
 </script>
 
 <template>
-  <section id="about" class="bg-neutral-100 section-sys-shell">
+  <section id="about" class="section-sys-shell bg-white">
     <div class="page-sys-shell">
-      <div class="grid items-start gap-12 lg:grid-cols-[1.15fr,0.85fr]">
-        <article>
-          <h2 class="type-sys-display-m text-neutral-600">
-            工業自動化與儀控整合的專業團隊
+      <div
+        class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16 xl:gap-20"
+      >
+        <article class="home-sys-about__copy max-w-lg">
+          <p
+            class="type-sys-label-m text-primary-700 uppercase tracking-[0.18em]"
+          >
+            About
+          </p>
+          <h2 class="type-sys-headline-l mt-4 text-neutral-900">
+            值得信賴的儀控、控制與工業資料整合夥伴
           </h2>
-
-          <p class="type-sys-body-m mt-7 leading-9 text-neutral-600">
-            雷力科技深耕工業自動化領域，成立於 20XX
-            年，專注於儀控整合與控制系統建置。
-            我們結合工程技術與執行效率，協助企業優化現場運轉與管理效能。
+          <p class="type-sys-body-m mt-5 max-w-[34rem] text-neutral-700">
+            雷力科技協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。
           </p>
 
-          <p class="type-sys-body-m mt-6 leading-9 text-neutral-600">
-            我們以專業、品質與長期合作為核心，持續為不同產業提供穩定可靠的工程服務與整合方案。
-          </p>
-
-          <ul class="mt-8 grid gap-4">
-            <li
-              v-for="highlight in aboutHighlights"
-              :key="highlight.label"
-              class="rounded-sm border border-neutral-300 bg-white p-4"
+          <div class="home-sys-about__points">
+            <article
+              v-for="point in aboutPoints"
+              :key="point.title"
+              class="home-sys-about__point"
             >
-              <p class="type-sys-title-m text-neutral-700">
-                <span class="font-semibold">{{ highlight.label }}</span>
-                : {{ highlight.description }}
-              </p>
-            </li>
-          </ul>
+              <span class="home-sys-about__point-icon">
+                <UIcon :name="point.icon" class="size-4.5" />
+              </span>
+              <div class="min-w-0">
+                <p class="type-sys-title-m text-neutral-900">
+                  {{ point.title }}
+                </p>
+                <p
+                  class="home-sys-about__point-copy type-sys-body-s text-neutral-700"
+                >
+                  {{ point.description }}
+                </p>
+              </div>
+            </article>
+          </div>
         </article>
 
-        <!-- About 視覺佔位：對齊參考站影片區位置 -->
-        <div class="space-y-5">
-          <div
-            class="shadow-sys-md relative overflow-hidden rounded-[2rem] border border-secondary-700/35 bg-gradient-to-br from-secondary-900 via-secondary-800 to-secondary-700 p-6"
-          >
-            <div
-              class="absolute top-4 right-4 h-14 w-14 rounded-full border border-white/30 bg-white/14"
-            />
-            <p class="type-sys-label-s tracking-widest text-white/72 uppercase">
-              主題視覺佔位
-            </p>
-            <div
-              class="mt-4 h-56 rounded-2xl border border-white/20 bg-white/8"
+        <figure
+          class="home-sys-about__media-composite justify-self-end"
+          aria-label="現代高科技建築與設施立面雙圖組合"
+        >
+          <div class="home-sys-about__media-pane">
+            <img
+              src="/images/demo/home/about-glass-office-towers.jpg"
+              alt="現代高科技商業大樓"
+              class="home-sys-about__media-image home-sys-about__media-image--left"
             />
           </div>
-
-          <article
-            class="shadow-sys-sm rounded-2xl border border-primary-300 bg-primary-50 p-5"
-          >
-            <p
-              class="type-sys-label-s tracking-widest text-primary-700 uppercase"
-            >
-              進一步了解
-            </p>
-            <p class="type-sys-body-s mt-2 text-primary-700">
-              了解雷力科技的一站式整合服務與導入流程。
-            </p>
-            <UButton
-              to="#one-touch-experience"
-              color="primary"
-              variant="solid"
-              class="type-sys-label-s mt-4 rounded-full px-6 text-sys-inverse"
-            >
-              進一步了解
-            </UButton>
-          </article>
-        </div>
+          <div class="home-sys-about__media-pane">
+            <img
+              src="/images/demo/home/about-glass-facade-detail.jpg"
+              alt="高科技建築玻璃立面細節"
+              class="home-sys-about__media-image home-sys-about__media-image--right"
+            />
+          </div>
+        </figure>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.home-sys-about__copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-sys-about__points {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
+.home-sys-about__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.home-sys-about__point-icon {
+  display: inline-flex;
+  width: 2.125rem;
+  height: 2.125rem;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--color-primary-100);
+  color: var(--color-primary-700);
+}
+
+.home-sys-about__point-copy {
+  max-width: 28rem;
+  margin-top: 0.25rem;
+}
+
+.home-sys-about__media-composite {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 24.5rem);
+  min-height: clamp(25rem, 39vw, 34rem);
+  margin-inline: auto;
+  overflow: hidden;
+  border: 1px solid rgb(15 23 42 / 0.06);
+  border-radius: 0 0 20rem 20rem;
+  box-shadow: var(--shadow-1);
+  background: rgb(255 255 255 / 0.98);
+}
+
+.home-sys-about__media-pane {
+  position: relative;
+  min-height: 100%;
+}
+
+.home-sys-about__media-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.03);
+}
+
+.home-sys-about__media-image--left {
+  object-position: 52% 6%;
+}
+
+.home-sys-about__media-image--right {
+  object-position: 72% 42%;
+}
+
+@media (max-width: 767px) {
+  .home-sys-about__media-composite {
+    min-height: 22rem;
+    width: min(100%, 18.25rem);
+  }
+}
+</style>

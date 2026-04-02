@@ -1,0 +1,38 @@
+{
+  "asset_type": "architectural detail image for a homepage About section",
+  "business_context": "Rally Technology, Taiwanese industrial automation and control systems company",
+  "goal": "Create a commercially usable architectural detail image that reinforces precision, modern engineering credibility, and restrained high-tech sophistication",
+  "scene": "A close architectural view of a modern glass facade with clean mullion rhythm and believable structural detail",
+  "subject": "The facade detail itself is the subject; no people, no vehicles, no documentary street scene",
+  "reality_anchors": [
+    "glass curtain wall detail",
+    "metal mullions and structural rhythm",
+    "clean facade geometry",
+    "credible daylight reflections"
+  ],
+  "composition": {
+    "format": "4:5",
+    "focal_structure": "one primary facade detail plane with secondary reflection depth",
+    "camera": "architectural detail photography with straight perspective and tight composition"
+  },
+  "lighting": {
+    "style": "premium commercial architectural photography",
+    "mood": "precise, modern, high-trust",
+    "contrast": "controlled",
+    "surface_behavior": "clean highlights and believable reflections"
+  },
+  "commercial_constraints": [
+    "must support an About section image pairing",
+    "must feel photorealistic and commercially usable",
+    "must avoid city-postcard or generic office-stock framing",
+    "the image must contain no embedded text, no signage, and no website UI"
+  ],
+  "avoid": [
+    "street-level clutter",
+    "busy pedestrians or traffic",
+    "fake holographic overlays",
+    "oversaturated skyline reflections",
+    "plastic AI sheen",
+    "obvious AI artifacts"
+  ]
+}

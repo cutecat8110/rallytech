@@ -1,0 +1,47 @@
+{
+  "asset_type": "homepage connector breakout image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic engineering subject image with clear breakout potential for a CTA connector band",
+  "reference_usage": {
+    "image_1": "preserve subject crop and silhouette logic",
+    "image_2": "optional industrial context or equipment realism reference"
+  },
+  "scene": "A real engineer or technician in a credible industrial or equipment context",
+  "subject": "One subject is the hero. The person or equipment relationship should feel real, capable, and cutout-friendly",
+  "reality_anchors": [
+    "credible engineer or technician role",
+    "real industrial or equipment context",
+    "clear subject separation from background",
+    "commercially usable breakout silhouette"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial subject-led industrial photography",
+    "cropping": "designed for breakout treatment in a website connector section"
+  },
+  "lighting": {
+    "style": "premium commercial engineering portrait photography",
+    "mood": "reliable, capable, grounded",
+    "contrast": "controlled and clear enough for subject separation",
+    "surface_behavior": "real subject textures, believable material response"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must support later breakout or cutout treatment",
+    "must avoid background clutter",
+    "the image itself must contain no embedded text and no website UI"
+  ],
+  "avoid": [
+    "generic smiling office portrait",
+    "crowded team image",
+    "dramatic action pose",
+    "headline text",
+    "button graphics",
+    "cyberpunk lighting",
+    "plastic skin or fabric",
+    "obvious AI artifacts"
+  ]
+}

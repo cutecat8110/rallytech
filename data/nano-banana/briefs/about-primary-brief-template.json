@@ -1,0 +1,77 @@
+{
+  "slot": "about-primary",
+  "source_refs": [
+    "Project evidence: homepage About section image role and composition target",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "composition-rescue",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "business_goal": "Strengthen trust by showing a credible, modern technology facility or architectural facade",
+  "page_role": "Homepage About section primary image",
+  "visual_message": "An established, high-tech engineering environment expressed through a clean architectural exterior",
+  "reference_roles": {
+    "image_1": "composition and silhouette reference",
+    "image_2": "material, facade detail, and realism reference"
+  },
+  "overlay_policy": "no-embedded-text-no-ui",
+  "iteration_hypothesis": "A tighter architectural composition with clear facade realism will better support the About section than a generic city or office image",
+  "technical_signals": {
+    "lens": "50mm to 70mm architectural exterior photography range",
+    "aperture": "f/4 to f/5.6 for facade clarity",
+    "light_source": "controlled daylight with clean reflective glass behavior",
+    "time_of_day": "late morning or late afternoon neutral daylight",
+    "motion_rule": "still architectural shot with no people or vehicles as the primary subject"
+  },
+  "spatial_positioning": [
+    "building facade dominates the frame",
+    "street-level clutter stays minimal",
+    "vertical structure remains legible even in a cropped web container",
+    "secondary facade detail can support texture without stealing focus"
+  ],
+  "visual_standard": "architectural exterior photography with corporate brand discipline",
+  "color_restriction": "restrained glass, steel, concrete, and cool neutral daylight tones; avoid oversaturated skies and neon reflections",
+  "material_notes": [
+    "glass curtain wall",
+    "brushed metal framing",
+    "clean architectural joints",
+    "realistic reflections without plastic sheen"
+  ],
+  "reality_anchor": [
+    "high-tech office tower or engineering facility exterior",
+    "credible modern facade geometry",
+    "clean glazing and structural rhythm",
+    "minimal urban clutter"
+  ],
+  "composition_rule": {
+    "format": "4:5",
+    "hero_safe_area": "not required; composition should prioritize facade legibility",
+    "focal_structure": "one dominant facade mass with one supporting detail rhythm",
+    "camera": "architectural exterior photography, eye-level or slightly upward"
+  },
+  "lighting_rule": {
+    "style": "premium commercial architectural photography",
+    "mood": "confident, precise, established",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "clean glass highlights and believable reflections"
+  },
+  "disallowed_ai_signals": [
+    "generic skyline postcard composition",
+    "busy traffic or crowds dominating the frame",
+    "fake futuristic holograms",
+    "embedded signage or readable text",
+    "plastic reflections",
+    "cartoon textures",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

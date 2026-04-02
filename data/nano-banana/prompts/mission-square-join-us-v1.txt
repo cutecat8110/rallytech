@@ -1,0 +1,45 @@
+{
+  "asset_type": "homepage join-us tab square image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic square image for the Join Us state that feels collaborative, technical, and commercially credible",
+  "reference_usage": {
+    "image_1": "preserve subject crop and square framing logic",
+    "image_2": "optional collaboration or technical context reference"
+  },
+  "scene": "A real engineering collaboration moment or a people-forward technical scene in an industrial environment",
+  "subject": "One primary technical subject leads the frame; the image should suggest alignment and partnership without looking like generic recruiting stock",
+  "reality_anchors": [
+    "credible technical collaboration",
+    "real engineering or equipment context",
+    "clean square-friendly composition",
+    "commercially usable subject emphasis"
+  ],
+  "composition": {
+    "format": "1:1",
+    "hero_safe_area": "not required",
+    "focal_structure": "one primary human subject with a clear support layer",
+    "camera": "commercial subject-led engineering photography",
+    "cropping": "designed for a square website support image"
+  },
+  "lighting": {
+    "style": "premium commercial collaboration photography",
+    "mood": "approachable, capable, aligned",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "real human and equipment textures"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must remain legible in a small square frame",
+    "must avoid generic HR brochure energy",
+    "the image itself must contain no embedded text and no website UI"
+  ],
+  "avoid": [
+    "generic recruiting smile",
+    "fashion editorial styling",
+    "headline text",
+    "website UI overlay",
+    "plastic skin or fake bokeh",
+    "obvious AI artifacts"
+  ]
+}

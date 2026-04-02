@@ -1,0 +1,20 @@
+Usage:
+Create a photorealistic homepage hero image for a Taiwanese industrial automation company website.
+
+Scene:
+Show a modern industrial automation main control room with multiple SCADA and HMI displays, a disciplined engineering environment, and credible control-system context. The room should feel operational and real, not futuristic fantasy.
+
+Composition / Camera:
+Use a wide 16:9 frame for a website hero. Keep the primary visual weight in the center-left to center area and preserve usable negative space for headline and CTA overlay. Camera should feel slightly elevated or eye-level, with clean perspective and no fisheye distortion.
+
+Materials / Lighting:
+Use realistic glass, metal, matte console surfaces, and softly glowing control screens. Lighting should feel calm, premium, and dependable, with controlled contrast and no dramatic nightclub colors.
+
+Brand Tone:
+Professional, reliable, high-trust industrial B2B. Sophisticated and technical. Clean, modern, and grounded in real automation delivery work.
+
+Avoid:
+No science-fiction styling, no fantasy interfaces, no visible brand logos, no readable UI text on screens, no warning tape aesthetics, no chaotic wiring mess, no excessive orange cinematic flare, no exaggerated cyberpunk lighting, no watermark, no collage layout.
+
+Output:
+Generate a high-quality photorealistic hero image with a polished but realistic industrial atmosphere, suitable for a corporate website. The final composition must remain usable behind white headline text and a primary CTA button.

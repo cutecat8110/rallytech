@@ -1,0 +1,2 @@
+.env.example
+data/nano-banana/prompts/*.txt

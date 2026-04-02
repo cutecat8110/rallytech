@@ -1,0 +1,69 @@
+{
+  "slot": "home-hero",
+  "liveSource": "stock",
+  "stock": {
+    "src": "/images/demo/home/hero-simulator-control-room.jpg",
+    "alt": "",
+    "label": "Stock Hero",
+    "source": "Pexels",
+    "assetPage": "https://www.pexels.com/photo/engineers-using-simulator-3862132/",
+    "licenseNote": "Pexels License",
+    "notes": "Current approved homepage Hero asset."
+  },
+  "candidates": [
+    {
+      "slot": "home-hero",
+      "candidateId": "home-hero-20260401091817773-8vhfv7",
+      "label": "Nano Hero Candidate",
+      "model": "gemini-3.1-flash-image-preview",
+      "promptId": "home-hero-v1",
+      "promptFile": "data/nano-banana/prompts/home-hero-v1.txt",
+      "prompt": "Usage:\nCreate a photorealistic homepage hero image for a Taiwanese industrial automation company website.\n\nScene:\nShow a modern industrial automation main control room with multiple SCADA and HMI displays, a disciplined engineering environment, and credible control-system context. The room should feel operational and real, not futuristic fantasy.\n\nComposition / Camera:\nUse a wide 16:9 frame for a website hero. Keep the primary visual weight in the center-left to center area and preserve usable negative space for headline and CTA overlay. Camera should feel slightly elevated or eye-level, with clean perspective and no fisheye distortion.\n\nMaterials / Lighting:\nUse realistic glass, metal, matte console surfaces, and softly glowing control screens. Lighting should feel calm, premium, and dependable, with controlled contrast and no dramatic nightclub colors.\n\nBrand Tone:\nProfessional, reliable, high-trust industrial B2B. Sophisticated and technical. Clean, modern, and grounded in real automation delivery work.\n\nAvoid:\nNo science-fiction styling, no fantasy interfaces, no visible brand logos, no readable UI text on screens, no warning tape aesthetics, no chaotic wiring mess, no excessive orange cinematic flare, no exaggerated cyberpunk lighting, no watermark, no collage layout.\n\nOutput:\nGenerate a high-quality photorealistic hero image with a polished but realistic industrial atmosphere, suitable for a corporate website. The final composition must remain usable behind white headline text and a primary CTA button.",
+      "aspectRatio": "16:9",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/hero-simulator-control-room.jpg",
+      "createdAt": "2026-04-01T09:18:17.824Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/hero/home-hero-20260401091817773-8vhfv7.jpg",
+      "outputBytes": 2535402,
+      "notes": "Reference-assisted validation rerun after API permission update.",
+      "responseText": null
+    },
+    {
+      "slot": "home-hero",
+      "candidateId": "home-hero-20260402013212629-rtqdwl",
+      "label": "Nano Hero Candidate",
+      "model": "gemini-3.1-flash-image-preview",
+      "promptId": "home-hero-v2",
+      "promptFile": "data/nano-banana/prompts/home-hero-v2.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage hero image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation and control systems company\",\n  \"goal\": \"Create a photorealistic, commercially usable B2B website hero image that looks real, modern, restrained, and trustworthy\",\n  \"reference_usage\": {\n    \"image_1\": \"preserve the overall room composition, spatial rhythm, and website-safe framing\",\n    \"image_2\": \"optional material or lighting reference only\"\n  },\n  \"scene\": \"A real industrial control center behind glass, with a clean integrated monitoring wall and modern engineering consoles\",\n  \"subject\": \"The room itself is the hero. One operator may appear only as a subtle scale cue, never as the main subject\",\n  \"reality_anchors\": [\n    \"glass-partitioned control room\",\n    \"credible SCADA-style monitoring wall\",\n    \"matte metal and composite console surfaces\",\n    \"modern industrial interior architecture\",\n    \"restrained, realistic process-control UI language\"\n  ],\n  \"composition\": {\n    \"format\": \"16:9\",\n    \"hero_safe_area\": \"reserve the right side as clean negative space for website headline and CTA\",\n    \"focal_structure\": \"one primary focal point in the left-center, one secondary depth layer, no clutter\",\n    \"camera\": \"architectural interior photography, eye-level or slightly elevated, realistic wide-angle perspective\",\n    \"cropping\": \"designed for a modern homepage hero, not a stock photo crop\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial interior photography\",\n    \"mood\": \"calm, confident, high-trust, modern industrial\",\n    \"contrast\": \"controlled and realistic\",\n    \"surface_behavior\": \"clean reflections, no plastic AI sheen\"\n  },\n  \"commercial_constraints\": [\n    \"must feel suitable for a modern B2B technology website\",\n    \"must be photorealistic\",\n    \"must support white headline text overlay\",\n    \"must avoid visual clutter\",\n    \"must not feel like concept art or synthetic office stock\"\n  ],\n  \"avoid\": [\n    \"futuristic HUD overlays\",\n    \"floating circuit graphics on glass\",\n    \"generic fake analytics dashboards\",\n    \"random whiteboards or fake engineering sketches\",\n    \"crowded desks dominating the frame\",\n    \"too many office chairs as visual focus\",\n    \"cyberpunk glow\",\n    \"cartoonish rendering\",\n    \"soft fake textures\",\n    \"obvious AI artifacts\"\n  ]\n}",
+      "aspectRatio": "16:9",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/hero-simulator-control-room.jpg",
+      "createdAt": "2026-04-02T01:32:12.688Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/hero/home-hero-20260402013212629-rtqdwl.jpg",
+      "outputBytes": 2616673,
+      "notes": "v2 structured JSON prompt with reference-assisted rerun after prompt research",
+      "responseText": null
+    },
+    {
+      "slot": "home-hero",
+      "candidateId": "home-hero-20260402013623433-s5t4l1",
+      "label": "Nano Hero Candidate",
+      "model": "gemini-3.1-flash-image-preview",
+      "promptId": "home-hero-v3",
+      "promptFile": "data/nano-banana/prompts/home-hero-v3.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage hero background image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation and control systems company\",\n  \"goal\": \"Create a photorealistic, commercially usable B2B website hero background image that looks real, modern, restrained, and trustworthy\",\n  \"reference_usage\": {\n    \"image_1\": \"preserve the overall room composition, spatial rhythm, and website-safe framing\",\n    \"image_2\": \"optional material or lighting reference only\"\n  },\n  \"scene\": \"A real industrial control center behind glass, with a clean integrated monitoring wall and modern engineering consoles\",\n  \"subject\": \"The room itself is the hero. One operator may appear only as a subtle scale cue, never as the main subject\",\n  \"reality_anchors\": [\n    \"glass-partitioned control room\",\n    \"credible SCADA-style monitoring wall\",\n    \"matte metal and composite console surfaces\",\n    \"modern industrial interior architecture\",\n    \"restrained, realistic process-control UI language\"\n  ],\n  \"composition\": {\n    \"format\": \"16:9\",\n    \"hero_safe_area\": \"reserve the right side as empty architectural negative space only, suitable for later website headline and CTA overlay\",\n    \"focal_structure\": \"one primary focal point in the left-center, one secondary depth layer, no clutter\",\n    \"camera\": \"architectural interior photography, eye-level or slightly elevated, realistic wide-angle perspective\",\n    \"cropping\": \"designed for a modern homepage hero background, not a stock photo crop\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial interior photography\",\n    \"mood\": \"calm, confident, high-trust, modern industrial\",\n    \"contrast\": \"controlled and realistic\",\n    \"surface_behavior\": \"clean reflections, no plastic AI sheen\"\n  },\n  \"commercial_constraints\": [\n    \"must feel suitable for a modern B2B technology website\",\n    \"must be photorealistic\",\n    \"must provide clean empty space for later web copy overlay\",\n    \"must avoid visual clutter\",\n    \"must not feel like concept art or synthetic office stock\",\n    \"the generated image itself must contain no embedded text, no button, and no website UI\"\n  ],\n  \"avoid\": [\n    \"futuristic HUD overlays\",\n    \"floating circuit graphics on glass\",\n    \"generic fake analytics dashboards\",\n    \"random whiteboards or fake engineering sketches\",\n    \"crowded desks dominating the frame\",\n    \"too many office chairs as visual focus\",\n    \"cyberpunk glow\",\n    \"cartoonish rendering\",\n    \"soft fake textures\",\n    \"obvious AI artifacts\",\n    \"headline text\",\n    \"call-to-action button\",\n    \"website mockup overlay\",\n    \"readable words or numbers\"\n  ]\n}",
+      "aspectRatio": "16:9",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/hero-simulator-control-room.jpg",
+      "createdAt": "2026-04-02T01:36:23.470Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/hero/home-hero-20260402013623433-s5t4l1.jpg",
+      "outputBytes": 2717486,
+      "notes": "v3 structured JSON prompt removing embedded headline/button artifacts",
+      "responseText": null
+    }
+  ]
+}

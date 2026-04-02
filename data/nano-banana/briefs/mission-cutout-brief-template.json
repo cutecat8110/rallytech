@@ -1,0 +1,77 @@
+{
+  "slot": "mission-cutout",
+  "source_refs": [
+    "Project evidence: homepage Mission section right-side cutout role",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "operator-as-scale-only",
+    "composition-rescue",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "business_goal": "Create a right-side mission cutout image that feels capable, grounded, and easy to isolate visually",
+  "page_role": "Homepage Mission section fixed cutout image",
+  "visual_message": "A single engineering subject with strong silhouette and credible industrial context",
+  "reference_roles": {
+    "image_1": "subject silhouette and crop reference",
+    "image_2": "equipment or environment realism reference"
+  },
+  "overlay_policy": "cutout-friendly-no-embedded-text",
+  "iteration_hypothesis": "A subject-led industrial portrait with clean silhouette control will support the fixed mission cutout better than a wider contextual scene",
+  "technical_signals": {
+    "lens": "50mm to 85mm commercial portrait range",
+    "aperture": "f/2.8 to f/4",
+    "light_source": "soft directional industrial ambient light",
+    "time_of_day": "neutral interior or shaded exterior light",
+    "motion_rule": "still or near-still subject"
+  },
+  "spatial_positioning": [
+    "single subject fills most of the frame height",
+    "background must stay secondary and separable",
+    "subject silhouette remains readable when clipped into a custom mask",
+    "equipment can support context without crowding the subject"
+  ],
+  "visual_standard": "premium engineering portrait photography",
+  "color_restriction": "restrained industrial neutrals with limited controlled accent colors; avoid neon and hyper-saturation",
+  "material_notes": [
+    "real PPE, document, or equipment textures",
+    "believable skin and fabric rendering",
+    "clean metal and industrial surfaces",
+    "no plastic AI sheen"
+  ],
+  "reality_anchor": [
+    "credible engineer or technician subject",
+    "real industrial context",
+    "strong silhouette for cutout treatment",
+    "commercially usable portrait crop"
+  ],
+  "composition_rule": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial subject-led industrial photography"
+  },
+  "lighting_rule": {
+    "style": "premium commercial portrait photography",
+    "mood": "capable, steady, trustworthy",
+    "contrast": "controlled and clear enough for subject separation",
+    "surface_behavior": "real subject textures and believable highlights"
+  },
+  "disallowed_ai_signals": [
+    "generic office portrait",
+    "group shot",
+    "exaggerated action pose",
+    "headline text",
+    "website UI",
+    "plastic skin or clothing",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

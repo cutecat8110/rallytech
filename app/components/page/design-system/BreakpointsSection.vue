@@ -4,9 +4,13 @@ import type { Breakpoint } from './types'
 
 // 斷點：尺寸規則
 const breakpoints: Breakpoint[] = [
-  { width: '375 / 640', device: '手機', padding: '16px' },
-  { width: '768 / 1024', device: '平板', padding: '40px' },
-  { width: '1280 / 1920', device: '筆電 / 桌機', padding: '80px' }
+  { width: '375 / 640', device: '手機', padding: '內容 16px / 寬版 16px' },
+  { width: '768 / 1024', device: '平板', padding: '內容 24px / 寬版 24px' },
+  {
+    width: '1280 / 1920',
+    device: '筆電 / 桌機',
+    padding: '內容 24px / 寬版 48px'
+  }
 ]
 </script>
 
@@ -53,6 +57,11 @@ const breakpoints: Breakpoint[] = [
           </tbody>
         </table>
       </div>
+
+      <p class="type-sys-body-s text-neutral-700">
+        內容區基線採 `1360px` boxed shell；頁首與全幅區塊改用 wide
+        shell，桌機左右 gutter 為 `48px`。
+      </p>
     </div>
   </section>
 </template>

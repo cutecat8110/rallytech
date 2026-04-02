@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import {
+  accentSolidButtonTheme,
+  darkGhostButtonTheme
+} from '~/utils/button-themes'
+
 // 色彩方向模型
 type ColorDirection = {
   name: string
@@ -6,6 +11,7 @@ type ColorDirection = {
   summary: string
   pageBg: string
   primary: string
+  primaryCta: string
   secondary: string
   accent: string
   heroFrom: string
@@ -28,6 +34,7 @@ const activeDirection: ColorDirection = {
     '以深黑階建立權威底盤，透過青綠主色建立品牌辨識，並以低亮藍灰與金屬暖點補出科技層次，保留企業官網的穩定可讀性。',
   pageBg: 'var(--color-secondary-950)',
   primary: 'var(--color-primary-500)',
+  primaryCta: 'var(--color-primary-700)',
   secondary: 'var(--color-secondary-950)',
   accent: 'var(--color-accent-500)',
   heroFrom: 'var(--color-secondary-950)',
@@ -57,6 +64,17 @@ const languageOptions = [
 // 語系：目前值
 const currentLanguage =
   languageOptions.find((option) => option.isCurrent) ?? languageOptions[0]
+
+const languageToggleButtonUi = {
+  leadingIcon:
+    'text-neutral-500 transition-colors group-hover:text-neutral-700',
+  trailingIcon:
+    'text-neutral-500 transition-colors group-hover:text-neutral-700'
+} as const
+
+const languageOptionButtonUi = {
+  label: 'font-medium'
+} as const
 
 // Header：導覽項目
 const heroNavItems = ['關於我們', '服務項目', '產業應用', '聯絡我們']
@@ -147,21 +165,14 @@ useSeoMeta({
                 type="button"
                 color="neutral"
                 variant="ghost"
-                class="group inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-neutral-600 transition-colors hover:bg-neutral-100/80 hover:text-neutral-900"
+                size="xs"
+                :label="currentLanguage?.label ?? '語系'"
+                leading-icon="i-ic-baseline-language"
+                trailing-icon="i-ic-baseline-keyboard-arrow-down"
+                :ui="languageToggleButtonUi"
+                class="group text-neutral-600 transition-colors hover:bg-neutral-100/80 hover:text-neutral-900"
                 aria-label="切換語系"
-              >
-                <UIcon
-                  name="i-ic-baseline-language"
-                  class="size-4 text-neutral-500 transition-colors group-hover:text-neutral-700"
-                />
-                <span class="type-sys-label-s text-current">
-                  {{ currentLanguage?.label ?? '語系' }}
-                </span>
-                <UIcon
-                  name="i-ic-baseline-keyboard-arrow-down"
-                  class="size-4 text-neutral-500 transition-colors group-hover:text-neutral-700"
-                />
-              </UButton>
+              />
 
               <template #content>
                 <div
@@ -174,17 +185,14 @@ useSeoMeta({
                     :aria-current="option.isCurrent ? 'page' : undefined"
                     :color="option.isCurrent ? 'primary' : 'neutral'"
                     :variant="option.isCurrent ? 'solid' : 'ghost'"
-                    class="w-full justify-between rounded-sm px-3 py-2"
-                  >
-                    <span class="type-sys-label-s font-medium">{{
-                      option.label
-                    }}</span>
-                    <UIcon
-                      v-if="option.isCurrent"
-                      name="i-ic-baseline-check"
-                      class="size-4 text-white/90"
-                    />
-                  </UButton>
+                    size="xs"
+                    :label="option.label"
+                    :trailing-icon="
+                      option.isCurrent ? 'i-ic-baseline-check' : undefined
+                    "
+                    :ui="languageOptionButtonUi"
+                    class="w-full justify-between"
+                  />
                 </div>
               </template>
             </UPopover>
@@ -200,7 +208,8 @@ useSeoMeta({
               type="button"
               color="primary"
               variant="solid"
-              class="type-sys-label-s hidden rounded-full px-4 py-2 font-semibold md:inline-flex"
+              size="sm"
+              class="hidden md:inline-flex"
             >
               聯絡我們
             </UButton>
@@ -242,22 +251,19 @@ useSeoMeta({
               {{ activeDirection.summary }}
             </p>
             <div class="mt-8 flex flex-wrap gap-3">
-              <UButton
-                type="button"
-                color="primary"
-                variant="solid"
-                class="type-sys-label-m rounded-full px-5 py-2"
-              >
+              <UButton type="button" color="primary" variant="solid" size="md">
                 預約諮詢
               </UButton>
-              <UButton
-                type="button"
-                color="neutral"
-                variant="ghost"
-                class="type-sys-label-m rounded-full bg-white/10 px-5 py-2 text-white/92 hover:bg-white/16 hover:text-white"
-              >
-                查看服務
-              </UButton>
+              <UTheme :ui="darkGhostButtonTheme">
+                <UButton
+                  type="button"
+                  color="neutral"
+                  variant="ghost"
+                  size="md"
+                >
+                  查看服務
+                </UButton>
+              </UTheme>
             </div>
             <div class="mt-10 grid gap-3 md:grid-cols-3">
               <div
@@ -284,7 +290,7 @@ useSeoMeta({
             <p class="type-sys-label-s text-white/68">主題快照</p>
             <div class="mt-4 grid gap-3">
               <div class="rounded-sm bg-white/5 px-3 py-2">
-                <p class="type-sys-label-s text-white/60">主色</p>
+                <p class="type-sys-label-s text-white/60">品牌主色</p>
                 <div class="mt-2 flex items-center gap-2">
                   <span
                     class="h-3 w-3 rounded-full"
@@ -292,6 +298,18 @@ useSeoMeta({
                   />
                   <code class="type-sys-label-s text-white/88">{{
                     activeDirection.primary
+                  }}</code>
+                </div>
+              </div>
+              <div class="rounded-sm bg-white/5 px-3 py-2">
+                <p class="type-sys-label-s text-white/60">主 CTA 填色</p>
+                <div class="mt-2 flex items-center gap-2">
+                  <span
+                    class="h-3 w-3 rounded-full"
+                    :style="{ backgroundColor: activeDirection.primaryCta }"
+                  />
+                  <code class="type-sys-label-s text-white/88">{{
+                    activeDirection.primaryCta
                   }}</code>
                 </div>
               </div>
@@ -321,6 +339,10 @@ useSeoMeta({
               </div>
               <p class="type-sys-body-s text-white/74">
                 {{ activeDirection.tone }}
+              </p>
+              <p class="type-sys-body-s text-white/60">
+                品牌辨識維持 `primary-500`，全域 `primary solid` 按鈕填色採
+                `primary-700`，讓淺底與深底都保有更穩定的辨識度。
               </p>
             </div>
           </div>
@@ -520,22 +542,16 @@ useSeoMeta({
             這段是首頁結尾區塊的色彩測試點，確認深色背景下主要行動按鈕是否足夠突出。
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <UButton
-              type="button"
-              color="neutral"
-              variant="ghost"
-              class="type-sys-label-m bg-accent-700 hover:bg-accent-600 rounded-full px-5 py-2 text-white"
-            >
-              立即聯絡
-            </UButton>
-            <UButton
-              type="button"
-              color="neutral"
-              variant="ghost"
-              class="type-sys-label-m rounded-full bg-white/10 px-5 py-2 text-white/90 hover:bg-white/16 hover:text-white"
-            >
-              下載公司簡介
-            </UButton>
+            <UTheme :ui="accentSolidButtonTheme">
+              <UButton type="button" color="neutral" variant="ghost" size="md">
+                立即聯絡
+              </UButton>
+            </UTheme>
+            <UTheme :ui="darkGhostButtonTheme">
+              <UButton type="button" color="neutral" variant="ghost" size="md">
+                下載公司簡介
+              </UButton>
+            </UTheme>
           </div>
         </div>
 

@@ -1,0 +1,14 @@
+{
+  "slot": "mission-cutout",
+  "liveSource": "stock",
+  "stock": {
+    "src": "/images/demo/home/mission-engineer-cutout.jpg",
+    "alt": "",
+    "label": "Mission Cutout Stock Image",
+    "source": "Pexels",
+    "assetPage": "https://www.pexels.com/photo/engineer-reviewing-documents-in-factory-32845698/",
+    "licenseNote": "Pexels License",
+    "notes": "Current approved stock image for the mission cutout."
+  },
+  "candidates": []
+}

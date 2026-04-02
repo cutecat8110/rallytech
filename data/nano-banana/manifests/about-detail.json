@@ -1,0 +1,14 @@
+{
+  "slot": "about-detail",
+  "liveSource": "stock",
+  "stock": {
+    "src": "/images/demo/home/about-glass-facade-detail.jpg",
+    "alt": "現代玻璃立面細節",
+    "label": "About Detail Stock Asset",
+    "source": "Pexels",
+    "assetPage": "https://www.pexels.com/photo/reflective-glass-facade-of-modern-office-building-33643675/",
+    "licenseNote": "Pexels License",
+    "notes": "Canonical stock placeholder for the About section secondary facade-detail image role."
+  },
+  "candidates": []
+}

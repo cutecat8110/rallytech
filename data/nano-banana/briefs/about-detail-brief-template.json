@@ -1,0 +1,77 @@
+{
+  "slot": "about-detail",
+  "source_refs": [
+    "Project evidence: homepage About section secondary facade-detail image role",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "composition-rescue",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "business_goal": "Support trust and technical credibility with a precise architectural detail image that reinforces Rally's modern engineering positioning",
+  "page_role": "Homepage About section detail image",
+  "visual_message": "A refined, high-tech facade detail with believable geometry, restrained reflections, and strong material discipline",
+  "reference_roles": {
+    "image_1": "glass facade rhythm and composition reference",
+    "image_2": "material realism and reflection behavior reference"
+  },
+  "overlay_policy": "no-embedded-text-no-ui",
+  "iteration_hypothesis": "A tighter facade-detail crop with strong geometry and cleaner reflections will support the About pairing better than a street-level city photo",
+  "technical_signals": {
+    "lens": "70mm to 100mm architectural detail photography range",
+    "aperture": "f/5.6 to f/8 for facade clarity and depth control",
+    "light_source": "clean daylight with restrained reflective behavior",
+    "time_of_day": "late morning or late afternoon neutral daylight",
+    "motion_rule": "still architectural detail shot with no people or traffic as subject"
+  },
+  "spatial_positioning": [
+    "glass facade detail fills most of the frame",
+    "geometry and mullion rhythm remain legible in a web crop",
+    "street-level clutter stays outside the focal area",
+    "reflections support realism without turning into skyline noise"
+  ],
+  "visual_standard": "premium architectural facade-detail photography with corporate brand discipline",
+  "color_restriction": "restrained glass, steel, concrete, and cool neutral daylight tones; avoid oversaturated sky reflections and neon tint",
+  "material_notes": [
+    "glass curtain wall detail",
+    "metal framing and mullions",
+    "clean structural joints",
+    "realistic reflections without plastic sheen"
+  ],
+  "reality_anchor": [
+    "high-tech building facade detail",
+    "credible glazing system",
+    "clean facade geometry and rhythm",
+    "minimal urban clutter"
+  ],
+  "composition_rule": {
+    "format": "4:5",
+    "hero_safe_area": "not required; composition should prioritize detail rhythm and facade clarity",
+    "focal_structure": "one clear facade-detail focal plane with supporting reflection depth",
+    "camera": "architectural detail photography with straightened perspective"
+  },
+  "lighting_rule": {
+    "style": "premium commercial architectural photography",
+    "mood": "precise, modern, high-trust",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "clean highlights and believable reflections"
+  },
+  "disallowed_ai_signals": [
+    "street-scene documentary framing",
+    "busy pedestrians or traffic",
+    "fake holographic overlays",
+    "embedded signage or readable text",
+    "plastic reflections",
+    "cartoon textures",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

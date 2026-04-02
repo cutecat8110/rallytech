@@ -1,0 +1,46 @@
+{
+  "asset_type": "homepage mission cutout image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic subject-led image for the fixed mission cutout that feels reliable, grounded, and easy to isolate visually",
+  "reference_usage": {
+    "image_1": "preserve subject silhouette and cutout-ready crop",
+    "image_2": "optional industrial realism reference"
+  },
+  "scene": "A real engineer or technician in a credible industrial setting",
+  "subject": "One subject is the hero. The image should prioritize a clean silhouette and believable engineering context",
+  "reality_anchors": [
+    "credible engineer or technician subject",
+    "real industrial context",
+    "strong cutout-friendly silhouette",
+    "commercially usable portrait crop"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial subject-led industrial photography",
+    "cropping": "designed for later mask or breakout treatment"
+  },
+  "lighting": {
+    "style": "premium commercial engineering portrait photography",
+    "mood": "capable, steady, trustworthy",
+    "contrast": "controlled and clear enough for subject separation",
+    "surface_behavior": "real fabric, skin, and equipment textures"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must support later cutout treatment",
+    "must avoid background clutter",
+    "the image itself must contain no embedded text and no website UI"
+  ],
+  "avoid": [
+    "generic office portrait",
+    "group shot",
+    "dramatic action pose",
+    "headline text",
+    "website UI overlay",
+    "plastic skin or clothing",
+    "obvious AI artifacts"
+  ]
+}

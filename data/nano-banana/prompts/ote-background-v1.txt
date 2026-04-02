@@ -1,0 +1,46 @@
+{
+  "asset_type": "homepage one-touch experience background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
+  "goal": "Create a photorealistic, commercially usable background image for an integrated operations or monitoring experience section",
+  "reference_usage": {
+    "image_1": "preserve overall composition, depth, and overlay-safe framing",
+    "image_2": "optional equipment or material realism reference"
+  },
+  "scene": "A real integrated operations, monitoring, or control environment with credible industrial systems context",
+  "subject": "The environment is the hero, with equipment and monitoring context supporting a layered website composition",
+  "reality_anchors": [
+    "credible monitoring wall or data-room context",
+    "restrained industrial interior architecture",
+    "real equipment surfaces",
+    "calm operational atmosphere"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve space for heading and overlay list",
+    "focal_structure": "one primary background anchor and one supporting depth layer",
+    "camera": "architectural interior photography, eye-level or slightly elevated",
+    "cropping": "designed for a website section background, not a stock snapshot"
+  },
+  "lighting": {
+    "style": "premium commercial interior photography",
+    "mood": "calm, integrated, high-trust, technical",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "restrained display glow, no synthetic plastic sheen"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B technology website",
+    "must be photorealistic",
+    "must support layered section content",
+    "must avoid visual clutter",
+    "the image itself must contain no embedded text, no button, and no website UI"
+  ],
+  "avoid": [
+    "floating HUD overlays",
+    "generic fake analytics dashboards",
+    "headline text",
+    "website mockup overlay",
+    "purple neon glow",
+    "crowded desks or server clichés dominating the frame",
+    "obvious AI artifacts"
+  ]
+}

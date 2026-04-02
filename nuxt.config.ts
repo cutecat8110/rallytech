@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/ui'],
 
   devtools: {
-    enabled: true
+    enabled: false
   },
 
   css: ['~/assets/css/main.css'],
@@ -21,5 +21,17 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  fonts: {
+    families: [
+      {
+        name: 'IBM Plex Sans TC',
+        provider: 'local',
+        global: true,
+        weights: [400, 500, 600, 700],
+        styles: ['normal']
+      }
+    ]
   }
 })

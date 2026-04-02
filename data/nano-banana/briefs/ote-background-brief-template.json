@@ -1,0 +1,76 @@
+{
+  "slot": "ote-background",
+  "source_refs": [
+    "Project evidence: homepage One-Touch Experience section background role",
+    "docs/references/首頁媒體素材來源.md",
+    "docs/references/Nano-Banana-提示詞與生成流程.md"
+  ],
+  "recipe_ids": [
+    "hero-background-right-safe-area",
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "anti-stock-anti-hud"
+  ],
+  "business_goal": "Support the One-Touch Experience section with a credible integrated operations background that strengthens technical trust",
+  "page_role": "Homepage One-Touch Experience background poster image",
+  "visual_message": "A real control, monitoring, or integrated operations environment that feels dependable and system-level",
+  "reference_roles": {
+    "image_1": "composition and depth reference",
+    "image_2": "material, equipment, and realism reference"
+  },
+  "overlay_policy": "list-overlay-no-embedded-text",
+  "iteration_hypothesis": "A calmer operations backdrop with strong realism anchors will support overlay content better than a literal busy control room snapshot",
+  "technical_signals": {
+    "lens": "35mm to 50mm interior architectural photography range",
+    "aperture": "f/2.8 to f/4 with controlled depth",
+    "light_source": "soft interior illumination with restrained screen glow",
+    "time_of_day": "neutral controlled interior lighting",
+    "motion_rule": "still environment with no dramatic action blur"
+  },
+  "spatial_positioning": [
+    "main monitoring or equipment zone sits behind the overlay area",
+    "background should retain readable depth without cluttering the panel area",
+    "foreground elements remain minimal",
+    "architectural negative space stays available for section content layering"
+  ],
+  "visual_standard": "corporate interior systems photography with restrained industrial mood",
+  "color_restriction": "charcoal, matte grey, muted steel, controlled cyan or green display accents only; avoid neon or purple cast",
+  "material_notes": [
+    "matte equipment finishes",
+    "glass or acrylic partitions if present",
+    "realistic rack, console, or wall-display surfaces",
+    "screen glow without synthetic plastic sheen"
+  ],
+  "reality_anchor": [
+    "integrated operations environment",
+    "credible monitoring wall or data-room context",
+    "restrained industrial interior",
+    "clear spatial depth with realistic equipment"
+  ],
+  "composition_rule": {
+    "format": "16:9",
+    "hero_safe_area": "preserve space for overlay list and heading",
+    "focal_structure": "one primary background anchor and one supporting depth layer",
+    "camera": "architectural interior photography, eye-level or slightly elevated"
+  },
+  "lighting_rule": {
+    "style": "premium commercial interior photography",
+    "mood": "calm, integrated, high-trust, technical",
+    "contrast": "controlled",
+    "surface_behavior": "clean reflections and believable display light"
+  },
+  "disallowed_ai_signals": [
+    "fake dashboard collage",
+    "excessive server-room cliché without systems context",
+    "HUD overlays or floating data graphics",
+    "readable words or UI text",
+    "exaggerated sci-fi glow",
+    "obvious AI artifacts"
+  ],
+  "change_log": {
+    "what_changed": "",
+    "why_changed": "",
+    "result_judgment": ""
+  },
+  "notes": ""
+}

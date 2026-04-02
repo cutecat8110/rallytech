@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // cspell:words iconify
+import { darkOutlineButtonTheme } from '~/utils/button-themes'
 import type { Topic } from './types'
 
 const previewRoute = '/design-system'
@@ -64,7 +65,7 @@ const quickLinks: Topic[] = [
 
 const designPrinciples = [
   '語意優先：先定角色，再選色階',
-  'Nuxt UI 三層：app.config.ts → UTheme → 元件 :ui/class',
+  'Nuxt UI 三層：app/app.config.ts → UTheme → 元件 :ui/class',
   '色彩鎖定：深色骨架統一使用 Secondary 700-950'
 ] as const
 </script>
@@ -131,22 +132,14 @@ const designPrinciples = [
               <li v-for="item in designPrinciples" :key="item">• {{ item }}</li>
             </ul>
             <div class="grid gap-3 sm:grid-cols-2">
-              <UButton
-                color="primary"
-                variant="solid"
-                block
-                class="rounded-full"
-              >
+              <UButton color="primary" variant="solid" block>
                 主要行動按鈕範式
               </UButton>
-              <UButton
-                block
-                color="neutral"
-                variant="outline"
-                class="rounded-full border-white/30 text-white hover:bg-white/10"
-              >
-                深色次操作
-              </UButton>
+              <UTheme :ui="darkOutlineButtonTheme">
+                <UButton block color="neutral" variant="outline">
+                  深色次操作
+                </UButton>
+              </UTheme>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 # references 對照導覽
 
-最後更新：2026-03-31
+最後更新：2026-04-02
 來源網址：https://pentagoneng.com/（multi-page reference）
 
 ## 文件目的
@@ -32,6 +32,36 @@
 2. 依同編號同時開 `source`、`en`、`zh-tw` 三份檔。
 3. 先看 `Block Map` / `區塊總覽`，確認這一頁有哪些區塊。
 4. 依畫面順序對照同一個區塊，先讀 `source` 原文，再改 `en` 與 `zh-tw`。
+
+若任務是首頁高擬真重構，再補看：
+
+5. [首頁視覺真相與殘留判讀.md](./首頁視覺真相與殘留判讀.md)
+6. 執行 `npm run capture:reference:home` 與 `npm run capture:local:home`，以完整載入截圖做反覆對照。
+
+## AI 圖像研究附錄
+
+AI 圖像流程的正式 owner 是 [`../project/05-Reference-Clone工作流與降級規範.md`](../project/05-Reference-Clone工作流與降級規範.md)。
+
+本資料夾只保留研究附錄與 prompt appendix：
+
+- [首頁媒體素材來源.md](./首頁媒體素材來源.md)
+  用於記錄 source / licensed visuals 的來源、授權與 local filename。
+- [Nano-Banana-提示詞與生成流程.md](./Nano-Banana-提示詞與生成流程.md)
+  用於 AI 圖像提示詞優化、研究來源分級、候選圖判讀與 promotion 前檢查。
+- [Nano-Banana-提示詞模式附錄.md](./Nano-Banana-提示詞模式附錄.md)
+  用於挑選可重用 recipe、建立 `recipe_ids`、對應失敗模式與下一輪 prompt 迭代。
+
+規則：
+
+- `references` 可以保存 prompt research、對照筆記與候選圖判讀。
+- `references` 不保存 execution state，例如 active brief、active prompt、manifest 或 candidate history。
+- 真正的 canonical path 在 [`../../data/nano-banana/README.md`](../../data/nano-banana/README.md)：
+  - `../../data/nano-banana/briefs/`
+  - `../../data/nano-banana/prompts/`
+  - `../../data/nano-banana/manifests/`
+- 長期圖像 guardrails 在 [`../../.agents/ai-image-context.md`](../../.agents/ai-image-context.md)。
+- 真正的 phase gate、claim labels、acceptance metadata 仍以 `project/05` 為準。
+- 不把 Nano / imagegen research appendix 當成 clone workflow 主檔。
 
 ## 區塊結構（固定）
 
