@@ -183,8 +183,10 @@ const aboutPoints = computed(() =>
 }
 
 .home-sys-about__motif {
+  --motif-position: absolute;
+
   position: absolute;
-  bottom: clamp(1rem, 2.4vw, 1.35rem);
+  bottom: clamp(1.3rem, 2.8vw, 1.75rem);
   left: clamp(-1rem, -1.4vw, -0.65rem);
   z-index: 2;
   transform: scale(0.88);
@@ -198,7 +200,7 @@ const aboutPoints = computed(() =>
   }
 
   .home-sys-about__motif {
-    bottom: 0.9rem;
+    bottom: 1.15rem;
     left: -0.8rem;
     transform: scale(0.68);
   }

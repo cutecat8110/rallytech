@@ -35,8 +35,9 @@ const { variant = 'hero', tone = 'dark' } = defineProps<{
     transparent
   );
   --motif-opacity: 0.9;
+  --motif-position: relative;
 
-  position: relative;
+  position: var(--motif-position);
   width: 7.25rem;
   height: 5.75rem;
   pointer-events: none;
@@ -85,8 +86,10 @@ const { variant = 'hero', tone = 'dark' } = defineProps<{
 }
 
 .brand-block-motif--light .brand-block-motif__block--highlight {
-  box-shadow: 0 0 0 1px
-    color-mix(in srgb, var(--color-secondary-950) 12%, transparent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-secondary-950) 24%, transparent),
+    0 0.45rem 0.9rem
+      color-mix(in srgb, var(--color-secondary-950) 14%, transparent);
 }
 
 .brand-block-motif--hero .brand-block-motif__block--primary {

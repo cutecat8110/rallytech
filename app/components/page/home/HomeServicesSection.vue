@@ -113,6 +113,8 @@ const serviceItems = computed(() =>
 }
 
 .home-sys-services__motif {
+  --motif-position: absolute;
+
   position: absolute;
   top: clamp(3rem, 7vw, 5.75rem);
   right: clamp(1.25rem, 8vw, 8rem);

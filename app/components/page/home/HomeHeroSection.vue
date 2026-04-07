@@ -91,6 +91,8 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 }
 
 .home-sys-hero__motif {
+  --motif-position: absolute;
+
   position: absolute;
   top: clamp(4.5rem, 12vw, 7.25rem);
   left: clamp(1.25rem, 8vw, 8.25rem);
