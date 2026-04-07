@@ -458,6 +458,36 @@ body,
   color: inherit;
 }
 
+:where(
+    button,
+    [role='button'],
+    input[type='button'],
+    input[type='submit'],
+    input[type='reset'],
+    summary
+  ):not(:disabled):not([aria-disabled='true']) {
+  cursor: pointer;
+}
+
+:where(
+  button,
+  [role='button'],
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'],
+  summary
+):disabled,
+:where(
+  button,
+  [role='button'],
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'],
+  summary
+)[aria-disabled='true'] {
+  cursor: not-allowed;
+}
+
 ::selection {
   background: color-mix(in srgb, var(--color-primary-500) 18%, transparent);
 }

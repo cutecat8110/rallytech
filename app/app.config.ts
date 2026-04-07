@@ -7,7 +7,7 @@ export default defineAppConfig({
     },
     button: {
       slots: {
-        base: 'rounded-sm'
+        base: 'cursor-pointer rounded-none disabled:cursor-not-allowed aria-disabled:cursor-not-allowed'
       },
       compoundVariants: [
         {

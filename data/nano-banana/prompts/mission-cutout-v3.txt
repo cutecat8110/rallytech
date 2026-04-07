@@ -1,0 +1,76 @@
+{
+  "asset_type": "homepage mission cutout image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage Mission section fixed cutout image",
+  "goal": "Create a photorealistic engineering subject image with a strong silhouette, believable industrial context, and clean commercial neutrality for later cutout treatment",
+  "visual_message": "A capable engineer in a real industrial setting, framed to feel premium and grounded without looking like a branded stock portrait",
+  "recipe_ids": [
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control",
+    "artifact-rescue"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the strong torso-and-head silhouette and cutout-ready crop",
+    "image_2": "optional industrial realism reference"
+  },
+  "technical_signals": {
+    "lens": "85mm commercial portrait photography",
+    "aperture": "f/2.8",
+    "light_source": "controlled industrial ambient light with subtle edge separation",
+    "time_of_day": "neutral indoor or shaded daylight",
+    "motion_rule": "calm, steady portrait stance with slight natural posture"
+  },
+  "spatial_positioning": [
+    "single subject dominates the frame from mid-torso upward",
+    "background stays soft and secondary",
+    "tablet or document, if present, stays angled away and unreadable",
+    "silhouette remains clean enough for later cutout treatment"
+  ],
+  "visual_standard": "premium commercial engineering portrait photography",
+  "color_restriction": "restrained industrial neutrals, workwear blues, muted metal tones, and realistic skin tones",
+  "material_notes": [
+    "real workwear fabrics",
+    "believable PPE or engineering accessories if present",
+    "clean skin texture",
+    "no plastic highlights"
+  ],
+  "scene": "A real engineer or technician in a credible industrial environment, framed for a strong breakout silhouette and premium website presentation",
+  "subject": "One subject is the hero, with industrial context kept supportive and secondary",
+  "reality_anchors": [
+    "credible engineer portrait",
+    "real industrial environment",
+    "clear cutout-friendly silhouette",
+    "commercially usable subject crop"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with minimal background noise",
+    "camera": "commercial subject-led portrait photography",
+    "cropping": "designed for later masking or breakout treatment"
+  },
+  "lighting": {
+    "style": "premium commercial engineering portrait photography",
+    "mood": "capable, steady, trustworthy",
+    "contrast": "controlled and clear enough for subject separation",
+    "surface_behavior": "real fabric, skin, and equipment texture response"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a refined B2B website",
+    "must be photorealistic",
+    "must support breakout or cutout treatment",
+    "must avoid generic office portrait energy",
+    "must not contain text, UI, logos, or branded safety gear"
+  ],
+  "avoid": [
+    "group shot",
+    "fashion editorial styling",
+    "dramatic action pose",
+    "headline text or signage focus",
+    "visible company logo",
+    "readable tablet or document content",
+    "beauty-retouched skin",
+    "obvious AI artifacts"
+  ]
+}

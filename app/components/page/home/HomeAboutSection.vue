@@ -1,21 +1,29 @@
 <script setup lang="ts">
-const aboutPoints = [
-  {
-    icon: 'i-lucide-briefcase-business',
-    title: '專業能力',
-    description: '控制、儀控、試車驗收與現場協調以同一條交付路徑管理。'
-  },
-  {
-    icon: 'i-lucide-cpu',
-    title: '技術基礎',
-    description: '以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。'
-  },
-  {
-    icon: 'i-lucide-handshake',
-    title: '協作方式',
-    description: '讓業主、廠商與現場團隊對齊在同一組專案重點上。'
-  }
+import { computed } from 'vue'
+import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
+
+const {
+  resolvedImage: aboutPrimaryImage,
+  handleImageError: handleAboutPrimaryError
+} = useHomePageImageAsset('about-primary')
+const {
+  resolvedImage: aboutDetailImage,
+  handleImageError: handleAboutDetailError
+} = useHomePageImageAsset('about-detail')
+
+const messages = useRallyMessages()
+const aboutPointIcons = [
+  'i-lucide-briefcase-business',
+  'i-lucide-cpu',
+  'i-lucide-handshake'
 ]
+
+const aboutPoints = computed(() =>
+  messages.value.home.about.points.map((point, index) => ({
+    ...point,
+    icon: aboutPointIcons[index] ?? 'i-lucide-check-circle'
+  }))
+)
 </script>
 
 <template>
@@ -26,15 +34,16 @@ const aboutPoints = [
       >
         <article class="home-sys-about__copy max-w-lg">
           <p
+            v-if="messages.home.about.kicker"
             class="type-sys-label-m text-primary-700 uppercase tracking-[0.18em]"
           >
-            About
+            {{ messages.home.about.kicker }}
           </p>
           <h2 class="type-sys-headline-l mt-4 text-neutral-900">
-            值得信賴的儀控、控制與工業資料整合夥伴
+            {{ messages.home.about.title }}
           </h2>
           <p class="type-sys-body-m mt-5 max-w-[34rem] text-neutral-700">
-            雷力科技協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。
+            {{ messages.home.about.description }}
           </p>
 
           <div class="home-sys-about__points">
@@ -62,22 +71,35 @@ const aboutPoints = [
 
         <figure
           class="home-sys-about__media-composite justify-self-end"
-          aria-label="現代高科技建築與設施立面雙圖組合"
+          :aria-label="messages.home.about.mediaLabel"
         >
-          <div class="home-sys-about__media-pane">
-            <img
-              src="/images/demo/home/about-glass-office-towers.jpg"
-              alt="現代高科技商業大樓"
-              class="home-sys-about__media-image home-sys-about__media-image--left"
-            />
+          <div class="home-sys-about__media-clip">
+            <div class="home-sys-about__media-pane">
+              <img
+                :src="aboutPrimaryImage.src"
+                :alt="
+                  aboutPrimaryImage.alt || messages.home.about.primaryImageAlt
+                "
+                class="home-sys-about__media-image home-sys-about__media-image--left"
+                @error="handleAboutPrimaryError"
+              />
+            </div>
+            <div class="home-sys-about__media-pane">
+              <img
+                :src="aboutDetailImage.src"
+                :alt="
+                  aboutDetailImage.alt || messages.home.about.detailImageAlt
+                "
+                class="home-sys-about__media-image home-sys-about__media-image--right"
+                @error="handleAboutDetailError"
+              />
+            </div>
           </div>
-          <div class="home-sys-about__media-pane">
-            <img
-              src="/images/demo/home/about-glass-facade-detail.jpg"
-              alt="高科技建築玻璃立面細節"
-              class="home-sys-about__media-image home-sys-about__media-image--right"
-            />
-          </div>
+          <BrandBlockMotif
+            class="home-sys-about__motif"
+            variant="media"
+            tone="light"
+          />
         </figure>
       </div>
     </div>
@@ -121,11 +143,16 @@ const aboutPoints = [
 
 .home-sys-about__media-composite {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   width: min(100%, 24.5rem);
   min-height: clamp(25rem, 39vw, 34rem);
   margin-inline: auto;
+}
+
+.home-sys-about__media-clip {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   overflow: hidden;
   border: 1px solid rgb(15 23 42 / 0.06);
   border-radius: 0 0 20rem 20rem;
@@ -155,10 +182,25 @@ const aboutPoints = [
   object-position: 72% 42%;
 }
 
+.home-sys-about__motif {
+  position: absolute;
+  bottom: clamp(1rem, 2.4vw, 1.35rem);
+  left: clamp(-1rem, -1.4vw, -0.65rem);
+  z-index: 2;
+  transform: scale(0.88);
+  transform-origin: bottom left;
+}
+
 @media (max-width: 767px) {
   .home-sys-about__media-composite {
     min-height: 22rem;
     width: min(100%, 18.25rem);
+  }
+
+  .home-sys-about__motif {
+    bottom: 0.9rem;
+    left: -0.8rem;
+    transform: scale(0.68);
   }
 }
 </style>

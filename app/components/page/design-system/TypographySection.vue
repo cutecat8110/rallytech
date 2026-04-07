@@ -122,7 +122,8 @@ const bilingualSamples: TypographyGroup[] = [
   },
   {
     name: 'English Only',
-    description: '在單一家族下用 600 與收斂 tracking 建立技術感，不直接複製雙字體策略。',
+    description:
+      '在單一家族下用 600 與收斂 tracking 建立技術感，不直接複製雙字體策略。',
     samples: [
       {
         token: 'Kicker',
@@ -224,7 +225,9 @@ const bilingualSamples: TypographyGroup[] = [
               :key="`${group.name}-${sample.token}`"
               class="space-y-2 border-t border-neutral-200 pt-5 first:border-t-0 first:pt-0"
             >
-              <p class="type-sys-label-s uppercase tracking-[0.08em] text-neutral-500">
+              <p
+                class="type-sys-label-s uppercase tracking-[0.08em] text-neutral-500"
+              >
                 {{ sample.token }}
               </p>
               <p :class="[sample.className, 'text-neutral-950']">

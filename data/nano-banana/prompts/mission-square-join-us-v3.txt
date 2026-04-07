@@ -1,0 +1,79 @@
+{
+  "asset_type": "homepage join-us tab square image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage Mission square image for the join-us state",
+  "goal": "Create a photorealistic square image that communicates collaboration, technical capability, and approachable professionalism without drifting into recruiting-stock aesthetics",
+  "visual_message": "An East Asian collaborative technical moment in a real engineering environment that feels aligned, modern, and grounded",
+  "recipe_ids": [
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control",
+    "spatial-director-language"
+  ],
+  "human_casting": {
+    "rule": "all visible faces should read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial or lab workplace styling, practical and understated",
+    "guardrails": "avoid caricature, costume cues, or exaggerated ethnic markers"
+  },
+  "reference_usage": {
+    "image_1": "preserve the human-centered square crop and approachable posture",
+    "image_2": "optional engineering context or equipment realism reference"
+  },
+  "technical_signals": {
+    "lens": "70mm commercial subject photography",
+    "aperture": "f/3.2",
+    "light_source": "soft controlled workshop or lab light",
+    "time_of_day": "neutral indoor daylight",
+    "motion_rule": "calm, conversational, lightly active"
+  },
+  "spatial_positioning": [
+    "one primary East Asian subject remains clear in the square crop",
+    "technical environment supports the subject without crowding the frame",
+    "collaboration signal is visible through posture or gaze, not exaggerated smiling",
+    "background stays soft and commercially clean"
+  ],
+  "visual_standard": "premium commercial engineering collaboration photography",
+  "color_restriction": "restrained neutrals, engineering whites, muted metal tones, and controlled warm skin tones only",
+  "material_notes": [
+    "real fabric textures",
+    "believable lab or equipment materials",
+    "clean skin texture",
+    "no beauty-retouched plastic finish"
+  ],
+  "scene": "East Asian engineers or technical collaborators engaging with equipment or each other in a modern engineering workspace",
+  "subject": "Human-led collaboration is the hero, but it must stay rooted in real technical context",
+  "reality_anchors": [
+    "credible technical collaboration",
+    "real engineering or equipment environment",
+    "human-led but still industrial",
+    "commercially usable square crop"
+  ],
+  "composition": {
+    "format": "1:1",
+    "hero_safe_area": "not required",
+    "focal_structure": "one human subject with one supporting context layer",
+    "camera": "commercial subject-led engineering photography",
+    "cropping": "designed for a small square website image"
+  },
+  "lighting": {
+    "style": "premium commercial collaboration photography",
+    "mood": "approachable, capable, aligned",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "real human and equipment textures"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a refined B2B website",
+    "must be photorealistic",
+    "must avoid generic recruiting brochure energy",
+    "must not contain text or UI",
+    "all visible human subjects must read as East Asian and Taiwan-based in professional context"
+  ],
+  "avoid": [
+    "salesy corporate smiling stock",
+    "fashion portrait styling",
+    "headline text or symbols",
+    "fake futuristic interface overlays",
+    "plastic skin",
+    "obvious AI artifacts"
+  ]
+}

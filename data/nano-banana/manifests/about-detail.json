@@ -10,5 +10,25 @@
     "licenseNote": "Pexels License",
     "notes": "Canonical stock placeholder for the About section secondary facade-detail image role."
   },
-  "candidates": []
+  "candidates": [
+    {
+      "slot": "about-detail",
+      "state": null,
+      "candidateId": "about-detail-20260402092045197-5w3n8s",
+      "label": "Nano About Detail Candidate",
+      "model": "gemini-3-pro-image-preview",
+      "promptId": "about-detail-v2",
+      "promptFile": "data/nano-banana/prompts/about-detail-v2.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage about section detail image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation and control integration company\",\n  \"page_role\": \"Homepage About section supporting facade-detail image\",\n  \"goal\": \"Create a photorealistic architectural detail image that complements the primary facade shot and reinforces a refined high-tech material language\",\n  \"visual_message\": \"A close architectural glass-and-metal detail with premium craftsmanship, structural precision, and modern engineering polish\",\n  \"recipe_ids\": [\n    \"technical-signal-stack\",\n    \"spatial-director-language\",\n    \"named-visual-standard\",\n    \"color-material-control\"\n  ],\n  \"reference_usage\": {\n    \"image_1\": \"preserve the close-up facade crop and reflective surface rhythm\",\n    \"image_2\": \"optional material realism reference only\"\n  },\n  \"technical_signals\": {\n    \"lens\": \"70mm architectural detail photography\",\n    \"aperture\": \"f/5.6\",\n    \"light_source\": \"clean daylight with subtle reflections\",\n    \"time_of_day\": \"neutral daylight\",\n    \"motion_rule\": \"static detail shot with zero motion emphasis\"\n  },\n  \"spatial_positioning\": [\n    \"glass surface and metal frame dominate the crop\",\n    \"reflections stay controlled and abstract enough to avoid clutter\",\n    \"geometric lines remain clear in a tall narrow frame\",\n    \"background architecture stays secondary\"\n  ],\n  \"visual_standard\": \"premium architectural detail photography\",\n  \"color_restriction\": \"restrained silver, steel, blue-grey glass, and soft concrete tones only\",\n  \"material_notes\": [\n    \"reflective glass panels\",\n    \"clean metal mullions\",\n    \"sharp joints and edges\",\n    \"no smeared or plastic reflections\"\n  ],\n  \"scene\": \"A close-up of a contemporary engineering-facility facade showing clean glazing, frame intersections, and believable architectural reflections\",\n  \"subject\": \"Facade materials and precision detailing are the hero\",\n  \"reality_anchors\": [\n    \"real curtain wall detail\",\n    \"believable reflections\",\n    \"precise architectural framing\",\n    \"commercially usable material crop\"\n  ],\n  \"composition\": {\n    \"format\": \"4:5\",\n    \"hero_safe_area\": \"not required\",\n    \"focal_structure\": \"one strong material-detail focal plane\",\n    \"camera\": \"architectural close-up photography\",\n    \"cropping\": \"designed to pair with a larger primary architectural image\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial architectural photography\",\n    \"mood\": \"precise, clean, premium\",\n    \"contrast\": \"controlled and realistic\",\n    \"surface_behavior\": \"high-detail reflections without AI sheen\"\n  },\n  \"commercial_constraints\": [\n    \"must work as a companion image to the about primary facade\",\n    \"must be photorealistic\",\n    \"must avoid generic city imagery\",\n    \"must not contain readable signage or text\",\n    \"must feel like the same brand visual system as the hero and about primary images\"\n  ],\n  \"avoid\": [\n    \"people in the focal plane\",\n    \"busy city clutter\",\n    \"dramatic sunset postcard look\",\n    \"holographic overlays\",\n    \"embedded text or UI\",\n    \"obvious AI artifacts\"\n  ]\n}",
+      "aspectRatio": "4:5",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/about-glass-facade-detail.jpg",
+      "createdAt": "2026-04-02T09:20:45.222Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/about-detail/about-detail-20260402092045197-5w3n8s.jpg",
+      "outputBytes": 2568583,
+      "notes": "Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt",
+      "responseText": null
+    }
+  ]
 }

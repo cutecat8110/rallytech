@@ -1,0 +1,74 @@
+{
+  "asset_type": "homepage about section detail image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage About section supporting facade-detail image",
+  "goal": "Create a photorealistic architectural detail image that complements the primary facade shot and reinforces a refined high-tech material language",
+  "visual_message": "A close architectural glass-and-metal detail with premium craftsmanship, structural precision, and modern engineering polish",
+  "recipe_ids": [
+    "technical-signal-stack",
+    "spatial-director-language",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the close-up facade crop and reflective surface rhythm",
+    "image_2": "optional material realism reference only"
+  },
+  "technical_signals": {
+    "lens": "70mm architectural detail photography",
+    "aperture": "f/5.6",
+    "light_source": "clean daylight with subtle reflections",
+    "time_of_day": "neutral daylight",
+    "motion_rule": "static detail shot with zero motion emphasis"
+  },
+  "spatial_positioning": [
+    "glass surface and metal frame dominate the crop",
+    "reflections stay controlled and abstract enough to avoid clutter",
+    "geometric lines remain clear in a tall narrow frame",
+    "background architecture stays secondary"
+  ],
+  "visual_standard": "premium architectural detail photography",
+  "color_restriction": "restrained silver, steel, blue-grey glass, and soft concrete tones only",
+  "material_notes": [
+    "reflective glass panels",
+    "clean metal mullions",
+    "sharp joints and edges",
+    "no smeared or plastic reflections"
+  ],
+  "scene": "A close-up of a contemporary engineering-facility facade showing clean glazing, frame intersections, and believable architectural reflections",
+  "subject": "Facade materials and precision detailing are the hero",
+  "reality_anchors": [
+    "real curtain wall detail",
+    "believable reflections",
+    "precise architectural framing",
+    "commercially usable material crop"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one strong material-detail focal plane",
+    "camera": "architectural close-up photography",
+    "cropping": "designed to pair with a larger primary architectural image"
+  },
+  "lighting": {
+    "style": "premium commercial architectural photography",
+    "mood": "precise, clean, premium",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "high-detail reflections without AI sheen"
+  },
+  "commercial_constraints": [
+    "must work as a companion image to the about primary facade",
+    "must be photorealistic",
+    "must avoid generic city imagery",
+    "must not contain readable signage or text",
+    "must feel like the same brand visual system as the hero and about primary images"
+  ],
+  "avoid": [
+    "people in the focal plane",
+    "busy city clutter",
+    "dramatic sunset postcard look",
+    "holographic overlays",
+    "embedded text or UI",
+    "obvious AI artifacts"
+  ]
+}

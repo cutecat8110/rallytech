@@ -1,48 +1,38 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import type { HomePageImageStateKey } from '~/utils/home-page-image-registry'
 
-const missionStates = [
-  {
-    value: 'mission',
-    label: 'Our Mission',
-    title: '把專案複雜度轉成穩定可維運的系統',
-    description:
-      '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行能在同一條節奏上推進。',
-    ctaLabel: '了解我們的使命',
-    image: '/images/demo/home/mission-tab-mission.jpg',
-    imageAlt: '工程師於控制盤前檢視與調整工業設備'
-  },
-  {
-    value: 'join-us',
-    label: 'Join Us!',
-    title: '與雷力合作，把系統整合、現場交付與長期運維放進同一個團隊視角',
-    description:
-      '我們用跨域協作、清楚分工與現場導向的交付方式，讓客戶、承包商與操作端都能在同一個專案重點上對齊。',
-    ctaLabel: '展開合作對話',
-    image: '/images/demo/home/hero-simulator-control-room.jpg',
-    imageAlt: '控制室團隊在多螢幕環境中監看與協作'
-  }
-] as const
+const messages = useRallyMessages()
+const missionStates = computed(() => messages.value.home.mission.tabs)
+const activeMission = ref<HomePageImageStateKey>('mission')
+const {
+  resolvedImage: missionSquareImage,
+  handleImageError: handleMissionSquareError
+} = useHomePageImageAsset('mission-square', activeMission)
+const {
+  resolvedImage: missionCutoutImage,
+  handleImageError: handleMissionCutoutError
+} = useHomePageImageAsset('mission-cutout')
 
-const activeMission = ref<(typeof missionStates)[number]['value']>('mission')
-
-const missionItems = missionStates.map(({ label, value }) => ({
-  label,
-  value
-}))
+const missionItems = computed(() =>
+  missionStates.value.map(({ label, value }) => ({
+    label,
+    value
+  }))
+)
 
 const activeMissionState = computed(
   () =>
-    missionStates.find((state) => state.value === activeMission.value) ??
-    missionStates[0]
+    missionStates.value.find((state) => state.value === activeMission.value) ??
+    missionStates.value[0]!
 )
 
 const missionTabsUi = {
   root: 'w-fit',
-  list: 'inline-flex rounded-full border border-neutral-200 bg-white p-1 shadow-[var(--shadow-1)]',
-  indicator: 'bg-primary-700 rounded-full shadow-none',
+  list: 'inline-flex rounded-none border border-neutral-200 bg-white p-1 shadow-[var(--shadow-1)]',
+  indicator: 'rounded-none bg-primary-700 shadow-none',
   trigger:
-    'min-w-[7.25rem] justify-center rounded-full px-4 py-2 type-sys-label-s text-neutral-600 transition-colors data-[state=active]:text-white',
+    'min-w-[7.25rem] cursor-pointer justify-center rounded-none px-4 py-2 type-sys-label-s text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white',
   label: 'tracking-[0.08em] uppercase'
 } as const
 </script>
@@ -57,7 +47,7 @@ const missionTabsUi = {
               <h2
                 class="home-sys-mission__accent-heading type-sys-headline-l text-neutral-900"
               >
-                Unlock Your Potential with Rally Technology
+                {{ messages.home.mission.heading }}
               </h2>
             </div>
 
@@ -76,9 +66,10 @@ const missionTabsUi = {
                 class="home-sys-mission__state-media home-sys-media-frame home-sys-media-frame--light home-sys-media-frame--square home-sys-media-frame--trapezoid"
               >
                 <img
-                  :src="activeMissionState.image"
-                  :alt="activeMissionState.imageAlt"
+                  :src="missionSquareImage.src"
+                  :alt="missionSquareImage.alt || activeMissionState.imageAlt"
                   class="home-sys-media-frame__image home-sys-media-frame__image--focus-center"
+                  @error="handleMissionSquareError"
                 />
                 <div
                   class="home-sys-media-frame__overlay home-sys-media-frame__overlay--light"
@@ -107,9 +98,10 @@ const missionTabsUi = {
           <div class="home-sys-mission__figure" aria-hidden="true">
             <div class="home-sys-mission__figure-glow" />
             <img
-              src="/images/demo/home/mission-engineer-cutout.jpg"
+              :src="missionCutoutImage.src"
               alt=""
               class="home-sys-mission__cutout"
+              @error="handleMissionCutoutError"
             />
           </div>
         </div>

@@ -1,63 +1,55 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { brandGhostButtonTheme } from '~/utils/button-themes'
+import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 
-const serviceItems = [
-  {
-    icon: 'i-lucide-monitor-smartphone',
-    title: 'SCADA / HMI 圖控',
-    description: '建立可監看、可操作、可追溯的監控介面。'
-  },
-  {
-    icon: 'i-lucide-briefcase-business',
-    title: '儀電整合',
-    description: '支援 FAT、SAT、試車驗收與現場故障排除。'
-  },
-  {
-    icon: 'i-lucide-cpu',
-    title: 'PLC / DCS 程式與搬遷',
-    description: '提供控制邏輯開發、搬遷規劃與分階段切換支援。'
-  },
-  {
-    icon: 'i-lucide-database-zap',
-    title: 'PI Server',
-    description: '建立即時資料採集、監看與跨系統整合基礎。'
-  },
-  {
-    icon: 'i-lucide-database',
-    title: 'Historians',
-    description: '支援長期資料保存、趨勢分析與追溯需求。'
-  },
-  {
-    icon: 'i-lucide-network',
-    title: '工業網路設計',
-    description: '規劃穩定、可維護且具擴充性的工業通訊網路。'
-  },
-  {
-    icon: 'i-lucide-radio-tower',
-    title: '遠端監控與資料備援',
-    description: '強化跨據點監看、資料持續性與備援能力。'
-  },
-  {
-    icon: 'i-lucide-bell-ring',
-    title: '告警監控',
-    description: '建立告警分級、通知邏輯與應變流程。'
-  }
+const { resolvedImage: servicesSurfaceImage } =
+  useHomePageImageAsset('services-surface')
+
+const servicesSurfaceStyle = computed(() => ({
+  '--home-services-surface-image': `url('${servicesSurfaceImage.value.src}')`
+}))
+
+const messages = useRallyMessages()
+const serviceIcons = [
+  'i-lucide-monitor-smartphone',
+  'i-lucide-briefcase-business',
+  'i-lucide-cpu',
+  'i-lucide-database-zap',
+  'i-lucide-database',
+  'i-lucide-network',
+  'i-lucide-radio-tower',
+  'i-lucide-bell-ring'
 ]
+
+const serviceItems = computed(() =>
+  messages.value.home.services.items.map((item, index) => ({
+    ...item,
+    icon: serviceIcons[index] ?? 'i-lucide-settings'
+  }))
+)
 </script>
 
 <template>
   <section
     id="services"
     class="section-sys-shell relative overflow-hidden bg-sys-rally-services-surface text-white"
+    :style="servicesSurfaceStyle"
   >
-    <div class="page-sys-shell--wide">
+    <BrandBlockMotif
+      class="home-sys-services__motif"
+      variant="section"
+      tone="dark"
+    />
+
+    <div class="page-sys-shell--wide relative z-10">
       <div class="content-sys-rail">
         <div class="mx-auto max-w-[38rem] text-center">
           <p class="type-sys-kicker text-primary-300 uppercase">
-            Our Services
+            {{ messages.home.services.kicker }}
           </p>
           <h2 class="type-sys-headline-l mt-3 text-white">
-            支援工業自動化專案的整合型服務
+            {{ messages.home.services.title }}
           </h2>
         </div>
 
@@ -86,7 +78,7 @@ const serviceItems = [
                 color="primary"
                 variant="ghost"
                 size="xs"
-                label="了解更多"
+                :label="messages.home.services.ctaLabel"
                 class="home-sys-services__action w-fit"
               />
             </UTheme>
@@ -102,8 +94,7 @@ const serviceItems = [
   background:
     linear-gradient(180deg, rgb(4 9 14 / 0.68) 0%, rgb(4 9 14 / 0.9) 100%),
     radial-gradient(circle at 78% 20%, rgb(48 187 165 / 0.08), transparent 26%),
-    url('/images/demo/home/services-industrial-panel-bg.jpg') 72% center / cover
-      no-repeat,
+    var(--home-services-surface-image) 72% center / cover no-repeat,
     linear-gradient(145deg, rgb(255 255 255 / 0.02), rgb(255 255 255 / 0) 38%),
     repeating-linear-gradient(
       -34deg,
@@ -119,6 +110,13 @@ const serviceItems = [
       var(--color-secondary-800) 100%
     );
   background-blend-mode: normal, screen, soft-light, normal, normal, normal;
+}
+
+.home-sys-services__motif {
+  position: absolute;
+  top: clamp(3rem, 7vw, 5.75rem);
+  right: clamp(1.25rem, 8vw, 8rem);
+  z-index: 1;
 }
 
 .home-sys-services__grid {
@@ -163,6 +161,12 @@ const serviceItems = [
   .home-sys-services__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem 2.25rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-sys-services__motif {
+    display: none;
   }
 }
 

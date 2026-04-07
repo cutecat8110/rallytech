@@ -1,0 +1,74 @@
+{
+  "asset_type": "homepage services section atmospheric background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage Services section background surface",
+  "goal": "Create a photorealistic low-distraction industrial surface image that adds atmosphere, materials, and modern engineering context without competing with text",
+  "visual_message": "A refined industrial control surface with subtle depth, premium material cues, and restrained technical atmosphere",
+  "recipe_ids": [
+    "technical-signal-stack",
+    "spatial-director-language",
+    "color-material-control",
+    "anti-stock-anti-hud"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the low-contrast panel texture and section-safe framing",
+    "image_2": "optional industrial hardware material reference"
+  },
+  "technical_signals": {
+    "lens": "50mm industrial detail photography",
+    "aperture": "f/4",
+    "light_source": "controlled workshop light with soft specular highlights",
+    "time_of_day": "neutral interior light",
+    "motion_rule": "static surface image with no human subject focus"
+  },
+  "spatial_positioning": [
+    "primary panel texture sits off-center and low contrast",
+    "no single switch, button, or label dominates the frame",
+    "background depth remains soft enough for readable overlaid copy",
+    "industrial hardware rhythm supports the grid without becoming cluttered"
+  ],
+  "visual_standard": "premium commercial industrial texture photography",
+  "color_restriction": "charcoal, graphite, muted steel, low-saturation industrial greens and cyans only",
+  "material_notes": [
+    "matte industrial panel surfaces",
+    "real switchgear or control hardware details",
+    "subtle glass or acrylic windows if present",
+    "no glossy plastic sheen"
+  ],
+  "scene": "A close environmental industrial control-panel or switchgear surface with believable hardware detail, modern engineering cleanliness, and restrained background atmosphere",
+  "subject": "The surface and material language are the hero, not any specific labeled control",
+  "reality_anchors": [
+    "credible industrial control hardware",
+    "clean panel geometry",
+    "restrained depth and texture",
+    "commercially usable background crop"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad readable space for service copy",
+    "focal_structure": "one soft texture anchor with minimal secondary detail",
+    "camera": "industrial detail photography, slightly oblique but calm",
+    "cropping": "designed for a wide section background"
+  },
+  "lighting": {
+    "style": "premium commercial industrial photography",
+    "mood": "quiet, capable, engineered",
+    "contrast": "low to medium, controlled",
+    "surface_behavior": "subtle highlights and believable material response"
+  },
+  "commercial_constraints": [
+    "must support layered service cards and white copy",
+    "must be photorealistic",
+    "must avoid stealing attention from content",
+    "must not contain readable labels, text, or UI",
+    "must not feel like a generic stock close-up"
+  ],
+  "avoid": [
+    "bright warning stickers or labels",
+    "centered button hero shot",
+    "glowing sci-fi interfaces",
+    "purple neon",
+    "embedded readable text",
+    "obvious AI artifacts"
+  ]
+}

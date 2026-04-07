@@ -1,0 +1,79 @@
+{
+  "asset_type": "homepage mission tab square image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage Mission square image for the mission state",
+  "goal": "Create a photorealistic square image that reinforces steady engineering execution, system discipline, and credible industrial work",
+  "visual_message": "A focused East Asian engineer or technician interaction with equipment that feels capable, calm, and operational",
+  "recipe_ids": [
+    "operator-as-scale-only",
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "human_casting": {
+    "rule": "the visible subject must read as an East Asian professional from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workwear or PPE, practical and understated",
+    "guardrails": "avoid caricature, costume styling, or exaggerated ethnic markers"
+  },
+  "reference_usage": {
+    "image_1": "preserve the compact square crop and subject-to-equipment relationship",
+    "image_2": "optional equipment realism reference"
+  },
+  "technical_signals": {
+    "lens": "70mm commercial subject photography",
+    "aperture": "f/3.2",
+    "light_source": "controlled industrial ambient light",
+    "time_of_day": "neutral interior or shaded worksite light",
+    "motion_rule": "subject is nearly still, focused on work"
+  },
+  "spatial_positioning": [
+    "single East Asian subject fills the square crop cleanly",
+    "control surface or equipment remains clearly visible",
+    "background stays soft and secondary",
+    "image remains readable at small square size"
+  ],
+  "visual_standard": "premium commercial engineering subject photography",
+  "color_restriction": "restrained industrial blues, greys, metal tones, and subtle safety accents only",
+  "material_notes": [
+    "real PPE and workwear textures",
+    "believable control hardware",
+    "clean industrial surfaces",
+    "no plastic skin or fabric sheen"
+  ],
+  "scene": "An East Asian engineer or technician interacting with industrial control equipment in a disciplined operational setting",
+  "subject": "One East Asian subject is the hero, supported by real industrial context",
+  "reality_anchors": [
+    "credible engineer interaction",
+    "real equipment context",
+    "single subject emphasis",
+    "commercially usable square crop"
+  ],
+  "composition": {
+    "format": "1:1",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant subject with one supporting equipment layer",
+    "camera": "commercial subject-led industrial photography",
+    "cropping": "designed for a small square website image"
+  },
+  "lighting": {
+    "style": "premium commercial engineering photography",
+    "mood": "steady, reliable, execution-focused",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "real material response, no artificial glow"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a refined B2B website",
+    "must be photorealistic",
+    "must avoid generic stock posing",
+    "must not contain text or UI",
+    "the visible subject must read as East Asian and Taiwan-based in professional context"
+  ],
+  "avoid": [
+    "crowded team photos",
+    "dramatic action pose",
+    "headline text or symbols",
+    "fake HUD overlays",
+    "fashion-editorial posing",
+    "obvious AI artifacts"
+  ]
+}

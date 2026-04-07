@@ -1,44 +1,9 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-import { homeHeroImageRegistry } from '~/utils/home-hero-image-registry'
+import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 
-const { activeMode, setPreferredMode } = useHomeHeroImageMode()
-const didNanoLoadFail = ref(false)
-
-const activeNanoSource = computed(() =>
-  import.meta.dev
-    ? homeHeroImageRegistry.latestCandidate
-    : homeHeroImageRegistry.liveNano
-)
-
-const resolvedHeroImage = computed(() => {
-  if (
-    activeMode.value === 'nano' &&
-    activeNanoSource.value &&
-    !didNanoLoadFail.value
-  ) {
-    return activeNanoSource.value
-  }
-
-  return homeHeroImageRegistry.stock
-})
-
-watch(
-  () => [activeMode.value, activeNanoSource.value?.src] as const,
-  () => {
-    didNanoLoadFail.value = false
-  },
-  { immediate: true }
-)
-
-function handleHeroImageError() {
-  if (activeMode.value !== 'nano') {
-    return
-  }
-
-  didNanoLoadFail.value = true
-  setPreferredMode('stock')
-}
+const messages = useRallyMessages()
+const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
+  useHomePageImageAsset('home-hero')
 </script>
 
 <template>
@@ -48,27 +13,30 @@ function handleHeroImageError() {
   >
     <div class="home-sys-hero__media" aria-hidden="true">
       <img
-        :src="resolvedHeroImage.src"
-        :alt="resolvedHeroImage.alt"
+        :src="heroImage.src"
+        :alt="heroImage.alt || messages.home.hero.imageAlt"
         class="home-sys-hero__image"
         @error="handleHeroImageError"
       />
       <div class="home-sys-hero__overlay" />
     </div>
 
+    <BrandBlockMotif class="home-sys-hero__motif" variant="hero" tone="dark" />
+
     <div class="page-sys-shell--wide relative z-10">
       <div class="content-sys-rail home-sys-hero__content">
         <div class="home-sys-hero__inner">
           <p class="type-sys-kicker text-primary-200 uppercase">
-            Turnkey automation delivery
+            {{ messages.home.hero.kicker }}
           </p>
           <h1 class="type-sys-display-l mt-4 text-white">
-            工業自動化交付，為可靠運轉而設計
+            {{ messages.home.hero.title }}
           </h1>
           <p
+            v-if="messages.home.hero.description"
             class="type-sys-body-m mt-4 max-w-[38rem] text-white/78 md:mx-auto"
           >
-            串接控制系統、工廠資料與現場執行，支撐現代工業專案。
+            {{ messages.home.hero.description }}
           </p>
 
           <div class="mt-7 flex justify-center">
@@ -77,7 +45,7 @@ function handleHeroImageError() {
               color="primary"
               variant="solid"
               size="xl"
-              label="探索服務"
+              :label="messages.home.hero.ctaLabel"
             />
           </div>
         </div>
@@ -122,6 +90,13 @@ function handleHeroImageError() {
     );
 }
 
+.home-sys-hero__motif {
+  position: absolute;
+  top: clamp(4.5rem, 12vw, 7.25rem);
+  left: clamp(1.25rem, 8vw, 8.25rem);
+  z-index: 2;
+}
+
 .home-sys-hero__content {
   display: flex;
   min-height: clamp(31rem, calc(100svh - 6.5rem), 41rem);
@@ -134,5 +109,11 @@ function handleHeroImageError() {
   max-width: 48rem;
   margin-inline: auto;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .home-sys-hero__motif {
+    display: none;
+  }
 }
 </style>

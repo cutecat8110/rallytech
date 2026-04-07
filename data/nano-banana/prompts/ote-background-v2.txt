@@ -1,0 +1,75 @@
+{
+  "asset_type": "homepage one-touch experience background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation, data integration, and operations systems company",
+  "page_role": "Homepage One-Touch Experience section background",
+  "goal": "Create a photorealistic wide background image that communicates integrated operations, industrial monitoring, and data-control confidence while remaining usable behind content",
+  "visual_message": "A layered control or operations environment that feels immersive, organized, and modern rather than crowded or retro",
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "spatial-director-language",
+    "color-material-control"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the wide room rhythm and overlay-safe framing",
+    "image_2": "optional monitoring-wall or equipment realism reference"
+  },
+  "technical_signals": {
+    "lens": "28mm to 35mm architectural interior photography",
+    "aperture": "f/4",
+    "light_source": "controlled low-key room light with restrained display glow",
+    "time_of_day": "evening or interior-neutral operational mood",
+    "motion_rule": "scene feels active but still, no dramatic motion blur"
+  },
+  "spatial_positioning": [
+    "main control environment spans the width of the frame",
+    "left side supports headline area",
+    "right side can carry layered list content without losing readability",
+    "background depth adds atmosphere without cluttering the section"
+  ],
+  "visual_standard": "premium commercial operations-center photography",
+  "color_restriction": "charcoal, muted black, dark steel, restrained monitor greens and cyans only; no purple or magenta glow",
+  "material_notes": [
+    "monitoring consoles",
+    "real industrial interior surfaces",
+    "controlled glass reflections",
+    "screen glow without plastic bloom"
+  ],
+  "scene": "A real integrated operations or monitoring center with credible industrial control context, layered workstations, and a calm modern systems atmosphere",
+  "subject": "The environment is the hero, not any single person or screen",
+  "reality_anchors": [
+    "credible control or monitoring environment",
+    "modern industrial systems context",
+    "layered workstation depth",
+    "commercially usable wide composition"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "keep the frame overlay-safe for headline and list content",
+    "focal_structure": "one environmental anchor with one secondary depth layer",
+    "camera": "architectural interior photography, eye-level or slightly elevated",
+    "cropping": "designed for a poster-frame style website section background"
+  },
+  "lighting": {
+    "style": "premium commercial interior photography",
+    "mood": "integrated, capable, modern, atmospheric",
+    "contrast": "controlled and readable",
+    "surface_behavior": "believable monitor glow and restrained material reflections"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B website",
+    "must be photorealistic",
+    "must support copy and layered panel content",
+    "must not contain embedded text, buttons, or fake UI overlays",
+    "must not feel dated or generic"
+  ],
+  "avoid": [
+    "retro mission-control clichés",
+    "floating HUD overlays",
+    "generic fake analytics dashboards",
+    "purple neon cyberpunk lighting",
+    "crowded desks as the focal point",
+    "readable words or numbers",
+    "obvious AI artifacts"
+  ]
+}

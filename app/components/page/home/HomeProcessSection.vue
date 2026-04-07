@@ -1,36 +1,35 @@
 <script setup lang="ts">
-const processSteps = [
-  {
-    icon: 'i-lucide-clipboard-list',
-    number: '01',
-    title: '需求對齊'
-  },
-  {
-    icon: 'i-lucide-route',
-    number: '02',
-    title: '技術規劃'
-  },
-  {
-    icon: 'i-lucide-cpu',
-    number: '03',
-    title: '分階段實作'
-  },
-  {
-    icon: 'i-lucide-badge-check',
-    number: '04',
-    title: '驗證與交接'
-  }
+import { computed } from 'vue'
+
+const messages = useRallyMessages()
+const processIcons = [
+  'i-lucide-clipboard-list',
+  'i-lucide-route',
+  'i-lucide-cpu',
+  'i-lucide-badge-check'
 ]
+
+const processSteps = computed(() =>
+  messages.value.home.process.steps.map((step, index) => ({
+    ...step,
+    icon: processIcons[index] ?? 'i-lucide-circle-check'
+  }))
+)
 </script>
 
 <template>
   <section id="process" class="section-sys-shell bg-white">
     <div class="page-sys-shell">
       <div class="text-center">
-        <p class="type-sys-kicker text-primary-700 uppercase">
-          Our Process
+        <p
+          v-if="messages.home.process.kicker"
+          class="type-sys-kicker text-primary-700 uppercase"
+        >
+          {{ messages.home.process.kicker }}
         </p>
-        <h2 class="type-sys-headline-l mt-4 text-neutral-900">交付流程</h2>
+        <h2 class="type-sys-headline-l mt-4 text-neutral-900">
+          {{ messages.home.process.title }}
+        </h2>
       </div>
 
       <div class="home-sys-process__grid">

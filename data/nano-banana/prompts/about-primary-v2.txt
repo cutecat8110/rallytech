@@ -1,0 +1,75 @@
+{
+  "asset_type": "homepage about section primary image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage About section primary architectural image",
+  "goal": "Create a photorealistic building image that signals established engineering capability, modern systems thinking, and premium B2B credibility",
+  "visual_message": "A clean high-tech facility exterior that feels contemporary, structured, and trustworthy rather than like a generic downtown postcard",
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the tall facade rhythm and strong vertical silhouette",
+    "image_2": "optional facade detail and material realism reference"
+  },
+  "technical_signals": {
+    "lens": "50mm architectural exterior photography",
+    "aperture": "f/5",
+    "light_source": "controlled daylight with clean reflective glass behavior",
+    "time_of_day": "late morning neutral daylight",
+    "motion_rule": "static architectural shot with no moving traffic emphasis"
+  },
+  "spatial_positioning": [
+    "dominant facade mass fills most of the frame",
+    "street-level clutter remains secondary and cropped low",
+    "vertical lines stay legible in a tall web frame",
+    "adjacent structures can support scale without becoming the subject"
+  ],
+  "visual_standard": "premium architectural exterior photography for a corporate technology brand",
+  "color_restriction": "restrained cool neutrals, reflective glass blues, steel greys, and concrete tones only; avoid saturated skies and postcard colors",
+  "material_notes": [
+    "glass curtain wall",
+    "clean metal framing",
+    "precise facade joints",
+    "realistic reflections without over-polish"
+  ],
+  "scene": "A modern engineering facility or high-tech office tower exterior with clean glazing, disciplined facade rhythm, and a premium contemporary character",
+  "subject": "The facade itself is the hero, not people, traffic, or signage",
+  "reality_anchors": [
+    "credible modern facade geometry",
+    "high-tech exterior character",
+    "clean glazing and structural rhythm",
+    "minimal urban clutter"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one dominant facade mass with one supporting reflection rhythm",
+    "camera": "architectural exterior photography, eye-level or slightly upward",
+    "cropping": "designed for the tall about-section media frame"
+  },
+  "lighting": {
+    "style": "premium commercial architectural photography",
+    "mood": "confident, precise, established",
+    "contrast": "controlled and realistic",
+    "surface_behavior": "clean highlights and believable reflective glass response"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern industrial B2B website",
+    "must be photorealistic",
+    "must avoid postcard tourism energy",
+    "must not contain readable signage or UI",
+    "must look like part of the same visual system as the hero image"
+  ],
+  "avoid": [
+    "generic skyline composition",
+    "heavy traffic dominating the frame",
+    "crowds or pedestrians as a focal point",
+    "futuristic holograms",
+    "headline text or embedded graphics",
+    "oversaturated sky",
+    "obvious AI artifacts"
+  ]
+}

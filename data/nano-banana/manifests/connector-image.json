@@ -2,13 +2,52 @@
   "slot": "connector-image",
   "liveSource": "stock",
   "stock": {
-    "src": "",
-    "alt": "",
-    "label": "TBD Stock Asset",
-    "source": "TBD",
-    "assetPage": null,
-    "licenseNote": null,
-    "notes": "Replace with approved source/licensed visual before promotion."
+    "src": "/images/demo/home/footer-engineering-team.jpg",
+    "alt": "工程團隊於實驗環境協作討論",
+    "label": "Connector Image Stock Asset",
+    "source": "Pexels",
+    "assetPage": "https://www.pexels.com/photo/engineers-at-work-3861973/",
+    "licenseNote": "Pexels License",
+    "notes": "Canonical stock placeholder for the footer connector breakout image role."
   },
-  "candidates": []
+  "candidates": [
+    {
+      "slot": "connector-image",
+      "state": null,
+      "candidateId": "connector-image-20260402092622310-jjmepa",
+      "label": "Nano Connector Image Candidate",
+      "model": "gemini-3-pro-image-preview",
+      "promptId": "connector-image-v2",
+      "promptFile": "data/nano-banana/prompts/connector-image-v2.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage footer connector breakout image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation and engineering delivery company\",\n  \"page_role\": \"Homepage footer connector image\",\n  \"goal\": \"Create a photorealistic people-forward engineering image that supports a premium connector band and feels more refined and technical than generic teamwork stock\",\n  \"visual_message\": \"A real engineering collaboration moment with breakout potential, contemporary industrial context, and controlled warmth\",\n  \"recipe_ids\": [\n    \"technical-signal-stack\",\n    \"named-visual-standard\",\n    \"color-material-control\",\n    \"spatial-director-language\"\n  ],\n  \"reference_usage\": {\n    \"image_1\": \"preserve the people-forward breakout rhythm and connector-friendly crop\",\n    \"image_2\": \"optional technical environment reference\"\n  },\n  \"technical_signals\": {\n    \"lens\": \"50mm commercial collaboration photography\",\n    \"aperture\": \"f/3.5\",\n    \"light_source\": \"soft daylight or controlled lab light\",\n    \"time_of_day\": \"neutral daytime\",\n    \"motion_rule\": \"light collaborative action, no exaggerated gesturing\"\n  },\n  \"spatial_positioning\": [\n    \"one or two subjects can occupy the left half strongly for breakout treatment\",\n    \"background technical environment stays bright, clean, and secondary\",\n    \"crop must remain usable in a short connector band\",\n    \"human interaction should feel real, not staged sales photography\"\n  ],\n  \"visual_standard\": \"premium commercial engineering collaboration photography\",\n  \"color_restriction\": \"restrained whites, soft neutrals, muted technical metals, and controlled skin tones only\",\n  \"material_notes\": [\n    \"real lab or engineering workstation materials\",\n    \"credible devices or tools\",\n    \"clean fabric textures\",\n    \"no plastic beauty sheen\"\n  ],\n  \"scene\": \"A real engineering or technical collaboration setting with believable tools or equipment and a clean modern atmosphere\",\n  \"subject\": \"Human collaboration is the hero, but it must remain anchored in technical context and suitable for later breakout treatment\",\n  \"reality_anchors\": [\n    \"credible engineering collaboration\",\n    \"real technical environment\",\n    \"clean subject-background separation\",\n    \"commercially usable breakout crop\"\n  ],\n  \"composition\": {\n    \"format\": \"4:5\",\n    \"hero_safe_area\": \"not required\",\n    \"focal_structure\": \"one collaboration focal point with minimal background noise\",\n    \"camera\": \"commercial collaboration photography\",\n    \"cropping\": \"designed for a website connector section with breakout treatment\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial collaboration photography\",\n    \"mood\": \"confident, aligned, modern, approachable\",\n    \"contrast\": \"controlled and clean\",\n    \"surface_behavior\": \"real skin, fabric, and equipment materials\"\n  },\n  \"commercial_constraints\": [\n    \"must feel suitable for a refined B2B industrial website\",\n    \"must be photorealistic\",\n    \"must support later breakout or cutout treatment\",\n    \"must avoid generic office teamwork stock\",\n    \"must not contain text or UI\"\n  ],\n  \"avoid\": [\n    \"startup office cliché\",\n    \"sales-team energy\",\n    \"dramatic fashion posing\",\n    \"headline text\",\n    \"fake interface overlays\",\n    \"obvious AI artifacts\"\n  ]\n}",
+      "aspectRatio": "4:5",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/footer-engineering-team.jpg",
+      "createdAt": "2026-04-02T09:26:22.406Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/connector-image/connector-image-20260402092622310-jjmepa.jpg",
+      "outputBytes": 2622142,
+      "notes": "Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt",
+      "responseText": null
+    },
+    {
+      "slot": "connector-image",
+      "state": null,
+      "candidateId": "connector-image-20260402094936217-ylj9zz",
+      "label": "Nano Connector Image Candidate",
+      "model": "gemini-3-pro-image-preview",
+      "promptId": "connector-image-v3",
+      "promptFile": "data/nano-banana/prompts/connector-image-v3.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage footer connector breakout image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation and engineering delivery company\",\n  \"page_role\": \"Homepage footer connector image\",\n  \"goal\": \"Create a photorealistic people-forward engineering image that supports a premium connector band and feels more refined and technical than generic teamwork stock\",\n  \"visual_message\": \"An East Asian engineering collaboration moment with breakout potential, contemporary industrial context, and controlled warmth\",\n  \"recipe_ids\": [\n    \"technical-signal-stack\",\n    \"named-visual-standard\",\n    \"color-material-control\",\n    \"spatial-director-language\"\n  ],\n  \"human_casting\": {\n    \"rule\": \"all visible faces should read as East Asian professionals from a Taiwan-based engineering team\",\n    \"styling\": \"modern Taiwanese engineering or lab workplace styling, practical and understated\",\n    \"guardrails\": \"avoid caricature, costume cues, or exaggerated ethnic markers\"\n  },\n  \"reference_usage\": {\n    \"image_1\": \"preserve the people-forward breakout rhythm and connector-friendly crop\",\n    \"image_2\": \"optional technical environment reference\"\n  },\n  \"technical_signals\": {\n    \"lens\": \"50mm commercial collaboration photography\",\n    \"aperture\": \"f/3.5\",\n    \"light_source\": \"soft daylight or controlled lab light\",\n    \"time_of_day\": \"neutral daytime\",\n    \"motion_rule\": \"light collaborative action, no exaggerated gesturing\"\n  },\n  \"spatial_positioning\": [\n    \"one or two East Asian subjects can occupy the left half strongly for breakout treatment\",\n    \"background technical environment stays bright, clean, and secondary\",\n    \"crop must remain usable in a short connector band\",\n    \"human interaction should feel real, not staged sales photography\"\n  ],\n  \"visual_standard\": \"premium commercial engineering collaboration photography\",\n  \"color_restriction\": \"restrained whites, soft neutrals, muted technical metals, and controlled skin tones only\",\n  \"material_notes\": [\n    \"real lab or engineering workstation materials\",\n    \"credible devices or tools\",\n    \"clean fabric textures\",\n    \"no plastic beauty sheen\"\n  ],\n  \"scene\": \"East Asian engineers or technical collaborators in a real engineering setting with believable tools or equipment and a clean modern atmosphere\",\n  \"subject\": \"Human collaboration is the hero, but it must remain anchored in technical context and suitable for later breakout treatment\",\n  \"reality_anchors\": [\n    \"credible engineering collaboration\",\n    \"real technical environment\",\n    \"clean subject-background separation\",\n    \"commercially usable breakout crop\"\n  ],\n  \"composition\": {\n    \"format\": \"4:5\",\n    \"hero_safe_area\": \"not required\",\n    \"focal_structure\": \"one collaboration focal point with minimal background noise\",\n    \"camera\": \"commercial collaboration photography\",\n    \"cropping\": \"designed for a website connector section with breakout treatment\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial collaboration photography\",\n    \"mood\": \"confident, aligned, modern, approachable\",\n    \"contrast\": \"controlled and clean\",\n    \"surface_behavior\": \"real skin, fabric, and equipment materials\"\n  },\n  \"commercial_constraints\": [\n    \"must feel suitable for a refined B2B industrial website\",\n    \"must be photorealistic\",\n    \"must support later breakout or cutout treatment\",\n    \"must avoid generic office teamwork stock\",\n    \"must not contain text or UI\"\n  ],\n  \"avoid\": [\n    \"startup office cliché\",\n    \"sales-team energy\",\n    \"dramatic fashion posing\",\n    \"headline text\",\n    \"fake interface overlays\",\n    \"obvious AI artifacts\"\n  ]\n}",
+      "aspectRatio": "4:5",
+      "imageSize": "2K",
+      "sourceReference": "/images/demo/home/footer-engineering-team.jpg",
+      "createdAt": "2026-04-02T09:49:36.257Z",
+      "status": "candidate",
+      "outputPath": "/images/generated/home/connector-image/connector-image-20260402094936217-ylj9zz.jpg",
+      "outputBytes": 2537831,
+      "notes": "Pro rerun with East Asian Taiwan-based engineering team casting requirement",
+      "responseText": null
+    }
+  ]
 }

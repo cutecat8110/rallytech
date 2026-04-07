@@ -5,6 +5,10 @@ import { fileURLToPath } from 'node:url'
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 export const projectRoot = resolve(scriptDir, '..', '..')
 export const promptDirectory = resolve(projectRoot, 'data/nano-banana/prompts')
+export const homePageRegistryPath = resolve(
+  projectRoot,
+  'app/utils/home-page-image-registry.ts'
+)
 
 const ENV_PATHS = ['.env', '.env.local']
 const DEFAULT_SLOT = 'home-hero'
@@ -25,7 +29,7 @@ export const slotDefinitions = Object.freeze({
     outputDirectory: resolve(projectRoot, 'public/images/generated/home/hero'),
     candidatePrefix: 'home-hero',
     candidateLabel: 'Nano Hero Candidate',
-    defaultPromptId: 'home-hero-v3',
+    defaultPromptId: 'home-hero-v5',
     defaultAspectRatio: '16:9',
     defaultImageSize: '2K',
     registry: {
@@ -47,7 +51,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'about-primary',
     candidateLabel: 'Nano About Primary Candidate',
-    defaultPromptId: 'about-primary-v1',
+    defaultPromptId: 'about-primary-v2',
     defaultAspectRatio: '4:5',
     defaultImageSize: '2K',
     registry: {
@@ -69,7 +73,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'about-detail',
     candidateLabel: 'Nano About Detail Candidate',
-    defaultPromptId: 'about-detail-v1',
+    defaultPromptId: 'about-detail-v2',
     defaultAspectRatio: '4:5',
     defaultImageSize: '2K',
     registry: {
@@ -91,7 +95,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'ote-background',
     candidateLabel: 'Nano OTE Background Candidate',
-    defaultPromptId: 'ote-background-v1',
+    defaultPromptId: 'ote-background-v3',
     defaultAspectRatio: '16:9',
     defaultImageSize: '2K',
     registry: {
@@ -113,7 +117,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'services-surface',
     candidateLabel: 'Nano Services Surface Candidate',
-    defaultPromptId: 'services-surface-v1',
+    defaultPromptId: 'services-surface-v2',
     defaultAspectRatio: '16:9',
     defaultImageSize: '2K',
     registry: {
@@ -135,7 +139,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'connector-image',
     candidateLabel: 'Nano Connector Image Candidate',
-    defaultPromptId: 'connector-image-v1',
+    defaultPromptId: 'connector-image-v3',
     defaultAspectRatio: '4:5',
     defaultImageSize: '2K',
     registry: {
@@ -159,13 +163,13 @@ export const slotDefinitions = Object.freeze({
       [MISSION_STATE]: {
         state: MISSION_STATE,
         displayName: 'Mission Square / Mission',
-        defaultPromptId: 'mission-square-mission-v1',
+        defaultPromptId: 'mission-square-mission-v3',
         outputPublicDirectory: '/images/generated/home/mission-square/mission'
       },
       [JOIN_US_STATE]: {
         state: JOIN_US_STATE,
         displayName: 'Mission Square / Join Us',
-        defaultPromptId: 'mission-square-join-us-v1',
+        defaultPromptId: 'mission-square-join-us-v3',
         outputPublicDirectory: '/images/generated/home/mission-square/join-us'
       }
     },
@@ -188,7 +192,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'mission-cutout',
     candidateLabel: 'Nano Mission Cutout Candidate',
-    defaultPromptId: 'mission-cutout-v1',
+    defaultPromptId: 'mission-cutout-v4',
     defaultAspectRatio: '4:5',
     defaultImageSize: '2K',
     registry: {
@@ -345,70 +349,29 @@ export async function writeManifest(slot = DEFAULT_SLOT, manifest) {
 }
 
 export async function syncRegistryFromManifest(slot = DEFAULT_SLOT, manifest) {
-  const { registry } = getSlotDefinition(slot)
-
-  if (!registry?.enabled || !registry.path) {
-    return
-  }
-
-  const promotedCandidate =
-    manifest.candidates.find((candidate) => candidate.status === 'promoted') ??
-    null
-  const latestCandidate =
-    [...manifest.candidates]
-      .reverse()
-      .find(
-        (candidate) =>
-          candidate.status === 'candidate' || candidate.status === 'promoted'
-      ) ?? null
-
-  function createNanoAsset(candidate) {
-    if (!candidate) {
-      return null
-    }
-
-    return {
-      src: candidate.outputPath,
-      alt: '',
-      label: candidate.label ?? 'Nano Hero',
-      candidateId: candidate.candidateId,
-      model: candidate.model,
-      promptId: candidate.promptId ?? null,
-      source: 'Nano Banana',
-      sourceReference: candidate.sourceReference ?? null,
-      createdAt: candidate.createdAt,
-      licenseNote:
-        'Generated with Gemini image generation (SynthID watermark).',
-      notes: candidate.notes ?? null
-    }
-  }
-
-  const registrySource = {
-    slot: manifest.slot,
-    liveSource:
-      manifest.liveSource === 'nano' && promotedCandidate ? 'nano' : 'stock',
-    stock: {
-      src: manifest.stock.src,
-      alt: manifest.stock.alt ?? '',
-      label: manifest.stock.label,
-      candidateId: null,
-      model: null,
-      promptId: null,
-      source: manifest.stock.source,
-      sourceReference: manifest.stock.assetPage ?? null,
-      createdAt: null,
-      licenseNote: manifest.stock.licenseNote ?? null,
-      notes: manifest.stock.notes ?? null
-    },
-    liveNano: createNanoAsset(promotedCandidate),
-    latestCandidate: createNanoAsset(latestCandidate)
-  }
-
+  const registrySource = await buildHomePageRegistrySource(slot, manifest)
   const serializedRegistry = JSON.stringify(registrySource, null, 2)
 
-  const fileContent = `export type HomeHeroImageSourceKey = 'stock' | 'nano'
+  const fileContent = `/* eslint-disable @stylistic/quote-props */
 
-export interface HomeHeroImageAsset {
+export type HomePageImageSourceKey = 'stock' | 'nano'
+
+export type HomePageSingleImageSlotKey =
+  | 'home-hero'
+  | 'about-primary'
+  | 'about-detail'
+  | 'services-surface'
+  | 'ote-background'
+  | 'mission-cutout'
+  | 'connector-image'
+
+export type HomePageStateAwareSlotKey = 'mission-square'
+export type HomePageImageSlotKey =
+  | HomePageSingleImageSlotKey
+  | HomePageStateAwareSlotKey
+export type HomePageImageStateKey = 'mission' | 'join-us'
+
+export interface HomePageImageAsset {
   src: string
   alt: string
   label: string
@@ -422,21 +385,61 @@ export interface HomeHeroImageAsset {
   notes: string | null
 }
 
-export interface HomeHeroImageRegistry {
-  slot: 'home-hero'
-  liveSource: HomeHeroImageSourceKey
-  stock: HomeHeroImageAsset
-  liveNano: HomeHeroImageAsset | null
-  latestCandidate: HomeHeroImageAsset | null
+export interface HomePageImageSlotRegistry {
+  slot: HomePageImageSlotKey
+  state?: HomePageImageStateKey
+  liveSource: HomePageImageSourceKey
+  stock: HomePageImageAsset
+  liveNano: HomePageImageAsset | null
+  latestCandidate: HomePageImageAsset | null
 }
 
-// 由 scripts/promote-home-hero-candidate.mjs 同步更新；前端只讀這份精簡 registry。
-export const homeHeroImageRegistry: HomeHeroImageRegistry = ${serializedRegistry} as HomeHeroImageRegistry
+export interface HomePageStateAwareImageRegistry {
+  slot: 'mission-square'
+  liveSource: HomePageImageSourceKey
+  states: Record<HomePageImageStateKey, HomePageImageSlotRegistry>
+}
+
+export interface HomePageImageRegistry {
+  'home-hero': HomePageImageSlotRegistry
+  'about-primary': HomePageImageSlotRegistry
+  'about-detail': HomePageImageSlotRegistry
+  'services-surface': HomePageImageSlotRegistry
+  'ote-background': HomePageImageSlotRegistry
+  'mission-square': HomePageStateAwareImageRegistry
+  'mission-cutout': HomePageImageSlotRegistry
+  'connector-image': HomePageImageSlotRegistry
+}
+
+// 由 generate/promote workflow 同步更新；前端只讀這份精簡 registry。
+export const homePageImageRegistry: HomePageImageRegistry = ${serializedRegistry} as HomePageImageRegistry
+
+export function getHomePageImageEntry(
+  slot: HomePageSingleImageSlotKey
+): HomePageImageSlotRegistry
+export function getHomePageImageEntry(
+  slot: 'mission-square',
+  state: HomePageImageStateKey
+): HomePageImageSlotRegistry
+export function getHomePageImageEntry(
+  slot: HomePageImageSlotKey,
+  state?: HomePageImageStateKey
+): HomePageImageSlotRegistry {
+  if (slot === 'mission-square') {
+    if (!state) {
+      throw new Error('mission-square requires state.')
+    }
+
+    return homePageImageRegistry['mission-square'].states[state]
+  }
+
+  return homePageImageRegistry[slot]
+}
 `
 
-  await ensureDirectory(registry.path)
+  await ensureDirectory(homePageRegistryPath)
   await writeFile(
-    registry.path,
+    homePageRegistryPath,
     await formatTypeScriptContent(fileContent),
     'utf8'
   )
@@ -619,6 +622,154 @@ async function formatTypeScriptContent(content) {
     })
   } catch {
     return content
+  }
+}
+
+async function buildHomePageRegistrySource(
+  updatedSlot = DEFAULT_SLOT,
+  updatedManifest = null
+) {
+  const slotKeys = [
+    'home-hero',
+    'about-primary',
+    'about-detail',
+    'services-surface',
+    'ote-background',
+    'mission-square',
+    'mission-cutout',
+    'connector-image'
+  ]
+
+  const manifests = {}
+
+  for (const slotKey of slotKeys) {
+    manifests[slotKey] =
+      slotKey === updatedSlot && updatedManifest
+        ? updatedManifest
+        : await readManifest(slotKey)
+  }
+
+  return {
+    'home-hero': createSingleSlotRegistrySource(manifests['home-hero']),
+    'about-primary': createSingleSlotRegistrySource(manifests['about-primary']),
+    'about-detail': createSingleSlotRegistrySource(manifests['about-detail']),
+    'services-surface': createSingleSlotRegistrySource(
+      manifests['services-surface']
+    ),
+    'ote-background': createSingleSlotRegistrySource(
+      manifests['ote-background']
+    ),
+    'mission-square': createMissionSquareRegistrySource(
+      manifests['mission-square']
+    ),
+    'mission-cutout': createSingleSlotRegistrySource(
+      manifests['mission-cutout']
+    ),
+    'connector-image': createSingleSlotRegistrySource(
+      manifests['connector-image']
+    )
+  }
+}
+
+function createSingleSlotRegistrySource(manifest) {
+  const promotedCandidate =
+    manifest.candidates.find((candidate) => candidate.status === 'promoted') ??
+    null
+  const latestCandidate =
+    [...manifest.candidates]
+      .reverse()
+      .find(
+        (candidate) =>
+          candidate.status === 'candidate' || candidate.status === 'promoted'
+      ) ?? null
+
+  return {
+    slot: manifest.slot,
+    liveSource:
+      manifest.liveSource === 'nano' && promotedCandidate ? 'nano' : 'stock',
+    stock: createStockAsset(manifest.stock),
+    liveNano: createNanoAsset(promotedCandidate),
+    latestCandidate: createNanoAsset(latestCandidate)
+  }
+}
+
+function createMissionSquareRegistrySource(manifest) {
+  return {
+    slot: manifest.slot,
+    liveSource: manifest.liveSource === 'nano' ? 'nano' : 'stock',
+    states: {
+      // eslint-disable-next-line @stylistic/quote-props
+      mission: createStateSlotRegistrySource(
+        manifest,
+        MISSION_STATE,
+        manifest.states[MISSION_STATE]
+      ),
+      'join-us': createStateSlotRegistrySource(
+        manifest,
+        JOIN_US_STATE,
+        manifest.states[JOIN_US_STATE]
+      )
+    }
+  }
+}
+
+function createStateSlotRegistrySource(manifest, state, stateRecord) {
+  const promotedCandidate =
+    stateRecord.candidates.find(
+      (candidate) => candidate.status === 'promoted'
+    ) ?? null
+  const latestCandidate =
+    [...stateRecord.candidates]
+      .reverse()
+      .find(
+        (candidate) =>
+          candidate.status === 'candidate' || candidate.status === 'promoted'
+      ) ?? null
+
+  return {
+    slot: manifest.slot,
+    state,
+    liveSource:
+      manifest.liveSource === 'nano' && promotedCandidate ? 'nano' : 'stock',
+    stock: createStockAsset(stateRecord.stock),
+    liveNano: createNanoAsset(promotedCandidate),
+    latestCandidate: createNanoAsset(latestCandidate)
+  }
+}
+
+function createStockAsset(stock) {
+  return {
+    src: stock.src,
+    alt: stock.alt ?? '',
+    label: stock.label,
+    candidateId: null,
+    model: null,
+    promptId: null,
+    source: stock.source,
+    sourceReference: stock.assetPage ?? null,
+    createdAt: null,
+    licenseNote: stock.licenseNote ?? null,
+    notes: stock.notes ?? null
+  }
+}
+
+function createNanoAsset(candidate) {
+  if (!candidate) {
+    return null
+  }
+
+  return {
+    src: candidate.outputPath,
+    alt: '',
+    label: candidate.label ?? 'Nano Homepage Candidate',
+    candidateId: candidate.candidateId,
+    model: candidate.model,
+    promptId: candidate.promptId ?? null,
+    source: 'Nano Banana',
+    sourceReference: candidate.sourceReference ?? null,
+    createdAt: candidate.createdAt,
+    licenseNote: 'Generated with Gemini image generation (SynthID watermark).',
+    notes: candidate.notes ?? null
   }
 }
 

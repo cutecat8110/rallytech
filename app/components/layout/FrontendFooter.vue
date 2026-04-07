@@ -1,7 +1,16 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { secondarySolidButtonTheme } from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
+const messages = useRallyMessages()
+const { t } = useI18n()
+const {
+  resolvedImage: connectorImage,
+  handleImageError: handleConnectorImageError
+} = useHomePageImageAsset('connector-image')
+
+const company = computed(() => messages.value.company)
 </script>
 
 <template>
@@ -9,9 +18,10 @@ const currentYear = new Date().getFullYear()
     <section class="home-sys-footer-connector">
       <figure class="home-sys-footer-connector__media" aria-hidden="true">
         <img
-          src="/images/demo/home/mission-tab-mission.jpg"
+          :src="connectorImage.src"
           alt=""
           class="home-sys-footer-connector__media-image"
+          @error="handleConnectorImageError"
         />
       </figure>
 
@@ -26,18 +36,18 @@ const currentYear = new Date().getFullYear()
             <h2
               class="home-sys-footer-connector__accent-heading type-sys-headline-s md:type-sys-headline-m text-white"
             >
-              Engineering + Design Experts
+              {{ messages.footer.connectorHeading }}
             </h2>
           </div>
 
           <div class="home-sys-footer-connector__action">
             <UTheme :ui="secondarySolidButtonTheme">
               <UButton
-                to="mailto:sales@rallytech.com.tw"
+                :to="company.emailHref"
                 color="neutral"
                 variant="solid"
                 size="sm"
-                label="聯絡我們"
+                :label="messages.footer.ctaLabel"
                 :ui="{ label: 'text-white' }"
               />
             </UTheme>
@@ -49,18 +59,53 @@ const currentYear = new Date().getFullYear()
     <section class="page-sys-shell py-5 md:py-6">
       <div class="home-sys-footer__main">
         <div class="space-y-1">
-          <p class="type-sys-title-m text-white">雷力科技 Rally Technology</p>
+          <p class="type-sys-title-m text-white">
+            {{ messages.footer.brandLine }}
+          </p>
         </div>
 
         <div class="space-y-1 text-left md:text-right">
-          <p class="type-sys-body-s text-white/84">+886-3-552-9933</p>
-          <p class="type-sys-body-s text-white/84">sales@rallytech.com.tw</p>
+          <p class="type-sys-body-s text-white/84">
+            <span class="text-white/52">{{ messages.footer.phoneLabel }}:</span>
+            <a
+              :href="company.phoneHref"
+              class="transition-colors hover:text-white"
+            >
+              {{ company.phoneDisplay }}
+            </a>
+          </p>
+          <p v-if="company.faxDisplay" class="type-sys-body-s text-white/84">
+            <span class="text-white/52">{{ messages.footer.faxLabel }}:</span>
+            <a
+              :href="company.faxHref"
+              class="transition-colors hover:text-white"
+            >
+              {{ company.faxDisplay }}
+            </a>
+          </p>
+          <p class="type-sys-body-s text-white/84">
+            <span class="text-white/52">{{ messages.footer.emailLabel }}:</span>
+            <a
+              :href="company.emailHref"
+              class="transition-colors hover:text-white"
+            >
+              {{ company.email }}
+            </a>
+          </p>
+          <p
+            v-if="company.address"
+            class="type-sys-body-s max-w-[22rem] text-white/72 md:ml-auto"
+          >
+            <!-- prettier-ignore -->
+            <span class="text-white/52">{{ messages.footer.addressLabel }}:</span>
+            {{ company.address }}
+          </p>
         </div>
       </div>
 
       <div class="mt-3 border-t border-white/10 pt-2.5">
         <p class="type-sys-label-s text-white/55">
-          © {{ currentYear }} 雷力科技。版權所有。
+          {{ t('footer.copyright', { year: currentYear }) }}
         </p>
       </div>
     </section>

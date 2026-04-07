@@ -1,0 +1,74 @@
+{
+  "asset_type": "homepage footer connector breakout image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and engineering delivery company",
+  "page_role": "Homepage footer connector image",
+  "goal": "Create a photorealistic people-forward engineering image that supports a premium connector band and feels more refined and technical than generic teamwork stock",
+  "visual_message": "A real engineering collaboration moment with breakout potential, contemporary industrial context, and controlled warmth",
+  "recipe_ids": [
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control",
+    "spatial-director-language"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the people-forward breakout rhythm and connector-friendly crop",
+    "image_2": "optional technical environment reference"
+  },
+  "technical_signals": {
+    "lens": "50mm commercial collaboration photography",
+    "aperture": "f/3.5",
+    "light_source": "soft daylight or controlled lab light",
+    "time_of_day": "neutral daytime",
+    "motion_rule": "light collaborative action, no exaggerated gesturing"
+  },
+  "spatial_positioning": [
+    "one or two subjects can occupy the left half strongly for breakout treatment",
+    "background technical environment stays bright, clean, and secondary",
+    "crop must remain usable in a short connector band",
+    "human interaction should feel real, not staged sales photography"
+  ],
+  "visual_standard": "premium commercial engineering collaboration photography",
+  "color_restriction": "restrained whites, soft neutrals, muted technical metals, and controlled skin tones only",
+  "material_notes": [
+    "real lab or engineering workstation materials",
+    "credible devices or tools",
+    "clean fabric textures",
+    "no plastic beauty sheen"
+  ],
+  "scene": "A real engineering or technical collaboration setting with believable tools or equipment and a clean modern atmosphere",
+  "subject": "Human collaboration is the hero, but it must remain anchored in technical context and suitable for later breakout treatment",
+  "reality_anchors": [
+    "credible engineering collaboration",
+    "real technical environment",
+    "clean subject-background separation",
+    "commercially usable breakout crop"
+  ],
+  "composition": {
+    "format": "4:5",
+    "hero_safe_area": "not required",
+    "focal_structure": "one collaboration focal point with minimal background noise",
+    "camera": "commercial collaboration photography",
+    "cropping": "designed for a website connector section with breakout treatment"
+  },
+  "lighting": {
+    "style": "premium commercial collaboration photography",
+    "mood": "confident, aligned, modern, approachable",
+    "contrast": "controlled and clean",
+    "surface_behavior": "real skin, fabric, and equipment materials"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a refined B2B industrial website",
+    "must be photorealistic",
+    "must support later breakout or cutout treatment",
+    "must avoid generic office teamwork stock",
+    "must not contain text or UI"
+  ],
+  "avoid": [
+    "startup office cliché",
+    "sales-team energy",
+    "dramatic fashion posing",
+    "headline text",
+    "fake interface overlays",
+    "obvious AI artifacts"
+  ]
+}

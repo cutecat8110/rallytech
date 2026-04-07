@@ -13,6 +13,13 @@
 - 先看各頁 `source` block；只有遇到跨頁、跨區塊或明顯衝突時，再回來查這份異常索引。
 - 這份檔案不重複抄寫整頁內容，只保留足以影響對照判讀的重點。
 
+## 2026-04-07 i18n recrawl 補充
+
+- 重新以 `scripts/capture-page.mjs` 擷取 `IA-參考站與目標站對照.md` 列出的首頁、共享頁與 8 個服務頁。
+- 證據輸出位置：`artifacts/i18n-reference-recrawl-20260407/`。
+- 多個頁面仍出現 `archicwp.websitelayout.net` 類型的外部 template 壞圖；這些只作為 source anomaly，不可被整理進 runtime i18n image source。
+- i18n migration 僅遷移文字、區塊順序、備註與可本地化 alt fallback；正式圖片來源仍以首頁 image registry / 授權清單為準。
+
 ## 00 首頁
 
 - `Turnkey Solutions, since 2010` 與 `Founded in 2022` 同時可見，年份敘事互相衝突。

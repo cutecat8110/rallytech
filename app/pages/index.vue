@@ -12,11 +12,14 @@ definePageMeta({
   layout: 'frontend'
 })
 
+const messages = useRallyMessages()
+const { locale } = useI18n()
+
 // SEO：首頁
 useSeoMeta({
-  title: '雷力科技 Rally Technology',
-  description:
-    '工業自動化交付，串接控制系統、工廠資料與現場執行，支撐現代工業專案。'
+  title: () => messages.value.home.seo.title,
+  description: () => messages.value.home.seo.description,
+  robots: () => (locale.value === 'source' ? 'noindex,nofollow' : undefined)
 })
 </script>
 
