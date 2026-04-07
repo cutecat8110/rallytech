@@ -147,7 +147,7 @@ const messages = {
         'Call-Out System Integration and Commissioning',
         'Vibration Analysis',
         'Local/Cloud Historians Deployment',
-        'Manure Management System Integration'
+        'Utilities and Facilities System Integration'
       ]
     },
     mission: {

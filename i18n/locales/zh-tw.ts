@@ -46,14 +46,14 @@ const messages = {
         '雷力科技成立於 2014 年，提供工業自動化交付、儀控整合、控制系統、工廠資料與現場執行支援。'
     },
     hero: {
-      kicker: 'Turnkey automation delivery',
+      kicker: '自動化整合交付',
       title: '工業自動化交付，為可靠運轉而設計',
       description: '串接控制系統、工廠資料與現場執行，支撐現代工業專案。',
       ctaLabel: '探索服務',
       imageAlt: '工程團隊於監控室檢視工業系統'
     },
     about: {
-      kicker: 'About',
+      kicker: '關於雷力',
       title: '值得信賴的儀控、控制與工業資料整合夥伴',
       description:
         '雷力科技成立於 2014 年，協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。',
@@ -77,7 +77,7 @@ const messages = {
       ]
     },
     services: {
-      kicker: 'Our Services',
+      kicker: '服務項目',
       title: '支援工業自動化專案的整合型服務',
       ctaLabel: '了解更多',
       items: [
@@ -116,7 +116,7 @@ const messages = {
       ]
     },
     process: {
-      kicker: 'Our Process',
+      kicker: '交付流程',
       title: '交付流程',
       steps: [
         { number: '01', title: '需求對齊' },
@@ -126,22 +126,22 @@ const messages = {
       ]
     },
     oneTouch: {
-      title: 'The One-Touch Experience.',
+      title: '一站式整合體驗',
       ctaLabel: '了解更多',
       items: [
         '資料整合｜Data Integration',
         '告警通報系統整合與試車｜Call-Out System Integration and Commissioning',
         '振動分析｜Vibration Analysis',
         '本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment',
-        '糞污管理系統整合｜Manure Management System Integration'
+        '公用與廠務系統整合｜Utilities and Facilities System Integration'
       ]
     },
     mission: {
-      heading: 'Unlock Your Potential with Rally Technology',
+      heading: '把整合能力轉成穩定交付',
       tabs: [
         {
           value: 'mission',
-          label: 'Our Mission',
+          label: '我們的使命',
           title: '把專案複雜度轉成穩定可維運的系統',
           description:
             '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行能在同一條節奏上推進。',
@@ -150,7 +150,7 @@ const messages = {
         },
         {
           value: 'join-us',
-          label: 'Join Us!',
+          label: '合作邀請',
           title: '與雷力合作，把系統整合、現場交付與長期運維放進同一個團隊視角',
           description:
             '我們用跨域協作、清楚分工與現場導向的交付方式，讓客戶、承包商與操作端都能在同一個專案重點上對齊。',
@@ -161,7 +161,7 @@ const messages = {
     }
   },
   footer: {
-    connectorHeading: 'Engineering + Design Experts',
+    connectorHeading: '工程與自動化整合專家',
     ctaLabel: '聯絡我們',
     brandLine: '雷力科技 Rally Technology',
     phoneLabel: '電話',

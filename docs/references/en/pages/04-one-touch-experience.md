@@ -1,4 +1,4 @@
-- Last updated: 2026-03-30
+- Last updated: 2026-04-07
 - Source URL: https://pentagoneng.com/one-touch-experience/
 
 ## Block Map
@@ -8,7 +8,7 @@
 - Block 03 Call-Out System Integration and Commissioning [core]
 - Block 04 Vibration Analysis [core]
 - Block 05 Local/Cloud Historians Deployment [core]
-- Block 06 Manure Management System Integration [core]
+- Block 06 Utilities and Facilities System Integration [core]
 
 ## Block 01 Page Hero [core]
 
@@ -34,7 +34,7 @@
 - Local/Cloud Historians Deployment
 - We deploy local and cloud historian environments that keep process data accessible for troubleshooting, reporting, and long-term operational improvement.
 
-## Block 06 Manure Management System Integration [core]
+## Block 06 Utilities and Facilities System Integration [core]
 
-- Manure Management System Integration
-- We integrate manure-management processes with monitoring, control, and reporting logic so operating teams can manage compliance and execution in one workflow.
+- Utilities and Facilities System Integration
+- We integrate utility and facilities systems with monitoring, control, and reporting logic so operations teams can manage status, compliance, and execution in one workflow.
