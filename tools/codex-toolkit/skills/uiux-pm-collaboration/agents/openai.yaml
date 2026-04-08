@@ -1,0 +1,7 @@
+interface:
+  display_name: "UIUX PM Collaboration"
+  short_description: "先對齊決策再實作的 UIUX PM 協作流程"
+  default_prompt: "使用 $uiux-pm-collaboration 先對齊目標、限制、選項與決策，再分階段推進高風險前端或 clone 任務。"
+
+policy:
+  allow_implicit_invocation: true

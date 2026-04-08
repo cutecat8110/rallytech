@@ -1,0 +1,7 @@
+interface:
+  display_name: "Analytics Tracking"
+  short_description: "GA4、GTM 與 measurement contract 規劃"
+  default_prompt: "使用 $analytics-tracking 為這個 RallyTech 頁面或 flow 定義 measurement contract、event names、parameters 與 validation 規則。"
+
+policy:
+  allow_implicit_invocation: true

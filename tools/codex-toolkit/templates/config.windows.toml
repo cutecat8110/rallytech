@@ -1,0 +1,38 @@
+model = "gpt-5.4"
+model_reasoning_effort = "xhigh"
+
+[projects.'{{REPO_ROOT}}']
+trust_level = "trusted"
+
+[projects.'{{USER_HOME}}']
+trust_level = "trusted"
+
+[windows]
+sandbox = "unelevated"
+
+[features]
+multi_agent = true
+js_repl = true
+
+[notice.model_migrations]
+"gpt-5.3-codex" = "gpt-5.4"
+
+[mcp_servers.chrome-devtools]
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--browserUrl", "http://127.0.0.1:9222"]
+
+[mcp_servers.playwright]
+command = "npx"
+args = ["-y", "@playwright/mcp@latest"]
+
+[mcp_servers.context7]
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
+
+[mcp_servers.memory]
+command = "npx"
+args = ["-y", "@modelcontextprotocol/server-memory@latest"]
+
+[mcp_servers.fetch]
+command = "python"
+args = ["-m", "mcp_server_fetch"]

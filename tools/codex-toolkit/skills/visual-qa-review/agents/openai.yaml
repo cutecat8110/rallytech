@@ -1,0 +1,7 @@
+interface:
+  display_name: "Visual QA Review"
+  short_description: "reference/local compare、hierarchy QA 與 responsive findings"
+  default_prompt: "使用 $visual-qa-review 針對 reference、local page 與設計方向做精準 compare review，整理 hierarchy、CTA 與 responsive findings。"
+
+policy:
+  allow_implicit_invocation: true

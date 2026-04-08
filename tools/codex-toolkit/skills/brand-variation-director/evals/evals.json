@@ -1,0 +1,40 @@
+{
+  "skill_name": "brand-variation-director",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "clone 已經過第一輪 fidelity pass，現在我要做 Phase 2 品牌變體。請先幫我規劃視覺方向、AI 圖像 role 和 copy delta。",
+      "expected_output": "Should treat this as a Phase 2 brand variation task. It should preserve the protected fidelity boundary while producing variation direction, image role planning, and copy delta guidance.",
+      "assertions": [
+        "Treats the task as Phase 2 brand variation",
+        "Preserves fidelity boundaries",
+        "Plans visual direction and image roles",
+        "Defines copy delta guidance"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我還沒有把 clone 做穩，但我現在就想直接做品牌差異化。",
+      "expected_output": "Should recognize the fidelity boundary is not stable enough for brand variation. It should route the task back to reference-clone-architect instead of mixing Phase 1 truth capture with Phase 2 differentiation.",
+      "assertions": [
+        "Recognizes fidelity is not stable yet",
+        "Routes back to reference-clone-architect",
+        "Avoids mixing Phase 1 and Phase 2"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我們想保留原本 block hierarchy，但把視覺感受做得更像 RallyTech 自己的品牌。也請一起寫 acceptance note。",
+      "expected_output": "Should keep hierarchy intact while proposing a differentiated visual direction and an acceptance note that defines what changed and what stayed protected. It should not let the variation drift into structural redesign.",
+      "assertions": [
+        "Keeps hierarchy intact",
+        "Proposes a differentiated visual direction",
+        "Includes an acceptance note",
+        "Avoids structural redesign"
+      ],
+      "files": []
+    }
+  ]
+}

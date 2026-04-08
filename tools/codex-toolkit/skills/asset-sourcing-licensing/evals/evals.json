@@ -1,0 +1,40 @@
+{
+  "skill_name": "asset-sourcing-licensing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我們首頁 hero 和 trust 區塊都還缺圖，請幫我從公開來源挑選可重用的 demo images，並整理下載與授權紀錄。",
+      "expected_output": "Should treat this as a RallyTech asset sourcing workflow, not generic inspiration gathering. Should define the image job by page and block, prioritize open-license sources, and record each selected asset with source and licensing notes.",
+      "assertions": [
+        "Defines the image job by page or block",
+        "Uses open-license or API-friendly sources",
+        "Records licensing or source notes",
+        "Produces a reusable asset shortlist"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "這一頁想要控制室、工廠環境和工程團隊的照片，但不要看起來太像 stock photo。你幫我找 sourcing 方向。",
+      "expected_output": "Should propose search directions and selection criteria that fit an industrial B2B website, and should explain how to avoid low-trust or overly generic stock visuals. It should keep the output tied to page intent and not drift into unrelated art direction work.",
+      "assertions": [
+        "Proposes industrial B2B search directions",
+        "Includes visual selection criteria",
+        "Avoids generic stock-photo choices",
+        "Keeps the advice tied to page intent"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我想直接生 AI 圖，不想找授權素材。",
+      "expected_output": "Should recognize the task is moving away from sourcing and licensing toward AI image generation or brand variation. It should route the user to the appropriate skill instead of pretending stock sourcing is still the main job.",
+      "assertions": [
+        "Recognizes AI image generation is a different task",
+        "Routes to brand-variation-director or imagegen",
+        "Does not force stock sourcing when it is not the right fit"
+      ],
+      "files": []
+    }
+  ]
+}

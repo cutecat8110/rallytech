@@ -1,0 +1,7 @@
+interface:
+  display_name: "Reference Clone Architect"
+  short_description: "reference clone artifacts、fidelity gate 與 implementation mapping"
+  default_prompt: "使用 $reference-clone-architect 協調這次 reference clone 的 artifacts、implementation mapping 與 fidelity boundaries。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,39 @@
+{
+  "skill_name": "form-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我們 contact form 已經做完了，但提交率偏低。請幫我檢查欄位、錯誤訊息和 submit flow。",
+      "expected_output": "Should treat this as a post-implementation form optimization task. It should look at field friction, validation feedback, and submission flow instead of redesigning the whole page.",
+      "assertions": [
+        "Treats the task as post-implementation form optimization",
+        "Checks field friction and validation feedback",
+        "Looks at submission flow",
+        "Does not redesign the whole page"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "這個 demo request form 的欄位很多，mobile 又特別痛苦，你幫我判斷哪些欄位應該保留。",
+      "expected_output": "Should analyze the form through friction, value of each field, and mobile burden. It should recommend a leaner capture approach if appropriate.",
+      "assertions": [
+        "Analyzes field friction",
+        "Considers mobile burden",
+        "Recommends a leaner field set when justified"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我還沒決定 contact form 要不要放在首頁，也還沒決定 CTA 要導去哪裡。",
+      "expected_output": "Should recognize the page and CTA flow are not stable enough yet. It should route the user back to page-level planning rather than pretending field optimization is the main issue.",
+      "assertions": [
+        "Recognizes the page flow is not stable",
+        "Routes back to page-level planning",
+        "Does not pretend field optimization is the primary issue"
+      ],
+      "files": []
+    }
+  ]
+}

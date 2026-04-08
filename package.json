@@ -17,7 +17,7 @@
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "guard:ui-buttons": "node scripts/check-u-button-content.mjs",
-    "lint": "eslint .",
+    "lint": "eslint . --ignore-pattern \"tools/codex-toolkit/skills/**\"",
     "typecheck": "nuxt typecheck",
     "verify": "npm run format:check && npm run lint && npm run guard:ui-buttons && npm run typecheck",
     "workflow:clone:preflight": "node scripts/clone-workflow-preflight.mjs"

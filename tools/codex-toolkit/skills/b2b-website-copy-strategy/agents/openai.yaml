@@ -1,0 +1,7 @@
+interface:
+  display_name: "B2B Website Copy Strategy"
+  short_description: "工業 B2B 官網的雙語 copy strategy 與 message stack"
+  default_prompt: "使用 $b2b-website-copy-strategy 把 reference 與專案事實轉成可上線的 en / zh-tw B2B 網站文案與 page message stack。"
+
+policy:
+  allow_implicit_invocation: true

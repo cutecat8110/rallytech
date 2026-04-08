@@ -1,0 +1,40 @@
+{
+  "skill_name": "design-system-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "請根據我們現在的 Nuxt UI repo，規劃 semantic tokens、app.config.ts ownership 和哪些樣式該升級到 global theme。",
+      "expected_output": "Should treat this as a design-system ownership task. It should reason about semantic tokens, promotion rules, and Nuxt UI mapping instead of only suggesting visual styles.",
+      "assertions": [
+        "Treats the task as design-system ownership",
+        "Plans semantic tokens",
+        "Reasons about promotion or ownership rules",
+        "Maps the solution to Nuxt UI"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "這個 button 樣式到底該放 token、app.config.ts、區塊層，還是 component local？幫我做判斷。",
+      "expected_output": "Should answer through the ownership model and explain why the style belongs at a specific layer. It should not answer with pure aesthetics or arbitrary preference.",
+      "assertions": [
+        "Uses the ownership model",
+        "Chooses a specific layer",
+        "Explains why the decision fits the repo pattern",
+        "Avoids arbitrary visual preference"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我只想讓首頁看起來更帥，不想討論 token 和 ownership。",
+      "expected_output": "Should recognize the task is visual direction rather than design-system governance. It should route to frontend-skill instead of forcing the discussion into tokens and ownership.",
+      "assertions": [
+        "Recognizes the task is visual direction",
+        "Routes to frontend-skill",
+        "Does not force design-system governance onto a styling-only request"
+      ],
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Brand Variation Director"
+  short_description: "reference 後品牌變體、AI 圖像 brief 與 copy delta"
+  default_prompt: "使用 $brand-variation-director 規劃保留 reference hierarchy 的品牌變體、AI 圖像 brief 與 copy delta。"
+
+policy:
+  allow_implicit_invocation: true

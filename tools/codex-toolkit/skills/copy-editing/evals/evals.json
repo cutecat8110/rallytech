@@ -1,0 +1,40 @@
+{
+  "skill_name": "copy-editing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "這一版首頁文案已經有 message stack 了，你幫我做最後一輪 line editing，讓它更清楚、更自然，但不要重寫策略。",
+      "expected_output": "Should treat this as line editing on top of an existing page strategy. It should improve clarity and rhythm without rebuilding the message stack or inventing a new positioning angle.",
+      "assertions": [
+        "Treats the task as line editing",
+        "Improves clarity and rhythm",
+        "Does not rebuild the strategy",
+        "Preserves the existing message stack"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "這段 copy 有點太像 AI 寫的，幫我修到更像真的人在寫，語氣要穩。",
+      "expected_output": "Should focus on sentence-level editing, naturalness, and tone control. It should reduce awkward or over-polished phrasing without inventing a new content plan.",
+      "assertions": [
+        "Focuses on sentence-level editing",
+        "Improves naturalness",
+        "Controls tone without changing scope",
+        "Avoids inventing a new plan"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我還沒有任何首頁文案，你先幫我把整個 hero 和 proof message stack 想出來。",
+      "expected_output": "Should recognize this is no longer a copy-editing task. It should route to b2b-website-copy-strategy rather than pretending a blank-page planning task is line editing.",
+      "assertions": [
+        "Recognizes the task is blank-page planning",
+        "Routes to b2b-website-copy-strategy",
+        "Does not fake line editing on nonexistent copy"
+      ],
+      "files": []
+    }
+  ]
+}

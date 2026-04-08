@@ -1,0 +1,7 @@
+interface:
+  display_name: "Form CRO"
+  short_description: "已穩定表單的 friction、欄位與提交流程優化"
+  default_prompt: "使用 $form-cro 檢查這個已穩定表單的 friction、欄位設計、錯誤狀態與提交路徑。"
+
+policy:
+  allow_implicit_invocation: true

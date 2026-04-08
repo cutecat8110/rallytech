@@ -1,0 +1,39 @@
+{
+  "skill_name": "site-architecture",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "請幫我規劃企業官網的 page hierarchy、navigation、URL structure 和 breadcrumb 邏輯。",
+      "expected_output": "Should treat this as standalone IA planning. It should organize page hierarchy, navigation, URL logic, and breadcrumbs clearly without confusing the task with technical XML sitemap work.",
+      "assertions": [
+        "Treats the task as IA planning",
+        "Organizes page hierarchy and navigation",
+        "Defines URL and breadcrumb logic",
+        "Does not confuse it with XML sitemap work"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我現在是從一個 reference site 開始，想先把 clone 做準，再來談網站結構。",
+      "expected_output": "Should recognize that reference-led work belongs to the clone workflow first. It should route to reference-clone-architect rather than taking over as the main entry point.",
+      "assertions": [
+        "Recognizes the task is reference-led",
+        "Routes to reference-clone-architect first",
+        "Does not take over as the main clone entry point"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我們 breadcrumbs 很亂，service 和 proof pages 之間也沒有清楚的 internal linking，幫我整理。",
+      "expected_output": "Should focus on page relationships, breadcrumb logic, and internal-link structure. It should keep the recommendations practical and tied to user navigation and findability.",
+      "assertions": [
+        "Focuses on breadcrumbs and internal linking",
+        "Clarifies page relationships",
+        "Keeps recommendations practical"
+      ],
+      "files": []
+    }
+  ]
+}

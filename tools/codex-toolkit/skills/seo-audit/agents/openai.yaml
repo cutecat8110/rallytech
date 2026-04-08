@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Audit"
+  short_description: "Nuxt 網站的 SEO、RWD 與 crawlability signoff"
+  default_prompt: "使用 $seo-audit 審查這個 Nuxt 網站的 crawlability、metadata、internal links、performance 與 SEO signoff。"
+
+policy:
+  allow_implicit_invocation: true

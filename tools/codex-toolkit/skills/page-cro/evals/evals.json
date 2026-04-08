@@ -1,0 +1,40 @@
+{
+  "skill_name": "page-cro",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "首頁現在已經穩了，但 CTA 點擊率很低。請幫我檢查 message hierarchy、proof placement 和 CTA flow。",
+      "expected_output": "Should treat this as a stable-page conversion review. It should examine message hierarchy, proof placement, and CTA flow rather than revisiting the entire clone workflow.",
+      "assertions": [
+        "Treats the page as stable",
+        "Checks message hierarchy",
+        "Checks proof placement and CTA flow",
+        "Does not reopen the full clone workflow"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "service page 看起來很完整，但 users 看完沒有往 contact form 走。你幫我找 conversion friction。",
+      "expected_output": "Should identify friction between service understanding and next action. It should suggest page-level adjustments that improve conversion without redefining the site architecture.",
+      "assertions": [
+        "Identifies service-page conversion friction",
+        "Connects understanding to next action",
+        "Suggests page-level improvements",
+        "Avoids redefining the whole site architecture"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我現在連首頁 block order 都還沒定，但先幫我做 CRO。",
+      "expected_output": "Should recognize the page structure is not stable enough for CRO. It should push the task back toward the reference or planning workflow before doing conversion optimization.",
+      "assertions": [
+        "Recognizes the page structure is not stable",
+        "Pushes back toward planning or reference workflow",
+        "Avoids premature CRO recommendations"
+      ],
+      "files": []
+    }
+  ]
+}

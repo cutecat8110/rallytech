@@ -1,0 +1,39 @@
+{
+  "skill_name": "visual-qa-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "請幫我 review 本地首頁和 reference 的差異，特別看 hierarchy、CTA prominence、trust signals 和 responsive 狀態。",
+      "expected_output": "Should treat this as a compare review grounded in evidence. It should evaluate hierarchy, CTA prominence, trust signals, and responsive states in a structured way rather than giving vague aesthetic comments.",
+      "assertions": [
+        "Treats the task as evidence-based compare review",
+        "Evaluates hierarchy and CTA prominence",
+        "Evaluates trust signals and responsive states",
+        "Avoids vague aesthetic comments"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Phase 2 品牌變體做完了，幫我看它有沒有偏離原本 acceptance note。",
+      "expected_output": "Should evaluate the variant against the accepted boundary and call out whether the drift is acceptable, aesthetic, or structural. It should keep the review tied to the agreed variation brief.",
+      "assertions": [
+        "Reviews against the accepted boundary",
+        "Distinguishes acceptable vs problematic drift",
+        "Keeps the review tied to the variation brief"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我還沒有任何 screenshot 或 local evidence，你先直接幫我做 visual QA。",
+      "expected_output": "Should recognize that evidence is missing. It should ask for or route to evidence capture rather than pretending a precise compare review can happen without truth sources.",
+      "assertions": [
+        "Recognizes evidence is missing",
+        "Requests or routes to evidence capture",
+        "Avoids pretending a precise review can happen without evidence"
+      ],
+      "files": []
+    }
+  ]
+}

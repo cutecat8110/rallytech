@@ -1,0 +1,55 @@
+{
+  "skill_name": "seo-audit",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "這個 Nuxt 官網準備上線了，請幫我做 SEO signoff。我要你看 robots、sitemap、canonical、metadata、internal links 跟 mobile 狀態。",
+      "expected_output": "Should treat this as a RallyTech-first pre-launch SEO audit. Should follow the audit order starting from crawlability and indexable URL shape, then metadata, content hierarchy, internal links, performance, and schema handoff. Should return blockers, warnings, evidence, and likely fix owners.",
+      "assertions": [
+        "Treats the task as a pre-launch SEO audit",
+        "Checks crawlability before other issues",
+        "Checks metadata and canonicals",
+        "Checks internal links and mobile state",
+        "Returns blockers, warnings, evidence, and owners"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我們的 /services/automation 頁面上線兩週了，Google 還是沒收錄。你幫我診斷一下。",
+      "expected_output": "Should focus on indexing diagnosis rather than generic content advice. Should check robots directives, canonical setup, sitemap inclusion, possible noindex or auth gating, and whether internal links meaningfully expose the page. Should keep the findings practical and ordered by likely impact.",
+      "assertions": [
+        "Treats the task as indexing diagnosis",
+        "Checks robots and canonical setup",
+        "Checks sitemap inclusion",
+        "Checks internal-link exposure",
+        "Prioritizes likely causes"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "手機版首頁很慢，hero 進來還會跳一下版。這會不會影響 SEO？",
+      "expected_output": "Should connect the issue to performance and RWD checks, not just generic SEO commentary. Should discuss mobile performance, layout shift, and likely causes such as media, blocking scripts, or CSS. Should provide a practical investigation path and explain why this matters to launch signoff.",
+      "assertions": [
+        "Connects the issue to performance and RWD",
+        "Addresses layout shift",
+        "Names likely technical causes",
+        "Provides a practical investigation path",
+        "Explains why it matters to SEO signoff"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我想幫首頁補 FAQ schema，順便看能不能做 rich results。你幫我弄。",
+      "expected_output": "Should recognize that the core request is structured-data implementation, not a full SEO audit. It may mention schema as part of SEO, but should route the implementation work to schema-markup rather than expanding into a generic audit.",
+      "assertions": [
+        "Recognizes the task is schema-oriented",
+        "Routes implementation work to schema-markup",
+        "Does not expand into an unnecessary full audit"
+      ],
+      "files": []
+    }
+  ]
+}

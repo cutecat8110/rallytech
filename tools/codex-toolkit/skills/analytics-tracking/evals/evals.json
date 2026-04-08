@@ -1,0 +1,54 @@
+{
+  "skill_name": "analytics-tracking",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我們首頁已經差不多定稿了，請幫我規劃 measurement contract。我要追 hero CTA、sticky CTA、contact form start / success，還有 footer email click。工具是 GA4 + GTM。",
+      "expected_output": "Should treat this as a post-implementation measurement-contract task. Should map visible conversion objects to stable event names, define a concise parameter set, specify the transport path through GA4 and GTM, and include validation notes for desktop and mobile.",
+      "assertions": [
+        "Treats the task as a measurement contract",
+        "Maps visible CTA and form objects to event names",
+        "Defines a concise parameter set",
+        "Uses GA4 and GTM as the implementation path",
+        "Includes validation notes"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我們 contact form 成功送出後，GA4 常常重複記兩次 conversion。這個 Nuxt 頁面又有 route transitions，你幫我看問題會在哪。",
+      "expected_output": "Should frame this as an analytics QA and validation problem, not as a redesign request. Should investigate duplicate fire causes such as route changes, hydration, repeated success handlers, or GTM trigger duplication. Should recommend a concrete validation flow using DebugView, GTM Preview, or browser inspection.",
+      "assertions": [
+        "Treats the task as analytics QA",
+        "Checks duplicate fire causes around route changes",
+        "Considers GTM or success-handler duplication",
+        "Provides a concrete validation flow"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我還沒決定首頁 CTA 要不要做 sticky，也還沒決定 contact form 要放哪裡。先幫我規劃 tracking 吧。",
+      "expected_output": "Should recognize the tracked surface is not stable enough. Should push the decision back toward the relevant planning workflow instead of pretending instrumentation is ready. It may outline what will need tracking later, but should say structure and CTA placement need to settle first.",
+      "assertions": [
+        "Recognizes the surface is not stable",
+        "Avoids pretending instrumentation is ready",
+        "Routes unstable CTA or structure questions back to planning",
+        "May outline future tracking needs without finalizing them"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我們想測 pricing page 的兩個版本哪個比較會轉換。請幫我處理 tracking。",
+      "expected_output": "Should keep focus on measurement and instrumentation, not full experiment design. Should define candidate events, parameters, and validation steps for the test surface, while making clear that page-variant strategy or CRO framing belongs to the relevant planning workflow.",
+      "assertions": [
+        "Keeps focus on measurement and instrumentation",
+        "Defines candidate events and parameters",
+        "Includes validation steps",
+        "Separates experiment design from analytics instrumentation"
+      ],
+      "files": []
+    }
+  ]
+}

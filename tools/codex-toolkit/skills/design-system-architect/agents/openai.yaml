@@ -1,0 +1,7 @@
+interface:
+  display_name: "Design System Architect"
+  short_description: "設計系統、semantic tokens 與 Nuxt UI ownership 規劃"
+  default_prompt: "使用 $design-system-architect 規劃本 repo 的 semantic tokens、Nuxt UI ownership 與 style promotion 規則。"
+
+policy:
+  allow_implicit_invocation: true

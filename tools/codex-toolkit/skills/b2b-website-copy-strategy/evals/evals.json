@@ -1,0 +1,40 @@
+{
+  "skill_name": "b2b-website-copy-strategy",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "請把 reference 的首頁文案整理成 source → en → zh-tw，並產出我們可上線的首頁 hero、proof、CTA message stack。",
+      "expected_output": "Should treat this as the main RallyTech copy-planning workflow. It should preserve source truth, convert it into launch-ready bilingual copy, and organize the output as a page-level message stack rather than random rewritten lines.",
+      "assertions": [
+        "Uses source to en to zh-tw mapping",
+        "Produces launch-ready bilingual copy",
+        "Organizes output by page or block message stack",
+        "Keeps reference truth visible"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我們 service page 現在太像直翻，語氣也不夠像專業工程整合商。幫我重寫，但不要失去 technical credibility。",
+      "expected_output": "Should improve the copy with an industrial B2B voice while preserving technical credibility. It should avoid generic marketing fluff and keep the rewrite tied to the actual service intent and engineering audience.",
+      "assertions": [
+        "Preserves technical credibility",
+        "Improves industrial B2B tone",
+        "Avoids generic marketing fluff",
+        "Keeps the rewrite tied to service intent"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "這一段文案我只想要你幫我逐句修順，不要重想整頁策略。",
+      "expected_output": "Should recognize this is now a line-editing request rather than a full copy strategy task. It should either narrow scope to editing only or route the user to copy-editing rather than rebuilding the whole page message stack.",
+      "assertions": [
+        "Recognizes the request is line editing",
+        "Avoids rebuilding the whole page strategy",
+        "Routes to copy-editing or narrows scope appropriately"
+      ],
+      "files": []
+    }
+  ]
+}

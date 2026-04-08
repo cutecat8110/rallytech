@@ -1,0 +1,7 @@
+interface:
+  display_name: "Site Architecture"
+  short_description: "page hierarchy、navigation 與 internal linking 規劃"
+  default_prompt: "使用 $site-architecture 規劃這個網站的 page hierarchy、navigation、URL structure 與 internal linking。"
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Schema Markup"
+  short_description: "Nuxt structured data、breadcrumb 與 FAQ schema 規劃"
+  default_prompt: "使用 $schema-markup 為這個 Nuxt 網站規劃或實作 JSON-LD，並維持 visible-content alignment 與 validation path。"
+
+policy:
+  allow_implicit_invocation: true

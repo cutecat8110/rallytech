@@ -1,0 +1,40 @@
+{
+  "skill_name": "reference-clone-architect",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我有一個參考網站和幾張 screenshot，請先幫我建立 clone brief、capture pack、architecture pack 和 implementation contract。",
+      "expected_output": "Should treat the task as an artifact-first clone workflow. It should produce the expected artifact chain, establish reference truth, and avoid jumping straight into code.",
+      "assertions": [
+        "Treats the task as artifact-first",
+        "Produces the clone artifact chain",
+        "Establishes reference truth",
+        "Avoids jumping straight into code"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "這次是 multi-page clone，而且我還要保留未來 Phase 2 品牌變體的空間。你先幫我規劃 phase gate 和交接界面。",
+      "expected_output": "Should define phase gates, fidelity boundaries, and handoff interfaces for multi-page clone work. It should keep Phase 1 truth capture separate from later brand variation.",
+      "assertions": [
+        "Defines phase gates",
+        "Defines fidelity boundaries",
+        "Plans handoff interfaces",
+        "Keeps Phase 1 and Phase 2 separate"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "clone 本身已經穩了，我現在只想做視覺 polish 和 compare review。",
+      "expected_output": "Should recognize the task has moved beyond clone orchestration. It should route to frontend-skill or visual-qa-review instead of unnecessarily reopening the artifact workflow.",
+      "assertions": [
+        "Recognizes clone orchestration is no longer primary",
+        "Routes to frontend-skill or visual-qa-review",
+        "Avoids reopening the artifact workflow"
+      ],
+      "files": []
+    }
+  ]
+}

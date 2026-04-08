@@ -1,0 +1,39 @@
+{
+  "skill_name": "uiux-pm-collaboration",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "這次 clone 任務範圍很大，而且還有設計系統和品牌變體的決策。我不想直接跳實作，先幫我拆決策節點。",
+      "expected_output": "Should slow the task down into explicit decision points. It should structure the conversation around objective, constraints, options, recommendation, and decision rather than rushing into deliverables.",
+      "assertions": [
+        "Breaks the task into decision points",
+        "Uses objective, constraints, options, recommendation, decision",
+        "Avoids rushing into deliverables"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我想先比較三種首頁方向，知道各自 tradeoff 再決定。",
+      "expected_output": "Should present concrete options with meaningful tradeoffs and a recommendation. It should not remain in vague brainstorming mode.",
+      "assertions": [
+        "Presents concrete options",
+        "Explains meaningful tradeoffs",
+        "Provides a recommendation",
+        "Avoids vague brainstorming"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "需求其實已經很穩，現在只剩 Nuxt UI implementation。",
+      "expected_output": "Should recognize when alignment work is no longer the bottleneck and route to the relevant implementation specialist instead of forcing extra decision ceremony.",
+      "assertions": [
+        "Recognizes alignment is no longer the bottleneck",
+        "Routes to the relevant implementation specialist",
+        "Avoids unnecessary decision ceremony"
+      ],
+      "files": []
+    }
+  ]
+}

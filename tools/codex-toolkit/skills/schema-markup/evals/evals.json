@@ -1,0 +1,53 @@
+{
+  "skill_name": "schema-markup",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "請幫我們公司首頁規劃 schema。我們是工業自動化整合商，要有 Organization、WebSite，必要時可以一起整理成 graph。",
+      "expected_output": "Should prioritize Organization and WebSite schema for a company homepage. Should keep the decision tied to visible content and site truth, use JSON-LD, and provide implementation-ready output that could be rendered through Nuxt ownership layers.",
+      "assertions": [
+        "Prioritizes Organization and WebSite schema",
+        "Keeps the markup tied to visible content",
+        "Uses JSON-LD",
+        "Can provide graph-based output when appropriate",
+        "Produces implementation-ready output"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我們 service page 有 breadcrumb，也有一個真的看得到的 FAQ 區塊。請幫我補 breadcrumb schema 跟 FAQ schema。",
+      "expected_output": "Should recognize both schema types are justified only because the visible content and hierarchy are stable. Should include BreadcrumbList and FAQPage patterns, stress visible-content alignment, and return validation steps rather than only naming schema types.",
+      "assertions": [
+        "Uses breadcrumb and FAQ schema only when justified",
+        "Maintains visible-content alignment",
+        "Includes validation steps",
+        "Returns implementation-ready structure"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我們明明已經有 JSON-LD 了，但 Google 還是沒顯示 rich results。你幫我 debug 一下。",
+      "expected_output": "Should provide a structured validation path: rendered DOM check, Rich Results Test, Schema.org Validator, and a distinction between valid schema and guaranteed display. Should look for missing required properties, mismatch with visible content, or eligibility misunderstandings.",
+      "assertions": [
+        "Provides a structured validation path",
+        "Uses Rich Results Test and Schema.org Validator",
+        "Explains valid schema does not guarantee display",
+        "Checks visible-content mismatch and eligibility issues"
+      ],
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "我們 redesign 之後流量掉了，請幫我做 technical SEO audit。",
+      "expected_output": "Should recognize the request is a broader SEO audit and route it to seo-audit. It may mention schema as one layer, but should not try to replace crawlability, canonical, or indexation diagnosis with structured-data advice.",
+      "assertions": [
+        "Recognizes the request is a broader SEO audit",
+        "Routes the task to seo-audit",
+        "Does not overextend schema advice into full SEO diagnosis"
+      ],
+      "files": []
+    }
+  ]
+}

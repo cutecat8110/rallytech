@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Marketing Context"
+  short_description: "可重用的 positioning、ICP 與 marketing context 文件"
+  default_prompt: "使用 $product-marketing-context 建立或更新可重用的 product marketing context 文件，供其他 skills 參照。"
+
+policy:
+  allow_implicit_invocation: true

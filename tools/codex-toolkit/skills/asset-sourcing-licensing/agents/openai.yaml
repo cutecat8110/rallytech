@@ -1,0 +1,7 @@
+interface:
+  display_name: "Asset Sourcing & Licensing"
+  short_description: "網站 demo images 的來源、授權與下載紀錄"
+  default_prompt: "使用 $asset-sourcing-licensing 為這個 RallyTech 頁面挑選合適 demo images，並整理來源、授權與下載紀錄。"
+
+policy:
+  allow_implicit_invocation: true

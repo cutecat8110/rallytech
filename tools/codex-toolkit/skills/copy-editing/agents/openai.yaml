@@ -1,0 +1,7 @@
+interface:
+  display_name: "Copy Editing"
+  short_description: "既有網站文案的 line editing 與語氣校正"
+  default_prompt: "使用 $copy-editing 針對既有網站文案做 line editing、語氣校正與清晰度提升，不重做頁面策略。"
+
+policy:
+  allow_implicit_invocation: true

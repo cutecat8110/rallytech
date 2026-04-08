@@ -1,0 +1,7 @@
+interface:
+  display_name: "Page CRO"
+  short_description: "已穩定頁面的 message hierarchy 與 CTA flow 優化"
+  default_prompt: "使用 $page-cro 檢查這個已穩定頁面的 message hierarchy、CTA flow 與轉換摩擦。"
+
+policy:
+  allow_implicit_invocation: true

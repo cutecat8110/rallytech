@@ -1,0 +1,38 @@
+{
+  "skill_name": "product-marketing-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我們接下來會反覆做網站、文案和 SEO 任務，但現在缺一份可重用的 positioning / ICP / core message context。幫我整理成共用文件。",
+      "expected_output": "Should treat this as a reusable context-document task. It should organize positioning, ICP, and message foundations into a reusable context rather than treating it like a one-off answer.",
+      "assertions": [
+        "Treats the task as a reusable context document",
+        "Organizes positioning and ICP clearly",
+        "Builds reusable message foundations"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "我們已有 context 文件，但 target audience 和 value proposition 最近改了，幫我只更新相關段落。",
+      "expected_output": "Should read and update the existing context selectively rather than regenerating the whole document. It should focus on the requested sections only.",
+      "assertions": [
+        "Updates an existing context document",
+        "Focuses only on the requested sections",
+        "Avoids regenerating everything unnecessarily"
+      ],
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "我現在只是想先把 service page 文案寫好，repo 裡其實已經有很多 docs。",
+      "expected_output": "Should recognize that existing project docs may already be enough for the immediate task. It should avoid forcing a new context-document workflow when the user can proceed directly with the page task.",
+      "assertions": [
+        "Recognizes existing docs may already be sufficient",
+        "Avoids forcing a new context workflow",
+        "Keeps the immediate page task moving"
+      ],
+      "files": []
+    }
+  ]
+}
