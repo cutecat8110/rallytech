@@ -15,9 +15,9 @@ const messages = {
     email: 'sales@rallytech.com.tw',
     emailHref: 'mailto:sales@rallytech.com.tw',
     address:
-      '3F.-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
     addressEnglish:
-      '3F.-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
   },
   nav: {
     homeAriaLabel: 'Rally Technology homepage',
@@ -36,7 +36,7 @@ const messages = {
     items: [
       { label: 'About', href: '#about' },
       { label: 'Services', href: '#services' },
-      { label: 'OTE', href: '#one-touch-experience' },
+      { label: 'One-Touch Experience', href: '#one-touch-experience' },
       { label: 'Contact', href: '#contact' }
     ]
   },
@@ -140,7 +140,7 @@ const messages = {
       ]
     },
     oneTouch: {
-      title: 'The One-Touch Experience.',
+      title: 'One-Touch Experience',
       ctaLabel: 'Learn More',
       items: [
         'Data Integration',
@@ -151,7 +151,7 @@ const messages = {
       ]
     },
     mission: {
-      heading: 'Unlock Your Potential with Rally Technology',
+      heading: 'Turn Project Complexity into Stable Operations',
       tabs: [
         {
           value: 'mission',
@@ -164,7 +164,7 @@ const messages = {
         },
         {
           value: 'join-us',
-          label: 'Join Us!',
+          label: 'Partner With Us',
           title:
             'Work with Rally Technology to align system integration, field delivery, and long-term operations',
           description:
@@ -176,7 +176,7 @@ const messages = {
     }
   },
   footer: {
-    connectorHeading: 'Engineering + Design Experts',
+    connectorHeading: 'Engineering and Automation Delivery Experts',
     ctaLabel: 'Contact Us',
     brandLine: 'Rally Technology',
     phoneLabel: 'Phone',

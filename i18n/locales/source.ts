@@ -57,8 +57,9 @@ const messages = {
       description:
         'Welcome to Pentagon Engineering, a leader in industrial automation. Founded in 2022, we specialize in Instrumentation and Controls Automation, combining cutting-edge technology with efficiency to transform business operations globally.',
       mediaLabel: 'About image source-reference composite',
-      primaryImageAlt: 'About Image',
-      detailImageAlt: 'About Image',
+      primaryImageAlt: 'Pentagon Engineering source about reference image',
+      detailImageAlt:
+        'Pentagon Engineering source about detail reference image',
       points: [
         {
           title: 'Expertise',
@@ -154,16 +155,15 @@ const messages = {
           description:
             'Pentagon Engineering champions engineering excellence to enhance global business, offering innovative tools and solutions for industry advancement and productivity.',
           ctaLabel: 'Read More',
-          imageAlt: 'Why Us'
+          imageAlt: 'Pentagon Engineering source mission reference image'
         },
         {
           value: 'join-us',
           label: 'Join Us!',
           title: 'Join Us!',
-          description:
-            'Pentagon Engineering champions engineering excellence to enhance global business, offering innovative tools and solutions for industry advancement and productivity.',
+          description: `Join us in our journey of innovation. Visit our website for our services, case studies, and our impact on various industries. Contact us to unlock your organization's engineering potential.`,
           ctaLabel: 'Read More',
-          imageAlt: 'Why Us'
+          imageAlt: 'Pentagon Engineering source join-us reference image'
         }
       ]
     }

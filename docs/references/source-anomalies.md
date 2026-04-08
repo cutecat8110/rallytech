@@ -1,6 +1,6 @@
 # source 異常集中檔
 
-最後更新：2026-03-31
+最後更新：2026-04-08
 來源網址：https://pentagoneng.com/（multi-page anomaly index）
 
 ## 文件目的
@@ -12,6 +12,7 @@
 
 - 先看各頁 `source` block；只有遇到跨頁、跨區塊或明顯衝突時，再回來查這份異常索引。
 - 這份檔案不重複抄寫整頁內容，只保留足以影響對照判讀的重點。
+- `source` block 以 full-page screenshot 與畫面實際可見文字為準；raw DOM inventory 若撈到 hidden/inactive 區塊，只記在 anomaly，不直接寫回 block content。
 
 ## 2026-04-07 i18n recrawl 補充
 
@@ -19,6 +20,8 @@
 - 證據輸出位置：`artifacts/i18n-reference-recrawl-20260407/`。
 - 多個頁面仍出現 `archicwp.websitelayout.net` 類型的外部 template 壞圖；這些只作為 source anomaly，不可被整理進 runtime i18n image source。
 - i18n migration 僅遷移文字、區塊順序、備註與可本地化 alt fallback；正式圖片來源仍以首頁 image registry / 授權清單為準。
+- `About Image`、`Icon Image`、`Why Us`、`Shape Image`、泛用 `Image` 等破圖 placeholder 只當成 anomaly / diagnostics，不算有效原文，也不可被整理進 `source` runtime copy。
+- 部分頁面在 raw DOM inventory 會出現 inactive tab 或隱藏模板殘留，例如首頁 `Join us in our journey...`、一站式整合頁的 team members、I&E 頁的 `Financial Consulting / Expert Engineer` 卡片；若 full-page screenshot 未實際顯示，就不納入 `source` block content。
 
 ## 00 首頁
 

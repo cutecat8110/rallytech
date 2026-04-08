@@ -16,7 +16,7 @@ const messages = {
     emailHref: 'mailto:sales@rallytech.com.tw',
     address: '302081 新竹縣竹北市惟馨街 95 號 3 樓之 5',
     addressEnglish:
-      '3F.-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
   },
   nav: {
     homeAriaLabel: '雷力科技首頁',

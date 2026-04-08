@@ -982,7 +982,7 @@ export const referencePagesEn = {
     title: 'Home',
     docPath: 'docs/references/en/00-首頁.md',
     sourceUrl: 'https://pentagoneng.com/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-08',
     blockMap: [
       'Block 01 Top Contact [shared-layout]',
       'Block 02 Main Navigation [shared-layout]',
@@ -1005,7 +1005,14 @@ export const referencePagesEn = {
       {
         heading: 'Block 02 Main Navigation [shared-layout]',
         role: 'shared-layout',
-        content: ['About', 'FAQ', 'Services', 'OTE', 'Contact', 'Contact'],
+        content: [
+          'About',
+          'FAQ',
+          'Services',
+          'One-Touch Experience',
+          'Contact',
+          'Contact'
+        ],
         notes: [
           'Homepage shared main navigation. The second "Contact" entry is the header CTA button.'
         ]
@@ -1126,7 +1133,7 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-07\n- Source URL: https://pentagoneng.com/\n\n## Block Map\n\n- Block 01 Top Contact [shared-layout]\n- Block 02 Main Navigation [shared-layout]\n- Block 03 Hero [core]\n- Block 04 About Introduction [core]\n- Block 05 Services Overview [core]\n- Block 06 Process [core]\n- Block 07 One-Touch Experience [core]\n- Block 08 Mission and Join Us [core]\n- Block 09 Footer Contact CTA [shared-layout]\n- Block 10 Footer Copyright [shared-layout]\n\n## Block 01 Top Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 02 Main Navigation [shared-layout]\n\n- About\n- FAQ\n- Services\n- OTE\n- Contact\n- Contact\n\n### Notes\n\n- Homepage shared main navigation. The second "Contact" entry is the header CTA button.\n\n## Block 03 Hero [core]\n\n- Industrial Automation Delivery for Reliable Operations\n- Connecting control systems, plant data, and field execution for modern industrial projects\n- Explore Services\n\n## Block 04 About Introduction [core]\n\n- A Trusted Partner for Controls, Instrumentation, and Industrial Data\n- Rally Technology helps industrial teams connect instrumentation, control systems, commissioning, and plant data into delivery plans that remain clear from kickoff through handover.\n- We align technical planning, site execution, and operational readiness so projects move forward with fewer gaps between design intent and field reality.\n- Expertise: Controls, instrumentation, commissioning, and site coordination managed as one delivery path.\n- Technology: SCADA, PLC/DCS, PI, historians, and industrial networks planned for maintainability.\n- Collaboration: Owners, vendors, and site teams aligned around the same project priorities.\n\n## Block 05 Services Overview [core]\n\n- Services\n- Integrated Support for Industrial Automation Projects\n- SCADA and HMI Graphics\n- Operator-facing visualization for monitoring, alarms, and process control.\n- Learn More\n- I&E Services\n- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.\n- Learn More\n- PLC & DCS Programming and Migration\n- Control logic development, migration planning, and staged cutover support.\n- Learn More\n- PI Server\n- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.\n- Learn More\n- Historians\n- Long-term process-data retention for trend analysis, reporting, and traceability.\n- Learn More\n- Network Design\n- Industrial communication planning for resilient, maintainable plant networks.\n- Learn More\n- Remote Monitoring and Data\n- Remote visibility and data-continuity support across distributed operations.\n- Learn More\n- Alarm Monitoring\n- Alarm strategy and notification workflows for safer, more stable operations.\n- Learn More\n\n## Block 06 Process [core]\n\n- Delivery Process\n- 01 Requirements Alignment\n- 02 Technical Planning\n- 03 Implementation\n- 04 Validation and Handover\n\n## Block 07 One-Touch Experience [core]\n\n- One-Touch Experience\n- Learn More\n- Data Integration\n- Call-Out System Integration and Commissioning\n- Vibration Analysis\n- Local/Cloud Historians Deployment\n- Utilities and Facilities System Integration\n\n## Block 08 Mission and Join Us [core]\n\n- Turn Project Complexity into Stable Operations\n- Our Mission\n- Partner With Us\n- Rally Technology helps clients build automation environments that are easier to operate, easier to maintain, and more dependable over the long term.\n\n## Block 09 Footer Contact CTA [shared-layout]\n\n- Engineering and Automation Delivery Experts\n- Contact Us\n- Updates\n- Stay informed on project delivery, integration, and service updates.\n- Contacts\n- Contact Us\n- +886-3-552-9933\n- Email\n- sales@rallytech.com.tw\n\n## Block 10 Footer Copyright [shared-layout]\n\n- © 2026 Rally Technology. All rights reserved.'
+    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/\n\n## Block Map\n\n- Block 01 Top Contact [shared-layout]\n- Block 02 Main Navigation [shared-layout]\n- Block 03 Hero [core]\n- Block 04 About Introduction [core]\n- Block 05 Services Overview [core]\n- Block 06 Process [core]\n- Block 07 One-Touch Experience [core]\n- Block 08 Mission and Join Us [core]\n- Block 09 Footer Contact CTA [shared-layout]\n- Block 10 Footer Copyright [shared-layout]\n\n## Block 01 Top Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 02 Main Navigation [shared-layout]\n\n- About\n- FAQ\n- Services\n- One-Touch Experience\n- Contact\n- Contact\n\n### Notes\n\n- Homepage shared main navigation. The second "Contact" entry is the header CTA button.\n\n## Block 03 Hero [core]\n\n- Industrial Automation Delivery for Reliable Operations\n- Connecting control systems, plant data, and field execution for modern industrial projects\n- Explore Services\n\n## Block 04 About Introduction [core]\n\n- A Trusted Partner for Controls, Instrumentation, and Industrial Data\n- Rally Technology helps industrial teams connect instrumentation, control systems, commissioning, and plant data into delivery plans that remain clear from kickoff through handover.\n- We align technical planning, site execution, and operational readiness so projects move forward with fewer gaps between design intent and field reality.\n- Expertise: Controls, instrumentation, commissioning, and site coordination managed as one delivery path.\n- Technology: SCADA, PLC/DCS, PI, historians, and industrial networks planned for maintainability.\n- Collaboration: Owners, vendors, and site teams aligned around the same project priorities.\n\n## Block 05 Services Overview [core]\n\n- Services\n- Integrated Support for Industrial Automation Projects\n- SCADA and HMI Graphics\n- Operator-facing visualization for monitoring, alarms, and process control.\n- Learn More\n- I&E Services\n- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.\n- Learn More\n- PLC & DCS Programming and Migration\n- Control logic development, migration planning, and staged cutover support.\n- Learn More\n- PI Server\n- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.\n- Learn More\n- Historians\n- Long-term process-data retention for trend analysis, reporting, and traceability.\n- Learn More\n- Network Design\n- Industrial communication planning for resilient, maintainable plant networks.\n- Learn More\n- Remote Monitoring and Data\n- Remote visibility and data-continuity support across distributed operations.\n- Learn More\n- Alarm Monitoring\n- Alarm strategy and notification workflows for safer, more stable operations.\n- Learn More\n\n## Block 06 Process [core]\n\n- Delivery Process\n- 01 Requirements Alignment\n- 02 Technical Planning\n- 03 Implementation\n- 04 Validation and Handover\n\n## Block 07 One-Touch Experience [core]\n\n- One-Touch Experience\n- Learn More\n- Data Integration\n- Call-Out System Integration and Commissioning\n- Vibration Analysis\n- Local/Cloud Historians Deployment\n- Utilities and Facilities System Integration\n\n## Block 08 Mission and Join Us [core]\n\n- Turn Project Complexity into Stable Operations\n- Our Mission\n- Partner With Us\n- Rally Technology helps clients build automation environments that are easier to operate, easier to maintain, and more dependable over the long term.\n\n## Block 09 Footer Contact CTA [shared-layout]\n\n- Engineering and Automation Delivery Experts\n- Contact Us\n- Updates\n- Stay informed on project delivery, integration, and service updates.\n- Contacts\n- Contact Us\n- +886-3-552-9933\n- Email\n- sales@rallytech.com.tw\n\n## Block 10 Footer Copyright [shared-layout]\n\n- © 2026 Rally Technology. All rights reserved.'
   },
   about: {
     key: 'about',
@@ -1962,7 +1969,7 @@ export const referencePagesZhTw = {
     title: 'Home',
     docPath: 'docs/references/zh-tw/00-首頁.md',
     sourceUrl: 'https://pentagoneng.com/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-08',
     blockMap: [
       '區塊 01 頂部聯絡列 [共用版型]',
       '區塊 02 主選單 [共用版型]',
@@ -2067,7 +2074,7 @@ export const referencePagesZhTw = {
         heading: '區塊 07 一站式整合導覽 [主內容]',
         role: '主內容',
         content: [
-          '一站式整合模組',
+          '一站式整合體驗',
           '了解更多',
           '資料整合｜Data Integration',
           '告警通報系統整合與試車｜Call-Out System Integration and Commissioning',
@@ -2083,7 +2090,7 @@ export const referencePagesZhTw = {
         content: [
           '把專案複雜度轉成穩定可維運的系統',
           '我們的使命',
-          '與我們合作',
+          '合作邀請',
           '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓系統從上線到長期運轉都更可控。'
         ],
         notes: []
@@ -2111,7 +2118,7 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-07\n- 來源網址: https://pentagoneng.com/\n\n## 區塊總覽\n\n- 區塊 01 頂部聯絡列 [共用版型]\n- 區塊 02 主選單 [共用版型]\n- 區塊 03 主視覺 [主內容]\n- 區塊 04 公司介紹 [主內容]\n- 區塊 05 服務總覽區 [主內容]\n- 區塊 06 交付流程 [主內容]\n- 區塊 07 一站式整合導覽 [主內容]\n- 區塊 08 使命與合作邀請 [主內容]\n- 區塊 09 頁尾聯絡 CTA [共用版型]\n- 區塊 10 頁尾版權 [共用版型]\n\n## 區塊 01 頂部聯絡列 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 02 主選單 [共用版型]\n\n- 關於我們\n- 常見問題\n- 服務項目\n- 一站式整合\n- 聯絡我們\n- 聯絡我們\n\n### 備註\n\n- 首頁共用主選單；第二個「聯絡我們」為頁首 CTA 按鈕。\n\n## 區塊 03 主視覺 [主內容]\n\n- 工業自動化交付，為可靠運轉而設計\n- 串接控制系統、工廠資料與現場執行，支撐現代工業專案\n- 探索服務\n\n## 區塊 04 公司介紹 [主內容]\n\n- 值得信賴的儀控、控制與工業資料整合夥伴\n- 雷力科技協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成從啟動到交接都清楚可執行的交付路徑。\n- 我們把技術規劃、現場執行與操作就緒整合在同一條節奏上，降低設計意圖與現場落地之間的落差。\n- 專業能力：控制、儀控、試車驗收與現場協調以同一條交付路徑管理。\n- 技術基礎：以 SCADA、PLC/DCS、PI、Historian 與工業網路作為整合核心。\n- 協作方式：讓業主、廠商與現場團隊對齊在同一組專案重點上。\n\n## 區塊 05 服務總覽區 [主內容]\n\n- 服務項目\n- 支援工業自動化專案的整合型服務\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n- 建立可監看、可操作、可追溯的監控介面。\n- 了解更多\n- 儀電整合服務｜I&E Services\n- 支援 FAT、SAT、試車驗收與現場故障排除。\n- 了解更多\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n- 提供控制邏輯開發、搬遷規劃與分階段切換支援。\n- 了解更多\n- 即時資料平台服務｜PI Server\n- 建立即時資料採集、監看與跨系統整合基礎。\n- 了解更多\n- 歷史資料平台服務｜Historians\n- 支援長期資料保存、趨勢分析與追溯需求。\n- 了解更多\n- 工業網路設計服務｜Network Design\n- 規劃穩定、可維護且具擴充性的工業通訊網路。\n- 了解更多\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n- 強化跨據點監看、資料持續性與備援能力。\n- 了解更多\n- 告警監控服務｜Alarm Monitoring\n- 建立告警分級、通知邏輯與應變流程。\n- 了解更多\n\n## 區塊 06 交付流程 [主內容]\n\n- 交付流程\n- 01 需求對齊\n- 02 技術規劃\n- 03 分階段實作\n- 04 驗證與交接\n\n## 區塊 07 一站式整合導覽 [主內容]\n\n- 一站式整合模組\n- 了解更多\n- 資料整合｜Data Integration\n- 告警通報系統整合與試車｜Call-Out System Integration and Commissioning\n- 振動分析｜Vibration Analysis\n- 本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment\n- 公用與廠務系統整合｜Utilities and Facilities System Integration\n\n## 區塊 08 使命與合作邀請 [主內容]\n\n- 把專案複雜度轉成穩定可維運的系統\n- 我們的使命\n- 與我們合作\n- 雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓系統從上線到長期運轉都更可控。\n\n## 區塊 09 頁尾聯絡 CTA [共用版型]\n\n- 工程與自動化整合專家\n- 聯絡我們\n- 最新消息\n- 掌握專案交付、系統整合與服務更新資訊。\n- 聯絡資訊\n- 聯絡我們\n- +886-3-552-9933\n- 電子郵件\n- sales@rallytech.com.tw\n\n## 區塊 10 頁尾版權 [共用版型]\n\n- © 2026 雷力科技。版權所有。'
+    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/\n\n## 區塊總覽\n\n- 區塊 01 頂部聯絡列 [共用版型]\n- 區塊 02 主選單 [共用版型]\n- 區塊 03 主視覺 [主內容]\n- 區塊 04 公司介紹 [主內容]\n- 區塊 05 服務總覽區 [主內容]\n- 區塊 06 交付流程 [主內容]\n- 區塊 07 一站式整合導覽 [主內容]\n- 區塊 08 使命與合作邀請 [主內容]\n- 區塊 09 頁尾聯絡 CTA [共用版型]\n- 區塊 10 頁尾版權 [共用版型]\n\n## 區塊 01 頂部聯絡列 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 02 主選單 [共用版型]\n\n- 關於我們\n- 常見問題\n- 服務項目\n- 一站式整合\n- 聯絡我們\n- 聯絡我們\n\n### 備註\n\n- 首頁共用主選單；第二個「聯絡我們」為頁首 CTA 按鈕。\n\n## 區塊 03 主視覺 [主內容]\n\n- 工業自動化交付，為可靠運轉而設計\n- 串接控制系統、工廠資料與現場執行，支撐現代工業專案\n- 探索服務\n\n## 區塊 04 公司介紹 [主內容]\n\n- 值得信賴的儀控、控制與工業資料整合夥伴\n- 雷力科技協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成從啟動到交接都清楚可執行的交付路徑。\n- 我們把技術規劃、現場執行與操作就緒整合在同一條節奏上，降低設計意圖與現場落地之間的落差。\n- 專業能力：控制、儀控、試車驗收與現場協調以同一條交付路徑管理。\n- 技術基礎：以 SCADA、PLC/DCS、PI、Historian 與工業網路作為整合核心。\n- 協作方式：讓業主、廠商與現場團隊對齊在同一組專案重點上。\n\n## 區塊 05 服務總覽區 [主內容]\n\n- 服務項目\n- 支援工業自動化專案的整合型服務\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n- 建立可監看、可操作、可追溯的監控介面。\n- 了解更多\n- 儀電整合服務｜I&E Services\n- 支援 FAT、SAT、試車驗收與現場故障排除。\n- 了解更多\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n- 提供控制邏輯開發、搬遷規劃與分階段切換支援。\n- 了解更多\n- 即時資料平台服務｜PI Server\n- 建立即時資料採集、監看與跨系統整合基礎。\n- 了解更多\n- 歷史資料平台服務｜Historians\n- 支援長期資料保存、趨勢分析與追溯需求。\n- 了解更多\n- 工業網路設計服務｜Network Design\n- 規劃穩定、可維護且具擴充性的工業通訊網路。\n- 了解更多\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n- 強化跨據點監看、資料持續性與備援能力。\n- 了解更多\n- 告警監控服務｜Alarm Monitoring\n- 建立告警分級、通知邏輯與應變流程。\n- 了解更多\n\n## 區塊 06 交付流程 [主內容]\n\n- 交付流程\n- 01 需求對齊\n- 02 技術規劃\n- 03 分階段實作\n- 04 驗證與交接\n\n## 區塊 07 一站式整合導覽 [主內容]\n\n- 一站式整合體驗\n- 了解更多\n- 資料整合｜Data Integration\n- 告警通報系統整合與試車｜Call-Out System Integration and Commissioning\n- 振動分析｜Vibration Analysis\n- 本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment\n- 公用與廠務系統整合｜Utilities and Facilities System Integration\n\n## 區塊 08 使命與合作邀請 [主內容]\n\n- 把專案複雜度轉成穩定可維運的系統\n- 我們的使命\n- 合作邀請\n- 雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓系統從上線到長期運轉都更可控。\n\n## 區塊 09 頁尾聯絡 CTA [共用版型]\n\n- 工程與自動化整合專家\n- 聯絡我們\n- 最新消息\n- 掌握專案交付、系統整合與服務更新資訊。\n- 聯絡資訊\n- 聯絡我們\n- +886-3-552-9933\n- 電子郵件\n- sales@rallytech.com.tw\n\n## 區塊 10 頁尾版權 [共用版型]\n\n- © 2026 雷力科技。版權所有。'
   },
   about: {
     key: 'about',

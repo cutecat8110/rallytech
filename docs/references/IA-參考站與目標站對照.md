@@ -1,6 +1,6 @@
 # 參考站 IA 對照與製作順序
 
-最後更新：2026-03-31
+最後更新：2026-04-08
 來源網址：https://pentagoneng.com/（multi-page reference）
 
 ## 文件目的
@@ -66,6 +66,7 @@
 - 每頁先看 `Block Map` / `區塊總覽`，確認畫面有哪些區塊。
 - 同一個區塊在三層的順序固定一致，不調換位置。
 - `source` 先讀原始可見文字；`en` 再看我方英文改寫；`zh-tw` 最後看繁中與台灣 B2B 語感調整版。
+- 第三次校正起，`source` 以 live site full-page screenshot 與畫面可見文字為準，不把 hidden DOM 或破圖 placeholder 直接當成原文。
 - 當頁是否保留 `Notes` / `備註`，以是否真的需要人工判讀為準，不強制每頁都有。
 
 ## 6. 共同判讀原則
