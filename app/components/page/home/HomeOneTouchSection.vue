@@ -42,7 +42,7 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
               <li
                 v-for="item in oneTouchItems"
                 :key="item"
-                class="home-sys-ote__row type-sys-body-s text-white/90"
+                class="home-sys-ote__row type-sys-body-s text-white/95"
               >
                 {{ item }}
               </li>
@@ -56,15 +56,15 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 
 <style scoped>
 .bg-sys-rally-ote-surface {
+  isolation: isolate;
   background:
+    radial-gradient(circle at 74% 18%, rgb(48 187 165 / 0.22), transparent 32%),
     linear-gradient(
-      120deg,
-      rgb(7 12 16 / 0.92) 0%,
-      rgb(7 12 16 / 0.84) 32%,
-      rgb(7 12 16 / 0.62) 68%,
-      rgb(7 12 16 / 0.9) 100%
+      160deg,
+      rgb(7 12 16 / 0.24) 0%,
+      rgb(7 12 16 / 0.14) 42%,
+      rgb(7 12 16 / 0.28) 100%
     ),
-    radial-gradient(circle at 74% 18%, rgb(48 187 165 / 0.18), transparent 30%),
     var(--home-ote-background-image) center / cover no-repeat,
     linear-gradient(
       160deg,
@@ -72,7 +72,29 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
       var(--color-secondary-900) 66%,
       var(--color-secondary-700) 100%
     );
-  background-blend-mode: normal, screen, soft-light, normal;
+  background-blend-mode: screen, normal, normal, normal;
+}
+
+.bg-sys-rally-ote-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(7 12 16 / 0.84) 0%,
+      rgb(7 12 16 / 0.72) 30%,
+      rgb(7 12 16 / 0.42) 58%,
+      rgb(7 12 16 / 0.18) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(7 12 16 / 0.32) 0%,
+      rgb(7 12 16 / 0.16) 38%,
+      rgb(7 12 16 / 0.44) 100%
+    );
 }
 
 .home-sys-ote__layout {
@@ -92,11 +114,12 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 }
 
 .home-sys-ote__row {
-  border: 1px solid rgb(255 255 255 / 0.1);
+  border: 1px solid rgb(255 255 255 / 0.18);
   border-radius: var(--radius-md);
-  background: rgb(255 255 255 / 0.06);
+  background: rgb(255 255 255 / 0.11);
   padding: 0.95rem 1rem;
-  backdrop-filter: blur(8px);
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  backdrop-filter: blur(10px);
 }
 
 @media (min-width: 768px) {

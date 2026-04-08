@@ -66,7 +66,7 @@ const company = computed(() => messages.value.company)
 
         <div class="space-y-1 text-left md:text-right">
           <p class="type-sys-body-s text-white/84">
-            <span class="text-white/52">{{ messages.footer.phoneLabel }}:</span>
+            <span class="text-white/60">{{ messages.footer.phoneLabel }}:</span>
             <a
               :href="company.phoneHref"
               class="transition-colors hover:text-white"
@@ -75,7 +75,7 @@ const company = computed(() => messages.value.company)
             </a>
           </p>
           <p v-if="company.faxDisplay" class="type-sys-body-s text-white/84">
-            <span class="text-white/52">{{ messages.footer.faxLabel }}:</span>
+            <span class="text-white/60">{{ messages.footer.faxLabel }}:</span>
             <a
               :href="company.faxHref"
               class="transition-colors hover:text-white"
@@ -84,7 +84,7 @@ const company = computed(() => messages.value.company)
             </a>
           </p>
           <p class="type-sys-body-s text-white/84">
-            <span class="text-white/52">{{ messages.footer.emailLabel }}:</span>
+            <span class="text-white/60">{{ messages.footer.emailLabel }}:</span>
             <a
               :href="company.emailHref"
               class="transition-colors hover:text-white"
@@ -94,17 +94,17 @@ const company = computed(() => messages.value.company)
           </p>
           <p
             v-if="company.address"
-            class="type-sys-body-s max-w-[22rem] text-white/72 md:ml-auto"
+            class="type-sys-body-s max-w-[22rem] text-white/76 md:ml-auto"
           >
             <!-- prettier-ignore -->
-            <span class="text-white/52">{{ messages.footer.addressLabel }}:</span>
+            <span class="text-white/60">{{ messages.footer.addressLabel }}:</span>
             {{ company.address }}
           </p>
         </div>
       </div>
 
       <div class="mt-3 border-t border-white/10 pt-2.5">
-        <p class="type-sys-label-s text-white/55">
+        <p class="type-sys-label-s text-white/60">
           {{ t('footer.copyright', { year: currentYear }) }}
         </p>
       </div>

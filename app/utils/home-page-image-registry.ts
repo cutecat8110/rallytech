@@ -63,7 +63,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'home-hero',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/hero-simulator-control-room.jpg',
+      src: '/images/stock/home/hero-simulator-control-room.jpg',
       alt: '',
       label: 'Stock Hero',
       candidateId: null,
@@ -85,7 +85,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'home-hero-v5',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/hero-simulator-control-room.jpg',
+      sourceReference: '/images/stock/home/hero-simulator-control-room.jpg',
       createdAt: '2026-04-02T09:45:59.542Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -97,7 +97,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'about-primary',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/about-glass-office-towers.jpg',
+      src: '/images/stock/home/about-glass-office-towers.jpg',
       alt: '現代高科技建築外觀',
       label: 'About Primary Stock Asset',
       candidateId: null,
@@ -119,7 +119,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'about-primary-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/about-glass-office-towers.jpg',
+      sourceReference: '/images/stock/home/about-glass-office-towers.jpg',
       createdAt: '2026-04-02T09:20:07.776Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -131,7 +131,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'about-detail',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/about-glass-facade-detail.jpg',
+      src: '/images/stock/home/about-glass-facade-detail.jpg',
       alt: '現代玻璃立面細節',
       label: 'About Detail Stock Asset',
       candidateId: null,
@@ -154,7 +154,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'about-detail-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/about-glass-facade-detail.jpg',
+      sourceReference: '/images/stock/home/about-glass-facade-detail.jpg',
       createdAt: '2026-04-02T09:20:45.222Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -166,7 +166,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'services-surface',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/services-industrial-panel-bg.jpg',
+      src: '/images/stock/home/services-industrial-panel-bg.jpg',
       alt: '工業面板背景',
       label: 'Services Surface Stock Asset',
       candidateId: null,
@@ -189,7 +189,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'services-surface-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/services-industrial-panel-bg.jpg',
+      sourceReference: '/images/stock/home/services-industrial-panel-bg.jpg',
       createdAt: '2026-04-02T09:21:27.074Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -201,7 +201,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'ote-background',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/ote-control-room-bg.jpg',
+      src: '/images/stock/home/ote-control-room-bg.jpg',
       alt: '整合監控室背景',
       label: 'OTE Background Stock Asset',
       candidateId: null,
@@ -223,7 +223,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'ote-background-v3',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/ote-control-room-bg.jpg',
+      sourceReference: '/images/stock/home/ote-control-room-bg.jpg',
       createdAt: '2026-04-02T09:46:42.020Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -240,7 +240,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: 'mission',
         liveSource: 'stock',
         stock: {
-          src: '/images/demo/home/mission-tab-mission.jpg',
+          src: '/images/stock/home/mission-tab-mission.jpg',
           alt: '',
           label: 'Mission State Stock Image',
           candidateId: null,
@@ -262,7 +262,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-mission-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/demo/home/mission-tab-mission.jpg',
+          sourceReference: '/images/stock/home/mission-tab-mission.jpg',
           createdAt: '2026-04-02T09:47:27.304Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
@@ -275,7 +275,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: 'join-us',
         liveSource: 'stock',
         stock: {
-          src: '/images/demo/home/mission-tab-join-us.jpg',
+          src: '/images/stock/home/mission-tab-join-us.jpg',
           alt: '',
           label: 'Join Us State Stock Image',
           candidateId: null,
@@ -297,7 +297,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-join-us-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/demo/home/mission-tab-join-us.jpg',
+          sourceReference: '/images/stock/home/mission-tab-join-us.jpg',
           createdAt: '2026-04-02T09:47:59.685Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
@@ -311,7 +311,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'mission-cutout',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/mission-engineer-cutout.jpg',
+      src: '/images/stock/home/mission-engineer-cutout.jpg',
       alt: '',
       label: 'Mission Cutout Stock Image',
       candidateId: null,
@@ -333,7 +333,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'mission-cutout-v4',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/mission-engineer-cutout.jpg',
+      sourceReference: '/images/stock/home/mission-engineer-cutout.jpg',
       createdAt: '2026-04-02T09:48:44.873Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
@@ -345,7 +345,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'connector-image',
     liveSource: 'stock',
     stock: {
-      src: '/images/demo/home/footer-engineering-team.jpg',
+      src: '/images/stock/home/footer-engineering-team.jpg',
       alt: '工程團隊於實驗環境協作討論',
       label: 'Connector Image Stock Asset',
       candidateId: null,
@@ -368,7 +368,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       model: 'gemini-3-pro-image-preview',
       promptId: 'connector-image-v3',
       source: 'Nano Banana',
-      sourceReference: '/images/demo/home/footer-engineering-team.jpg',
+      sourceReference: '/images/stock/home/footer-engineering-team.jpg',
       createdAt: '2026-04-02T09:49:36.257Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',

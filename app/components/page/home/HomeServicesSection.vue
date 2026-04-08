@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { brandGhostButtonTheme } from '~/utils/button-themes'
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
+import { enrichServiceCatalog } from '~/utils/services'
 
 const { resolvedImage: servicesSurfaceImage } =
   useHomePageImageAsset('services-surface')
@@ -11,21 +12,12 @@ const servicesSurfaceStyle = computed(() => ({
 }))
 
 const messages = useRallyMessages()
-const serviceIcons = [
-  'i-lucide-monitor-smartphone',
-  'i-lucide-briefcase-business',
-  'i-lucide-cpu',
-  'i-lucide-database-zap',
-  'i-lucide-database',
-  'i-lucide-network',
-  'i-lucide-radio-tower',
-  'i-lucide-bell-ring'
-]
+const localePath = useLocalePath()
 
 const serviceItems = computed(() =>
-  messages.value.home.services.items.map((item, index) => ({
+  enrichServiceCatalog(messages.value.servicesCatalog).map((item) => ({
     ...item,
-    icon: serviceIcons[index] ?? 'i-lucide-settings'
+    to: localePath(`/services/${item.slug}`)
   }))
 )
 </script>
@@ -56,7 +48,7 @@ const serviceItems = computed(() =>
         <div class="home-sys-services__grid">
           <article
             v-for="item in serviceItems"
-            :key="item.title"
+            :key="item.slug"
             class="home-sys-services__column"
           >
             <span class="home-sys-services__icon">
@@ -64,17 +56,17 @@ const serviceItems = computed(() =>
             </span>
 
             <h3 class="home-sys-services__title type-sys-title-m text-white">
-              {{ item.title }}
+              {{ item.shortLabel }}
             </h3>
             <p
-              class="home-sys-services__copy type-sys-body-s flex-1 text-white/72"
+              class="home-sys-services__copy type-sys-body-s flex-1 text-white/82"
             >
               {{ item.description }}
             </p>
 
             <UTheme :ui="brandGhostButtonTheme">
               <UButton
-                to="#contact"
+                :to="item.to"
                 color="primary"
                 variant="ghost"
                 size="xs"
@@ -93,14 +85,20 @@ const serviceItems = computed(() =>
 <style scoped>
 .bg-sys-rally-services-surface {
   background:
-    linear-gradient(180deg, rgb(4 9 14 / 0.68) 0%, rgb(4 9 14 / 0.9) 100%),
-    radial-gradient(circle at 78% 20%, rgb(48 187 165 / 0.08), transparent 26%),
+    linear-gradient(
+      180deg,
+      rgb(4 9 14 / 0.44) 0%,
+      rgb(4 9 14 / 0.34) 26%,
+      rgb(4 9 14 / 0.52) 64%,
+      rgb(4 9 14 / 0.68) 100%
+    ),
+    radial-gradient(circle at 78% 20%, rgb(48 187 165 / 0.14), transparent 30%),
     var(--home-services-surface-image) 72% center / cover no-repeat,
-    linear-gradient(145deg, rgb(255 255 255 / 0.02), rgb(255 255 255 / 0) 38%),
+    linear-gradient(145deg, rgb(255 255 255 / 0.08), rgb(255 255 255 / 0) 42%),
     repeating-linear-gradient(
       -34deg,
-      rgb(255 255 255 / 0.015) 0,
-      rgb(255 255 255 / 0.015) 18px,
+      rgb(255 255 255 / 0.012) 0,
+      rgb(255 255 255 / 0.012) 18px,
       transparent 18px,
       transparent 44px
     ),
@@ -110,7 +108,7 @@ const serviceItems = computed(() =>
       var(--color-secondary-900) 60%,
       var(--color-secondary-800) 100%
     );
-  background-blend-mode: normal, screen, soft-light, normal, normal, normal;
+  background-blend-mode: normal, screen, normal, soft-light, normal, normal;
 }
 
 .home-sys-services__motif {

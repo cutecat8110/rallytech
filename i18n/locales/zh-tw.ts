@@ -1,5 +1,68 @@
 import { referencePagesZhTw } from './reference-pages.generated'
-import type { RallyTechLocaleMessages } from './types'
+import { serviceDetailPagesZhTw } from './services/zh-tw-detail'
+import type {
+  RallyTechLocaleMessages,
+  ServiceCatalogItemMessages
+} from './types'
+
+const servicesCatalog = [
+  {
+    slug: 'scada-hmi-graphics',
+    shortLabel: 'SCADA / HMI 圖控',
+    formalTitle: '監控與人機介面圖控服務',
+    englishTitle: 'SCADA and HMI Graphics',
+    description: '建立可監看、可操作、可追溯的監控介面。'
+  },
+  {
+    slug: 'ie-services',
+    shortLabel: '儀電整合',
+    formalTitle: '儀電整合服務',
+    englishTitle: 'I&E Services',
+    description: '支援 FAT、SAT、試車驗收與現場故障排除。'
+  },
+  {
+    slug: 'plc-dcs-programming-and-migration',
+    shortLabel: 'PLC / DCS 程式與搬遷',
+    formalTitle: '控制程式與系統搬遷服務',
+    englishTitle: 'PLC & DCS Programming and Migration',
+    description: '提供控制邏輯開發、搬遷規劃與分階段切換支援。'
+  },
+  {
+    slug: 'pi-server',
+    shortLabel: 'PI Server',
+    formalTitle: '即時資料平台服務',
+    englishTitle: 'PI Server',
+    description: '建立即時資料採集、監看與跨系統整合基礎。'
+  },
+  {
+    slug: 'historians',
+    shortLabel: 'Historians',
+    formalTitle: '歷史資料平台服務',
+    englishTitle: 'Historians',
+    description: '支援長期資料保存、趨勢分析與追溯需求。'
+  },
+  {
+    slug: 'network-design',
+    shortLabel: '工業網路設計',
+    formalTitle: '工業網路設計服務',
+    englishTitle: 'Network Design',
+    description: '規劃穩定、可維護且具擴充性的工業通訊網路。'
+  },
+  {
+    slug: 'remote-monitoring-and-data',
+    shortLabel: '遠端監控與資料備援',
+    formalTitle: '遠端監控與資料備援服務',
+    englishTitle: 'Remote Monitoring and Data',
+    description: '強化跨據點監看、資料持續性與備援能力。'
+  },
+  {
+    slug: 'alarm-monitoring',
+    shortLabel: '告警監控',
+    formalTitle: '告警監控服務',
+    englishTitle: 'Alarm Monitoring',
+    description: '建立告警分級、通知邏輯與應變流程。'
+  }
+] satisfies ServiceCatalogItemMessages[]
 
 const messages = {
   company: {
@@ -34,7 +97,7 @@ const messages = {
     },
     items: [
       { label: '關於我們', href: '#about' },
-      { label: '服務項目', href: '#services' },
+      { label: '服務項目', href: '/services' },
       { label: '一站式整合', href: '#one-touch-experience' },
       { label: '聯絡我們', href: '#contact' }
     ]
@@ -79,44 +142,10 @@ const messages = {
     services: {
       kicker: '服務項目',
       title: '支援工業自動化專案的整合型服務',
-      ctaLabel: '了解更多',
-      items: [
-        {
-          title: 'SCADA / HMI 圖控',
-          description: '建立可監看、可操作、可追溯的監控介面。'
-        },
-        {
-          title: '儀電整合',
-          description: '支援 FAT、SAT、試車驗收與現場故障排除。'
-        },
-        {
-          title: 'PLC / DCS 程式與搬遷',
-          description: '提供控制邏輯開發、搬遷規劃與分階段切換支援。'
-        },
-        {
-          title: 'PI Server',
-          description: '建立即時資料採集、監看與跨系統整合基礎。'
-        },
-        {
-          title: 'Historians',
-          description: '支援長期資料保存、趨勢分析與追溯需求。'
-        },
-        {
-          title: '工業網路設計',
-          description: '規劃穩定、可維護且具擴充性的工業通訊網路。'
-        },
-        {
-          title: '遠端監控與資料備援',
-          description: '強化跨據點監看、資料持續性與備援能力。'
-        },
-        {
-          title: '告警監控',
-          description: '建立告警分級、通知邏輯與應變流程。'
-        }
-      ]
+      ctaLabel: '了解更多'
     },
     process: {
-      kicker: '交付流程',
+      kicker: '專案流程',
       title: '交付流程',
       steps: [
         { number: '01', title: '需求對齊' },
@@ -160,6 +189,22 @@ const messages = {
       ]
     }
   },
+  servicesCatalog,
+  servicesPage: {
+    seo: {
+      title: '服務總覽 | 雷力科技 Rally Technology',
+      description:
+        '瀏覽雷力科技 8 項核心服務，從 SCADA / HMI、PLC / DCS、PI Server 到工業網路與告警監控，快速掌握可承接的工業自動化交付範圍。'
+    },
+    hero: {
+      kicker: '服務總覽',
+      title: '支援工業自動化交付的 8 項核心服務',
+      description:
+        '從監控圖控、控制程式到 plant data 與現場告警流程，以同一套交付邏輯承接專案需求。'
+    },
+    cardCtaLabel: '了解更多'
+  },
+  serviceDetailPages: serviceDetailPagesZhTw,
   footer: {
     connectorHeading: '工程與自動化整合專家',
     ctaLabel: '聯絡我們',

@@ -1,5 +1,73 @@
 import { referencePagesSource } from './reference-pages.generated'
-import type { RallyTechLocaleMessages } from './types'
+import { serviceDetailPagesSource } from './services/source-detail'
+import type {
+  RallyTechLocaleMessages,
+  ServiceCatalogItemMessages
+} from './types'
+
+const servicesCatalog = [
+  {
+    slug: 'scada-hmi-graphics',
+    shortLabel: 'SCADA and HMI Graphics',
+    formalTitle: 'SCADA and HMI Graphics',
+    englishTitle: 'SCADA and HMI Graphics',
+    description: 'SCADA systems for modern industrial operation monitoring.'
+  },
+  {
+    slug: 'ie-services',
+    shortLabel: 'I&E Services',
+    formalTitle: 'I&E Services',
+    englishTitle: 'I&E Services',
+    description:
+      'Comprehensive I&E services including FAT/SAT and on-site troubleshooting.'
+  },
+  {
+    slug: 'plc-dcs-programming-and-migration',
+    shortLabel: 'PLC & DCS Programming and Migration',
+    formalTitle: 'PLC & DCS Programming and Migration',
+    englishTitle: 'PLC & DCS Programming and Migration',
+    description:
+      'Expert PLC & DCS programming and migration for control systems.'
+  },
+  {
+    slug: 'pi-server',
+    shortLabel: 'PI Server',
+    formalTitle: 'PI Server',
+    englishTitle: 'PI Server',
+    description: 'Advanced PI Server implementation for robust data automation.'
+  },
+  {
+    slug: 'historians',
+    shortLabel: 'Historians',
+    formalTitle: 'Historians',
+    englishTitle: 'Historians',
+    description:
+      'Efficient Network Design for optimized industrial communication.'
+  },
+  {
+    slug: 'network-design',
+    shortLabel: 'Network Design',
+    formalTitle: 'Network Design',
+    englishTitle: 'Network Design',
+    description: 'Specialized Historian data solutions for RNG companies.'
+  },
+  {
+    slug: 'remote-monitoring-and-data',
+    shortLabel: 'Remote Monitoring and Data',
+    formalTitle: 'Remote Monitoring and Data',
+    englishTitle: 'Remote Monitoring and Data',
+    description:
+      'Remote Monitoring and Data Backup for operational reliability.'
+  },
+  {
+    slug: 'alarm-monitoring',
+    shortLabel: 'Alarm Monitoring',
+    formalTitle: 'Alarm Monitoring',
+    englishTitle: 'Alarm Monitoring',
+    description:
+      'Alarm Monitoring to ensure safety and efficiency in RNG facilities.'
+  }
+] satisfies ServiceCatalogItemMessages[]
 
 const messages = {
   company: {
@@ -33,7 +101,7 @@ const messages = {
     },
     items: [
       { label: 'About', href: '#about' },
-      { label: 'Services', href: '#services' },
+      { label: 'Services', href: '/services' },
       { label: 'OTE', href: '#one-touch-experience' },
       { label: 'Contact', href: '#contact' }
     ]
@@ -81,48 +149,7 @@ const messages = {
     services: {
       kicker: 'Our Services',
       title: 'Develop Comprehensive Solutions',
-      ctaLabel: 'Read more',
-      items: [
-        {
-          title: 'SCADA and HMI Graphics',
-          description:
-            'SCADA systems for modern industrial operation monitoring.'
-        },
-        {
-          title: 'I&E Services',
-          description:
-            'Comprehensive I&E services including FAT/SAT and on-site troubleshooting.'
-        },
-        {
-          title: 'PLC & DCS Programming and Migration',
-          description:
-            'Expert PLC & DCS programming and migration for control systems.'
-        },
-        {
-          title: 'PI Server',
-          description:
-            'Advanced PI Server implementation for robust data automation.'
-        },
-        {
-          title: 'Network Design',
-          description: 'Specialized Historian data solutions for RNG companies.'
-        },
-        {
-          title: 'Historians',
-          description:
-            'Efficient Network Design for optimized industrial communication.'
-        },
-        {
-          title: 'Remote Monitoring and Data',
-          description:
-            'Remote Monitoring and Data Backup for operational reliability.'
-        },
-        {
-          title: 'Detailed Design & Modeling',
-          description:
-            'Alarm Monitoring to ensure safety and efficiency in RNG facilities.'
-        }
-      ]
+      ctaLabel: 'Read more'
     },
     process: {
       kicker: '',
@@ -168,6 +195,22 @@ const messages = {
       ]
     }
   },
+  servicesCatalog,
+  servicesPage: {
+    seo: {
+      title: 'Services | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference services overview used to proofread service naming and card copy against the live reference site.'
+    },
+    hero: {
+      kicker: 'Services',
+      title: 'Services',
+      description:
+        'Source-reference layer retained for proofreading against the live Pentagon Engineering services overview.'
+    },
+    cardCtaLabel: 'Read more'
+  },
+  serviceDetailPages: serviceDetailPagesSource,
   footer: {
     connectorHeading: 'Engineering + Design Experts',
     ctaLabel: 'Contact Us',

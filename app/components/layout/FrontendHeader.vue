@@ -15,9 +15,15 @@ const {
   setPreferredMode
 } = useHomePageImageMode()
 
-const navItems = computed(() => messages.value.nav.items)
+const navItems = computed(() =>
+  messages.value.nav.items.map((item) => ({
+    ...item,
+    to: resolveNavItemPath(item.href)
+  }))
+)
 const company = computed(() => messages.value.company)
 const homePath = computed(() => localePath('/'))
+const contactPath = computed(() => `${homePath.value}#contact`)
 const localeLinks = computed(() =>
   siteLocaleCodes.map((code) => ({
     code,
@@ -58,6 +64,18 @@ function getSegmentedButtonStateClass(isActive: boolean) {
 function closeMobileMenu() {
   isMobileMenuOpen.value = false
 }
+
+function resolveNavItemPath(href: string) {
+  if (href.startsWith('/')) {
+    return localePath(href)
+  }
+
+  if (href.startsWith('#')) {
+    return `${homePath.value}${href}`
+  }
+
+  return href
+}
 </script>
 
 <template>
@@ -91,7 +109,7 @@ function closeMobileMenu() {
           class="inline-flex shrink-0 items-center"
         >
           <img
-            src="/images/brand/RallyTech_Logo_TextOnly.svg"
+            src="/images/brand/rallytech-logo-text-only.svg"
             :alt="messages.nav.logoAlt"
             class="h-6 w-auto md:h-7"
           />
@@ -101,7 +119,7 @@ function closeMobileMenu() {
           <NuxtLink
             v-for="item in navItems"
             :key="item.label"
-            :to="item.href"
+            :to="item.to"
             class="type-sys-nav text-neutral-600 transition-colors hover:text-primary-700"
           >
             {{ item.label }}
@@ -164,7 +182,7 @@ function closeMobileMenu() {
 
           <UTheme :ui="secondarySolidButtonTheme">
             <UButton
-              to="#contact"
+              :to="contactPath"
               color="neutral"
               variant="solid"
               size="xs"
@@ -206,7 +224,7 @@ function closeMobileMenu() {
         <NuxtLink
           v-for="item in navItems"
           :key="`mobile-${item.label}`"
-          :to="item.href"
+          :to="item.to"
           class="type-sys-title-m px-3 py-2 text-neutral-700 transition-colors hover:bg-neutral-100 hover:text-primary-700"
           @click="closeMobileMenu"
         >
@@ -214,7 +232,7 @@ function closeMobileMenu() {
         </NuxtLink>
         <UTheme :ui="secondarySolidButtonTheme">
           <UButton
-            to="#contact"
+            :to="contactPath"
             color="neutral"
             variant="solid"
             size="md"

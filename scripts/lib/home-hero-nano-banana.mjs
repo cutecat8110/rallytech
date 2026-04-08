@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { syncImageAssetCatalog } from './image-asset-catalog.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 export const projectRoot = resolve(scriptDir, '..', '..')
@@ -443,6 +444,7 @@ export function getHomePageImageEntry(
     await formatTypeScriptContent(fileContent),
     'utf8'
   )
+  await syncImageAssetCatalog()
 }
 
 export async function resolvePrompt({

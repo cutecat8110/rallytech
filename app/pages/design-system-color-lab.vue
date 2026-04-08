@@ -135,7 +135,7 @@ useSeoMeta({
         >
           <div class="flex items-center gap-4">
             <img
-              src="/images/brand/RallyTech_Logo_TextOnly.svg"
+              src="/images/brand/rallytech-logo-text-only.svg"
               alt="雷力科技"
               class="h-7 w-auto md:h-8"
             />

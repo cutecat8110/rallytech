@@ -1,5 +1,76 @@
 import { referencePagesEn } from './reference-pages.generated'
-import type { RallyTechLocaleMessages } from './types'
+import { serviceDetailPagesEn } from './services/en-detail'
+import type {
+  RallyTechLocaleMessages,
+  ServiceCatalogItemMessages
+} from './types'
+
+const servicesCatalog = [
+  {
+    slug: 'scada-hmi-graphics',
+    shortLabel: 'SCADA / HMI Graphics',
+    formalTitle: 'SCADA and HMI Graphics',
+    englishTitle: 'SCADA and HMI Graphics',
+    description:
+      'Operator-facing visualization for monitoring, alarms, and process control.'
+  },
+  {
+    slug: 'ie-services',
+    shortLabel: 'I&E Services',
+    formalTitle: 'I&E Services',
+    englishTitle: 'I&E Services',
+    description:
+      'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.'
+  },
+  {
+    slug: 'plc-dcs-programming-and-migration',
+    shortLabel: 'PLC / DCS Programming and Migration',
+    formalTitle: 'PLC & DCS Programming and Migration',
+    englishTitle: 'PLC & DCS Programming and Migration',
+    description:
+      'Control logic development, migration planning, and staged cutover support.'
+  },
+  {
+    slug: 'pi-server',
+    shortLabel: 'PI Server',
+    formalTitle: 'PI Server',
+    englishTitle: 'PI Server',
+    description:
+      'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.'
+  },
+  {
+    slug: 'historians',
+    shortLabel: 'Historians',
+    formalTitle: 'Historians',
+    englishTitle: 'Historians',
+    description:
+      'Long-term process-data retention for trend analysis, reporting, and traceability.'
+  },
+  {
+    slug: 'network-design',
+    shortLabel: 'Network Design',
+    formalTitle: 'Network Design',
+    englishTitle: 'Network Design',
+    description:
+      'Industrial communication planning for resilient, maintainable plant networks.'
+  },
+  {
+    slug: 'remote-monitoring-and-data',
+    shortLabel: 'Remote Monitoring and Data',
+    formalTitle: 'Remote Monitoring and Data',
+    englishTitle: 'Remote Monitoring and Data',
+    description:
+      'Remote visibility and data-continuity support across distributed operations.'
+  },
+  {
+    slug: 'alarm-monitoring',
+    shortLabel: 'Alarm Monitoring',
+    formalTitle: 'Alarm Monitoring',
+    englishTitle: 'Alarm Monitoring',
+    description:
+      'Alarm strategy and notification workflows for safer, more stable operations.'
+  }
+] satisfies ServiceCatalogItemMessages[]
 
 const messages = {
   company: {
@@ -35,7 +106,7 @@ const messages = {
     },
     items: [
       { label: 'About', href: '#about' },
-      { label: 'Services', href: '#services' },
+      { label: 'Services', href: '/services' },
       { label: 'One-Touch Experience', href: '#one-touch-experience' },
       { label: 'Contact', href: '#contact' }
     ]
@@ -85,49 +156,7 @@ const messages = {
     services: {
       kicker: 'Our Services',
       title: 'Integrated Support for Industrial Automation Projects',
-      ctaLabel: 'Learn More',
-      items: [
-        {
-          title: 'SCADA / HMI Graphics',
-          description:
-            'Operator-facing visualization for monitoring, alarms, and process control.'
-        },
-        {
-          title: 'I&E Services',
-          description:
-            'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.'
-        },
-        {
-          title: 'PLC / DCS Programming and Migration',
-          description:
-            'Control logic development, migration planning, and staged cutover support.'
-        },
-        {
-          title: 'PI Server',
-          description:
-            'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.'
-        },
-        {
-          title: 'Historians',
-          description:
-            'Long-term process-data retention for trend analysis, reporting, and traceability.'
-        },
-        {
-          title: 'Network Design',
-          description:
-            'Industrial communication planning for resilient, maintainable plant networks.'
-        },
-        {
-          title: 'Remote Monitoring and Data',
-          description:
-            'Remote visibility and data-continuity support across distributed operations.'
-        },
-        {
-          title: 'Alarm Monitoring',
-          description:
-            'Alarm strategy and notification workflows for safer, more stable operations.'
-        }
-      ]
+      ctaLabel: 'Learn More'
     },
     process: {
       kicker: 'Our Process',
@@ -175,6 +204,22 @@ const messages = {
       ]
     }
   },
+  servicesCatalog,
+  servicesPage: {
+    seo: {
+      title: 'Services | Rally Technology',
+      description:
+        'Browse Rally Technology services across SCADA / HMI, PLC / DCS, PI Server, historians, industrial networking, remote monitoring, and alarm workflows.'
+    },
+    hero: {
+      kicker: 'Services Overview',
+      title: 'Eight Core Services for Industrial Automation Delivery',
+      description:
+        'From controls and plant data to field-ready alarm workflows, these services anchor how we deliver industrial automation projects.'
+    },
+    cardCtaLabel: 'Learn More'
+  },
+  serviceDetailPages: serviceDetailPagesEn,
   footer: {
     connectorHeading: 'Engineering and Automation Delivery Experts',
     ctaLabel: 'Contact Us',
