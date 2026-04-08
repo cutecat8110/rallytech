@@ -1,4 +1,4 @@
-- Last updated: 2026-04-07
+- Last updated: 2026-04-08
 - Source URL: https://pentagoneng.com/about-us/
 
 ## Block Map
@@ -24,12 +24,12 @@
 - Integrated Delivery Capabilities
 - System Integration
 - I&E Services
-- Procurement / EPC Coordination
-- Security Systems
-- Industrial Panel Building
-- Wireless Infrastructure
-- UPS System Development
-- Detailed Design & Modeling
+- Commissioning & FAT/SAT Support
+- SCADA / HMI Graphics
+- PLC / DCS Programming and Migration
+- PI Server / Historians
+- Network Design
+- One-Touch Experience Delivery
 
 ## Block 04 Working Process [core]
 

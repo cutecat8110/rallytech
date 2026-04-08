@@ -26,6 +26,16 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-15',
 
+  nitro: {
+    devStorage: {
+      // Avoid Windows FS collisions between "/" payload cache keys
+      // and locale payload directories such as "/en" and "/source".
+      'cache:nuxt:payload': {
+        driver: 'memory'
+      }
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {

@@ -79,6 +79,7 @@ const serviceItems = computed(() =>
                 variant="ghost"
                 size="xs"
                 :label="messages.home.services.ctaLabel"
+                trailing-icon="i-ic-baseline-arrow-forward"
                 class="home-sys-services__action w-fit"
               />
             </UTheme>

@@ -50,6 +50,11 @@
 - 一站式整合（`04`）：`source/pages/04-one-touch-experience.md` / `en/pages/04-one-touch-experience.md` / `zh-tw/pages/04-一站式整合.md`
 - 聯絡我們（`05`）：`source/pages/05-contact.md` / `en/pages/05-contact.md` / `zh-tw/pages/05-聯絡我們.md`
 
+補充：
+
+- `source` 是 reference evidence layer，只保留參考站可見原文與 anomaly 事實。
+- `en / zh-tw` 是 Rally Technology public-copy layer，回寫時要優先對齊 `i18n/locales/*` 與 [`../project/02-網站資訊架構與頁面藍圖.md`](../project/02-網站資訊架構與頁面藍圖.md)、[`../project/03-服務架構與命名決策.md`](../project/03-服務架構與命名決策.md)。
+
 ## 4. 服務頁對照入口
 
 - `01` SCADA and HMI Graphics：`source/services/01-scada-and-hmi-graphics.md` / `en/services/01-scada-and-hmi-graphics.md` / `zh-tw/services/01-scada-and-hmi-graphics.md`
@@ -66,6 +71,7 @@
 - 每頁先看 `Block Map` / `區塊總覽`，確認畫面有哪些區塊。
 - 同一個區塊在三層的順序固定一致，不調換位置。
 - `source` 先讀原始可見文字；`en` 再看我方英文改寫；`zh-tw` 最後看繁中與台灣 B2B 語感調整版。
+- `en / zh-tw` 的頁首、服務卡片、sidebar 與 CTA 命名，以現行官方多語系與服務命名決策為準，不直接承接 source 的舊導覽與舊 footer 假設。
 - 第三次校正起，`source` 以 live site full-page screenshot 與畫面可見文字為準，不把 hidden DOM 或破圖 placeholder 直接當成原文。
 - 當頁是否保留 `Notes` / `備註`，以是否真的需要人工判讀為準，不強制每頁都有。
 
@@ -73,5 +79,5 @@
 
 - `shared-layout` / `共用版型`：首頁完整保留共用版型；服務頁 sidebar 等頁內共用結構則保留在各自頁面。
 - `residual` / `模板殘留`：可見但可疑或待刪的模板內容，三層都保留供判讀。
-- 異常集中檔：[`source-anomalies.md`](./source-anomalies.md)
+- 異常集中檔：[source-anomalies.md](./source-anomalies.md)
 - 服務正式命名以 [`../project/03-服務架構與命名決策.md`](../project/03-服務架構與命名決策.md) 為準。

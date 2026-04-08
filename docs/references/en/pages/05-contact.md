@@ -1,4 +1,4 @@
-- Last updated: 2026-04-07
+- Last updated: 2026-04-08
 - Source URL: https://pentagoneng.com/contact/
 
 ## Block Map
@@ -30,5 +30,6 @@
 ## Block 04 Direct Contact Details [core]
 
 - Phone Number: +886-3-552-9933
-- Location: No. 95, Weixin St., 3F.-5, Zhubei City, Hsinchu County 302081, Taiwan
+- Fax Number: +886-3-552-9797
 - Email Address: sales@rallytech.com.tw
+- Location: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan
