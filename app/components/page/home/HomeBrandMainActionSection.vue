@@ -76,20 +76,23 @@ const missionTabsUi = {
                 />
               </figure>
 
-              <div class="max-w-xl">
-                <h3 class="type-sys-headline-m text-neutral-900">
-                  {{ activeMissionState.title }}
-                </h3>
-                <p class="type-sys-body-m mt-3 text-neutral-700">
-                  {{ activeMissionState.description }}
-                </p>
+              <div class="home-sys-mission__state-copy max-w-xl">
+                <div class="home-sys-mission__state-body">
+                  <h3
+                    class="home-sys-mission__state-title type-sys-title-l text-neutral-900"
+                  >
+                    {{ activeMissionState.title }}
+                  </h3>
+                  <p class="type-sys-body-m text-neutral-700">
+                    {{ activeMissionState.description }}
+                  </p>
+                </div>
                 <UButton
                   to="#contact"
                   color="primary"
                   variant="solid"
                   size="lg"
                   :label="activeMissionState.ctaLabel"
-                  class="mt-5"
                 />
               </div>
             </div>
@@ -145,8 +148,25 @@ const missionTabsUi = {
   gap: 1rem;
 }
 
+.home-sys-mission__state-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.home-sys-mission__state-body {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.home-sys-mission__state-title {
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
 .home-sys-mission__state-media {
-  width: min(100%, 8rem);
+  width: min(100%, 9rem);
   aspect-ratio: 1;
 }
 
@@ -225,8 +245,20 @@ const missionTabsUi = {
 
 @media (min-width: 768px) {
   .home-sys-mission__state {
-    grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
     align-items: end;
+    column-gap: 1.5rem;
+  }
+
+  .home-sys-mission__state-copy {
+    min-height: 13rem;
+    justify-content: space-between;
+  }
+
+  .home-sys-mission__state-media {
+    width: 100%;
+    max-width: 11rem;
+    align-self: end;
   }
 }
 

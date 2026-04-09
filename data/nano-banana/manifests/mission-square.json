@@ -1,6 +1,6 @@
 {
   "slot": "mission-square",
-  "liveSource": "stock",
+  "liveSource": "nano",
   "states": {
     "mission": {
       "stock": {
@@ -45,10 +45,10 @@
           "imageSize": "2K",
           "sourceReference": "/images/stock/home/mission-tab-mission.jpg",
           "createdAt": "2026-04-02T09:47:27.304Z",
-          "status": "candidate",
+          "status": "promoted",
           "outputPath": "/images/generated/home/mission-square/mission/mission-square-mission-20260402094727279-eey1ly.jpg",
           "outputBytes": 2563034,
-          "notes": "Pro rerun with East Asian Taiwan-based engineering team casting requirement",
+          "notes": "Promoted after homepage compare: mission state reads more clearly at small square size and better matches the execution-focused copy than stock.",
           "responseText": null
         }
       ]
@@ -96,10 +96,10 @@
           "imageSize": "2K",
           "sourceReference": "/images/stock/home/mission-tab-join-us.jpg",
           "createdAt": "2026-04-02T09:47:59.685Z",
-          "status": "candidate",
+          "status": "promoted",
           "outputPath": "/images/generated/home/mission-square/join-us/mission-square-join-us-20260402094759653-wxiyj9.jpg",
           "outputBytes": 2639287,
-          "notes": "Pro rerun with East Asian Taiwan-based engineering team casting requirement",
+          "notes": "Promoted after homepage compare: join-us state has clearer collaboration intent and stronger Taiwan-based engineering context than stock.",
           "responseText": null
         }
       ]

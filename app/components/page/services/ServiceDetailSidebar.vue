@@ -33,9 +33,6 @@ const serviceItems = computed(() =>
           class="services-sys-detail-sidebar__link services-sys-detail-sidebar__link--active"
           aria-current="page"
         >
-          <span class="services-sys-detail-sidebar__order type-sys-label-s">
-            {{ String(item.order).padStart(2, '0') }}
-          </span>
           <UIcon :name="item.icon" class="size-4" />
           <span>{{ item.shortLabel }}</span>
         </span>
@@ -45,9 +42,6 @@ const serviceItems = computed(() =>
           :to="item.to"
           class="services-sys-detail-sidebar__link"
         >
-          <span class="services-sys-detail-sidebar__order type-sys-label-s">
-            {{ String(item.order).padStart(2, '0') }}
-          </span>
           <UIcon :name="item.icon" class="size-4" />
           <span>{{ item.shortLabel }}</span>
         </NuxtLink>
@@ -85,7 +79,7 @@ const serviceItems = computed(() =>
 .services-sys-detail-sidebar__link {
   display: inline-grid;
   flex: 0 0 auto;
-  grid-template-columns: auto auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
   gap: 0.65rem;
   min-height: 2.95rem;
@@ -132,11 +126,6 @@ const serviceItems = computed(() =>
     color-mix(in srgb, var(--color-primary-50) 92%, var(--color-white)) 0%,
     color-mix(in srgb, var(--color-secondary-50) 65%, var(--color-white)) 100%
   );
-}
-
-.services-sys-detail-sidebar__order {
-  color: var(--color-text-tertiary);
-  letter-spacing: 0.08em;
 }
 
 @media (min-width: 1024px) {

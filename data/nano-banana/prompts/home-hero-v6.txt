@@ -1,0 +1,82 @@
+{
+  "asset_type": "homepage hero background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation, SCADA, PLC, and industrial data integration company",
+  "page_role": "Homepage hero image",
+  "goal": "Create a premium, photorealistic B2B hero background that feels industrial, trustworthy, and directly usable behind the current homepage headline and CTA",
+  "visual_message": "A real industrial control environment with credible monitoring depth, calm operational tension, and a strong sense of reliable delivery rather than generic office monitoring",
+  "recipe_ids": [
+    "hero-background-right-safe-area",
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "color-material-control"
+  ],
+  "human_casting": {
+    "rule": "avoid visible people if possible; if one operator is necessary, keep that person small, off-center, East Asian, and clearly secondary to the control environment",
+    "styling": "modern Taiwan-based industrial workplace styling, practical workwear only",
+    "guardrails": "avoid posed office posture, dominant seated figures, or any subject that reads as the main hero"
+  },
+  "reference_usage": {
+    "image_1": "preserve the room depth, control-wall credibility, and website-safe framing from the current stock reference",
+    "image_2": "optional material, lighting, or monitor-wall realism reference only"
+  },
+  "technical_signals": {
+    "lens": "32mm to 35mm architectural interior photography",
+    "aperture": "f/4",
+    "light_source": "soft premium interior lighting with restrained monitor glow",
+    "time_of_day": "neutral late afternoon or controlled interior mood",
+    "motion_rule": "scene should feel active but still, with no cinematic blur"
+  },
+  "spatial_positioning": [
+    "control walls and consoles define the scene, not people or office furniture",
+    "preserve a broad center-band headline-safe zone for the current centered homepage copy and CTA",
+    "monitoring depth should remain legible behind the overlay without turning into clutter",
+    "chairs, desks, and glass partitions stay supportive and never become the focal point"
+  ],
+  "visual_standard": "premium architectural interior photography for an industrial automation website",
+  "color_restriction": "restrained industrial neutrals, charcoal, matte graphite, muted steel, and controlled cyan or green screen accents only; no purple neon wash",
+  "material_notes": [
+    "matte metal consoles",
+    "credible SCADA and HMI monitor walls",
+    "glass partitions with believable reflections",
+    "screen glow without plastic sheen"
+  ],
+  "scene": "A real industrial automation control room or plant operations integration room with credible SCADA and HMI monitoring walls, layered console depth, and a grounded delivery-ready atmosphere",
+  "subject": "The control environment is the hero. Reliable industrial operations should read immediately even before any person is noticed",
+  "reality_anchors": [
+    "credible industrial control room",
+    "real monitoring-wall geometry",
+    "modern industrial interior architecture",
+    "delivery-grade engineering environment"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve a broad centered safe band for the current centered headline and CTA overlay",
+    "focal_structure": "one dominant control-environment anchor with one supporting depth layer",
+    "camera": "architectural interior photography, eye-level or slightly elevated",
+    "cropping": "designed for the current homepage hero background, not a generic stock crop"
+  },
+  "lighting": {
+    "style": "premium commercial interior photography",
+    "mood": "calm, high-trust, operational, and industrial",
+    "contrast": "controlled and readable behind white text",
+    "surface_behavior": "clean reflections and believable monitor glow, no plastic AI sheen"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a refined B2B industrial automation homepage",
+    "must be photorealistic and commercially credible",
+    "must support white headline and CTA overlay in the center band",
+    "must not contain embedded text, buttons, or website UI",
+    "must not read as a generic monitoring office, NOC, or corporate workspace"
+  ],
+  "avoid": [
+    "generic office stock photography",
+    "dominant seated operator in the center",
+    "prominent empty office chairs as the main silhouette",
+    "futuristic HUD overlays",
+    "floating circuit graphics",
+    "fake SaaS dashboard screens",
+    "cyberpunk purple-blue lighting",
+    "headline text, readable words, or numbers",
+    "obvious AI artifacts"
+  ]
+}

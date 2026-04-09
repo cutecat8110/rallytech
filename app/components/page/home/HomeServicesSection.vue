@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { brandGhostButtonTheme } from '~/utils/button-themes'
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 import { enrichServiceCatalog } from '~/utils/services'
 
@@ -46,10 +45,11 @@ const serviceItems = computed(() =>
         </div>
 
         <div class="home-sys-services__grid">
-          <article
+          <NuxtLink
             v-for="item in serviceItems"
             :key="item.slug"
             class="home-sys-services__column"
+            :to="item.to"
           >
             <span class="home-sys-services__icon">
               <UIcon :name="item.icon" class="size-4.5" />
@@ -64,18 +64,14 @@ const serviceItems = computed(() =>
               {{ item.description }}
             </p>
 
-            <UTheme :ui="brandGhostButtonTheme">
-              <UButton
-                :to="item.to"
-                color="primary"
-                variant="ghost"
-                size="xs"
-                :label="messages.home.services.ctaLabel"
-                trailing-icon="i-ic-baseline-arrow-forward"
-                class="home-sys-services__action w-fit"
+            <span class="home-sys-services__action type-sys-label-s">
+              <span>{{ messages.home.services.ctaLabel }}</span>
+              <UIcon
+                name="i-ic-baseline-arrow-forward"
+                class="home-sys-services__action-icon size-4"
               />
-            </UTheme>
-          </article>
+            </span>
+          </NuxtLink>
         </div>
       </div>
     </div>
@@ -121,17 +117,56 @@ const serviceItems = computed(() =>
 }
 
 .home-sys-services__grid {
-  margin-top: 2.35rem;
+  margin-top: 2.5rem;
   display: grid;
-  gap: 2rem 1.75rem;
+  gap: 1.8rem 1.5rem;
 }
 
 .home-sys-services__column {
+  position: relative;
   display: flex;
-  min-height: 11.5rem;
+  min-height: 12rem;
   flex-direction: column;
-  padding-top: 1rem;
+  padding: 1rem 0.95rem 0.9rem 0.15rem;
   border-top: 1px solid rgb(255 255 255 / 0.14);
+  text-decoration: none;
+  isolation: isolate;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background-color 180ms ease;
+}
+
+.home-sys-services__column::before {
+  content: '';
+  position: absolute;
+  inset: 0.35rem -0.35rem 0 -0.4rem;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.07) 0%,
+      rgb(255 255 255 / 0.024) 34%,
+      transparent 82%
+    ),
+    linear-gradient(180deg, rgb(255 255 255 / 0.03) 0%, transparent 58%);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  pointer-events: none;
+}
+
+.home-sys-services__column:hover,
+.home-sys-services__column:focus-visible {
+  border-top-color: rgb(161 235 223 / 0.56);
+}
+
+.home-sys-services__column:focus-visible {
+  outline: none;
+}
+
+.home-sys-services__column:hover::before,
+.home-sys-services__column:focus-visible::before {
+  opacity: 1;
 }
 
 .home-sys-services__icon {
@@ -140,28 +175,66 @@ const serviceItems = computed(() =>
   height: 2.25rem;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: 0.85rem;
+  border: 1px solid rgb(255 255 255 / 0.08);
   color: rgb(161 235 223 / 0.94);
-  background: rgb(255 255 255 / 0.03);
+  background: rgb(255 255 255 / 0.035);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.02);
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    transform 180ms ease;
 }
 
 .home-sys-services__title {
   margin-top: 0.95rem;
+  max-width: 14ch;
+  text-wrap: balance;
 }
 
 .home-sys-services__copy {
-  max-width: 17rem;
-  margin-top: 0.65rem;
+  max-width: 18rem;
+  margin-top: 0.7rem;
+  text-wrap: pretty;
 }
 
 .home-sys-services__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  width: fit-content;
   margin-top: 0.95rem;
+  color: rgb(191 243 234 / 0.92);
+  transition:
+    gap 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.home-sys-services__action-icon {
+  flex-shrink: 0;
+}
+
+.home-sys-services__column:hover .home-sys-services__icon,
+.home-sys-services__column:focus-visible .home-sys-services__icon {
+  color: rgb(191 243 234 / 1);
+  border-color: rgb(161 235 223 / 0.22);
+  background: rgb(255 255 255 / 0.075);
+  transform: translateX(1px);
+}
+
+.home-sys-services__column:hover .home-sys-services__action,
+.home-sys-services__column:focus-visible .home-sys-services__action {
+  gap: 0.5rem;
+  color: rgb(219 250 245 / 1);
+  transform: translateX(2px);
 }
 
 @media (min-width: 768px) {
   .home-sys-services__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem 2.25rem;
+    gap: 1.95rem 2rem;
   }
 }
 
@@ -169,12 +242,21 @@ const serviceItems = computed(() =>
   .home-sys-services__motif {
     display: none;
   }
+
+  .home-sys-services__column {
+    min-height: 10.75rem;
+    padding-right: 0.35rem;
+  }
+
+  .home-sys-services__column::before {
+    inset: 0.25rem -0.2rem 0 -0.2rem;
+  }
 }
 
 @media (min-width: 1280px) {
   .home-sys-services__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2.25rem 2rem;
+    gap: 2rem 1.8rem;
   }
 }
 </style>

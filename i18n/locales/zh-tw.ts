@@ -156,13 +156,15 @@ const messages = {
     },
     oneTouch: {
       title: '一站式整合體驗',
+      description:
+        '把現場設備、告警邏輯、歷史資料與廠務系統整理成同一套可交付的整合路徑。',
       ctaLabel: '了解更多',
       items: [
-        '資料整合｜Data Integration',
-        '告警通報系統整合與試車｜Call-Out System Integration and Commissioning',
-        '振動分析｜Vibration Analysis',
-        '本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment',
-        '公用與廠務系統整合｜Utilities and Facilities System Integration'
+        '資料整合',
+        '告警通報系統整合與試車',
+        '振動分析',
+        '本地 / 雲端歷史資料部署',
+        '公用與廠務系統整合'
       ]
     },
     mission: {
@@ -171,18 +173,18 @@ const messages = {
         {
           value: 'mission',
           label: '我們的使命',
-          title: '把專案複雜度轉成穩定可維運的系統',
+          title: '我們的使命',
           description:
-            '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行能在同一條節奏上推進。',
+            '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行維持同一條交付節奏。',
           ctaLabel: '了解我們的使命',
           imageAlt: '工程師於控制盤前檢視與調整工業設備'
         },
         {
           value: 'join-us',
           label: '合作邀請',
-          title: '與雷力合作，把系統整合、現場交付與長期運維放進同一個團隊視角',
+          title: '合作邀請',
           description:
-            '我們用跨域協作、清楚分工與現場導向的交付方式，讓客戶、承包商與操作端都能在同一個專案重點上對齊。',
+            '以跨域協作、清楚分工與現場導向的交付方式，讓客戶、承包商與操作團隊對齊在同一組專案重點上。',
           ctaLabel: '展開合作對話',
           imageAlt: '工程技術人員於設備旁協作與交流'
         }
@@ -192,15 +194,15 @@ const messages = {
   servicesCatalog,
   servicesPage: {
     seo: {
-      title: '服務總覽 | 雷力科技 Rally Technology',
+      title: '服務項目 | 雷力科技 Rally Technology',
       description:
         '瀏覽雷力科技 8 項核心服務，從 SCADA / HMI、PLC / DCS、PI Server 到工業網路與告警監控，快速掌握可承接的工業自動化交付範圍。'
     },
     hero: {
-      kicker: '服務總覽',
-      title: '支援工業自動化交付的 8 項核心服務',
+      kicker: '服務項目',
+      title: '工業自動化交付的 8 項核心服務',
       description:
-        '從監控圖控、控制程式到 plant data 與現場告警流程，以同一套交付邏輯承接專案需求。',
+        '從監控圖控、控制程式到 plant data 與告警流程，承接工業自動化專案的關鍵交付。',
       asideLabel: '核心工業自動化服務'
     },
     cardCtaLabel: '了解更多',

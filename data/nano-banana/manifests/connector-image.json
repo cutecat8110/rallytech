@@ -1,6 +1,6 @@
 {
   "slot": "connector-image",
-  "liveSource": "stock",
+  "liveSource": "nano",
   "stock": {
     "src": "/images/stock/home/footer-engineering-team.jpg",
     "alt": "工程團隊於實驗環境協作討論",
@@ -43,10 +43,10 @@
       "imageSize": "2K",
       "sourceReference": "/images/stock/home/footer-engineering-team.jpg",
       "createdAt": "2026-04-02T09:49:36.257Z",
-      "status": "candidate",
+      "status": "promoted",
       "outputPath": "/images/generated/home/connector-image/connector-image-20260402094936217-ylj9zz.jpg",
       "outputBytes": 2537831,
-      "notes": "Pro rerun with East Asian Taiwan-based engineering team casting requirement",
+      "notes": "Promoted after homepage compare: collaboration scene fits the footer CTA better and adds stronger local engineering-team context than stock.",
       "responseText": null
     }
   ]

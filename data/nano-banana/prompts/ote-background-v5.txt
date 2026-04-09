@@ -1,0 +1,86 @@
+{
+  "asset_type": "homepage one-touch experience background image",
+  "business_context": "Rally Technology, a Taiwanese industrial automation, plant-data integration, historians, and operations systems company",
+  "page_role": "Homepage One-Touch Experience section background",
+  "goal": "Create a photorealistic wide background image that communicates plant data backbone, multi-system integration, and operations visibility while remaining usable behind the current section layout",
+  "visual_message": "A plant-data backbone environment with infrastructure depth, calm systems coordination, and abstract monitoring signal rather than another hero-style control room",
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "spatial-director-language",
+    "color-material-control"
+  ],
+  "human_casting": {
+    "rule": "avoid visible people if possible; if operators appear, keep them very small, secondary, East Asian, and clearly subordinate to the systems environment",
+    "styling": "modern Taiwan-based industrial workplace styling and practical workwear only",
+    "guardrails": "avoid people-led storytelling or a scene that duplicates the hero section"
+  },
+  "reference_usage": {
+    "image_1": "preserve the wide poster-frame rhythm and overlay-safe framing from the current stock reference",
+    "image_2": "optional data-wall, infrastructure, or historian-system realism reference"
+  },
+  "technical_signals": {
+    "lens": "28mm to 35mm architectural interior photography",
+    "aperture": "f/4",
+    "light_source": "controlled low-key room light with restrained display glow",
+    "time_of_day": "interior-neutral operational mood",
+    "motion_rule": "scene feels live and operational, but still"
+  },
+  "spatial_positioning": [
+    "left side stays readable for the section heading and CTA",
+    "center and right side support the stacked integration list without hard focal collisions",
+    "the environment should imply historians, plant data backbone, infrastructure, or multi-system visibility",
+    "avoid the visual rhythm of a people-filled control room that could be mistaken for the hero scene",
+    "no wall text, projected captions, signage plates, or presentation-slide compositions anywhere in frame"
+  ],
+  "visual_standard": "premium commercial operations and data-integration photography",
+  "color_restriction": "charcoal, dark steel, graphite, restrained monitor greens and cyans only; no purple or magenta glow",
+  "material_notes": [
+    "credible monitoring and integration displays",
+    "server, network, historian, or operations infrastructure cues",
+    "real industrial interior surfaces",
+    "screen glow without plastic bloom",
+    "screen content must stay abstract and unreadable"
+  ],
+  "scene": "A real plant-data integration, historians, or multi-system operations environment with credible monitoring walls, infrastructure depth, and a calm modern systems atmosphere",
+  "subject": "The integrated systems environment is the hero, not a single operator, workstation row, or copy of the homepage hero scene",
+  "reality_anchors": [
+    "credible plant-data backbone context",
+    "multi-system monitoring environment",
+    "historians, network, or infrastructure cues",
+    "commercially usable wide composition"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "keep the frame overlay-safe for the current left heading and right stacked list content",
+    "focal_structure": "one environmental integration anchor with one supporting infrastructure depth layer",
+    "camera": "architectural interior photography, eye-level or slightly elevated",
+    "cropping": "designed for the current poster-frame website section background"
+  },
+  "lighting": {
+    "style": "premium commercial interior photography",
+    "mood": "integrated, capable, data-forward, and calm",
+    "contrast": "controlled and readable behind content panels",
+    "surface_behavior": "believable monitor glow and restrained material reflections"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern B2B industrial website",
+    "must be photorealistic",
+    "must support the current heading, CTA, and layered panel content",
+    "must clearly differentiate itself from the hero image vocabulary",
+    "must not contain embedded text, letters, numbers, captions, subtitles, signage, room labels, whiteboard notes, posters, buttons, or fake UI overlays anywhere in the frame",
+    "any screen content must remain abstract, signal-like, and unreadable at normal website viewing size"
+  ],
+  "avoid": [
+    "another people-led control room scene",
+    "retro mission-control cliches",
+    "rows of seated operators as the main visual story",
+    "floating HUD overlays",
+    "generic fake analytics dashboards",
+    "purple neon cyberpunk lighting",
+    "readable words or numbers",
+    "room signs, captions, or subtitle-like text blocks",
+    "posterized presentation screens",
+    "obvious AI artifacts"
+  ]
+}

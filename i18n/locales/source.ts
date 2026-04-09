@@ -163,6 +163,8 @@ const messages = {
     },
     oneTouch: {
       title: 'The One-Touch Experience.',
+      description:
+        'Integrate plant data, alarm workflows, historians, and utilities systems in one delivery path.',
       ctaLabel: 'Read More',
       items: [
         'Data Integration',
@@ -204,9 +206,9 @@ const messages = {
     },
     hero: {
       kicker: 'Services',
-      title: 'Services',
+      title: 'Core Services for Industrial Automation Delivery',
       description:
-        'Source-reference layer retained for proofreading against the live Pentagon Engineering services overview.',
+        'Source-reference layer retained for proofreading against the live services overview.',
       asideLabel: 'Main industrial automation services'
     },
     cardCtaLabel: 'Read more',

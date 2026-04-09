@@ -170,6 +170,8 @@ const messages = {
     },
     oneTouch: {
       title: 'One-Touch Experience',
+      description:
+        'Bring equipment data, alarm workflows, historians, and utilities systems into one delivery path.',
       ctaLabel: 'Learn More',
       items: [
         'Data Integration',
@@ -212,10 +214,10 @@ const messages = {
         'Browse Rally Technology services across SCADA / HMI, PLC / DCS, PI Server, historians, industrial networking, remote monitoring, and alarm workflows.'
     },
     hero: {
-      kicker: 'Services Overview',
+      kicker: 'Services',
       title: 'Eight Core Services for Industrial Automation Delivery',
       description:
-        'From controls and plant data to field-ready alarm workflows, these services anchor how we deliver industrial automation projects.',
+        'From controls and plant data to alarm workflows, these services support the critical path of industrial automation delivery.',
       asideLabel: 'Core industrial automation services'
     },
     cardCtaLabel: 'Learn More',

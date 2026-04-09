@@ -93,6 +93,7 @@ export interface HomeMessages {
   }
   oneTouch: {
     title: string
+    description: string
     ctaLabel: string
     items: string[]
   }

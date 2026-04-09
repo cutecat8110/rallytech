@@ -1,6 +1,6 @@
 {
   "slot": "services-surface",
-  "liveSource": "stock",
+  "liveSource": "nano",
   "stock": {
     "src": "/images/stock/home/services-industrial-panel-bg.jpg",
     "alt": "工業面板背景",
@@ -24,10 +24,10 @@
       "imageSize": "2K",
       "sourceReference": "/images/stock/home/services-industrial-panel-bg.jpg",
       "createdAt": "2026-04-02T09:21:27.074Z",
-      "status": "candidate",
+      "status": "promoted",
       "outputPath": "/images/generated/home/services-surface/services-surface-20260402092127038-o18bcu.jpg",
       "outputBytes": 2161202,
-      "notes": "Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt",
+      "notes": "Promoted after homepage compare: lower-distraction industrial surface improves service-card readability and section consistency better than the stock image.",
       "responseText": null
     }
   ]

@@ -1,6 +1,6 @@
 {
   "slot": "home-hero",
-  "liveSource": "stock",
+  "liveSource": "nano",
   "stock": {
     "src": "/images/stock/home/hero-simulator-control-room.jpg",
     "alt": "",
@@ -100,7 +100,26 @@
       "status": "candidate",
       "outputPath": "/images/generated/home/hero/home-hero-20260402094559341-9yjh4n.jpg",
       "outputBytes": 2379208,
-      "notes": "Pro rerun with East Asian Taiwan-based engineering team casting requirement",
+      "notes": "Rerun required after homepage compare: current v5 reads too close to a generic monitoring office. Keep stock live until the control-room environment regains stronger industrial credibility and a centered headline-safe zone.",
+      "responseText": null
+    },
+    {
+      "slot": "home-hero",
+      "state": null,
+      "candidateId": "home-hero-20260409081229380-0f5cak",
+      "label": "Nano Hero Candidate",
+      "model": "gemini-3-pro-image-preview",
+      "promptId": "home-hero-v6",
+      "promptFile": "data/nano-banana/prompts/home-hero-v6.txt",
+      "prompt": "{\n  \"asset_type\": \"homepage hero background image\",\n  \"business_context\": \"Rally Technology, a Taiwanese industrial automation, SCADA, PLC, and industrial data integration company\",\n  \"page_role\": \"Homepage hero image\",\n  \"goal\": \"Create a premium, photorealistic B2B hero background that feels industrial, trustworthy, and directly usable behind the current homepage headline and CTA\",\n  \"visual_message\": \"A real industrial control environment with credible monitoring depth, calm operational tension, and a strong sense of reliable delivery rather than generic office monitoring\",\n  \"recipe_ids\": [\n    \"hero-background-right-safe-area\",\n    \"industrial-realism-anchors\",\n    \"technical-signal-stack\",\n    \"color-material-control\"\n  ],\n  \"human_casting\": {\n    \"rule\": \"avoid visible people if possible; if one operator is necessary, keep that person small, off-center, East Asian, and clearly secondary to the control environment\",\n    \"styling\": \"modern Taiwan-based industrial workplace styling, practical workwear only\",\n    \"guardrails\": \"avoid posed office posture, dominant seated figures, or any subject that reads as the main hero\"\n  },\n  \"reference_usage\": {\n    \"image_1\": \"preserve the room depth, control-wall credibility, and website-safe framing from the current stock reference\",\n    \"image_2\": \"optional material, lighting, or monitor-wall realism reference only\"\n  },\n  \"technical_signals\": {\n    \"lens\": \"32mm to 35mm architectural interior photography\",\n    \"aperture\": \"f/4\",\n    \"light_source\": \"soft premium interior lighting with restrained monitor glow\",\n    \"time_of_day\": \"neutral late afternoon or controlled interior mood\",\n    \"motion_rule\": \"scene should feel active but still, with no cinematic blur\"\n  },\n  \"spatial_positioning\": [\n    \"control walls and consoles define the scene, not people or office furniture\",\n    \"preserve a broad center-band headline-safe zone for the current centered homepage copy and CTA\",\n    \"monitoring depth should remain legible behind the overlay without turning into clutter\",\n    \"chairs, desks, and glass partitions stay supportive and never become the focal point\"\n  ],\n  \"visual_standard\": \"premium architectural interior photography for an industrial automation website\",\n  \"color_restriction\": \"restrained industrial neutrals, charcoal, matte graphite, muted steel, and controlled cyan or green screen accents only; no purple neon wash\",\n  \"material_notes\": [\n    \"matte metal consoles\",\n    \"credible SCADA and HMI monitor walls\",\n    \"glass partitions with believable reflections\",\n    \"screen glow without plastic sheen\"\n  ],\n  \"scene\": \"A real industrial automation control room or plant operations integration room with credible SCADA and HMI monitoring walls, layered console depth, and a grounded delivery-ready atmosphere\",\n  \"subject\": \"The control environment is the hero. Reliable industrial operations should read immediately even before any person is noticed\",\n  \"reality_anchors\": [\n    \"credible industrial control room\",\n    \"real monitoring-wall geometry\",\n    \"modern industrial interior architecture\",\n    \"delivery-grade engineering environment\"\n  ],\n  \"composition\": {\n    \"format\": \"16:9\",\n    \"hero_safe_area\": \"preserve a broad centered safe band for the current centered headline and CTA overlay\",\n    \"focal_structure\": \"one dominant control-environment anchor with one supporting depth layer\",\n    \"camera\": \"architectural interior photography, eye-level or slightly elevated\",\n    \"cropping\": \"designed for the current homepage hero background, not a generic stock crop\"\n  },\n  \"lighting\": {\n    \"style\": \"premium commercial interior photography\",\n    \"mood\": \"calm, high-trust, operational, and industrial\",\n    \"contrast\": \"controlled and readable behind white text\",\n    \"surface_behavior\": \"clean reflections and believable monitor glow, no plastic AI sheen\"\n  },\n  \"commercial_constraints\": [\n    \"must feel suitable for a refined B2B industrial automation homepage\",\n    \"must be photorealistic and commercially credible\",\n    \"must support white headline and CTA overlay in the center band\",\n    \"must not contain embedded text, buttons, or website UI\",\n    \"must not read as a generic monitoring office, NOC, or corporate workspace\"\n  ],\n  \"avoid\": [\n    \"generic office stock photography\",\n    \"dominant seated operator in the center\",\n    \"prominent empty office chairs as the main silhouette\",\n    \"futuristic HUD overlays\",\n    \"floating circuit graphics\",\n    \"fake SaaS dashboard screens\",\n    \"cyberpunk purple-blue lighting\",\n    \"headline text, readable words, or numbers\",\n    \"obvious AI artifacts\"\n  ]\n}",
+      "aspectRatio": "16:9",
+      "imageSize": "2K",
+      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "createdAt": "2026-04-09T08:12:29.392Z",
+      "status": "promoted",
+      "outputPath": "/images/generated/home/hero/home-hero-20260409081229380-0f5cak.jpg",
+      "outputBytes": 2570012,
+      "notes": "Promoted after desktop and mobile homepage compare: restores stronger industrial control-room credibility, keeps the centered headline-safe zone intact, and outperforms stock on B2B trust.",
       "responseText": null
     }
   ]
