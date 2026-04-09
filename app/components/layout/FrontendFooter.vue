@@ -25,7 +25,7 @@ const company = computed(() => messages.value.company)
         />
       </figure>
 
-      <div class="page-sys-shell">
+      <div class="page-sys-shell home-sys-footer-connector__shell">
         <div class="home-sys-footer-connector__layout">
           <div
             class="home-sys-footer-connector__media-spacer"
@@ -114,11 +114,14 @@ const company = computed(() => messages.value.company)
 
 <style scoped>
 .home-sys-footer-connector {
+  --connector-band-min-height: auto;
+  --connector-seam-width: 0rem;
+  --connector-media-width: 0rem;
   position: relative;
-  z-index: 1;
-  overflow: visible;
+  isolation: isolate;
+  overflow: hidden;
   background:
-    linear-gradient(120deg, rgb(255 255 255 / 0.1) 0%, transparent 34%),
+    linear-gradient(136deg, rgb(255 255 255 / 0.08) 0%, transparent 42%),
     linear-gradient(
       112deg,
       var(--color-surface-signal-start) 0%,
@@ -126,45 +129,55 @@ const company = computed(() => messages.value.company)
     );
 }
 
+.home-sys-footer-connector::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgb(255 255 255 / 0.06) 0, transparent 28%),
+    linear-gradient(180deg, rgb(255 255 255 / 0.05) 0, transparent 62%);
+  opacity: 0.82;
+  pointer-events: none;
+}
+
 .home-sys-footer-connector::after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    90deg,
-    rgb(255 255 255 / 0.05) 0,
-    rgb(255 255 255 / 0.02) 24%,
-    transparent 52%
+    102deg,
+    rgb(5 12 24 / 0.22) 0,
+    transparent 32%,
+    rgb(5 12 24 / 0.08) 100%
   );
   pointer-events: none;
+}
+
+.home-sys-footer-connector__shell {
+  position: relative;
+  z-index: 1;
 }
 
 .home-sys-footer-connector__layout {
   position: relative;
   z-index: 1;
   display: grid;
-  gap: 0.75rem;
+  gap: 0.8rem;
   align-items: center;
-  min-height: 5.35rem;
-  padding-block: 0.45rem;
+  min-height: var(--connector-band-min-height);
+  padding-block: 1.2rem 1.3rem;
 }
 
 .home-sys-footer-connector__media {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 16rem);
-  aspect-ratio: 16 / 9;
-  margin-inline: auto;
-  overflow: hidden;
-  clip-path: polygon(0 0, 87% 0, 100% 17%, 100% 100%, 0 100%);
+  display: none;
 }
 
 .home-sys-footer-connector__media-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 32% center;
-  filter: saturate(0.94) contrast(1.04);
+  object-position: 34% center;
+  filter: saturate(0.94) contrast(1.02);
 }
 
 .home-sys-footer-connector__media-spacer {
@@ -174,21 +187,24 @@ const company = computed(() => messages.value.company)
 .home-sys-footer-connector__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding-block: 0.2rem;
-  text-align: center;
+  gap: 0.15rem;
+  padding-block: 0.1rem;
+  text-align: left;
 }
 
 .home-sys-footer-connector__accent-heading {
   letter-spacing: 0.01em;
   font-weight: 600;
+  max-width: 11ch;
+  text-wrap: balance;
 }
 
 .home-sys-footer-connector__action {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .home-sys-footer__main {
@@ -198,21 +214,33 @@ const company = computed(() => messages.value.company)
 }
 
 @media (max-width: 767px) {
-  .home-sys-footer-connector__media {
-    width: min(100%, 13rem);
-    margin-block: -0.8rem 0.15rem;
+  .home-sys-footer-connector__layout {
+    justify-items: start;
+  }
+
+  .home-sys-footer-connector__action {
+    padding-top: 0.1rem;
   }
 }
 
 @media (min-width: 768px) {
+  .home-sys-footer-connector {
+    --connector-band-min-height: clamp(8.4rem, 11vw, 10.2rem);
+    --connector-seam-width: clamp(14.25rem, 17vw, 17rem);
+    --connector-media-width: clamp(19.5rem, 24vw, 23.5rem);
+  }
+
   .home-sys-footer-connector__media {
+    display: block;
     position: absolute;
+    z-index: 1;
     inset-inline-start: 0;
-    inset-block-end: 0;
-    width: clamp(15.5rem, 20vw, 19.25rem);
-    height: calc(100% + 2.9rem);
-    max-height: 9.55rem;
+    inset-block: 0;
+    width: var(--connector-media-width);
+    height: 100%;
     margin: 0;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 72% 100%, 0 100%);
   }
 
   .home-sys-footer-connector__media-spacer {
@@ -222,15 +250,20 @@ const company = computed(() => messages.value.company)
 
   .home-sys-footer-connector__layout {
     grid-template-columns:
-      clamp(10.75rem, 14vw, 13.25rem)
+      var(--connector-seam-width)
       minmax(0, 1fr)
-      clamp(7.75rem, 8.75vw, 8.9rem);
-    gap: 0.9rem;
+      auto;
+    gap: clamp(1rem, 1.8vw, 1.75rem);
+    padding-block: 1.1rem;
   }
 
   .home-sys-footer-connector__content {
     align-items: center;
     text-align: center;
+  }
+
+  .home-sys-footer-connector__accent-heading {
+    max-width: none;
   }
 
   .home-sys-footer-connector__action {
@@ -243,12 +276,14 @@ const company = computed(() => messages.value.company)
 }
 
 @media (min-width: 1024px) {
+  .home-sys-footer-connector {
+    --connector-band-min-height: clamp(9rem, 11.5vw, 10.8rem);
+    --connector-seam-width: clamp(15rem, 17.5vw, 18rem);
+    --connector-media-width: clamp(21rem, 25vw, 24.5rem);
+  }
+
   .home-sys-footer-connector__layout {
-    grid-template-columns:
-      clamp(11.25rem, 13vw, 13.75rem)
-      minmax(0, 1fr)
-      clamp(8rem, 8.25vw, 9rem);
-    gap: 0.95rem;
+    gap: clamp(1.25rem, 2vw, 2.1rem);
   }
 }
 </style>
