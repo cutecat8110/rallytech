@@ -715,6 +715,506 @@
       ],
       "replacedBy": null,
       "notes": "Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt"
+    },
+    {
+      "assetId": "services-overview-hero-control-room",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/overview/services-overview-hero-control-room.jpg",
+      "canonicalName": "services-overview-hero-control-room.jpg",
+      "scope": "services/overview",
+      "slot": "overview-hero",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-control-room-with-a-desk-and-two-chairs-p7Bfwn_VKRQ",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#services-overview-hero",
+        "app/utils/service-page-image-registry.ts#servicesOverviewHeroImage"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Miha Meglic. Replaced the earlier overview hero selection on 2026-04-09 to make the first impression read as a broader industrial automation control-center overview rather than a single-service scene."
+    },
+    {
+      "assetId": "scada-overview-card-hmi-control-screen",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/scada-hmi-graphics/overview-card-hmi-control-screen.jpg",
+      "canonicalName": "overview-card-hmi-control-screen.jpg",
+      "scope": "services/scada-hmi-graphics",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/white-digital-device-at-71-lS_YkX3QS9c",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-overview-card",
+        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Mika Baumeister. Selected for the SCADA overview card to keep the thumbnail centered on interface clarity."
+    },
+    {
+      "assetId": "scada-detail-hero-control-room-operator",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg",
+      "canonicalName": "detail-hero-control-room-operator.jpg",
+      "scope": "services/scada-hmi-graphics",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/advanced-control-room-in-el-agustino-lima-32529341/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-detail-hero",
+        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Fernando Narvaez. Selected for the SCADA detail hero to add an operations-led first impression."
+    },
+    {
+      "assetId": "scada-detail-feature-hmi-operator-tablet",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/scada-hmi-graphics/industrial-hmi-operator-tablet.jpg",
+      "canonicalName": "industrial-hmi-operator-tablet.jpg",
+      "scope": "services/scada-hmi-graphics",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/person-holding-black-tablet-computer-Bg0Geue-cY8",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-detail-feature",
+        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by ThisisEngineering. Selected for the SCADA detail feature block to reinforce operator visibility and interface context."
+    },
+    {
+      "assetId": "ie-overview-card-instrument-panel-gauges",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/ie-services/overview-card-instrument-panel-gauges.jpg",
+      "canonicalName": "overview-card-instrument-panel-gauges.jpg",
+      "scope": "services/ie-services",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/white-and-red-electric-meter-dIrSAyhCDa0",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#ie-services-overview-card",
+        "app/utils/service-page-image-registry.ts#ie-services.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Mick Haupt. Selected for the I&E overview card to keep the thumbnail tied to instrumentation and panel recognition."
+    },
+    {
+      "assetId": "ie-detail-hero-electrical-engineer-inspection",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/ie-services/detail-hero-electrical-engineer-inspection.jpg",
+      "canonicalName": "detail-hero-electrical-engineer-inspection.jpg",
+      "scope": "services/ie-services",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-man-in-a-factory-working-on-a-piece-of-equipment-zekShM5_K64",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#ie-services-detail-hero",
+        "app/utils/service-page-image-registry.ts#ie-services.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Alireza Hatami. Selected for the I&E detail hero to foreground field-readiness and on-site execution."
+    },
+    {
+      "assetId": "ie-detail-feature-instrument-control-panel-close-up",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/ie-services/instrument-control-panel-close-up.jpg",
+      "canonicalName": "instrument-control-panel-close-up.jpg",
+      "scope": "services/ie-services",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-control-panel-AGQZprOABgQ",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#ie-services-detail-feature",
+        "app/utils/service-page-image-registry.ts#ie-services.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by iSawRed. Selected for the I&E detail feature block to emphasize field instrumentation and electrical-panel context."
+    },
+    {
+      "assetId": "plc-dcs-overview-card-plc-control-cabinet",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/overview-card-plc-control-cabinet.jpg",
+      "canonicalName": "overview-card-plc-control-cabinet.jpg",
+      "scope": "services/plc-dcs-programming-and-migration",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/electrical-panel-with-wires-and-components-q0Jo_J5YxHY",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-overview-card",
+        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Aleksandr Lyaptsev. Selected for the PLC and DCS overview card to keep cabinet-level automation hardware readable."
+    },
+    {
+      "assetId": "plc-dcs-detail-hero-automation-engineer-laptop",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/detail-hero-automation-engineer-laptop.jpg",
+      "canonicalName": "detail-hero-automation-engineer-laptop.jpg",
+      "scope": "services/plc-dcs-programming-and-migration",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/man-works-on-a-computer-in-a-manufacturing-setting-RyMTGAYZpjY",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-detail-hero",
+        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by TECNIC Bioprocess Solutions. Selected for the PLC and DCS detail hero to emphasize staged programming and migration work."
+    },
+    {
+      "assetId": "plc-dcs-detail-feature-control-system-engineer-laptop",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/control-system-engineer-laptop.jpg",
+      "canonicalName": "control-system-engineer-laptop.jpg",
+      "scope": "services/plc-dcs-programming-and-migration",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-using-black-laptop-computer-aL2rxQhEfAM",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-detail-feature",
+        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by ThisisEngineering. Selected for the PLC and DCS detail feature block to support programming, migration, and staged cutover narratives."
+    },
+    {
+      "assetId": "pi-server-overview-card-server-rack-lights",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/pi-server/overview-card-server-rack-lights.jpg",
+      "canonicalName": "overview-card-server-rack-lights.jpg",
+      "scope": "services/pi-server",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-green-light-in-a-server-zMrGQu21qcU",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#pi-server-overview-card",
+        "app/utils/service-page-image-registry.ts#pi-server.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Tyler. Selected for the PI Server overview card to make data infrastructure legible at thumbnail size."
+    },
+    {
+      "assetId": "pi-server-detail-hero-server-room-operations",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/pi-server/detail-hero-server-room-operations.jpg",
+      "canonicalName": "detail-hero-server-room-operations.jpg",
+      "scope": "services/pi-server",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#pi-server-detail-hero",
+        "app/utils/service-page-image-registry.ts#pi-server.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Brett Sayles. Selected for the PI Server detail hero to communicate an operations-grade data backbone."
+    },
+    {
+      "assetId": "pi-server-detail-feature-industrial-server-room-dashboard",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/pi-server/industrial-server-room-dashboard.jpg",
+      "canonicalName": "industrial-server-room-dashboard.jpg",
+      "scope": "services/pi-server",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-computer-in-a-dark-room-Kqg_6JPhxRk",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#pi-server-detail-feature",
+        "app/utils/service-page-image-registry.ts#pi-server.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Tyler. Selected for the PI Server detail feature block to convey plant-data infrastructure and dashboard operations."
+    },
+    {
+      "assetId": "historians-overview-card-industrial-server-rack",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/historians/overview-card-industrial-server-rack.jpg",
+      "canonicalName": "overview-card-industrial-server-rack.jpg",
+      "scope": "services/historians",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/close-up-of-computer-hardware-17489157/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#historians-overview-card",
+        "app/utils/service-page-image-registry.ts#historians.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by panumas nikhomkhai. Selected for the Historians overview card to keep the thumbnail focused on retention infrastructure."
+    },
+    {
+      "assetId": "historians-detail-hero-engineer-data-screens",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/historians/detail-hero-engineer-data-screens.jpg",
+      "canonicalName": "detail-hero-engineer-data-screens.jpg",
+      "scope": "services/historians",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/man-in-white-and-black-striped-polo-shirt-in-front-of-monitor-At4udACn5oA",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#historians-detail-hero",
+        "app/utils/service-page-image-registry.ts#historians.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Battlecreek Coffee Roasters. Selected for the Historians detail hero to introduce operator review and data continuity context."
+    },
+    {
+      "assetId": "historians-detail-feature-server-rack-close-up",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/historians/historian-server-rack-close-up.jpg",
+      "canonicalName": "historian-server-rack-close-up.jpg",
+      "scope": "services/historians",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-rack-of-computer-equipment-eqd0f78u9nI",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#historians-detail-feature",
+        "app/utils/service-page-image-registry.ts#historians.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Tyler. Selected for the Historians detail feature block to reinforce long-term data retention and rack-level infrastructure."
+    },
+    {
+      "assetId": "network-design-overview-card-network-switch-cables",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/network-design/overview-card-network-switch-cables.jpg",
+      "canonicalName": "overview-card-network-switch-cables.jpg",
+      "scope": "services/network-design",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/blue-utp-cord-40XgDxBfYXM",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#network-design-overview-card",
+        "app/utils/service-page-image-registry.ts#network-design.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Jordan Harrison. Selected for the Network Design overview card to keep the thumbnail aligned with OT cabling and topology signals."
+    },
+    {
+      "assetId": "network-design-detail-hero-industrial-network-room",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/network-design/detail-hero-industrial-network-room.jpg",
+      "canonicalName": "detail-hero-industrial-network-room.jpg",
+      "scope": "services/network-design",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-network-with-wires-connected-to-it-dyUp7WPu5q4",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#network-design-detail-hero",
+        "app/utils/service-page-image-registry.ts#network-design.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Albert Stoynov. Selected for the Network Design detail hero to signal resilient physical OT network infrastructure."
+    },
+    {
+      "assetId": "network-design-detail-feature-network-servers-connected-cables",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/network-design/network-servers-connected-cables.jpg",
+      "canonicalName": "network-servers-connected-cables.jpg",
+      "scope": "services/network-design",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/network-servers-are-connected-with-cables-3qZ6qT1DKxU",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#network-design-detail-feature",
+        "app/utils/service-page-image-registry.ts#network-design.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Fabio Sasso. Selected for the Network Design detail feature block to express topology, connectivity, and maintainable OT networking."
+    },
+    {
+      "assetId": "remote-monitoring-overview-card-monitor-wall-control-center",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/remote-monitoring-and-data/overview-card-monitor-wall-control-center.jpg",
+      "canonicalName": "overview-card-monitor-wall-control-center.jpg",
+      "scope": "services/remote-monitoring-and-data",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-control-room-with-a-map-on-the-wall-tDc7zZ93cr8",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-overview-card",
+        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Debbie Whittam. Selected for the Remote Monitoring overview card to make multi-site visibility clear in compact form."
+    },
+    {
+      "assetId": "remote-monitoring-detail-hero-remote-monitoring-laptop",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/remote-monitoring-and-data/detail-hero-remote-monitoring-laptop.jpg",
+      "canonicalName": "detail-hero-remote-monitoring-laptop.jpg",
+      "scope": "services/remote-monitoring-and-data",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/technicians-in-control-room-operating-machinery-32845695/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-detail-hero",
+        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Sergey Sergeev. Selected for the Remote Monitoring detail hero to foreground distributed operations and rapid data access."
+    },
+    {
+      "assetId": "remote-monitoring-detail-feature-control-room",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/remote-monitoring-and-data/remote-monitoring-control-room.jpg",
+      "canonicalName": "remote-monitoring-control-room.jpg",
+      "scope": "services/remote-monitoring-and-data",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-man-sitting-in-front-of-multiple-monitors-TtMKq3lJm-U",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-detail-feature",
+        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Tasha Kostyuk. Selected for the Remote Monitoring and Data detail feature block to emphasize remote visibility and multi-screen monitoring."
+    },
+    {
+      "assetId": "alarm-monitoring-overview-card-industrial-alarm-panel",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/alarm-monitoring/overview-card-industrial-alarm-panel.jpg",
+      "canonicalName": "overview-card-industrial-alarm-panel.jpg",
+      "scope": "services/alarm-monitoring",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/colorful-buttons-on-wall-19316514/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-overview-card",
+        "app/utils/service-page-image-registry.ts#alarm-monitoring.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Joao Jesus. Selected for the Alarm Monitoring overview card to keep the thumbnail tied to recognizable alarm hardware."
+    },
+    {
+      "assetId": "alarm-monitoring-detail-hero-control-room-alarm-screens",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/alarm-monitoring/detail-hero-control-room-alarm-screens.jpg",
+      "canonicalName": "detail-hero-control-room-alarm-screens.jpg",
+      "scope": "services/alarm-monitoring",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/engineer-at-control-room-monitoring-screens-32845700/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-detail-hero",
+        "app/utils/service-page-image-registry.ts#alarm-monitoring.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Sergey Sergeev. Selected for the Alarm Monitoring detail hero to establish response speed and operator awareness."
+    },
+    {
+      "assetId": "alarm-monitoring-detail-feature-screen",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/alarm-monitoring/alarm-monitoring-screen.jpg",
+      "canonicalName": "alarm-monitoring-screen.jpg",
+      "scope": "services/alarm-monitoring",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Unsplash",
+      "licenseNote": "Unsplash License",
+      "sourceReference": "https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-shelf-2116Y7fsQu0",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-detail-feature",
+        "app/utils/service-page-image-registry.ts#alarm-monitoring.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Nopparuj Lamaikul. Selected for the Alarm Monitoring detail feature block to reinforce alert visibility and operator response context."
     }
   ]
 }

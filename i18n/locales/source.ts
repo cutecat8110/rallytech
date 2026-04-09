@@ -206,9 +206,12 @@ const messages = {
       kicker: 'Services',
       title: 'Services',
       description:
-        'Source-reference layer retained for proofreading against the live Pentagon Engineering services overview.'
+        'Source-reference layer retained for proofreading against the live Pentagon Engineering services overview.',
+      asideLabel: 'Main industrial automation services'
     },
-    cardCtaLabel: 'Read more'
+    cardCtaLabel: 'Read more',
+    detailBackLabel: 'All Services',
+    detailFocusLabel: 'Source Reference Focus'
   },
   serviceDetailPages: serviceDetailPagesSource,
   footer: {

@@ -1,14 +1,11 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import type {
-  ServiceCatalogItemMessages,
-  ServiceDetailPageMessages
-} from '~~/i18n/locales/types'
+import type { ServiceCatalogItemMessages } from '~~/i18n/locales/types'
 import { enrichServiceCatalog } from '~/utils/services'
 
 const props = defineProps<{
   service: ServiceCatalogItemMessages
-  detailPage: ServiceDetailPageMessages
+  heading: string
 }>()
 
 const messages = useRallyMessages()
@@ -21,110 +18,94 @@ const serviceItems = computed(() =>
     to: localePath(`/services/${item.slug}`)
   }))
 )
-
-const contactPath = computed(() => `${localePath('/')}#contact`)
 </script>
 
 <template>
-  <aside class="services-sys-detail-sidebar">
-    <section class="services-sys-detail-sidebar__panel surface-sys-card">
-      <p class="type-sys-label-s text-neutral-500">
-        {{ detailPage.sidebar.servicesHeading }}
-      </p>
+  <nav class="services-sys-detail-sidebar" :aria-label="heading">
+    <p class="type-sys-label-s services-sys-detail-sidebar__label">
+      {{ heading }}
+    </p>
 
-      <nav class="services-sys-detail-sidebar__nav" aria-label="Service links">
-        <template v-for="item in serviceItems" :key="item.slug">
-          <span
-            v-if="item.isCurrent"
-            class="services-sys-detail-sidebar__link services-sys-detail-sidebar__link--active"
-            aria-current="page"
-          >
-            <UIcon :name="item.icon" class="size-4" />
-            <span>{{ item.shortLabel }}</span>
+    <div class="services-sys-detail-sidebar__nav">
+      <template v-for="item in serviceItems" :key="item.slug">
+        <span
+          v-if="item.isCurrent"
+          class="services-sys-detail-sidebar__link services-sys-detail-sidebar__link--active"
+          aria-current="page"
+        >
+          <span class="services-sys-detail-sidebar__order type-sys-label-s">
+            {{ String(item.order).padStart(2, '0') }}
           </span>
+          <UIcon :name="item.icon" class="size-4" />
+          <span>{{ item.shortLabel }}</span>
+        </span>
 
-          <NuxtLink
-            v-else
-            :to="item.to"
-            class="services-sys-detail-sidebar__link"
-          >
-            <UIcon :name="item.icon" class="size-4" />
-            <span>{{ item.shortLabel }}</span>
-          </NuxtLink>
-        </template>
-      </nav>
-    </section>
-
-    <section class="services-sys-detail-sidebar__panel surface-sys-card">
-      <p class="type-sys-label-s text-neutral-500">
-        {{ detailPage.sidebar.contactHeading }}
-      </p>
-
-      <div class="services-sys-detail-sidebar__contact">
-        <a
-          :href="messages.company.phoneHref"
-          class="type-sys-title-l text-neutral-950 transition-colors hover:text-primary-700"
+        <NuxtLink
+          v-else
+          :to="item.to"
+          class="services-sys-detail-sidebar__link"
         >
-          {{ messages.company.phoneDisplay }}
-        </a>
-        <a
-          :href="messages.company.emailHref"
-          class="type-sys-body-s text-neutral-700 transition-colors hover:text-primary-700"
-        >
-          {{ messages.company.email }}
-        </a>
-      </div>
-
-      <UButton
-        :to="contactPath"
-        color="primary"
-        variant="solid"
-        size="sm"
-        :label="messages.nav.contactCta"
-        class="mt-5 w-full justify-center"
-      />
-    </section>
-  </aside>
+          <span class="services-sys-detail-sidebar__order type-sys-label-s">
+            {{ String(item.order).padStart(2, '0') }}
+          </span>
+          <UIcon :name="item.icon" class="size-4" />
+          <span>{{ item.shortLabel }}</span>
+        </NuxtLink>
+      </template>
+    </div>
+  </nav>
 </template>
 
 <style scoped>
 .services-sys-detail-sidebar {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.95rem;
 }
 
-.services-sys-detail-sidebar__panel {
-  padding: 1.25rem;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(239 244 244 / 0.86) 100%
-    ),
-    var(--color-white);
+.services-sys-detail-sidebar__label {
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .services-sys-detail-sidebar__nav {
   display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-  margin-top: 1rem;
+  gap: 0.75rem;
+  padding-bottom: 0.2rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.services-sys-detail-sidebar__nav::-webkit-scrollbar {
+  display: none;
 }
 
 .services-sys-detail-sidebar__link {
-  display: inline-flex;
+  display: inline-grid;
+  flex: 0 0 auto;
+  grid-template-columns: auto auto minmax(0, 1fr);
   align-items: center;
-  gap: 0.625rem;
-  padding: 0.75rem 0.875rem;
-  border: 1px solid transparent;
-  border-radius: var(--radius-sm);
+  gap: 0.65rem;
+  min-height: 2.95rem;
+  padding: 0.78rem 0.95rem;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 8%,
+      var(--color-border-subtle)
+    );
+  border-radius: var(--radius-full);
   color: var(--color-text-secondary);
-  background: transparent;
+  background: rgb(255 255 255 / 0.94);
+  box-shadow: 0 12px 30px rgb(6 20 27 / 0.04);
   transition:
     color 180ms ease,
     border-color 180ms ease,
-    background-color 180ms ease;
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .services-sys-detail-sidebar__link:hover {
@@ -134,11 +115,9 @@ const contactPath = computed(() => `${localePath('/')}#contact`)
     var(--color-primary-200) 60%,
     var(--color-border-subtle)
   );
-  background: color-mix(
-    in srgb,
-    var(--color-primary-50) 70%,
-    var(--color-white)
-  );
+  background: rgb(255 255 255 / 1);
+  box-shadow: 0 16px 34px rgb(6 20 27 / 0.08);
+  transform: translateY(-1px);
 }
 
 .services-sys-detail-sidebar__link--active {
@@ -155,17 +134,28 @@ const contactPath = computed(() => `${localePath('/')}#contact`)
   );
 }
 
-.services-sys-detail-sidebar__contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-  margin-top: 1rem;
+.services-sys-detail-sidebar__order {
+  color: var(--color-text-tertiary);
+  letter-spacing: 0.08em;
 }
 
 @media (min-width: 1024px) {
   .services-sys-detail-sidebar {
     position: sticky;
     top: calc(var(--layout-header-m) + 1.5rem);
+    gap: 1rem;
+  }
+
+  .services-sys-detail-sidebar__nav {
+    flex-direction: column;
+    gap: 0.55rem;
+    overflow: visible;
+  }
+
+  .services-sys-detail-sidebar__link {
+    width: 100%;
+    border-radius: var(--radius-l);
+    box-shadow: none;
   }
 }
 </style>

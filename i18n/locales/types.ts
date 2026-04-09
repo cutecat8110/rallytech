@@ -118,8 +118,11 @@ export interface ServicesPageMessages {
     kicker: string
     title: string
     description: string
+    asideLabel: string
   }
   cardCtaLabel: string
+  detailBackLabel: string
+  detailFocusLabel: string
 }
 
 export interface ServiceDetailSidebarMessages {
@@ -132,21 +135,50 @@ export interface ServiceDetailCapabilityItemMessages {
   paragraphs: string[]
 }
 
+export interface ServiceDetailProofItemMessages {
+  title: string
+  description: string
+}
+
 export interface ServiceDetailAccordionItemMessages {
   title: string
   paragraphs?: string[]
 }
 
+export interface ServiceDetailProcessStepItemMessages {
+  stepLabel: string
+  title: string
+  description: string
+}
+
 export interface ServiceDetailBlockBaseMessages {
   type:
+    | 'media-feature'
+    | 'proof-strip'
     | 'capability-list'
     | 'card-grid'
     | 'quote'
     | 'summary'
     | 'tag-list'
     | 'accordion'
+    | 'process-steps'
     | 'closing-note'
   title?: string
+}
+
+export interface ServiceDetailMediaFeatureBlockMessages extends ServiceDetailBlockBaseMessages {
+  type: 'media-feature'
+  mediaSlot: ServiceSlug
+  imageAlt: string
+  layout: 'image-left' | 'image-right'
+  title: string
+  paragraphs: string[]
+  highlights: string[]
+}
+
+export interface ServiceDetailProofStripBlockMessages extends ServiceDetailBlockBaseMessages {
+  type: 'proof-strip'
+  items: ServiceDetailProofItemMessages[]
 }
 
 export interface ServiceDetailCapabilityListBlockMessages extends ServiceDetailBlockBaseMessages {
@@ -157,6 +189,7 @@ export interface ServiceDetailCapabilityListBlockMessages extends ServiceDetailB
 export interface ServiceDetailCardGridBlockMessages extends ServiceDetailBlockBaseMessages {
   type: 'card-grid'
   items: TextPair[]
+  columns?: 2 | 3
 }
 
 export interface ServiceDetailQuoteBlockMessages extends ServiceDetailBlockBaseMessages {
@@ -181,18 +214,26 @@ export interface ServiceDetailAccordionBlockMessages extends ServiceDetailBlockB
   note?: string
 }
 
+export interface ServiceDetailProcessStepsBlockMessages extends ServiceDetailBlockBaseMessages {
+  type: 'process-steps'
+  items: ServiceDetailProcessStepItemMessages[]
+}
+
 export interface ServiceDetailClosingNoteBlockMessages extends ServiceDetailBlockBaseMessages {
   type: 'closing-note'
   paragraphs: string[]
 }
 
 export type ServiceDetailBlockMessages =
+  | ServiceDetailMediaFeatureBlockMessages
+  | ServiceDetailProofStripBlockMessages
   | ServiceDetailCapabilityListBlockMessages
   | ServiceDetailCardGridBlockMessages
   | ServiceDetailQuoteBlockMessages
   | ServiceDetailSummaryBlockMessages
   | ServiceDetailTagListBlockMessages
   | ServiceDetailAccordionBlockMessages
+  | ServiceDetailProcessStepsBlockMessages
   | ServiceDetailClosingNoteBlockMessages
 
 export interface ServiceDetailPageMessages {
@@ -201,6 +242,7 @@ export interface ServiceDetailPageMessages {
     description: string
   }
   heroTitle: string
+  heroFocusItems: string[]
   introParagraphs: string[]
   sidebar: ServiceDetailSidebarMessages
   blocks: ServiceDetailBlockMessages[]

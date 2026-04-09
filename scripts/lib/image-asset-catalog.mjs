@@ -12,6 +12,10 @@ export const homePageRegistryPath = resolve(
   projectRoot,
   'app/utils/home-page-image-registry.ts'
 )
+export const servicePageRegistryPath = resolve(
+  projectRoot,
+  'app/utils/service-page-image-registry.ts'
+)
 export const imageReferenceDocPath = resolve(
   projectRoot,
   'docs/references/首頁媒體素材來源.md'
@@ -21,6 +25,21 @@ export const nanoManifestDirectory = resolve(
   'data/nano-banana/manifests'
 )
 export const activeStockCanonicalRoot = '/images/stock'
+
+export const serviceImageReferenceDocPath = resolve(
+  projectRoot,
+  'docs/references/服務內頁媒體素材來源.md'
+)
+
+const runtimeRegistryPaths = Object.freeze([
+  homePageRegistryPath,
+  servicePageRegistryPath
+])
+
+const imageReferenceDocPaths = Object.freeze([
+  imageReferenceDocPath,
+  serviceImageReferenceDocPath
+])
 
 export const IMAGE_ASSET_KINDS = Object.freeze([
   'brand',
@@ -158,15 +177,31 @@ export async function listPublicImageFiles() {
 }
 
 export async function extractRegistryImagePaths() {
-  const source = await readFile(homePageRegistryPath, 'utf8')
-  return Array.from(
-    new Set(source.match(IMAGE_ASSET_FILE_PATTERN) ?? [])
-  ).sort()
+  const matches = []
+
+  for (const registryPath of runtimeRegistryPaths) {
+    if (!(await pathExists(registryPath))) {
+      continue
+    }
+
+    const source = await readFile(registryPath, 'utf8')
+    matches.push(...(source.match(IMAGE_ASSET_FILE_PATTERN) ?? []))
+  }
+
+  return Array.from(new Set(matches)).sort()
 }
 
 export async function extractReferenceDocLocalFilenames() {
-  const source = await readFile(imageReferenceDocPath, 'utf8')
-  const matches = source.match(/`[^`]+\.(?:svg|png|jpe?g|webp)`/g) ?? []
+  const matches = []
+
+  for (const docPath of imageReferenceDocPaths) {
+    if (!(await pathExists(docPath))) {
+      continue
+    }
+
+    const source = await readFile(docPath, 'utf8')
+    matches.push(...(source.match(/`[^`]+\.(?:svg|png|jpe?g|webp)`/g) ?? []))
+  }
 
   return Array.from(
     new Set(matches.map((match) => match.slice(1, -1)).filter(isImageFilename))

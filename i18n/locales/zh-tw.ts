@@ -200,9 +200,12 @@ const messages = {
       kicker: '服務總覽',
       title: '支援工業自動化交付的 8 項核心服務',
       description:
-        '從監控圖控、控制程式到 plant data 與現場告警流程，以同一套交付邏輯承接專案需求。'
+        '從監控圖控、控制程式到 plant data 與現場告警流程，以同一套交付邏輯承接專案需求。',
+      asideLabel: '核心工業自動化服務'
     },
-    cardCtaLabel: '了解更多'
+    cardCtaLabel: '了解更多',
+    detailBackLabel: '所有服務',
+    detailFocusLabel: '交付焦點'
   },
   serviceDetailPages: serviceDetailPagesZhTw,
   footer: {

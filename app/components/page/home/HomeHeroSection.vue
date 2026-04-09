@@ -2,6 +2,7 @@
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
   useHomePageImageAsset('home-hero')
 </script>
@@ -41,7 +42,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 
           <div class="mt-7 flex justify-center">
             <UButton
-              to="#services"
+              :to="localePath('/services')"
               color="primary"
               variant="solid"
               size="xl"

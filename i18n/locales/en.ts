@@ -215,9 +215,12 @@ const messages = {
       kicker: 'Services Overview',
       title: 'Eight Core Services for Industrial Automation Delivery',
       description:
-        'From controls and plant data to field-ready alarm workflows, these services anchor how we deliver industrial automation projects.'
+        'From controls and plant data to field-ready alarm workflows, these services anchor how we deliver industrial automation projects.',
+      asideLabel: 'Core industrial automation services'
     },
-    cardCtaLabel: 'Learn More'
+    cardCtaLabel: 'Learn More',
+    detailBackLabel: 'All Services',
+    detailFocusLabel: 'Operational Focus'
   },
   serviceDetailPages: serviceDetailPagesEn,
   footer: {
