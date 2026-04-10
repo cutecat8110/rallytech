@@ -61,7 +61,10 @@ export const lightSolidButtonTheme = {
       'active:bg-white/88',
       'focus-visible:bg-white/92',
       'focus-visible:text-secondary-950'
-    ].join(' ')
+    ].join(' '),
+    label: 'text-secondary-950',
+    leadingIcon: 'text-secondary-950',
+    trailingIcon: 'text-secondary-950'
   }
 } as const
 

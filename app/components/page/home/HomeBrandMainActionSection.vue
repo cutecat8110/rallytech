@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import type { HomePageImageStateKey } from '~/utils/home-page-image-registry'
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const missionStates = computed(() => messages.value.home.mission.tabs)
 const activeMission = ref<HomePageImageStateKey>('mission')
 const {
@@ -58,6 +59,7 @@ const missionTabsUi = {
               color="primary"
               variant="pill"
               size="sm"
+              class="home-sys-mission__tabs"
               :ui="missionTabsUi"
             />
 
@@ -88,7 +90,7 @@ const missionTabsUi = {
                   </p>
                 </div>
                 <UButton
-                  to="#contact"
+                  :to="localePath('/contact')"
                   color="primary"
                   variant="solid"
                   size="lg"
@@ -124,18 +126,22 @@ const missionTabsUi = {
 
 .home-sys-mission__layout {
   display: grid;
-  align-items: center;
-  gap: 2rem;
+  align-items: start;
+  gap: clamp(2rem, 4vw, 3rem);
 }
 
 .home-sys-mission__copy {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1.25rem;
 }
 
 .home-sys-mission__heading {
   max-width: 36rem;
+}
+
+.home-sys-mission__tabs {
+  align-self: flex-start;
 }
 
 .home-sys-mission__accent-heading {
@@ -145,19 +151,19 @@ const missionTabsUi = {
 
 .home-sys-mission__state {
   display: grid;
-  gap: 1rem;
+  gap: 1.25rem;
 }
 
 .home-sys-mission__state-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1.35rem;
 }
 
 .home-sys-mission__state-body {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .home-sys-mission__state-title {
@@ -238,21 +244,32 @@ const missionTabsUi = {
 }
 
 @media (max-width: 767px) {
+  .home-sys-mission__copy {
+    gap: 1.1rem;
+  }
+
   .home-sys-mission__state {
     grid-template-columns: 1fr;
+    gap: 1.1rem;
   }
 }
 
 @media (min-width: 768px) {
+  .home-sys-mission__copy {
+    gap: 1.6rem;
+  }
+
   .home-sys-mission__state {
     grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
     align-items: end;
-    column-gap: 1.5rem;
+    column-gap: 1.85rem;
+    row-gap: 1.35rem;
   }
 
   .home-sys-mission__state-copy {
-    min-height: 13rem;
+    min-height: 14rem;
     justify-content: space-between;
+    gap: 1.5rem;
   }
 
   .home-sys-mission__state-media {
@@ -265,7 +282,23 @@ const missionTabsUi = {
 @media (min-width: 1280px) {
   .home-sys-mission__layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: 3.25rem;
+    align-items: stretch;
+    gap: clamp(3.25rem, 4vw, 4.5rem);
+  }
+
+  .home-sys-mission__copy {
+    min-height: clamp(21rem, 34vw, 29rem);
+    gap: 1.45rem;
+  }
+
+  .home-sys-mission__state {
+    margin-top: auto;
+    column-gap: 2.25rem;
+    row-gap: 1.5rem;
+  }
+
+  .home-sys-mission__state-copy {
+    min-height: clamp(14.5rem, 18vw, 17.5rem);
   }
 }
 </style>

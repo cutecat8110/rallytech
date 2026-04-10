@@ -35,7 +35,7 @@ const serviceLinks = computed(() =>
 )
 const company = computed(() => messages.value.company)
 const homePath = computed(() => localePath('/'))
-const contactPath = computed(() => `${homePath.value}#contact`)
+const contactPath = computed(() => localePath('/contact'))
 const localeLinks = computed(() =>
   siteLocaleCodes.map((code) => ({
     code,
@@ -281,7 +281,10 @@ watch(isMobileMenuOpen, (open) => {
               size="xs"
               :label="messages.nav.contactCta"
               class="home-sys-header__contact-button hidden h-8 md:inline-flex"
-              :ui="{ base: 'h-8 !text-white [&_*]:!text-white', label: '!text-white' }"
+              :ui="{
+                base: 'h-8 !text-white [&_*]:!text-white',
+                label: '!text-white'
+              }"
             />
           </UTheme>
 

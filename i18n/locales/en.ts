@@ -107,8 +107,7 @@ const messages = {
     items: [
       { label: 'About', href: '#about' },
       { label: 'Services', href: '/services' },
-      { label: 'One-Touch Experience', href: '#one-touch-experience' },
-      { label: 'Contact', href: '#contact' }
+      { label: 'One-Touch Experience', href: '#one-touch-experience' }
     ]
   },
   home: {
@@ -225,6 +224,72 @@ const messages = {
     detailFocusLabel: 'Operational Focus'
   },
   serviceDetailPages: serviceDetailPagesEn,
+  contactPage: {
+    seo: {
+      title: 'Contact Us | Rally Technology',
+      description:
+        'Talk with Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
+    },
+    hero: {
+      title: 'Contact Us',
+      description:
+        'Start the conversation by aligning your project scope, site context, and next steps.'
+    },
+    intro: {
+      title: 'Turn early discussions into an executable direction',
+      paragraphs: [
+        'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, Rally Technology is ready to talk.',
+        'We help teams clarify requirements, confirm delivery boundaries, and shape the next step into a workable project direction.'
+      ]
+    },
+    form: {
+      title: 'Inquiry Form',
+      description:
+        'Use this form to organize your contact details and project needs. If you need an immediate response, use the phone or email listed on this page.',
+      submitLabel: 'Send Inquiry',
+      unavailableTitle: 'Form submission is not available yet',
+      unavailableDescription:
+        'This release delivers the contact-page flow and form UI first. Please use the phone number or email on this page to reach our team.',
+      fields: {
+        name: {
+          label: 'Name',
+          placeholder: 'Enter your name',
+          help: 'Provide the main contact person for this inquiry.'
+        },
+        company: {
+          label: 'Company / Organization',
+          placeholder: 'Enter your company or organization',
+          help: 'For B2B inquiries, include the organization you represent.'
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'you@example.com',
+          help: 'We will reply to this email address.'
+        },
+        subject: {
+          label: 'Subject',
+          placeholder: 'Example: PLC / DCS migration assessment',
+          help: 'Summarize the topic of your inquiry in one line.'
+        },
+        phone: {
+          label: 'Phone',
+          placeholder: 'Enter a phone number',
+          help: 'Leave a number if direct coordination is helpful.'
+        },
+        details: {
+          label: 'Project Details',
+          placeholder:
+            'Describe the current situation, scope, timing, or key constraints',
+          help: 'Include site context, system scope, and the main issues you are evaluating.'
+        }
+      }
+    },
+    direct: {
+      title: 'Direct Contact Details',
+      description:
+        'If you are ready to discuss a requirement now, you can also contact Rally Technology directly through the channels below.'
+    }
+  },
   footer: {
     connectorHeading: 'Engineering and Automation Delivery Experts',
     ctaLabel: 'Contact Us',

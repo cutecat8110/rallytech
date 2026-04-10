@@ -254,6 +254,46 @@ export type ServiceDetailPagesMessages = Record<
   ServiceDetailPageMessages
 >
 
+export interface ContactPageFieldMessages {
+  label: string
+  placeholder: string
+  help: string
+}
+
+export interface ContactPageMessages {
+  seo: {
+    title: string
+    description: string
+  }
+  hero: {
+    title: string
+    description: string
+  }
+  intro: {
+    title: string
+    paragraphs: string[]
+  }
+  form: {
+    title: string
+    description: string
+    submitLabel: string
+    unavailableTitle: string
+    unavailableDescription: string
+    fields: {
+      name: ContactPageFieldMessages
+      company: ContactPageFieldMessages
+      email: ContactPageFieldMessages
+      subject: ContactPageFieldMessages
+      phone: ContactPageFieldMessages
+      details: ContactPageFieldMessages
+    }
+  }
+  direct: {
+    title: string
+    description: string
+  }
+}
+
 export interface FooterMessages {
   connectorHeading: string
   ctaLabel: string
@@ -292,6 +332,7 @@ export interface RallyTechLocaleMessages {
   servicesCatalog: ServiceCatalogItemMessages[]
   servicesPage: ServicesPageMessages
   serviceDetailPages: ServiceDetailPagesMessages
+  contactPage: ContactPageMessages
   footer: FooterMessages
   referencePages: ReferencePagesMessages
 }

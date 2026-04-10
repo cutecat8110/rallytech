@@ -9,6 +9,7 @@ const oneTouchBackgroundStyle = computed(() => ({
 }))
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 </script>
 
@@ -23,25 +24,30 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
         <div class="home-sys-ote__stage">
           <div class="home-sys-ote__layout">
             <article class="home-sys-ote__copy">
-              <h2
-                class="home-sys-ote__accent-heading type-sys-headline-l text-white"
-              >
-                {{ messages.home.oneTouch.title }}
-              </h2>
-              <p
-                v-if="messages.home.oneTouch.description"
-                class="home-sys-ote__description type-sys-body-m"
-              >
-                {{ messages.home.oneTouch.description }}
-              </p>
-              <UButton
-                to="#contact"
-                color="primary"
-                variant="solid"
-                size="lg"
-                :label="messages.home.oneTouch.ctaLabel"
-                class="home-sys-ote__action"
-              />
+              <div class="home-sys-ote__body">
+                <h2
+                  class="home-sys-ote__accent-heading type-sys-headline-l text-white"
+                >
+                  {{ messages.home.oneTouch.title }}
+                </h2>
+                <p
+                  v-if="messages.home.oneTouch.description"
+                  class="home-sys-ote__description type-sys-body-m"
+                >
+                  {{ messages.home.oneTouch.description }}
+                </p>
+              </div>
+
+              <div class="home-sys-ote__action-wrap">
+                <UButton
+                  :to="localePath('/contact')"
+                  color="primary"
+                  variant="solid"
+                  size="lg"
+                  :label="messages.home.oneTouch.ctaLabel"
+                  class="home-sys-ote__action"
+                />
+              </div>
             </article>
 
             <div class="home-sys-ote__list">
@@ -131,17 +137,25 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
   width: min(100%, 21.75rem);
   flex-direction: column;
   align-items: flex-start;
+  gap: 1.25rem;
   margin-inline: auto;
 }
 
-.home-sys-ote__description {
-  max-width: 20.5rem;
-  margin-top: 1rem;
-  color: rgb(255 255 255 / 0.8);
+.home-sys-ote__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
 }
 
-.home-sys-ote__action {
-  margin-top: 1.25rem;
+.home-sys-ote__action-wrap {
+  width: 100%;
+}
+
+.home-sys-ote__description {
+  max-width: 20.75rem;
+  color: rgb(255 255 255 / 0.76);
+  text-wrap: pretty;
 }
 
 .home-sys-ote__list {
@@ -191,8 +205,13 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
   }
 
   .home-sys-ote__copy {
+    gap: 1.5rem;
     justify-self: start;
     margin-inline: 0;
+  }
+
+  .home-sys-ote__body {
+    gap: 1rem;
   }
 
   .home-sys-ote__list {

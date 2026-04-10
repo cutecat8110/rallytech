@@ -128,7 +128,7 @@ const serviceItems = computed(() =>
   min-height: 12rem;
   flex-direction: column;
   padding: 1rem 0.95rem 0.9rem 0.15rem;
-  border-top: 1px solid rgb(255 255 255 / 0.14);
+  border-top: 1px solid rgb(255 255 255 / 0.15);
   text-decoration: none;
   isolation: isolate;
   transition:
@@ -140,33 +140,51 @@ const serviceItems = computed(() =>
 .home-sys-services__column::before {
   content: '';
   position: absolute;
-  inset: 0.35rem -0.35rem 0 -0.4rem;
+  inset: 0.78rem -0.35rem -0.2rem -0.4rem;
   z-index: -1;
+  border: 1px solid rgb(255 255 255 / 0.06);
   background:
+    linear-gradient(180deg, rgb(6 13 18 / 0.8) 0%, rgb(6 13 18 / 0.58) 100%),
     linear-gradient(
-      90deg,
-      rgb(255 255 255 / 0.07) 0%,
-      rgb(255 255 255 / 0.024) 34%,
-      transparent 82%
+      135deg,
+      rgb(161 235 223 / 0.14) 0%,
+      rgb(161 235 223 / 0.05) 34%,
+      transparent 70%
     ),
-    linear-gradient(180deg, rgb(255 255 255 / 0.03) 0%, transparent 58%);
+    linear-gradient(
+      180deg,
+      rgb(255 255 255 / 0.05) 0%,
+      rgb(255 255 255 / 0.01) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.07),
+    0 12px 28px rgb(4 9 14 / 0.24);
   opacity: 0;
-  transition: opacity 180ms ease;
+  transform: translateY(0.35rem) scale(0.985);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
   pointer-events: none;
 }
 
-.home-sys-services__column:hover,
 .home-sys-services__column:focus-visible {
-  border-top-color: rgb(161 235 223 / 0.56);
-}
-
-.home-sys-services__column:focus-visible {
-  outline: none;
+  outline: 2px solid rgb(191 243 234 / 0.38);
+  outline-offset: 0.35rem;
 }
 
 .home-sys-services__column:hover::before,
 .home-sys-services__column:focus-visible::before {
   opacity: 1;
+  transform: translateY(-0.12rem) scale(1);
+}
+
+.home-sys-services__column:focus-visible::before {
+  border-color: rgb(255 255 255 / 0.12);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.1),
+    0 14px 30px rgb(4 9 14 / 0.26);
 }
 
 .home-sys-services__icon {
@@ -184,19 +202,24 @@ const serviceItems = computed(() =>
     color 180ms ease,
     background-color 180ms ease,
     border-color 180ms ease,
-    transform 180ms ease;
+    box-shadow 180ms ease;
 }
 
 .home-sys-services__title {
   margin-top: 0.95rem;
   max-width: 14ch;
   text-wrap: balance;
+  transition:
+    color 180ms ease,
+    text-shadow 180ms ease;
 }
 
 .home-sys-services__copy {
   max-width: 18rem;
   margin-top: 0.7rem;
   text-wrap: pretty;
+  color: rgb(255 255 255 / 0.82);
+  transition: color 180ms ease;
 }
 
 .home-sys-services__action {
@@ -207,28 +230,48 @@ const serviceItems = computed(() =>
   margin-top: 0.95rem;
   color: rgb(191 243 234 / 0.92);
   transition:
-    gap 180ms ease,
     color 180ms ease,
-    transform 180ms ease;
+    text-shadow 180ms ease;
 }
 
 .home-sys-services__action-icon {
   flex-shrink: 0;
+  transform: translateX(0);
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .home-sys-services__column:hover .home-sys-services__icon,
 .home-sys-services__column:focus-visible .home-sys-services__icon {
-  color: rgb(191 243 234 / 1);
-  border-color: rgb(161 235 223 / 0.22);
-  background: rgb(255 255 255 / 0.075);
-  transform: translateX(1px);
+  color: rgb(231 253 249 / 1);
+  border-color: rgb(191 243 234 / 0.3);
+  background: rgb(161 235 223 / 0.11);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.14),
+    0 10px 22px rgb(4 9 14 / 0.16);
+}
+
+.home-sys-services__column:hover .home-sys-services__title,
+.home-sys-services__column:focus-visible .home-sys-services__title {
+  color: rgb(255 255 255 / 1);
+  text-shadow: 0 0.15rem 0.9rem rgb(4 9 14 / 0.24);
+}
+
+.home-sys-services__column:hover .home-sys-services__copy,
+.home-sys-services__column:focus-visible .home-sys-services__copy {
+  color: rgb(255 255 255 / 0.94);
 }
 
 .home-sys-services__column:hover .home-sys-services__action,
 .home-sys-services__column:focus-visible .home-sys-services__action {
-  gap: 0.5rem;
-  color: rgb(219 250 245 / 1);
-  transform: translateX(2px);
+  color: rgb(231 253 249 / 1);
+  text-shadow: 0 0.15rem 0.75rem rgb(4 9 14 / 0.24);
+}
+
+.home-sys-services__column:hover .home-sys-services__action-icon,
+.home-sys-services__column:focus-visible .home-sys-services__action-icon {
+  transform: translateX(0.16rem);
 }
 
 @media (min-width: 768px) {
@@ -249,7 +292,7 @@ const serviceItems = computed(() =>
   }
 
   .home-sys-services__column::before {
-    inset: 0.25rem -0.2rem 0 -0.2rem;
+    inset: 0.62rem -0.2rem -0.12rem -0.2rem;
   }
 }
 

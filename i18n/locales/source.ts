@@ -88,7 +88,7 @@ const messages = {
   nav: {
     homeAriaLabel: 'Pentagon Engineering source homepage',
     logoAlt: 'Pentagon Engineering',
-    contactCta: 'Contact',
+    contactCta: 'Contact Us',
     mobileOpenLabel: 'Open menu',
     mobileCloseLabel: 'Close menu',
     nanoToggleAvailable: 'Toggle homepage Nano candidate images',
@@ -102,8 +102,7 @@ const messages = {
     items: [
       { label: 'About', href: '#about' },
       { label: 'Services', href: '/services' },
-      { label: 'OTE', href: '#one-touch-experience' },
-      { label: 'Contact', href: '#contact' }
+      { label: 'OTE', href: '#one-touch-experience' }
     ]
   },
   home: {
@@ -216,6 +215,71 @@ const messages = {
     detailFocusLabel: 'Source Reference Focus'
   },
   serviceDetailPages: serviceDetailPagesSource,
+  contactPage: {
+    seo: {
+      title: 'Contact Us | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference contact page used to proofread contact-page structure and visible copy.'
+    },
+    hero: {
+      title: 'Contact Us',
+      description: 'Start the conversation from your current project needs.'
+    },
+    intro: {
+      title: 'Contact Us',
+      paragraphs: [
+        'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, contact Pentagon Engineering.',
+        'The source reference frames the contact page as the place to clarify the next step and turn early conversations into a project direction.'
+      ]
+    },
+    form: {
+      title: 'Contact Form',
+      description:
+        'This source-reference page keeps the visible contact form structure and the direct-contact block from the live contact page.',
+      submitLabel: 'Send Inquiry',
+      unavailableTitle: 'Form submission is not available yet',
+      unavailableDescription:
+        'This implementation currently delivers routing and UI only. Use the direct contact details on this page if you need to reach the team.',
+      fields: {
+        name: {
+          label: 'Your Name',
+          placeholder: 'Enter your name',
+          help: 'Provide the main contact person for this inquiry.'
+        },
+        company: {
+          label: 'Company / Organization',
+          placeholder: 'Enter your company or organization',
+          help: 'This field is added for the B2B implementation contract.'
+        },
+        email: {
+          label: 'Your Email',
+          placeholder: 'you@example.com',
+          help: 'Use the email address that should receive follow-up.'
+        },
+        subject: {
+          label: 'Subject',
+          placeholder: 'Enter the subject',
+          help: 'Summarize the topic of your inquiry.'
+        },
+        phone: {
+          label: 'Phone',
+          placeholder: 'Enter a phone number',
+          help: 'Leave a number if direct coordination is helpful.'
+        },
+        details: {
+          label: 'Message',
+          placeholder:
+            'Describe your request, current situation, or project scope',
+          help: 'Use this field to capture the visible request details from the contact flow.'
+        }
+      }
+    },
+    direct: {
+      title: 'Direct Contact Details',
+      description:
+        'The live reference also provides direct phone and email contact details alongside the form.'
+    }
+  },
   footer: {
     connectorHeading: 'Engineering + Design Experts',
     ctaLabel: 'Contact Us',

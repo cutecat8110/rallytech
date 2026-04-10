@@ -1,21 +1,25 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { secondarySolidButtonTheme } from '~/utils/button-themes'
+import { lightSolidButtonTheme } from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
 const messages = useRallyMessages()
 const { t } = useI18n()
+const route = useRoute()
+const localePath = useLocalePath()
 const {
   resolvedImage: connectorImage,
   handleImageError: handleConnectorImageError
 } = useHomePageImageAsset('connector-image')
 
 const company = computed(() => messages.value.company)
+const contactPath = computed(() => localePath('/contact'))
+const isContactPage = computed(() => route.path === contactPath.value)
 </script>
 
 <template>
-  <footer id="contact" class="bg-secondary-950 text-white">
-    <section class="home-sys-footer-connector">
+  <footer class="bg-secondary-950 text-white">
+    <section v-if="!isContactPage" class="home-sys-footer-connector">
       <figure class="home-sys-footer-connector__media" aria-hidden="true">
         <img
           :src="connectorImage.src"
@@ -41,14 +45,14 @@ const company = computed(() => messages.value.company)
           </div>
 
           <div class="home-sys-footer-connector__action">
-            <UTheme :ui="secondarySolidButtonTheme">
+            <UTheme :ui="lightSolidButtonTheme">
               <UButton
-                :to="company.emailHref"
+                :to="contactPath"
                 color="neutral"
                 variant="solid"
-                size="sm"
+                size="lg"
                 :label="messages.footer.ctaLabel"
-                :ui="{ label: 'text-white' }"
+                class="home-sys-footer-connector__cta"
               />
             </UTheme>
           </div>
@@ -207,6 +211,12 @@ const company = computed(() => messages.value.company)
   justify-content: flex-start;
 }
 
+.home-sys-footer-connector__cta {
+  min-width: 8.5rem;
+  min-height: 3rem;
+  justify-content: center;
+}
+
 .home-sys-footer__main {
   display: grid;
   gap: 0.65rem;
@@ -268,6 +278,12 @@ const company = computed(() => messages.value.company)
 
   .home-sys-footer-connector__action {
     justify-content: flex-end;
+  }
+
+  .home-sys-footer-connector__cta {
+    min-width: 10rem;
+    min-height: 3.25rem;
+    padding-inline: 1.875rem;
   }
 
   .home-sys-footer__main {

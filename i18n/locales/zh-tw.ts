@@ -98,8 +98,7 @@ const messages = {
     items: [
       { label: '關於我們', href: '#about' },
       { label: '服務項目', href: '/services' },
-      { label: '一站式整合', href: '#one-touch-experience' },
-      { label: '聯絡我們', href: '#contact' }
+      { label: '一站式整合', href: '#one-touch-experience' }
     ]
   },
   home: {
@@ -210,6 +209,70 @@ const messages = {
     detailFocusLabel: '交付焦點'
   },
   serviceDetailPages: serviceDetailPagesZhTw,
+  contactPage: {
+    seo: {
+      title: '聯絡我們 | 雷力科技 Rally Technology',
+      description:
+        '與雷力科技討論自動化整合、控制系統、試車支援與工廠資料需求。'
+    },
+    hero: {
+      title: '聯絡我們',
+      description: '從需求討論開始，整理專案範圍、現場條件與下一步。'
+    },
+    intro: {
+      title: '把前期溝通轉成可執行方向',
+      paragraphs: [
+        '若您正在評估自動化整合、控制系統、試車支援或工廠資料需求，歡迎與雷力科技聯繫。',
+        '我們協助團隊快速釐清需求、確認協作邊界，並把前期討論整理成後續可執行的專案方向。'
+      ]
+    },
+    form: {
+      title: '需求表單',
+      description:
+        '先整理您的聯絡資訊與需求內容；若需立即聯繫，請直接使用電話或 Email。',
+      submitLabel: '送出聯絡需求',
+      unavailableTitle: '送出功能尚未開放',
+      unavailableDescription:
+        '這一版聯絡頁先完成導流與表單介面，請先透過頁面上的電話或 Email 與我們聯繫。',
+      fields: {
+        name: {
+          label: '姓名',
+          placeholder: '請輸入您的姓名',
+          help: '請填寫主要聯絡人姓名。'
+        },
+        company: {
+          label: '公司 / 單位',
+          placeholder: '請輸入公司或單位名稱',
+          help: 'B2B 專案建議填寫所屬公司或單位。'
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'you@example.com',
+          help: '我們會以此信箱回覆。'
+        },
+        subject: {
+          label: '主旨',
+          placeholder: '例如：PLC / DCS 搬遷評估',
+          help: '用一句話說明這次洽詢主題。'
+        },
+        phone: {
+          label: '聯絡電話',
+          placeholder: '請輸入可聯繫電話',
+          help: '若方便即時聯繫，可留下電話。'
+        },
+        details: {
+          label: '需求內容',
+          placeholder: '請描述現況、需求範圍、期望時程或關鍵限制',
+          help: '請盡量提供現場背景、系統範圍與目前遇到的問題。'
+        }
+      }
+    },
+    direct: {
+      title: '直接聯絡資訊',
+      description:
+        '如果您已經準備好討論需求，也可以直接透過以下方式與雷力科技聯繫。'
+    }
+  },
   footer: {
     connectorHeading: '工程與自動化整合專家',
     ctaLabel: '聯絡我們',
