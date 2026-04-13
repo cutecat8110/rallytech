@@ -149,6 +149,27 @@
       "notes": "Canonical stock placeholder for the About section primary facade image role. Active canonical stock asset stored under /images/stock/home/."
     },
     {
+      "assetId": "contact-hero-control-room-team",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/contact/contact-hero-control-room-team.jpg",
+      "canonicalName": "contact-hero-control-room-team.jpg",
+      "scope": "contact",
+      "slot": "contact-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/engineers-using-simulator-3862132/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/聯絡頁媒體素材來源.md#contact-hero",
+        "app/utils/contact-page-image-registry.ts#contactPageHeroImage",
+        "app/components/page/contact/ContactPageShell.vue#contact-sys-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Contact-page hero stock asset. Reuses the approved control-room collaboration source in a page-specific contact scope to support reference parity and Rally-specific overlay treatment."
+    },
+    {
       "assetId": "footer-engineering-team",
       "kind": "stock",
       "status": "active",

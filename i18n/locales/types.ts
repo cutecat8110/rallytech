@@ -26,6 +26,8 @@ export interface CompanyMessages {
   emailHref: string
   address: string
   addressEnglish: string
+  mapEmbedUrl: string
+  mapDirectionsUrl: string
 }
 
 export interface NavMessages {
@@ -260,6 +262,21 @@ export interface ContactPageFieldMessages {
   help: string
 }
 
+export interface ContactPageDirectCardMessages {
+  phoneTitle: string
+  faxLabel: string
+  locationTitle: string
+  emailTitle: string
+}
+
+export interface ContactPageMapMessages {
+  eyebrow: string
+  title: string
+  description: string
+  ctaLabel: string
+  iframeTitle: string
+}
+
 export interface ContactPageMessages {
   seo: {
     title: string
@@ -291,7 +308,9 @@ export interface ContactPageMessages {
   direct: {
     title: string
     description: string
+    cards: ContactPageDirectCardMessages
   }
+  map: ContactPageMapMessages
 }
 
 export interface FooterMessages {

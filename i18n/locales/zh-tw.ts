@@ -79,7 +79,11 @@ const messages = {
     emailHref: 'mailto:sales@rallytech.com.tw',
     address: '302081 新竹縣竹北市惟馨街 95 號 3 樓之 5',
     addressEnglish:
-      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
+    mapEmbedUrl:
+      'https://www.google.com/maps?q=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan&output=embed',
+    mapDirectionsUrl:
+      'https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan'
   },
   nav: {
     homeAriaLabel: '雷力科技首頁',
@@ -217,10 +221,10 @@ const messages = {
     },
     hero: {
       title: '聯絡我們',
-      description: '從需求討論開始，整理專案範圍、現場條件與下一步。'
+      description: '與雷力科技討論專案範圍、現場條件與下一步執行方向。'
     },
     intro: {
-      title: '把前期溝通轉成可執行方向',
+      title: '從需求對話開始',
       paragraphs: [
         '若您正在評估自動化整合、控制系統、試車支援或工廠資料需求，歡迎與雷力科技聯繫。',
         '我們協助團隊快速釐清需求、確認協作邊界，並把前期討論整理成後續可執行的專案方向。'
@@ -268,9 +272,23 @@ const messages = {
       }
     },
     direct: {
-      title: '直接聯絡資訊',
+      title: '直接聯絡方式',
       description:
-        '如果您已經準備好討論需求，也可以直接透過以下方式與雷力科技聯繫。'
+        '若您已經準備好進一步對談，也可以直接透過以下方式與雷力科技聯繫。',
+      cards: {
+        phoneTitle: '電話與傳真',
+        faxLabel: '傳真',
+        locationTitle: '公司位置',
+        emailTitle: '電子郵件'
+      }
+    },
+    map: {
+      eyebrow: '位置',
+      title: '辦公室地點',
+      description:
+        '若需安排拜訪或現場會談，可先透過地圖確認雷力科技辦公室位置。',
+      ctaLabel: '在 Google Maps 開啟',
+      iframeTitle: '雷力科技辦公室 Google Maps 位置'
     }
   },
   footer: {

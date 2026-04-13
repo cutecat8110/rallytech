@@ -1,3 +1,4 @@
 .env.example
+.codex-temp
 data/nano-banana/prompts/*.txt
 tools/codex-toolkit/skills/**

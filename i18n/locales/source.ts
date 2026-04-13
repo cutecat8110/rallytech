@@ -82,8 +82,12 @@ const messages = {
     faxHref: '',
     email: 'info@pentagoneng.com',
     emailHref: 'mailto:info@pentagoneng.com',
-    address: '',
-    addressEnglish: ''
+    address: 'Chicago, Illinois',
+    addressEnglish: 'Chicago, Illinois',
+    mapEmbedUrl:
+      'https://www.google.com/maps?q=Chicago%2C%20Illinois&output=embed',
+    mapDirectionsUrl:
+      'https://www.google.com/maps/search/?api=1&query=Chicago%2C%20Illinois'
   },
   nav: {
     homeAriaLabel: 'Pentagon Engineering source homepage',
@@ -277,7 +281,21 @@ const messages = {
     direct: {
       title: 'Direct Contact Details',
       description:
-        'The live reference also provides direct phone and email contact details alongside the form.'
+        'The live reference also provides direct phone, location, and email details alongside the form.',
+      cards: {
+        phoneTitle: 'Phone Number',
+        faxLabel: 'Fax',
+        locationTitle: 'Location',
+        emailTitle: 'Email Address'
+      }
+    },
+    map: {
+      eyebrow: 'Location',
+      title: 'Reference Map',
+      description:
+        'The live reference continues with a full-width map embed after the direct-contact strip.',
+      ctaLabel: 'Open in Google Maps',
+      iframeTitle: 'Pentagon Engineering source-reference map'
     }
   },
   footer: {

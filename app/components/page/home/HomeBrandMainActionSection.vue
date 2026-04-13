@@ -127,13 +127,13 @@ const missionTabsUi = {
 .home-sys-mission__layout {
   display: grid;
   align-items: start;
-  gap: clamp(2rem, 4vw, 3rem);
+  gap: clamp(2rem, 3.2vw, 2.75rem);
 }
 
 .home-sys-mission__copy {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .home-sys-mission__heading {
@@ -151,19 +151,19 @@ const missionTabsUi = {
 
 .home-sys-mission__state {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .home-sys-mission__state-copy {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1.35rem;
+  gap: 1rem;
 }
 
 .home-sys-mission__state-body {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.7rem;
 }
 
 .home-sys-mission__state-title {
@@ -245,60 +245,58 @@ const missionTabsUi = {
 
 @media (max-width: 767px) {
   .home-sys-mission__copy {
-    gap: 1.1rem;
+    gap: 0.95rem;
   }
 
   .home-sys-mission__state {
     grid-template-columns: 1fr;
-    gap: 1.1rem;
+    gap: 0.95rem;
   }
 }
 
 @media (min-width: 768px) {
   .home-sys-mission__copy {
-    gap: 1.6rem;
+    gap: 1.1rem;
   }
 
   .home-sys-mission__state {
     grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
-    align-items: end;
-    column-gap: 1.85rem;
-    row-gap: 1.35rem;
+    align-items: start;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
   }
 
   .home-sys-mission__state-copy {
-    min-height: 14rem;
-    justify-content: space-between;
-    gap: 1.5rem;
+    gap: 1.15rem;
   }
 
   .home-sys-mission__state-media {
     width: 100%;
     max-width: 11rem;
-    align-self: end;
+    align-self: start;
   }
 }
 
 @media (min-width: 1280px) {
   .home-sys-mission__layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    align-items: stretch;
-    gap: clamp(3.25rem, 4vw, 4.5rem);
+    gap: clamp(3rem, 3.2vw, 3.85rem);
   }
 
   .home-sys-mission__copy {
     min-height: clamp(21rem, 34vw, 29rem);
-    gap: 1.45rem;
   }
 
   .home-sys-mission__state {
     margin-top: auto;
-    column-gap: 2.25rem;
-    row-gap: 1.5rem;
+    align-items: end;
+    column-gap: 1.65rem;
+    row-gap: 1rem;
   }
 
-  .home-sys-mission__state-copy {
-    min-height: clamp(14.5rem, 18vw, 17.5rem);
+  .home-sys-mission__state-copy,
+  .home-sys-mission__state-media {
+    align-self: end;
   }
 }
 </style>

@@ -88,7 +88,11 @@ const messages = {
     address:
       '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
     addressEnglish:
-      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
+    mapEmbedUrl:
+      'https://www.google.com/maps?q=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan&output=embed',
+    mapDirectionsUrl:
+      'https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan'
   },
   nav: {
     homeAriaLabel: 'Rally Technology homepage',
@@ -233,10 +237,10 @@ const messages = {
     hero: {
       title: 'Contact Us',
       description:
-        'Start the conversation by aligning your project scope, site context, and next steps.'
+        'Discuss project scope, site conditions, and the next practical step with Rally Technology.'
     },
     intro: {
-      title: 'Turn early discussions into an executable direction',
+      title: 'Start the Conversation',
       paragraphs: [
         'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, Rally Technology is ready to talk.',
         'We help teams clarify requirements, confirm delivery boundaries, and shape the next step into a workable project direction.'
@@ -285,9 +289,23 @@ const messages = {
       }
     },
     direct: {
-      title: 'Direct Contact Details',
+      title: 'Reach Us Directly',
       description:
-        'If you are ready to discuss a requirement now, you can also contact Rally Technology directly through the channels below.'
+        'Use the channels below when you need to move from an initial inquiry into direct coordination.',
+      cards: {
+        phoneTitle: 'Phone and Fax',
+        faxLabel: 'Fax',
+        locationTitle: 'Location',
+        emailTitle: 'Email Address'
+      }
+    },
+    map: {
+      eyebrow: 'Visit',
+      title: 'Our Office Location',
+      description:
+        'Use the map to confirm the office location before a site meeting or in-person discussion.',
+      ctaLabel: 'Open in Google Maps',
+      iframeTitle: 'Rally Technology office location on Google Maps'
     }
   },
   footer: {
