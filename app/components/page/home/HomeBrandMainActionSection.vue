@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 import type { HomePageImageStateKey } from '~/utils/home-page-image-registry'
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const missionStates = computed(() => messages.value.home.mission.tabs)
 const activeMission = ref<HomePageImageStateKey>('mission')
 const {
@@ -58,6 +59,7 @@ const missionTabsUi = {
               color="primary"
               variant="pill"
               size="sm"
+              class="home-sys-mission__tabs"
               :ui="missionTabsUi"
             />
 
@@ -76,20 +78,23 @@ const missionTabsUi = {
                 />
               </figure>
 
-              <div class="max-w-xl">
-                <h3 class="type-sys-headline-m text-neutral-900">
-                  {{ activeMissionState.title }}
-                </h3>
-                <p class="type-sys-body-m mt-3 text-neutral-700">
-                  {{ activeMissionState.description }}
-                </p>
+              <div class="home-sys-mission__state-copy max-w-xl">
+                <div class="home-sys-mission__state-body">
+                  <h3
+                    class="home-sys-mission__state-title type-sys-title-l text-neutral-900"
+                  >
+                    {{ activeMissionState.title }}
+                  </h3>
+                  <p class="type-sys-body-m text-neutral-700">
+                    {{ activeMissionState.description }}
+                  </p>
+                </div>
                 <UButton
-                  to="#contact"
+                  :to="localePath('/contact')"
                   color="primary"
                   variant="solid"
                   size="lg"
                   :label="activeMissionState.ctaLabel"
-                  class="mt-5"
                 />
               </div>
             </div>
@@ -121,18 +126,22 @@ const missionTabsUi = {
 
 .home-sys-mission__layout {
   display: grid;
-  align-items: center;
-  gap: 2rem;
+  align-items: start;
+  gap: clamp(2rem, 3.2vw, 2.75rem);
 }
 
 .home-sys-mission__copy {
   display: flex;
   flex-direction: column;
-  gap: 1.1rem;
+  gap: 1rem;
 }
 
 .home-sys-mission__heading {
   max-width: 36rem;
+}
+
+.home-sys-mission__tabs {
+  align-self: flex-start;
 }
 
 .home-sys-mission__accent-heading {
@@ -145,8 +154,25 @@ const missionTabsUi = {
   gap: 1rem;
 }
 
+.home-sys-mission__state-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home-sys-mission__state-body {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.home-sys-mission__state-title {
+  letter-spacing: 0.01em;
+  font-weight: 600;
+}
+
 .home-sys-mission__state-media {
-  width: min(100%, 8rem);
+  width: min(100%, 9rem);
   aspect-ratio: 1;
 }
 
@@ -218,22 +244,59 @@ const missionTabsUi = {
 }
 
 @media (max-width: 767px) {
+  .home-sys-mission__copy {
+    gap: 0.95rem;
+  }
+
   .home-sys-mission__state {
     grid-template-columns: 1fr;
+    gap: 0.95rem;
   }
 }
 
 @media (min-width: 768px) {
+  .home-sys-mission__copy {
+    gap: 1.1rem;
+  }
+
   .home-sys-mission__state {
-    grid-template-columns: minmax(0, 8.5rem) minmax(0, 1fr);
-    align-items: end;
+    grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
+    align-items: start;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+  }
+
+  .home-sys-mission__state-copy {
+    gap: 1.15rem;
+  }
+
+  .home-sys-mission__state-media {
+    width: 100%;
+    max-width: 11rem;
+    align-self: start;
   }
 }
 
 @media (min-width: 1280px) {
   .home-sys-mission__layout {
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: 3.25rem;
+    gap: clamp(3rem, 3.2vw, 3.85rem);
+  }
+
+  .home-sys-mission__copy {
+    min-height: clamp(21rem, 34vw, 29rem);
+  }
+
+  .home-sys-mission__state {
+    margin-top: auto;
+    align-items: end;
+    column-gap: 1.65rem;
+    row-gap: 1rem;
+  }
+
+  .home-sys-mission__state-copy,
+  .home-sys-mission__state-media {
+    align-self: end;
   }
 }
 </style>

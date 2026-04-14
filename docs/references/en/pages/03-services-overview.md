@@ -1,4 +1,4 @@
-- Last updated: 2026-04-07
+- Last updated: 2026-04-08
 - Source URL: https://pentagoneng.com/services/
 
 ## Block Map
@@ -8,17 +8,17 @@
 
 ## Block 01 Page Hero [core]
 
-- Services
+- Services Overview
 
 ## Block 02 Service Cards Grid [core]
 
-- SCADA and HMI Graphics
+- SCADA / HMI Graphics
 - Operator-facing visualization for monitoring, alarms, and process control.
 - Learn More
 - I&E Services
 - Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.
 - Learn More
-- PLC & DCS Programming and Migration
+- PLC / DCS Programming and Migration
 - Control logic development, migration planning, and staged cutover support.
 - Learn More
 - PI Server

@@ -12,14 +12,16 @@
 1. `docs/project/05-Reference-Clone工作流與降級規範.md`
 2. `docs/project/01-專案策略與基線總綱.md`
 3. `docs/design/01-設計系統規則總綱.md`
-4. `docs/references/README.md`
-5. `docs/references/首頁媒體素材來源.md`
+4. `data/image-assets/catalog.json`
+5. `docs/references/README.md`
+6. `docs/references/首頁媒體素材來源.md`（appendix only）
 
-若本檔與上述文件衝突，以 `project/05` 的 phase gate 與最新 references 判讀為準。
+若本檔與上述文件衝突，以 `project/05` 的 phase gate、`data/image-assets/catalog.json` 的 inventory 狀態與最新 references 判讀為準。
 
 ## Role in the system
 
 - `.agents`：保存長期有效的品牌圖像上下文
+- `data/image-assets`：保存 `public/images` 的 canonical inventory、命名與 lifecycle status
 - `docs/references`：保存研究附錄、對照筆記、素材來源與 prompt methodology
 - `data/nano-banana`：保存可執行的 brief、prompt 與 manifest
 

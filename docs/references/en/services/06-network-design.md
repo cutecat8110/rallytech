@@ -1,4 +1,4 @@
-- Last updated: 2026-04-07
+- Last updated: 2026-04-08
 - Source URL: https://pentagoneng.com/service/network-design/
 
 ## Block Map
@@ -21,10 +21,10 @@
 
 ## Block 03 Sidebar Main Services [shared-layout]
 
-- Core Services
-- SCADA and HMI Graphics
+- Services
+- SCADA / HMI Graphics
 - I&E Services
-- PLC & DCS Programming and Migration
+- PLC / DCS Programming and Migration
 - PI Server
 - Historians
 - Network Design

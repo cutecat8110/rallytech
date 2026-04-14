@@ -1,0 +1,39 @@
+{
+  "sourceUrl": "http://127.0.0.1:3001/",
+  "capturedAt": "2026-04-10T02:49:04.452Z",
+  "title": "雷力科技 Rally Technology",
+  "imageCount": 7,
+  "brokenImages": [],
+  "suspiciousImages": [
+    {
+      "alt": "",
+      "src": "http://127.0.0.1:3001/images/stock/home/footer-engineering-team.jpg",
+      "complete": true,
+      "naturalWidth": 5304,
+      "naturalHeight": 7952,
+      "clientWidth": 0,
+      "clientHeight": 0,
+      "looksBroken": false,
+      "likelyExternalTemplateAsset": false,
+      "likelyPlaceholder": false
+    }
+  ],
+  "headings": [
+    "工業自動化交付，為可靠運轉而設計",
+    "值得信賴的儀控、控制與工業資料整合夥伴",
+    "支援工業自動化專案的整合型服務",
+    "SCADA / HMI 圖控",
+    "儀電整合",
+    "PLC / DCS 程式與搬遷",
+    "PI Server",
+    "Historians",
+    "工業網路設計",
+    "遠端監控與資料備援",
+    "告警監控",
+    "交付流程",
+    "一站式整合體驗",
+    "把整合能力轉成穩定交付",
+    "我們的使命",
+    "工程與自動化整合專家"
+  ]
+}

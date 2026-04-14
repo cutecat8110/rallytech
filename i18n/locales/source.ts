@@ -1,5 +1,73 @@
 import { referencePagesSource } from './reference-pages.generated'
-import type { RallyTechLocaleMessages } from './types'
+import { serviceDetailPagesSource } from './services/source-detail'
+import type {
+  RallyTechLocaleMessages,
+  ServiceCatalogItemMessages
+} from './types'
+
+const servicesCatalog = [
+  {
+    slug: 'scada-hmi-graphics',
+    shortLabel: 'SCADA and HMI Graphics',
+    formalTitle: 'SCADA and HMI Graphics',
+    englishTitle: 'SCADA and HMI Graphics',
+    description: 'SCADA systems for modern industrial operation monitoring.'
+  },
+  {
+    slug: 'ie-services',
+    shortLabel: 'I&E Services',
+    formalTitle: 'I&E Services',
+    englishTitle: 'I&E Services',
+    description:
+      'Comprehensive I&E services including FAT/SAT and on-site troubleshooting.'
+  },
+  {
+    slug: 'plc-dcs-programming-and-migration',
+    shortLabel: 'PLC & DCS Programming and Migration',
+    formalTitle: 'PLC & DCS Programming and Migration',
+    englishTitle: 'PLC & DCS Programming and Migration',
+    description:
+      'Expert PLC & DCS programming and migration for control systems.'
+  },
+  {
+    slug: 'pi-server',
+    shortLabel: 'PI Server',
+    formalTitle: 'PI Server',
+    englishTitle: 'PI Server',
+    description: 'Advanced PI Server implementation for robust data automation.'
+  },
+  {
+    slug: 'historians',
+    shortLabel: 'Historians',
+    formalTitle: 'Historians',
+    englishTitle: 'Historians',
+    description:
+      'Efficient Network Design for optimized industrial communication.'
+  },
+  {
+    slug: 'network-design',
+    shortLabel: 'Network Design',
+    formalTitle: 'Network Design',
+    englishTitle: 'Network Design',
+    description: 'Specialized Historian data solutions for RNG companies.'
+  },
+  {
+    slug: 'remote-monitoring-and-data',
+    shortLabel: 'Remote Monitoring and Data',
+    formalTitle: 'Remote Monitoring and Data',
+    englishTitle: 'Remote Monitoring and Data',
+    description:
+      'Remote Monitoring and Data Backup for operational reliability.'
+  },
+  {
+    slug: 'alarm-monitoring',
+    shortLabel: 'Alarm Monitoring',
+    formalTitle: 'Alarm Monitoring',
+    englishTitle: 'Alarm Monitoring',
+    description:
+      'Alarm Monitoring to ensure safety and efficiency in RNG facilities.'
+  }
+] satisfies ServiceCatalogItemMessages[]
 
 const messages = {
   company: {
@@ -14,13 +82,17 @@ const messages = {
     faxHref: '',
     email: 'info@pentagoneng.com',
     emailHref: 'mailto:info@pentagoneng.com',
-    address: '',
-    addressEnglish: ''
+    address: 'Chicago, Illinois',
+    addressEnglish: 'Chicago, Illinois',
+    mapEmbedUrl:
+      'https://www.google.com/maps?q=Chicago%2C%20Illinois&output=embed',
+    mapDirectionsUrl:
+      'https://www.google.com/maps/search/?api=1&query=Chicago%2C%20Illinois'
   },
   nav: {
     homeAriaLabel: 'Pentagon Engineering source homepage',
     logoAlt: 'Pentagon Engineering',
-    contactCta: 'Contact',
+    contactCta: 'Contact Us',
     mobileOpenLabel: 'Open menu',
     mobileCloseLabel: 'Close menu',
     nanoToggleAvailable: 'Toggle homepage Nano candidate images',
@@ -33,9 +105,8 @@ const messages = {
     },
     items: [
       { label: 'About', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'OTE', href: '#one-touch-experience' },
-      { label: 'Contact', href: '#contact' }
+      { label: 'Services', href: '/services' },
+      { label: 'OTE', href: '#one-touch-experience' }
     ]
   },
   home: {
@@ -81,48 +152,7 @@ const messages = {
     services: {
       kicker: 'Our Services',
       title: 'Develop Comprehensive Solutions',
-      ctaLabel: 'Read more',
-      items: [
-        {
-          title: 'SCADA and HMI Graphics',
-          description:
-            'SCADA systems for modern industrial operation monitoring.'
-        },
-        {
-          title: 'I&E Services',
-          description:
-            'Comprehensive I&E services including FAT/SAT and on-site troubleshooting.'
-        },
-        {
-          title: 'PLC & DCS Programming and Migration',
-          description:
-            'Expert PLC & DCS programming and migration for control systems.'
-        },
-        {
-          title: 'PI Server',
-          description:
-            'Advanced PI Server implementation for robust data automation.'
-        },
-        {
-          title: 'Network Design',
-          description: 'Specialized Historian data solutions for RNG companies.'
-        },
-        {
-          title: 'Historians',
-          description:
-            'Efficient Network Design for optimized industrial communication.'
-        },
-        {
-          title: 'Remote Monitoring and Data',
-          description:
-            'Remote Monitoring and Data Backup for operational reliability.'
-        },
-        {
-          title: 'Detailed Design & Modeling',
-          description:
-            'Alarm Monitoring to ensure safety and efficiency in RNG facilities.'
-        }
-      ]
+      ctaLabel: 'Read more'
     },
     process: {
       kicker: '',
@@ -136,6 +166,8 @@ const messages = {
     },
     oneTouch: {
       title: 'The One-Touch Experience.',
+      description:
+        'Integrate plant data, alarm workflows, historians, and utilities systems in one delivery path.',
       ctaLabel: 'Read More',
       items: [
         'Data Integration',
@@ -166,6 +198,104 @@ const messages = {
           imageAlt: 'Pentagon Engineering source join-us reference image'
         }
       ]
+    }
+  },
+  servicesCatalog,
+  servicesPage: {
+    seo: {
+      title: 'Services | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference services overview used to proofread service naming and card copy against the live reference site.'
+    },
+    hero: {
+      kicker: 'Services',
+      title: 'Core Services for Industrial Automation Delivery',
+      description:
+        'Source-reference layer retained for proofreading against the live services overview.',
+      asideLabel: 'Main industrial automation services'
+    },
+    cardCtaLabel: 'Read more',
+    detailBackLabel: 'All Services',
+    detailFocusLabel: 'Source Reference Focus'
+  },
+  serviceDetailPages: serviceDetailPagesSource,
+  contactPage: {
+    seo: {
+      title: 'Contact Us | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference contact page used to proofread contact-page structure and visible copy.'
+    },
+    hero: {
+      title: 'Contact Us',
+      description: 'Start the conversation from your current project needs.'
+    },
+    intro: {
+      title: 'Contact Us',
+      paragraphs: [
+        'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, contact Pentagon Engineering.',
+        'The source reference frames the contact page as the place to clarify the next step and turn early conversations into a project direction.'
+      ]
+    },
+    form: {
+      title: 'Contact Form',
+      description:
+        'This source-reference page keeps the visible contact form structure and the direct-contact block from the live contact page.',
+      submitLabel: 'Send Inquiry',
+      unavailableTitle: 'Form submission is not available yet',
+      unavailableDescription:
+        'This implementation currently delivers routing and UI only. Use the direct contact details on this page if you need to reach the team.',
+      fields: {
+        name: {
+          label: 'Your Name',
+          placeholder: 'Enter your name',
+          help: 'Provide the main contact person for this inquiry.'
+        },
+        company: {
+          label: 'Company / Organization',
+          placeholder: 'Enter your company or organization',
+          help: 'This field is added for the B2B implementation contract.'
+        },
+        email: {
+          label: 'Your Email',
+          placeholder: 'you@example.com',
+          help: 'Use the email address that should receive follow-up.'
+        },
+        subject: {
+          label: 'Subject',
+          placeholder: 'Enter the subject',
+          help: 'Summarize the topic of your inquiry.'
+        },
+        phone: {
+          label: 'Phone',
+          placeholder: 'Enter a phone number',
+          help: 'Leave a number if direct coordination is helpful.'
+        },
+        details: {
+          label: 'Message',
+          placeholder:
+            'Describe your request, current situation, or project scope',
+          help: 'Use this field to capture the visible request details from the contact flow.'
+        }
+      }
+    },
+    direct: {
+      title: 'Direct Contact Details',
+      description:
+        'The live reference also provides direct phone, location, and email details alongside the form.',
+      cards: {
+        phoneTitle: 'Phone Number',
+        faxLabel: 'Fax',
+        locationTitle: 'Location',
+        emailTitle: 'Email Address'
+      }
+    },
+    map: {
+      eyebrow: 'Location',
+      title: 'Reference Map',
+      description:
+        'The live reference continues with a full-width map embed after the direct-contact strip.',
+      ctaLabel: 'Open in Google Maps',
+      iframeTitle: 'Pentagon Engineering source-reference map'
     }
   },
   footer: {

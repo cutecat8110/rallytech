@@ -1,0 +1,58 @@
+{
+  "url": "http://127.0.0.1:3001/",
+  "slug": "home",
+  "state": "loaded",
+  "captures": [
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_1920.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_1920.images.json",
+      "blockCaptures": [
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_header_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_hero_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_about_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_services_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_process_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_ote_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_mission_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_connector_1920.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_footer_1920.png"
+      ],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_1440.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_1440.images.json",
+      "blockCaptures": [
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_header_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_hero_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_about_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_services_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_process_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_ote_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_mission_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_connector_1440.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_footer_1440.png"
+      ],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_390.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_loaded_390.images.json",
+      "blockCaptures": [
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_header_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_hero_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_about_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_services_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_process_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_ote_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_mission_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_connector_390.png",
+        "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\local-ote-cta-footer\\home_footer_390.png"
+      ],
+      "brokenCount": 0,
+      "suspiciousCount": 1
+    }
+  ]
+}

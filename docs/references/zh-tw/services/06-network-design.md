@@ -1,4 +1,4 @@
-- 最後更新: 2026-04-07
+- 最後更新: 2026-04-08
 - 來源網址: https://pentagoneng.com/service/network-design/
 
 ## 區塊總覽
@@ -21,15 +21,15 @@
 
 ## 區塊 03 側欄主要服務 [共用版型]
 
-- 主要服務
-- 監控與人機介面圖控服務｜SCADA and HMI Graphics
-- 儀電整合服務｜I&E Services
-- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration
-- 即時資料平台服務｜PI Server
-- 歷史資料平台服務｜Historians
-- 工業網路設計服務｜Network Design
-- 遠端監控與資料備援服務｜Remote Monitoring and Data
-- 告警監控服務｜Alarm Monitoring
+- 服務項目
+- SCADA / HMI 圖控｜SCADA and HMI Graphics
+- 儀電整合｜I&E Services
+- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration
+- PI Server
+- Historians
+- 工業網路設計｜Network Design
+- 遠端監控與資料備援｜Remote Monitoring and Data
+- 告警監控｜Alarm Monitoring
 
 ## 區塊 04 側欄聯絡資訊 [共用版型]
 

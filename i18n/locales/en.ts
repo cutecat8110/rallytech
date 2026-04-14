@@ -1,5 +1,76 @@
 import { referencePagesEn } from './reference-pages.generated'
-import type { RallyTechLocaleMessages } from './types'
+import { serviceDetailPagesEn } from './services/en-detail'
+import type {
+  RallyTechLocaleMessages,
+  ServiceCatalogItemMessages
+} from './types'
+
+const servicesCatalog = [
+  {
+    slug: 'scada-hmi-graphics',
+    shortLabel: 'SCADA / HMI Graphics',
+    formalTitle: 'SCADA and HMI Graphics',
+    englishTitle: 'SCADA and HMI Graphics',
+    description:
+      'Operator-facing visualization for monitoring, alarms, and process control.'
+  },
+  {
+    slug: 'ie-services',
+    shortLabel: 'I&E Services',
+    formalTitle: 'I&E Services',
+    englishTitle: 'I&E Services',
+    description:
+      'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.'
+  },
+  {
+    slug: 'plc-dcs-programming-and-migration',
+    shortLabel: 'PLC / DCS Programming and Migration',
+    formalTitle: 'PLC & DCS Programming and Migration',
+    englishTitle: 'PLC & DCS Programming and Migration',
+    description:
+      'Control logic development, migration planning, and staged cutover support.'
+  },
+  {
+    slug: 'pi-server',
+    shortLabel: 'PI Server',
+    formalTitle: 'PI Server',
+    englishTitle: 'PI Server',
+    description:
+      'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.'
+  },
+  {
+    slug: 'historians',
+    shortLabel: 'Historians',
+    formalTitle: 'Historians',
+    englishTitle: 'Historians',
+    description:
+      'Long-term process-data retention for trend analysis, reporting, and traceability.'
+  },
+  {
+    slug: 'network-design',
+    shortLabel: 'Network Design',
+    formalTitle: 'Network Design',
+    englishTitle: 'Network Design',
+    description:
+      'Industrial communication planning for resilient, maintainable plant networks.'
+  },
+  {
+    slug: 'remote-monitoring-and-data',
+    shortLabel: 'Remote Monitoring and Data',
+    formalTitle: 'Remote Monitoring and Data',
+    englishTitle: 'Remote Monitoring and Data',
+    description:
+      'Remote visibility and data-continuity support across distributed operations.'
+  },
+  {
+    slug: 'alarm-monitoring',
+    shortLabel: 'Alarm Monitoring',
+    formalTitle: 'Alarm Monitoring',
+    englishTitle: 'Alarm Monitoring',
+    description:
+      'Alarm strategy and notification workflows for safer, more stable operations.'
+  }
+] satisfies ServiceCatalogItemMessages[]
 
 const messages = {
   company: {
@@ -17,7 +88,11 @@ const messages = {
     address:
       '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
     addressEnglish:
-      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+      '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
+    mapEmbedUrl:
+      'https://www.google.com/maps?q=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan&output=embed',
+    mapDirectionsUrl:
+      'https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan'
   },
   nav: {
     homeAriaLabel: 'Rally Technology homepage',
@@ -35,9 +110,8 @@ const messages = {
     },
     items: [
       { label: 'About', href: '#about' },
-      { label: 'Services', href: '#services' },
-      { label: 'One-Touch Experience', href: '#one-touch-experience' },
-      { label: 'Contact', href: '#contact' }
+      { label: 'Services', href: '/services' },
+      { label: 'One-Touch Experience', href: '#one-touch-experience' }
     ]
   },
   home: {
@@ -85,49 +159,7 @@ const messages = {
     services: {
       kicker: 'Our Services',
       title: 'Integrated Support for Industrial Automation Projects',
-      ctaLabel: 'Learn More',
-      items: [
-        {
-          title: 'SCADA / HMI Graphics',
-          description:
-            'Operator-facing visualization for monitoring, alarms, and process control.'
-        },
-        {
-          title: 'I&E Services',
-          description:
-            'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.'
-        },
-        {
-          title: 'PLC / DCS Programming and Migration',
-          description:
-            'Control logic development, migration planning, and staged cutover support.'
-        },
-        {
-          title: 'PI Server',
-          description:
-            'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.'
-        },
-        {
-          title: 'Historians',
-          description:
-            'Long-term process-data retention for trend analysis, reporting, and traceability.'
-        },
-        {
-          title: 'Network Design',
-          description:
-            'Industrial communication planning for resilient, maintainable plant networks.'
-        },
-        {
-          title: 'Remote Monitoring and Data',
-          description:
-            'Remote visibility and data-continuity support across distributed operations.'
-        },
-        {
-          title: 'Alarm Monitoring',
-          description:
-            'Alarm strategy and notification workflows for safer, more stable operations.'
-        }
-      ]
+      ctaLabel: 'Learn More'
     },
     process: {
       kicker: 'Our Process',
@@ -141,6 +173,8 @@ const messages = {
     },
     oneTouch: {
       title: 'One-Touch Experience',
+      description:
+        'Bring equipment data, alarm workflows, historians, and utilities systems into one delivery path.',
       ctaLabel: 'Learn More',
       items: [
         'Data Integration',
@@ -173,6 +207,105 @@ const messages = {
           imageAlt: 'Engineering technicians collaborating beside equipment'
         }
       ]
+    }
+  },
+  servicesCatalog,
+  servicesPage: {
+    seo: {
+      title: 'Services | Rally Technology',
+      description:
+        'Browse Rally Technology services across SCADA / HMI, PLC / DCS, PI Server, historians, industrial networking, remote monitoring, and alarm workflows.'
+    },
+    hero: {
+      kicker: 'Services',
+      title: 'Eight Core Services for Industrial Automation Delivery',
+      description:
+        'From controls and plant data to alarm workflows, these services support the critical path of industrial automation delivery.',
+      asideLabel: 'Core industrial automation services'
+    },
+    cardCtaLabel: 'Learn More',
+    detailBackLabel: 'All Services',
+    detailFocusLabel: 'Operational Focus'
+  },
+  serviceDetailPages: serviceDetailPagesEn,
+  contactPage: {
+    seo: {
+      title: 'Contact Us | Rally Technology',
+      description:
+        'Talk with Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
+    },
+    hero: {
+      title: 'Contact Us',
+      description:
+        'Discuss project scope, site conditions, and the next practical step with Rally Technology.'
+    },
+    intro: {
+      title: 'Start the Conversation',
+      paragraphs: [
+        'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, Rally Technology is ready to talk.',
+        'We help teams clarify requirements, confirm delivery boundaries, and shape the next step into a workable project direction.'
+      ]
+    },
+    form: {
+      title: 'Inquiry Form',
+      description:
+        'Use this form to organize your contact details and project needs. If you need an immediate response, use the phone or email listed on this page.',
+      submitLabel: 'Send Inquiry',
+      unavailableTitle: 'Form submission is not available yet',
+      unavailableDescription:
+        'This release delivers the contact-page flow and form UI first. Please use the phone number or email on this page to reach our team.',
+      fields: {
+        name: {
+          label: 'Name',
+          placeholder: 'Enter your name',
+          help: 'Provide the main contact person for this inquiry.'
+        },
+        company: {
+          label: 'Company / Organization',
+          placeholder: 'Enter your company or organization',
+          help: 'For B2B inquiries, include the organization you represent.'
+        },
+        email: {
+          label: 'Email',
+          placeholder: 'you@example.com',
+          help: 'We will reply to this email address.'
+        },
+        subject: {
+          label: 'Subject',
+          placeholder: 'Example: PLC / DCS migration assessment',
+          help: 'Summarize the topic of your inquiry in one line.'
+        },
+        phone: {
+          label: 'Phone',
+          placeholder: 'Enter a phone number',
+          help: 'Leave a number if direct coordination is helpful.'
+        },
+        details: {
+          label: 'Project Details',
+          placeholder:
+            'Describe the current situation, scope, timing, or key constraints',
+          help: 'Include site context, system scope, and the main issues you are evaluating.'
+        }
+      }
+    },
+    direct: {
+      title: 'Reach Us Directly',
+      description:
+        'Use the channels below when you need to move from an initial inquiry into direct coordination.',
+      cards: {
+        phoneTitle: 'Phone and Fax',
+        faxLabel: 'Fax',
+        locationTitle: 'Location',
+        emailTitle: 'Email Address'
+      }
+    },
+    map: {
+      eyebrow: 'Visit',
+      title: 'Our Office Location',
+      description:
+        'Use the map to confirm the office location before a site meeting or in-person discussion.',
+      ctaLabel: 'Open in Google Maps',
+      iframeTitle: 'Rally Technology office location on Google Maps'
     }
   },
   footer: {

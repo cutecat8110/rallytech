@@ -1,11 +1,12 @@
 # nano-banana data workspace
 
-最後更新：2026-04-02
+最後更新：2026-04-08
 
 ## Purpose
 
-這個資料夾保存 AI 生圖任務的可執行資料，不作為流程 owner 文件。
+這個資料夾保存 AI 生圖任務的可執行 artifacts，不作為 `public/images` 的全域 inventory owner。
 真正的 phase gate 與 workflow owner 仍是 `docs/project/05-Reference-Clone工作流與降級規範.md`。
+`public/images` 的 canonical inventory、命名與 lifecycle status 已移到 `data/image-assets/catalog.json`。
 
 ## Canonical structure
 
@@ -83,4 +84,7 @@
 - 長期圖像 guardrails 放在 `.agents/ai-image-context.md`。
 - prompt research、recipe 與來源判讀放在 `docs/references/`。
 - 生成圖片輸出仍沿用 `public/images/generated/...`；manifest 只保存 metadata 與路徑。
-- 不把這個資料夾當成 owner docs；若流程規則要改，回到 `project/05`。
+- active stock 的 `stock.src` 與 candidate 的 `sourceReference` 應跟隨 `data/image-assets/catalog.json` 的 canonical stock path（目前首頁為 `/images/stock/home/`）。
+- generate / promote workflow 會同步更新 `app/utils/home-page-image-registry.ts` 與 `data/image-assets/catalog.json`。
+- 不把這個資料夾當成 `public/images` 的 owner docs；若 inventory 或 naming 規則要改，回到 `data/image-assets/`。
+- 若流程規則要改，回到 `docs/project/05-Reference-Clone工作流與降級規範.md`。

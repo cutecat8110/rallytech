@@ -2,6 +2,7 @@
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
   useHomePageImageAsset('home-hero')
 </script>
@@ -34,14 +35,14 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
           </h1>
           <p
             v-if="messages.home.hero.description"
-            class="type-sys-body-m mt-4 max-w-[38rem] text-white/78 md:mx-auto"
+            class="type-sys-body-m mt-4 max-w-[38rem] text-white/84 md:mx-auto"
           >
             {{ messages.home.hero.description }}
           </p>
 
           <div class="mt-7 flex justify-center">
             <UButton
-              to="#services"
+              :to="localePath('/services')"
               color="primary"
               variant="solid"
               size="xl"
@@ -65,28 +66,28 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: saturate(0.9) contrast(1.04);
+  filter: saturate(0.96) contrast(1.03) brightness(1.05);
 }
 
 .home-sys-hero__overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 34%, rgb(60 132 255 / 0.16), transparent 24%),
-    radial-gradient(circle at 76% 22%, rgb(48 187 165 / 0.2), transparent 30%),
+    radial-gradient(circle at 50% 34%, rgb(60 132 255 / 0.18), transparent 26%),
+    radial-gradient(circle at 76% 22%, rgb(48 187 165 / 0.24), transparent 32%),
     linear-gradient(
       180deg,
-      rgb(10 18 22 / 0.54) 0%,
-      rgb(10 18 22 / 0.46) 28%,
-      rgb(10 18 22 / 0.74) 62%,
-      rgb(10 18 22 / 0.9) 100%
+      rgb(10 18 22 / 0.42) 0%,
+      rgb(10 18 22 / 0.32) 28%,
+      rgb(10 18 22 / 0.58) 62%,
+      rgb(10 18 22 / 0.78) 100%
     ),
     linear-gradient(
       90deg,
-      rgb(7 12 16 / 0.92) 0%,
-      rgb(7 12 16 / 0.54) 42%,
-      rgb(7 12 16 / 0.54) 58%,
-      rgb(7 12 16 / 0.92) 100%
+      rgb(7 12 16 / 0.76) 0%,
+      rgb(7 12 16 / 0.38) 38%,
+      rgb(7 12 16 / 0.3) 62%,
+      rgb(7 12 16 / 0.72) 100%
     );
 }
 

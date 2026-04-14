@@ -6,6 +6,9 @@ const { locale } = useI18n()
 const localeHead = useLocaleHead()
 
 const uiLocale = computed(() => (locale.value === 'zh-tw' ? zh_tw : en))
+const toaster = {
+  position: 'top-right' as const
+}
 const htmlDir = computed(() => {
   const dir = localeHead.value.htmlAttrs?.dir
 
@@ -40,7 +43,7 @@ useHead(() => ({
 </script>
 
 <template>
-  <UApp :locale="uiLocale">
+  <UApp :locale="uiLocale" :toaster="toaster">
     <!-- 輔助：路由朗讀 -->
     <NuxtRouteAnnouncer />
 

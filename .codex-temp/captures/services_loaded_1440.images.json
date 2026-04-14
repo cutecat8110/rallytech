@@ -1,0 +1,20 @@
+{
+  "sourceUrl": "http://127.0.0.1:3000/services",
+  "capturedAt": "2026-04-09T08:33:57.858Z",
+  "title": "服務項目 | 雷力科技 Rally Technology",
+  "imageCount": 11,
+  "brokenImages": [],
+  "suspiciousImages": [],
+  "headings": [
+    "工業自動化交付的 8 項核心服務",
+    "SCADA / HMI 圖控",
+    "儀電整合",
+    "PLC / DCS 程式與搬遷",
+    "PI Server",
+    "Historians",
+    "工業網路設計",
+    "遠端監控與資料備援",
+    "告警監控",
+    "工程與自動化整合專家"
+  ]
+}

@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { syncImageAssetCatalog } from './image-asset-catalog.mjs'
 
 const scriptDir = dirname(fileURLToPath(import.meta.url))
 export const projectRoot = resolve(scriptDir, '..', '..')
@@ -29,7 +30,7 @@ export const slotDefinitions = Object.freeze({
     outputDirectory: resolve(projectRoot, 'public/images/generated/home/hero'),
     candidatePrefix: 'home-hero',
     candidateLabel: 'Nano Hero Candidate',
-    defaultPromptId: 'home-hero-v5',
+    defaultPromptId: 'home-hero-v6',
     defaultAspectRatio: '16:9',
     defaultImageSize: '2K',
     registry: {
@@ -95,7 +96,7 @@ export const slotDefinitions = Object.freeze({
     ),
     candidatePrefix: 'ote-background',
     candidateLabel: 'Nano OTE Background Candidate',
-    defaultPromptId: 'ote-background-v3',
+    defaultPromptId: 'ote-background-v5',
     defaultAspectRatio: '16:9',
     defaultImageSize: '2K',
     registry: {
@@ -443,6 +444,7 @@ export function getHomePageImageEntry(
     await formatTypeScriptContent(fileContent),
     'utf8'
   )
+  await syncImageAssetCatalog()
 }
 
 export async function resolvePrompt({

@@ -1,0 +1,28 @@
+{
+  "url": "http://127.0.0.1:3000/services",
+  "slug": "services",
+  "state": "loaded",
+  "captures": [
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_1920.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_1920.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_1440.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_1440.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_390.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-temp\\captures\\services_loaded_390.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    }
+  ]
+}

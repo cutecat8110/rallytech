@@ -9,6 +9,7 @@ const oneTouchBackgroundStyle = computed(() => ({
 }))
 
 const messages = useRallyMessages()
+const localePath = useLocalePath()
 const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 </script>
 
@@ -20,33 +21,49 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
   >
     <div class="page-sys-shell--wide relative z-10">
       <div class="content-sys-rail">
-        <div class="home-sys-ote__layout">
-          <article class="max-w-lg">
-            <h2
-              class="home-sys-ote__accent-heading type-sys-headline-l text-white"
-            >
-              {{ messages.home.oneTouch.title }}
-            </h2>
-            <UButton
-              to="#contact"
-              color="primary"
-              variant="solid"
-              size="lg"
-              :label="messages.home.oneTouch.ctaLabel"
-              class="mt-7"
-            />
-          </article>
+        <div class="home-sys-ote__stage">
+          <div class="home-sys-ote__layout">
+            <article class="home-sys-ote__copy">
+              <div class="home-sys-ote__body">
+                <h2
+                  class="home-sys-ote__accent-heading type-sys-headline-l text-white"
+                >
+                  {{ messages.home.oneTouch.title }}
+                </h2>
+                <p
+                  v-if="messages.home.oneTouch.description"
+                  class="home-sys-ote__description type-sys-body-m"
+                >
+                  {{ messages.home.oneTouch.description }}
+                </p>
+              </div>
 
-          <div class="relative xl:ml-auto xl:w-[min(31rem,100%)]">
-            <ul class="home-sys-ote__panel">
-              <li
-                v-for="item in oneTouchItems"
-                :key="item"
-                class="home-sys-ote__row type-sys-body-s text-white/90"
-              >
-                {{ item }}
-              </li>
-            </ul>
+              <div class="home-sys-ote__action-wrap">
+                <UButton
+                  :to="localePath('/contact')"
+                  color="primary"
+                  variant="solid"
+                  size="lg"
+                  :label="messages.home.oneTouch.ctaLabel"
+                  class="home-sys-ote__action"
+                />
+              </div>
+            </article>
+
+            <div class="home-sys-ote__list">
+              <ul class="home-sys-ote__panel">
+                <li
+                  v-for="item in oneTouchItems"
+                  :key="item"
+                  class="home-sys-ote__row type-sys-body-s text-white/95"
+                >
+                  <UIcon name="i-lucide-check" class="home-sys-ote__row-icon" />
+                  <span class="home-sys-ote__row-label">
+                    {{ item }}
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -56,15 +73,15 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 
 <style scoped>
 .bg-sys-rally-ote-surface {
+  isolation: isolate;
   background:
+    radial-gradient(circle at 60% 18%, rgb(48 187 165 / 0.18), transparent 32%),
     linear-gradient(
-      120deg,
-      rgb(7 12 16 / 0.92) 0%,
-      rgb(7 12 16 / 0.84) 32%,
-      rgb(7 12 16 / 0.62) 68%,
-      rgb(7 12 16 / 0.9) 100%
+      165deg,
+      rgb(7 12 16 / 0.28) 0%,
+      rgb(7 12 16 / 0.18) 44%,
+      rgb(7 12 16 / 0.28) 100%
     ),
-    radial-gradient(circle at 74% 18%, rgb(48 187 165 / 0.18), transparent 30%),
     var(--home-ote-background-image) center / cover no-repeat,
     linear-gradient(
       160deg,
@@ -72,18 +89,83 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
       var(--color-secondary-900) 66%,
       var(--color-secondary-700) 100%
     );
-  background-blend-mode: normal, screen, soft-light, normal;
+  background-blend-mode: screen, normal, normal, normal;
+}
+
+.bg-sys-rally-ote-surface::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 60% 34%,
+      rgb(255 255 255 / 0.04),
+      transparent 26%
+    ),
+    linear-gradient(
+      90deg,
+      rgb(7 12 16 / 0.66) 0%,
+      rgb(7 12 16 / 0.42) 20%,
+      rgb(7 12 16 / 0.2) 52%,
+      rgb(7 12 16 / 0.34) 78%,
+      rgb(7 12 16 / 0.52) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgb(7 12 16 / 0.34) 0%,
+      rgb(7 12 16 / 0.16) 38%,
+      rgb(7 12 16 / 0.44) 100%
+    );
+}
+
+.home-sys-ote__stage {
+  width: 100%;
+  max-width: 72rem;
+  margin-inline: auto;
 }
 
 .home-sys-ote__layout {
   display: grid;
   align-items: center;
-  gap: 2.25rem;
+  gap: 1.85rem;
+}
+
+.home-sys-ote__copy {
+  display: flex;
+  width: min(100%, 21.75rem);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-inline: auto;
+}
+
+.home-sys-ote__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.875rem;
+}
+
+.home-sys-ote__action-wrap {
+  width: 100%;
+}
+
+.home-sys-ote__description {
+  max-width: 20.75rem;
+  color: rgb(255 255 255 / 0.76);
+  text-wrap: pretty;
+}
+
+.home-sys-ote__list {
+  width: min(100%, 33rem);
+  margin-inline: auto;
 }
 
 .home-sys-ote__panel {
   display: grid;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 
 .home-sys-ote__accent-heading {
@@ -92,17 +174,49 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 }
 
 .home-sys-ote__row {
-  border: 1px solid rgb(255 255 255 / 0.1);
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 0.7rem;
+  border: 1px solid rgb(255 255 255 / 0.18);
   border-radius: var(--radius-md);
-  background: rgb(255 255 255 / 0.06);
-  padding: 0.95rem 1rem;
-  backdrop-filter: blur(8px);
+  background: rgb(255 255 255 / 0.12);
+  padding: 1rem 1.05rem;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  backdrop-filter: blur(10px);
+}
+
+.home-sys-ote__row-icon {
+  margin-top: 0.18rem;
+  flex-shrink: 0;
+  color: rgb(191 243 234 / 0.96);
+  font-size: 1rem;
+}
+
+.home-sys-ote__row-label {
+  min-width: 0;
+  line-height: 1.65;
 }
 
 @media (min-width: 768px) {
   .home-sys-ote__layout {
-    grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
-    gap: 2.75rem;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(2.75rem, 4.8vw, 4rem);
+  }
+
+  .home-sys-ote__copy {
+    gap: 1.5rem;
+    justify-self: start;
+    margin-inline: 0;
+  }
+
+  .home-sys-ote__body {
+    gap: 1rem;
+  }
+
+  .home-sys-ote__list {
+    justify-self: end;
+    margin-inline: 0;
   }
 }
 </style>
