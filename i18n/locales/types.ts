@@ -59,6 +59,33 @@ export interface ServiceCatalogItemMessages {
   description: string
 }
 
+export interface AboutPageMessages {
+  seo: {
+    title: string
+    description: string
+  }
+  hero: {
+    title: string
+  }
+  intro: {
+    kicker: string
+    title: string
+    paragraphs: string[]
+  }
+  capabilities: {
+    title: string
+    items: string[]
+  }
+  process: {
+    kicker: string
+    title: string
+    steps: Array<{
+      number: string
+      title: string
+    }>
+  }
+}
+
 export interface HomeMessages {
   seo: {
     title: string
@@ -244,7 +271,6 @@ export interface ServiceDetailPageMessages {
     title: string
     description: string
   }
-  heroTitle: string
   heroFocusItems: string[]
   introParagraphs: string[]
   sidebar: ServiceDetailSidebarMessages
@@ -269,12 +295,31 @@ export interface ContactPageDirectCardMessages {
   emailTitle: string
 }
 
+export interface ContactPageActionMessages {
+  phoneLabel: string
+  faxLabel: string
+  emailLabel: string
+  directionsLabel: string
+}
+
 export interface ContactPageMapMessages {
   eyebrow: string
   title: string
   description: string
   ctaLabel: string
   iframeTitle: string
+}
+
+export interface ContactPageClosingMessages {
+  ctaHeading: string
+  ctaLabel: string
+  newsletterHeading: string
+  newsletterDescription: string
+  newsletterPlaceholder: string
+  newsletterButtonLabel: string
+  newsletterUnavailableTitle: string
+  newsletterUnavailableDescription: string
+  contactsHeading: string
 }
 
 export interface ContactPageMessages {
@@ -305,22 +350,32 @@ export interface ContactPageMessages {
       details: ContactPageFieldMessages
     }
   }
+  actions: ContactPageActionMessages
   direct: {
     title: string
     description: string
     cards: ContactPageDirectCardMessages
   }
   map: ContactPageMapMessages
+  closing: ContactPageClosingMessages
 }
 
 export interface FooterMessages {
   connectorHeading: string
   ctaLabel: string
   brandLine: string
+  newsletterHeading: string
+  newsletterDescription: string
+  newsletterPlaceholder: string
+  newsletterButtonLabel: string
+  newsletterUnavailableTitle: string
+  newsletterUnavailableDescription: string
+  contactsHeading: string
   phoneLabel: string
   faxLabel: string
   emailLabel: string
   addressLabel: string
+  backToTopLabel: string
   copyright: string
 }
 
@@ -348,6 +403,7 @@ export interface RallyTechLocaleMessages {
   company: CompanyMessages
   nav: NavMessages
   home: HomeMessages
+  aboutPage: AboutPageMessages
   servicesCatalog: ServiceCatalogItemMessages[]
   servicesPage: ServicesPageMessages
   serviceDetailPages: ServiceDetailPagesMessages

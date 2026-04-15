@@ -1,0 +1,44 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "A neatly organized PLC rack with glowing status LEDs and perfect cable management. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "cool, dim cabinet lighting emphasizing LED glows"
+  },
+  "spatial_positioning": [
+    "layered PLC modules filling the frame",
+    "glowing LEDs drawing the eye"
+  ],
+  "color_restriction": "dark plastics, metallic rails, distinct green and amber LED lights.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "industrial polymer housings",
+    "metallic heat sinks",
+    "glowing diodes"
+  ],
+  "scene": "A high-end, modern Programmable Logic Controller (PLC) rack actively processing data, showcasing operational readiness.",
+  "reality_anchors": [
+    "authentic PLC form factor",
+    "I/O module LED status lights",
+    "organized wire ducts"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "diagonal or flat architectural view of the rack"
+  },
+  "avoid": [
+    "consumer PC motherboards",
+    "retro/obsolete hardware",
+    "messy wiring",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

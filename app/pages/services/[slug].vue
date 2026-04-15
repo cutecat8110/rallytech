@@ -82,7 +82,7 @@ useSeoMeta({
 
 <template>
   <div v-if="service && detailPage">
-    <ServiceDetailHero :service="service" :detail-page="detailPage" />
+    <ServiceDetailHero :service="service" />
     <ServiceDetailPageShell :service="service" :detail-page="detailPage" />
   </div>
 </template>

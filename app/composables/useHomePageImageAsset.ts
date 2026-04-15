@@ -12,6 +12,7 @@ import {
   type HomePageImageSlotKey,
   type HomePageImageStateKey,
   type HomePageSingleImageSlotKey,
+  type HomePageStateAwareSlotKey,
   type HomePageImageSlotRegistry
 } from '~/utils/home-page-image-registry'
 
@@ -23,7 +24,7 @@ export function useHomePageImageAsset(slot: HomePageSingleImageSlotKey): {
   resolvedImage: Readonly<Ref<HomePageImageAsset>>
 }
 export function useHomePageImageAsset(
-  slot: 'mission-square',
+  slot: HomePageStateAwareSlotKey,
   state: MaybeRefOrGetter<HomePageImageStateKey>
 ): {
   desiredNanoSource: Readonly<Ref<HomePageImageAsset | null>>
@@ -40,10 +41,15 @@ export function useHomePageImageAsset(
   const didNanoLoadFail = ref(false)
 
   const entry = computed(() => {
-    if (slot === 'mission-square') {
+    const stateAwareSlots: HomePageImageSlotKey[] = [
+      'mission-square',
+      'about-process-step'
+    ]
+
+    if (stateAwareSlots.includes(slot)) {
       return getHomePageImageEntry(
-        'mission-square',
-        toValue(state) ?? 'mission'
+        slot as HomePageStateAwareSlotKey,
+        toValue(state) ?? ('mission' as HomePageImageStateKey)
       )
     }
 
@@ -51,19 +57,11 @@ export function useHomePageImageAsset(
   })
 
   const desiredNanoSource = computed(() => {
-    if (import.meta.dev) {
-      if (activeMode.value !== 'nano') {
-        return null
-      }
-
-      return entry.value.latestCandidate
+    if (activeMode.value !== 'nano') {
+      return null
     }
 
-    if (entry.value.liveSource === 'nano') {
-      return entry.value.liveNano
-    }
-
-    return null
+    return entry.value.liveNano ?? entry.value.latestCandidate
   })
 
   const resolvedImage = computed(() => {
@@ -71,7 +69,10 @@ export function useHomePageImageAsset(
       return desiredNanoSource.value
     }
 
-    return entry.value.stock
+    const fallbackImage =
+      entry.value.liveNano ?? entry.value.latestCandidate ?? entry.value.stock
+
+    return entry.value.stock.src ? entry.value.stock : fallbackImage
   })
 
   const isUsingNanoSource = computed(

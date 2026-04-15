@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage footer connector breakout image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and engineering delivery company",
   "page_role": "Homepage footer connector image",
-  "goal": "Create a photorealistic people-forward engineering image that supports a premium connector band and feels more refined and technical than generic teamwork stock",
+  "goal": "Create a photorealistic people-forward engineering image that supports a premium connector band and feels more refined and technical than generic teamwork stock. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
   "visual_message": "An East Asian engineering collaboration moment with breakout potential, contemporary industrial context, and controlled warmth",
   "recipe_ids": [
     "technical-signal-stack",
@@ -20,7 +20,7 @@
     "image_2": "optional technical environment reference"
   },
   "technical_signals": {
-    "lens": "50mm commercial collaboration photography",
+    "lens": "macro lens",
     "aperture": "f/3.5",
     "light_source": "soft daylight or controlled lab light",
     "time_of_day": "neutral daytime",
@@ -33,7 +33,7 @@
     "human interaction should feel real, not staged sales photography"
   ],
   "visual_standard": "premium commercial engineering collaboration photography",
-  "color_restriction": "restrained whites, soft neutrals, muted technical metals, and controlled skin tones only",
+  "color_restriction": "restrained whites, soft neutrals, muted technical metals, and controlled skin tones only. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "real lab or engineering workstation materials",
     "credible devices or tools",
@@ -74,6 +74,16 @@
     "dramatic fashion posing",
     "headline text",
     "fake interface overlays",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

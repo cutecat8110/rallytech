@@ -1,7 +1,7 @@
 {
-  "asset_type": "homepage connector breakout image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
-  "goal": "Create a photorealistic engineering subject image with clear breakout potential for a CTA connector band",
+  "goal": ". THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
   "reference_usage": {
     "image_1": "preserve subject crop and silhouette logic",
     "image_2": "optional industrial context or equipment realism reference"
@@ -42,6 +42,20 @@
     "button graphics",
     "cyberpunk lighting",
     "plastic skin or fabric",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette.",
+  "technical_signals": {
+    "lens": "macro lens"
+  }
 }

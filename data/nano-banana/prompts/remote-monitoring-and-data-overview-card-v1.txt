@@ -1,0 +1,37 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "A sleek tablet or secondary monitor displaying a map with multiple glowing nodes/sites. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "screen glow"
+  },
+  "spatial_positioning": [
+    "device angled in frame, displaying a dark-mode geographical map with data nodes"
+  ],
+  "color_restriction": "dark UI, bright glowing telemetry nodes (cyan, amber).. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "An industrial tablet displaying a wide-area remote telemetry and monitoring dashboard.",
+  "reality_anchors": [
+    "geographical map UI with industrial assets",
+    "rugged tablet bezel"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "device screen filling the frame diagonally"
+  },
+  "avoid": [
+    "Google Maps street view",
+    "consumer iPads",
+    "generic app interfaces",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

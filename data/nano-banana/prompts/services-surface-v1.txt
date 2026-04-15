@@ -1,7 +1,7 @@
 {
-  "asset_type": "homepage section background image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, Taiwanese industrial automation and control systems company",
-  "goal": "Create a low-distraction industrial background that supports the Services section and preserves readability for a dense content layout",
+  "goal": "Create a low-distraction industrial background that supports the Services section and preserves readability for a dense content layout. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
   "scene": "A restrained industrial panel or systems environment with believable geometry, materials, and controlled visual depth",
   "subject": "The background surface and industrial structure are the subject; no dominant people, no hero focal point, no action scene",
   "reality_anchors": [
@@ -12,8 +12,8 @@
   ],
   "composition": {
     "format": "16:9",
-    "hero_safe_area": "preserve broad readable zones for a heading and eight services content items",
-    "focal_structure": "background support only; no strong hero focal point",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "background support only; no strong hero focal point. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "industrial interior photography with stable perspective"
   },
   "lighting": {
@@ -26,7 +26,7 @@
     "must function as a section background rather than a standalone hero image",
     "must support clear readability for a multi-column services layout",
     "must look photorealistic and commercially usable",
-    "the image must contain no embedded text, no buttons, and no floating UI"
+    "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
   ],
   "avoid": [
     "busy action scene",
@@ -34,6 +34,22 @@
     "fake dashboards or floating UI panels",
     "high-contrast hero framing",
     "neon sci-fi glow",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  },
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette."
 }

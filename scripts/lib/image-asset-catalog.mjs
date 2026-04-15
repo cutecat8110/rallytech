@@ -16,6 +16,10 @@ export const servicePageRegistryPath = resolve(
   projectRoot,
   'app/utils/service-page-image-registry.ts'
 )
+export const contactPageRegistryPath = resolve(
+  projectRoot,
+  'app/utils/contact-page-image-registry.ts'
+)
 export const imageReferenceDocPath = resolve(
   projectRoot,
   'docs/references/首頁媒體素材來源.md'
@@ -33,7 +37,8 @@ export const serviceImageReferenceDocPath = resolve(
 
 const runtimeRegistryPaths = Object.freeze([
   homePageRegistryPath,
-  servicePageRegistryPath
+  servicePageRegistryPath,
+  contactPageRegistryPath
 ])
 
 const imageReferenceDocPaths = Object.freeze([
@@ -56,6 +61,8 @@ const IMAGE_ASSET_FILE_PATTERN = /\/images\/[^'"`\s)]+\.(?:svg|png|jpe?g|webp)/g
 const CATALOG_SCHEMA_VERSION = 1
 const GENERATED_LICENSE_NOTE =
   'Generated with Gemini image generation (SynthID watermark).'
+const SERVICE_IMAGE_SLOT_PATTERN =
+  /^(?<slug>.+)-(overview-card|detail-hero|detail-feature)$/
 const GENERATED_OUTPUT_DIRECTORIES = Object.freeze({
   'home-hero': '/images/generated/home/hero',
   'about-primary': '/images/generated/home/about-primary',
@@ -68,7 +75,8 @@ const GENERATED_OUTPUT_DIRECTORIES = Object.freeze({
     'join-us': '/images/generated/home/mission-square/join-us'
   },
   'mission-cutout': '/images/generated/home/mission-cutout',
-  'connector-image': '/images/generated/home/connector-image'
+  'connector-image': '/images/generated/home/connector-image',
+  'contact-hero': '/images/generated/contact/hero'
 })
 
 /**
@@ -516,6 +524,7 @@ function buildAiRecordsForCandidateCollection({
       ) ?? null
 
   return candidates.map((candidate) => {
+    const runtimeTarget = getGeneratedImageRuntimeTarget(slot, state)
     const status =
       promotedIds.has(candidate.candidateId) ||
       (promotedIds.size === 0 &&
@@ -529,7 +538,7 @@ function buildAiRecordsForCandidateCollection({
       status,
       publicPath: candidate.outputPath,
       canonicalName: basename(candidate.outputPath),
-      scope: 'homepage',
+      scope: runtimeTarget.scope,
       slot,
       state,
       source: 'Nano Banana',
@@ -560,31 +569,65 @@ function buildAiUsedBy({
   isPromoted,
   liveSource
 }) {
-  const registryAnchor = state ? `${slot}.states.${state}` : slot
   const manifestAnchor = state
     ? `states.${state}.candidates.${candidateId}`
     : `candidates.${candidateId}`
   const usedBy = [`${manifestRelativePath}#${manifestAnchor}`]
+  const runtimeTarget = getGeneratedImageRuntimeTarget(slot, state)
 
   if (isLatest) {
     usedBy.push(
-      `${toProjectRelative(homePageRegistryPath)}#${registryAnchor}.latestCandidate`
+      `${toProjectRelative(runtimeTarget.registryPath)}#${runtimeTarget.registryAnchor}.latestCandidate`
     )
   }
 
   if (isPromoted) {
     usedBy.push(
-      `${toProjectRelative(homePageRegistryPath)}#${registryAnchor}.liveNano`
+      `${toProjectRelative(runtimeTarget.registryPath)}#${runtimeTarget.registryAnchor}.liveNano`
     )
   }
 
   if (isPromoted && liveSource === 'nano') {
     usedBy.push(
-      `${toProjectRelative(homePageRegistryPath)}#${registryAnchor}.liveSource`
+      `${toProjectRelative(runtimeTarget.registryPath)}#${runtimeTarget.registryAnchor}.liveSource`
     )
   }
 
   return usedBy
+}
+
+function getGeneratedImageRuntimeTarget(slot, state = null) {
+  if (slot === 'services-overview-hero') {
+    return {
+      registryAnchor: 'servicesOverviewHeroRegistry',
+      registryPath: servicePageRegistryPath,
+      scope: 'services'
+    }
+  }
+
+  if (slot === 'contact-hero') {
+    return {
+      registryAnchor: 'contactPageHeroImage',
+      registryPath: contactPageRegistryPath,
+      scope: 'contact'
+    }
+  }
+
+  const serviceSlotParts = getServiceSlotParts(slot)
+
+  if (serviceSlotParts) {
+    return {
+      registryAnchor: `servicePageImageRegistry.${serviceSlotParts.slug}.${serviceSlotParts.role}`,
+      registryPath: servicePageRegistryPath,
+      scope: `services/${serviceSlotParts.slug}`
+    }
+  }
+
+  return {
+    registryAnchor: state ? `${slot}.states.${state}` : slot,
+    registryPath: homePageRegistryPath,
+    scope: 'homepage'
+  }
 }
 
 function compareImageAssetRecords(left, right) {
@@ -644,7 +687,17 @@ function getExpectedGeneratedDirectory(slot, state = null) {
   const definition = GENERATED_OUTPUT_DIRECTORIES[slot]
 
   if (!definition) {
-    return null
+    if (slot === 'services-overview-hero') {
+      return '/images/generated/services/overview'
+    }
+
+    const serviceSlotParts = getServiceSlotParts(slot)
+
+    if (!serviceSlotParts) {
+      return null
+    }
+
+    return `/images/generated/services/${serviceSlotParts.slug}/${serviceSlotParts.role}`
   }
 
   if (typeof definition === 'string') {
@@ -652,6 +705,19 @@ function getExpectedGeneratedDirectory(slot, state = null) {
   }
 
   return definition[state] ?? null
+}
+
+function getServiceSlotParts(slot) {
+  const match = slot.match(SERVICE_IMAGE_SLOT_PATTERN)
+
+  if (!match?.groups) {
+    return null
+  }
+
+  return {
+    slug: match.groups.slug,
+    role: match[2]
+  }
 }
 
 function getCanonicalStockScopeDirectory(scope) {

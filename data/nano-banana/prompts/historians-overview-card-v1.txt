@@ -1,0 +1,41 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "Focus on enterprise storage arrays (hard drives/SSDs) blinking in a dark rack. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "subtle ambient with bright drive LEDs"
+  },
+  "spatial_positioning": [
+    "grid of storage drive bays filling the frame"
+  ],
+  "color_restriction": "dark greys, deep blacks, rhythmic blue or green indicator lights.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "brushed aluminum drive sleds",
+    "mesh ventilation"
+  ],
+  "scene": "Massive enterprise storage array dedicated to long-term industrial data retention.",
+  "reality_anchors": [
+    "authentic SAN/NAS drive bays",
+    "enterprise storage hardware"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "repeating pattern of hardware storage"
+  },
+  "avoid": [
+    "consumer hard drives",
+    "USB thumb drives",
+    "messy open computers",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

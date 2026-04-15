@@ -102,7 +102,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 
 .home-sys-hero__content {
   display: flex;
-  min-height: clamp(31rem, calc(100svh - 6.5rem), 41rem);
+  min-height: clamp(32rem, 78svh, 44rem);
   align-items: center;
   justify-content: center;
   padding-block: clamp(3.75rem, 6vw, 5.5rem);

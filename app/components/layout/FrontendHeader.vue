@@ -13,7 +13,7 @@ const { locale } = useI18n()
 const route = useRoute()
 const {
   hasAnyLatestCandidate,
-  isDevToggleVisible,
+  isImageToggleVisible,
   isNanoEnabled,
   setPreferredMode
 } = useHomePageImageMode()
@@ -55,7 +55,7 @@ const nanoToggleLabel = computed(() =>
     : messages.value.nav.nanoToggleUnavailable
 )
 
-const showNanoToggle = computed(() => isDevToggleVisible.value)
+const showNanoToggle = computed(() => isImageToggleVisible.value)
 const isServicesOverviewRoute = computed(
   () => route.path === servicesRootPath.value
 )
@@ -278,15 +278,45 @@ watch(isMobileMenuOpen, (open) => {
               :to="contactPath"
               color="neutral"
               variant="solid"
-              size="xs"
+              size="sm"
               :label="messages.nav.contactCta"
-              class="home-sys-header__contact-button hidden h-8 md:inline-flex"
+              class="home-sys-header__contact-button hidden md:inline-flex"
               :ui="{
-                base: 'h-8 !text-white [&_*]:!text-white',
+                base: '!text-white [&_*]:!text-white',
                 label: '!text-white'
               }"
             />
           </UTheme>
+
+          <div
+            v-if="showNanoToggle"
+            class="home-sys-header__mobile-image-mode"
+            role="group"
+            :aria-label="nanoToggleLabel"
+          >
+            <UButton
+              v-for="item in imageModeOptions"
+              :key="`mobile-${item.mode}`"
+              type="button"
+              color="neutral"
+              variant="ghost"
+              size="xs"
+              :label="item.label"
+              :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
+              :class="[
+                'home-sys-header__segmented-button',
+                'home-sys-header__image-mode-button',
+                getSegmentedButtonStateClass(
+                  (item.mode === 'nano') === isNanoEnabled
+                )
+              ]"
+              :ui="segmentedButtonUi"
+              :aria-pressed="
+                (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
+              "
+              @click="setPreferredMode(item.mode)"
+            />
+          </div>
 
           <UButton
             type="button"
@@ -593,6 +623,19 @@ watch(isMobileMenuOpen, (open) => {
   padding: 0;
 }
 
+.home-sys-header__mobile-image-mode {
+  display: none;
+  align-items: center;
+  gap: 0;
+  border: 1px solid var(--color-secondary-200);
+  background: color-mix(
+    in srgb,
+    var(--color-secondary-50) 82%,
+    var(--color-white)
+  );
+  padding: 0;
+}
+
 .home-sys-header__image-mode-button {
   width: 3rem;
 }
@@ -643,6 +686,10 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__contact-button {
   color: var(--color-white) !important;
   background: var(--color-secondary-800) !important;
+  min-height: 2.6rem;
+  padding-inline: 1.15rem;
+  border-radius: 0;
+  letter-spacing: 0.06em;
 }
 
 .home-sys-header__contact-button :deep(*) {
@@ -754,11 +801,19 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 @media (max-width: 767px) {
+  .home-sys-header__mobile-image-mode {
+    display: inline-flex;
+  }
+
   .home-sys-header__main {
     grid-template-columns: minmax(8rem, 1fr) auto auto;
     gap: 0.65rem;
     min-height: 4rem;
     padding-block: 0.6rem;
+  }
+
+  .home-sys-header__mobile-image-mode .home-sys-header__image-mode-button {
+    width: 2.65rem;
   }
 }
 </style>

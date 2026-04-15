@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage about section primary image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
   "page_role": "Homepage About section primary architectural image",
-  "goal": "Create a photorealistic building image that signals established engineering capability, modern systems thinking, and premium B2B credibility",
+  "goal": "Create a photorealistic building image that signals established engineering capability, modern systems thinking, and premium B2B credibility. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The mood should be professional, industrial, engineering scale, high-trust with morning daylight.",
   "visual_message": "A clean high-tech facility exterior that feels contemporary, structured, and trustworthy rather than like a generic downtown postcard",
   "recipe_ids": [
     "industrial-realism-anchors",
@@ -28,7 +28,7 @@
     "adjacent structures can support scale without becoming the subject"
   ],
   "visual_standard": "premium architectural exterior photography for a corporate technology brand",
-  "color_restriction": "restrained cool neutrals, reflective glass blues, steel greys, and concrete tones only; avoid saturated skies and postcard colors",
+  "color_restriction": "restrained cool neutrals, reflective glass blues, steel greys, and concrete tones only; avoid saturated skies and postcard colors. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "glass curtain wall",
     "clean metal framing",
@@ -45,14 +45,14 @@
   ],
   "composition": {
     "format": "4:5",
-    "hero_safe_area": "not required",
-    "focal_structure": "one dominant facade mass with one supporting reflection rhythm",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one dominant facade mass with one supporting reflection rhythm. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural exterior photography, eye-level or slightly upward",
     "cropping": "designed for the tall about-section media frame"
   },
   "lighting": {
-    "style": "premium commercial architectural photography",
-    "mood": "confident, precise, established",
+    "style": "premium commercial architectural photography, morning daylight",
+    "mood": "professional, industrial, engineering scale, high-trust, morning daylight",
     "contrast": "controlled and realistic",
     "surface_behavior": "clean highlights and believable reflective glass response"
   },
@@ -70,6 +70,16 @@
     "futuristic holograms",
     "headline text or embedded graphics",
     "oversaturated sky",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

@@ -43,19 +43,19 @@ defineProps<{
 
 <style scoped>
 .services-sys-detail-block__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .services-sys-detail-capabilities {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.35rem;
   counter-reset: capability-item;
 }
 
 .services-sys-detail-capabilities__item {
   position: relative;
-  padding: 1.15rem 0 0 4.1rem;
+  padding: 1.2rem 0 0 4.2rem;
   border-top: 1px solid
     color-mix(
       in srgb,
@@ -88,6 +88,12 @@ defineProps<{
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-top: 0.625rem;
+  margin-top: 0.7rem;
+}
+
+@media (min-width: 1024px) {
+  .services-sys-detail-capabilities {
+    max-width: 52rem;
+  }
 }
 </style>

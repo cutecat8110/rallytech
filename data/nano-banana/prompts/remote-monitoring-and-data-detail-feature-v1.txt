@@ -1,0 +1,39 @@
+{
+  "asset_type": "service detail feature image",
+  "goal": "Close-up of a remote telemetry unit (RTU) or cellular antenna mounted on an outdoor industrial pipeline/tank against a dramatic sky. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "dramatic golden hour or overcast natural light"
+  },
+  "spatial_positioning": [
+    "rugged RTU box and antenna attached to thick steel pipes",
+    "sky background"
+  ],
+  "color_restriction": "weathered steel, bright industrial enclosure (grey/white), dramatic sky tones.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A ruggedized Remote Telemetry Unit (RTU) transmitting critical data from a harsh outdoor industrial site.",
+  "reality_anchors": [
+    "NEMA-rated weatherproof enclosure",
+    "industrial piping/valves",
+    "cellular/radio antenna"
+  ],
+  "composition": {
+    "format": "4:3",
+    "focal_structure": "hero shot of the physical remote hardware"
+  },
+  "avoid": [
+    "5G cell towers",
+    "residential satellite dishes",
+    "indoor environments",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

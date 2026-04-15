@@ -41,7 +41,7 @@ const gridClassName = computed(() =>
 
 <style scoped>
 .services-sys-detail-block__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .services-sys-detail-card-grid {
@@ -51,14 +51,10 @@ const gridClassName = computed(() =>
 
 .services-sys-detail-card-grid__item {
   padding: 1.25rem 1.2rem 1.35rem;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(243 248 248 / 0.84) 100%
-    ),
-    var(--color-white);
-  box-shadow: 0 18px 44px rgb(6 20 27 / 0.05);
+  border-top: 2px solid
+    color-mix(in srgb, var(--color-primary-500) 64%, transparent);
+  background: rgb(255 255 255 / 0.96);
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {

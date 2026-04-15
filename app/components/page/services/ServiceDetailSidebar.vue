@@ -132,19 +132,60 @@ const serviceItems = computed(() =>
   .services-sys-detail-sidebar {
     position: sticky;
     top: calc(var(--layout-header-m) + 1.5rem);
-    gap: 1rem;
+    gap: 0.9rem;
   }
 
   .services-sys-detail-sidebar__nav {
     flex-direction: column;
-    gap: 0.55rem;
+    gap: 0.4rem;
+    padding: 0.75rem;
+    border: 1px solid
+      color-mix(
+        in srgb,
+        var(--color-secondary-950) 8%,
+        var(--color-border-subtle)
+      );
+    border-radius: var(--radius-xl);
+    background:
+      linear-gradient(
+        180deg,
+        rgb(255 255 255 / 0.98) 0%,
+        rgb(242 247 247 / 0.82) 100%
+      ),
+      var(--color-white);
+    box-shadow: 0 18px 36px rgb(6 20 27 / 0.05);
     overflow: visible;
   }
 
   .services-sys-detail-sidebar__link {
     width: 100%;
-    border-radius: var(--radius-l);
+    min-height: auto;
+    padding: 0.78rem 0.9rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-m);
+    background: transparent;
     box-shadow: none;
+  }
+
+  .services-sys-detail-sidebar__link:hover {
+    transform: none;
+    color: var(--color-secondary-950);
+    border-color: color-mix(
+      in srgb,
+      var(--color-primary-200) 58%,
+      var(--color-border-subtle)
+    );
+    background: rgb(255 255 255 / 0.92);
+  }
+
+  .services-sys-detail-sidebar__link--active {
+    border-color: color-mix(
+      in srgb,
+      var(--color-primary-300) 52%,
+      var(--color-border-subtle)
+    );
+    background: rgb(255 255 255 / 1);
+    box-shadow: 0 10px 24px rgb(6 20 27 / 0.06);
   }
 }
 </style>

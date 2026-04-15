@@ -200,6 +200,46 @@ const messages = {
       ]
     }
   },
+  aboutPage: {
+    seo: {
+      title: 'About | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference About page used to proofread page structure and visible copy.'
+    },
+    hero: {
+      title: 'About Us'
+    },
+    intro: {
+      kicker: 'About Us',
+      title: 'Cutting-Edge Automation, Expert Engineering',
+      paragraphs: [
+        'Pentagon Engineering emerged with a vision to revolutionize industrial automation processes through state-of-the-art engineering and an unwavering commitment to quality. What began as a humble endeavor has evolved into a global powerhouse, boasting a team of passionate engineers, scientists, and industry experts who share a common goal: to empower industries with innovative Instrumentation and Controls engineering solutions.'
+      ]
+    },
+    capabilities: {
+      title: 'Elevating Your Experience with Top-Tier Services',
+      items: [
+        'System Integration',
+        'I&E Services',
+        'Procurement / EPC',
+        'Security Systems',
+        'Industrial Panels Building',
+        'Wireless Infrastructure',
+        'UPS Systems Developing',
+        'Detailed Design & Modeling'
+      ]
+    },
+    process: {
+      kicker: 'Work Process',
+      title: 'Our Working Process',
+      steps: [
+        { number: '01', title: 'Client Requirements' },
+        { number: '02', title: 'Planning' },
+        { number: '03', title: 'Implementation' },
+        { number: '04', title: 'Evaluation' }
+      ]
+    }
+  },
   servicesCatalog,
   servicesPage: {
     seo: {
@@ -278,6 +318,12 @@ const messages = {
         }
       }
     },
+    actions: {
+      phoneLabel: 'Call Pentagon Engineering',
+      faxLabel: 'Send a fax',
+      emailLabel: 'Send an email',
+      directionsLabel: 'Open directions'
+    },
     direct: {
       title: 'Direct Contact Details',
       description:
@@ -296,16 +342,39 @@ const messages = {
         'The live reference continues with a full-width map embed after the direct-contact strip.',
       ctaLabel: 'Open in Google Maps',
       iframeTitle: 'Pentagon Engineering source-reference map'
+    },
+    closing: {
+      ctaHeading: 'Engineering + Design Experts',
+      ctaLabel: 'Contact Us',
+      newsletterHeading: 'Newsletter',
+      newsletterDescription:
+        'Subscribe to our newsletter to receive updates on the latest news!',
+      newsletterPlaceholder: 'Subscribe with us',
+      newsletterButtonLabel: 'Subscribe',
+      newsletterUnavailableTitle: 'Newsletter signup is not available yet',
+      newsletterUnavailableDescription:
+        'This implementation keeps the contact-page footer UI, but newsletter signup is not connected in this project.',
+      contactsHeading: 'Contacts'
     }
   },
   footer: {
     connectorHeading: 'Engineering + Design Experts',
     ctaLabel: 'Contact Us',
     brandLine: 'Pentagon Engineering',
+    newsletterHeading: 'Newsletter',
+    newsletterDescription:
+      'Subscribe to our newsletter to receive updates on the latest news!',
+    newsletterPlaceholder: 'Subscribe with us',
+    newsletterButtonLabel: 'Subscribe',
+    newsletterUnavailableTitle: 'Newsletter signup is not available yet',
+    newsletterUnavailableDescription:
+      'This footer keeps the reference-style UI only. Newsletter signup is not connected in this release.',
+    contactsHeading: 'Contacts',
     phoneLabel: 'Contact Us',
     faxLabel: 'Fax',
     emailLabel: 'Mail Us',
     addressLabel: 'Address',
+    backToTopLabel: 'Back to top',
     copyright: '© 2023 Pentagon Engineering. Powered by Fidelity Creative'
   },
   referencePages: referencePagesSource

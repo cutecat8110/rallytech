@@ -200,6 +200,49 @@ export const slotDefinitions = Object.freeze({
       enabled: false,
       path: null
     }
+  },
+  'about-process-step': {
+    slot: 'about-process-step',
+    displayName: 'About Process Step',
+    manifestPath: resolve(
+      projectRoot,
+      'data/nano-banana/manifests/about-process-step.json'
+    ),
+    candidatePrefix: 'about-process-step',
+    candidateLabel: 'Nano Process Step Candidate',
+    defaultAspectRatio: '1:1',
+    defaultImageSize: '2K',
+    stateRequired: true,
+    states: {
+      '01': {
+        state: '01',
+        displayName: 'Process Step 01: Scope',
+        defaultPromptId: 'about-process-step-01-v1',
+        outputPublicDirectory: '/images/generated/home/about-process/01'
+      },
+      '02': {
+        state: '02',
+        displayName: 'Process Step 02: Planning',
+        defaultPromptId: 'about-process-step-02-v1',
+        outputPublicDirectory: '/images/generated/home/about-process/02'
+      },
+      '03': {
+        state: '03',
+        displayName: 'Process Step 03: Execution',
+        defaultPromptId: 'about-process-step-03-v1',
+        outputPublicDirectory: '/images/generated/home/about-process/03'
+      },
+      '04': {
+        state: '04',
+        displayName: 'Process Step 04: Handover',
+        defaultPromptId: 'about-process-step-04-v1',
+        outputPublicDirectory: '/images/generated/home/about-process/04'
+      }
+    },
+    registry: {
+      enabled: false,
+      path: null
+    }
   }
 })
 
@@ -419,22 +462,28 @@ export function getHomePageImageEntry(
   slot: HomePageSingleImageSlotKey
 ): HomePageImageSlotRegistry
 export function getHomePageImageEntry(
-  slot: 'mission-square',
+  slot: HomePageStateAwareSlotKey,
   state: HomePageImageStateKey
 ): HomePageImageSlotRegistry
 export function getHomePageImageEntry(
   slot: HomePageImageSlotKey,
   state?: HomePageImageStateKey
 ): HomePageImageSlotRegistry {
-  if (slot === 'mission-square') {
+  const stateAwareSlots: HomePageStateAwareSlotKey[] = [
+    'mission-square',
+    'about-process-step'
+  ]
+
+  if (stateAwareSlots.includes(slot as HomePageStateAwareSlotKey)) {
     if (!state) {
-      throw new Error('mission-square requires state.')
+      throw new Error('Slot "' + slot + '" requires state.')
     }
 
-    return homePageImageRegistry['mission-square'].states[state]
+    return (homePageImageRegistry[slot as HomePageStateAwareSlotKey] as any)
+      .states[state]
   }
 
-  return homePageImageRegistry[slot]
+  return homePageImageRegistry[slot as HomePageSingleImageSlotKey]
 }
 `
 
@@ -639,7 +688,8 @@ async function buildHomePageRegistrySource(
     'ote-background',
     'mission-square',
     'mission-cutout',
-    'connector-image'
+    'connector-image',
+    'about-process-step'
   ]
 
   const manifests = {}
@@ -669,7 +719,39 @@ async function buildHomePageRegistrySource(
     ),
     'connector-image': createSingleSlotRegistrySource(
       manifests['connector-image']
+    ),
+    'about-process-step': createAboutProcessStepRegistrySource(
+      manifests['about-process-step']
     )
+  }
+}
+
+function createAboutProcessStepRegistrySource(manifest) {
+  return {
+    slot: manifest.slot,
+    liveSource: manifest.liveSource === 'nano' ? 'nano' : 'stock',
+    states: {
+      '01': createStateSlotRegistrySource(
+        manifest,
+        '01',
+        manifest.states['01']
+      ),
+      '02': createStateSlotRegistrySource(
+        manifest,
+        '02',
+        manifest.states['02']
+      ),
+      '03': createStateSlotRegistrySource(
+        manifest,
+        '03',
+        manifest.states['03']
+      ),
+      '04': createStateSlotRegistrySource(
+        manifest,
+        '04',
+        manifest.states['04']
+      )
+    }
   }
 }
 

@@ -14,6 +14,40 @@ import ServiceDetailTagListBlock from '~/components/page/services/blocks/Service
 defineProps<{
   blocks: ServiceDetailBlockMessages[]
 }>()
+
+const { locale } = useI18n()
+
+function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
+  const labelMap = new Map<ServiceDetailBlockMessages['type'], string>(
+    locale.value === 'zh-tw'
+      ? [
+          ['media-feature', '服務概觀'],
+          ['proof-strip', '重點項目'],
+          ['capability-list', '承接內容與做法'],
+          ['card-grid', '實務焦點'],
+          ['quote', '實務觀點'],
+          ['summary', '導入時機'],
+          ['tag-list', '相關主題'],
+          ['accordion', '規劃補充'],
+          ['process-steps', '實施節點'],
+          ['closing-note', '時機提醒']
+        ]
+      : [
+          ['media-feature', 'Service Overview'],
+          ['proof-strip', 'Key Priorities'],
+          ['capability-list', 'Scope and Method'],
+          ['card-grid', 'Applied Focus'],
+          ['quote', 'Field Perspective'],
+          ['summary', 'Timing Considerations'],
+          ['tag-list', 'Related Topics'],
+          ['accordion', 'Planning Notes'],
+          ['process-steps', 'Implementation Flow'],
+          ['closing-note', 'Timing Reminder']
+        ]
+  )
+
+  return labelMap.get(blockType) ?? ''
+}
 </script>
 
 <template>
@@ -24,6 +58,10 @@ defineProps<{
       class="services-sys-detail-block"
       :class="`services-sys-detail-block--${block.type}`"
     >
+      <p class="type-sys-kicker services-sys-detail-block__eyebrow">
+        {{ getBlockEyebrow(block.type) }}
+      </p>
+
       <ServiceDetailMediaFeatureBlock
         v-if="block.type === 'media-feature'"
         :block="block"
@@ -81,7 +119,28 @@ defineProps<{
 .services-sys-detail-blocks {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin-top: 2.75rem;
+  gap: clamp(3.3rem, 4.5vw, 4.6rem);
+  margin-top: clamp(3rem, 4vw, 3.8rem);
+}
+
+.services-sys-detail-block {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.services-sys-detail-block + .services-sys-detail-block {
+  padding-top: clamp(2.6rem, 3.5vw, 3.2rem);
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 8%,
+      var(--color-border-subtle)
+    );
+}
+
+.services-sys-detail-block__eyebrow {
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 </style>

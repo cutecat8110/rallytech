@@ -1,4 +1,4 @@
-- Last updated: 2026-04-08
+- Last updated: 2026-04-15
 - Source URL: https://pentagoneng.com/about-us/
 
 ## Block Map
@@ -15,27 +15,27 @@
 ## Block 02 About Introduction [core]
 
 - About Us
-- Engineering-Led Automation Delivery
-- Rally Technology supports industrial clients with coordinated work across instrumentation, controls, commissioning, and plant data integration.
-- We bridge planning, field execution, and operational handover so teams can move from requirement to stable operation with fewer disconnects.
+- Automation Integration for Project and Site Delivery
+- Founded in 2014, Rally Technology focuses on automation control and monitoring systems integration. We support controls, instrumentation, commissioning, plant data, and customized system delivery across renewable energy, industrial, chemical, pharmaceutical, and EPC project environments.
+- Professionalism, promptness, teamwork, and integrity shape how we work. ISO 9001, ISO 45001, and WinCC OA Partner credentials support delivery that stays clearer to validate, hand over, and maintain.
 
 ## Block 03 Capability Grid [core]
 
-- Integrated Delivery Capabilities
+- Core Integration Capabilities
 - System Integration
 - I&E Services
-- Commissioning & FAT/SAT Support
-- SCADA / HMI Graphics
-- PLC / DCS Programming and Migration
-- PI Server / Historians
-- Network Design
-- One-Touch Experience Delivery
+- FAT / SAT
+- SCADA / HMI
+- PLC / DCS
+- PI / Historian
+- Industrial Networks
+- One-Touch Integration
 
 ## Block 04 Working Process [core]
 
 - Delivery Process
-- Our Working Process
-- 01 Requirements Alignment
+- How Work Moves Forward
+- 01 Scope Review
 - 02 Technical Planning
-- 03 Implementation
+- 03 Implementation Support
 - 04 Validation and Handover

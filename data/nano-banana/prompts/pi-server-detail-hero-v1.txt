@@ -1,0 +1,49 @@
+{
+  "asset_type": "pure industrial background plate",
+  "goal": "A high-end IT/OT server room aisle with an engineer checking a tablet. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/5.6",
+    "light_source": "cool, clinical data center overheads"
+  },
+  "spatial_positioning": [
+    "long symmetrical aisle of servers",
+    "engineer positioned off-center",
+    "negative space in the upper/right area for text"
+  ],
+  "color_restriction": "monochromatic silvers and blacks, bright blue/cyan data center lighting.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A pristine, climate-controlled IT/OT data center aisle housing industrial historian servers.",
+  "reality_anchors": [
+    "cold aisle containment architecture",
+    "raised flooring",
+    "clean enterprise aesthetic"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "avoid": [
+    "holographic floating data",
+    "cluttered server closets",
+    "dark spooky rooms",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  },
+  "commercial_constraints": [
+    "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
+  ]
+}

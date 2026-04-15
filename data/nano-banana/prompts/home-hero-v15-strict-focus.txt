@@ -1,0 +1,41 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "cinematic high-end corporate technology photography",
+  "business_context": "Rally Technology, high-end industrial automation and SCADA systems in Taiwan.",
+  "page_role": "Imposing, high-tension homepage hero background for centered text overlay.",
+  "goal": "Generate a high-impact, 'wow-factor' industrial hero image. THE MOST CRITICAL REQUIREMENT IS THAT THE PEOPLE MUST FACE INWARD TOWARD THE CENTER. THEIR GAZE AND BODY ORIENTATION MUST CREATE A VISUAL FUNNEL LEADING TO THE CENTER.",
+  "visual_message": "An elite engineering team focused on a unified mission. The entire facility radiates technical authority and collective purpose toward the central operational hub.",
+  "technical_signals": {
+    "lens": "35mm anamorphic lens for cinematic wide-screen perspective",
+    "aperture": "f/2.8 for cinematic depth and sharp technical focus",
+    "light_source": "High-contrast professional lighting. Naturalistic monitor glows (Teal) hitting matte graphite surfaces. Deep, rich shadows.",
+    "camera_angle": "Low-angle symmetrical perspective looking down a central technological corridor."
+  },
+  "human_scenario": {
+    "casting": "2 East Asian professional engineers (male and female).",
+    "action_and_orientation": "STRICT INWARD FOCUS. The person in the LEFT FOREGROUND must be facing the RIGHT-CENTER, pointing at or interacting with a central console. The person in the RIGHT BACKGROUND must be facing the LEFT-CENTER, looking toward the central monitor wall. THEIR BODIES AND EYES MUST NEVER FACE OUTWARD OR LOOK AT THE CAMERA. Every person's posture must naturally lead the viewer's eye TO THE DEAD CENTER of the image.",
+    "styling": "Modern professional engineering workwear. They are unposed scale cues, caught in a moment of collaborative focus on the center."
+  },
+  "composition": {
+    "layout": "Perfectly symmetrical architecture. The converging lines of consoles and screens must converge SHARPLY toward a deep, atmospheric center.",
+    "focal_structure": "The center is a deep, slightly darker void that creates a powerful stage for centered white headline text.",
+    "balance": "The two engineers break the architectural symmetry to add realism but reinforce the focal unity through their inward gaze."
+  },
+  "color_and_tone": "American hard-style. Heavy grays, blacks, and dark steel. Clean, sharp, and high-contrast. Realistic white balance.",
+  "material_notes": [
+    "Matte graphite metal surfaces",
+    "Detailed SCADA monitor arrays facing inward",
+    "Polished industrial floor with leading-line reflections toward the center"
+  ],
+  "avoid": [
+    "PEOPLE FACING THE EDGES",
+    "PEOPLE LOOKING OUTWARD",
+    "PEOPLE LOOKING AT CAMERA",
+    "SYMMETRICAL STIFF STANDING",
+    "TEXT",
+    "LOGOS",
+    "SCI-FI TINTS",
+    "BLUE/PURPLE NEON"
+  ],
+  "FINAL_REMINDER": "PEOPLE MUST FACE INWARD. ARCHITECTURE IS SYMMETRICAL. NO TEXT."
+}

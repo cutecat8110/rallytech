@@ -1,4 +1,4 @@
-- Last updated: 2026-04-08
+- Last updated: 2026-04-15
 - Source URL: https://pentagoneng.com/services/
 
 ## Block Map
@@ -8,31 +8,33 @@
 
 ## Block 01 Page Hero [core]
 
-- Services Overview
+- Services
+- Industrial Automation Service Scopes
+- Service scopes for renewable energy, industrial, chemical, pharmaceutical, and EPC projects, from operator graphics and field support to plant data, networks, and alarm workflows.
 
 ## Block 02 Service Cards Grid [core]
 
 - SCADA / HMI Graphics
-- Operator-facing visualization for monitoring, alarms, and process control.
-- Learn More
+- Operator-facing graphics for status, alarms, and control actions at the screen level.
+- View Details
 - I&E Services
-- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.
-- Learn More
+- Field and commissioning support for testing, startup, loop checks, and issue isolation.
+- View Details
 - PLC / DCS Programming and Migration
-- Control logic development, migration planning, and staged cutover support.
-- Learn More
+- Control logic upgrades, migration sequencing, and cutover support for running systems.
+- View Details
 - PI Server
-- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.
-- Learn More
+- PI infrastructure for plant data collection, contextualization, and daily use.
+- View Details
 - Historians
-- Long-term process-data retention for trend analysis, reporting, and traceability.
-- Learn More
+- Long-term process records for trends, reports, traceability, and analysis.
+- View Details
 - Network Design
-- Industrial communication planning for resilient, maintainable plant networks.
-- Learn More
+- Industrial network architecture that supports stable communications and maintainable expansion.
+- View Details
 - Remote Monitoring and Data
-- Remote visibility and data-continuity support across distributed operations.
-- Learn More
+- Remote visibility and data relay for distributed sites, assets, and backup paths.
+- View Details
 - Alarm Monitoring
-- Alarm strategy and notification workflows for safer, more stable operations.
-- Learn More
+- Alarm routing and escalation workflows that connect events to response.
+- View Details

@@ -1,0 +1,63 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, an industrial automation and control integration company",
+  "page_role": "Clean architectural background for a corporate website",
+  "goal": "Create a premium, panoramic industrial control room scene. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
+  "visual_message": "A state-of-the-art, fully integrated industrial control center operating seamlessly.",
+  "technical_signals": {
+    "lens": "35mm architectural photography for realistic perspective",
+    "aperture": "f/8 for deep depth of field",
+    "light_source": "controlled, cool-toned professional interior lighting",
+    "time_of_day": "neutral operational hours",
+    "motion_rule": "static, highly disciplined environment"
+  },
+  "spatial_positioning": [
+    "massive curved SCADA monitoring wall in the background",
+    "clean operator consoles in the midground",
+    "broad areas of empty architectural negative space for future content"
+  ],
+  "color_restriction": "deep charcoal, brushed steel, dark glass, with accents of cyan and operational green. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "matte metallic console surfaces",
+    "clean glass dividers",
+    "realistic screen illumination without neon bleed",
+    "NO HUD DECORATIONS ON SCREENS"
+  ],
+  "scene": "A panoramic, ultra-modern industrial control center featuring a massive wall of monitoring screens.",
+  "subject": "The massive scale and organized complexity of the control room.",
+  "reality_anchors": [
+    "authentic multi-screen SCADA monitor wall",
+    "heavy-duty industrial operator desks",
+    "architectural ceiling lighting"
+  ],
+  "composition": {
+    "format": "16:9",
+    "focal_structure": "symmetrical or off-center sweeping perspective. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
+    "camera": "eye-level architectural photography",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "lighting": {
+    "style": "premium architectural photography",
+    "mood": "authoritative, highly advanced",
+    "contrast": "controlled realistic contrast"
+  },
+  "avoid": [
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines",
+    "sci-fi spaceship bridges",
+    "holographic displays"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  }
+}

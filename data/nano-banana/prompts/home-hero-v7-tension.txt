@@ -1,0 +1,49 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, a high-end Taiwanese industrial automation and SCADA integration specialist",
+  "page_role": "High-tension flagship homepage background",
+  "goal": "Create a visually stunning, high-tension industrial background. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT OR BUTTONS.",
+  "visual_message": "The heartbeat of modern industry. A command center that feels massive, authoritative, and technologically advanced.",
+  "technical_signals": {
+    "lens": "35mm anamorphic-style architectural photography",
+    "aperture": "f/2.8 to create depth-of-field separation",
+    "light_source": "High-contrast low-key lighting; cool monitor glows reflecting off matte dark surfaces",
+    "time_of_day": "late night operation (maximum lighting tension)",
+    "motion_rule": "static but intense"
+  },
+  "spatial_positioning": [
+    "A massive, curved ultra-wide monitoring wall dominates the background with a slight low-angle tilt",
+    "Foreground features a sleek, dark console edge slightly out of focus to add depth",
+    "The right side remains a deep, atmospheric negative space zone",
+    "The room should feel vast, echoing with precision"
+  ],
+  "visual_standard": "Premium cinematic architectural photography, similar to a high-end technology film set",
+  "color_restriction": "Deep charcoal, obsidian, brushed midnight-blue steel; accented only by operational cyan and amber screen signals. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "Matte carbon-fiber textures",
+    "Polished glass partitions with subtle edge-light",
+    "Tactile physical hardware switches in the midground",
+    "NO PLASTIC AI SHEEN"
+  ],
+  "avoid": [
+    "flat lighting",
+    "symmetrical office layouts",
+    "generic stock-photo brightness",
+    "embedded text",
+    "buttons",
+    "slogans",
+    "HUD decorations",
+    "fake headlines",
+    "unprofessional messy desks",
+    "logos",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens"
+  ],
+  "composition": {
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  }
+}

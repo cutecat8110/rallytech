@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage mission tab square image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
   "page_role": "Homepage Mission square image for the mission state",
-  "goal": "Create a photorealistic square image that reinforces steady engineering execution, system discipline, and credible industrial work",
+  "goal": "Create a photorealistic square image that reinforces steady engineering execution, system discipline, and credible industrial work. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Emphasize collaborative work by East Asian professionals in soft laboratory lighting. Authentic and approachable execution.",
   "visual_message": "A focused engineer or technician interaction with equipment that feels capable, calm, and operational",
   "recipe_ids": [
     "operator-as-scale-only",
@@ -28,7 +28,7 @@
     "image remains readable at small square size"
   ],
   "visual_standard": "premium commercial engineering subject photography",
-  "color_restriction": "restrained industrial blues, greys, metal tones, and subtle safety accents only",
+  "color_restriction": "restrained industrial blues, greys, metal tones, and subtle safety accents only. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "real PPE and workwear textures",
     "believable control hardware",
@@ -51,7 +51,7 @@
     "cropping": "designed for a small square website image"
   },
   "lighting": {
-    "style": "premium commercial engineering photography",
+    "style": "soft laboratory lighting",
     "mood": "steady, reliable, execution-focused",
     "contrast": "controlled and realistic",
     "surface_behavior": "real material response, no artificial glow"
@@ -69,6 +69,19 @@
     "headline text or symbols",
     "fake HUD overlays",
     "fashion-editorial posing",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "collaborative, East Asian professionals, authentic and approachable execution with soft laboratory lighting"
+  }
 }

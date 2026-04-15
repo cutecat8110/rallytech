@@ -1,0 +1,44 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "pure photographic industrial background plate",
+  "business_context": "Rally Technology, a high-end Taiwanese industrial automation specialist. Brand color: Technical Teal and Graphite.",
+  "page_role": "Symmetrical, high-tension flagship homepage background plate",
+  "goal": "Create a visually stunning, symmetrical industrial background that feels grand (氣派) and professional. THIS IS A PURE BACKGROUND PLATE. DO NOT RENDER ANY TEXT OR TYPOGRAPHY.",
+  "visual_message": "An elite, mission-critical industrial command center. Symmetrical, precise, 'American hard-style' engineering vibe. High-contrast cinematic atmosphere.",
+  "technical_signals": {
+    "lens": "35mm anamorphic architectural photography",
+    "aperture": "f/2.8 for cinematic depth",
+    "light_source": "High-contrast chiaroscuro. Strong volumetric teal glows from massive SCADA walls; deep graphite shadows",
+    "time_of_day": "operational midnight mode",
+    "motion_rule": "static but high-tension"
+  },
+  "composition": {
+    "layout": "Perfectly symmetrical central perspective",
+    "focal_structure": "A grand, curved monitoring wall forming a symmetrical frame. The center of the image is a deep, atmospheric, dark void to support centered white text overlay later in CSS.",
+    "camera": "Eye-level, straight-on wide shot",
+    "hero_safe_area": "Center-weighted DARK negative space. No visual clutter in the center."
+  },
+  "color_restriction": "Strictly Rally Technology palette: Technical Teal, Cyan-Green, Graphite, and Obsidian. NO warm colors. NO purple.",
+  "material_notes": [
+    "Heavy matte graphite steel",
+    "Brushed aluminum",
+    "Sharp edge-lighting on hardware",
+    "Dense monitor pixel detail (realistic charts/data, NO generic HUD overlays)"
+  ],
+  "avoid": [
+    "ANY FORM OF TEXT",
+    "LETTERS",
+    "ALPHABETS",
+    "NUMBERS",
+    "LOGOS",
+    "SLOGANS",
+    "BUTTONS",
+    "USER INTERFACE ELEMENTS",
+    "WEBSITE OVERLAYS",
+    "asymmetrical focal points",
+    "sci-fi spaceship aesthetics",
+    "warm cinematic orange",
+    "watermarks"
+  ],
+  "FINAL_REMINDER": "GENERATE A PURE IMAGE ONLY. NO TEXT AT ALL."
+}

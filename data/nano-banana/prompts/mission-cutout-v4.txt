@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage mission cutout image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
   "page_role": "Homepage Mission section fixed cutout image",
-  "goal": "Create a photorealistic engineering subject image with a strong silhouette, believable industrial context, and clean commercial neutrality for later cutout treatment",
+  "goal": "Create a photorealistic engineering subject image with a strong silhouette, believable industrial context, and clean commercial neutrality for later cutout treatment. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Emphasize collaborative work by East Asian professionals in soft laboratory lighting. Authentic and approachable execution.",
   "visual_message": "An East Asian engineer in a real industrial setting, framed to feel premium and grounded without looking like a branded stock portrait",
   "recipe_ids": [
     "technical-signal-stack",
@@ -11,7 +11,7 @@
     "artifact-rescue"
   ],
   "human_casting": {
-    "rule": "the visible subject must read as an East Asian professional from a Taiwan-based engineering team",
+    "rule": "collaborative, East Asian professionals, authentic and approachable execution with soft laboratory lighting",
     "styling": "modern Taiwanese industrial workwear or PPE, practical and understated",
     "guardrails": "avoid caricature, costume cues, or exaggerated ethnic markers"
   },
@@ -33,7 +33,7 @@
     "silhouette remains clean enough for later cutout treatment"
   ],
   "visual_standard": "premium commercial engineering portrait photography",
-  "color_restriction": "restrained industrial neutrals, workwear blues, muted metal tones, and realistic skin tones",
+  "color_restriction": "restrained industrial neutrals, workwear blues, muted metal tones, and realistic skin tones. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "real workwear fabrics",
     "believable PPE or engineering accessories if present",
@@ -56,7 +56,7 @@
     "cropping": "designed for later masking or breakout treatment"
   },
   "lighting": {
-    "style": "premium commercial engineering portrait photography",
+    "style": "soft laboratory lighting",
     "mood": "capable, steady, trustworthy",
     "contrast": "controlled and clear enough for subject separation",
     "surface_behavior": "real fabric, skin, and equipment texture response"
@@ -76,6 +76,16 @@
     "visible company logo",
     "readable tablet or document content",
     "beauty-retouched skin",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

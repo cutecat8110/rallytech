@@ -77,42 +77,40 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       notes: 'Current approved homepage Hero asset.'
     },
     liveNano: {
-      src: '/images/generated/home/hero/home-hero-20260409081229380-0f5cak.jpg',
+      src: '/images/generated/home/hero/home-hero-20260415053535242-5lupkr.jpg',
       alt: '',
       label: 'Nano Hero Candidate',
-      candidateId: 'home-hero-20260409081229380-0f5cak',
+      candidateId: 'home-hero-20260415053535242-5lupkr',
       model: 'gemini-3-pro-image-preview',
       promptId: 'home-hero-v6',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/hero-simulator-control-room.jpg',
-      createdAt: '2026-04-09T08:12:29.392Z',
+      sourceReference: null,
+      createdAt: '2026-04-15T05:35:35.254Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Promoted after desktop and mobile homepage compare: restores stronger industrial control-room credibility, keeps the centered headline-safe zone intact, and outperforms stock on B2B trust.'
+      notes: 'Strict Inward Focus v15 - candidate 2'
     },
     latestCandidate: {
-      src: '/images/generated/home/hero/home-hero-20260409081229380-0f5cak.jpg',
+      src: '/images/generated/home/hero/home-hero-20260415053609749-ge1rmc.jpg',
       alt: '',
       label: 'Nano Hero Candidate',
-      candidateId: 'home-hero-20260409081229380-0f5cak',
+      candidateId: 'home-hero-20260415053609749-ge1rmc',
       model: 'gemini-3-pro-image-preview',
       promptId: 'home-hero-v6',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/hero-simulator-control-room.jpg',
-      createdAt: '2026-04-09T08:12:29.392Z',
+      sourceReference: null,
+      createdAt: '2026-04-15T05:36:09.761Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Promoted after desktop and mobile homepage compare: restores stronger industrial control-room credibility, keeps the centered headline-safe zone intact, and outperforms stock on B2B trust.'
+      notes: 'Strict Inward Focus v15 - candidate 3'
     }
   },
   'about-primary': {
     slot: 'about-primary',
-    liveSource: 'stock',
+    liveSource: 'nano',
     stock: {
       src: '/images/stock/home/about-glass-office-towers.jpg',
-      alt: '現代高科技建築外觀',
+      alt: 'Ã§ÂÂ¾Ã¤Â»Â£Ã©Â«ËœÃ§Â§â€˜Ã¦Å â‚¬Ã¥Â»ÂºÃ§Â¯â€°Ã¥Â¤â€“Ã¨Â§â‚¬',
       label: 'About Primary Stock Asset',
       candidateId: null,
       model: null,
@@ -124,29 +122,43 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       notes:
         'Canonical stock placeholder for the About section primary facade image role.'
     },
-    liveNano: null,
-    latestCandidate: {
-      src: '/images/generated/home/about-primary/about-primary-20260402092007659-61uz1p.jpg',
+    liveNano: {
+      src: '/images/generated/home/about-primary/about-primary-20260414095218355-ew0j7u.jpg',
       alt: '',
       label: 'Nano About Primary Candidate',
-      candidateId: 'about-primary-20260402092007659-61uz1p',
+      candidateId: 'about-primary-20260414095218355-ew0j7u',
       model: 'gemini-3-pro-image-preview',
       promptId: 'about-primary-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/about-glass-office-towers.jpg',
-      createdAt: '2026-04-02T09:20:07.776Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:52:18.366Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+    },
+    latestCandidate: {
+      src: '/images/generated/home/about-primary/about-primary-20260414095218355-ew0j7u.jpg',
+      alt: '',
+      label: 'Nano About Primary Candidate',
+      candidateId: 'about-primary-20260414095218355-ew0j7u',
+      model: 'gemini-3-pro-image-preview',
+      promptId: 'about-primary-v2',
+      source: 'Nano Banana',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:52:18.366Z',
+      licenseNote:
+        'Generated with Gemini image generation (SynthID watermark).',
+      notes:
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     }
   },
   'about-detail': {
     slot: 'about-detail',
-    liveSource: 'stock',
+    liveSource: 'nano',
     stock: {
       src: '/images/stock/home/about-glass-facade-detail.jpg',
-      alt: '現代玻璃立面細節',
+      alt: 'Ã§ÂÂ¾Ã¤Â»Â£Ã§Å½Â»Ã§â€™Æ’Ã§Â«â€¹Ã©ÂÂ¢Ã§Â´Â°Ã§Â¯â‚¬',
       label: 'About Detail Stock Asset',
       candidateId: null,
       model: null,
@@ -159,21 +171,35 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       notes:
         'Canonical stock placeholder for the About section secondary facade-detail image role.'
     },
-    liveNano: null,
-    latestCandidate: {
-      src: '/images/generated/home/about-detail/about-detail-20260402092045197-5w3n8s.jpg',
+    liveNano: {
+      src: '/images/generated/home/about-detail/about-detail-20260414095251649-u4bhzb.jpg',
       alt: '',
       label: 'Nano About Detail Candidate',
-      candidateId: 'about-detail-20260402092045197-5w3n8s',
+      candidateId: 'about-detail-20260414095251649-u4bhzb',
       model: 'gemini-3-pro-image-preview',
       promptId: 'about-detail-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/about-glass-facade-detail.jpg',
-      createdAt: '2026-04-02T09:20:45.222Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:52:51.662Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Pro baseline round 1 for homepage-wide compare, calibrated v2 prompt'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+    },
+    latestCandidate: {
+      src: '/images/generated/home/about-detail/about-detail-20260414095251649-u4bhzb.jpg',
+      alt: '',
+      label: 'Nano About Detail Candidate',
+      candidateId: 'about-detail-20260414095251649-u4bhzb',
+      model: 'gemini-3-pro-image-preview',
+      promptId: 'about-detail-v2',
+      source: 'Nano Banana',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:52:51.662Z',
+      licenseNote:
+        'Generated with Gemini image generation (SynthID watermark).',
+      notes:
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     }
   },
   'services-surface': {
@@ -181,7 +207,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     liveSource: 'nano',
     stock: {
       src: '/images/stock/home/services-industrial-panel-bg.jpg',
-      alt: '工業面板背景',
+      alt: 'Ã¥Â·Â¥Ã¦Â¥Â­Ã©ÂÂ¢Ã¦ÂÂ¿Ã¨Æ’Å’Ã¦â„¢Â¯',
       label: 'Services Surface Stock Asset',
       candidateId: null,
       model: null,
@@ -195,34 +221,34 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         'Canonical stock placeholder for the Services section background surface role.'
     },
     liveNano: {
-      src: '/images/generated/home/services-surface/services-surface-20260402092127038-o18bcu.jpg',
+      src: '/images/generated/home/services-surface/services-surface-20260414095323038-stbd7u.jpg',
       alt: '',
       label: 'Nano Services Surface Candidate',
-      candidateId: 'services-surface-20260402092127038-o18bcu',
+      candidateId: 'services-surface-20260414095323038-stbd7u',
       model: 'gemini-3-pro-image-preview',
       promptId: 'services-surface-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/services-industrial-panel-bg.jpg',
-      createdAt: '2026-04-02T09:21:27.074Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:53:23.047Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after homepage compare: lower-distraction industrial surface improves service-card readability and section consistency better than the stock image.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     },
     latestCandidate: {
-      src: '/images/generated/home/services-surface/services-surface-20260402092127038-o18bcu.jpg',
+      src: '/images/generated/home/services-surface/services-surface-20260414095323038-stbd7u.jpg',
       alt: '',
       label: 'Nano Services Surface Candidate',
-      candidateId: 'services-surface-20260402092127038-o18bcu',
+      candidateId: 'services-surface-20260414095323038-stbd7u',
       model: 'gemini-3-pro-image-preview',
       promptId: 'services-surface-v2',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/services-industrial-panel-bg.jpg',
-      createdAt: '2026-04-02T09:21:27.074Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:53:23.047Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after homepage compare: lower-distraction industrial surface improves service-card readability and section consistency better than the stock image.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     }
   },
   'ote-background': {
@@ -230,7 +256,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     liveSource: 'nano',
     stock: {
       src: '/images/stock/home/ote-control-room-bg.jpg',
-      alt: '整合監控室背景',
+      alt: 'Ã¦â€¢Â´Ã¥ÂË†Ã§â€ºÂ£Ã¦Å½Â§Ã¥Â®Â¤Ã¨Æ’Å’Ã¦â„¢Â¯',
       label: 'OTE Background Stock Asset',
       candidateId: null,
       model: null,
@@ -243,34 +269,34 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         'Canonical stock placeholder for the One-Touch Experience section background image role.'
     },
     liveNano: {
-      src: '/images/generated/home/ote-background/ote-background-20260409082217560-n440zv.jpg',
+      src: '/images/generated/home/ote-background/ote-background-20260414095354979-oqxa07.jpg',
       alt: '',
       label: 'Nano OTE Background Candidate',
-      candidateId: 'ote-background-20260409082217560-n440zv',
+      candidateId: 'ote-background-20260414095354979-oqxa07',
       model: 'gemini-3-pro-image-preview',
       promptId: 'ote-background-v5',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/ote-control-room-bg.jpg',
-      createdAt: '2026-04-09T08:22:17.571Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:53:54.990Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after v5 rerun and desktop/mobile compare: separates plant-data backbone vocabulary from the hero, preserves clean heading and list safe areas, and avoids visible embedded typography in section use.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     },
     latestCandidate: {
-      src: '/images/generated/home/ote-background/ote-background-20260409082217560-n440zv.jpg',
+      src: '/images/generated/home/ote-background/ote-background-20260414095354979-oqxa07.jpg',
       alt: '',
       label: 'Nano OTE Background Candidate',
-      candidateId: 'ote-background-20260409082217560-n440zv',
+      candidateId: 'ote-background-20260414095354979-oqxa07',
       model: 'gemini-3-pro-image-preview',
       promptId: 'ote-background-v5',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/ote-control-room-bg.jpg',
-      createdAt: '2026-04-09T08:22:17.571Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:53:54.990Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after v5 rerun and desktop/mobile compare: separates plant-data backbone vocabulary from the hero, preserves clean heading and list safe areas, and avoids visible embedded typography in section use.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     }
   },
   'mission-square': {
@@ -296,34 +322,34 @@ export const homePageImageRegistry: HomePageImageRegistry = {
           notes: 'Current approved stock image for the mission tab state.'
         },
         liveNano: {
-          src: '/images/generated/home/mission-square/mission/mission-square-mission-20260402094727279-eey1ly.jpg',
+          src: '/images/generated/home/mission-square/mission/mission-square-mission-20260414095425066-u3vzh9.jpg',
           alt: '',
           label: 'Mission Square / Mission',
-          candidateId: 'mission-square-mission-20260402094727279-eey1ly',
+          candidateId: 'mission-square-mission-20260414095425066-u3vzh9',
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-mission-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/stock/home/mission-tab-mission.jpg',
-          createdAt: '2026-04-02T09:47:27.304Z',
+          sourceReference: null,
+          createdAt: '2026-04-14T09:54:25.077Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
           notes:
-            'Promoted after homepage compare: mission state reads more clearly at small square size and better matches the execution-focused copy than stock.'
+            'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
         },
         latestCandidate: {
-          src: '/images/generated/home/mission-square/mission/mission-square-mission-20260402094727279-eey1ly.jpg',
+          src: '/images/generated/home/mission-square/mission/mission-square-mission-20260414095425066-u3vzh9.jpg',
           alt: '',
           label: 'Mission Square / Mission',
-          candidateId: 'mission-square-mission-20260402094727279-eey1ly',
+          candidateId: 'mission-square-mission-20260414095425066-u3vzh9',
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-mission-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/stock/home/mission-tab-mission.jpg',
-          createdAt: '2026-04-02T09:47:27.304Z',
+          sourceReference: null,
+          createdAt: '2026-04-14T09:54:25.077Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
           notes:
-            'Promoted after homepage compare: mission state reads more clearly at small square size and better matches the execution-focused copy than stock.'
+            'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
         }
       },
       'join-us': {
@@ -345,41 +371,41 @@ export const homePageImageRegistry: HomePageImageRegistry = {
           notes: 'Current approved stock image for the Join Us tab state.'
         },
         liveNano: {
-          src: '/images/generated/home/mission-square/join-us/mission-square-join-us-20260402094759653-wxiyj9.jpg',
+          src: '/images/generated/home/mission-square/join-us/mission-square-join-us-20260414095456057-vz9w3t.jpg',
           alt: '',
           label: 'Mission Square / Join Us',
-          candidateId: 'mission-square-join-us-20260402094759653-wxiyj9',
+          candidateId: 'mission-square-join-us-20260414095456057-vz9w3t',
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-join-us-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/stock/home/mission-tab-join-us.jpg',
-          createdAt: '2026-04-02T09:47:59.685Z',
+          sourceReference: null,
+          createdAt: '2026-04-14T09:54:56.068Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
           notes:
-            'Promoted after homepage compare: join-us state has clearer collaboration intent and stronger Taiwan-based engineering context than stock.'
+            'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
         },
         latestCandidate: {
-          src: '/images/generated/home/mission-square/join-us/mission-square-join-us-20260402094759653-wxiyj9.jpg',
+          src: '/images/generated/home/mission-square/join-us/mission-square-join-us-20260414095456057-vz9w3t.jpg',
           alt: '',
           label: 'Mission Square / Join Us',
-          candidateId: 'mission-square-join-us-20260402094759653-wxiyj9',
+          candidateId: 'mission-square-join-us-20260414095456057-vz9w3t',
           model: 'gemini-3-pro-image-preview',
           promptId: 'mission-square-join-us-v3',
           source: 'Nano Banana',
-          sourceReference: '/images/stock/home/mission-tab-join-us.jpg',
-          createdAt: '2026-04-02T09:47:59.685Z',
+          sourceReference: null,
+          createdAt: '2026-04-14T09:54:56.068Z',
           licenseNote:
             'Generated with Gemini image generation (SynthID watermark).',
           notes:
-            'Promoted after homepage compare: join-us state has clearer collaboration intent and stronger Taiwan-based engineering context than stock.'
+            'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
         }
       }
     }
   },
   'mission-cutout': {
     slot: 'mission-cutout',
-    liveSource: 'stock',
+    liveSource: 'nano',
     stock: {
       src: '/images/stock/home/mission-engineer-cutout.jpg',
       alt: '',
@@ -394,21 +420,35 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       licenseNote: 'Pexels License',
       notes: 'Current approved stock image for the mission cutout.'
     },
-    liveNano: null,
-    latestCandidate: {
-      src: '/images/generated/home/mission-cutout/mission-cutout-20260402094844834-ck4k1q.jpg',
+    liveNano: {
+      src: '/images/generated/home/mission-cutout/mission-cutout-20260414095532473-gkr1ql.jpg',
       alt: '',
       label: 'Nano Mission Cutout Candidate',
-      candidateId: 'mission-cutout-20260402094844834-ck4k1q',
+      candidateId: 'mission-cutout-20260414095532473-gkr1ql',
       model: 'gemini-3-pro-image-preview',
       promptId: 'mission-cutout-v4',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/mission-engineer-cutout.jpg',
-      createdAt: '2026-04-02T09:48:44.873Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:55:32.485Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Soft-go after homepage compare: cleaner East Asian casting and silhouette than stock, but keep stock live for now because the pose still feels slightly presentation-led versus field-delivery-led.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+    },
+    latestCandidate: {
+      src: '/images/generated/home/mission-cutout/mission-cutout-20260414095532473-gkr1ql.jpg',
+      alt: '',
+      label: 'Nano Mission Cutout Candidate',
+      candidateId: 'mission-cutout-20260414095532473-gkr1ql',
+      model: 'gemini-3-pro-image-preview',
+      promptId: 'mission-cutout-v4',
+      source: 'Nano Banana',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:55:32.485Z',
+      licenseNote:
+        'Generated with Gemini image generation (SynthID watermark).',
+      notes:
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     }
   },
   'connector-image': {
@@ -416,7 +456,7 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     liveSource: 'nano',
     stock: {
       src: '/images/stock/home/footer-engineering-team.jpg',
-      alt: '工程團隊於實驗環境協作討論',
+      alt: 'Ã¥Â·Â¥Ã§Â¨â€¹Ã¥Å“ËœÃ©Å¡Å Ã¦â€“Â¼Ã¥Â¯Â¦Ã©Â©â€”Ã§â€™Â°Ã¥Â¢Æ’Ã¥Ââ€Ã¤Â½Å“Ã¨Â¨Å½Ã¨Â«â€“',
       label: 'Connector Image Stock Asset',
       candidateId: null,
       model: null,
@@ -430,34 +470,224 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         'Canonical stock placeholder for the footer connector breakout image role.'
     },
     liveNano: {
-      src: '/images/generated/home/connector-image/connector-image-20260402094936217-ylj9zz.jpg',
+      src: '/images/generated/home/connector-image/connector-image-20260414095600902-dvpnai.jpg',
       alt: '',
       label: 'Nano Connector Image Candidate',
-      candidateId: 'connector-image-20260402094936217-ylj9zz',
+      candidateId: 'connector-image-20260414095600902-dvpnai',
       model: 'gemini-3-pro-image-preview',
       promptId: 'connector-image-v3',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/footer-engineering-team.jpg',
-      createdAt: '2026-04-02T09:49:36.257Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:56:00.913Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after homepage compare: collaboration scene fits the footer CTA better and adds stronger local engineering-team context than stock.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     },
     latestCandidate: {
-      src: '/images/generated/home/connector-image/connector-image-20260402094936217-ylj9zz.jpg',
+      src: '/images/generated/home/connector-image/connector-image-20260414095600902-dvpnai.jpg',
       alt: '',
       label: 'Nano Connector Image Candidate',
-      candidateId: 'connector-image-20260402094936217-ylj9zz',
+      candidateId: 'connector-image-20260414095600902-dvpnai',
       model: 'gemini-3-pro-image-preview',
       promptId: 'connector-image-v3',
       source: 'Nano Banana',
-      sourceReference: '/images/stock/home/footer-engineering-team.jpg',
-      createdAt: '2026-04-02T09:49:36.257Z',
+      sourceReference: null,
+      createdAt: '2026-04-14T09:56:00.913Z',
       licenseNote:
         'Generated with Gemini image generation (SynthID watermark).',
       notes:
-        'Promoted after homepage compare: collaboration scene fits the footer CTA better and adds stronger local engineering-team context than stock.'
+        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+    }
+  },
+  'about-process-step': {
+    slot: 'about-process-step',
+    liveSource: 'nano',
+    states: {
+      '01': {
+        slot: 'about-process-step',
+        state: '01',
+        liveSource: 'nano',
+        stock: {
+          src: '/images/stock/about/process-step-01.jpg',
+          alt: '',
+          label: 'Process Step 01 Stock',
+          candidateId: null,
+          model: null,
+          promptId: null,
+          source: 'Placeholder',
+          sourceReference: null,
+          createdAt: null,
+          licenseNote: null,
+          notes: null
+        },
+        liveNano: {
+          src: '/images/generated/home/about-process/01/about-process-step-01-20260415082126414-q4m8bi.jpg',
+          alt: '',
+          label: 'Process Step 01: Scope',
+          candidateId: 'about-process-step-01-20260415082126414-q4m8bi',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-01-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:21:26.422Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Scope'
+        },
+        latestCandidate: {
+          src: '/images/generated/home/about-process/01/about-process-step-01-20260415082126414-q4m8bi.jpg',
+          alt: '',
+          label: 'Process Step 01: Scope',
+          candidateId: 'about-process-step-01-20260415082126414-q4m8bi',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-01-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:21:26.422Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Scope'
+        }
+      },
+      '02': {
+        slot: 'about-process-step',
+        state: '02',
+        liveSource: 'nano',
+        stock: {
+          src: '/images/stock/about/process-step-02.jpg',
+          alt: '',
+          label: 'Process Step 02 Stock',
+          candidateId: null,
+          model: null,
+          promptId: null,
+          source: 'Placeholder',
+          sourceReference: null,
+          createdAt: null,
+          licenseNote: null,
+          notes: null
+        },
+        liveNano: {
+          src: '/images/generated/home/about-process/02/about-process-step-02-20260415082207544-7jig6x.jpg',
+          alt: '',
+          label: 'Process Step 02: Planning',
+          candidateId: 'about-process-step-02-20260415082207544-7jig6x',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-02-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:22:07.552Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Planning'
+        },
+        latestCandidate: {
+          src: '/images/generated/home/about-process/02/about-process-step-02-20260415082207544-7jig6x.jpg',
+          alt: '',
+          label: 'Process Step 02: Planning',
+          candidateId: 'about-process-step-02-20260415082207544-7jig6x',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-02-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:22:07.552Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Planning'
+        }
+      },
+      '03': {
+        slot: 'about-process-step',
+        state: '03',
+        liveSource: 'nano',
+        stock: {
+          src: '/images/stock/about/process-step-03.jpg',
+          alt: '',
+          label: 'Process Step 03 Stock',
+          candidateId: null,
+          model: null,
+          promptId: null,
+          source: 'Placeholder',
+          sourceReference: null,
+          createdAt: null,
+          licenseNote: null,
+          notes: null
+        },
+        liveNano: {
+          src: '/images/generated/home/about-process/03/about-process-step-03-20260415082241973-zroesd.jpg',
+          alt: '',
+          label: 'Process Step 03: Execution',
+          candidateId: 'about-process-step-03-20260415082241973-zroesd',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-03-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:22:41.981Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Execution'
+        },
+        latestCandidate: {
+          src: '/images/generated/home/about-process/03/about-process-step-03-20260415082241973-zroesd.jpg',
+          alt: '',
+          label: 'Process Step 03: Execution',
+          candidateId: 'about-process-step-03-20260415082241973-zroesd',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-03-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:22:41.981Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Execution'
+        }
+      },
+      '04': {
+        slot: 'about-process-step',
+        state: '04',
+        liveSource: 'nano',
+        stock: {
+          src: '/images/stock/about/process-step-04.jpg',
+          alt: '',
+          label: 'Process Step 04 Stock',
+          candidateId: null,
+          model: null,
+          promptId: null,
+          source: 'Placeholder',
+          sourceReference: null,
+          createdAt: null,
+          licenseNote: null,
+          notes: null
+        },
+        liveNano: {
+          src: '/images/generated/home/about-process/04/about-process-step-04-20260415082307517-dfiew8.jpg',
+          alt: '',
+          label: 'Process Step 04: Handover',
+          candidateId: 'about-process-step-04-20260415082307517-dfiew8',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-04-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:23:07.528Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Handover'
+        },
+        latestCandidate: {
+          src: '/images/generated/home/about-process/04/about-process-step-04-20260415082307517-dfiew8.jpg',
+          alt: '',
+          label: 'Process Step 04: Handover',
+          candidateId: 'about-process-step-04-20260415082307517-dfiew8',
+          model: 'gemini-3.1-flash-image-preview',
+          promptId: 'about-process-step-04-v1',
+          source: 'Nano Banana',
+          sourceReference: null,
+          createdAt: '2026-04-15T08:23:07.528Z',
+          licenseNote:
+            'Generated with Gemini image generation (SynthID watermark).',
+          notes: 'Modern Symbolic v19 - Handover'
+        }
+      }
     }
   }
 } as HomePageImageRegistry
@@ -466,20 +696,26 @@ export function getHomePageImageEntry(
   slot: HomePageSingleImageSlotKey
 ): HomePageImageSlotRegistry
 export function getHomePageImageEntry(
-  slot: 'mission-square',
+  slot: HomePageStateAwareSlotKey,
   state: HomePageImageStateKey
 ): HomePageImageSlotRegistry
 export function getHomePageImageEntry(
   slot: HomePageImageSlotKey,
   state?: HomePageImageStateKey
 ): HomePageImageSlotRegistry {
-  if (slot === 'mission-square') {
+  const stateAwareSlots: HomePageStateAwareSlotKey[] = [
+    'mission-square',
+    'about-process-step'
+  ]
+
+  if (stateAwareSlots.includes(slot as HomePageStateAwareSlotKey)) {
     if (!state) {
-      throw new Error('mission-square requires state.')
+      throw new Error('Slot "' + slot + '" requires state.')
     }
 
-    return homePageImageRegistry['mission-square'].states[state]
+    return (homePageImageRegistry[slot as HomePageStateAwareSlotKey] as any)
+      .states[state]
   }
 
-  return homePageImageRegistry[slot]
+  return homePageImageRegistry[slot as HomePageSingleImageSlotKey]
 }

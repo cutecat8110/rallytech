@@ -3,10 +3,14 @@ import {
   homePageImageRegistry,
   type HomePageImageSourceKey
 } from '~/utils/home-page-image-registry'
+import {
+  servicePageImageRegistry,
+  servicesOverviewHeroRegistry
+} from '~/utils/service-page-image-registry'
 
 const HOME_PAGE_IMAGE_COOKIE = 'rallytech-home-page-image-mode'
 
-function collectLatestCandidates() {
+function collectHomeLatestCandidates() {
   return [
     homePageImageRegistry['home-hero'].latestCandidate,
     homePageImageRegistry['about-primary'].latestCandidate,
@@ -20,8 +24,16 @@ function collectLatestCandidates() {
   ]
 }
 
+function collectServiceLatestCandidates() {
+  return [
+    servicesOverviewHeroRegistry.latestCandidate,
+    ...Object.values(servicePageImageRegistry).flatMap((roleRegistry) =>
+      Object.values(roleRegistry).map((entry) => entry.latestCandidate)
+    )
+  ]
+}
+
 export function useHomePageImageMode() {
-  const route = useRoute()
   const preferredMode = useCookie<HomePageImageSourceKey>(
     HOME_PAGE_IMAGE_COOKIE,
     {
@@ -30,20 +42,15 @@ export function useHomePageImageMode() {
     }
   )
 
-  const normalizedPath = computed(() => route.path.replace(/\/$/, '') || '/')
-  const isHomepage = computed(() =>
-    ['/', '/en', '/source'].includes(normalizedPath.value)
-  )
   const hasAnyLatestCandidate = computed(() =>
-    collectLatestCandidates().some((candidate) => candidate !== null)
+    [
+      ...collectHomeLatestCandidates(),
+      ...collectServiceLatestCandidates()
+    ].some((candidate) => candidate !== null)
   )
-  const isDevToggleVisible = computed(() => import.meta.dev && isHomepage.value)
+  const isImageToggleVisible = computed(() => true)
 
   const activeMode = computed<HomePageImageSourceKey>(() => {
-    if (!import.meta.dev || !isHomepage.value) {
-      return 'stock'
-    }
-
     return preferredMode.value === 'nano' && hasAnyLatestCandidate.value
       ? 'nano'
       : 'stock'
@@ -75,8 +82,8 @@ export function useHomePageImageMode() {
   return {
     activeMode,
     hasAnyLatestCandidate,
-    isDevToggleVisible,
-    isHomepage,
+    isDevToggleVisible: isImageToggleVisible,
+    isImageToggleVisible,
     isNanoEnabled,
     preferredMode,
     setPreferredMode

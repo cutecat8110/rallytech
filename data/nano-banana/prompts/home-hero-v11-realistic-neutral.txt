@@ -1,0 +1,41 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "high-end architectural interior photography",
+  "business_context": "Rally Technology, industrial automation. Target: High-trust B2B engineering.",
+  "page_role": "Realistic, grand, symmetrical background plate for centered text overlay.",
+  "goal": "Create a photorealistic, grand-scale industrial command center using NEUTRAL commercial photography colors. THE IMAGE MUST LOOK REAL AND GROUNDED, NOT SCI-FI OR ARTIFICIALLY TINTED.",
+  "visual_message": "A mission-critical facility (like a modern power grid center or high-end data center). Symmetrical, imposing, clean, and professional. American hard-style architectural aesthetic.",
+  "technical_signals": {
+    "lens": "24mm to 35mm wide-angle architectural photography",
+    "aperture": "f/8 for deep focus and clarity across the whole frame",
+    "light_source": "Neutral professional interior lighting (4000K-5000K). Realistic white balance. No dramatic color gels.",
+    "time_of_day": "bright, clear daytime operational mode",
+    "camera_height": "Eye-level, perfectly straight horizontal and vertical lines"
+  },
+  "composition": {
+    "layout": "Perfectly symmetrical central perspective",
+    "focal_structure": "A wide, central aisle looking deep into the facility. Flanked by massive, realistic monitor walls or industrial consoles. The center should be clean and have a sense of vast depth to support centered white text overlay.",
+    "camera": "Straight-on architectural shot. No Dutch angle. No fisheye."
+  },
+  "color_palette": "Realistic and Neutral. Grays, whites, blacks, and subtle metallic tones. Realistic screen glows (not tinting the whole room). LET THE WEBSITE OVERLAY HANDLE THE BRAND COLORS.",
+  "material_notes": [
+    "Matte gray steel consoles",
+    "Polished industrial flooring",
+    "Glass and aluminum structures",
+    "REALISTIC monitor displays (charts, SCADA diagrams, code, or network maps; NO GLOWING HUDs)"
+  ],
+  "avoid": [
+    "SCI-FI",
+    "CYBERPUNK",
+    "NEON LIGHTS",
+    "COLORED LIGHT BEAMS",
+    "ARTIFICIAL BLUE/TEAL TINTING",
+    "HUD DECORATIONS",
+    "FLOATING ELEMENTS",
+    "TEXT",
+    "LETTERS",
+    "LOGOS",
+    "WATERMARKS"
+  ],
+  "FINAL_REMINDER": "GENERATE A REAL PHOTOGRAPH LOOK. NEUTRAL COLORS ONLY. NO TEXT."
+}

@@ -1,0 +1,42 @@
+{
+  "asset_type": "service detail feature image",
+  "goal": "Over-the-shoulder shot of a laptop screen showing ladder logic or function block diagrams. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/2.8",
+    "light_source": "screen illuminating the scene"
+  },
+  "spatial_positioning": [
+    "laptop screen dominates midground",
+    "blurred PLC hardware in background"
+  ],
+  "color_restriction": "cool blue/grey software UI, dark background.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "matte laptop screen",
+    "blurred industrial metals in background"
+  ],
+  "scene": "Close-up over the shoulder view of specialized PLC programming software (ladder logic) actively being edited.",
+  "reality_anchors": [
+    "authentic-looking automation software UI (nodes, logic gates)",
+    "industrial context"
+  ],
+  "composition": {
+    "format": "4:3",
+    "focal_structure": "focus heavily on the software interface on the screen"
+  },
+  "avoid": [
+    "matrix-style green code",
+    "generic HTML/web code",
+    "consumer software UIs",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

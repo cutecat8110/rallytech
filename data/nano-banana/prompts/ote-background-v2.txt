@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage one-touch experience background image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation, data integration, and operations systems company",
   "page_role": "Homepage One-Touch Experience section background",
-  "goal": "Create a photorealistic wide background image that communicates integrated operations, industrial monitoring, and data-control confidence while remaining usable behind content",
+  "goal": "Create a photorealistic wide background image that communicates integrated operations, industrial monitoring, and data-control confidence while remaining usable behind content. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
   "visual_message": "A layered control or operations environment that feels immersive, organized, and modern rather than crowded or retro",
   "recipe_ids": [
     "industrial-realism-anchors",
@@ -23,12 +23,11 @@
   },
   "spatial_positioning": [
     "main control environment spans the width of the frame",
-    "left side supports headline area",
     "right side can carry layered list content without losing readability",
     "background depth adds atmosphere without cluttering the section"
   ],
   "visual_standard": "premium commercial operations-center photography",
-  "color_restriction": "charcoal, muted black, dark steel, restrained monitor greens and cyans only; no purple or magenta glow",
+  "color_restriction": "charcoal, muted black, dark steel, restrained monitor greens and cyans only; no purple or magenta glow. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "monitoring consoles",
     "real industrial interior surfaces",
@@ -45,8 +44,8 @@
   ],
   "composition": {
     "format": "16:9",
-    "hero_safe_area": "keep the frame overlay-safe for headline and list content",
-    "focal_structure": "one environmental anchor with one secondary depth layer",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one environmental anchor with one secondary depth layer. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural interior photography, eye-level or slightly elevated",
     "cropping": "designed for a poster-frame style website section background"
   },
@@ -60,7 +59,6 @@
     "must feel suitable for a modern B2B website",
     "must be photorealistic",
     "must support copy and layered panel content",
-    "must not contain embedded text, buttons, or fake UI overlays",
     "must not feel dated or generic"
   ],
   "avoid": [
@@ -70,6 +68,16 @@
     "purple neon cyberpunk lighting",
     "crowded desks as the focal point",
     "readable words or numbers",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "asset_type": "homepage mission cutout image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
-  "goal": "Create a photorealistic subject-led image for the fixed mission cutout that feels reliable, grounded, and easy to isolate visually",
+  "goal": "Create a photorealistic subject-led image for the fixed mission cutout that feels reliable, grounded, and easy to isolate visually. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Emphasize collaborative work by East Asian professionals in soft laboratory lighting. Authentic and approachable execution.",
   "reference_usage": {
     "image_1": "preserve subject silhouette and cutout-ready crop",
     "image_2": "optional industrial realism reference"
@@ -22,7 +22,7 @@
     "cropping": "designed for later mask or breakout treatment"
   },
   "lighting": {
-    "style": "premium commercial engineering portrait photography",
+    "style": "soft laboratory lighting",
     "mood": "capable, steady, trustworthy",
     "contrast": "controlled and clear enough for subject separation",
     "surface_behavior": "real fabric, skin, and equipment textures"
@@ -41,6 +41,20 @@
     "headline text",
     "website UI overlay",
     "plastic skin or clothing",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette.",
+  "human_casting": {
+    "rule": "collaborative, East Asian professionals, authentic and approachable execution with soft laboratory lighting"
+  }
 }

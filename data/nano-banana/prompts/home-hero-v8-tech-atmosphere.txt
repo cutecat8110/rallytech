@@ -1,0 +1,48 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, a high-end Taiwanese industrial automation specialist. Brand color: Technical Teal / Cyan-Green.",
+  "page_role": "Atmospheric high-tech flagship homepage background",
+  "goal": "Create a visually stunning, tech-heavy industrial background aligned with Rally's brand colors. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, OR BUTTONS.",
+  "visual_message": "An elite industrial command center radiating technical authority and atmospheric depth. The scene feels alive, precise, and high-tech.",
+  "technical_signals": {
+    "lens": "35mm anamorphic architectural photography",
+    "aperture": "f/2.0 for cinematic depth-of-field and soft bokeh",
+    "light_source": "Volumetric technical teal glows from SCADA walls; high-contrast low-key lighting using Rally's Graphite tones",
+    "time_of_day": "midnight operational mode",
+    "motion_rule": "static but with a sense of data flow"
+  },
+  "spatial_positioning": [
+    "A massive curved monitoring wall glows with Rally's signature Teal and Cyan operational signals",
+    "Foreground features a dark matte graphite console with subtle status LED reflections",
+    "Atmospheric technical haze catches the teal light beams in the distance",
+    "Right side is a deep, clean negative space for website content"
+  ],
+  "visual_standard": "Premium technology-brand commercial photography with high-end cinematic atmosphere",
+  "color_restriction": "Strictly Rally Technology palette: Technical Teal, Cyan-Green, Graphite, Charcoal, and Midnight Obsidian. NO purple or warm cinematic orange.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "Matte midnight-blue steel",
+    "Dark brushed aluminum",
+    "Glass partitions with teal edge-lighting",
+    "Real monitor pixel textures (no generic HUDs)"
+  ],
+  "avoid": [
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "fake headlines",
+    "HUD decorations",
+    "sci-fi spaceship bridges",
+    "warm colors",
+    "symmetrical office layouts",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens"
+  ],
+  "composition": {
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  }
+}

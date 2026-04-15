@@ -1,7 +1,7 @@
 {
-  "asset_type": "homepage hero image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
-  "goal": "Create a photorealistic, commercially usable B2B website hero image that looks real, modern, restrained, and trustworthy",
+  "goal": "Create a photorealistic, commercially usable B2B website hero image that looks real, modern, restrained, and trustworthy. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
   "reference_usage": {
     "image_1": "preserve the overall room composition, spatial rhythm, and website-safe framing",
     "image_2": "optional material or lighting reference only"
@@ -17,8 +17,8 @@
   ],
   "composition": {
     "format": "16:9",
-    "hero_safe_area": "reserve the right side as clean negative space for website headline and CTA",
-    "focal_structure": "one primary focal point in the left-center, one secondary depth layer, no clutter",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one primary focal point in the left-center, one secondary depth layer, no clutter. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural interior photography, eye-level or slightly elevated, realistic wide-angle perspective",
     "cropping": "designed for a modern homepage hero, not a stock photo crop"
   },
@@ -31,7 +31,6 @@
   "commercial_constraints": [
     "must feel suitable for a modern B2B technology website",
     "must be photorealistic",
-    "must support white headline text overlay",
     "must avoid visual clutter",
     "must not feel like concept art or synthetic office stock"
   ],
@@ -45,6 +44,17 @@
     "cyberpunk glow",
     "cartoonish rendering",
     "soft fake textures",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette."
 }

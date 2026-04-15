@@ -1,0 +1,37 @@
+{
+  "asset_type": "service detail feature image",
+  "goal": "Close-up on a monitor displaying complex, overlapping historical trend lines. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "direct screen emission"
+  },
+  "spatial_positioning": [
+    "extreme close-up of screen pixels and chart lines intersecting"
+  ],
+  "color_restriction": "dark mode UI, bright neon data plots (cyan, magenta, yellow).. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "High-resolution display of complex, overlapping historical data trends and analytics.",
+  "reality_anchors": [
+    "authentic industrial trending software UI",
+    "visible chart axes and legends (blurred)"
+  ],
+  "composition": {
+    "format": "4:3",
+    "focal_structure": "abstract but recognizable data lines"
+  },
+  "avoid": [
+    "generic bar graphs",
+    "financial charts",
+    "Matrix code",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

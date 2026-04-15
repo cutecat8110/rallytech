@@ -1,0 +1,45 @@
+{
+  "asset_type": "service detail feature image",
+  "goal": ". THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/2.8",
+    "light_source": ""
+  },
+  "spatial_positioning": [
+    "shallow depth of field blurring the rest of the console"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "Precise, immediate physical interaction with an industrial alarm acknowledgment system.",
+  "reality_anchors": [
+    "metal control desk surface",
+    "professional workwear"
+  ],
+  "composition": {
+    "format": "4:3",
+    "focal_structure": ""
+  },
+  "avoid": [
+    "nuclear launch buttons",
+    "consumer keyboards",
+    "messy hands",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  },
+  "commercial_constraints": [
+    "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
+  ]
+}

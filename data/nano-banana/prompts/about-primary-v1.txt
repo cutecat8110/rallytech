@@ -1,7 +1,7 @@
 {
-  "asset_type": "homepage about section primary image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control systems company",
-  "goal": "Create a photorealistic architectural image that communicates established engineering capability and modern technology credibility",
+  "goal": "Create a photorealistic architectural image that communicates established engineering capability and modern technology credibility. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The mood should be professional, industrial, engineering scale, high-trust with morning daylight.",
   "reference_usage": {
     "image_1": "preserve the overall composition and facade rhythm",
     "image_2": "optional facade detail and material realism reference"
@@ -16,14 +16,14 @@
   ],
   "composition": {
     "format": "4:5",
-    "hero_safe_area": "not required",
-    "focal_structure": "one dominant facade mass with one supporting detail rhythm",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one dominant facade mass with one supporting detail rhythm. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural exterior photography, eye-level or slightly upward",
     "cropping": "designed for a tall website media frame"
   },
   "lighting": {
-    "style": "premium commercial architectural photography",
-    "mood": "confident, precise, established",
+    "style": "premium commercial architectural photography, morning daylight",
+    "mood": "professional, industrial, engineering scale, high-trust, morning daylight",
     "contrast": "controlled and realistic",
     "surface_behavior": "clean glass reflections, no plastic sheen"
   },
@@ -41,6 +41,17 @@
     "headline text",
     "website UI overlay",
     "oversaturated sky",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette."
 }

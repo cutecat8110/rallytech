@@ -1,0 +1,43 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "cinematic corporate technology photography",
+  "business_context": "Rally Technology, high-end industrial automation and SCADA systems in Taiwan.",
+  "page_role": "Imposing, high-tension homepage hero background for centered text overlay.",
+  "goal": "Create a 'wow-factor' industrial hero image. It must feel like a high-end documentary or corporate feature film. Symmetrical, grand, and full of operational tension (情境感).",
+  "visual_message": "An elite team of engineers delivering mission-critical results in a massive, modern control center. The atmosphere is serious, professional, and high-tech.",
+  "technical_signals": {
+    "lens": "35mm anamorphic lens for cinematic horizontal flair and perspective",
+    "aperture": "f/2.8 to f/4 for a sense of scale with sharp technical details",
+    "light_source": "High-contrast professional lighting. Naturalistic monitor glows reflecting on matte graphite surfaces. Deep, rich shadows that feel authentic, not sci-fi blue.",
+    "camera_angle": "Low-angle symmetrical perspective looking down a central aisle, creating strong leading lines toward the center."
+  },
+  "human_scenario": {
+    "casting": "1 or 2 East Asian male and female professional engineers (Taiwanese context).",
+    "action": "Focused on work; one standing near a massive screen wall, another seated at a console. They are secondary scale cues, adding 'life' and 'professional context' to the facility. They should NOT look at the camera.",
+    "styling": "Modern professional engineering workwear (smart-casual or technician vest). No suits."
+  },
+  "composition": {
+    "layout": "Perfectly symmetrical central perspective with a wide-angle feel.",
+    "focal_structure": "A grand, curved or multi-layered monitoring wall that frames the center. The center should be a deep, atmospheric focal area (slightly darker/cleaner) to support white centered text.",
+    "depth": "Strong depth-of-field; the foreground consoles are sharp, leading the eye to the active background."
+  },
+  "color_and_tone": "Realistic 'American hard-style'. Heavy grays, blacks, and dark steel. Clean, sharp, and high-contrast. Realistic white balance (no extreme color tints).",
+  "material_notes": [
+    "Matte graphite metal",
+    "Industrial glass partitions",
+    "Detailed monitor content (real-looking SCADA graphics, no fake HUDs)",
+    "Reflective anti-static flooring"
+  ],
+  "avoid": [
+    "SCI-FI TINTS",
+    "BLUE/PURPLE NEON",
+    "GHOSTLY FLOATING GRAPHICS",
+    "CARTOONISH FACES",
+    "OFFICE FURNITURE",
+    "TEXT",
+    "NUMBERS",
+    "LOGOS",
+    "SLOGANS"
+  ],
+  "FINAL_REMINDER": "GENERATE A HIGH-IMPACT CINEMATIC PHOTOGRAPH. GROUNDED IN REALITY. NO TEXT."
+}

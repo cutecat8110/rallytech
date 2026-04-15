@@ -40,6 +40,7 @@ Architecture Pack 至少要產出：
 - `page-sys-shell--wide`
 - `content-sys-rail`
 - `section-sys-shell`
+- `PageHeroShell`
 
 ### Cluster
 
@@ -58,6 +59,8 @@ Architecture Pack 至少要產出：
 常見 primitive 類型：
 
 - `media-frame`
+- `hero-shell`
+- `hero-content-rail`
 - `service-item`
 - `proof-strip`
 - `stat-block`
@@ -70,6 +73,16 @@ Architecture Pack 至少要產出：
 - section component 只負責組裝 block-level grammar
 - reusable primitive 負責跨 section 的穩定視覺語法
 - 同一 reference pattern 若在多頁重複，優先抽成 primitive，不留在單頁硬編
+
+### Hero grammar
+
+- `Hero shell`：負責 section 外殼、高度 variant、shell 寬度與 media / overlay / decor / content 的 layering。
+- `Hero content rail`：負責文案區最大寬度、對齊方式與標題節奏，不承接背景圖配方。
+- `page` variant：首頁以外的標準 hero，高度應讓頁面身份與正文入口在首屏快速可見。
+- `page` variant 預設使用單一 H1 的極簡內容規則；kicker、description 與入口頁敘事優先移回正文，不在 hero 內長期保留。
+- `page hero with entry emphasis`：例如 `services overview`，仍屬 `page` variant，只能透過 content 與 decor 保留入口頁微差，不可升成第三種高度級別。
+- `immersive` variant：首頁或品牌入口級場景使用，允許更高的首屏佔比與更強情緒密度。
+- overlay、crop、grid、glow、motif 與單頁 copy rhythm 預設留在 page component local，不因共用 hero shell 而提升。
 
 ## 3. Architecture Pack 的必填欄位
 

@@ -1,0 +1,41 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "high-end cinematic corporate photography",
+  "business_context": "Rally Technology, high-end industrial automation and SCADA systems. B2B trust.",
+  "page_role": "Imposing, high-tension homepage hero background for centered text overlay.",
+  "goal": "Refine the operational tension. The engineers must look natural and unposed (Candid). Symmetrical architecture but asymmetrical human placement for realism.",
+  "visual_message": "An elite team in their natural workflow. The atmosphere is grand, hard-style, and authentically operational.",
+  "technical_signals": {
+    "lens": "35mm anamorphic for wide cinematic scale",
+    "aperture": "f/2.8 to f/4 for professional depth-of-field",
+    "light_source": "High-contrast technical lighting. Realistic monitor glows reflecting on dark metallic surfaces. Rich, authentic shadows.",
+    "camera_angle": "Low-angle symmetrical perspective looking down a central aisle."
+  },
+  "human_scenario": {
+    "casting": "2 East Asian professional engineers (male and female).",
+    "action_and_placement": "PHYSICALLY SEPARATE THE TWO ENGINEERS. One engineer in the LEFT FOREGROUND is leaning over a console, hand naturally reaching for a control. The second engineer is in the RIGHT BACKGROUND, standing near the large screen wall, looking toward the central depth. They should look like they are caught in the middle of a real task (Candid movement).",
+    "posture": "Natural, dynamic body weight. One walking or leaning, not standing stiff. They should NOT look at the camera. Their gaze is focused on their work at the center.",
+    "styling": "Practical, modern industrial workwear (no suits)."
+  },
+  "composition": {
+    "layout": "Strictly symmetrical ARCHITECTURE, but asymmetrical HUMAN placement to break the artificial stiffness.",
+    "focal_structure": "Converging lines lead to a deep, atmospheric center. The center is dark and clean for white text.",
+    "tension": "High spatial tension through the distance between the foreground and background figures."
+  },
+  "color_and_tone": "American hard-style. Deep grays, dark steel, and midnight obsidian. Sharp, high-contrast, and photorealistic.",
+  "material_notes": [
+    "Matte graphite surfaces",
+    "Authentic SCADA monitor arrays with realistic data plots",
+    "Clean industrial floor with subtle reflections"
+  ],
+  "avoid": [
+    "STIFF POSTURES",
+    "PEOPLE STANDING TOO CLOSE",
+    "PEOPLE LOOKING AT CAMERA",
+    "SYMMETRICAL HUMAN PLACEMENT",
+    "TEXT",
+    "LOGOS",
+    "SCI-FI TINTS"
+  ],
+  "FINAL_REMINDER": "GENERATE A PURE PHOTOGRAPH. NATURAL CANDID MOTION. NO TEXT."
+}

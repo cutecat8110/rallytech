@@ -2,18 +2,27 @@
 import { computed } from 'vue'
 
 const messages = useRallyMessages()
-const processIcons = [
-  'i-lucide-clipboard-list',
-  'i-lucide-route',
-  'i-lucide-cpu',
-  'i-lucide-badge-check'
-]
+const { activeMode } = useHomePageImageMode()
+
+// 每個步驟對應的 Slot State
+const stepStates: Array<'01' | '02' | '03' | '04'> = ['01', '02', '03', '04']
 
 const processSteps = computed(() =>
-  messages.value.home.process.steps.map((step, index) => ({
-    ...step,
-    icon: processIcons[index] ?? 'i-lucide-circle-check'
-  }))
+  messages.value.home.process.steps.map((step, index) => {
+    const state = stepStates[index]
+    const entry = getHomePageImageEntry('about-process-step', state)
+
+    // 簡單的影像來源決策邏輯 (配合 Mode 切換)
+    const imageSrc =
+      activeMode.value === 'nano'
+        ? (entry.liveNano?.src ?? entry.latestCandidate?.src ?? entry.stock.src)
+        : entry.stock.src
+
+    return {
+      ...step,
+      imageSrc
+    }
+  })
 )
 </script>
 
@@ -38,8 +47,12 @@ const processSteps = computed(() =>
           :key="step.number"
           class="home-sys-process__step"
         >
-          <span class="home-sys-process__icon">
-            <UIcon :name="step.icon" class="size-6" />
+          <span class="home-sys-process__image-wrapper">
+            <img
+              :src="step.imageSrc"
+              :alt="step.title"
+              class="home-sys-process__image"
+            />
           </span>
           <p class="home-sys-process__number type-sys-label-m text-primary-700">
             {{ step.number }}
@@ -67,17 +80,23 @@ const processSteps = computed(() =>
   text-align: center;
 }
 
-.home-sys-process__icon {
+.home-sys-process__image-wrapper {
   display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 4.5rem;
+  height: 4.5rem;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
+  overflow: hidden;
   border: 1px solid var(--color-primary-200);
   background: var(--color-neutral-50);
-  color: var(--color-primary-700);
   box-shadow: var(--shadow-1);
+}
+
+.home-sys-process__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .home-sys-process__number {

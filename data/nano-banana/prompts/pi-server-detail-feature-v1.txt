@@ -1,0 +1,38 @@
+{
+  "asset_type": "service detail feature image",
+  "goal": "A massive wall-mounted screen displaying dark-mode, high-density data trends. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "screen glow in a dim room"
+  },
+  "spatial_positioning": [
+    "screen angled slightly, showing complex data streams",
+    "clean architectural edges"
+  ],
+  "color_restriction": "dark UI background, vibrant data lines (cyan, green, amber).. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A modern Network Operations Center (NOC) display showing real-time, high-density industrial data analytics.",
+  "reality_anchors": [
+    "credible data visualization (time-series charts, KPIs)",
+    "large format commercial displays"
+  ],
+  "composition": {
+    "format": "4:3",
+    "focal_structure": "focus on the data density and clarity"
+  },
+  "avoid": [
+    "stock-market style candlestick charts",
+    "generic pie charts",
+    "neon cyberpunk grids",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

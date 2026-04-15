@@ -1,4 +1,4 @@
-- Last updated: 2026-04-08
+- Last updated: 2026-04-14
 - Source URL: https://pentagoneng.com/service/ie-services/
 
 ## Block Map
@@ -15,12 +15,15 @@
 ## Block 01 Page Hero [core]
 
 - I&E Services
+- Field ready
+- FAT / SAT
+- Startup support
 
 ## Block 02 Service Introduction [core]
 
 - I&E Services
-- Rally Technology provides instrumentation and electrical support that connects design intent, field readiness, and commissioning execution.
-- From FAT/SAT to troubleshooting and on-site support, we help teams move complex systems toward safe and stable operation.
+- Rally Technology supports instrumentation and electrical work across FAT / SAT, loop checks, startup, and field troubleshooting.
+- The goal is to get systems ready for site work, isolate issues faster, and keep commissioning decisions aligned across teams.
 
 ## Block 03 Sidebar Main Services [shared-layout]
 
@@ -41,46 +44,57 @@
 
 ## Block 05 Detailed Capabilities [core]
 
-- Commissioning & FAT/SAT Support
-- We support commissioning, FAT, and SAT activities to verify automation systems against project requirements before start-up and handover.
-- These milestones help teams reduce downstream issues, close punch items faster, and build confidence before operations begin.
-- On-site Troubleshooting
-- Our team provides field troubleshooting support to isolate root causes quickly, stabilize operations, and keep issues from expanding into longer outages.
-- We prioritize practical diagnosis, clear communication, and follow-through until the site can move ahead safely.
-- Instrumentation Installation & Calibration
-- We support installation and calibration workflows that keep sensors, analyzers, and control instruments operating within the accuracy needed for process control and compliance.
-- Power Systems Studies
-- We deliver the study work needed to understand distribution reliability, protection concerns, and operating risk in industrial power environments.
-- These studies help teams protect equipment, improve operating confidence, and make better decisions about upgrades and loading conditions.
-- Gas Analyzing Systems
-- We support gas-analyzing system integration where composition, quality, and compliance data need to be measured reliably.
-- Power Meter Design & Deployment
-- We plan and deploy power-metering solutions that help clients monitor consumption, understand power quality, and improve the usability of electrical data.
-- Security Systems
-- We coordinate security-system design and integration work that strengthens site resilience and supports safer industrial operations.
+- I&E support that keeps field work moving
+- I&E work becomes difficult when testing, startup, punch closure, and field response are handled as separate tasks. The site needs one working sequence.
+- We coordinate validation points, troubleshooting, and cross-discipline handoffs so startup moves with fewer surprises.
+- Key Priorities
+- Field readiness
+- Clarify startup conditions and acceptance points before site work begins.
+- FAT / SAT closure
+- Keep testing, punch closure, and commissioning checks on the same working sequence.
+- Startup response
+- Use troubleshooting and loop checks to reduce surprises during startup windows.
+- Cross-team coordination
+- Align instrumentation, electrical, equipment, and site teams around one execution rhythm.
+- Scope and Method
+- FAT / SAT support
+- We organize validation points and punch closure so systems complete the checks needed before startup.
+- Field troubleshooting
+- We help sites isolate problems quickly, stabilize operation, and keep issues from expanding into longer outages.
+- Instrument calibration
+- Installation, calibration, and verification workflows are coordinated so field instruments operate within the accuracy the process requires.
+- Power studies
+- We support power-system studies that help teams understand distribution reliability, protection concerns, and operating risk.
+- Gas analysis systems
+- Gas-analyzing systems are integrated where composition, quality, and compliance data need to be measured reliably.
+- Power metering
+- Metering work is planned to improve visibility into consumption, power quality, and electrical-use data.
+- Security integration
+- Security-system coordination is included where safer and more resilient industrial operations depend on it.
 
 ## Block 06 Service Cards [core]
 
-- FAT/SAT Support
-- Set up, test, and verify automation systems before handover.
+- Typical Support
+- FAT / SAT Support
+- Complete the checks and punch closure needed before startup.
 - Power Systems Studies
-- Protect distribution reliability and operating confidence.
-- On-site Troubleshooting
-- Respond quickly to field issues and stabilize operations.
-- Gas Analyzing Systems
-- Measure gas composition reliably in industrial processes.
-- Instrumentation Installation & Calibration
-- Maintain accurate behavior across sensing and control points.
-- Power Meter Design & Deployment
-- Monitor consumption, quality, and electrical usage data.
+- Review distribution reliability and operating risk early.
+- Field Troubleshooting
+- Respond quickly to field issues and stabilize operation.
+- Gas Analysis Systems
+- Keep gas-composition measurement reliable in process use.
+- Instrument Calibration
+- Maintain the accuracy of sensing and control points.
+- Power Metering
+- Track consumption, quality, and electrical-use data.
 
 ## Block 07 Quote [core]
 
-- "I&E services connect design intent to field readiness, turning engineering packages into systems that can be commissioned and operated with confidence."
-- – Rally Technology
+- "Good I&E support makes startup conditions clear before the field has to guess."
+- Rally Technology
 
 ## Block 08 Summary [core]
 
-- Rally Technology covers commissioning support, FAT/SAT execution, and field troubleshooting as part of a broader industrial-automation delivery path.
-- The team also supports instrumentation installation, calibration, and power-system studies so control systems and electrical infrastructure can move toward safer and more stable operation.
-- Additional work spans gas-analyzing systems, metering deployment, and security-system coordination to support monitoring, reliability, and operational resilience.
+- When to Bring It In
+- Bring I&E support in before FAT closes and before startup windows are fixed. That is when loop checks, punch closure, and field coordination still change the outcome.
+- It is most useful when instrumentation, electrical, and commissioning tasks need one execution rhythm instead of separate work lists.

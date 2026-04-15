@@ -1,7 +1,7 @@
 {
-  "asset_type": "architectural detail image for a homepage About section",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, Taiwanese industrial automation and control systems company",
-  "goal": "Create a commercially usable architectural detail image that reinforces precision, modern engineering credibility, and restrained high-tech sophistication",
+  "goal": "Create a commercially usable architectural detail image that reinforces precision, modern engineering credibility, and restrained high-tech sophistication. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The mood should be professional, industrial, engineering scale, high-trust with morning daylight.",
   "scene": "A close architectural view of a modern glass facade with clean mullion rhythm and believable structural detail",
   "subject": "The facade detail itself is the subject; no people, no vehicles, no documentary street scene",
   "reality_anchors": [
@@ -16,8 +16,8 @@
     "camera": "architectural detail photography with straight perspective and tight composition"
   },
   "lighting": {
-    "style": "premium commercial architectural photography",
-    "mood": "precise, modern, high-trust",
+    "style": "premium commercial architectural photography, morning daylight",
+    "mood": "professional, industrial, engineering scale, high-trust, morning daylight",
     "contrast": "controlled",
     "surface_behavior": "clean highlights and believable reflections"
   },
@@ -33,6 +33,17 @@
     "fake holographic overlays",
     "oversaturated skyline reflections",
     "plastic AI sheen",
-    "obvious AI artifacts"
-  ]
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "color_restriction": "Strictly use Rally Technology's signature Teal and Graphite palette."
 }

@@ -29,14 +29,15 @@ defineProps<{
 
 <style scoped>
 .services-sys-detail-block__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .services-sys-detail-summary {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  padding: 1.35rem 1.4rem;
+  max-width: 48rem;
+  padding: 1.4rem 1.5rem;
   border-left: 3px solid
     color-mix(in srgb, var(--color-primary-500) 72%, transparent);
   background: color-mix(
@@ -44,5 +45,6 @@ defineProps<{
     var(--color-primary-50) 54%,
     var(--color-white)
   );
+  border-radius: 0 var(--radius-l) var(--radius-l) 0;
 }
 </style>

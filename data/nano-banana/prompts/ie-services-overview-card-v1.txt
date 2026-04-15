@@ -1,0 +1,44 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "Highlight complex electrical wiring, terminal blocks, or instrumentation gauges inside a pristine cabinet. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/5.6",
+    "light_source": "clinical, bright LED cabinet lighting"
+  },
+  "spatial_positioning": [
+    "dense rows of colored wiring and terminal blocks filling the frame",
+    "organized and precise"
+  ],
+  "color_restriction": "grey metallic cabinet, vibrant wire colors (blue, red, yellow) neatly organized.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "plastic wire insulation",
+    "stainless steel DIN rails",
+    "precision copper contacts"
+  ],
+  "scene": "A pristine, meticulously organized industrial electrical and instrumentation control cabinet.",
+  "reality_anchors": [
+    "industrial terminal blocks",
+    "perfect cable management",
+    "wire ferrules and labels"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "textured, dense frame of organized components"
+  },
+  "avoid": [
+    "messy spaghetti wiring",
+    "consumer electronics",
+    "dusty/dirty cabinets",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

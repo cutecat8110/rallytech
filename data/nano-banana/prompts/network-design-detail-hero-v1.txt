@@ -1,0 +1,39 @@
+{
+  "asset_type": "pure industrial background plate",
+  "goal": "Create a premium, photorealistic background of an industrial network room. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/8",
+    "light_source": "bright, clean architectural lighting"
+  },
+  "spatial_positioning": [
+    "perspective looking down a clean corridor of network racks",
+    "overhead yellow cable trays prominent",
+    "large area of empty negative space for future content"
+  ],
+  "color_restriction": "clean whites, silvers, prominent yellow/orange fiber trays.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A pristine, highly structured industrial telecommunications and networking room.",
+  "reality_anchors": [
+    "overhead cable trays (ladder racks)",
+    "enclosed network cabinets",
+    "pristine facility architecture"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "avoid": [
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "fake headlines",
+    "messy wiring",
+    "HUD decorations on screens"
+  ]
+}

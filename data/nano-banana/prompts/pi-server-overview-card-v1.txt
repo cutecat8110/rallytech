@@ -1,0 +1,43 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "Sleek, dark server rack with glowing indicator lights, emphasizing enterprise-grade data infrastructure. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/2.8",
+    "light_source": "dark room, relying on equipment LEDs"
+  },
+  "spatial_positioning": [
+    "repeating horizontal lines of server blades",
+    "shallow focus on one specific blinking node"
+  ],
+  "color_restriction": "pitch black, metallic silver, intense cyan and blue LED indicators.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "perforated metal server bezels",
+    "fiber optic cable hints"
+  ],
+  "scene": "High-density enterprise server rack processing massive amounts of industrial plant data.",
+  "reality_anchors": [
+    "authentic server rack form factor",
+    "enterprise-grade hardware",
+    "data center aesthetic"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "tight, abstract pattern of data hardware"
+  },
+  "avoid": [
+    "retro 90s servers",
+    "messy ethernet cables",
+    "red warning lights",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

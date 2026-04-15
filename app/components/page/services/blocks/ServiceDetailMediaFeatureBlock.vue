@@ -62,11 +62,11 @@ const blockClassName = computed(
 <style scoped>
 .services-sys-detail-media-feature {
   display: grid;
-  gap: 1.35rem;
+  gap: 1.6rem;
 }
 
 .services-sys-detail-media-feature__media {
-  min-height: 18rem;
+  min-height: clamp(18rem, 34vw, 23rem);
   padding: 0;
   overflow: hidden;
   border: 1px solid
@@ -76,7 +76,7 @@ const blockClassName = computed(
       var(--color-border-subtle)
     );
   border-radius: var(--radius-xl);
-  box-shadow: 0 22px 48px rgb(6 20 27 / 0.08);
+  box-shadow: 0 20px 42px rgb(6 20 27 / 0.08);
 }
 
 .services-sys-detail-media-feature__image {
@@ -91,14 +91,15 @@ const blockClassName = computed(
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-block: 0.25rem;
+  max-width: 35rem;
+  padding-block: 0.2rem;
 }
 
 .services-sys-detail-media-feature__copy {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
-  margin-top: 0.95rem;
+  gap: 0.9rem;
+  margin-top: 0.85rem;
 }
 
 .services-sys-detail-media-feature__highlights {
@@ -125,8 +126,9 @@ const blockClassName = computed(
 
 @media (min-width: 768px) {
   .services-sys-detail-media-feature {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 1.9rem;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    gap: clamp(1.9rem, 3vw, 2.6rem);
+    align-items: center;
   }
 
   .services-sys-detail-media-feature--image-left

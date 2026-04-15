@@ -1,0 +1,49 @@
+{
+  "asset_type": "pure industrial background plate",
+  "goal": "An operator focusing on a screen with critical alerts (amber/red UI elements) amidst a dark control room. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/2.8",
+    "light_source": "warm/amber glow from the alarm screen lighting the operator's face"
+  },
+  "spatial_positioning": [
+    "operator in tense but professional focus",
+    "screen emitting alert colors",
+    "right side dark for text"
+  ],
+  "color_restriction": "dark ambient room, distinct amber/orange/red alert glows.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "An alert, highly trained operator responding to a critical system notification in an industrial control center.",
+  "reality_anchors": [
+    "professional response posture",
+    "credible alarm management UI (lists, colored banners)",
+    "modern control desk"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "avoid": [
+    "panic or chaotic running",
+    "fire or smoke",
+    "overly dramatic red strobe lights flooding the room",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  },
+  "commercial_constraints": [
+    "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO TEXT. NO LETTERS. NO SLOGANS. NO LOGOS. NO BUTTONS. NO UI ELEMENTS. THE IMAGE MUST BE A PURE PHOTOGRAPHIC BACKGROUND PLATE ONLY.",
+  "asset_type": "cinematic corporate technology photography",
+  "business_context": "Rally Technology, high-end industrial automation and SCADA systems in Taiwan.",
+  "page_role": "Imposing, high-tension homepage hero background for centered text overlay.",
+  "goal": "Refine the successful aesthetic of candidate k9ve80. High-impact cinematic industrial atmosphere with unified focal tension. Symmetrical, grand, and highly focused.",
+  "visual_message": "An elite engineering team focused on a unified mission. The environment radiates technical authority and collective purpose.",
+  "technical_signals": {
+    "lens": "35mm anamorphic lens for cinematic wide-screen perspective",
+    "aperture": "f/2.8 for sharp focus on central elements with a sense of immense depth",
+    "light_source": "High-contrast professional lighting. Naturalistic monitor glows (Teal) hitting matte graphite surfaces. Deep, rich shadows.",
+    "camera_angle": "Low-angle symmetrical perspective, straight-on wide shot looking down a central technological corridor."
+  },
+  "human_scenario": {
+    "casting": "2 East Asian professional engineers (one male, one female).",
+    "action": "They are BOTH FACING FORWARD, looking deep into the facility or at the massive central monitoring screens. Their posture and gaze should lead the viewer's eye TOWARD THE CENTER. One might be standing near a console, another slightly further back, both synchronized in their focus on the mission-critical center.",
+    "styling": "Modern professional engineering workwear. They are secondary scale cues, facing away from or profile to the camera, but ALWAYS gaze-aligned with the central depth."
+  },
+  "composition": {
+    "layout": "Perfectly symmetrical central perspective.",
+    "focal_structure": "The leading lines of the consoles and screen walls converge SHARPLY toward the center. The center itself is a deep, atmospheric, slightly darker 'void' that creates a powerful stage for centered white text.",
+    "balance": "Strict symmetry. The people add life but do not break the central balance."
+  },
+  "color_and_tone": "Realistic 'American hard-style'. Heavy grays, blacks, and dark steel. Clean, sharp, and high-contrast. Grounded in reality (no sci-fi neon).",
+  "material_notes": [
+    "Matte graphite metal",
+    "Detailed SCADA monitor arrays facing the center",
+    "Reflective anti-static flooring leading to the center",
+    "Technical glass with realistic edge-lighting"
+  ],
+  "avoid": [
+    "PEOPLE LOOKING AWAY FROM THE CENTER",
+    "PEOPLE LOOKING AT THE CAMERA",
+    "ASYNCHRONOUS ACTIONS",
+    "SCI-FI TINTS",
+    "TEXT",
+    "NUMBERS",
+    "LOGOS",
+    "SLOGANS"
+  ],
+  "FINAL_REMINDER": "GENERATE A HIGH-IMPACT CINEMATIC PHOTOGRAPH. UNIFIED CENTRAL FOCUS. NO TEXT."
+}

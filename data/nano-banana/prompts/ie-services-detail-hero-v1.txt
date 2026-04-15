@@ -1,0 +1,48 @@
+{
+  "asset_type": "pure industrial background plate",
+  "goal": "Show a field engineer inspecting a large process instrument or electrical panel in a massive facility. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "mixed natural and high-bay factory lighting"
+  },
+  "spatial_positioning": [
+    "engineer in midground interacting with a massive metallic instrument/panel",
+    "right side clear for text"
+  ],
+  "color_restriction": "metallic silver, industrial blue, safety yellow/orange accents.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A field engineer in proper industrial workwear inspecting a complex pressure transmitter or electrical junction box on a large plant floor.",
+  "reality_anchors": [
+    "authentic industrial PPE",
+    "massive stainless steel process piping or panels",
+    "industrial scale"
+  ],
+  "composition": {
+    "format": "16:9",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "left-weighted subject. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients."
+  },
+  "avoid": [
+    "cleanroom lab coats",
+    "generic mechanics",
+    "unrealistic sparks or welding",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ],
+  "human_casting": {
+    "rule": "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
+    "styling": "modern Taiwanese industrial workplace styling, practical and understated",
+    "guardrails": "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+  },
+  "commercial_constraints": [
+    "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
+  ]
+}

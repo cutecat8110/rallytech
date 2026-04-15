@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage about section detail image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
   "page_role": "Homepage About section supporting facade-detail image",
-  "goal": "Create a photorealistic architectural detail image that complements the primary facade shot and reinforces a refined high-tech material language",
+  "goal": "Create a photorealistic architectural detail image that complements the primary facade shot and reinforces a refined high-tech material language. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The mood should be professional, industrial, engineering scale, high-trust with morning daylight.",
   "visual_message": "A close architectural glass-and-metal detail with premium craftsmanship, structural precision, and modern engineering polish",
   "recipe_ids": [
     "technical-signal-stack",
@@ -28,7 +28,7 @@
     "background architecture stays secondary"
   ],
   "visual_standard": "premium architectural detail photography",
-  "color_restriction": "restrained silver, steel, blue-grey glass, and soft concrete tones only",
+  "color_restriction": "restrained silver, steel, blue-grey glass, and soft concrete tones only. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "reflective glass panels",
     "clean metal mullions",
@@ -51,8 +51,8 @@
     "cropping": "designed to pair with a larger primary architectural image"
   },
   "lighting": {
-    "style": "premium commercial architectural photography",
-    "mood": "precise, clean, premium",
+    "style": "premium commercial architectural photography, morning daylight",
+    "mood": "professional, industrial, engineering scale, high-trust, morning daylight",
     "contrast": "controlled and realistic",
     "surface_behavior": "high-detail reflections without AI sheen"
   },
@@ -69,6 +69,16 @@
     "dramatic sunset postcard look",
     "holographic overlays",
     "embedded text or UI",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

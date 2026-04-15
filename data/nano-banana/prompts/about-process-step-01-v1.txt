@@ -1,0 +1,27 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO PHOTOGRAPHY. NO REALISM. NO TEXTURES. NO SHADOWS. NO TEXT. NO LETTERS.",
+  "asset_type": "high-end modern flat vector icon",
+  "business_context": "Rally Technology, modern industrial automation. Delivery process step: Scope Confirmation.",
+  "goal": "Generate a minimalist, modern, and symbolic (符號學) icon for 'Scope'. It must adhere to elite web design standards: clean, geometric, and effortless. NO PLAYFULNESS. NO CLUTTER.",
+  "visual_subject": "A pure 2D flat symbolic representation of a checklist. Three horizontal bars of equal thickness with rounded ends, and a small circular dot next to the top bar. Use negative space effectively.",
+  "technical_signals": {
+    "style": "Modern Flat Design 2.0. Symbolic and abstract. Precise geometric construction.",
+    "color_palette": "Rally Technical Teal symbol on a very light neutral gray background (Slate-50). Pure flat fills. No strokes.",
+    "white_space": "Generous padding around the symbol to let it breathe."
+  },
+  "composition": {
+    "layout": "Centered and perfectly balanced."
+  },
+  "avoid": [
+    "COMPLEXITY",
+    "REALISM",
+    "PHOTOGRAPHY",
+    "BOARD GAME AESTHETICS",
+    "THIN FRAGILE LINES",
+    "HEAVY OBTRUSIVE SHAPES",
+    "3D EFFECTS",
+    "TEXT",
+    "LOGOS"
+  ],
+  "FINAL_REMINDER": "GENERATE A PURE FLAT MODERN SYMBOLIC ICON. NO TEXT."
+}

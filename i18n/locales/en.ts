@@ -12,7 +12,7 @@ const servicesCatalog = [
     formalTitle: 'SCADA and HMI Graphics',
     englishTitle: 'SCADA and HMI Graphics',
     description:
-      'Operator-facing visualization for monitoring, alarms, and process control.'
+      'Operator-facing graphics for status, alarms, and control actions at the screen level.'
   },
   {
     slug: 'ie-services',
@@ -20,7 +20,7 @@ const servicesCatalog = [
     formalTitle: 'I&E Services',
     englishTitle: 'I&E Services',
     description:
-      'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.'
+      'Field and commissioning support for testing, startup, loop checks, and issue isolation.'
   },
   {
     slug: 'plc-dcs-programming-and-migration',
@@ -28,7 +28,7 @@ const servicesCatalog = [
     formalTitle: 'PLC & DCS Programming and Migration',
     englishTitle: 'PLC & DCS Programming and Migration',
     description:
-      'Control logic development, migration planning, and staged cutover support.'
+      'Control logic upgrades, migration sequencing, and cutover support for running systems.'
   },
   {
     slug: 'pi-server',
@@ -36,7 +36,7 @@ const servicesCatalog = [
     formalTitle: 'PI Server',
     englishTitle: 'PI Server',
     description:
-      'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.'
+      'PI infrastructure for plant data collection, contextualization, and daily use.'
   },
   {
     slug: 'historians',
@@ -44,7 +44,7 @@ const servicesCatalog = [
     formalTitle: 'Historians',
     englishTitle: 'Historians',
     description:
-      'Long-term process-data retention for trend analysis, reporting, and traceability.'
+      'Long-term process records for trends, reports, traceability, and analysis.'
   },
   {
     slug: 'network-design',
@@ -52,7 +52,7 @@ const servicesCatalog = [
     formalTitle: 'Network Design',
     englishTitle: 'Network Design',
     description:
-      'Industrial communication planning for resilient, maintainable plant networks.'
+      'Industrial network architecture that supports stable communications and maintainable expansion.'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -60,7 +60,7 @@ const servicesCatalog = [
     formalTitle: 'Remote Monitoring and Data',
     englishTitle: 'Remote Monitoring and Data',
     description:
-      'Remote visibility and data-continuity support across distributed operations.'
+      'Remote visibility and data relay for distributed sites, assets, and backup paths.'
   },
   {
     slug: 'alarm-monitoring',
@@ -68,7 +68,7 @@ const servicesCatalog = [
     formalTitle: 'Alarm Monitoring',
     englishTitle: 'Alarm Monitoring',
     description:
-      'Alarm strategy and notification workflows for safer, more stable operations.'
+      'Alarm routing and escalation workflows that connect events to response.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -109,7 +109,7 @@ const messages = {
       source: '原始文案'
     },
     items: [
-      { label: 'About', href: '#about' },
+      { label: 'About', href: '/about' },
       { label: 'Services', href: '/services' },
       { label: 'One-Touch Experience', href: '#one-touch-experience' }
     ]
@@ -118,94 +118,134 @@ const messages = {
     seo: {
       title: 'Rally Technology',
       description:
-        'Founded in 2014, Rally Technology delivers industrial automation, controls, instrumentation, plant-data integration, and field execution support.'
+        'Rally Technology supports automation control and monitoring systems for renewable energy, industrial, chemical, pharmaceutical, and EPC projects.'
     },
     hero: {
-      kicker: 'Turnkey automation delivery',
-      title: 'Industrial Automation Delivery for Reliable Operations',
+      kicker: 'Automation Control and Monitoring',
+      title: 'Automation Control and Monitoring for Industrial Operations',
       description:
-        'Connecting control systems, plant data, and field execution for modern industrial projects.',
-      ctaLabel: 'Explore Services',
+        'Rally Technology helps project and site teams connect control, monitoring, and commissioning work into one clearer delivery path.',
+      ctaLabel: 'View Services',
       imageAlt:
         'Engineering team reviewing industrial systems in a control room'
     },
     about: {
-      kicker: 'About',
-      title:
-        'A Trusted Partner for Controls, Instrumentation, and Industrial Data',
+      kicker: 'Why Rally',
+      title: 'A Delivery Partner for Control, Monitoring, and Commissioning',
       description:
-        'Founded in 2014, Rally Technology helps industrial teams connect instrumentation, control systems, commissioning, and plant data into delivery plans that remain clear from kickoff through handover.',
+        'Founded in 2014, Rally Technology supports automation control, monitoring systems, commissioning, and customized system delivery across project and site environments.',
       mediaLabel: 'Modern technology facility facade image pair',
       primaryImageAlt: 'Modern high-tech commercial building',
       detailImageAlt: 'Modern glass facade detail',
       points: [
         {
-          title: 'Expertise',
+          title: 'Company Role',
           description:
-            'Controls, instrumentation, commissioning, and site coordination managed as one delivery path.'
+            'Supports control systems, monitoring platforms, commissioning, and custom integration work.'
         },
         {
-          title: 'Technology',
+          title: 'Quality and Partners',
           description:
-            'SCADA, PLC / DCS, PI, historians, and industrial networks planned for maintainability.'
+            'ISO 9001, ISO 45001, and WinCC OA Partner credentials support consistent delivery.'
         },
         {
-          title: 'Collaboration',
+          title: 'Project Contexts',
           description:
-            'Owners, vendors, and site teams aligned around the same project priorities.'
+            'Commonly aligned with renewable energy, offshore wind, chemical, pharmaceutical, EPC, and industrial facilities.'
         }
       ]
     },
     services: {
-      kicker: 'Our Services',
-      title: 'Integrated Support for Industrial Automation Projects',
-      ctaLabel: 'Learn More'
+      kicker: 'Services',
+      title: 'Core Service Scopes',
+      ctaLabel: 'View Details'
     },
     process: {
-      kicker: 'Our Process',
-      title: 'Delivery Process',
+      kicker: 'Project Flow',
+      title: 'How Projects Move Forward',
       steps: [
-        { number: '01', title: 'Requirements Alignment' },
+        { number: '01', title: 'Scope Review' },
         { number: '02', title: 'Technical Planning' },
-        { number: '03', title: 'Implementation' },
+        { number: '03', title: 'Implementation Support' },
         { number: '04', title: 'Validation and Handover' }
       ]
     },
     oneTouch: {
       title: 'One-Touch Experience',
       description:
-        'Bring equipment data, alarm workflows, historians, and utilities systems into one delivery path.',
-      ctaLabel: 'Learn More',
+        'Use one integration layer to connect SCADA, alarm workflows, historian data, and utilities information.',
+      ctaLabel: 'Start an Inquiry',
       items: [
-        'Data Integration',
-        'Call-Out System Integration and Commissioning',
-        'Vibration Analysis',
-        'Local/Cloud Historians Deployment',
-        'Utilities and Facilities System Integration'
+        'SCADA Data',
+        'Alarm Workflow',
+        'Historian Data',
+        'Utilities Data',
+        'Cross-System Flow'
       ]
     },
     mission: {
-      heading: 'Turn Project Complexity into Stable Operations',
+      heading: 'How Rally Works with Project Teams',
       tabs: [
         {
           value: 'mission',
-          label: 'Our Mission',
-          title: 'Turn Project Complexity into Stable Operations',
+          label: 'Professional and Prompt',
+          title: 'Clarify scope early and keep follow-through moving',
           description:
-            'Rally Technology helps clients build automation environments that are easier to operate, maintain, and extend while keeping controls, data, and field execution on the same delivery rhythm.',
-          ctaLabel: 'Explore Our Mission',
+            'We keep decisions, interfaces, and next actions visible so work does not stall between design, meetings, and site execution.',
+          ctaLabel: 'Discuss Your Project',
           imageAlt: 'Engineer reviewing industrial equipment at a control panel'
         },
         {
           value: 'join-us',
-          label: 'Partner With Us',
+          label: 'Teamwork and Integrity',
           title:
-            'Work with Rally Technology to align system integration, field delivery, and long-term operations',
+            'Coordinate owners, vendors, and site teams around clear responsibilities',
           description:
-            'We use cross-functional coordination, clear ownership, and field-aware delivery to keep clients, contractors, and operations teams aligned on the same project priorities.',
-          ctaLabel: 'Start a Conversation',
+            'We value direct communication, practical coordination, and handoffs people can actually execute.',
+          ctaLabel: 'Start an Inquiry',
           imageAlt: 'Engineering technicians collaborating beside equipment'
         }
+      ]
+    }
+  },
+  aboutPage: {
+    seo: {
+      title: 'About Us | Rally Technology',
+      description:
+        'Learn how Rally Technology supports automation control and monitoring systems across renewable energy, industrial, chemical, pharmaceutical, and EPC projects.'
+    },
+    hero: {
+      title: 'About Us'
+    },
+    intro: {
+      kicker: 'About Us',
+      title: 'Automation Integration for Project and Site Delivery',
+      paragraphs: [
+        'Founded in 2014, Rally Technology focuses on automation control and monitoring systems integration. We support controls, instrumentation, commissioning, plant data, and customized system delivery across renewable energy, industrial, chemical, pharmaceutical, and EPC project environments.',
+        'Professionalism, promptness, teamwork, and integrity shape how we work. ISO 9001, ISO 45001, and WinCC OA Partner credentials support delivery that stays clearer to validate, hand over, and maintain.'
+      ]
+    },
+    capabilities: {
+      title: 'Core Integration Capabilities',
+      items: [
+        'System Integration',
+        'I&E Services',
+        'FAT / SAT',
+        'SCADA / HMI',
+        'PLC / DCS',
+        'PI / Historian',
+        'Industrial Networks',
+        'One-Touch Integration'
+      ]
+    },
+    process: {
+      kicker: 'Delivery Process',
+      title: 'How Work Moves Forward',
+      steps: [
+        { number: '01', title: 'Scope Review' },
+        { number: '02', title: 'Technical Planning' },
+        { number: '03', title: 'Implementation Support' },
+        { number: '04', title: 'Validation and Handover' }
       ]
     }
   },
@@ -214,46 +254,46 @@ const messages = {
     seo: {
       title: 'Services | Rally Technology',
       description:
-        'Browse Rally Technology services across SCADA / HMI, PLC / DCS, PI Server, historians, industrial networking, remote monitoring, and alarm workflows.'
+        'Browse Rally Technology service scopes for control interfaces, field support, control migration, plant-data platforms, industrial networks, remote monitoring, and alarm workflows.'
     },
     hero: {
       kicker: 'Services',
-      title: 'Eight Core Services for Industrial Automation Delivery',
+      title: 'Industrial Automation Service Scopes',
       description:
-        'From controls and plant data to alarm workflows, these services support the critical path of industrial automation delivery.',
-      asideLabel: 'Core industrial automation services'
+        'Service scopes for renewable energy, industrial, chemical, pharmaceutical, and EPC projects, from operator graphics and field support to plant data, networks, and alarm workflows.',
+      asideLabel: 'Service Scope'
     },
-    cardCtaLabel: 'Learn More',
+    cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',
-    detailFocusLabel: 'Operational Focus'
+    detailFocusLabel: 'Scope at a Glance'
   },
   serviceDetailPages: serviceDetailPagesEn,
   contactPage: {
     seo: {
       title: 'Contact Us | Rally Technology',
       description:
-        'Talk with Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
+        'Contact Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
     },
     hero: {
       title: 'Contact Us',
       description:
-        'Discuss project scope, site conditions, and the next practical step with Rally Technology.'
+        'Share your scope, site conditions, or upgrade plan. We will help clarify the next workable step.'
     },
     intro: {
-      title: 'Start the Conversation',
+      title: 'Start an Inquiry',
       paragraphs: [
-        'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, Rally Technology is ready to talk.',
-        'We help teams clarify requirements, confirm delivery boundaries, and shape the next step into a workable project direction.'
+        'Use this page when you need to discuss automation integration, control systems, commissioning support, or plant-data delivery.',
+        'We review the scope, confirm the working boundary, and help define the next practical step.'
       ]
     },
     form: {
-      title: 'Inquiry Form',
+      title: 'Contact Form',
       description:
-        'Use this form to organize your contact details and project needs. If you need an immediate response, use the phone or email listed on this page.',
+        'Share your contact details and key project information so we can review the scope more clearly.',
       submitLabel: 'Send Inquiry',
       unavailableTitle: 'Form submission is not available yet',
       unavailableDescription:
-        'This release delivers the contact-page flow and form UI first. Please use the phone number or email on this page to reach our team.',
+        'This release includes the contact-page flow and form UI first. Please reach us by phone or email for now.',
       fields: {
         name: {
           label: 'Name',
@@ -272,7 +312,7 @@ const messages = {
         },
         subject: {
           label: 'Subject',
-          placeholder: 'Example: PLC / DCS migration assessment',
+          placeholder: 'Example: SCADA upgrade or PLC / DCS migration review',
           help: 'Summarize the topic of your inquiry in one line.'
         },
         phone: {
@@ -284,38 +324,65 @@ const messages = {
           label: 'Project Details',
           placeholder:
             'Describe the current situation, scope, timing, or key constraints',
-          help: 'Include site context, system scope, and the main issues you are evaluating.'
+          help: 'Include site context, current system boundaries, timing, and the main issue you are evaluating.'
         }
       }
     },
+    actions: {
+      phoneLabel: 'Call Us',
+      faxLabel: 'Fax Us',
+      emailLabel: 'Email Us',
+      directionsLabel: 'Get Directions'
+    },
     direct: {
-      title: 'Reach Us Directly',
+      title: 'Direct Contact',
       description:
-        'Use the channels below when you need to move from an initial inquiry into direct coordination.',
+        'If you are ready to move forward, you can also reach us through the channels below.',
       cards: {
-        phoneTitle: 'Phone and Fax',
+        phoneTitle: 'Phone / Fax',
         faxLabel: 'Fax',
-        locationTitle: 'Location',
-        emailTitle: 'Email Address'
+        locationTitle: 'Office',
+        emailTitle: 'Email'
       }
     },
     map: {
       eyebrow: 'Visit',
-      title: 'Our Office Location',
+      title: 'Office Location',
       description:
-        'Use the map to confirm the office location before a site meeting or in-person discussion.',
-      ctaLabel: 'Open in Google Maps',
+        'Use the map to confirm our office location before a visit or in-person discussion.',
+      ctaLabel: 'View on Google Maps',
       iframeTitle: 'Rally Technology office location on Google Maps'
+    },
+    closing: {
+      ctaHeading: 'Industrial Automation Integration Partner',
+      ctaLabel: 'Contact Us',
+      newsletterHeading: 'Newsletter',
+      newsletterDescription: 'Subscribe for updates from Rally Technology.',
+      newsletterPlaceholder: 'Your email',
+      newsletterButtonLabel: 'Subscribe',
+      newsletterUnavailableTitle: 'Newsletter signup is not available yet',
+      newsletterUnavailableDescription:
+        'Newsletter signup is not available yet. Please contact us by phone or email for now.',
+      contactsHeading: 'Contact'
     }
   },
   footer: {
-    connectorHeading: 'Engineering and Automation Delivery Experts',
+    connectorHeading: 'Industrial Automation Integration Partner',
     ctaLabel: 'Contact Us',
     brandLine: 'Rally Technology',
+    newsletterHeading: 'Newsletter',
+    newsletterDescription: 'Subscribe for updates from Rally Technology.',
+    newsletterPlaceholder: 'Your email',
+    newsletterButtonLabel: 'Subscribe',
+    newsletterUnavailableTitle: 'Newsletter signup is not available yet',
+    newsletterUnavailableDescription:
+      'Newsletter signup is not available yet. Please contact us by phone or email for now.',
+    contactsHeading: 'Contact',
     phoneLabel: 'Phone',
     faxLabel: 'Fax',
     emailLabel: 'Email',
     addressLabel: 'Address',
+    backToTopLabel: 'Back to Top',
     copyright: '© {year} Rally Technology. All rights reserved.'
   },
   referencePages: referencePagesEn

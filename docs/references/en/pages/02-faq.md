@@ -1,4 +1,4 @@
-- Last updated: 2026-04-07
+- Last updated: 2026-04-15
 - Source URL: https://pentagoneng.com/faq/
 
 ## Block Map
@@ -14,18 +14,19 @@
 ## Block 02 Placeholder Notice [core]
 
 - FAQ
-- Frequently Asked Questions in Preparation
+- Support Content in Preparation
 
 ### Notes
 
-- This page is currently a placeholder rather than a full FAQ.
+- This page remains a support-page placeholder rather than a full FAQ.
 
 ## Block 03 Contact Form [core]
 
 - Contact Us
-- Get in Touch
-- Your Name \*
-- Your Email \*
-- Your Subject \*
-- Contact Number
-- Message \*
+- Start an Inquiry
+- Name
+- Email
+- Company / Organization
+- Subject
+- Phone
+- Project Details

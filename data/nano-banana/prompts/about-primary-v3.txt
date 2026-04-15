@@ -1,0 +1,83 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, a Taiwanese industrial automation and control integration company",
+  "page_role": "Homepage About section primary architectural image",
+  "goal": "Create a photorealistic engineering facility image that signals industrial integration capability, modern systems thinking, and premium B2B credibility. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The mood should be professional, industrial, engineering scale, high-trust with morning daylight.",
+  "visual_message": "A clean high-tech industrial or engineering facility exterior that feels contemporary, structured, and trustworthy. It should look like a place where engineering integration happens, not just a generic office tower.",
+  "recipe_ids": [
+    "industrial-realism-anchors",
+    "technical-signal-stack",
+    "named-visual-standard",
+    "color-material-control"
+  ],
+  "reference_usage": {
+    "image_1": "preserve the tall facade rhythm and strong vertical silhouette",
+    "image_2": "optional facade detail and material realism reference"
+  },
+  "technical_signals": {
+    "lens": "35mm architectural exterior photography to capture more facility context",
+    "aperture": "f/8 for deep focus",
+    "light_source": "controlled overcast or early morning neutral daylight to emphasize structural forms",
+    "time_of_day": "neutral daylight",
+    "motion_rule": "static architectural shot"
+  },
+  "spatial_positioning": [
+    "dominant facility mass with vertical emphasis",
+    "clean industrial details like high-spec ventilation louvers or conduit routing on the exterior",
+    "structural steel and glass combination",
+    "foreground remains clean and unobtrusive"
+  ],
+  "visual_standard": "premium industrial architectural photography, similar to high-end data center or research facility aesthetics",
+  "color_restriction": "restrained cool neutrals, slate grey, brushed aluminum, and deep glass blues. Avoid vibrant primary colors.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "brushed metal panels",
+    "structural glass curtain wall",
+    "clean concrete or stone base",
+    "precise industrial joints and weatherproofing details"
+  ],
+  "scene": "A modern engineering or industrial research facility with a disciplined architectural rhythm, featuring high-spec industrial materials and clean exterior technical infrastructure silhouettes.",
+  "subject": "The facility architecture itself is the hero, emphasizing precision and scale.",
+  "reality_anchors": [
+    "credible industrial facade geometry",
+    "high-spec ventilation or technical louvers",
+    "clean structural steel elements",
+    "modern industrial facility character"
+  ],
+  "composition": {
+    "format": "4:5",
+    "focal_structure": "vertical facade rhythm with industrial detail accents. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
+    "camera": "architectural exterior photography, eye-level, realistic perspective",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "lighting": {
+    "style": "premium commercial architectural photography, morning daylight",
+    "mood": "professional, industrial, engineering scale, high-trust, morning daylight",
+    "contrast": "realistic and balanced"
+  },
+  "commercial_constraints": [
+    "must feel suitable for a modern industrial B2B website",
+    "must be photorealistic",
+    "avoid generic downtown office vibes",
+    "no embedded text or UI",
+    "consistent with the hero image's professional tone"
+  ],
+  "avoid": [
+    "generic glass office towers",
+    "futuristic cityscapes",
+    "sci-fi or cyberpunk aesthetics",
+    "crowded streets or pedestrians",
+    "embedded headline text",
+    "oversaturated blue sky",
+    "messy construction sites",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "url": "http://localhost:3000/",
+  "slug": "home-copy-pass",
+  "state": "loaded",
+  "captures": [
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_1920.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_1920.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_1440.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_1440.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 0
+    },
+    {
+      "imagePath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_390.png",
+      "jsonPath": "C:\\Users\\Hao.Wang\\Documents\\git\\rallytech\\.codex-qa\\captures\\home-copy-pass_loaded_390.images.json",
+      "blockCaptures": [],
+      "brokenCount": 0,
+      "suspiciousCount": 1
+    }
+  ]
+}

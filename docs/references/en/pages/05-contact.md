@@ -1,4 +1,4 @@
-- Last updated: 2026-04-08
+- Last updated: 2026-04-15
 - Source URL: https://pentagoneng.com/contact/
 
 ## Block Map
@@ -11,25 +11,30 @@
 ## Block 01 Page Hero [core]
 
 - Contact Us
+- Share your scope, site conditions, or upgrade plan. We will help clarify the next workable step.
 
 ## Block 02 Contact Introduction [core]
 
 - Contact Us
-- Start the Conversation
-- Reach out to Rally Technology to discuss automation scope, integration challenges, commissioning support, or plant-data requirements for your site.
-- We help teams clarify the next step quickly and turn early discussions into executable project direction.
+- Start an Inquiry
+- Use this page when you need to discuss automation integration, control systems, commissioning support, or plant-data delivery.
+- We review the scope, confirm the working boundary, and help define the next practical step.
 
 ## Block 03 Contact Form [core]
 
-- Your Name \*
-- Your Email \*
-- Your Subject \*
-- Contact Number
-- Message \*
+- Contact Form
+- Share your contact details and key project information so we can review the scope more clearly.
+- Name
+- Email
+- Company / Organization
+- Subject
+- Phone
+- Project Details
+- Send Inquiry
 
 ## Block 04 Direct Contact Details [core]
 
-- Phone Number: +886-3-552-9933
-- Fax Number: +886-3-552-9797
-- Email Address: sales@rallytech.com.tw
-- Location: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan
+- Phone: +886-3-552-9933
+- Fax: +886-3-552-9797
+- Email: sales@rallytech.com.tw
+- Address: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan

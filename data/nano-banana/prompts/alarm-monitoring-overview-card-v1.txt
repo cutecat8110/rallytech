@@ -1,0 +1,37 @@
+{
+  "asset_type": "service overview card thumbnail",
+  "goal": "A bright, flashing amber/red physical annunciator panel or a highly visible digital alarm banner on a dark screen. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. Focus on macro lens perspective, metallic textures, high-tech engineering details, and professional hardware.",
+  "technical_signals": {
+    "lens": "macro lens",
+    "aperture": "f/4",
+    "light_source": "intense LED emission from the panel"
+  },
+  "spatial_positioning": [
+    "close-up of a physical industrial alarm annunciator panel with engraved text slots"
+  ],
+  "color_restriction": "deep blacks, intense amber and red illuminated plastics.. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "scene": "A critical industrial alarm annunciator panel lighting up to signal an event.",
+  "reality_anchors": [
+    "authentic engraved annunciator tiles",
+    "high-visibility LED colors"
+  ],
+  "composition": {
+    "format": "3:2",
+    "focal_structure": "tight pattern of alarm tiles, one brightly illuminated"
+  },
+  "avoid": [
+    "home security keypads",
+    "cartoonish red sirens",
+    "blurry generic screens",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

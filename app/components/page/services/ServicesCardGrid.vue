@@ -1,17 +1,55 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, ref, watch } from 'vue'
+import {
+  getDesiredServiceImageSource,
+  resolveServiceImageAsset
+} from '~/composables/useServicePageImageAsset'
 import { enrichServiceCatalog } from '~/utils/services'
 import { getServicePageImageEntry } from '~/utils/service-page-image-registry'
 
 const messages = useRallyMessages()
 const localePath = useLocalePath()
+const { activeMode } = useHomePageImageMode()
+const failedNanoCandidates = ref<Record<string, true>>({})
+
+function resetFailedNanoCandidates() {
+  failedNanoCandidates.value = {}
+}
+
+function handleCardImageError(imageKey: string, canFallbackFromNano: boolean) {
+  if (!canFallbackFromNano) {
+    return
+  }
+
+  failedNanoCandidates.value = {
+    ...failedNanoCandidates.value,
+    [imageKey]: true
+  }
+}
+
+watch(() => activeMode.value, resetFailedNanoCandidates)
 
 const serviceItems = computed(() =>
-  enrichServiceCatalog(messages.value.servicesCatalog).map((item) => ({
-    ...item,
-    image: getServicePageImageEntry(item.slug, 'overview-card'),
-    to: localePath(`/services/${item.slug}`)
-  }))
+  enrichServiceCatalog(messages.value.servicesCatalog).map((item) => {
+    const imageEntry = getServicePageImageEntry(item.slug, 'overview-card')
+    const desiredNanoSource = getDesiredServiceImageSource(
+      imageEntry,
+      activeMode.value
+    )
+    const imageKey = desiredNanoSource?.candidateId ?? `${item.slug}-stock`
+
+    return {
+      ...item,
+      image: resolveServiceImageAsset(
+        imageEntry,
+        activeMode.value,
+        Boolean(failedNanoCandidates.value[imageKey])
+      ),
+      imageKey,
+      to: localePath(`/services/${item.slug}`),
+      usesNanoCandidate: desiredNanoSource !== null
+    }
+  })
 )
 </script>
 
@@ -33,6 +71,9 @@ const serviceItems = computed(() =>
                 class="services-sys-card__image"
                 :style="{ objectPosition: item.image.objectPosition }"
                 decoding="async"
+                @error="
+                  handleCardImageError(item.imageKey, item.usesNanoCandidate)
+                "
               />
               <div class="services-sys-card__media-overlay" />
             </div>

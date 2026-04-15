@@ -37,7 +37,7 @@ defineProps<{
 
 <style scoped>
 .services-sys-detail-block__title {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
 }
 
 .services-sys-detail-process-steps {
@@ -47,13 +47,22 @@ defineProps<{
 
 .services-sys-detail-process-steps__item {
   padding: 1.1rem 1.15rem;
-  border-left: 2px solid var(--color-primary-500);
-  background: color-mix(
-    in srgb,
-    var(--color-primary-50) 76%,
-    var(--color-white)
-  );
-  box-shadow: 0 18px 38px rgb(6 20 27 / 0.04);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 8%,
+      var(--color-border-subtle)
+    );
+  border-top: 2px solid
+    color-mix(in srgb, var(--color-primary-500) 68%, transparent);
+  background:
+    linear-gradient(
+      180deg,
+      rgb(255 255 255 / 0.98) 0%,
+      rgb(243 248 248 / 0.82) 100%
+    ),
+    var(--color-white);
+  box-shadow: none;
 }
 
 @media (min-width: 768px) {

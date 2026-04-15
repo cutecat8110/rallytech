@@ -1,8 +1,8 @@
 {
-  "asset_type": "homepage one-touch experience background image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation, plant-data integration, historians, and operations systems company",
   "page_role": "Homepage One-Touch Experience section background",
-  "goal": "Create a photorealistic wide background image that communicates plant data backbone, multi-system integration, and operations visibility while remaining usable behind the current section layout",
+  "goal": "Create a photorealistic wide background image that communicates plant data backbone, multi-system integration, and operations visibility while remaining usable behind the current section layout. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
   "visual_message": "A plant-data integration environment with layered monitoring, infrastructure depth, and calm systems coordination rather than another hero-style control room",
   "recipe_ids": [
     "industrial-realism-anchors",
@@ -27,13 +27,12 @@
     "motion_rule": "scene feels live and operational, but still"
   },
   "spatial_positioning": [
-    "left side stays readable for the section heading and CTA",
     "right side supports the stacked integration list without hard focal collisions",
     "the environment should imply historians, data backbone, networked monitoring, or multi-system visibility",
     "avoid the visual rhythm of a people-filled control room that could be mistaken for the hero scene"
   ],
   "visual_standard": "premium commercial operations and data-integration photography",
-  "color_restriction": "charcoal, dark steel, graphite, restrained monitor greens and cyans only; no purple or magenta glow",
+  "color_restriction": "charcoal, dark steel, graphite, restrained monitor greens and cyans only; no purple or magenta glow. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "credible monitoring and integration displays",
     "server, network, or operations infrastructure cues",
@@ -50,8 +49,8 @@
   ],
   "composition": {
     "format": "16:9",
-    "hero_safe_area": "keep the frame overlay-safe for the current left heading and right stacked list content",
-    "focal_structure": "one environmental integration anchor with one supporting infrastructure depth layer",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one environmental integration anchor with one supporting infrastructure depth layer. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural interior photography, eye-level or slightly elevated",
     "cropping": "designed for the current poster-frame website section background"
   },
@@ -64,8 +63,6 @@
   "commercial_constraints": [
     "must feel suitable for a modern B2B industrial website",
     "must be photorealistic",
-    "must support the current heading, CTA, and layered panel content",
-    "must not contain embedded text, buttons, or fake UI overlays",
     "must clearly differentiate itself from the hero image vocabulary"
   ],
   "avoid": [
@@ -76,6 +73,16 @@
     "generic fake analytics dashboards",
     "purple neon cyberpunk lighting",
     "readable words or numbers",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

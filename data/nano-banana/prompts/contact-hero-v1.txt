@@ -1,0 +1,55 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, an industrial automation and control integration company",
+  "page_role": "Calm, wide-angle banner for the Contact Us page",
+  "goal": "Create a modern urban skyline or corporate facility exterior that suggests stability, professional scale, and global reach. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS. The scene is approachable, featuring warm natural daylight mixed with tech accents in a welcoming modern engineering hub. Professional and human-centric.",
+  "visual_message": "A high-end, technologically advanced corporate or industrial exterior.",
+  "technical_signals": {
+    "lens": "35mm wide-angle architectural photography",
+    "aperture": "f/11 for sharp details across the scene",
+    "light_source": "natural, overcast daylight for soft shadows and professional mood",
+    "time_of_day": "mid-day or early afternoon overcast",
+    "motion_rule": "static, peaceful"
+  },
+  "spatial_positioning": [
+    "wide horizontal sweep of a modern roofline or glass facade in the midground",
+    "distorted or layered skyscrapers in the distant background"
+  ],
+  "color_restriction": "cool greys, slate blues, muted steel, and clean glass reflections. Must strictly use Rally Technology's signature Teal and Graphite palette.",
+  "material_notes": [
+    "reflective glass",
+    "brushed aluminum or concrete architectural elements",
+    "subtle urban texture"
+  ],
+  "scene": "A wide-angle shot of a modern architectural skyline under a soft overcast sky, featuring a prominent horizontal roofline structure.",
+  "subject": "Modern industrial architecture and urban stability.",
+  "reality_anchors": [
+    "clean geometric architectural lines",
+    "realistic glass reflections",
+    "natural atmospheric haze in the distance"
+  ],
+  "composition": {
+    "format": "21:9 or wide panoramic",
+    "focal_structure": "horizontal layering. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
+    "camera": "eye-level architectural photography",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients"
+  },
+  "lighting": {
+    "style": "warm natural daylight mixed with tech accents",
+    "direction": "diffused from above",
+    "mood": "approachable, welcoming modern engineering hub, professional and human-centric"
+  },
+  "negative_prompt": "",
+  "avoid": [
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
+  ]
+}

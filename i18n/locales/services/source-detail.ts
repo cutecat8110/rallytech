@@ -12,7 +12,6 @@ export const serviceDetailPagesSource = {
       description:
         'Our SCADA systems are the backbone of modern industrial processes, allowing you to monitor, control, and optimize your operations in real-time.'
     },
-    heroTitle: 'SCADA and HMI Graphics',
     heroFocusItems: [
       'Monitor in real time',
       'Respond to alarms faster',
@@ -103,7 +102,6 @@ export const serviceDetailPagesSource = {
       description:
         'Pentagon Engineering specializes in various aspects of industrial automation, including Commissioning and FAT/SAT Support, essential for ensuring the quality and efficiency of automation systems.'
     },
-    heroTitle: 'I&E Services',
     heroFocusItems: [
       'Commissioning support',
       'Field troubleshooting',
@@ -260,7 +258,6 @@ export const serviceDetailPagesSource = {
       description:
         'At Pentagon Engineering, we take pride in being at the forefront of industrial automation, specializing in PLC (Programmable Logic Controller) and DCS (Distributed Control System) programming and migration.'
     },
-    heroTitle: 'PLC & DCS Programming and Migration',
     heroFocusItems: [
       'Programming expertise',
       'Migration and optimization',
@@ -382,7 +379,6 @@ export const serviceDetailPagesSource = {
       description:
         'Our team is dedicated to driving industrial automation to new heights, and our expertise extends to the powerful PI Server.'
     },
-    heroTitle: 'PI Server',
     heroFocusItems: [
       'Industrial automation',
       'Data-centric systems',
@@ -487,7 +483,6 @@ export const serviceDetailPagesSource = {
       description:
         'Historian data is pivotal in the seamless operation of oil and gas, specifically of RNG companies.'
     },
-    heroTitle: 'Historians',
     heroFocusItems: [
       'Operational efficiency',
       'Regulatory compliance',
@@ -582,7 +577,6 @@ export const serviceDetailPagesSource = {
       description:
         'Network design in industrial automation involves the meticulous planning, organization, and optimization of communication systems.'
     },
-    heroTitle: 'Network Design',
     heroFocusItems: [
       'Communication-system planning',
       'Control and data flow',
@@ -675,7 +669,6 @@ export const serviceDetailPagesSource = {
       description:
         'Here at Pentagon Engineering, we make sure that remote monitoring and data backup are integral to the smooth and efficient operation of oil and gas companies.'
     },
-    heroTitle: 'Remote Monitoring and Data',
     heroFocusItems: [
       'Operational reliability',
       'Data integrity',
@@ -772,7 +765,6 @@ export const serviceDetailPagesSource = {
       description:
         'Alarm monitoring is essential for the safe, efficient, and compliant operation of RNG facilities.'
     },
-    heroTitle: 'Alarm Monitoring',
     heroFocusItems: [
       'Safe operation',
       'Preventive maintenance',

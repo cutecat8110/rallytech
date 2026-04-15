@@ -982,7 +982,7 @@ export const referencePagesEn = {
     title: 'Home',
     docPath: 'docs/references/en/00-首頁.md',
     sourceUrl: 'https://pentagoneng.com/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Top Contact [shared-layout]',
       'Block 02 Main Navigation [shared-layout]',
@@ -1005,13 +1005,7 @@ export const referencePagesEn = {
       {
         heading: 'Block 02 Main Navigation [shared-layout]',
         role: 'shared-layout',
-        content: [
-          'About',
-          'Services',
-          'One-Touch Experience',
-          'Contact',
-          'Contact Us'
-        ],
+        content: ['About', 'Services', 'One-Touch Experience', 'Contact Us'],
         notes: [
           'Homepage shared main navigation. FAQ remains a support page rather than a primary navigation item.',
           'The final "Contact Us" entry is the header CTA button.'
@@ -1021,10 +1015,10 @@ export const referencePagesEn = {
         heading: 'Block 03 Hero [core]',
         role: 'core',
         content: [
-          'Turnkey automation delivery',
-          'Industrial Automation Delivery for Reliable Operations',
-          'Connecting control systems, plant data, and field execution for modern industrial projects.',
-          'Explore Services'
+          'Automation Control and Monitoring',
+          'Automation Control and Monitoring for Industrial Operations',
+          'Rally Technology helps project and site teams connect control, monitoring, and commissioning work into one clearer delivery path.',
+          'View Services'
         ],
         notes: []
       },
@@ -1032,13 +1026,12 @@ export const referencePagesEn = {
         heading: 'Block 04 About Introduction [core]',
         role: 'core',
         content: [
-          'About',
-          'A Trusted Partner for Controls, Instrumentation, and Industrial Data',
-          'Rally Technology helps industrial teams connect instrumentation, control systems, commissioning, and plant data into delivery plans that remain clear from kickoff through handover.',
-          'We align technical planning, site execution, and operational readiness so projects move forward with fewer gaps between design intent and field reality.',
-          'Expertise: Controls, instrumentation, commissioning, and site coordination managed as one delivery path.',
-          'Technology: SCADA, PLC / DCS, PI, historians, and industrial networks planned for maintainability.',
-          'Collaboration: Owners, vendors, and site teams aligned around the same project priorities.'
+          'Why Rally',
+          'A Delivery Partner for Control, Monitoring, and Commissioning',
+          'Founded in 2014, Rally Technology supports automation control, monitoring systems, commissioning, and customized system delivery across project and site environments.',
+          'Company Role: Supports control systems, monitoring platforms, commissioning, and custom integration work.',
+          'Quality and Partners: ISO 9001, ISO 45001, and WinCC OA Partner credentials support consistent delivery.',
+          'Project Contexts: Commonly aligned with renewable energy, offshore wind, chemical, pharmaceutical, EPC, and industrial facilities.'
         ],
         notes: []
       },
@@ -1046,32 +1039,32 @@ export const referencePagesEn = {
         heading: 'Block 05 Services Overview [core]',
         role: 'core',
         content: [
-          'Our Services',
-          'Integrated Support for Industrial Automation Projects',
+          'Services',
+          'Core Service Scopes',
           'SCADA / HMI Graphics',
-          'Operator-facing visualization for monitoring, alarms, and process control.',
-          'Learn More',
+          'Operator-facing graphics for status, alarms, and control actions at the screen level.',
+          'View Details',
           'I&E Services',
-          'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.',
-          'Learn More',
+          'Field and commissioning support for testing, startup, loop checks, and issue isolation.',
+          'View Details',
           'PLC / DCS Programming and Migration',
-          'Control logic development, migration planning, and staged cutover support.',
-          'Learn More',
+          'Control logic upgrades, migration sequencing, and cutover support for running systems.',
+          'View Details',
           'PI Server',
-          'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.',
-          'Learn More',
+          'PI infrastructure for plant data collection, contextualization, and daily use.',
+          'View Details',
           'Historians',
-          'Long-term process-data retention for trend analysis, reporting, and traceability.',
-          'Learn More',
+          'Long-term process records for trends, reports, traceability, and analysis.',
+          'View Details',
           'Network Design',
-          'Industrial communication planning for resilient, maintainable plant networks.',
-          'Learn More',
+          'Industrial network architecture that supports stable communications and maintainable expansion.',
+          'View Details',
           'Remote Monitoring and Data',
-          'Remote visibility and data-continuity support across distributed operations.',
-          'Learn More',
+          'Remote visibility and data relay for distributed sites, assets, and backup paths.',
+          'View Details',
           'Alarm Monitoring',
-          'Alarm strategy and notification workflows for safer, more stable operations.',
-          'Learn More'
+          'Alarm routing and escalation workflows that connect events to response.',
+          'View Details'
         ],
         notes: []
       },
@@ -1079,11 +1072,11 @@ export const referencePagesEn = {
         heading: 'Block 06 Process [core]',
         role: 'core',
         content: [
-          'Our Process',
-          'Delivery Process',
-          '01 Requirements Alignment',
+          'Project Flow',
+          'How Projects Move Forward',
+          '01 Scope Review',
           '02 Technical Planning',
-          '03 Implementation',
+          '03 Implementation Support',
           '04 Validation and Handover'
         ],
         notes: []
@@ -1093,12 +1086,13 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'One-Touch Experience',
-          'Learn More',
-          'Data Integration',
-          'Call-Out System Integration and Commissioning',
-          'Vibration Analysis',
-          'Local/Cloud Historians Deployment',
-          'Utilities and Facilities System Integration'
+          'Use one integration layer to connect SCADA, alarm workflows, historian data, and utilities information.',
+          'Start an Inquiry',
+          'SCADA Data',
+          'Alarm Workflow',
+          'Historian Data',
+          'Utilities Data',
+          'Cross-System Flow'
         ],
         notes: []
       },
@@ -1106,12 +1100,12 @@ export const referencePagesEn = {
         heading: 'Block 08 Mission and Join Us [core]',
         role: 'core',
         content: [
-          'Turn Project Complexity into Stable Operations',
-          'Our Mission',
-          'Partner With Us',
-          'Turn Project Complexity into Stable Operations',
-          'Rally Technology helps clients build automation environments that are easier to operate, maintain, and extend while keeping controls, data, and field execution on the same delivery rhythm.',
-          'Explore Our Mission'
+          'How Rally Works with Project Teams',
+          'Professional and Prompt',
+          'Teamwork and Integrity',
+          'Clarify scope early and keep follow-through moving',
+          'We keep decisions, interfaces, and next actions visible so work does not stall between design, meetings, and site execution.',
+          'Discuss Your Project'
         ],
         notes: []
       },
@@ -1119,7 +1113,7 @@ export const referencePagesEn = {
         heading: 'Block 09 Footer Contact CTA [shared-layout]',
         role: 'shared-layout',
         content: [
-          'Engineering and Automation Delivery Experts',
+          'Industrial Automation Integration Partner',
           'Contact Us',
           'Rally Technology',
           'Phone',
@@ -1140,14 +1134,14 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/\n\n## Block Map\n\n- Block 01 Top Contact [shared-layout]\n- Block 02 Main Navigation [shared-layout]\n- Block 03 Hero [core]\n- Block 04 About Introduction [core]\n- Block 05 Services Overview [core]\n- Block 06 Process [core]\n- Block 07 One-Touch Experience [core]\n- Block 08 Mission and Join Us [core]\n- Block 09 Footer Contact CTA [shared-layout]\n- Block 10 Footer Copyright [shared-layout]\n\n## Block 01 Top Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 02 Main Navigation [shared-layout]\n\n- About\n- Services\n- One-Touch Experience\n- Contact\n- Contact Us\n\n### Notes\n\n- Homepage shared main navigation. FAQ remains a support page rather than a primary navigation item.\n- The final "Contact Us" entry is the header CTA button.\n\n## Block 03 Hero [core]\n\n- Turnkey automation delivery\n- Industrial Automation Delivery for Reliable Operations\n- Connecting control systems, plant data, and field execution for modern industrial projects.\n- Explore Services\n\n## Block 04 About Introduction [core]\n\n- About\n- A Trusted Partner for Controls, Instrumentation, and Industrial Data\n- Rally Technology helps industrial teams connect instrumentation, control systems, commissioning, and plant data into delivery plans that remain clear from kickoff through handover.\n- We align technical planning, site execution, and operational readiness so projects move forward with fewer gaps between design intent and field reality.\n- Expertise: Controls, instrumentation, commissioning, and site coordination managed as one delivery path.\n- Technology: SCADA, PLC / DCS, PI, historians, and industrial networks planned for maintainability.\n- Collaboration: Owners, vendors, and site teams aligned around the same project priorities.\n\n## Block 05 Services Overview [core]\n\n- Our Services\n- Integrated Support for Industrial Automation Projects\n- SCADA / HMI Graphics\n- Operator-facing visualization for monitoring, alarms, and process control.\n- Learn More\n- I&E Services\n- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.\n- Learn More\n- PLC / DCS Programming and Migration\n- Control logic development, migration planning, and staged cutover support.\n- Learn More\n- PI Server\n- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.\n- Learn More\n- Historians\n- Long-term process-data retention for trend analysis, reporting, and traceability.\n- Learn More\n- Network Design\n- Industrial communication planning for resilient, maintainable plant networks.\n- Learn More\n- Remote Monitoring and Data\n- Remote visibility and data-continuity support across distributed operations.\n- Learn More\n- Alarm Monitoring\n- Alarm strategy and notification workflows for safer, more stable operations.\n- Learn More\n\n## Block 06 Process [core]\n\n- Our Process\n- Delivery Process\n- 01 Requirements Alignment\n- 02 Technical Planning\n- 03 Implementation\n- 04 Validation and Handover\n\n## Block 07 One-Touch Experience [core]\n\n- One-Touch Experience\n- Learn More\n- Data Integration\n- Call-Out System Integration and Commissioning\n- Vibration Analysis\n- Local/Cloud Historians Deployment\n- Utilities and Facilities System Integration\n\n## Block 08 Mission and Join Us [core]\n\n- Turn Project Complexity into Stable Operations\n- Our Mission\n- Partner With Us\n- Turn Project Complexity into Stable Operations\n- Rally Technology helps clients build automation environments that are easier to operate, maintain, and extend while keeping controls, data, and field execution on the same delivery rhythm.\n- Explore Our Mission\n\n## Block 09 Footer Contact CTA [shared-layout]\n\n- Engineering and Automation Delivery Experts\n- Contact Us\n- Rally Technology\n- Phone\n- +886-3-552-9933\n- Fax\n- +886-3-552-9797\n- Email\n- sales@rallytech.com.tw\n- Address\n- 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan\n\n## Block 10 Footer Copyright [shared-layout]\n\n- © 2026 Rally Technology. All rights reserved.'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/\n\n## Block Map\n\n- Block 01 Top Contact [shared-layout]\n- Block 02 Main Navigation [shared-layout]\n- Block 03 Hero [core]\n- Block 04 About Introduction [core]\n- Block 05 Services Overview [core]\n- Block 06 Process [core]\n- Block 07 One-Touch Experience [core]\n- Block 08 Mission and Join Us [core]\n- Block 09 Footer Contact CTA [shared-layout]\n- Block 10 Footer Copyright [shared-layout]\n\n## Block 01 Top Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 02 Main Navigation [shared-layout]\n\n- About\n- Services\n- One-Touch Experience\n- Contact Us\n\n### Notes\n\n- Homepage shared main navigation. FAQ remains a support page rather than a primary navigation item.\n- The final "Contact Us" entry is the header CTA button.\n\n## Block 03 Hero [core]\n\n- Automation Control and Monitoring\n- Automation Control and Monitoring for Industrial Operations\n- Rally Technology helps project and site teams connect control, monitoring, and commissioning work into one clearer delivery path.\n- View Services\n\n## Block 04 About Introduction [core]\n\n- Why Rally\n- A Delivery Partner for Control, Monitoring, and Commissioning\n- Founded in 2014, Rally Technology supports automation control, monitoring systems, commissioning, and customized system delivery across project and site environments.\n- Company Role: Supports control systems, monitoring platforms, commissioning, and custom integration work.\n- Quality and Partners: ISO 9001, ISO 45001, and WinCC OA Partner credentials support consistent delivery.\n- Project Contexts: Commonly aligned with renewable energy, offshore wind, chemical, pharmaceutical, EPC, and industrial facilities.\n\n## Block 05 Services Overview [core]\n\n- Services\n- Core Service Scopes\n- SCADA / HMI Graphics\n- Operator-facing graphics for status, alarms, and control actions at the screen level.\n- View Details\n- I&E Services\n- Field and commissioning support for testing, startup, loop checks, and issue isolation.\n- View Details\n- PLC / DCS Programming and Migration\n- Control logic upgrades, migration sequencing, and cutover support for running systems.\n- View Details\n- PI Server\n- PI infrastructure for plant data collection, contextualization, and daily use.\n- View Details\n- Historians\n- Long-term process records for trends, reports, traceability, and analysis.\n- View Details\n- Network Design\n- Industrial network architecture that supports stable communications and maintainable expansion.\n- View Details\n- Remote Monitoring and Data\n- Remote visibility and data relay for distributed sites, assets, and backup paths.\n- View Details\n- Alarm Monitoring\n- Alarm routing and escalation workflows that connect events to response.\n- View Details\n\n## Block 06 Process [core]\n\n- Project Flow\n- How Projects Move Forward\n- 01 Scope Review\n- 02 Technical Planning\n- 03 Implementation Support\n- 04 Validation and Handover\n\n## Block 07 One-Touch Experience [core]\n\n- One-Touch Experience\n- Use one integration layer to connect SCADA, alarm workflows, historian data, and utilities information.\n- Start an Inquiry\n- SCADA Data\n- Alarm Workflow\n- Historian Data\n- Utilities Data\n- Cross-System Flow\n\n## Block 08 Mission and Join Us [core]\n\n- How Rally Works with Project Teams\n- Professional and Prompt\n- Teamwork and Integrity\n- Clarify scope early and keep follow-through moving\n- We keep decisions, interfaces, and next actions visible so work does not stall between design, meetings, and site execution.\n- Discuss Your Project\n\n## Block 09 Footer Contact CTA [shared-layout]\n\n- Industrial Automation Integration Partner\n- Contact Us\n- Rally Technology\n- Phone\n- +886-3-552-9933\n- Fax\n- +886-3-552-9797\n- Email\n- sales@rallytech.com.tw\n- Address\n- 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan\n\n## Block 10 Footer Copyright [shared-layout]\n\n- © 2026 Rally Technology. All rights reserved.'
   },
   about: {
     key: 'about',
     title: 'About',
     docPath: 'docs/references/en/pages/01-about.md',
     sourceUrl: 'https://pentagoneng.com/about-us/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 About Introduction [core]',
@@ -1166,9 +1160,9 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'About Us',
-          'Engineering-Led Automation Delivery',
-          'Rally Technology supports industrial clients with coordinated work across instrumentation, controls, commissioning, and plant data integration.',
-          'We bridge planning, field execution, and operational handover so teams can move from requirement to stable operation with fewer disconnects.'
+          'Automation Integration for Project and Site Delivery',
+          'Founded in 2014, Rally Technology focuses on automation control and monitoring systems integration. We support controls, instrumentation, commissioning, plant data, and customized system delivery across renewable energy, industrial, chemical, pharmaceutical, and EPC project environments.',
+          'Professionalism, promptness, teamwork, and integrity shape how we work. ISO 9001, ISO 45001, and WinCC OA Partner credentials support delivery that stays clearer to validate, hand over, and maintain.'
         ],
         notes: []
       },
@@ -1176,15 +1170,15 @@ export const referencePagesEn = {
         heading: 'Block 03 Capability Grid [core]',
         role: 'core',
         content: [
-          'Integrated Delivery Capabilities',
+          'Core Integration Capabilities',
           'System Integration',
           'I&E Services',
-          'Commissioning & FAT/SAT Support',
-          'SCADA / HMI Graphics',
-          'PLC / DCS Programming and Migration',
-          'PI Server / Historians',
-          'Network Design',
-          'One-Touch Experience Delivery'
+          'FAT / SAT',
+          'SCADA / HMI',
+          'PLC / DCS',
+          'PI / Historian',
+          'Industrial Networks',
+          'One-Touch Integration'
         ],
         notes: []
       },
@@ -1193,23 +1187,23 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Delivery Process',
-          'Our Working Process',
-          '01 Requirements Alignment',
+          'How Work Moves Forward',
+          '01 Scope Review',
           '02 Technical Planning',
-          '03 Implementation',
+          '03 Implementation Support',
           '04 Validation and Handover'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/about-us/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 About Introduction [core]\n- Block 03 Capability Grid [core]\n- Block 04 Working Process [core]\n\n## Block 01 Page Hero [core]\n\n- About Us\n\n## Block 02 About Introduction [core]\n\n- About Us\n- Engineering-Led Automation Delivery\n- Rally Technology supports industrial clients with coordinated work across instrumentation, controls, commissioning, and plant data integration.\n- We bridge planning, field execution, and operational handover so teams can move from requirement to stable operation with fewer disconnects.\n\n## Block 03 Capability Grid [core]\n\n- Integrated Delivery Capabilities\n- System Integration\n- I&E Services\n- Commissioning & FAT/SAT Support\n- SCADA / HMI Graphics\n- PLC / DCS Programming and Migration\n- PI Server / Historians\n- Network Design\n- One-Touch Experience Delivery\n\n## Block 04 Working Process [core]\n\n- Delivery Process\n- Our Working Process\n- 01 Requirements Alignment\n- 02 Technical Planning\n- 03 Implementation\n- 04 Validation and Handover'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/about-us/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 About Introduction [core]\n- Block 03 Capability Grid [core]\n- Block 04 Working Process [core]\n\n## Block 01 Page Hero [core]\n\n- About Us\n\n## Block 02 About Introduction [core]\n\n- About Us\n- Automation Integration for Project and Site Delivery\n- Founded in 2014, Rally Technology focuses on automation control and monitoring systems integration. We support controls, instrumentation, commissioning, plant data, and customized system delivery across renewable energy, industrial, chemical, pharmaceutical, and EPC project environments.\n- Professionalism, promptness, teamwork, and integrity shape how we work. ISO 9001, ISO 45001, and WinCC OA Partner credentials support delivery that stays clearer to validate, hand over, and maintain.\n\n## Block 03 Capability Grid [core]\n\n- Core Integration Capabilities\n- System Integration\n- I&E Services\n- FAT / SAT\n- SCADA / HMI\n- PLC / DCS\n- PI / Historian\n- Industrial Networks\n- One-Touch Integration\n\n## Block 04 Working Process [core]\n\n- Delivery Process\n- How Work Moves Forward\n- 01 Scope Review\n- 02 Technical Planning\n- 03 Implementation Support\n- 04 Validation and Handover'
   },
   faq: {
     key: 'faq',
     title: 'FAQ',
     docPath: 'docs/references/en/pages/02-faq.md',
     sourceUrl: 'https://pentagoneng.com/faq/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Placeholder Notice [core]',
@@ -1225,32 +1219,35 @@ export const referencePagesEn = {
       {
         heading: 'Block 02 Placeholder Notice [core]',
         role: 'core',
-        content: ['FAQ', 'Frequently Asked Questions in Preparation'],
-        notes: ['This page is currently a placeholder rather than a full FAQ.']
+        content: ['FAQ', 'Support Content in Preparation'],
+        notes: [
+          'This page remains a support-page placeholder rather than a full FAQ.'
+        ]
       },
       {
         heading: 'Block 03 Contact Form [core]',
         role: 'core',
         content: [
           'Contact Us',
-          'Get in Touch',
-          'Your Name \\*',
-          'Your Email \\*',
-          'Your Subject \\*',
-          'Contact Number',
-          'Message \\*'
+          'Start an Inquiry',
+          'Name',
+          'Email',
+          'Company / Organization',
+          'Subject',
+          'Phone',
+          'Project Details'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-07\n- Source URL: https://pentagoneng.com/faq/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Placeholder Notice [core]\n- Block 03 Contact Form [core]\n\n## Block 01 Page Hero [core]\n\n- FAQ\n\n## Block 02 Placeholder Notice [core]\n\n- FAQ\n- Frequently Asked Questions in Preparation\n\n### Notes\n\n- This page is currently a placeholder rather than a full FAQ.\n\n## Block 03 Contact Form [core]\n\n- Contact Us\n- Get in Touch\n- Your Name \\*\n- Your Email \\*\n- Your Subject \\*\n- Contact Number\n- Message \\*'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/faq/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Placeholder Notice [core]\n- Block 03 Contact Form [core]\n\n## Block 01 Page Hero [core]\n\n- FAQ\n\n## Block 02 Placeholder Notice [core]\n\n- FAQ\n- Support Content in Preparation\n\n### Notes\n\n- This page remains a support-page placeholder rather than a full FAQ.\n\n## Block 03 Contact Form [core]\n\n- Contact Us\n- Start an Inquiry\n- Name\n- Email\n- Company / Organization\n- Subject\n- Phone\n- Project Details'
   },
   'services-overview': {
     key: 'services-overview',
     title: 'Services Overview',
     docPath: 'docs/references/en/pages/03-services-overview.md',
     sourceUrl: 'https://pentagoneng.com/services/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Cards Grid [core]'
@@ -1259,7 +1256,11 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Services Overview'],
+        content: [
+          'Services',
+          'Industrial Automation Service Scopes',
+          'Service scopes for renewable energy, industrial, chemical, pharmaceutical, and EPC projects, from operator graphics and field support to plant data, networks, and alarm workflows.'
+        ],
         notes: []
       },
       {
@@ -1267,41 +1268,41 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'SCADA / HMI Graphics',
-          'Operator-facing visualization for monitoring, alarms, and process control.',
-          'Learn More',
+          'Operator-facing graphics for status, alarms, and control actions at the screen level.',
+          'View Details',
           'I&E Services',
-          'Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.',
-          'Learn More',
+          'Field and commissioning support for testing, startup, loop checks, and issue isolation.',
+          'View Details',
           'PLC / DCS Programming and Migration',
-          'Control logic development, migration planning, and staged cutover support.',
-          'Learn More',
+          'Control logic upgrades, migration sequencing, and cutover support for running systems.',
+          'View Details',
           'PI Server',
-          'Plant-data infrastructure for monitoring, reporting, and cross-system visibility.',
-          'Learn More',
+          'PI infrastructure for plant data collection, contextualization, and daily use.',
+          'View Details',
           'Historians',
-          'Long-term process-data retention for trend analysis, reporting, and traceability.',
-          'Learn More',
+          'Long-term process records for trends, reports, traceability, and analysis.',
+          'View Details',
           'Network Design',
-          'Industrial communication planning for resilient, maintainable plant networks.',
-          'Learn More',
+          'Industrial network architecture that supports stable communications and maintainable expansion.',
+          'View Details',
           'Remote Monitoring and Data',
-          'Remote visibility and data-continuity support across distributed operations.',
-          'Learn More',
+          'Remote visibility and data relay for distributed sites, assets, and backup paths.',
+          'View Details',
           'Alarm Monitoring',
-          'Alarm strategy and notification workflows for safer, more stable operations.',
-          'Learn More'
+          'Alarm routing and escalation workflows that connect events to response.',
+          'View Details'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/services/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Cards Grid [core]\n\n## Block 01 Page Hero [core]\n\n- Services Overview\n\n## Block 02 Service Cards Grid [core]\n\n- SCADA / HMI Graphics\n- Operator-facing visualization for monitoring, alarms, and process control.\n- Learn More\n- I&E Services\n- Instrumentation and electrical support spanning FAT, SAT, commissioning, and troubleshooting.\n- Learn More\n- PLC / DCS Programming and Migration\n- Control logic development, migration planning, and staged cutover support.\n- Learn More\n- PI Server\n- Plant-data infrastructure for monitoring, reporting, and cross-system visibility.\n- Learn More\n- Historians\n- Long-term process-data retention for trend analysis, reporting, and traceability.\n- Learn More\n- Network Design\n- Industrial communication planning for resilient, maintainable plant networks.\n- Learn More\n- Remote Monitoring and Data\n- Remote visibility and data-continuity support across distributed operations.\n- Learn More\n- Alarm Monitoring\n- Alarm strategy and notification workflows for safer, more stable operations.\n- Learn More'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/services/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Cards Grid [core]\n\n## Block 01 Page Hero [core]\n\n- Services\n- Industrial Automation Service Scopes\n- Service scopes for renewable energy, industrial, chemical, pharmaceutical, and EPC projects, from operator graphics and field support to plant data, networks, and alarm workflows.\n\n## Block 02 Service Cards Grid [core]\n\n- SCADA / HMI Graphics\n- Operator-facing graphics for status, alarms, and control actions at the screen level.\n- View Details\n- I&E Services\n- Field and commissioning support for testing, startup, loop checks, and issue isolation.\n- View Details\n- PLC / DCS Programming and Migration\n- Control logic upgrades, migration sequencing, and cutover support for running systems.\n- View Details\n- PI Server\n- PI infrastructure for plant data collection, contextualization, and daily use.\n- View Details\n- Historians\n- Long-term process records for trends, reports, traceability, and analysis.\n- View Details\n- Network Design\n- Industrial network architecture that supports stable communications and maintainable expansion.\n- View Details\n- Remote Monitoring and Data\n- Remote visibility and data relay for distributed sites, assets, and backup paths.\n- View Details\n- Alarm Monitoring\n- Alarm routing and escalation workflows that connect events to response.\n- View Details'
   },
   'one-touch-experience': {
     key: 'one-touch-experience',
     title: 'One-Touch Experience',
     docPath: 'docs/references/en/pages/04-one-touch-experience.md',
     sourceUrl: 'https://pentagoneng.com/one-touch-experience/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Data Integration [core]',
@@ -1322,7 +1323,7 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Data Integration',
-          'Rally Technology connects plant, equipment, and reporting data into a structure that operations, engineering, and management teams can use with confidence.'
+          'Connect plant, equipment, and reporting data so teams can work from one usable operational view.'
         ],
         notes: []
       },
@@ -1331,8 +1332,8 @@ export const referencePagesEn = {
           'Block 03 Call-Out System Integration and Commissioning [core]',
         role: 'core',
         content: [
-          'Call-Out System Integration and Commissioning',
-          'We coordinate alarm call-out logic, notification routing, and commissioning checks so critical conditions reach the right people quickly and reliably.'
+          'Alarm Workflow and Commissioning',
+          'Align alarm routing, notification logic, and commissioning checks so critical events reach the right team faster.'
         ],
         notes: []
       },
@@ -1341,7 +1342,7 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Vibration Analysis',
-          'We support vibration-monitoring workflows that help teams detect abnormal conditions earlier and improve maintenance planning for critical assets.'
+          'Support vibration-monitoring workflows that surface abnormal conditions earlier and help maintenance teams act with better context.'
         ],
         notes: []
       },
@@ -1349,8 +1350,8 @@ export const referencePagesEn = {
         heading: 'Block 05 Local/Cloud Historians Deployment [core]',
         role: 'core',
         content: [
-          'Local/Cloud Historians Deployment',
-          'We deploy local and cloud historian environments that keep process data accessible for troubleshooting, reporting, and long-term operational improvement.'
+          'Local / Cloud Historian Deployment',
+          'Deploy historian environments that keep process data available for troubleshooting, reporting, and long-term review.'
         ],
         notes: []
       },
@@ -1358,20 +1359,20 @@ export const referencePagesEn = {
         heading: 'Block 06 Utilities and Facilities System Integration [core]',
         role: 'core',
         content: [
-          'Utilities and Facilities System Integration',
-          'We integrate utility and facilities systems with monitoring, control, and reporting logic so operations teams can manage status, compliance, and execution in one workflow.'
+          'Utilities and Facilities Integration',
+          'Connect utilities and facilities systems with monitoring, control, and reporting workflows in one cross-system layer.'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-07\n- Source URL: https://pentagoneng.com/one-touch-experience/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Data Integration [core]\n- Block 03 Call-Out System Integration and Commissioning [core]\n- Block 04 Vibration Analysis [core]\n- Block 05 Local/Cloud Historians Deployment [core]\n- Block 06 Utilities and Facilities System Integration [core]\n\n## Block 01 Page Hero [core]\n\n- One-Touch Experience\n\n## Block 02 Data Integration [core]\n\n- Data Integration\n- Rally Technology connects plant, equipment, and reporting data into a structure that operations, engineering, and management teams can use with confidence.\n\n## Block 03 Call-Out System Integration and Commissioning [core]\n\n- Call-Out System Integration and Commissioning\n- We coordinate alarm call-out logic, notification routing, and commissioning checks so critical conditions reach the right people quickly and reliably.\n\n## Block 04 Vibration Analysis [core]\n\n- Vibration Analysis\n- We support vibration-monitoring workflows that help teams detect abnormal conditions earlier and improve maintenance planning for critical assets.\n\n## Block 05 Local/Cloud Historians Deployment [core]\n\n- Local/Cloud Historians Deployment\n- We deploy local and cloud historian environments that keep process data accessible for troubleshooting, reporting, and long-term operational improvement.\n\n## Block 06 Utilities and Facilities System Integration [core]\n\n- Utilities and Facilities System Integration\n- We integrate utility and facilities systems with monitoring, control, and reporting logic so operations teams can manage status, compliance, and execution in one workflow.'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/one-touch-experience/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Data Integration [core]\n- Block 03 Call-Out System Integration and Commissioning [core]\n- Block 04 Vibration Analysis [core]\n- Block 05 Local/Cloud Historians Deployment [core]\n- Block 06 Utilities and Facilities System Integration [core]\n\n## Block 01 Page Hero [core]\n\n- One-Touch Experience\n\n## Block 02 Data Integration [core]\n\n- Data Integration\n- Connect plant, equipment, and reporting data so teams can work from one usable operational view.\n\n## Block 03 Call-Out System Integration and Commissioning [core]\n\n- Alarm Workflow and Commissioning\n- Align alarm routing, notification logic, and commissioning checks so critical events reach the right team faster.\n\n## Block 04 Vibration Analysis [core]\n\n- Vibration Analysis\n- Support vibration-monitoring workflows that surface abnormal conditions earlier and help maintenance teams act with better context.\n\n## Block 05 Local/Cloud Historians Deployment [core]\n\n- Local / Cloud Historian Deployment\n- Deploy historian environments that keep process data available for troubleshooting, reporting, and long-term review.\n\n## Block 06 Utilities and Facilities System Integration [core]\n\n- Utilities and Facilities Integration\n- Connect utilities and facilities systems with monitoring, control, and reporting workflows in one cross-system layer.'
   },
   contact: {
     key: 'contact',
     title: 'Contact',
     docPath: 'docs/references/en/pages/05-contact.md',
     sourceUrl: 'https://pentagoneng.com/contact/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Contact Introduction [core]',
@@ -1382,7 +1383,10 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Contact Us'],
+        content: [
+          'Contact Us',
+          'Share your scope, site conditions, or upgrade plan. We will help clarify the next workable step.'
+        ],
         notes: []
       },
       {
@@ -1390,9 +1394,9 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Contact Us',
-          'Start the Conversation',
-          'Reach out to Rally Technology to discuss automation scope, integration challenges, commissioning support, or plant-data requirements for your site.',
-          'We help teams clarify the next step quickly and turn early discussions into executable project direction.'
+          'Start an Inquiry',
+          'Use this page when you need to discuss automation integration, control systems, commissioning support, or plant-data delivery.',
+          'We review the scope, confirm the working boundary, and help define the next practical step.'
         ],
         notes: []
       },
@@ -1400,11 +1404,15 @@ export const referencePagesEn = {
         heading: 'Block 03 Contact Form [core]',
         role: 'core',
         content: [
-          'Your Name \\*',
-          'Your Email \\*',
-          'Your Subject \\*',
-          'Contact Number',
-          'Message \\*'
+          'Contact Form',
+          'Share your contact details and key project information so we can review the scope more clearly.',
+          'Name',
+          'Email',
+          'Company / Organization',
+          'Subject',
+          'Phone',
+          'Project Details',
+          'Send Inquiry'
         ],
         notes: []
       },
@@ -1412,22 +1420,22 @@ export const referencePagesEn = {
         heading: 'Block 04 Direct Contact Details [core]',
         role: 'core',
         content: [
-          'Phone Number: +886-3-552-9933',
-          'Fax Number: +886-3-552-9797',
-          'Email Address: sales@rallytech.com.tw',
-          'Location: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+          'Phone: +886-3-552-9933',
+          'Fax: +886-3-552-9797',
+          'Email: sales@rallytech.com.tw',
+          'Address: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/contact/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Contact Introduction [core]\n- Block 03 Contact Form [core]\n- Block 04 Direct Contact Details [core]\n\n## Block 01 Page Hero [core]\n\n- Contact Us\n\n## Block 02 Contact Introduction [core]\n\n- Contact Us\n- Start the Conversation\n- Reach out to Rally Technology to discuss automation scope, integration challenges, commissioning support, or plant-data requirements for your site.\n- We help teams clarify the next step quickly and turn early discussions into executable project direction.\n\n## Block 03 Contact Form [core]\n\n- Your Name \\*\n- Your Email \\*\n- Your Subject \\*\n- Contact Number\n- Message \\*\n\n## Block 04 Direct Contact Details [core]\n\n- Phone Number: +886-3-552-9933\n- Fax Number: +886-3-552-9797\n- Email Address: sales@rallytech.com.tw\n- Location: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
+    raw: '- Last updated: 2026-04-15\n- Source URL: https://pentagoneng.com/contact/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Contact Introduction [core]\n- Block 03 Contact Form [core]\n- Block 04 Direct Contact Details [core]\n\n## Block 01 Page Hero [core]\n\n- Contact Us\n- Share your scope, site conditions, or upgrade plan. We will help clarify the next workable step.\n\n## Block 02 Contact Introduction [core]\n\n- Contact Us\n- Start an Inquiry\n- Use this page when you need to discuss automation integration, control systems, commissioning support, or plant-data delivery.\n- We review the scope, confirm the working boundary, and help define the next practical step.\n\n## Block 03 Contact Form [core]\n\n- Contact Form\n- Share your contact details and key project information so we can review the scope more clearly.\n- Name\n- Email\n- Company / Organization\n- Subject\n- Phone\n- Project Details\n- Send Inquiry\n\n## Block 04 Direct Contact Details [core]\n\n- Phone: +886-3-552-9933\n- Fax: +886-3-552-9797\n- Email: sales@rallytech.com.tw\n- Address: 3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan'
   },
   'service-scada-and-hmi-graphics': {
     key: 'service-scada-and-hmi-graphics',
     title: 'SCADA and HMI Graphics',
     docPath: 'docs/references/en/services/01-scada-and-hmi-graphics.md',
     sourceUrl: 'https://pentagoneng.com/service/scada-and-hmi-graphics/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1438,7 +1446,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['SCADA and HMI Graphics'],
+        content: [
+          'SCADA and HMI Graphics',
+          'Readable screens',
+          'Alarm context',
+          'Easy upkeep'
+        ],
         notes: []
       },
       {
@@ -1446,8 +1459,28 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'SCADA and HMI Graphics',
-          'Rally Technology designs SCADA and HMI environments that help operators monitor plant status, respond to alarms, and navigate critical information with less friction.',
-          'We focus on readable screens, practical hierarchy, and long-term maintainability so systems continue to support operations after commissioning.'
+          'Rally Technology designs SCADA / HMI graphics that help operators read status, alarms, and next actions at a glance.',
+          'We organize screen hierarchy, naming, and navigation so the interface stays clear during commissioning, daily use, and later screen updates.',
+          'SCADA / HMI screens built for real operator use',
+          'Good graphics do not start with fitting more data on a page. They start with deciding what the operator needs first, what can wait, and where abnormal conditions should lead.',
+          'We align hierarchy, navigation, and status logic so the screens are easier to operate now and easier to extend later.',
+          'Key Priorities',
+          'Screen hierarchy',
+          'Separate status, alarms, and actions so teams can read the screen without extra scanning.',
+          'Alarm context',
+          'Show alarms with related equipment and process context instead of leaving them isolated.',
+          'Operator flow',
+          'Place common actions and abnormal-entry points where operators can reach them quickly.',
+          'Maintenance rules',
+          'Keep naming and layout standards consistent so later point additions do not break the interface.',
+          'Scope and Method',
+          'Hierarchy planning',
+          'We structure home, unit, and equipment views so each role can find the right level of information without extra navigation.',
+          'Alarm-linked views',
+          'Alarm information is arranged to connect back to equipment status, process conditions, and the next operator action.',
+          'Change-ready standards',
+          'Naming, symbols, and navigation rules are set up so later changes remain understandable for the next team.',
+          'Bring SCADA / HMI planning in before tag growth and screen expansion begin, so later additions do not turn the interface into patchwork.'
         ],
         notes: []
       },
@@ -1474,14 +1507,14 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/scada-and-hmi-graphics/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- SCADA and HMI Graphics\n\n## Block 02 Service Introduction [core]\n\n- SCADA and HMI Graphics\n- Rally Technology designs SCADA and HMI environments that help operators monitor plant status, respond to alarms, and navigate critical information with less friction.\n- We focus on readable screens, practical hierarchy, and long-term maintainability so systems continue to support operations after commissioning.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/scada-and-hmi-graphics/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- SCADA and HMI Graphics\n- Readable screens\n- Alarm context\n- Easy upkeep\n\n## Block 02 Service Introduction [core]\n\n- SCADA and HMI Graphics\n- Rally Technology designs SCADA / HMI graphics that help operators read status, alarms, and next actions at a glance.\n- We organize screen hierarchy, naming, and navigation so the interface stays clear during commissioning, daily use, and later screen updates.\n- SCADA / HMI screens built for real operator use\n- Good graphics do not start with fitting more data on a page. They start with deciding what the operator needs first, what can wait, and where abnormal conditions should lead.\n- We align hierarchy, navigation, and status logic so the screens are easier to operate now and easier to extend later.\n- Key Priorities\n- Screen hierarchy\n- Separate status, alarms, and actions so teams can read the screen without extra scanning.\n- Alarm context\n- Show alarms with related equipment and process context instead of leaving them isolated.\n- Operator flow\n- Place common actions and abnormal-entry points where operators can reach them quickly.\n- Maintenance rules\n- Keep naming and layout standards consistent so later point additions do not break the interface.\n- Scope and Method\n- Hierarchy planning\n- We structure home, unit, and equipment views so each role can find the right level of information without extra navigation.\n- Alarm-linked views\n- Alarm information is arranged to connect back to equipment status, process conditions, and the next operator action.\n- Change-ready standards\n- Naming, symbols, and navigation rules are set up so later changes remain understandable for the next team.\n- Bring SCADA / HMI planning in before tag growth and screen expansion begin, so later additions do not turn the interface into patchwork.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-ie-services': {
     key: 'service-ie-services',
     title: 'I&E Services',
     docPath: 'docs/references/en/services/02-ie-services.md',
     sourceUrl: 'https://pentagoneng.com/service/ie-services/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1496,7 +1529,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['I&E Services'],
+        content: [
+          'I&E Services',
+          'Field ready',
+          'FAT / SAT',
+          'Startup support'
+        ],
         notes: []
       },
       {
@@ -1504,8 +1542,8 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'I&E Services',
-          'Rally Technology provides instrumentation and electrical support that connects design intent, field readiness, and commissioning execution.',
-          'From FAT/SAT to troubleshooting and on-site support, we help teams move complex systems toward safe and stable operation.'
+          'Rally Technology supports instrumentation and electrical work across FAT / SAT, loop checks, startup, and field troubleshooting.',
+          'The goal is to get systems ready for site work, isolate issues faster, and keep commissioning decisions aligned across teams.'
         ],
         notes: []
       },
@@ -1535,23 +1573,33 @@ export const referencePagesEn = {
         heading: 'Block 05 Detailed Capabilities [core]',
         role: 'core',
         content: [
-          'Commissioning & FAT/SAT Support',
-          'We support commissioning, FAT, and SAT activities to verify automation systems against project requirements before start-up and handover.',
-          'These milestones help teams reduce downstream issues, close punch items faster, and build confidence before operations begin.',
-          'On-site Troubleshooting',
-          'Our team provides field troubleshooting support to isolate root causes quickly, stabilize operations, and keep issues from expanding into longer outages.',
-          'We prioritize practical diagnosis, clear communication, and follow-through until the site can move ahead safely.',
-          'Instrumentation Installation & Calibration',
-          'We support installation and calibration workflows that keep sensors, analyzers, and control instruments operating within the accuracy needed for process control and compliance.',
-          'Power Systems Studies',
-          'We deliver the study work needed to understand distribution reliability, protection concerns, and operating risk in industrial power environments.',
-          'These studies help teams protect equipment, improve operating confidence, and make better decisions about upgrades and loading conditions.',
-          'Gas Analyzing Systems',
-          'We support gas-analyzing system integration where composition, quality, and compliance data need to be measured reliably.',
-          'Power Meter Design & Deployment',
-          'We plan and deploy power-metering solutions that help clients monitor consumption, understand power quality, and improve the usability of electrical data.',
-          'Security Systems',
-          'We coordinate security-system design and integration work that strengthens site resilience and supports safer industrial operations.'
+          'I&E support that keeps field work moving',
+          'I&E work becomes difficult when testing, startup, punch closure, and field response are handled as separate tasks. The site needs one working sequence.',
+          'We coordinate validation points, troubleshooting, and cross-discipline handoffs so startup moves with fewer surprises.',
+          'Key Priorities',
+          'Field readiness',
+          'Clarify startup conditions and acceptance points before site work begins.',
+          'FAT / SAT closure',
+          'Keep testing, punch closure, and commissioning checks on the same working sequence.',
+          'Startup response',
+          'Use troubleshooting and loop checks to reduce surprises during startup windows.',
+          'Cross-team coordination',
+          'Align instrumentation, electrical, equipment, and site teams around one execution rhythm.',
+          'Scope and Method',
+          'FAT / SAT support',
+          'We organize validation points and punch closure so systems complete the checks needed before startup.',
+          'Field troubleshooting',
+          'We help sites isolate problems quickly, stabilize operation, and keep issues from expanding into longer outages.',
+          'Instrument calibration',
+          'Installation, calibration, and verification workflows are coordinated so field instruments operate within the accuracy the process requires.',
+          'Power studies',
+          'We support power-system studies that help teams understand distribution reliability, protection concerns, and operating risk.',
+          'Gas analysis systems',
+          'Gas-analyzing systems are integrated where composition, quality, and compliance data need to be measured reliably.',
+          'Power metering',
+          'Metering work is planned to improve visibility into consumption, power quality, and electrical-use data.',
+          'Security integration',
+          'Security-system coordination is included where safer and more resilient industrial operations depend on it.'
         ],
         notes: []
       },
@@ -1559,18 +1607,19 @@ export const referencePagesEn = {
         heading: 'Block 06 Service Cards [core]',
         role: 'core',
         content: [
-          'FAT/SAT Support',
-          'Set up, test, and verify automation systems before handover.',
+          'Typical Support',
+          'FAT / SAT Support',
+          'Complete the checks and punch closure needed before startup.',
           'Power Systems Studies',
-          'Protect distribution reliability and operating confidence.',
-          'On-site Troubleshooting',
-          'Respond quickly to field issues and stabilize operations.',
-          'Gas Analyzing Systems',
-          'Measure gas composition reliably in industrial processes.',
-          'Instrumentation Installation & Calibration',
-          'Maintain accurate behavior across sensing and control points.',
-          'Power Meter Design & Deployment',
-          'Monitor consumption, quality, and electrical usage data.'
+          'Review distribution reliability and operating risk early.',
+          'Field Troubleshooting',
+          'Respond quickly to field issues and stabilize operation.',
+          'Gas Analysis Systems',
+          'Keep gas-composition measurement reliable in process use.',
+          'Instrument Calibration',
+          'Maintain the accuracy of sensing and control points.',
+          'Power Metering',
+          'Track consumption, quality, and electrical-use data.'
         ],
         notes: []
       },
@@ -1578,8 +1627,8 @@ export const referencePagesEn = {
         heading: 'Block 07 Quote [core]',
         role: 'core',
         content: [
-          '"I&E services connect design intent to field readiness, turning engineering packages into systems that can be commissioned and operated with confidence."',
-          '– Rally Technology'
+          '"Good I&E support makes startup conditions clear before the field has to guess."',
+          'Rally Technology'
         ],
         notes: []
       },
@@ -1587,14 +1636,14 @@ export const referencePagesEn = {
         heading: 'Block 08 Summary [core]',
         role: 'core',
         content: [
-          'Rally Technology covers commissioning support, FAT/SAT execution, and field troubleshooting as part of a broader industrial-automation delivery path.',
-          'The team also supports instrumentation installation, calibration, and power-system studies so control systems and electrical infrastructure can move toward safer and more stable operation.',
-          'Additional work spans gas-analyzing systems, metering deployment, and security-system coordination to support monitoring, reliability, and operational resilience.'
+          'When to Bring It In',
+          'Bring I&E support in before FAT closes and before startup windows are fixed. That is when loop checks, punch closure, and field coordination still change the outcome.',
+          'It is most useful when instrumentation, electrical, and commissioning tasks need one execution rhythm instead of separate work lists.'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/ie-services/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Detailed Capabilities [core]\n- Block 06 Service Cards [core]\n- Block 07 Quote [core]\n- Block 08 Summary [core]\n\n## Block 01 Page Hero [core]\n\n- I&E Services\n\n## Block 02 Service Introduction [core]\n\n- I&E Services\n- Rally Technology provides instrumentation and electrical support that connects design intent, field readiness, and commissioning execution.\n- From FAT/SAT to troubleshooting and on-site support, we help teams move complex systems toward safe and stable operation.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Detailed Capabilities [core]\n\n- Commissioning & FAT/SAT Support\n- We support commissioning, FAT, and SAT activities to verify automation systems against project requirements before start-up and handover.\n- These milestones help teams reduce downstream issues, close punch items faster, and build confidence before operations begin.\n- On-site Troubleshooting\n- Our team provides field troubleshooting support to isolate root causes quickly, stabilize operations, and keep issues from expanding into longer outages.\n- We prioritize practical diagnosis, clear communication, and follow-through until the site can move ahead safely.\n- Instrumentation Installation & Calibration\n- We support installation and calibration workflows that keep sensors, analyzers, and control instruments operating within the accuracy needed for process control and compliance.\n- Power Systems Studies\n- We deliver the study work needed to understand distribution reliability, protection concerns, and operating risk in industrial power environments.\n- These studies help teams protect equipment, improve operating confidence, and make better decisions about upgrades and loading conditions.\n- Gas Analyzing Systems\n- We support gas-analyzing system integration where composition, quality, and compliance data need to be measured reliably.\n- Power Meter Design & Deployment\n- We plan and deploy power-metering solutions that help clients monitor consumption, understand power quality, and improve the usability of electrical data.\n- Security Systems\n- We coordinate security-system design and integration work that strengthens site resilience and supports safer industrial operations.\n\n## Block 06 Service Cards [core]\n\n- FAT/SAT Support\n- Set up, test, and verify automation systems before handover.\n- Power Systems Studies\n- Protect distribution reliability and operating confidence.\n- On-site Troubleshooting\n- Respond quickly to field issues and stabilize operations.\n- Gas Analyzing Systems\n- Measure gas composition reliably in industrial processes.\n- Instrumentation Installation & Calibration\n- Maintain accurate behavior across sensing and control points.\n- Power Meter Design & Deployment\n- Monitor consumption, quality, and electrical usage data.\n\n## Block 07 Quote [core]\n\n- "I&E services connect design intent to field readiness, turning engineering packages into systems that can be commissioned and operated with confidence."\n- – Rally Technology\n\n## Block 08 Summary [core]\n\n- Rally Technology covers commissioning support, FAT/SAT execution, and field troubleshooting as part of a broader industrial-automation delivery path.\n- The team also supports instrumentation installation, calibration, and power-system studies so control systems and electrical infrastructure can move toward safer and more stable operation.\n- Additional work spans gas-analyzing systems, metering deployment, and security-system coordination to support monitoring, reliability, and operational resilience.'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/ie-services/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Detailed Capabilities [core]\n- Block 06 Service Cards [core]\n- Block 07 Quote [core]\n- Block 08 Summary [core]\n\n## Block 01 Page Hero [core]\n\n- I&E Services\n- Field ready\n- FAT / SAT\n- Startup support\n\n## Block 02 Service Introduction [core]\n\n- I&E Services\n- Rally Technology supports instrumentation and electrical work across FAT / SAT, loop checks, startup, and field troubleshooting.\n- The goal is to get systems ready for site work, isolate issues faster, and keep commissioning decisions aligned across teams.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Detailed Capabilities [core]\n\n- I&E support that keeps field work moving\n- I&E work becomes difficult when testing, startup, punch closure, and field response are handled as separate tasks. The site needs one working sequence.\n- We coordinate validation points, troubleshooting, and cross-discipline handoffs so startup moves with fewer surprises.\n- Key Priorities\n- Field readiness\n- Clarify startup conditions and acceptance points before site work begins.\n- FAT / SAT closure\n- Keep testing, punch closure, and commissioning checks on the same working sequence.\n- Startup response\n- Use troubleshooting and loop checks to reduce surprises during startup windows.\n- Cross-team coordination\n- Align instrumentation, electrical, equipment, and site teams around one execution rhythm.\n- Scope and Method\n- FAT / SAT support\n- We organize validation points and punch closure so systems complete the checks needed before startup.\n- Field troubleshooting\n- We help sites isolate problems quickly, stabilize operation, and keep issues from expanding into longer outages.\n- Instrument calibration\n- Installation, calibration, and verification workflows are coordinated so field instruments operate within the accuracy the process requires.\n- Power studies\n- We support power-system studies that help teams understand distribution reliability, protection concerns, and operating risk.\n- Gas analysis systems\n- Gas-analyzing systems are integrated where composition, quality, and compliance data need to be measured reliably.\n- Power metering\n- Metering work is planned to improve visibility into consumption, power quality, and electrical-use data.\n- Security integration\n- Security-system coordination is included where safer and more resilient industrial operations depend on it.\n\n## Block 06 Service Cards [core]\n\n- Typical Support\n- FAT / SAT Support\n- Complete the checks and punch closure needed before startup.\n- Power Systems Studies\n- Review distribution reliability and operating risk early.\n- Field Troubleshooting\n- Respond quickly to field issues and stabilize operation.\n- Gas Analysis Systems\n- Keep gas-composition measurement reliable in process use.\n- Instrument Calibration\n- Maintain the accuracy of sensing and control points.\n- Power Metering\n- Track consumption, quality, and electrical-use data.\n\n## Block 07 Quote [core]\n\n- "Good I&E support makes startup conditions clear before the field has to guess."\n- Rally Technology\n\n## Block 08 Summary [core]\n\n- When to Bring It In\n- Bring I&E support in before FAT closes and before startup windows are fixed. That is when loop checks, punch closure, and field coordination still change the outcome.\n- It is most useful when instrumentation, electrical, and commissioning tasks need one execution rhythm instead of separate work lists.'
   },
   'service-plc-dcs-programming-and-migration': {
     key: 'service-plc-dcs-programming-and-migration',
@@ -1603,7 +1652,7 @@ export const referencePagesEn = {
       'docs/references/en/services/03-plc-dcs-programming-and-migration.md',
     sourceUrl:
       'https://pentagoneng.com/service/plc-dcs-programming-and-migration/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1615,7 +1664,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['PLC & DCS Programming and Migration'],
+        content: [
+          'PLC & DCS Programming and Migration',
+          'Cutover path',
+          'Risk control',
+          'Maintainable logic'
+        ],
         notes: []
       },
       {
@@ -1623,8 +1677,8 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'PLC & DCS Programming and Migration',
-          'Rally Technology supports PLC and DCS programming, migration planning, and staged system cutover so legacy control environments can move forward without losing operational clarity.',
-          'We focus on migration paths that remain practical for the field, not just technically correct on paper.'
+          'Rally Technology supports PLC / DCS programming, migration planning, and staged cutover for running systems.',
+          'The work centers on a sequence the field can execute, with logic that stays readable during testing, cutover, and later maintenance.'
         ],
         notes: []
       },
@@ -1654,24 +1708,51 @@ export const referencePagesEn = {
         heading: 'Block 05 Key Capabilities [core]',
         role: 'core',
         content: [
-          'PLC and DCS Programming',
-          'We develop control logic and program structures that support readable operation, maintainable change control, and clearer troubleshooting.',
-          'System Migration and Optimization',
-          'We plan migrations and upgrade paths that reduce disruption while improving performance, maintainability, and long-term supportability.',
-          'Commitment to Innovation and Security',
-          'We pair modernization work with practical security and lifecycle thinking so upgraded control systems remain sustainable after commissioning.'
+          'Migration planning has to fit the real shutdown window',
+          'PLC / DCS migration touches existing logic, shutdown limits, dependencies, and rollback conditions. It is not only a programming task.',
+          'We structure program changes, validation points, and cutover steps so the site can move without losing operational clarity.',
+          'Key Priorities',
+          'Cutover boundary',
+          'Map system boundaries, dependencies, and outage limits before locking the sequence.',
+          'Shutdown control',
+          'Define test windows, rollback conditions, and validation steps early.',
+          'Logic readability',
+          'Keep program structure understandable for testing, troubleshooting, and later change.',
+          'Recovery readiness',
+          'Prepare documents and operating context so the upgraded system is easier to restore and support.',
+          'Scope and Method',
+          'Programming structure',
+          'We develop control logic in a form that supports readable operation, controlled change, and clearer troubleshooting.',
+          'Staged migration',
+          'Migration paths are planned in stages so upgrades reduce disruption while improving maintainability.',
+          'Lifecycle support',
+          'Modernization work is paired with documentation and long-term support thinking so the new platform remains sustainable.',
+          'Implementation Sequence',
+          'Step 01',
+          'Review the installed baseline',
+          'Clarify the existing program, dependencies, point lists, and shutdown limits before migration begins.',
+          'Step 02',
+          'Plan the staged cutover',
+          'Define test windows, cutover logic, and rollback conditions so field work does not rely on assumptions.',
+          'Step 03',
+          'Execute and validate',
+          'Implement logic in a form that supports testing, site verification, and operator review.',
+          'Step 04',
+          'Stabilize the upgraded system',
+          'Package versions, documents, and operating context so the new baseline is easier to maintain.',
+          'Bring PLC / DCS migration in before shutdown windows and test plans are locked. That is when cutover risk, rollback logic, and documentation can still be designed together.'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/plc-dcs-programming-and-migration/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Key Capabilities [core]\n\n## Block 01 Page Hero [core]\n\n- PLC & DCS Programming and Migration\n\n## Block 02 Service Introduction [core]\n\n- PLC & DCS Programming and Migration\n- Rally Technology supports PLC and DCS programming, migration planning, and staged system cutover so legacy control environments can move forward without losing operational clarity.\n- We focus on migration paths that remain practical for the field, not just technically correct on paper.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Key Capabilities [core]\n\n- PLC and DCS Programming\n- We develop control logic and program structures that support readable operation, maintainable change control, and clearer troubleshooting.\n- System Migration and Optimization\n- We plan migrations and upgrade paths that reduce disruption while improving performance, maintainability, and long-term supportability.\n- Commitment to Innovation and Security\n- We pair modernization work with practical security and lifecycle thinking so upgraded control systems remain sustainable after commissioning.'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/plc-dcs-programming-and-migration/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Key Capabilities [core]\n\n## Block 01 Page Hero [core]\n\n- PLC & DCS Programming and Migration\n- Cutover path\n- Risk control\n- Maintainable logic\n\n## Block 02 Service Introduction [core]\n\n- PLC & DCS Programming and Migration\n- Rally Technology supports PLC / DCS programming, migration planning, and staged cutover for running systems.\n- The work centers on a sequence the field can execute, with logic that stays readable during testing, cutover, and later maintenance.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Key Capabilities [core]\n\n- Migration planning has to fit the real shutdown window\n- PLC / DCS migration touches existing logic, shutdown limits, dependencies, and rollback conditions. It is not only a programming task.\n- We structure program changes, validation points, and cutover steps so the site can move without losing operational clarity.\n- Key Priorities\n- Cutover boundary\n- Map system boundaries, dependencies, and outage limits before locking the sequence.\n- Shutdown control\n- Define test windows, rollback conditions, and validation steps early.\n- Logic readability\n- Keep program structure understandable for testing, troubleshooting, and later change.\n- Recovery readiness\n- Prepare documents and operating context so the upgraded system is easier to restore and support.\n- Scope and Method\n- Programming structure\n- We develop control logic in a form that supports readable operation, controlled change, and clearer troubleshooting.\n- Staged migration\n- Migration paths are planned in stages so upgrades reduce disruption while improving maintainability.\n- Lifecycle support\n- Modernization work is paired with documentation and long-term support thinking so the new platform remains sustainable.\n- Implementation Sequence\n- Step 01\n- Review the installed baseline\n- Clarify the existing program, dependencies, point lists, and shutdown limits before migration begins.\n- Step 02\n- Plan the staged cutover\n- Define test windows, cutover logic, and rollback conditions so field work does not rely on assumptions.\n- Step 03\n- Execute and validate\n- Implement logic in a form that supports testing, site verification, and operator review.\n- Step 04\n- Stabilize the upgraded system\n- Package versions, documents, and operating context so the new baseline is easier to maintain.\n- Bring PLC / DCS migration in before shutdown windows and test plans are locked. That is when cutover risk, rollback logic, and documentation can still be designed together.'
   },
   'service-pi-server': {
     key: 'service-pi-server',
     title: 'PI Server',
     docPath: 'docs/references/en/services/04-pi-server.md',
     sourceUrl: 'https://pentagoneng.com/service/pi-server/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1684,7 +1765,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['PI Server'],
+        content: [
+          'PI Server',
+          'Stable data spine',
+          'Usable reporting',
+          'Easier integration'
+        ],
         notes: []
       },
       {
@@ -1692,8 +1778,8 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'PI Server',
-          'Rally Technology uses PI Server to build practical plant-data infrastructure for monitoring, reporting, and cross-system integration.',
-          'The goal is not only to collect data, but to make data usable for operations, engineering, and management teams.'
+          'Rally Technology uses PI Server to build plant-data platforms for monitoring, reporting, and cross-system use.',
+          'The goal is to create a data backbone other teams can actually connect to, not simply to collect more tags.'
         ],
         notes: []
       },
@@ -1723,10 +1809,11 @@ export const referencePagesEn = {
         heading: 'Block 05 Focus Tags [core]',
         role: 'core',
         content: [
-          'Industrial Automation',
-          'Operational Visibility',
-          'PI Server Expertise',
-          'Data-Centric Operations'
+          'Key Terms',
+          'Plant data backbone',
+          'Operational visibility',
+          'PI Server',
+          'Cross-system integration'
         ],
         notes: []
       },
@@ -1734,22 +1821,40 @@ export const referencePagesEn = {
         heading: 'Block 06 Accordion Highlights [core]',
         role: 'core',
         content: [
-          '1. Driving Industrial Automation',
-          'Use PI Server to connect live plant data with reporting, dashboards, and operational visibility.',
-          '2. Enabling PI Server Integration',
-          '3. Optimizing Operations'
+          'PI Server should make plant data easier to use',
+          'PI Server work is about shaping tags, context, and source structure so monitoring, reporting, and integration do not drift apart.',
+          'We plan naming, data paths, and expansion logic early so the platform remains usable as new systems connect.',
+          'Key Priorities',
+          'Data backbone',
+          'Collect plant data in a structure that supports dashboards, reports, and engineering review.',
+          'Context and naming',
+          'Set up source structure and naming rules before later expansion creates fragmentation.',
+          'Reporting continuity',
+          'Build a foundation that supports recurring reporting instead of one-time setup only.',
+          'Shared visibility',
+          'Give operations, engineering, and management a more consistent view of current conditions.',
+          'Typical Uses',
+          'Connect plant data',
+          'Use PI Server to connect live plant data with dashboards, reports, and day-to-day operating review.',
+          'Standardize integration',
+          'Structure source data, naming, and interfaces so the platform can expand without becoming harder to manage.',
+          'Support reporting',
+          'When data is stable and understandable, reporting, trend review, and cross-team decisions move faster.',
+          'When to Bring It In',
+          'PI Server is most useful when a site needs one stable plant-data backbone for dashboards, reports, and cross-system use.',
+          'Bring it in before tags, reports, and external integrations proliferate, so naming and source logic stay consistent.'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/pi-server/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Focus Tags [core]\n- Block 06 Accordion Highlights [core]\n\n## Block 01 Page Hero [core]\n\n- PI Server\n\n## Block 02 Service Introduction [core]\n\n- PI Server\n- Rally Technology uses PI Server to build practical plant-data infrastructure for monitoring, reporting, and cross-system integration.\n- The goal is not only to collect data, but to make data usable for operations, engineering, and management teams.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Focus Tags [core]\n\n- Industrial Automation\n- Operational Visibility\n- PI Server Expertise\n- Data-Centric Operations\n\n## Block 06 Accordion Highlights [core]\n\n- 1. Driving Industrial Automation\n- Use PI Server to connect live plant data with reporting, dashboards, and operational visibility.\n- 2. Enabling PI Server Integration\n- 3. Optimizing Operations'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/pi-server/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Focus Tags [core]\n- Block 06 Accordion Highlights [core]\n\n## Block 01 Page Hero [core]\n\n- PI Server\n- Stable data spine\n- Usable reporting\n- Easier integration\n\n## Block 02 Service Introduction [core]\n\n- PI Server\n- Rally Technology uses PI Server to build plant-data platforms for monitoring, reporting, and cross-system use.\n- The goal is to create a data backbone other teams can actually connect to, not simply to collect more tags.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Focus Tags [core]\n\n- Key Terms\n- Plant data backbone\n- Operational visibility\n- PI Server\n- Cross-system integration\n\n## Block 06 Accordion Highlights [core]\n\n- PI Server should make plant data easier to use\n- PI Server work is about shaping tags, context, and source structure so monitoring, reporting, and integration do not drift apart.\n- We plan naming, data paths, and expansion logic early so the platform remains usable as new systems connect.\n- Key Priorities\n- Data backbone\n- Collect plant data in a structure that supports dashboards, reports, and engineering review.\n- Context and naming\n- Set up source structure and naming rules before later expansion creates fragmentation.\n- Reporting continuity\n- Build a foundation that supports recurring reporting instead of one-time setup only.\n- Shared visibility\n- Give operations, engineering, and management a more consistent view of current conditions.\n- Typical Uses\n- Connect plant data\n- Use PI Server to connect live plant data with dashboards, reports, and day-to-day operating review.\n- Standardize integration\n- Structure source data, naming, and interfaces so the platform can expand without becoming harder to manage.\n- Support reporting\n- When data is stable and understandable, reporting, trend review, and cross-team decisions move faster.\n- When to Bring It In\n- PI Server is most useful when a site needs one stable plant-data backbone for dashboards, reports, and cross-system use.\n- Bring it in before tags, reports, and external integrations proliferate, so naming and source logic stay consistent.'
   },
   'service-historians': {
     key: 'service-historians',
     title: 'Historians',
     docPath: 'docs/references/en/services/05-historians.md',
     sourceUrl: 'https://pentagoneng.com/service/historians/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1760,7 +1865,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Historians'],
+        content: [
+          'Historians',
+          'Traceable history',
+          'Redundant access',
+          'Reports ready'
+        ],
         notes: []
       },
       {
@@ -1768,8 +1878,30 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Historians',
-          'Rally Technology structures historian environments so long-term plant data remains available for trend review, reporting, compliance, and cross-team analysis.',
-          'We can support local redundancy and remote-access patterns that improve resilience without making data retrieval harder for operating teams.'
+          'Rally Technology plans historian environments for long-term records, trend comparison, traceability, and reporting.',
+          'We focus on retention windows, access patterns, and redundancy so records remain usable months or years later.',
+          'Historian design is about records you can still retrieve later',
+          'A historian is valuable when process records can still be queried, compared, and explained long after collection.',
+          'We plan retention, retrieval, remote access, and redundancy around the way teams actually review events and produce reports.',
+          'Key Priorities',
+          'Long-term retention',
+          'Keep process records available for comparison, investigation, and traceability over time.',
+          'Trend review',
+          'Structure stored data so recurring reports and cross-team analysis are easier to run.',
+          'Redundant access',
+          'Plan local and remote access paths to reduce single-point failure risk.',
+          'Traceability',
+          'Maintain a stronger record base for compliance, quality review, and event investigation.',
+          'Scope and Method',
+          'Retention planning',
+          'We define how data should be retained, organized, and retrieved so historical records remain useful instead of archive noise.',
+          'Query and reporting',
+          'Historian structure is planned to support trend comparison, reporting, and engineering review rather than only data collection.',
+          'Access and redundancy',
+          'Local redundancy and remote-access patterns are designed to improve resilience while keeping everyday retrieval practical.',
+          'When to Bring It In',
+          'Bring historian planning in when retention rules, reporting needs, or audit expectations are first being defined.',
+          'That is the point where storage layout, access paths, and resilience can be designed for long-term use instead of retrofitted later.'
         ],
         notes: []
       },
@@ -1796,14 +1928,14 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/historians/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Historians\n\n## Block 02 Service Introduction [core]\n\n- Historians\n- Rally Technology structures historian environments so long-term plant data remains available for trend review, reporting, compliance, and cross-team analysis.\n- We can support local redundancy and remote-access patterns that improve resilience without making data retrieval harder for operating teams.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/historians/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Historians\n- Traceable history\n- Redundant access\n- Reports ready\n\n## Block 02 Service Introduction [core]\n\n- Historians\n- Rally Technology plans historian environments for long-term records, trend comparison, traceability, and reporting.\n- We focus on retention windows, access patterns, and redundancy so records remain usable months or years later.\n- Historian design is about records you can still retrieve later\n- A historian is valuable when process records can still be queried, compared, and explained long after collection.\n- We plan retention, retrieval, remote access, and redundancy around the way teams actually review events and produce reports.\n- Key Priorities\n- Long-term retention\n- Keep process records available for comparison, investigation, and traceability over time.\n- Trend review\n- Structure stored data so recurring reports and cross-team analysis are easier to run.\n- Redundant access\n- Plan local and remote access paths to reduce single-point failure risk.\n- Traceability\n- Maintain a stronger record base for compliance, quality review, and event investigation.\n- Scope and Method\n- Retention planning\n- We define how data should be retained, organized, and retrieved so historical records remain useful instead of archive noise.\n- Query and reporting\n- Historian structure is planned to support trend comparison, reporting, and engineering review rather than only data collection.\n- Access and redundancy\n- Local redundancy and remote-access patterns are designed to improve resilience while keeping everyday retrieval practical.\n- When to Bring It In\n- Bring historian planning in when retention rules, reporting needs, or audit expectations are first being defined.\n- That is the point where storage layout, access paths, and resilience can be designed for long-term use instead of retrofitted later.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-network-design': {
     key: 'service-network-design',
     title: 'Network Design',
     docPath: 'docs/references/en/services/06-network-design.md',
     sourceUrl: 'https://pentagoneng.com/service/network-design/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1815,7 +1947,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Network Design'],
+        content: [
+          'Network Design',
+          'Clear topology',
+          'Resilient segments',
+          'Room to expand'
+        ],
         notes: []
       },
       {
@@ -1823,8 +1960,8 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Network Design',
-          'Rally Technology plans industrial communication networks that support control traffic, field devices, and plant data systems in a structure that is readable, resilient, and maintainable.',
-          'We focus on segmentation, reliability, and future supportability so the network can grow with the facility rather than limit it.'
+          'Rally Technology plans industrial network architecture for control traffic, field devices, and plant data systems.',
+          'We define boundaries, segmentation, and growth paths early so the network does not become the weak point of the automation stack.'
         ],
         notes: []
       },
@@ -1854,19 +1991,38 @@ export const referencePagesEn = {
         heading: 'Block 05 Closing Statement [core]',
         role: 'core',
         content: [
-          'A strong network design gives automation systems the foundation they need for visibility, security, and reliable long-term operation.'
+          'Industrial networks need clear boundaries from the start',
+          'Good network design separates control traffic, data movement, remote access, and support needs before field devices start accumulating.',
+          'We structure topology, segmentation, and expansion room together so later systems can be added without reworking the whole foundation.',
+          'Key Priorities',
+          'Clear boundaries',
+          'Define control, data, and external-access boundaries so interference and risk are easier to manage.',
+          'Segmentation',
+          'Include reliability and failure-mode thinking during design instead of treating it as a later patch.',
+          'Maintainability',
+          'Keep topology, naming, and network intent understandable for long-term support.',
+          'Expansion room',
+          'Preserve room for growth so new systems can be added without rebuilding the whole network.',
+          'Scope and Method',
+          'Topology planning',
+          'We structure how devices, sites, and data systems should connect so the network is easier to understand and support.',
+          'Segmentation and resilience',
+          'Segmentation, redundancy, and failure scenarios are considered early so the network does not become the fragile part of the automation stack.',
+          'Expansion path',
+          'Design choices keep future equipment, data systems, and remote-access needs easier to add later.',
+          'Set network design before new control, data, or remote-access systems are layered on top. That is when boundaries and resilience can still be designed cleanly.'
         ],
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/network-design/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Closing Statement [core]\n\n## Block 01 Page Hero [core]\n\n- Network Design\n\n## Block 02 Service Introduction [core]\n\n- Network Design\n- Rally Technology plans industrial communication networks that support control traffic, field devices, and plant data systems in a structure that is readable, resilient, and maintainable.\n- We focus on segmentation, reliability, and future supportability so the network can grow with the facility rather than limit it.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Closing Statement [core]\n\n- A strong network design gives automation systems the foundation they need for visibility, security, and reliable long-term operation.'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/network-design/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n- Block 05 Closing Statement [core]\n\n## Block 01 Page Hero [core]\n\n- Network Design\n- Clear topology\n- Resilient segments\n- Room to expand\n\n## Block 02 Service Introduction [core]\n\n- Network Design\n- Rally Technology plans industrial network architecture for control traffic, field devices, and plant data systems.\n- We define boundaries, segmentation, and growth paths early so the network does not become the weak point of the automation stack.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## Block 05 Closing Statement [core]\n\n- Industrial networks need clear boundaries from the start\n- Good network design separates control traffic, data movement, remote access, and support needs before field devices start accumulating.\n- We structure topology, segmentation, and expansion room together so later systems can be added without reworking the whole foundation.\n- Key Priorities\n- Clear boundaries\n- Define control, data, and external-access boundaries so interference and risk are easier to manage.\n- Segmentation\n- Include reliability and failure-mode thinking during design instead of treating it as a later patch.\n- Maintainability\n- Keep topology, naming, and network intent understandable for long-term support.\n- Expansion room\n- Preserve room for growth so new systems can be added without rebuilding the whole network.\n- Scope and Method\n- Topology planning\n- We structure how devices, sites, and data systems should connect so the network is easier to understand and support.\n- Segmentation and resilience\n- Segmentation, redundancy, and failure scenarios are considered early so the network does not become the fragile part of the automation stack.\n- Expansion path\n- Design choices keep future equipment, data systems, and remote-access needs easier to add later.\n- Set network design before new control, data, or remote-access systems are layered on top. That is when boundaries and resilience can still be designed cleanly.'
   },
   'service-remote-monitoring-and-data': {
     key: 'service-remote-monitoring-and-data',
     title: 'Remote Monitoring and Data',
     docPath: 'docs/references/en/services/07-remote-monitoring-and-data.md',
     sourceUrl: 'https://pentagoneng.com/service/remote-monitoring-and-data/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1877,7 +2033,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Remote Monitoring and Data'],
+        content: [
+          'Remote Monitoring and Data',
+          'Remote visibility',
+          'Data continuity',
+          'Recovery readiness'
+        ],
         notes: []
       },
       {
@@ -1885,8 +2046,32 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Remote Monitoring and Data',
-          'Rally Technology helps clients build remote visibility and data-continuity workflows that reduce recovery risk, support business continuity, and keep critical information accessible across sites.',
-          'These solutions help teams monitor status, protect records, and act faster when unexpected issues occur.'
+          'Rally Technology helps build remote monitoring and data-continuity workflows for distributed sites and critical records.',
+          'We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought.',
+          'Remote visibility works best with continuity planning',
+          'Remote monitoring is only reliable when teams can still review status, retrieve records, and recover evidence after an abnormal event.',
+          'We combine cross-site visibility, backup paths, and recovery logic so remote operations stay usable under pressure.',
+          'Key Priorities',
+          'Cross-site visibility',
+          'Make important site status easier to review across multiple locations.',
+          'Record continuity',
+          'Plan monitoring together with backup paths so important records remain available later.',
+          'Recovery readiness',
+          'Keep stronger evidence and state history available when teams need to recover or investigate.',
+          'Access boundaries',
+          'Shape remote visibility around actual operational needs and clear risk limits.',
+          'Common Scenarios',
+          'Cross-site monitoring',
+          'Let teams follow important sites without always being on location.',
+          'Data backup',
+          'Reduce the risk of losing critical records when one storage path fails.',
+          'Event review',
+          'Preserve the context needed for incident review and future improvement.',
+          'Business continuity',
+          'Keep information access and decision support moving during remote or unexpected conditions.',
+          'When to Bring It In',
+          'Bring remote monitoring and data-continuity planning in before sites, backup paths, and remote roles are all defined separately.',
+          'That is when visibility, recovery expectations, and access boundaries can still be designed as one workflow.'
         ],
         notes: []
       },
@@ -1913,14 +2098,14 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/remote-monitoring-and-data/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Remote Monitoring and Data\n\n## Block 02 Service Introduction [core]\n\n- Remote Monitoring and Data\n- Rally Technology helps clients build remote visibility and data-continuity workflows that reduce recovery risk, support business continuity, and keep critical information accessible across sites.\n- These solutions help teams monitor status, protect records, and act faster when unexpected issues occur.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/remote-monitoring-and-data/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Remote Monitoring and Data\n- Remote visibility\n- Data continuity\n- Recovery readiness\n\n## Block 02 Service Introduction [core]\n\n- Remote Monitoring and Data\n- Rally Technology helps build remote monitoring and data-continuity workflows for distributed sites and critical records.\n- We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought.\n- Remote visibility works best with continuity planning\n- Remote monitoring is only reliable when teams can still review status, retrieve records, and recover evidence after an abnormal event.\n- We combine cross-site visibility, backup paths, and recovery logic so remote operations stay usable under pressure.\n- Key Priorities\n- Cross-site visibility\n- Make important site status easier to review across multiple locations.\n- Record continuity\n- Plan monitoring together with backup paths so important records remain available later.\n- Recovery readiness\n- Keep stronger evidence and state history available when teams need to recover or investigate.\n- Access boundaries\n- Shape remote visibility around actual operational needs and clear risk limits.\n- Common Scenarios\n- Cross-site monitoring\n- Let teams follow important sites without always being on location.\n- Data backup\n- Reduce the risk of losing critical records when one storage path fails.\n- Event review\n- Preserve the context needed for incident review and future improvement.\n- Business continuity\n- Keep information access and decision support moving during remote or unexpected conditions.\n- When to Bring It In\n- Bring remote monitoring and data-continuity planning in before sites, backup paths, and remote roles are all defined separately.\n- That is when visibility, recovery expectations, and access boundaries can still be designed as one workflow.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-alarm-monitoring': {
     key: 'service-alarm-monitoring',
     title: 'Alarm Monitoring',
     docPath: 'docs/references/en/services/08-alarm-monitoring.md',
     sourceUrl: 'https://pentagoneng.com/service/alarm-monitoring/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       'Block 01 Page Hero [core]',
       'Block 02 Service Introduction [core]',
@@ -1931,7 +2116,12 @@ export const referencePagesEn = {
       {
         heading: 'Block 01 Page Hero [core]',
         role: 'core',
-        content: ['Alarm Monitoring'],
+        content: [
+          'Alarm Monitoring',
+          'Clear priorities',
+          'Faster judgment',
+          'Less alarm noise'
+        ],
         notes: []
       },
       {
@@ -1939,8 +2129,28 @@ export const referencePagesEn = {
         role: 'core',
         content: [
           'Alarm Monitoring',
-          'Rally Technology develops alarm-monitoring approaches that improve response speed, operational awareness, and day-to-day decision-making in automated facilities.',
-          'We focus on making alarm logic easier to manage so teams can act on the right conditions at the right time.'
+          'Rally Technology develops alarm strategies and notification workflows that help teams respond to the right events faster.',
+          'We focus on alarm priority, context, and escalation so operators spend less time sorting noise and more time acting on real conditions.',
+          'Alarm monitoring should make priorities obvious',
+          'Alarm systems fail when every event looks urgent or when operators cannot tell what needs action first.',
+          'We organize alarm conditions, escalation flow, and screen context so teams can judge severity faster and respond with less hesitation.',
+          'Key Priorities',
+          'Priority first',
+          'Make critical conditions easier to recognize before low-value noise takes over attention.',
+          'Severity logic',
+          'Set alarm severity and ordering clearly so response expectations are easier to follow.',
+          'Context on screen',
+          'Show how each alarm relates to process and equipment context instead of leaving events isolated.',
+          'Noise control',
+          'Reduce repetitive or low-action alarms so they do not compete with real priorities.',
+          'Scope and Method',
+          'Alarm strategy',
+          'We help organize alarm conditions so teams understand which events matter most and how they should respond.',
+          'Escalation flow',
+          'Notification timing and ownership are arranged clearly so the site loses less time deciding who needs to act.',
+          'Screen context',
+          'Alarm visibility is stronger when operators can immediately see the related process, equipment, and next action.',
+          'Bring alarm strategy in before new points, screens, and notification rules pile up. That is when priority and response ownership can still be set cleanly.'
         ],
         notes: []
       },
@@ -1967,7 +2177,7 @@ export const referencePagesEn = {
         notes: []
       }
     ],
-    raw: '- Last updated: 2026-04-08\n- Source URL: https://pentagoneng.com/service/alarm-monitoring/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Alarm Monitoring\n\n## Block 02 Service Introduction [core]\n\n- Alarm Monitoring\n- Rally Technology develops alarm-monitoring approaches that improve response speed, operational awareness, and day-to-day decision-making in automated facilities.\n- We focus on making alarm logic easier to manage so teams can act on the right conditions at the right time.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- Last updated: 2026-04-14\n- Source URL: https://pentagoneng.com/service/alarm-monitoring/\n\n## Block Map\n\n- Block 01 Page Hero [core]\n- Block 02 Service Introduction [core]\n- Block 03 Sidebar Main Services [shared-layout]\n- Block 04 Sidebar Contact [shared-layout]\n\n## Block 01 Page Hero [core]\n\n- Alarm Monitoring\n- Clear priorities\n- Faster judgment\n- Less alarm noise\n\n## Block 02 Service Introduction [core]\n\n- Alarm Monitoring\n- Rally Technology develops alarm strategies and notification workflows that help teams respond to the right events faster.\n- We focus on alarm priority, context, and escalation so operators spend less time sorting noise and more time acting on real conditions.\n- Alarm monitoring should make priorities obvious\n- Alarm systems fail when every event looks urgent or when operators cannot tell what needs action first.\n- We organize alarm conditions, escalation flow, and screen context so teams can judge severity faster and respond with less hesitation.\n- Key Priorities\n- Priority first\n- Make critical conditions easier to recognize before low-value noise takes over attention.\n- Severity logic\n- Set alarm severity and ordering clearly so response expectations are easier to follow.\n- Context on screen\n- Show how each alarm relates to process and equipment context instead of leaving events isolated.\n- Noise control\n- Reduce repetitive or low-action alarms so they do not compete with real priorities.\n- Scope and Method\n- Alarm strategy\n- We help organize alarm conditions so teams understand which events matter most and how they should respond.\n- Escalation flow\n- Notification timing and ownership are arranged clearly so the site loses less time deciding who needs to act.\n- Screen context\n- Alarm visibility is stronger when operators can immediately see the related process, equipment, and next action.\n- Bring alarm strategy in before new points, screens, and notification rules pile up. That is when priority and response ownership can still be set cleanly.\n\n## Block 03 Sidebar Main Services [shared-layout]\n\n- Services\n- SCADA / HMI Graphics\n- I&E Services\n- PLC / DCS Programming and Migration\n- PI Server\n- Historians\n- Network Design\n- Remote Monitoring and Data\n- Alarm Monitoring\n\n## Block 04 Sidebar Contact [shared-layout]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   }
 } as const satisfies ReferencePagesMessages
 
@@ -1977,7 +2187,7 @@ export const referencePagesZhTw = {
     title: 'Home',
     docPath: 'docs/references/zh-tw/00-首頁.md',
     sourceUrl: 'https://pentagoneng.com/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       '區塊 01 頂部聯絡列 [共用版型]',
       '區塊 02 主選單 [共用版型]',
@@ -1986,7 +2196,7 @@ export const referencePagesZhTw = {
       '區塊 05 服務總覽區 [主內容]',
       '區塊 06 交付流程 [主內容]',
       '區塊 07 一站式整合導覽 [主內容]',
-      '區塊 08 使命與合作邀請 [主內容]',
+      '區塊 08 品牌態度與合作邀請 [主內容]',
       '區塊 09 頁尾聯絡 CTA [共用版型]',
       '區塊 10 頁尾版權 [共用版型]'
     ],
@@ -2000,20 +2210,20 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 02 主選單 [共用版型]',
         role: '共用版型',
-        content: ['關於我們', '服務項目', '一站式整合', '聯絡我們', '聯絡我們'],
+        content: ['關於我們', '服務項目', '一站式整合', '聯絡我們'],
         notes: [
           'FAQ 為輔助頁，不列入目前首頁主選單。',
-          '第二個「聯絡我們」為頁首 CTA 按鈕。'
+          '最後一個「聯絡我們」為頁首 CTA 按鈕。'
         ]
       },
       {
         heading: '區塊 03 主視覺 [主內容]',
         role: '主內容',
         content: [
-          '自動化整合交付',
-          '工業自動化交付，為可靠運轉而設計',
-          '串接控制系統、工廠資料與現場執行，支撐現代工業專案。',
-          '探索服務'
+          '自動化控制與監控整合',
+          '自動化控制與監控整合，支援工業現場運轉',
+          '協助專案與現場團隊把控制、監控與試車工作接在同一條較清楚的交付路徑上。',
+          '查看服務'
         ],
         notes: []
       },
@@ -2021,13 +2231,12 @@ export const referencePagesZhTw = {
         heading: '區塊 04 公司介紹 [主內容]',
         role: '主內容',
         content: [
-          '關於雷力',
-          '值得信賴的儀控、控制與工業資料整合夥伴',
-          '雷力科技成立於 2014 年，協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。',
-          '我們把技術規劃、現場執行與操作就緒整合在同一條節奏上，降低設計意圖與現場落地之間的落差。',
-          '專業能力：控制、儀控、試車驗收與現場協調以同一條交付路徑管理。',
-          '技術基礎：以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。',
-          '協作方式：讓業主、廠商與現場團隊對齊在同一組專案重點上。'
+          '為什麼選擇雷力',
+          '承接控制、監控與試車交付的整合夥伴',
+          '雷力科技成立於 2014 年，承接自動化控制、監控系統、試車支援與客製系統交付，服務專案端與現場端需求。',
+          '公司角色：承接控制系統、監控平台、試車支援與客製整合工作。',
+          '品質與合作：以 ISO 9001、ISO 45001 與 WinCC OA Partner 基礎支撐穩定交付。',
+          '常見場域：常見於再生能源、離岸風電、化工、製藥、EPC 與工業場域。'
         ],
         notes: []
       },
@@ -2036,31 +2245,31 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '服務項目',
-          '支援工業自動化專案的整合型服務',
+          '工業自動化服務範圍',
           'SCADA / HMI 圖控｜SCADA and HMI Graphics',
-          '建立可監看、可操作、可追溯的監控介面。',
-          '了解更多',
+          '提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。',
+          '查看詳情',
           '儀電整合｜I&E Services',
-          '支援 FAT、SAT、試車驗收與現場故障排除。',
-          '了解更多',
+          '承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。',
+          '查看詳情',
           'PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration',
-          '提供控制邏輯開發、搬遷規劃與分階段切換支援。',
-          '了解更多',
+          '承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。',
+          '查看詳情',
           'PI Server',
-          '建立即時資料採集、監看與跨系統整合基礎。',
-          '了解更多',
+          '建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。',
+          '查看詳情',
           'Historians',
-          '支援長期資料保存、趨勢分析與追溯需求。',
-          '了解更多',
+          '建立長期歷史資料平台，支援趨勢、報表、追溯與分析。',
+          '查看詳情',
           '工業網路設計｜Network Design',
-          '規劃穩定、可維護且具擴充性的工業通訊網路。',
-          '了解更多',
+          '規劃工業網路架構，支撐穩定通訊與後續擴充維護。',
+          '查看詳情',
           '遠端監控與資料備援｜Remote Monitoring and Data',
-          '強化跨據點監看、資料持續性與備援能力。',
-          '了解更多',
+          '建立遠端可視與資料回傳機制，支援分散據點與備援需求。',
+          '查看詳情',
           '告警監控｜Alarm Monitoring',
-          '建立告警分級、通知邏輯與應變流程。',
-          '了解更多'
+          '建立告警路由與升級流程，讓事件能更快對應到處置。',
+          '查看詳情'
         ],
         notes: []
       },
@@ -2069,10 +2278,10 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '專案流程',
-          '交付流程',
-          '01 需求對齊',
+          '專案怎麼往下走',
+          '01 範圍確認',
           '02 技術規劃',
-          '03 分階段實作',
+          '03 執行支援',
           '04 驗證與交接'
         ],
         notes: []
@@ -2081,26 +2290,27 @@ export const referencePagesZhTw = {
         heading: '區塊 07 一站式整合導覽 [主內容]',
         role: '主內容',
         content: [
-          '一站式整合體驗',
-          '了解更多',
-          '資料整合｜Data Integration',
-          '告警通報系統整合與試車｜Call-Out System Integration and Commissioning',
-          '振動分析｜Vibration Analysis',
-          '本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment',
-          '公用與廠務系統整合｜Utilities and Facilities System Integration'
+          '一站式整合',
+          '把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。',
+          '開始洽詢',
+          'SCADA 資料',
+          '告警流程',
+          'Historian 資料',
+          '公用系統資料',
+          '跨系統流程'
         ],
         notes: []
       },
       {
-        heading: '區塊 08 使命與合作邀請 [主內容]',
+        heading: '區塊 08 品牌態度與合作邀請 [主內容]',
         role: '主內容',
         content: [
-          '把整合能力轉成穩定交付',
-          '我們的使命',
-          '合作邀請',
-          '把專案複雜度轉成穩定可維運的系統',
-          '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行能在同一條節奏上推進。',
-          '了解我們的使命'
+          '雷力怎麼跟專案團隊合作',
+          '專業與迅速',
+          '團隊與誠信',
+          '先把範圍與介面釐清，再讓後續跟得上',
+          '我們重視提早釐清決策、系統介面與下一步工作，避免設計、會議與現場執行之間斷線。',
+          '討論需求'
         ],
         notes: []
       },
@@ -2108,7 +2318,7 @@ export const referencePagesZhTw = {
         heading: '區塊 09 頁尾聯絡 CTA [共用版型]',
         role: '共用版型',
         content: [
-          '工程與自動化整合專家',
+          '工業自動化整合夥伴',
           '聯絡我們',
           '雷力科技 Rally Technology',
           '電話',
@@ -2129,14 +2339,14 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/\n\n## 區塊總覽\n\n- 區塊 01 頂部聯絡列 [共用版型]\n- 區塊 02 主選單 [共用版型]\n- 區塊 03 主視覺 [主內容]\n- 區塊 04 公司介紹 [主內容]\n- 區塊 05 服務總覽區 [主內容]\n- 區塊 06 交付流程 [主內容]\n- 區塊 07 一站式整合導覽 [主內容]\n- 區塊 08 使命與合作邀請 [主內容]\n- 區塊 09 頁尾聯絡 CTA [共用版型]\n- 區塊 10 頁尾版權 [共用版型]\n\n## 區塊 01 頂部聯絡列 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 02 主選單 [共用版型]\n\n- 關於我們\n- 服務項目\n- 一站式整合\n- 聯絡我們\n- 聯絡我們\n\n### 備註\n\n- FAQ 為輔助頁，不列入目前首頁主選單。\n- 第二個「聯絡我們」為頁首 CTA 按鈕。\n\n## 區塊 03 主視覺 [主內容]\n\n- 自動化整合交付\n- 工業自動化交付，為可靠運轉而設計\n- 串接控制系統、工廠資料與現場執行，支撐現代工業專案。\n- 探索服務\n\n## 區塊 04 公司介紹 [主內容]\n\n- 關於雷力\n- 值得信賴的儀控、控制與工業資料整合夥伴\n- 雷力科技成立於 2014 年，協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。\n- 我們把技術規劃、現場執行與操作就緒整合在同一條節奏上，降低設計意圖與現場落地之間的落差。\n- 專業能力：控制、儀控、試車驗收與現場協調以同一條交付路徑管理。\n- 技術基礎：以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。\n- 協作方式：讓業主、廠商與現場團隊對齊在同一組專案重點上。\n\n## 區塊 05 服務總覽區 [主內容]\n\n- 服務項目\n- 支援工業自動化專案的整合型服務\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 建立可監看、可操作、可追溯的監控介面。\n- 了解更多\n- 儀電整合｜I&E Services\n- 支援 FAT、SAT、試車驗收與現場故障排除。\n- 了解更多\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- 提供控制邏輯開發、搬遷規劃與分階段切換支援。\n- 了解更多\n- PI Server\n- 建立即時資料採集、監看與跨系統整合基礎。\n- 了解更多\n- Historians\n- 支援長期資料保存、趨勢分析與追溯需求。\n- 了解更多\n- 工業網路設計｜Network Design\n- 規劃穩定、可維護且具擴充性的工業通訊網路。\n- 了解更多\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 強化跨據點監看、資料持續性與備援能力。\n- 了解更多\n- 告警監控｜Alarm Monitoring\n- 建立告警分級、通知邏輯與應變流程。\n- 了解更多\n\n## 區塊 06 交付流程 [主內容]\n\n- 專案流程\n- 交付流程\n- 01 需求對齊\n- 02 技術規劃\n- 03 分階段實作\n- 04 驗證與交接\n\n## 區塊 07 一站式整合導覽 [主內容]\n\n- 一站式整合體驗\n- 了解更多\n- 資料整合｜Data Integration\n- 告警通報系統整合與試車｜Call-Out System Integration and Commissioning\n- 振動分析｜Vibration Analysis\n- 本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment\n- 公用與廠務系統整合｜Utilities and Facilities System Integration\n\n## 區塊 08 使命與合作邀請 [主內容]\n\n- 把整合能力轉成穩定交付\n- 我們的使命\n- 合作邀請\n- 把專案複雜度轉成穩定可維運的系統\n- 雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行能在同一條節奏上推進。\n- 了解我們的使命\n\n## 區塊 09 頁尾聯絡 CTA [共用版型]\n\n- 工程與自動化整合專家\n- 聯絡我們\n- 雷力科技 Rally Technology\n- 電話\n- +886-3-552-9933\n- 傳真\n- +886-3-552-9797\n- 電子郵件\n- sales@rallytech.com.tw\n- 地址\n- 302081 新竹縣竹北市惟馨街 95 號 3 樓之 5\n\n## 區塊 10 頁尾版權 [共用版型]\n\n- © 2026 雷力科技。版權所有。'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/\n\n## 區塊總覽\n\n- 區塊 01 頂部聯絡列 [共用版型]\n- 區塊 02 主選單 [共用版型]\n- 區塊 03 主視覺 [主內容]\n- 區塊 04 公司介紹 [主內容]\n- 區塊 05 服務總覽區 [主內容]\n- 區塊 06 交付流程 [主內容]\n- 區塊 07 一站式整合導覽 [主內容]\n- 區塊 08 品牌態度與合作邀請 [主內容]\n- 區塊 09 頁尾聯絡 CTA [共用版型]\n- 區塊 10 頁尾版權 [共用版型]\n\n## 區塊 01 頂部聯絡列 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 02 主選單 [共用版型]\n\n- 關於我們\n- 服務項目\n- 一站式整合\n- 聯絡我們\n\n### 備註\n\n- FAQ 為輔助頁，不列入目前首頁主選單。\n- 最後一個「聯絡我們」為頁首 CTA 按鈕。\n\n## 區塊 03 主視覺 [主內容]\n\n- 自動化控制與監控整合\n- 自動化控制與監控整合，支援工業現場運轉\n- 協助專案與現場團隊把控制、監控與試車工作接在同一條較清楚的交付路徑上。\n- 查看服務\n\n## 區塊 04 公司介紹 [主內容]\n\n- 為什麼選擇雷力\n- 承接控制、監控與試車交付的整合夥伴\n- 雷力科技成立於 2014 年，承接自動化控制、監控系統、試車支援與客製系統交付，服務專案端與現場端需求。\n- 公司角色：承接控制系統、監控平台、試車支援與客製整合工作。\n- 品質與合作：以 ISO 9001、ISO 45001 與 WinCC OA Partner 基礎支撐穩定交付。\n- 常見場域：常見於再生能源、離岸風電、化工、製藥、EPC 與工業場域。\n\n## 區塊 05 服務總覽區 [主內容]\n\n- 服務項目\n- 工業自動化服務範圍\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。\n- 查看詳情\n- 儀電整合｜I&E Services\n- 承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。\n- 查看詳情\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- 承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。\n- 查看詳情\n- PI Server\n- 建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。\n- 查看詳情\n- Historians\n- 建立長期歷史資料平台，支援趨勢、報表、追溯與分析。\n- 查看詳情\n- 工業網路設計｜Network Design\n- 規劃工業網路架構，支撐穩定通訊與後續擴充維護。\n- 查看詳情\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 建立遠端可視與資料回傳機制，支援分散據點與備援需求。\n- 查看詳情\n- 告警監控｜Alarm Monitoring\n- 建立告警路由與升級流程，讓事件能更快對應到處置。\n- 查看詳情\n\n## 區塊 06 交付流程 [主內容]\n\n- 專案流程\n- 專案怎麼往下走\n- 01 範圍確認\n- 02 技術規劃\n- 03 執行支援\n- 04 驗證與交接\n\n## 區塊 07 一站式整合導覽 [主內容]\n\n- 一站式整合\n- 把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。\n- 開始洽詢\n- SCADA 資料\n- 告警流程\n- Historian 資料\n- 公用系統資料\n- 跨系統流程\n\n## 區塊 08 品牌態度與合作邀請 [主內容]\n\n- 雷力怎麼跟專案團隊合作\n- 專業與迅速\n- 團隊與誠信\n- 先把範圍與介面釐清，再讓後續跟得上\n- 我們重視提早釐清決策、系統介面與下一步工作，避免設計、會議與現場執行之間斷線。\n- 討論需求\n\n## 區塊 09 頁尾聯絡 CTA [共用版型]\n\n- 工業自動化整合夥伴\n- 聯絡我們\n- 雷力科技 Rally Technology\n- 電話\n- +886-3-552-9933\n- 傳真\n- +886-3-552-9797\n- 電子郵件\n- sales@rallytech.com.tw\n- 地址\n- 302081 新竹縣竹北市惟馨街 95 號 3 樓之 5\n\n## 區塊 10 頁尾版權 [共用版型]\n\n- © 2026 雷力科技。版權所有。'
   },
   about: {
     key: 'about',
     title: 'About',
     docPath: 'docs/references/zh-tw/pages/01-關於我們.md',
     sourceUrl: 'https://pentagoneng.com/about-us/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 頁面介紹 [主內容]',
@@ -2147,7 +2357,7 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['關於我們｜About Us'],
+        content: ['關於我們'],
         notes: []
       },
       {
@@ -2155,9 +2365,9 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '關於我們',
-          '以工程方法支撐自動化交付',
-          '雷力科技協助工業客戶統整儀控、控制、試車驗收與資料整合工作，讓專案在規劃、執行與交接之間保持一致。',
-          '我們關注的不只是技術完成，更是現場能否真正接得住、用得久、維護得下去。'
+          '面向專案與現場交付的自動化整合',
+          '雷力科技成立於 2014 年，專注自動化控制與監控系統整合，承接控制、儀控、試車驗收、工廠資料與客製系統交付，服務再生能源、工業、化工、製藥與 EPC 等專案情境。',
+          '我們以專業、迅速、團隊、誠信看待工作方式。ISO 9001、ISO 45001 與 WinCC OA Partner 是交付基礎，目標是讓系統在驗證、交接與後續維護上都更清楚。'
         ],
         notes: []
       },
@@ -2165,15 +2375,15 @@ export const referencePagesZhTw = {
         heading: '區塊 03 能力模組區 [主內容]',
         role: '主內容',
         content: [
-          '整合交付能力',
-          '系統整合｜System Integration',
-          '儀電整合｜I&E Services',
-          '試車驗收與 FAT/SAT 支援｜Commissioning & FAT/SAT Support',
-          'SCADA / HMI 圖控｜SCADA / HMI Graphics',
-          'PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration',
-          'PI Server / Historians 平台整合｜PI Server / Historians',
-          '工業網路設計｜Network Design',
-          '一站式整合交付｜One-Touch Experience Delivery'
+          '核心整合能力',
+          '系統整合',
+          '儀電整合',
+          'FAT / SAT',
+          'SCADA / HMI',
+          'PLC / DCS',
+          'PI / Historian',
+          '工業網路',
+          '一站式整合'
         ],
         notes: []
       },
@@ -2182,23 +2392,23 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '交付流程',
-          '我們的作業流程',
-          '01 需求對齊',
+          '工作怎麼往下走',
+          '01 範圍確認',
           '02 技術規劃',
-          '03 分階段實作',
+          '03 執行支援',
           '04 驗證與交接'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/about-us/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 頁面介紹 [主內容]\n- 區塊 03 能力模組區 [主內容]\n- 區塊 04 作業流程 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 關於我們｜About Us\n\n## 區塊 02 頁面介紹 [主內容]\n\n- 關於我們\n- 以工程方法支撐自動化交付\n- 雷力科技協助工業客戶統整儀控、控制、試車驗收與資料整合工作，讓專案在規劃、執行與交接之間保持一致。\n- 我們關注的不只是技術完成，更是現場能否真正接得住、用得久、維護得下去。\n\n## 區塊 03 能力模組區 [主內容]\n\n- 整合交付能力\n- 系統整合｜System Integration\n- 儀電整合｜I&E Services\n- 試車驗收與 FAT/SAT 支援｜Commissioning & FAT/SAT Support\n- SCADA / HMI 圖控｜SCADA / HMI Graphics\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server / Historians 平台整合｜PI Server / Historians\n- 工業網路設計｜Network Design\n- 一站式整合交付｜One-Touch Experience Delivery\n\n## 區塊 04 作業流程 [主內容]\n\n- 交付流程\n- 我們的作業流程\n- 01 需求對齊\n- 02 技術規劃\n- 03 分階段實作\n- 04 驗證與交接'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/about-us/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 頁面介紹 [主內容]\n- 區塊 03 能力模組區 [主內容]\n- 區塊 04 作業流程 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 關於我們\n\n## 區塊 02 頁面介紹 [主內容]\n\n- 關於我們\n- 面向專案與現場交付的自動化整合\n- 雷力科技成立於 2014 年，專注自動化控制與監控系統整合，承接控制、儀控、試車驗收、工廠資料與客製系統交付，服務再生能源、工業、化工、製藥與 EPC 等專案情境。\n- 我們以專業、迅速、團隊、誠信看待工作方式。ISO 9001、ISO 45001 與 WinCC OA Partner 是交付基礎，目標是讓系統在驗證、交接與後續維護上都更清楚。\n\n## 區塊 03 能力模組區 [主內容]\n\n- 核心整合能力\n- 系統整合\n- 儀電整合\n- FAT / SAT\n- SCADA / HMI\n- PLC / DCS\n- PI / Historian\n- 工業網路\n- 一站式整合\n\n## 區塊 04 作業流程 [主內容]\n\n- 交付流程\n- 工作怎麼往下走\n- 01 範圍確認\n- 02 技術規劃\n- 03 執行支援\n- 04 驗證與交接'
   },
   faq: {
     key: 'faq',
     title: 'FAQ',
     docPath: 'docs/references/zh-tw/pages/02-常見問題.md',
     sourceUrl: 'https://pentagoneng.com/faq/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-15',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 頁面佔位提示 [主內容]',
@@ -2214,38 +2424,43 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 02 頁面佔位提示 [主內容]',
         role: '主內容',
-        content: ['常見問題', '常見問題內容整理中'],
-        notes: ['此頁目前為常見問題預留區，尚未放入正式問答內容。']
+        content: ['常見問題', '支援內容整理中'],
+        notes: ['此頁目前仍是支援頁佔位區，尚未放入正式問答內容。']
       },
       {
         heading: '區塊 03 聯絡表單 [主內容]',
         role: '主內容',
         content: [
           '聯絡我們',
-          '與我們聯繫',
-          '您的姓名 \\*',
-          '您的 Email \\*',
-          '主旨 \\*',
+          '開始洽詢',
+          '姓名',
+          'Email',
+          '公司 / 單位',
+          '主旨',
           '聯絡電話',
-          '需求內容 \\*'
+          '需求內容'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-07\n- 來源網址: https://pentagoneng.com/faq/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 頁面佔位提示 [主內容]\n- 區塊 03 聯絡表單 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 常見問題｜FAQ\n\n## 區塊 02 頁面佔位提示 [主內容]\n\n- 常見問題\n- 常見問題內容整理中\n\n### 備註\n\n- 此頁目前為常見問題預留區，尚未放入正式問答內容。\n\n## 區塊 03 聯絡表單 [主內容]\n\n- 聯絡我們\n- 與我們聯繫\n- 您的姓名 \\*\n- 您的 Email \\*\n- 主旨 \\*\n- 聯絡電話\n- 需求內容 \\*'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/faq/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 頁面佔位提示 [主內容]\n- 區塊 03 聯絡表單 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 常見問題｜FAQ\n\n## 區塊 02 頁面佔位提示 [主內容]\n\n- 常見問題\n- 支援內容整理中\n\n### 備註\n\n- 此頁目前仍是支援頁佔位區，尚未放入正式問答內容。\n\n## 區塊 03 聯絡表單 [主內容]\n\n- 聯絡我們\n- 開始洽詢\n- 姓名\n- Email\n- 公司 / 單位\n- 主旨\n- 聯絡電話\n- 需求內容'
   },
   'services-overview': {
     key: 'services-overview',
     title: 'Services Overview',
     docPath: 'docs/references/zh-tw/pages/03-服務總覽.md',
     sourceUrl: 'https://pentagoneng.com/services/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: ['區塊 01 頁首主視覺 [主內容]', '區塊 02 服務卡片區 [主內容]'],
     blocks: [
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['服務總覽｜Services'],
+        content: [
+          '服務項目',
+          '工業自動化服務範圍｜Industrial Automation Service Scopes',
+          '面向再生能源、工業、化工、製藥與 EPC 專案，從操作畫面、現場支援到資料平台、網路與告警流程。'
+        ],
         notes: []
       },
       {
@@ -2253,45 +2468,45 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           'SCADA / HMI 圖控｜SCADA and HMI Graphics',
-          '建立可監看、可操作、可追溯的監控介面。',
-          '了解更多',
+          '提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。',
+          '查看詳情',
           '儀電整合｜I&E Services',
-          '支援 FAT、SAT、試車驗收與現場故障排除。',
-          '了解更多',
+          '承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。',
+          '查看詳情',
           'PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration',
-          '提供控制邏輯開發、搬遷規劃與分階段切換支援。',
-          '了解更多',
+          '承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。',
+          '查看詳情',
           'PI Server',
-          '建立即時資料採集、監看與跨系統整合基礎。',
-          '了解更多',
+          '建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。',
+          '查看詳情',
           'Historians',
-          '支援長期資料保存、趨勢分析與追溯需求。',
-          '了解更多',
+          '建立長期歷史資料平台，支援趨勢、報表、追溯與分析。',
+          '查看詳情',
           '工業網路設計｜Network Design',
-          '規劃穩定、可維護且具擴充性的工業通訊網路。',
-          '了解更多',
+          '規劃工業網路架構，支撐穩定通訊與後續擴充維護。',
+          '查看詳情',
           '遠端監控與資料備援｜Remote Monitoring and Data',
-          '強化跨據點監看、資料持續性與備援能力。',
-          '了解更多',
+          '建立遠端可視與資料回傳機制，支援分散據點與備援需求。',
+          '查看詳情',
           '告警監控｜Alarm Monitoring',
-          '建立告警分級、通知邏輯與應變流程。',
-          '了解更多'
+          '建立告警路由與升級流程，讓事件能更快對應到處置。',
+          '查看詳情'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/services/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務卡片區 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 服務總覽｜Services\n\n## 區塊 02 服務卡片區 [主內容]\n\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 建立可監看、可操作、可追溯的監控介面。\n- 了解更多\n- 儀電整合｜I&E Services\n- 支援 FAT、SAT、試車驗收與現場故障排除。\n- 了解更多\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- 提供控制邏輯開發、搬遷規劃與分階段切換支援。\n- 了解更多\n- PI Server\n- 建立即時資料採集、監看與跨系統整合基礎。\n- 了解更多\n- Historians\n- 支援長期資料保存、趨勢分析與追溯需求。\n- 了解更多\n- 工業網路設計｜Network Design\n- 規劃穩定、可維護且具擴充性的工業通訊網路。\n- 了解更多\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 強化跨據點監看、資料持續性與備援能力。\n- 了解更多\n- 告警監控｜Alarm Monitoring\n- 建立告警分級、通知邏輯與應變流程。\n- 了解更多'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/services/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務卡片區 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 服務項目\n- 工業自動化服務範圍｜Industrial Automation Service Scopes\n- 面向再生能源、工業、化工、製藥與 EPC 專案，從操作畫面、現場支援到資料平台、網路與告警流程。\n\n## 區塊 02 服務卡片區 [主內容]\n\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。\n- 查看詳情\n- 儀電整合｜I&E Services\n- 承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。\n- 查看詳情\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- 承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。\n- 查看詳情\n- PI Server\n- 建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。\n- 查看詳情\n- Historians\n- 建立長期歷史資料平台，支援趨勢、報表、追溯與分析。\n- 查看詳情\n- 工業網路設計｜Network Design\n- 規劃工業網路架構，支撐穩定通訊與後續擴充維護。\n- 查看詳情\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 建立遠端可視與資料回傳機制，支援分散據點與備援需求。\n- 查看詳情\n- 告警監控｜Alarm Monitoring\n- 建立告警路由與升級流程，讓事件能更快對應到處置。\n- 查看詳情'
   },
   'one-touch-experience': {
     key: 'one-touch-experience',
     title: 'One-Touch Experience',
     docPath: 'docs/references/zh-tw/pages/04-一站式整合.md',
     sourceUrl: 'https://pentagoneng.com/one-touch-experience/',
-    lastUpdated: '2026-04-07',
+    lastUpdated: '2026-04-15',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 資料整合 [主內容]',
-      '區塊 03 告警通報系統整合與試車 [主內容]',
+      '區塊 03 告警流程與試車 [主內容]',
       '區塊 04 振動分析 [主內容]',
       '區塊 05 本地 / 雲端歷史資料部署 [主內容]',
       '區塊 06 公用與廠務系統整合 [主內容]'
@@ -2308,16 +2523,16 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '資料整合｜Data Integration',
-          '雷力科技把現場設備、製程資料與管理報表串成同一套可用的資料結構，讓營運、工程與管理團隊能在同一基準上判斷。'
+          '串接現場、設備與報表資料，讓團隊能在同一個可用的營運視角下工作。'
         ],
         notes: []
       },
       {
-        heading: '區塊 03 告警通報系統整合與試車 [主內容]',
+        heading: '區塊 03 告警流程與試車 [主內容]',
         role: '主內容',
         content: [
-          '告警通報系統整合與試車｜Call-Out System Integration and Commissioning',
-          '我們協助建立告警通報邏輯、通知路徑與試車驗證流程，讓關鍵狀況能更快且更穩定地傳遞到正確窗口。'
+          '告警流程與試車｜Alarm Workflow and Commissioning',
+          '對齊告警路由、通知邏輯與試車驗證，讓關鍵事件能更快送到正確窗口。'
         ],
         notes: []
       },
@@ -2326,7 +2541,7 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '振動分析｜Vibration Analysis',
-          '我們協助建立振動監測與判讀流程，讓團隊更早掌握異常趨勢，並提高關鍵設備的維護判斷品質。'
+          '支援振動監測與判讀流程，協助維護團隊更早掌握異常並判斷下一步。'
         ],
         notes: []
       },
@@ -2334,8 +2549,8 @@ export const referencePagesZhTw = {
         heading: '區塊 05 本地 / 雲端歷史資料部署 [主內容]',
         role: '主內容',
         content: [
-          '本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment',
-          '我們規劃本地與雲端 historian 架構，讓製程資料更容易支援排查、報表與長期優化。'
+          '本地 / 雲端 Historian 部署｜Local / Cloud Historian Deployment',
+          '規劃 Historian 環境，讓製程資料持續支援排查、報表與長期回顧。'
         ],
         notes: []
       },
@@ -2343,20 +2558,20 @@ export const referencePagesZhTw = {
         heading: '區塊 06 公用與廠務系統整合 [主內容]',
         role: '主內容',
         content: [
-          '公用與廠務系統整合｜Utilities and Facilities System Integration',
-          '我們把廠務、公用系統與現場監控、控制及報表邏輯整合起來，協助營運團隊同時掌握狀態、合規與執行效率。'
+          '公用與廠務整合｜Utilities and Facilities Integration',
+          '把公用與廠務系統接進同一層監控、控制與報表流程，形成跨系統整合視角。'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-07\n- 來源網址: https://pentagoneng.com/one-touch-experience/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 資料整合 [主內容]\n- 區塊 03 告警通報系統整合與試車 [主內容]\n- 區塊 04 振動分析 [主內容]\n- 區塊 05 本地 / 雲端歷史資料部署 [主內容]\n- 區塊 06 公用與廠務系統整合 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 一站式整合｜One-Touch Experience\n\n## 區塊 02 資料整合 [主內容]\n\n- 資料整合｜Data Integration\n- 雷力科技把現場設備、製程資料與管理報表串成同一套可用的資料結構，讓營運、工程與管理團隊能在同一基準上判斷。\n\n## 區塊 03 告警通報系統整合與試車 [主內容]\n\n- 告警通報系統整合與試車｜Call-Out System Integration and Commissioning\n- 我們協助建立告警通報邏輯、通知路徑與試車驗證流程，讓關鍵狀況能更快且更穩定地傳遞到正確窗口。\n\n## 區塊 04 振動分析 [主內容]\n\n- 振動分析｜Vibration Analysis\n- 我們協助建立振動監測與判讀流程，讓團隊更早掌握異常趨勢，並提高關鍵設備的維護判斷品質。\n\n## 區塊 05 本地 / 雲端歷史資料部署 [主內容]\n\n- 本地 / 雲端歷史資料部署｜Local/Cloud Historians Deployment\n- 我們規劃本地與雲端 historian 架構，讓製程資料更容易支援排查、報表與長期優化。\n\n## 區塊 06 公用與廠務系統整合 [主內容]\n\n- 公用與廠務系統整合｜Utilities and Facilities System Integration\n- 我們把廠務、公用系統與現場監控、控制及報表邏輯整合起來，協助營運團隊同時掌握狀態、合規與執行效率。'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/one-touch-experience/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 資料整合 [主內容]\n- 區塊 03 告警流程與試車 [主內容]\n- 區塊 04 振動分析 [主內容]\n- 區塊 05 本地 / 雲端歷史資料部署 [主內容]\n- 區塊 06 公用與廠務系統整合 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 一站式整合｜One-Touch Experience\n\n## 區塊 02 資料整合 [主內容]\n\n- 資料整合｜Data Integration\n- 串接現場、設備與報表資料，讓團隊能在同一個可用的營運視角下工作。\n\n## 區塊 03 告警流程與試車 [主內容]\n\n- 告警流程與試車｜Alarm Workflow and Commissioning\n- 對齊告警路由、通知邏輯與試車驗證，讓關鍵事件能更快送到正確窗口。\n\n## 區塊 04 振動分析 [主內容]\n\n- 振動分析｜Vibration Analysis\n- 支援振動監測與判讀流程，協助維護團隊更早掌握異常並判斷下一步。\n\n## 區塊 05 本地 / 雲端歷史資料部署 [主內容]\n\n- 本地 / 雲端 Historian 部署｜Local / Cloud Historian Deployment\n- 規劃 Historian 環境，讓製程資料持續支援排查、報表與長期回顧。\n\n## 區塊 06 公用與廠務系統整合 [主內容]\n\n- 公用與廠務整合｜Utilities and Facilities Integration\n- 把公用與廠務系統接進同一層監控、控制與報表流程，形成跨系統整合視角。'
   },
   contact: {
     key: 'contact',
     title: 'Contact',
     docPath: 'docs/references/zh-tw/pages/05-聯絡我們.md',
     sourceUrl: 'https://pentagoneng.com/contact/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-15',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 聯絡說明 [主內容]',
@@ -2367,7 +2582,10 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['聯絡我們｜Contact Us'],
+        content: [
+          '聯絡我們｜Contact Us',
+          '歡迎提供專案範圍、現場條件或升級需求，我們會協助釐清下一步。'
+        ],
         notes: []
       },
       {
@@ -2375,9 +2593,9 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '聯絡我們',
-          '從需求討論開始',
-          '若您正在評估自動化整合、控制系統、試車支援或工廠資料需求，歡迎與雷力科技聯繫。',
-          '我們協助團隊快速釐清下一步，把前期溝通轉成可執行的專案方向。'
+          '開始洽詢',
+          '若您要討論自動化整合、控制系統、試車支援或工廠資料需求，可從這裡開始。',
+          '我們會先協助確認範圍、釐清工作邊界，整理出下一步可執行的方向。'
         ],
         notes: []
       },
@@ -2385,11 +2603,15 @@ export const referencePagesZhTw = {
         heading: '區塊 03 聯絡表單 [主內容]',
         role: '主內容',
         content: [
-          '您的姓名 \\*',
-          '您的 Email \\*',
-          '主旨 \\*',
+          '聯絡表單',
+          '留下聯絡資訊與專案重點，讓我們更快理解範圍並回覆。',
+          '姓名',
+          'Email',
+          '公司 / 單位',
+          '主旨',
           '聯絡電話',
-          '需求內容 \\*'
+          '需求內容',
+          '送出洽詢'
         ],
         notes: []
       },
@@ -2405,14 +2627,14 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/contact/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 聯絡說明 [主內容]\n- 區塊 03 聯絡表單 [主內容]\n- 區塊 04 直接聯絡資訊 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 聯絡我們｜Contact Us\n\n## 區塊 02 聯絡說明 [主內容]\n\n- 聯絡我們\n- 從需求討論開始\n- 若您正在評估自動化整合、控制系統、試車支援或工廠資料需求，歡迎與雷力科技聯繫。\n- 我們協助團隊快速釐清下一步，把前期溝通轉成可執行的專案方向。\n\n## 區塊 03 聯絡表單 [主內容]\n\n- 您的姓名 \\*\n- 您的 Email \\*\n- 主旨 \\*\n- 聯絡電話\n- 需求內容 \\*\n\n## 區塊 04 直接聯絡資訊 [主內容]\n\n- 電話：+886-3-552-9933\n- 傳真：+886-3-552-9797\n- 電子郵件：sales@rallytech.com.tw\n- 地址：302081 新竹縣竹北市惟馨街 95 號 3 樓之 5'
+    raw: '- 最後更新: 2026-04-15\n- 來源網址: https://pentagoneng.com/contact/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 聯絡說明 [主內容]\n- 區塊 03 聯絡表單 [主內容]\n- 區塊 04 直接聯絡資訊 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 聯絡我們｜Contact Us\n- 歡迎提供專案範圍、現場條件或升級需求，我們會協助釐清下一步。\n\n## 區塊 02 聯絡說明 [主內容]\n\n- 聯絡我們\n- 開始洽詢\n- 若您要討論自動化整合、控制系統、試車支援或工廠資料需求，可從這裡開始。\n- 我們會先協助確認範圍、釐清工作邊界，整理出下一步可執行的方向。\n\n## 區塊 03 聯絡表單 [主內容]\n\n- 聯絡表單\n- 留下聯絡資訊與專案重點，讓我們更快理解範圍並回覆。\n- 姓名\n- Email\n- 公司 / 單位\n- 主旨\n- 聯絡電話\n- 需求內容\n- 送出洽詢\n\n## 區塊 04 直接聯絡資訊 [主內容]\n\n- 電話：+886-3-552-9933\n- 傳真：+886-3-552-9797\n- 電子郵件：sales@rallytech.com.tw\n- 地址：302081 新竹縣竹北市惟馨街 95 號 3 樓之 5'
   },
   'service-scada-and-hmi-graphics': {
     key: 'service-scada-and-hmi-graphics',
     title: 'SCADA and HMI Graphics',
     docPath: 'docs/references/zh-tw/services/01-scada-and-hmi-graphics.md',
     sourceUrl: 'https://pentagoneng.com/service/scada-and-hmi-graphics/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2423,7 +2645,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['監控與人機介面圖控服務｜SCADA and HMI Graphics'],
+        content: [
+          '監控與人機介面圖控服務｜SCADA and HMI Graphics',
+          '畫面易判讀',
+          '告警有脈絡',
+          '後續好維護'
+        ],
         notes: []
       },
       {
@@ -2431,8 +2658,28 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '監控與人機介面圖控服務｜SCADA and HMI Graphics',
-          '雷力科技規劃可讀性高、操作邏輯清楚的 SCADA 與 HMI 畫面，協助現場團隊更有效率地監看狀態、回應告警與執行操作。',
-          '我們重視畫面層級、資訊排序與長期維護性，讓系統在試車完成後仍能穩定支援日常運轉。'
+          '雷力科技規劃 SCADA / HMI 畫面，讓操作端更快看懂狀態、告警與下一步動作。',
+          '我們會把畫面層級、命名與導覽一起整理，讓系統在試車、日常操作與後續擴充時都維持一致。',
+          'SCADA / HMI 畫面要先服務操作判斷',
+          '好的圖控不是把更多資料塞進畫面，而是先排出現場要先看什麼、異常時要往哪裡查。',
+          '我們把層級、導覽與狀態邏輯一起整理，讓畫面現在好操作，之後新增點位也不容易失序。',
+          '重點項目',
+          '畫面層級',
+          '先分清楚狀態、告警與操作，讓操作端不用多找就能判讀。',
+          '告警脈絡',
+          '讓告警能連回設備與流程位置，而不是只跳出一個警示。',
+          '操作動線',
+          '把常用操作與異常切入點放在更容易抵達的位置。',
+          '維護規則',
+          '讓命名與版面規則可持續延伸，不因新增點位而破壞結構。',
+          '承接內容與做法',
+          '層級規劃',
+          '協助整理首頁、單元頁與設備頁的閱讀順序，讓不同角色都能快速找到需要的資訊。',
+          '告警連結',
+          '讓告警不只亮燈，而是能連回設備狀態、流程位置與下一步動作。',
+          '命名與延伸',
+          '把命名、符號與導覽規則先定清楚，讓後續修改與擴充更容易接手。',
+          'SCADA / HMI 最好在點位與畫面開始擴張前就先納入規劃，避免後續只能靠零碎補丁維持操作。'
         ],
         notes: []
       },
@@ -2459,14 +2706,14 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/scada-and-hmi-graphics/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n\n## 區塊 02 服務導言 [主內容]\n\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n- 雷力科技規劃可讀性高、操作邏輯清楚的 SCADA 與 HMI 畫面，協助現場團隊更有效率地監看狀態、回應告警與執行操作。\n- 我們重視畫面層級、資訊排序與長期維護性，讓系統在試車完成後仍能穩定支援日常運轉。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/scada-and-hmi-graphics/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n- 畫面易判讀\n- 告警有脈絡\n- 後續好維護\n\n## 區塊 02 服務導言 [主內容]\n\n- 監控與人機介面圖控服務｜SCADA and HMI Graphics\n- 雷力科技規劃 SCADA / HMI 畫面，讓操作端更快看懂狀態、告警與下一步動作。\n- 我們會把畫面層級、命名與導覽一起整理，讓系統在試車、日常操作與後續擴充時都維持一致。\n- SCADA / HMI 畫面要先服務操作判斷\n- 好的圖控不是把更多資料塞進畫面，而是先排出現場要先看什麼、異常時要往哪裡查。\n- 我們把層級、導覽與狀態邏輯一起整理，讓畫面現在好操作，之後新增點位也不容易失序。\n- 重點項目\n- 畫面層級\n- 先分清楚狀態、告警與操作，讓操作端不用多找就能判讀。\n- 告警脈絡\n- 讓告警能連回設備與流程位置，而不是只跳出一個警示。\n- 操作動線\n- 把常用操作與異常切入點放在更容易抵達的位置。\n- 維護規則\n- 讓命名與版面規則可持續延伸，不因新增點位而破壞結構。\n- 承接內容與做法\n- 層級規劃\n- 協助整理首頁、單元頁與設備頁的閱讀順序，讓不同角色都能快速找到需要的資訊。\n- 告警連結\n- 讓告警不只亮燈，而是能連回設備狀態、流程位置與下一步動作。\n- 命名與延伸\n- 把命名、符號與導覽規則先定清楚，讓後續修改與擴充更容易接手。\n- SCADA / HMI 最好在點位與畫面開始擴張前就先納入規劃，避免後續只能靠零碎補丁維持操作。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-ie-services': {
     key: 'service-ie-services',
     title: 'I&E Services',
     docPath: 'docs/references/zh-tw/services/02-ie-services.md',
     sourceUrl: 'https://pentagoneng.com/service/ie-services/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2481,7 +2728,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['儀電整合服務｜I&E Services'],
+        content: [
+          '儀電整合服務｜I&E Services',
+          '現場先就緒',
+          'FAT / SAT',
+          '啟動支援'
+        ],
         notes: []
       },
       {
@@ -2489,8 +2741,8 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '儀電整合服務｜I&E Services',
-          '雷力科技提供貫穿設計、現場就緒與試車階段的 I&E 支援，協助儀控與電力相關工作更順利落地。',
-          '從 FAT / SAT 到現場故障排除與現地支援，我們協助團隊把複雜系統推向更安全、穩定的運轉狀態。'
+          '雷力科技提供 I&E 現場支援，涵蓋 FAT / SAT、回路確認、啟動與現場排障。',
+          '重點是讓系統更快進入可施工狀態、問題更快定位，也讓試車決策能在跨團隊之間對齊。'
         ],
         notes: []
       },
@@ -2520,23 +2772,33 @@ export const referencePagesZhTw = {
         heading: '區塊 05 詳細能力說明 [主內容]',
         role: '主內容',
         content: [
-          '試車驗收與 FAT/SAT 支援｜Commissioning & FAT/SAT Support',
-          '雷力科技協助處理試車、FAT 與 SAT 驗證工作，讓自動化系統能在啟動前依照專案需求完成檢查與交付確認。',
-          '這些節點能幫助團隊更快收斂缺失、降低後續異常，並提升交接前的整體信心。',
-          '現場故障排除｜On-site Troubleshooting',
-          '我們提供現場排除支援，協助團隊更快定位根因、穩定系統狀態，避免問題擴大成長時間停機。',
-          '重點在於實務判斷、清楚溝通與處理到底，讓現場能安全地往下一步推進。',
-          '儀表安裝與校正｜Instrumentation Installation & Calibration',
-          '我們協助規劃與落實儀表安裝、校正與驗證流程，讓量測點與控制點維持符合製程需求的準確度。',
-          '電力系統分析｜Power Systems Studies',
-          '我們提供工業電力環境所需的分析工作，協助理解配電可靠度、保護協調與運轉風險。',
-          '這些分析有助於保護設備、提升操作信心，並支援負載與升級決策。',
-          '氣體分析系統｜Gas Analyzing Systems',
-          '我們協助整合工業現場的氣體分析系統，讓組成、品質與合規相關數據能被可靠量測與使用。',
-          '電力計量設計與部署｜Power Meter Design & Deployment',
-          '我們規劃並部署電力計量方案，協助客戶掌握用電、電能品質與電力資料的可用性。',
-          '安全系統｜Security Systems',
-          '我們協調安全系統的設計與整合工作，提升現場韌性並支援更安全的工業運轉。'
+          'I&E 支援要讓現場工作真正往前走',
+          'I&E 最怕把測試、啟動、缺失收斂與現場回應拆成各自處理的清單，最後每個環節都在等別人。',
+          '我們把驗證節點、故障定位與跨專業交接串成同一條工作節奏，讓啟動更少意外。',
+          '重點項目',
+          '現場就緒',
+          '先把啟動條件與驗收節點整理清楚，再往下做儀電協調。',
+          'FAT / SAT 收斂',
+          '讓測試、缺失收斂與試車確認放在同一條工作節奏裡。',
+          '啟動回應',
+          '透過回路確認與現場排障，降低啟動窗口的不確定性。',
+          '跨團隊協調',
+          '讓儀控、電力、設備與現場窗口用同一組工作重點對齊。',
+          '承接內容與做法',
+          'FAT / SAT 支援',
+          '協助整理驗證節點與缺失收斂，讓系統在啟動前完成必要確認。',
+          '現場故障排除',
+          '支援現場快速定位問題、穩定系統，避免異常擴大成長時間停機。',
+          '儀表安裝校正',
+          '把安裝、校正與驗證流程接好，維持量測與控制點的準確度。',
+          '電力系統分析',
+          '協助理解配電可靠度、保護協調與運轉風險，支援後續升級與負載決策。',
+          '氣體分析系統',
+          '整合氣體分析系統，讓組成、品質與合規資料更可靠可用。',
+          '電力計量部署',
+          '規劃與部署電力計量方案，提升用電與電能品質資料的可視性。',
+          '安全系統整合',
+          '在需要的專案中協調安全系統工作，支援更安全也更有韌性的現場運轉。'
         ],
         notes: []
       },
@@ -2544,18 +2806,19 @@ export const referencePagesZhTw = {
         heading: '區塊 06 服務卡片摘要 [主內容]',
         role: '主內容',
         content: [
+          '常見支援情境',
           'FAT / SAT 支援',
-          '在交接前完成系統測試、驗證與確認。',
+          '在啟動前完成必要測試、驗證與缺失收斂。',
           '電力系統分析',
-          '提升配電可靠度與操作信心。',
+          '提早掌握配電可靠度與運轉風險。',
           '現場故障排除',
-          '快速回應現場問題並穩定系統。',
+          '快速回應現場問題並穩定系統狀態。',
           '氣體分析系統',
-          '在工業製程中可靠量測氣體組成。',
-          '儀表安裝與校正',
+          '讓製程中的氣體量測更可靠。',
+          '儀表安裝校正',
           '維持量測與控制點的準確表現。',
-          '電力計量設計與部署',
-          '掌握用電、品質與電力使用資料。'
+          '電力計量部署',
+          '掌握用電、品質與電力資料。'
         ],
         notes: []
       },
@@ -2563,7 +2826,7 @@ export const referencePagesZhTw = {
         heading: '區塊 07 引言 [主內容]',
         role: '主內容',
         content: [
-          '「儀電整合服務的價值，在於把設計端的意圖真正帶到現場，讓系統能被安全驗證、穩定啟動、持續運轉。」',
+          '「好的 I&E 支援，是在現場必須猜之前，就先把啟動條件釐清。」',
           '－ 雷力科技'
         ],
         notes: []
@@ -2572,14 +2835,14 @@ export const referencePagesZhTw = {
         heading: '區塊 08 摘要 [主內容]',
         role: '主內容',
         content: [
-          '雷力科技把試車驗收、FAT / SAT 與現場故障排除視為同一條工業自動化交付路徑的一部分。',
-          '團隊也支援儀表安裝校正與電力系統分析，協助控制系統與電力基礎設施走向更安全、更穩定的運轉狀態。',
-          '另外也涵蓋氣體分析系統、電力計量部署與安全系統協調，支援現場在監測、可靠度與韌性上的需求。'
+          '適合提早納入的情境',
+          'I&E 支援最好在 FAT 結束前、啟動窗口確定前就先納入。這時回路確認、缺失收斂與現場協調還有空間改變結果。',
+          '特別適合儀控、電力與試車工作需要共用一條執行節奏，而不是各自分開推進的專案。'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/ie-services/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 詳細能力說明 [主內容]\n- 區塊 06 服務卡片摘要 [主內容]\n- 區塊 07 引言 [主內容]\n- 區塊 08 摘要 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 儀電整合服務｜I&E Services\n\n## 區塊 02 服務導言 [主內容]\n\n- 儀電整合服務｜I&E Services\n- 雷力科技提供貫穿設計、現場就緒與試車階段的 I&E 支援，協助儀控與電力相關工作更順利落地。\n- 從 FAT / SAT 到現場故障排除與現地支援，我們協助團隊把複雜系統推向更安全、穩定的運轉狀態。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 詳細能力說明 [主內容]\n\n- 試車驗收與 FAT/SAT 支援｜Commissioning & FAT/SAT Support\n- 雷力科技協助處理試車、FAT 與 SAT 驗證工作，讓自動化系統能在啟動前依照專案需求完成檢查與交付確認。\n- 這些節點能幫助團隊更快收斂缺失、降低後續異常，並提升交接前的整體信心。\n- 現場故障排除｜On-site Troubleshooting\n- 我們提供現場排除支援，協助團隊更快定位根因、穩定系統狀態，避免問題擴大成長時間停機。\n- 重點在於實務判斷、清楚溝通與處理到底，讓現場能安全地往下一步推進。\n- 儀表安裝與校正｜Instrumentation Installation & Calibration\n- 我們協助規劃與落實儀表安裝、校正與驗證流程，讓量測點與控制點維持符合製程需求的準確度。\n- 電力系統分析｜Power Systems Studies\n- 我們提供工業電力環境所需的分析工作，協助理解配電可靠度、保護協調與運轉風險。\n- 這些分析有助於保護設備、提升操作信心，並支援負載與升級決策。\n- 氣體分析系統｜Gas Analyzing Systems\n- 我們協助整合工業現場的氣體分析系統，讓組成、品質與合規相關數據能被可靠量測與使用。\n- 電力計量設計與部署｜Power Meter Design & Deployment\n- 我們規劃並部署電力計量方案，協助客戶掌握用電、電能品質與電力資料的可用性。\n- 安全系統｜Security Systems\n- 我們協調安全系統的設計與整合工作，提升現場韌性並支援更安全的工業運轉。\n\n## 區塊 06 服務卡片摘要 [主內容]\n\n- FAT / SAT 支援\n- 在交接前完成系統測試、驗證與確認。\n- 電力系統分析\n- 提升配電可靠度與操作信心。\n- 現場故障排除\n- 快速回應現場問題並穩定系統。\n- 氣體分析系統\n- 在工業製程中可靠量測氣體組成。\n- 儀表安裝與校正\n- 維持量測與控制點的準確表現。\n- 電力計量設計與部署\n- 掌握用電、品質與電力使用資料。\n\n## 區塊 07 引言 [主內容]\n\n- 「儀電整合服務的價值，在於把設計端的意圖真正帶到現場，讓系統能被安全驗證、穩定啟動、持續運轉。」\n- － 雷力科技\n\n## 區塊 08 摘要 [主內容]\n\n- 雷力科技把試車驗收、FAT / SAT 與現場故障排除視為同一條工業自動化交付路徑的一部分。\n- 團隊也支援儀表安裝校正與電力系統分析，協助控制系統與電力基礎設施走向更安全、更穩定的運轉狀態。\n- 另外也涵蓋氣體分析系統、電力計量部署與安全系統協調，支援現場在監測、可靠度與韌性上的需求。'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/ie-services/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 詳細能力說明 [主內容]\n- 區塊 06 服務卡片摘要 [主內容]\n- 區塊 07 引言 [主內容]\n- 區塊 08 摘要 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 儀電整合服務｜I&E Services\n- 現場先就緒\n- FAT / SAT\n- 啟動支援\n\n## 區塊 02 服務導言 [主內容]\n\n- 儀電整合服務｜I&E Services\n- 雷力科技提供 I&E 現場支援，涵蓋 FAT / SAT、回路確認、啟動與現場排障。\n- 重點是讓系統更快進入可施工狀態、問題更快定位，也讓試車決策能在跨團隊之間對齊。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 詳細能力說明 [主內容]\n\n- I&E 支援要讓現場工作真正往前走\n- I&E 最怕把測試、啟動、缺失收斂與現場回應拆成各自處理的清單，最後每個環節都在等別人。\n- 我們把驗證節點、故障定位與跨專業交接串成同一條工作節奏，讓啟動更少意外。\n- 重點項目\n- 現場就緒\n- 先把啟動條件與驗收節點整理清楚，再往下做儀電協調。\n- FAT / SAT 收斂\n- 讓測試、缺失收斂與試車確認放在同一條工作節奏裡。\n- 啟動回應\n- 透過回路確認與現場排障，降低啟動窗口的不確定性。\n- 跨團隊協調\n- 讓儀控、電力、設備與現場窗口用同一組工作重點對齊。\n- 承接內容與做法\n- FAT / SAT 支援\n- 協助整理驗證節點與缺失收斂，讓系統在啟動前完成必要確認。\n- 現場故障排除\n- 支援現場快速定位問題、穩定系統，避免異常擴大成長時間停機。\n- 儀表安裝校正\n- 把安裝、校正與驗證流程接好，維持量測與控制點的準確度。\n- 電力系統分析\n- 協助理解配電可靠度、保護協調與運轉風險，支援後續升級與負載決策。\n- 氣體分析系統\n- 整合氣體分析系統，讓組成、品質與合規資料更可靠可用。\n- 電力計量部署\n- 規劃與部署電力計量方案，提升用電與電能品質資料的可視性。\n- 安全系統整合\n- 在需要的專案中協調安全系統工作，支援更安全也更有韌性的現場運轉。\n\n## 區塊 06 服務卡片摘要 [主內容]\n\n- 常見支援情境\n- FAT / SAT 支援\n- 在啟動前完成必要測試、驗證與缺失收斂。\n- 電力系統分析\n- 提早掌握配電可靠度與運轉風險。\n- 現場故障排除\n- 快速回應現場問題並穩定系統狀態。\n- 氣體分析系統\n- 讓製程中的氣體量測更可靠。\n- 儀表安裝校正\n- 維持量測與控制點的準確表現。\n- 電力計量部署\n- 掌握用電、品質與電力資料。\n\n## 區塊 07 引言 [主內容]\n\n- 「好的 I&E 支援，是在現場必須猜之前，就先把啟動條件釐清。」\n- － 雷力科技\n\n## 區塊 08 摘要 [主內容]\n\n- 適合提早納入的情境\n- I&E 支援最好在 FAT 結束前、啟動窗口確定前就先納入。這時回路確認、缺失收斂與現場協調還有空間改變結果。\n- 特別適合儀控、電力與試車工作需要共用一條執行節奏，而不是各自分開推進的專案。'
   },
   'service-plc-dcs-programming-and-migration': {
     key: 'service-plc-dcs-programming-and-migration',
@@ -2588,7 +2851,7 @@ export const referencePagesZhTw = {
       'docs/references/zh-tw/services/03-plc-dcs-programming-and-migration.md',
     sourceUrl:
       'https://pentagoneng.com/service/plc-dcs-programming-and-migration/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2601,7 +2864,10 @@ export const referencePagesZhTw = {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
         content: [
-          '控制程式與系統搬遷服務｜PLC & DCS Programming and Migration'
+          '控制程式與系統搬遷服務｜PLC & DCS Programming and Migration',
+          '切換路徑清楚',
+          '風險可控制',
+          '邏輯好維護'
         ],
         notes: []
       },
@@ -2610,8 +2876,8 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '控制程式與系統搬遷服務｜PLC & DCS Programming and Migration',
-          '雷力科技協助處理 PLC 與 DCS 的程式開發、搬遷規劃與分階段切換，讓既有控制系統升級時仍能維持清楚的操作與交付節奏。',
-          '我們重視的是現場真正走得通的搬遷路徑，而不只是紙面上的技術正確。'
+          '雷力科技支援 PLC / DCS 程式開發、搬遷規劃與分階段切換，協助運轉中系統平穩升級。',
+          '重點是建立現場能執行的切換節奏，同時讓邏輯在測試、切換與後續維護時都保持可讀。'
         ],
         notes: []
       },
@@ -2641,24 +2907,51 @@ export const referencePagesZhTw = {
         heading: '區塊 05 核心能力 [主內容]',
         role: '主內容',
         content: [
-          'PLC 與 DCS 程式開發',
-          '我們建立更容易閱讀、維護與排查的控制邏輯與程式結構，讓操作與變更管理更清楚。',
-          '系統搬遷與優化',
-          '我們規劃搬遷路徑與升級節點，降低切換干擾，同時提升系統效能與後續維護性。',
-          '創新與安全並重',
-          '在現代化改造過程中，我們同步考量安全、生命週期與交接落地，讓升級後的控制系統更可長期維運。'
+          '搬遷規劃必須符合真實停機窗口',
+          'PLC / DCS 搬遷同時牽涉既有邏輯、停機限制、相依設備與回切條件，不能只從程式角度切入。',
+          '我們把程式變更、驗證節點與切換步驟整理成現場能執行的節奏，降低改造過程中的斷點。',
+          '重點項目',
+          '切換邊界',
+          '先盤點系統邊界、相依條件與停機限制，再鎖定切換順序。',
+          '停機控制',
+          '提早定義測試窗口、回切條件與驗證節點，降低改造風險。',
+          '邏輯可讀',
+          '讓程式在測試、排查與後續調整時都更容易理解。',
+          '復原準備',
+          '把文件、版本與運轉脈絡一起整理，讓升級後更容易恢復與接手。',
+          '承接內容與做法',
+          '程式結構',
+          '建立更容易閱讀、變更與排查的控制邏輯，讓操作與維護都更有脈絡。',
+          '分階段搬遷',
+          '依現場條件規劃搬遷路徑與切換節點，在降低干擾的同時提升維護性。',
+          '生命週期支援',
+          '現代化改造會連同文件與長期維運一起考量，讓新平台不只上線，也能持續使用。',
+          '實施節奏',
+          '步驟 01',
+          '盤點既有基線',
+          '先整理現有程式、相依設備、點位與停機限制，建立清楚的搬遷範圍。',
+          '步驟 02',
+          '規劃分階段切換',
+          '依現場節奏安排測試、切換與回切條件，避免改造建立在假設上。',
+          '步驟 03',
+          '執行與驗證',
+          '以可讀、可測試的邏輯結構完成開發，並配合現場驗證與操作確認。',
+          '步驟 04',
+          '穩定新基線',
+          '把版本、文件與操作脈絡整理完整，讓升級後的系統更容易維護。',
+          'PLC / DCS 搬遷最好在停機窗口與測試計畫定案前就先納入，這時切換風險、回切邏輯與文件整理還能一起被設計。'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/plc-dcs-programming-and-migration/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 核心能力 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n\n## 區塊 02 服務導言 [主內容]\n\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n- 雷力科技協助處理 PLC 與 DCS 的程式開發、搬遷規劃與分階段切換，讓既有控制系統升級時仍能維持清楚的操作與交付節奏。\n- 我們重視的是現場真正走得通的搬遷路徑，而不只是紙面上的技術正確。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 核心能力 [主內容]\n\n- PLC 與 DCS 程式開發\n- 我們建立更容易閱讀、維護與排查的控制邏輯與程式結構，讓操作與變更管理更清楚。\n- 系統搬遷與優化\n- 我們規劃搬遷路徑與升級節點，降低切換干擾，同時提升系統效能與後續維護性。\n- 創新與安全並重\n- 在現代化改造過程中，我們同步考量安全、生命週期與交接落地，讓升級後的控制系統更可長期維運。'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/plc-dcs-programming-and-migration/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 核心能力 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n- 切換路徑清楚\n- 風險可控制\n- 邏輯好維護\n\n## 區塊 02 服務導言 [主內容]\n\n- 控制程式與系統搬遷服務｜PLC & DCS Programming and Migration\n- 雷力科技支援 PLC / DCS 程式開發、搬遷規劃與分階段切換，協助運轉中系統平穩升級。\n- 重點是建立現場能執行的切換節奏，同時讓邏輯在測試、切換與後續維護時都保持可讀。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 核心能力 [主內容]\n\n- 搬遷規劃必須符合真實停機窗口\n- PLC / DCS 搬遷同時牽涉既有邏輯、停機限制、相依設備與回切條件，不能只從程式角度切入。\n- 我們把程式變更、驗證節點與切換步驟整理成現場能執行的節奏，降低改造過程中的斷點。\n- 重點項目\n- 切換邊界\n- 先盤點系統邊界、相依條件與停機限制，再鎖定切換順序。\n- 停機控制\n- 提早定義測試窗口、回切條件與驗證節點，降低改造風險。\n- 邏輯可讀\n- 讓程式在測試、排查與後續調整時都更容易理解。\n- 復原準備\n- 把文件、版本與運轉脈絡一起整理，讓升級後更容易恢復與接手。\n- 承接內容與做法\n- 程式結構\n- 建立更容易閱讀、變更與排查的控制邏輯，讓操作與維護都更有脈絡。\n- 分階段搬遷\n- 依現場條件規劃搬遷路徑與切換節點，在降低干擾的同時提升維護性。\n- 生命週期支援\n- 現代化改造會連同文件與長期維運一起考量，讓新平台不只上線，也能持續使用。\n- 實施節奏\n- 步驟 01\n- 盤點既有基線\n- 先整理現有程式、相依設備、點位與停機限制，建立清楚的搬遷範圍。\n- 步驟 02\n- 規劃分階段切換\n- 依現場節奏安排測試、切換與回切條件，避免改造建立在假設上。\n- 步驟 03\n- 執行與驗證\n- 以可讀、可測試的邏輯結構完成開發，並配合現場驗證與操作確認。\n- 步驟 04\n- 穩定新基線\n- 把版本、文件與操作脈絡整理完整，讓升級後的系統更容易維護。\n- PLC / DCS 搬遷最好在停機窗口與測試計畫定案前就先納入，這時切換風險、回切邏輯與文件整理還能一起被設計。'
   },
   'service-pi-server': {
     key: 'service-pi-server',
     title: 'PI Server',
     docPath: 'docs/references/zh-tw/services/04-pi-server.md',
     sourceUrl: 'https://pentagoneng.com/service/pi-server/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2671,7 +2964,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['即時資料平台服務｜PI Server'],
+        content: [
+          '即時資料平台服務｜PI Server',
+          '資料骨幹穩定',
+          '報表可使用',
+          '整合更容易'
+        ],
         notes: []
       },
       {
@@ -2679,8 +2977,8 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '即時資料平台服務｜PI Server',
-          '雷力科技協助客戶把 PI Server 建成可實際支撐監看、報表與跨系統整合的工業資料骨幹。',
-          '我們不只重視資料蒐集，更重視這些資料是否真正能被營運、工程與管理團隊拿來使用。'
+          '雷力科技以 PI Server 建立工廠資料平台，支援監看、報表與跨系統使用。',
+          '重點不是多收更多 tags，而是讓不同團隊都能接上同一條可用的資料骨幹。'
         ],
         notes: []
       },
@@ -2710,10 +3008,11 @@ export const referencePagesZhTw = {
         heading: '區塊 05 重點標籤 [主內容]',
         role: '主內容',
         content: [
-          '工業自動化',
-          '營運可視化',
-          'PI Server 專業能力',
-          '資料導向運營'
+          '關鍵標籤',
+          'Plant data backbone',
+          'Operational visibility',
+          'PI Server',
+          'Cross-system integration'
         ],
         notes: []
       },
@@ -2721,22 +3020,40 @@ export const referencePagesZhTw = {
         heading: '區塊 06 摺疊重點 [主內容]',
         role: '主內容',
         content: [
-          '1. 推動工業自動化',
-          '以 PI Server 串接即時資料、報表、儀表板與現場可視化需求。',
-          '2. 啟用 PI Server 整合',
-          '3. 優化營運'
+          'PI Server 要讓工廠資料更容易被使用',
+          'PI Server 的工作，不只是在點位接進平台，而是把 tags、脈絡與來源結構整理好，讓監看、報表與整合不會各走各的。',
+          '我們會提早規劃命名、資料流向與擴充邏輯，讓平台在新系統加入後仍然好用。',
+          '重點項目',
+          '資料骨幹',
+          '以可支撐監看、報表與工程檢視的結構收攏工廠資料。',
+          '脈絡與命名',
+          '先把來源結構與命名整理好，避免後續擴充讓平台變得零碎。',
+          '報表延續',
+          '建立可支援例行報表與趨勢檢視的基礎，而不只是一套一次性建置。',
+          '共同視角',
+          '讓營運、工程與管理端對當前資料有更一致的理解。',
+          '常見用途',
+          '串接工廠資料',
+          '用 PI Server 把即時工廠資料接到儀表板、報表與日常營運檢視。',
+          '標準化整合',
+          '把來源資料、命名與介面整理一致，讓平台擴充後仍然容易管理。',
+          '支援報表使用',
+          '當資料穩定且容易理解時，報表、趨勢檢視與跨團隊判斷都會更快。',
+          '適合提早納入的情境',
+          'PI Server 最適合在工廠需要共用一條穩定的資料骨幹，支援儀表板、報表與跨系統使用時提早納入。',
+          '最好在 tags、報表與外部整合大量展開前就先規劃，讓命名與來源邏輯保持一致。'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/pi-server/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 重點標籤 [主內容]\n- 區塊 06 摺疊重點 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 即時資料平台服務｜PI Server\n\n## 區塊 02 服務導言 [主內容]\n\n- 即時資料平台服務｜PI Server\n- 雷力科技協助客戶把 PI Server 建成可實際支撐監看、報表與跨系統整合的工業資料骨幹。\n- 我們不只重視資料蒐集，更重視這些資料是否真正能被營運、工程與管理團隊拿來使用。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 重點標籤 [主內容]\n\n- 工業自動化\n- 營運可視化\n- PI Server 專業能力\n- 資料導向運營\n\n## 區塊 06 摺疊重點 [主內容]\n\n- 1. 推動工業自動化\n- 以 PI Server 串接即時資料、報表、儀表板與現場可視化需求。\n- 2. 啟用 PI Server 整合\n- 3. 優化營運'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/pi-server/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 重點標籤 [主內容]\n- 區塊 06 摺疊重點 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 即時資料平台服務｜PI Server\n- 資料骨幹穩定\n- 報表可使用\n- 整合更容易\n\n## 區塊 02 服務導言 [主內容]\n\n- 即時資料平台服務｜PI Server\n- 雷力科技以 PI Server 建立工廠資料平台，支援監看、報表與跨系統使用。\n- 重點不是多收更多 tags，而是讓不同團隊都能接上同一條可用的資料骨幹。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 重點標籤 [主內容]\n\n- 關鍵標籤\n- Plant data backbone\n- Operational visibility\n- PI Server\n- Cross-system integration\n\n## 區塊 06 摺疊重點 [主內容]\n\n- PI Server 要讓工廠資料更容易被使用\n- PI Server 的工作，不只是在點位接進平台，而是把 tags、脈絡與來源結構整理好，讓監看、報表與整合不會各走各的。\n- 我們會提早規劃命名、資料流向與擴充邏輯，讓平台在新系統加入後仍然好用。\n- 重點項目\n- 資料骨幹\n- 以可支撐監看、報表與工程檢視的結構收攏工廠資料。\n- 脈絡與命名\n- 先把來源結構與命名整理好，避免後續擴充讓平台變得零碎。\n- 報表延續\n- 建立可支援例行報表與趨勢檢視的基礎，而不只是一套一次性建置。\n- 共同視角\n- 讓營運、工程與管理端對當前資料有更一致的理解。\n- 常見用途\n- 串接工廠資料\n- 用 PI Server 把即時工廠資料接到儀表板、報表與日常營運檢視。\n- 標準化整合\n- 把來源資料、命名與介面整理一致，讓平台擴充後仍然容易管理。\n- 支援報表使用\n- 當資料穩定且容易理解時，報表、趨勢檢視與跨團隊判斷都會更快。\n- 適合提早納入的情境\n- PI Server 最適合在工廠需要共用一條穩定的資料骨幹，支援儀表板、報表與跨系統使用時提早納入。\n- 最好在 tags、報表與外部整合大量展開前就先規劃，讓命名與來源邏輯保持一致。'
   },
   'service-historians': {
     key: 'service-historians',
     title: 'Historians',
     docPath: 'docs/references/zh-tw/services/05-historians.md',
     sourceUrl: 'https://pentagoneng.com/service/historians/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2747,7 +3064,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['歷史資料平台服務｜Historians'],
+        content: [
+          '歷史資料平台服務｜Historians',
+          '長期可追溯',
+          '冗餘可存取',
+          '分析報表就緒'
+        ],
         notes: []
       },
       {
@@ -2755,8 +3077,30 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '歷史資料平台服務｜Historians',
-          '雷力科技協助規劃 historian 架構，讓長期製程資料能穩定支援趨勢分析、報表、合規與跨單位決策。',
-          '我們可支援本地冗餘與遠端存取架構，提升韌性，同時維持資料取得的便利性。'
+          '雷力科技規劃 Historian 架構，支援長期記錄、趨勢比對、追溯與報表需求。',
+          '重點在保留週期、存取方式與冗餘設計，讓資料在幾個月或幾年後仍然可用。',
+          'Historian 的價值在於之後還找得到資料',
+          'Historian 真正重要的時候，是製程記錄在一段時間後還能被查詢、比對與說明。',
+          '我們會依實際報表、回溯與事件檢視需求安排保留、查詢、遠端取用與冗餘。',
+          '重點項目',
+          '長期保留',
+          '讓重要製程資料可按需求保留，支援長期比較與追溯。',
+          '趨勢檢視',
+          '資料結構會配合趨勢、報表與跨部門分析使用。',
+          '冗餘存取',
+          '同時考量本地與遠端存取架構，降低單點失效風險。',
+          '追溯依據',
+          '為合規、品質與事件調查保留更穩定的資料基礎。',
+          '承接內容與做法',
+          '保留規劃',
+          '協助定義資料保留、整理與檢索方式，讓歷史紀錄不是只存下來，而是真的能再被使用。',
+          '查詢與報表',
+          'Historian 架構會配合趨勢比較、例行報表與工程檢視需求，而不只考慮資料寫入。',
+          '存取與冗餘',
+          '透過本地冗餘與遠端存取設計，提升資料韌性，同時維持日常查詢便利性。',
+          '適合提早納入的情境',
+          'Historian 規劃最好在保留規則、報表需求或稽核期待剛開始被定義時就納入。',
+          '這時儲存配置、存取路徑與韌性設計還能為長期使用一起建立，而不是事後補強。'
         ],
         notes: []
       },
@@ -2783,14 +3127,14 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/historians/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 歷史資料平台服務｜Historians\n\n## 區塊 02 服務導言 [主內容]\n\n- 歷史資料平台服務｜Historians\n- 雷力科技協助規劃 historian 架構，讓長期製程資料能穩定支援趨勢分析、報表、合規與跨單位決策。\n- 我們可支援本地冗餘與遠端存取架構，提升韌性，同時維持資料取得的便利性。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/historians/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 歷史資料平台服務｜Historians\n- 長期可追溯\n- 冗餘可存取\n- 分析報表就緒\n\n## 區塊 02 服務導言 [主內容]\n\n- 歷史資料平台服務｜Historians\n- 雷力科技規劃 Historian 架構，支援長期記錄、趨勢比對、追溯與報表需求。\n- 重點在保留週期、存取方式與冗餘設計，讓資料在幾個月或幾年後仍然可用。\n- Historian 的價值在於之後還找得到資料\n- Historian 真正重要的時候，是製程記錄在一段時間後還能被查詢、比對與說明。\n- 我們會依實際報表、回溯與事件檢視需求安排保留、查詢、遠端取用與冗餘。\n- 重點項目\n- 長期保留\n- 讓重要製程資料可按需求保留，支援長期比較與追溯。\n- 趨勢檢視\n- 資料結構會配合趨勢、報表與跨部門分析使用。\n- 冗餘存取\n- 同時考量本地與遠端存取架構，降低單點失效風險。\n- 追溯依據\n- 為合規、品質與事件調查保留更穩定的資料基礎。\n- 承接內容與做法\n- 保留規劃\n- 協助定義資料保留、整理與檢索方式，讓歷史紀錄不是只存下來，而是真的能再被使用。\n- 查詢與報表\n- Historian 架構會配合趨勢比較、例行報表與工程檢視需求，而不只考慮資料寫入。\n- 存取與冗餘\n- 透過本地冗餘與遠端存取設計，提升資料韌性，同時維持日常查詢便利性。\n- 適合提早納入的情境\n- Historian 規劃最好在保留規則、報表需求或稽核期待剛開始被定義時就納入。\n- 這時儲存配置、存取路徑與韌性設計還能為長期使用一起建立，而不是事後補強。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-network-design': {
     key: 'service-network-design',
     title: 'Network Design',
     docPath: 'docs/references/zh-tw/services/06-network-design.md',
     sourceUrl: 'https://pentagoneng.com/service/network-design/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2802,7 +3146,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['工業網路設計服務｜Network Design'],
+        content: [
+          '工業網路設計服務｜Network Design',
+          '拓樸邊界清楚',
+          '區隔兼顧韌性',
+          '後續好擴充'
+        ],
         notes: []
       },
       {
@@ -2810,8 +3159,8 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '工業網路設計服務｜Network Design',
-          '雷力科技規劃工業通訊網路架構，讓控制流量、現場設備與資料系統都能在更清楚、可維護且具韌性的結構下運作。',
-          '我們重視區隔、可靠度與後續支援性，讓網路能隨著廠區成長，而不是成為限制。'
+          '雷力科技規劃工業網路架構，支撐控制流量、現場設備與工廠資料系統。',
+          '我們會提早定義邊界、區隔與擴充路徑，避免網路成為自動化堆疊裡最脆弱的一層。'
         ],
         notes: []
       },
@@ -2841,19 +3190,38 @@ export const referencePagesZhTw = {
         heading: '區塊 05 收束說明 [主內容]',
         role: '主內容',
         content: [
-          '穩定的網路設計，是自動化系統建立可視化、安全性與長期可靠運轉的基礎。'
+          '工業網路一開始就要把邊界設清楚',
+          '好的工業網路不是先把設備接上去，再回頭補救，而是先分清楚控制流量、資料流與遠端存取需求。',
+          '我們把拓樸、區隔與擴充空間一起規劃，讓後續新系統加入時不必重做整個基礎。',
+          '重點項目',
+          '邊界清楚',
+          '先定義控制、資料與外部存取邊界，降低互相干擾與風險。',
+          '區隔設計',
+          '在規劃時就把可靠度與故障情境納入，而不是事後補救。',
+          '維護性',
+          '讓拓樸、命名與網路意圖在後續維護時仍然容易理解。',
+          '擴充空間',
+          '保留新增系統的空間，不用每次擴充都重建網路。',
+          '承接內容與做法',
+          '拓樸規劃',
+          '整理設備、站點與資料系統之間的連線關係，建立更容易理解的工業網路架構。',
+          '區隔與韌性',
+          '在設計階段就把區隔、備援與故障情境納入，避免網路成為自動化系統的脆弱點。',
+          '擴充路徑',
+          '讓未來新增設備、資料系統或遠端需求時，有清楚的擴充方式可依循。',
+          '網路設計最好在控制、資料或遠端存取系統層層疊上去前就先定好，這時邊界與韌性還能乾淨地被設計。'
         ],
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/network-design/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 收束說明 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 工業網路設計服務｜Network Design\n\n## 區塊 02 服務導言 [主內容]\n\n- 工業網路設計服務｜Network Design\n- 雷力科技規劃工業通訊網路架構，讓控制流量、現場設備與資料系統都能在更清楚、可維護且具韌性的結構下運作。\n- 我們重視區隔、可靠度與後續支援性，讓網路能隨著廠區成長，而不是成為限制。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 收束說明 [主內容]\n\n- 穩定的網路設計，是自動化系統建立可視化、安全性與長期可靠運轉的基礎。'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/network-design/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n- 區塊 05 收束說明 [主內容]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 工業網路設計服務｜Network Design\n- 拓樸邊界清楚\n- 區隔兼顧韌性\n- 後續好擴充\n\n## 區塊 02 服務導言 [主內容]\n\n- 工業網路設計服務｜Network Design\n- 雷力科技規劃工業網路架構，支撐控制流量、現場設備與工廠資料系統。\n- 我們會提早定義邊界、區隔與擴充路徑，避免網路成為自動化堆疊裡最脆弱的一層。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw\n\n## 區塊 05 收束說明 [主內容]\n\n- 工業網路一開始就要把邊界設清楚\n- 好的工業網路不是先把設備接上去，再回頭補救，而是先分清楚控制流量、資料流與遠端存取需求。\n- 我們把拓樸、區隔與擴充空間一起規劃，讓後續新系統加入時不必重做整個基礎。\n- 重點項目\n- 邊界清楚\n- 先定義控制、資料與外部存取邊界，降低互相干擾與風險。\n- 區隔設計\n- 在規劃時就把可靠度與故障情境納入，而不是事後補救。\n- 維護性\n- 讓拓樸、命名與網路意圖在後續維護時仍然容易理解。\n- 擴充空間\n- 保留新增系統的空間，不用每次擴充都重建網路。\n- 承接內容與做法\n- 拓樸規劃\n- 整理設備、站點與資料系統之間的連線關係，建立更容易理解的工業網路架構。\n- 區隔與韌性\n- 在設計階段就把區隔、備援與故障情境納入，避免網路成為自動化系統的脆弱點。\n- 擴充路徑\n- 讓未來新增設備、資料系統或遠端需求時，有清楚的擴充方式可依循。\n- 網路設計最好在控制、資料或遠端存取系統層層疊上去前就先定好，這時邊界與韌性還能乾淨地被設計。'
   },
   'service-remote-monitoring-and-data': {
     key: 'service-remote-monitoring-and-data',
     title: 'Remote Monitoring and Data',
     docPath: 'docs/references/zh-tw/services/07-remote-monitoring-and-data.md',
     sourceUrl: 'https://pentagoneng.com/service/remote-monitoring-and-data/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2864,7 +3232,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['遠端監控與資料備援服務｜Remote Monitoring and Data'],
+        content: [
+          '遠端監控與資料備援服務｜Remote Monitoring and Data',
+          '跨據點可視',
+          '資料連續性',
+          '復原有準備'
+        ],
         notes: []
       },
       {
@@ -2872,8 +3245,32 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '遠端監控與資料備援服務｜Remote Monitoring and Data',
-          '雷力科技協助建立遠端可視化與資料持續性流程，降低復原風險，支援跨據點營運與資訊不中斷。',
-          '這類方案能幫助團隊掌握狀態、保護紀錄，並在突發狀況發生時更快採取行動。'
+          '雷力科技協助建立遠端監看與資料連續性流程，支援分散據點與關鍵紀錄保存。',
+          '我們把可視化、資料延續與復原準備一起規劃，避免遠端存取有了，紀錄保護卻成為事後補救。',
+          '遠端可視化要和資料延續一起規劃',
+          '遠端監看真正有壓力的時候，不只是看得到畫面，而是還能查狀態、拿紀錄、做復原判斷。',
+          '我們把跨據點可視、備援路徑與復原邏輯一起整理，讓遠端作業在異常時也能維持可用。',
+          '重點項目',
+          '跨據點可視',
+          '讓重要站點狀態能在多個位置被一致掌握。',
+          '紀錄延續',
+          '把監看與備援路徑一起規劃，避免只看得到當下卻留不住紀錄。',
+          '復原準備',
+          '在需要復原或調查時，保留更完整的狀態與證據。',
+          '存取邊界',
+          '依實際營運需求與風險限制設計遠端可視與存取方式。',
+          '常見情境',
+          '跨據點監看',
+          '讓團隊不必一直在現場，也能掌握重要站點狀態。',
+          '資料備援',
+          '降低單一路徑故障造成關鍵紀錄遺失的風險。',
+          '事件追蹤',
+          '保留異常回顧與後續改善需要的歷程脈絡。',
+          '營運連續性',
+          '在遠端或突發情境下維持資訊取得與判斷節奏。',
+          '適合提早納入的情境',
+          '遠端監看與資料連續性最好在站點分工、備援路徑與遠端角色尚未各自分開定義前就先納入。',
+          '這時可視化、復原期待與存取邊界還能被設計成同一套工作流程。'
         ],
         notes: []
       },
@@ -2900,14 +3297,14 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/remote-monitoring-and-data/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n\n## 區塊 02 服務導言 [主內容]\n\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n- 雷力科技協助建立遠端可視化與資料持續性流程，降低復原風險，支援跨據點營運與資訊不中斷。\n- 這類方案能幫助團隊掌握狀態、保護紀錄，並在突發狀況發生時更快採取行動。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/remote-monitoring-and-data/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n- 跨據點可視\n- 資料連續性\n- 復原有準備\n\n## 區塊 02 服務導言 [主內容]\n\n- 遠端監控與資料備援服務｜Remote Monitoring and Data\n- 雷力科技協助建立遠端監看與資料連續性流程，支援分散據點與關鍵紀錄保存。\n- 我們把可視化、資料延續與復原準備一起規劃，避免遠端存取有了，紀錄保護卻成為事後補救。\n- 遠端可視化要和資料延續一起規劃\n- 遠端監看真正有壓力的時候，不只是看得到畫面，而是還能查狀態、拿紀錄、做復原判斷。\n- 我們把跨據點可視、備援路徑與復原邏輯一起整理，讓遠端作業在異常時也能維持可用。\n- 重點項目\n- 跨據點可視\n- 讓重要站點狀態能在多個位置被一致掌握。\n- 紀錄延續\n- 把監看與備援路徑一起規劃，避免只看得到當下卻留不住紀錄。\n- 復原準備\n- 在需要復原或調查時，保留更完整的狀態與證據。\n- 存取邊界\n- 依實際營運需求與風險限制設計遠端可視與存取方式。\n- 常見情境\n- 跨據點監看\n- 讓團隊不必一直在現場，也能掌握重要站點狀態。\n- 資料備援\n- 降低單一路徑故障造成關鍵紀錄遺失的風險。\n- 事件追蹤\n- 保留異常回顧與後續改善需要的歷程脈絡。\n- 營運連續性\n- 在遠端或突發情境下維持資訊取得與判斷節奏。\n- 適合提早納入的情境\n- 遠端監看與資料連續性最好在站點分工、備援路徑與遠端角色尚未各自分開定義前就先納入。\n- 這時可視化、復原期待與存取邊界還能被設計成同一套工作流程。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   },
   'service-alarm-monitoring': {
     key: 'service-alarm-monitoring',
     title: 'Alarm Monitoring',
     docPath: 'docs/references/zh-tw/services/08-alarm-monitoring.md',
     sourceUrl: 'https://pentagoneng.com/service/alarm-monitoring/',
-    lastUpdated: '2026-04-08',
+    lastUpdated: '2026-04-14',
     blockMap: [
       '區塊 01 頁首主視覺 [主內容]',
       '區塊 02 服務導言 [主內容]',
@@ -2918,7 +3315,12 @@ export const referencePagesZhTw = {
       {
         heading: '區塊 01 頁首主視覺 [主內容]',
         role: '主內容',
-        content: ['告警監控服務｜Alarm Monitoring'],
+        content: [
+          '告警監控服務｜Alarm Monitoring',
+          '優先順序清楚',
+          '操作判讀更快',
+          '降低告警噪音'
+        ],
         notes: []
       },
       {
@@ -2926,8 +3328,28 @@ export const referencePagesZhTw = {
         role: '主內容',
         content: [
           '告警監控服務｜Alarm Monitoring',
-          '雷力科技協助建立告警監控策略，提升自動化現場的反應速度、操作可視性與日常判斷效率。',
-          '我們重視的是讓告警邏輯更容易管理，讓團隊在正確時機對正確條件做出回應。'
+          '雷力科技建立告警策略與通知流程，協助團隊更快回應真正需要處理的事件。',
+          '重點在告警優先順序、事件脈絡與升級邏輯，讓操作端少花時間篩噪音，多把時間用在正確處置。',
+          '告警監控要先讓優先順序被看懂',
+          '當所有事件看起來都很急，或操作端不知道該先處理哪一個時，問題往往不是資訊不夠，而是排序不清楚。',
+          '我們把告警條件、升級流程與畫面脈絡一起整理，讓團隊更快判斷嚴重度，也更少猶豫。',
+          '重點項目',
+          '優先在前',
+          '讓真正需要介入的狀況先被看見，而不是被低價值訊息淹沒。',
+          '分級邏輯',
+          '把告警分級與排序整理清楚，讓回應期待更容易遵循。',
+          '畫面脈絡',
+          '讓告警能連回流程與設備狀態，而不是只留下孤立事件。',
+          '噪音控制',
+          '減少重複或難以採取行動的告警，避免它們搶走真正的優先事項。',
+          '承接內容與做法',
+          '告警策略',
+          '協助整理告警條件，讓團隊知道哪些事件最重要，以及該怎麼回應。',
+          '升級流程',
+          '把通知時機與處理責任安排清楚，減少現場還要先判斷誰該接手的時間。',
+          '畫面脈絡',
+          '讓操作端能在畫面中立即看懂告警與流程、設備及下一步動作的關聯。',
+          '告警策略最好在新點位、畫面與通知規則開始大量累積前就先納入，這時優先順序與責任分工還能被乾淨地定義。'
         ],
         notes: []
       },
@@ -2954,6 +3376,6 @@ export const referencePagesZhTw = {
         notes: []
       }
     ],
-    raw: '- 最後更新: 2026-04-08\n- 來源網址: https://pentagoneng.com/service/alarm-monitoring/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 告警監控服務｜Alarm Monitoring\n\n## 區塊 02 服務導言 [主內容]\n\n- 告警監控服務｜Alarm Monitoring\n- 雷力科技協助建立告警監控策略，提升自動化現場的反應速度、操作可視性與日常判斷效率。\n- 我們重視的是讓告警邏輯更容易管理，讓團隊在正確時機對正確條件做出回應。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
+    raw: '- 最後更新: 2026-04-14\n- 來源網址: https://pentagoneng.com/service/alarm-monitoring/\n\n## 區塊總覽\n\n- 區塊 01 頁首主視覺 [主內容]\n- 區塊 02 服務導言 [主內容]\n- 區塊 03 側欄主要服務 [共用版型]\n- 區塊 04 側欄聯絡資訊 [共用版型]\n\n## 區塊 01 頁首主視覺 [主內容]\n\n- 告警監控服務｜Alarm Monitoring\n- 優先順序清楚\n- 操作判讀更快\n- 降低告警噪音\n\n## 區塊 02 服務導言 [主內容]\n\n- 告警監控服務｜Alarm Monitoring\n- 雷力科技建立告警策略與通知流程，協助團隊更快回應真正需要處理的事件。\n- 重點在告警優先順序、事件脈絡與升級邏輯，讓操作端少花時間篩噪音，多把時間用在正確處置。\n- 告警監控要先讓優先順序被看懂\n- 當所有事件看起來都很急，或操作端不知道該先處理哪一個時，問題往往不是資訊不夠，而是排序不清楚。\n- 我們把告警條件、升級流程與畫面脈絡一起整理，讓團隊更快判斷嚴重度，也更少猶豫。\n- 重點項目\n- 優先在前\n- 讓真正需要介入的狀況先被看見，而不是被低價值訊息淹沒。\n- 分級邏輯\n- 把告警分級與排序整理清楚，讓回應期待更容易遵循。\n- 畫面脈絡\n- 讓告警能連回流程與設備狀態，而不是只留下孤立事件。\n- 噪音控制\n- 減少重複或難以採取行動的告警，避免它們搶走真正的優先事項。\n- 承接內容與做法\n- 告警策略\n- 協助整理告警條件，讓團隊知道哪些事件最重要，以及該怎麼回應。\n- 升級流程\n- 把通知時機與處理責任安排清楚，減少現場還要先判斷誰該接手的時間。\n- 畫面脈絡\n- 讓操作端能在畫面中立即看懂告警與流程、設備及下一步動作的關聯。\n- 告警策略最好在新點位、畫面與通知規則開始大量累積前就先納入，這時優先順序與責任分工還能被乾淨地定義。\n\n## 區塊 03 側欄主要服務 [共用版型]\n\n- 服務項目\n- SCADA / HMI 圖控｜SCADA and HMI Graphics\n- 儀電整合｜I&E Services\n- PLC / DCS 程式與搬遷｜PLC & DCS Programming and Migration\n- PI Server\n- Historians\n- 工業網路設計｜Network Design\n- 遠端監控與資料備援｜Remote Monitoring and Data\n- 告警監控｜Alarm Monitoring\n\n## 區塊 04 側欄聯絡資訊 [共用版型]\n\n- +886-3-552-9933\n- sales@rallytech.com.tw'
   }
 } as const satisfies ReferencePagesMessages

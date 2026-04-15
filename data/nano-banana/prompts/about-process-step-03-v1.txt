@@ -1,0 +1,25 @@
+{
+  "IMPORTANT_STRICT_RULE": "ABSOLUTELY NO PHOTOGRAPHY. NO REALISM. NO TEXTURES. NO SHADOWS. NO TEXT. NO LETTERS.",
+  "asset_type": "high-end modern flat vector icon",
+  "business_context": "Rally Technology, modern industrial automation. Delivery process step: Execution Support.",
+  "goal": "Generate a minimalist, modern, and symbolic (符號學) icon for 'Execution'.",
+  "visual_subject": "A perfectly geometric 8-tooth industrial gear silhouette. No internal details. Pure solid fill.",
+  "technical_signals": {
+    "style": "Modern Flat Design 2.0. Minimalist and symbolic. Robust geometric shape.",
+    "color_palette": "Rally Technical Teal symbol on a light Slate-50 background. Pure flat fill.",
+    "white_space": "Substantial negative space."
+  },
+  "composition": {
+    "layout": "Centered and balanced."
+  },
+  "avoid": [
+    "COMPLEXITY",
+    "REALISM",
+    "BOARD GAME AESTHETICS",
+    "THIN FRAGILE LINES",
+    "HEAVY OBTRUSIVE SHAPES",
+    "TEXT",
+    "LOGOS"
+  ],
+  "FINAL_REMINDER": "GENERATE A PURE FLAT MODERN SYMBOLIC ICON. NO TEXT."
+}

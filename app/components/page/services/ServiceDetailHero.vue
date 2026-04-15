@@ -1,17 +1,10 @@
 <script setup lang="ts">
-import type {
-  ServiceCatalogItemMessages,
-  ServiceDetailPageMessages
-} from '~~/i18n/locales/types'
+import type { ServiceCatalogItemMessages } from '~~/i18n/locales/types'
+import PageHeroShell from '~/components/shared/PageHeroShell.vue'
 
 const props = defineProps<{
   service: ServiceCatalogItemMessages
-  detailPage: ServiceDetailPageMessages
 }>()
-
-const heroSummary = computed(
-  () => props.service.description || props.detailPage.introParagraphs[0] || ''
-)
 const { resolvedImage, handleImageError } = useServicePageImageAsset(
   props.service.slug,
   'detail-hero'
@@ -19,8 +12,13 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
 </script>
 
 <template>
-  <section class="services-sys-detail-hero relative overflow-hidden text-white">
-    <div class="services-sys-detail-hero__media" aria-hidden="true">
+  <PageHeroShell
+    class="services-sys-detail-hero text-white"
+    variant="page"
+    shell="default"
+    content-align="center"
+  >
+    <template #media>
       <img
         :src="resolvedImage.src"
         :alt="resolvedImage.alt"
@@ -29,41 +27,27 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
         decoding="async"
         @error="handleImageError"
       />
+    </template>
+
+    <template #overlay>
       <div class="services-sys-detail-hero__overlay" />
+    </template>
+
+    <div class="services-sys-detail-hero__content">
+      <h1 class="type-sys-display-l services-sys-detail-hero__title">
+        {{ service.shortLabel }}
+      </h1>
+
+      <p class="type-sys-body-m services-sys-detail-hero__description">
+        {{ service.description }}
+      </p>
     </div>
-
-    <div class="page-sys-shell relative z-10">
-      <div class="services-sys-detail-hero__layout">
-        <div class="services-sys-detail-hero__content">
-          <p class="type-sys-kicker services-sys-detail-hero__kicker">
-            {{ service.shortLabel }}
-          </p>
-
-          <h1 class="type-sys-display-m services-sys-detail-hero__title">
-            {{ detailPage.heroTitle }}
-          </h1>
-
-          <p
-            v-if="heroSummary"
-            class="type-sys-body-m services-sys-detail-hero__description"
-          >
-            {{ heroSummary }}
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+  </PageHeroShell>
 </template>
 
 <style scoped>
 .services-sys-detail-hero {
   background: var(--color-secondary-950);
-  padding-block: clamp(0.6rem, 1.6vw, 1rem);
-}
-
-.services-sys-detail-hero__media {
-  position: absolute;
-  inset: 0;
 }
 
 .services-sys-detail-hero__image {
@@ -99,59 +83,38 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
     );
 }
 
-.services-sys-detail-hero__layout {
-  position: relative;
-  display: flex;
-  min-height: clamp(12.5rem, 15vw, 15.75rem);
-  align-items: center;
-  justify-content: center;
-  padding-block: clamp(0.95rem, 1.6vw, 1.25rem);
-}
-
 .services-sys-detail-hero__content {
-  max-width: 50rem;
+  max-width: 44rem;
   margin-inline: auto;
   text-align: center;
 }
 
-.services-sys-detail-hero__kicker {
-  color: var(--color-primary-200);
-  text-transform: uppercase;
-}
-
 .services-sys-detail-hero__title {
-  max-width: 24ch;
-  margin: 0.65rem auto 0;
+  max-width: 14ch;
+  margin: 0 auto;
   color: var(--color-white);
-  line-height: 1.08;
-  letter-spacing: -0.028em;
+  line-height: 1.03;
+  letter-spacing: -0.026em;
   text-shadow: 0 10px 28px rgb(0 0 0 / 0.28);
   text-wrap: balance;
 }
 
 .services-sys-detail-hero__description {
-  max-width: 38rem;
-  margin: 0.72rem auto 0;
+  max-width: 34rem;
+  margin: 1rem auto 0;
   color: rgb(255 255 255 / 0.82);
-  text-shadow: 0 6px 20px rgb(0 0 0 / 0.22);
+  line-height: 1.65;
   text-wrap: pretty;
 }
 
 @media (max-width: 767px) {
-  .services-sys-detail-hero {
-    padding-block: 0.55rem 0.85rem;
-  }
-
-  .services-sys-detail-hero__layout {
-    min-height: 12.75rem;
-  }
-
   .services-sys-detail-hero__title {
-    max-width: 17ch;
+    max-width: 10.2ch;
   }
 
   .services-sys-detail-hero__description {
-    max-width: 30rem;
+    max-width: 22rem;
+    margin-top: 0.8rem;
   }
 }
 </style>

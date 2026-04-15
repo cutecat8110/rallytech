@@ -1,9 +1,9 @@
 {
-  "asset_type": "homepage hero background image",
+  "asset_type": "pure industrial background plate",
   "business_context": "Rally Technology, a Taiwanese industrial automation, SCADA, PLC, and industrial data integration company",
   "page_role": "Homepage hero image",
-  "goal": "Create a premium, photorealistic B2B hero background that feels modern, industrial, trustworthy, and directly usable on a corporate website",
-  "visual_message": "A disciplined industrial control center with contemporary automation credibility, atmospheric depth, and a clean headline-safe composition",
+  "goal": "Create a premium, photorealistic B2B hero background that feels modern, industrial, trustworthy, and directly usable on a corporate website. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, BUTTONS, OR WEBSITE UI ELEMENTS.",
+  "visual_message": "",
   "recipe_ids": [
     "hero-background-right-safe-area",
     "industrial-realism-anchors",
@@ -33,7 +33,7 @@
     "one subtle East Asian operator may appear only as a small scale cue"
   ],
   "visual_standard": "premium architectural interior photography with corporate technology website discipline",
-  "color_restriction": "restrained industrial neutrals, charcoal, matte graphite, muted steel, controlled cyan or green screen accents only; no purple neon wash",
+  "color_restriction": "restrained industrial neutrals, charcoal, matte graphite, muted steel, controlled cyan or green screen accents only; no purple neon wash. Must strictly use Rally Technology's signature Teal and Graphite palette.",
   "material_notes": [
     "matte metal consoles",
     "glass partitions with believable reflections",
@@ -50,8 +50,8 @@
   ],
   "composition": {
     "format": "16:9",
-    "hero_safe_area": "reserve the right side as empty negative space for future website headline and CTA overlay",
-    "focal_structure": "one dominant monitoring-wall focal point with one supporting depth layer",
+    "hero_safe_area": "preserve broad architectural negative space (dark/empty) for website content and CSS gradients",
+    "focal_structure": "one dominant monitoring-wall focal point with one supporting depth layer. Ensure to preserve broad architectural negative space (dark/empty) for website content and CSS gradients.",
     "camera": "architectural interior photography, eye-level or slightly elevated",
     "cropping": "designed for a modern homepage hero background, not a generic stock crop"
   },
@@ -64,8 +64,6 @@
   "commercial_constraints": [
     "must feel suitable for a refined B2B technology homepage",
     "must be photorealistic and commercially credible",
-    "must support white headline and CTA overlay",
-    "must not contain embedded text, buttons, or website UI",
     "all visible human subjects must read as East Asian professionals from a Taiwan-based engineering context"
   ],
   "avoid": [
@@ -77,6 +75,16 @@
     "excessive chairs or people as the focus",
     "cyberpunk purple-blue lighting",
     "headline text, readable words, or numbers",
-    "obvious AI artifacts"
+    "obvious AI artifacts",
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "CTA elements",
+    "website UI overlays",
+    "graphic design artifacts",
+    "watermarks",
+    "HUD decorations on screens",
+    "fake headlines"
   ]
 }

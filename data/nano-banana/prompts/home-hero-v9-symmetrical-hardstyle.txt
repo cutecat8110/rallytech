@@ -1,0 +1,48 @@
+{
+  "asset_type": "pure industrial background plate",
+  "business_context": "Rally Technology, a high-end Taiwanese industrial automation specialist. Brand color: Technical Teal / Cyan-Green and Graphite.",
+  "page_role": "Imposing, high-tension flagship homepage background for centered text overlay",
+  "goal": "Create a visually stunning, symmetrical industrial background that feels grand (氣派) and professional. THE IMAGE MUST BE COMPLETELY FREE OF ANY EMBEDDED TEXT, SLOGANS, LOGOS, OR BUTTONS.",
+  "visual_message": "An elite, mission-critical industrial command center with powerful technical authority. The scene is symmetrical, precise, and exudes an 'American hard-style' (美式硬派) engineering vibe.",
+  "technical_signals": {
+    "lens": "35mm anamorphic architectural photography",
+    "aperture": "f/2.8 for cinematic depth and precision",
+    "light_source": "High-contrast chiaroscuro lighting. Strong volumetric teal glows from massive SCADA walls; deep, rich graphite shadows",
+    "time_of_day": "operational midnight mode with intense monitor glow",
+    "motion_rule": "static but high-tension"
+  },
+  "composition": {
+    "layout": "Symmetrical central perspective",
+    "focal_structure": "A grand, curved monitoring wall or central technical structure that forms a symmetrical frame. The very center of the image should be a deep, atmospheric, and slightly darker focal area to perfectly cradle white centered headline text.",
+    "camera": "Eye-level, straight-on wide shot looking down the center of the facility",
+    "hero_safe_area": "Center-weighted negative space (atmospheric depth) for centered text overlay. No clutter in the middle."
+  },
+  "spatial_positioning": [
+    "Identical or balanced monitor arrays and control consoles on the left and right sides",
+    "A massive, glowing technical teal SCADA wall as the primary background feature",
+    "Foreground features dark matte graphite control surfaces with sharp edge reflections",
+    "Atmospheric depth (technical haze) in the center to create separation from the background"
+  ],
+  "visual_standard": "Elite technology-brand commercial photography. Imposing, clean, and structurally heavy.",
+  "color_restriction": "Strictly Rally Technology palette: Technical Teal, Cyan-Green, Graphite, and Obsidian. High-contrast metallic/glass textures. NO warm colors or purple.",
+  "material_notes": [
+    "Heavy matte graphite steel",
+    "Brushed aluminum and dark glass",
+    "Sharp edge-lighting on hardware",
+    "Dense monitor pixel detail (realistic data/charts, no generic HUDs)"
+  ],
+  "avoid": [
+    "embedded text",
+    "slogans",
+    "logos",
+    "buttons",
+    "fake headlines",
+    "right-aligned negative space",
+    "asymmetrical focal points",
+    "sci-fi spaceship aesthetics",
+    "warm cinematic orange",
+    "office-like furniture",
+    "HUD decorations on screens",
+    "watermarks"
+  ]
+}

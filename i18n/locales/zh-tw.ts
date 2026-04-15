@@ -11,56 +11,56 @@ const servicesCatalog = [
     shortLabel: 'SCADA / HMI 圖控',
     formalTitle: '監控與人機介面圖控服務',
     englishTitle: 'SCADA and HMI Graphics',
-    description: '建立可監看、可操作、可追溯的監控介面。'
+    description: '提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。'
   },
   {
     slug: 'ie-services',
     shortLabel: '儀電整合',
     formalTitle: '儀電整合服務',
     englishTitle: 'I&E Services',
-    description: '支援 FAT、SAT、試車驗收與現場故障排除。'
+    description: '承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。'
   },
   {
     slug: 'plc-dcs-programming-and-migration',
     shortLabel: 'PLC / DCS 程式與搬遷',
     formalTitle: '控制程式與系統搬遷服務',
     englishTitle: 'PLC & DCS Programming and Migration',
-    description: '提供控制邏輯開發、搬遷規劃與分階段切換支援。'
+    description: '承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。'
   },
   {
     slug: 'pi-server',
     shortLabel: 'PI Server',
     formalTitle: '即時資料平台服務',
     englishTitle: 'PI Server',
-    description: '建立即時資料採集、監看與跨系統整合基礎。'
+    description: '建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。'
   },
   {
     slug: 'historians',
     shortLabel: 'Historians',
     formalTitle: '歷史資料平台服務',
     englishTitle: 'Historians',
-    description: '支援長期資料保存、趨勢分析與追溯需求。'
+    description: '建立長期歷史資料平台，支援趨勢、報表、追溯與分析。'
   },
   {
     slug: 'network-design',
     shortLabel: '工業網路設計',
     formalTitle: '工業網路設計服務',
     englishTitle: 'Network Design',
-    description: '規劃穩定、可維護且具擴充性的工業通訊網路。'
+    description: '規劃工業網路架構，支撐穩定通訊與後續擴充維護。'
   },
   {
     slug: 'remote-monitoring-and-data',
     shortLabel: '遠端監控與資料備援',
     formalTitle: '遠端監控與資料備援服務',
     englishTitle: 'Remote Monitoring and Data',
-    description: '強化跨據點監看、資料持續性與備援能力。'
+    description: '建立遠端可視與資料回傳機制，支援分散據點與備援需求。'
   },
   {
     slug: 'alarm-monitoring',
     shortLabel: '告警監控',
     formalTitle: '告警監控服務',
     englishTitle: 'Alarm Monitoring',
-    description: '建立告警分級、通知邏輯與應變流程。'
+    description: '建立告警路由與升級流程，讓事件能更快對應到處置。'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -100,7 +100,7 @@ const messages = {
       source: '原始文案'
     },
     items: [
-      { label: '關於我們', href: '#about' },
+      { label: '關於我們', href: '/about' },
       { label: '服務項目', href: '/services' },
       { label: '一站式整合', href: '#one-touch-experience' }
     ]
@@ -109,88 +109,130 @@ const messages = {
     seo: {
       title: '雷力科技 Rally Technology',
       description:
-        '雷力科技成立於 2014 年，提供工業自動化交付、儀控整合、控制系統、工廠資料與現場執行支援。'
+        '雷力科技專注自動化控制與監控系統整合，服務再生能源、工業、化工、製藥與 EPC 專案。'
     },
     hero: {
-      kicker: '自動化整合交付',
-      title: '工業自動化交付，為可靠運轉而設計',
-      description: '串接控制系統、工廠資料與現場執行，支撐現代工業專案。',
-      ctaLabel: '探索服務',
+      kicker: '自動化控制與監控整合',
+      title: '自動化控制與監控整合，支援工業現場運轉',
+      description:
+        '協助專案與現場團隊把控制、監控與試車工作接在同一條較清楚的交付路徑上。',
+      ctaLabel: '查看服務',
       imageAlt: '工程團隊於監控室檢視工業系統'
     },
     about: {
-      kicker: '關於雷力',
-      title: '值得信賴的儀控、控制與工業資料整合夥伴',
+      kicker: '為什麼選擇雷力',
+      title: '承接控制、監控與試車交付的整合夥伴',
       description:
-        '雷力科技成立於 2014 年，協助工業團隊把儀控、控制系統、試車驗收與工廠資料整合成一條從啟動到交接都清楚可執行的交付路徑。',
+        '雷力科技成立於 2014 年，承接自動化控制、監控系統、試車支援與客製系統交付，服務專案端與現場端需求。',
       mediaLabel: '現代高科技建築與設施立面雙圖組合',
       primaryImageAlt: '現代高科技商業大樓',
       detailImageAlt: '高科技建築玻璃立面細節',
       points: [
         {
-          title: '專業能力',
-          description: '控制、儀控、試車驗收與現場協調以同一條交付路徑管理。'
+          title: '公司角色',
+          description: '承接控制系統、監控平台、試車支援與客製整合工作。'
         },
         {
-          title: '技術基礎',
+          title: '品質與合作',
           description:
-            '以 SCADA、PLC / DCS、PI、Historian 與工業網路作為整合核心。'
+            '以 ISO 9001、ISO 45001 與 WinCC OA Partner 基礎支撐穩定交付。'
         },
         {
-          title: '協作方式',
-          description: '讓業主、廠商與現場團隊對齊在同一組專案重點上。'
+          title: '常見場域',
+          description: '常見於再生能源、離岸風電、化工、製藥、EPC 與工業場域。'
         }
       ]
     },
     services: {
       kicker: '服務項目',
-      title: '支援工業自動化專案的整合型服務',
-      ctaLabel: '了解更多'
+      title: '工業自動化服務範圍',
+      ctaLabel: '查看詳情'
     },
     process: {
       kicker: '專案流程',
-      title: '交付流程',
+      title: '專案怎麼往下走',
       steps: [
-        { number: '01', title: '需求對齊' },
+        { number: '01', title: '範圍確認' },
         { number: '02', title: '技術規劃' },
-        { number: '03', title: '分階段實作' },
+        { number: '03', title: '執行支援' },
         { number: '04', title: '驗證與交接' }
       ]
     },
     oneTouch: {
-      title: '一站式整合體驗',
+      title: '一站式整合',
       description:
-        '把現場設備、告警邏輯、歷史資料與廠務系統整理成同一套可交付的整合路徑。',
-      ctaLabel: '了解更多',
+        '把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。',
+      ctaLabel: '開始洽詢',
       items: [
-        '資料整合',
-        '告警通報系統整合與試車',
-        '振動分析',
-        '本地 / 雲端歷史資料部署',
-        '公用與廠務系統整合'
+        'SCADA 資料',
+        '告警流程',
+        'Historian 資料',
+        '公用系統資料',
+        '跨系統流程'
       ]
     },
     mission: {
-      heading: '把整合能力轉成穩定交付',
+      heading: '雷力怎麼跟專案團隊合作',
       tabs: [
         {
           value: 'mission',
-          label: '我們的使命',
-          title: '我們的使命',
+          label: '專業與迅速',
+          title: '先把範圍與介面釐清，再讓後續跟得上',
           description:
-            '雷力科技協助客戶建立更容易操作、維護與延伸的自動化環境，讓控制、資料與現場執行維持同一條交付節奏。',
-          ctaLabel: '了解我們的使命',
+            '我們重視提早釐清決策、系統介面與下一步工作，避免設計、會議與現場執行之間斷線。',
+          ctaLabel: '討論需求',
           imageAlt: '工程師於控制盤前檢視與調整工業設備'
         },
         {
           value: 'join-us',
-          label: '合作邀請',
-          title: '合作邀請',
+          label: '團隊與誠信',
+          title: '讓業主、廠商與現場團隊對齊在清楚分工上',
           description:
-            '以跨域協作、清楚分工與現場導向的交付方式，讓客戶、承包商與操作團隊對齊在同一組專案重點上。',
-          ctaLabel: '展開合作對話',
+            '我們重視直接溝通、務實協調與可執行的交接，讓合作不只停在會議結論。',
+          ctaLabel: '開始洽詢',
           imageAlt: '工程技術人員於設備旁協作與交流'
         }
+      ]
+    }
+  },
+  aboutPage: {
+    seo: {
+      title: '關於我們 | 雷力科技 Rally Technology',
+      description:
+        '了解雷力科技如何以自動化控制與監控系統整合，支援再生能源、工業、化工、製藥與 EPC 專案。'
+    },
+    hero: {
+      title: '關於我們'
+    },
+    intro: {
+      kicker: '關於我們',
+      title: '面向專案與現場交付的自動化整合',
+      paragraphs: [
+        '雷力科技成立於 2014 年，專注自動化控制與監控系統整合，承接控制、儀控、試車驗收、工廠資料與客製系統交付，服務再生能源、工業、化工、製藥與 EPC 等專案情境。',
+        '我們以專業、迅速、團隊、誠信看待工作方式。ISO 9001、ISO 45001 與 WinCC OA Partner 是交付基礎，目標是讓系統在驗證、交接與後續維護上都更清楚。'
+      ]
+    },
+    capabilities: {
+      title: '核心整合能力',
+      items: [
+        '系統整合',
+        '儀電整合',
+        'FAT / SAT',
+        'SCADA / HMI',
+        'PLC / DCS',
+        'PI / Historian',
+        '工業網路',
+        '一站式整合'
+      ]
+    },
+    process: {
+      kicker: '交付流程',
+      title: '工作怎麼往下走',
+      steps: [
+        { number: '01', title: '範圍確認' },
+        { number: '02', title: '技術規劃' },
+        { number: '03', title: '執行支援' },
+        { number: '04', title: '驗證與交接' }
       ]
     }
   },
@@ -199,18 +241,18 @@ const messages = {
     seo: {
       title: '服務項目 | 雷力科技 Rally Technology',
       description:
-        '瀏覽雷力科技 8 項核心服務，從 SCADA / HMI、PLC / DCS、PI Server 到工業網路與告警監控，快速掌握可承接的工業自動化交付範圍。'
+        '瀏覽雷力科技的服務範圍，涵蓋操作畫面、現場支援、控制搬遷、資料平台、工業網路、遠端監控與告警流程。'
     },
     hero: {
       kicker: '服務項目',
-      title: '工業自動化交付的 8 項核心服務',
+      title: '工業自動化服務範圍',
       description:
-        '從監控圖控、控制程式到 plant data 與告警流程，承接工業自動化專案的關鍵交付。',
-      asideLabel: '核心工業自動化服務'
+        '面向再生能源、工業、化工、製藥與 EPC 專案，從操作畫面、現場支援到資料平台、網路與告警流程。',
+      asideLabel: '服務範圍'
     },
-    cardCtaLabel: '了解更多',
+    cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',
-    detailFocusLabel: '交付焦點'
+    detailFocusLabel: '快速看懂'
   },
   serviceDetailPages: serviceDetailPagesZhTw,
   contactPage: {
@@ -221,23 +263,23 @@ const messages = {
     },
     hero: {
       title: '聯絡我們',
-      description: '與雷力科技討論專案範圍、現場條件與下一步執行方向。'
+      description:
+        '歡迎提供專案範圍、現場條件或升級需求，我們會協助釐清下一步。'
     },
     intro: {
-      title: '從需求對話開始',
+      title: '開始洽詢',
       paragraphs: [
-        '若您正在評估自動化整合、控制系統、試車支援或工廠資料需求，歡迎與雷力科技聯繫。',
-        '我們協助團隊快速釐清需求、確認協作邊界，並把前期討論整理成後續可執行的專案方向。'
+        '若您要討論自動化整合、控制系統、試車支援或工廠資料需求，可從這裡開始。',
+        '我們會先協助確認範圍、釐清工作邊界，整理出下一步可執行的方向。'
       ]
     },
     form: {
-      title: '需求表單',
-      description:
-        '先整理您的聯絡資訊與需求內容；若需立即聯繫，請直接使用電話或 Email。',
-      submitLabel: '送出聯絡需求',
+      title: '聯絡表單',
+      description: '留下聯絡資訊與專案重點，讓我們更快理解範圍並回覆。',
+      submitLabel: '送出洽詢',
       unavailableTitle: '送出功能尚未開放',
       unavailableDescription:
-        '這一版聯絡頁先完成導流與表單介面，請先透過頁面上的電話或 Email 與我們聯繫。',
+        '此版本先完成聯絡頁與表單介面，請先透過電話或 Email 與我們聯繫。',
       fields: {
         name: {
           label: '姓名',
@@ -256,7 +298,7 @@ const messages = {
         },
         subject: {
           label: '主旨',
-          placeholder: '例如：PLC / DCS 搬遷評估',
+          placeholder: '例如：SCADA 升級或 PLC / DCS 搬遷評估',
           help: '用一句話說明這次洽詢主題。'
         },
         phone: {
@@ -267,38 +309,63 @@ const messages = {
         details: {
           label: '需求內容',
           placeholder: '請描述現況、需求範圍、期望時程或關鍵限制',
-          help: '請盡量提供現場背景、系統範圍與目前遇到的問題。'
+          help: '請盡量提供現場背景、目前系統邊界、時程與主要問題。'
         }
       }
     },
+    actions: {
+      phoneLabel: '來電洽詢',
+      faxLabel: '傳真聯繫',
+      emailLabel: '來信洽詢',
+      directionsLabel: '查看地圖'
+    },
     direct: {
-      title: '直接聯絡方式',
-      description:
-        '若您已經準備好進一步對談，也可以直接透過以下方式與雷力科技聯繫。',
+      title: '直接聯絡',
+      description: '若已準備好進一步對談，也可直接透過以下方式與我們聯繫。',
       cards: {
-        phoneTitle: '電話與傳真',
+        phoneTitle: '電話 / 傳真',
         faxLabel: '傳真',
-        locationTitle: '公司位置',
+        locationTitle: '公司地址',
         emailTitle: '電子郵件'
       }
     },
     map: {
       eyebrow: '位置',
-      title: '辦公室地點',
-      description:
-        '若需安排拜訪或現場會談，可先透過地圖確認雷力科技辦公室位置。',
-      ctaLabel: '在 Google Maps 開啟',
+      title: '辦公室位置',
+      description: '若需安排拜訪或現場會談，可先確認辦公室位置。',
+      ctaLabel: '查看 Google Maps',
       iframeTitle: '雷力科技辦公室 Google Maps 位置'
+    },
+    closing: {
+      ctaHeading: '工業自動化整合夥伴',
+      ctaLabel: '聯絡我們',
+      newsletterHeading: '電子報',
+      newsletterDescription: '訂閱電子報，掌握雷力科技最新消息。',
+      newsletterPlaceholder: '輸入 Email',
+      newsletterButtonLabel: '訂閱',
+      newsletterUnavailableTitle: '電子報訂閱功能尚未開放',
+      newsletterUnavailableDescription:
+        '電子報功能尚未開放，請先透過電話或 Email 與我們聯繫。',
+      contactsHeading: '聯絡方式'
     }
   },
   footer: {
-    connectorHeading: '工程與自動化整合專家',
+    connectorHeading: '工業自動化整合夥伴',
     ctaLabel: '聯絡我們',
     brandLine: '雷力科技 Rally Technology',
+    newsletterHeading: '電子報',
+    newsletterDescription: '訂閱電子報，掌握雷力科技最新消息。',
+    newsletterPlaceholder: '輸入 Email',
+    newsletterButtonLabel: '訂閱',
+    newsletterUnavailableTitle: '電子報訂閱功能尚未開放',
+    newsletterUnavailableDescription:
+      '電子報功能尚未開放，請先透過電話或 Email 與我們聯繫。',
+    contactsHeading: '聯絡方式',
     phoneLabel: '電話',
     faxLabel: '傳真',
     emailLabel: '電子郵件',
     addressLabel: '地址',
+    backToTopLabel: '回到頂端',
     copyright: '© {year} 雷力科技。版權所有。'
   },
   referencePages: referencePagesZhTw
