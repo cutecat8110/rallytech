@@ -26,7 +26,7 @@ const gridClassName = computed(() =>
       <article
         v-for="item in block.items"
         :key="item.title"
-        class="services-sys-detail-card-grid__item surface-sys-card"
+        class="services-sys-detail-card-grid__item"
       >
         <h4 class="type-sys-title-l text-neutral-950">
           {{ item.title }}
@@ -46,15 +46,17 @@ const gridClassName = computed(() =>
 
 .services-sys-detail-card-grid {
   display: grid;
-  gap: 1rem;
+  gap: 1rem 1.3rem;
 }
 
 .services-sys-detail-card-grid__item {
-  padding: 1.25rem 1.2rem 1.35rem;
-  border-top: 2px solid
-    color-mix(in srgb, var(--color-primary-500) 64%, transparent);
-  background: rgb(255 255 255 / 0.96);
-  box-shadow: none;
+  padding-top: 0.95rem;
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
 }
 
 @media (min-width: 768px) {
@@ -63,7 +65,7 @@ const gridClassName = computed(() =>
   }
 
   .services-sys-detail-card-grid__item {
-    padding: 1.35rem;
+    padding-top: 1rem;
   }
 }
 

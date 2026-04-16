@@ -58,7 +58,7 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
       class="services-sys-detail-block"
       :class="`services-sys-detail-block--${block.type}`"
     >
-      <p class="type-sys-kicker services-sys-detail-block__eyebrow">
+      <p class="type-sys-label-s services-sys-detail-block__eyebrow">
         {{ getBlockEyebrow(block.type) }}
       </p>
 
@@ -119,28 +119,31 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
 .services-sys-detail-blocks {
   display: flex;
   flex-direction: column;
-  gap: clamp(3.3rem, 4.5vw, 4.6rem);
-  margin-top: clamp(3rem, 4vw, 3.8rem);
+  gap: clamp(3.8rem, 5vw, 5.4rem);
+  margin-top: clamp(3rem, 4vw, 4.2rem);
 }
 
 .services-sys-detail-block {
   display: grid;
-  gap: 0.95rem;
+  gap: 0.7rem;
 }
 
 .services-sys-detail-block + .services-sys-detail-block {
-  padding-top: clamp(2.6rem, 3.5vw, 3.2rem);
-  border-top: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 8%,
-      var(--color-border-subtle)
-    );
+  padding-top: clamp(1rem, 2vw, 1.4rem);
 }
 
 .services-sys-detail-block__eyebrow {
   color: var(--color-text-tertiary);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+.services-sys-detail-block--capability-list,
+.services-sys-detail-block--summary,
+.services-sys-detail-block--quote,
+.services-sys-detail-block--closing-note,
+.services-sys-detail-block--accordion {
+  max-width: 52rem;
 }
 </style>

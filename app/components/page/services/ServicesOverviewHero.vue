@@ -7,10 +7,10 @@ const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
 
 <template>
   <PageHeroShell
-    class="services-sys-overview-hero text-white"
+    class="services-sys-overview-hero text-neutral-950"
     variant="page"
     shell="wide"
-    content-align="center"
+    content-align="start"
   >
     <template #media>
       <img
@@ -53,8 +53,9 @@ const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
 .services-sys-overview-hero {
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--color-secondary-950) 92%, black) 0%,
-    var(--color-secondary-950) 100%
+    rgb(249 247 241 / 1) 0%,
+    rgb(248 246 240 / 1) 44%,
+    rgb(244 241 233 / 1) 100%
   );
 }
 
@@ -62,7 +63,7 @@ const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.86) contrast(1.06) brightness(0.58);
+  filter: saturate(0.78) contrast(0.96) brightness(0.92);
 }
 
 .services-sys-overview-hero__overlay {
@@ -70,59 +71,78 @@ const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
   inset: 0;
   background:
     linear-gradient(
-      100deg,
-      rgb(4 10 14 / 0.96) 0%,
-      rgb(5 11 15 / 0.9) 18%,
-      rgb(7 14 18 / 0.72) 46%,
-      rgb(7 14 18 / 0.56) 68%,
-      rgb(4 10 14 / 0.84) 100%
+      96deg,
+      rgb(249 247 241 / 0.98) 0%,
+      rgb(249 247 241 / 0.95) 22%,
+      rgb(249 247 241 / 0.72) 46%,
+      rgb(249 247 241 / 0.16) 74%,
+      rgb(249 247 241 / 0.4) 100%
     ),
     linear-gradient(
       180deg,
-      rgb(4 10 14 / 0.18) 0%,
-      rgb(4 10 14 / 0.04) 22%,
-      rgb(4 10 14 / 0.36) 76%,
-      rgb(4 10 14 / 0.88) 100%
+      rgb(255 255 255 / 0.48) 0%,
+      rgb(255 255 255 / 0.08) 24%,
+      rgb(248 246 240 / 0.12) 74%,
+      rgb(243 239 231 / 0.62) 100%
     ),
-    radial-gradient(circle at 78% 22%, rgb(48 187 165 / 0.1), transparent 26%);
+    radial-gradient(circle at 78% 18%, rgb(255 255 255 / 0.2), transparent 28%);
 }
 
 .services-sys-overview-hero__content {
-  max-width: 44rem;
-  margin-inline: auto;
-  text-align: center;
+  max-width: 38rem;
 }
 
 .services-sys-overview-hero__kicker {
-  color: rgb(191 243 234 / 0.9);
+  color: rgb(77 87 92 / 0.82);
   text-transform: uppercase;
 }
 
 .services-sys-overview-hero__title {
-  max-width: 16ch;
-  margin: 0.8rem auto 0;
-  color: var(--color-white);
-  line-height: 1.03;
-  letter-spacing: -0.026em;
-  text-shadow: 0 14px 30px rgb(0 0 0 / 0.28);
+  max-width: 13ch;
+  margin: 0.65rem 0 0;
+  color: var(--color-secondary-950);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
   text-wrap: balance;
 }
 
 .services-sys-overview-hero__description {
-  max-width: 38rem;
-  margin: 1rem auto 0;
-  color: rgb(255 255 255 / 0.84);
+  max-width: 31rem;
+  margin: 0.85rem 0 0;
+  color: rgb(28 36 40 / 0.72);
+  line-height: 1.72;
   text-wrap: pretty;
 }
 
 @media (max-width: 767px) {
+  .services-sys-overview-hero__content {
+    max-width: 22rem;
+  }
+
   .services-sys-overview-hero__title {
-    max-width: 11.5ch;
-    line-height: 1.04;
+    max-width: 10.2ch;
   }
 
   .services-sys-overview-hero__description {
-    max-width: 32rem;
+    max-width: 21rem;
+    margin-top: 0.7rem;
+  }
+
+  .services-sys-overview-hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(249 247 241 / 0.92) 0%,
+        rgb(249 247 241 / 0.72) 24%,
+        rgb(249 247 241 / 0.52) 60%,
+        rgb(243 239 231 / 0.78) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(249 247 241 / 0.78) 0%,
+        rgb(249 247 241 / 0.26) 50%,
+        rgb(249 247 241 / 0.68) 100%
+      );
   }
 }
 </style>

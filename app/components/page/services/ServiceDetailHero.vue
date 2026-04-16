@@ -13,10 +13,10 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
 
 <template>
   <PageHeroShell
-    class="services-sys-detail-hero text-white"
+    class="services-sys-detail-hero text-neutral-950"
     variant="page"
     shell="default"
-    content-align="center"
+    content-align="start"
   >
     <template #media>
       <img
@@ -34,6 +34,13 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
     </template>
 
     <div class="services-sys-detail-hero__content">
+      <p
+        v-if="service.englishTitle"
+        class="type-sys-label-s services-sys-detail-hero__kicker"
+      >
+        {{ service.englishTitle }}
+      </p>
+
       <h1 class="type-sys-display-l services-sys-detail-hero__title">
         {{ service.shortLabel }}
       </h1>
@@ -47,74 +54,97 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
 
 <style scoped>
 .services-sys-detail-hero {
-  background: var(--color-secondary-950);
+  background: linear-gradient(
+    180deg,
+    rgb(249 247 241 / 1) 0%,
+    rgb(246 243 235 / 1) 100%
+  );
 }
 
 .services-sys-detail-hero__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.98) contrast(1.06) brightness(0.84);
+  filter: saturate(0.82) contrast(0.98) brightness(0.94);
 }
 
 .services-sys-detail-hero__overlay {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 50% 18%, rgb(48 187 165 / 0.12), transparent 30%),
-    radial-gradient(
-      circle at 50% 48%,
-      rgb(255 255 255 / 0.06),
-      transparent 26%
+    linear-gradient(
+      96deg,
+      rgb(249 247 241 / 0.98) 0%,
+      rgb(249 247 241 / 0.94) 20%,
+      rgb(249 247 241 / 0.68) 44%,
+      rgb(249 247 241 / 0.14) 74%,
+      rgb(249 247 241 / 0.34) 100%
     ),
     linear-gradient(
       180deg,
-      rgb(4 9 13 / 0.78) 0%,
-      rgb(7 14 18 / 0.28) 26%,
-      rgb(7 14 18 / 0.3) 56%,
-      rgb(4 9 13 / 0.82) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgb(4 9 13 / 0.62) 0%,
-      rgb(7 14 18 / 0.18) 24%,
-      rgb(7 14 18 / 0.18) 76%,
-      rgb(4 9 13 / 0.62) 100%
+      rgb(255 255 255 / 0.34) 0%,
+      rgb(255 255 255 / 0.06) 24%,
+      rgb(247 244 236 / 0.12) 74%,
+      rgb(244 240 232 / 0.66) 100%
     );
 }
 
 .services-sys-detail-hero__content {
-  max-width: 44rem;
-  margin-inline: auto;
-  text-align: center;
+  max-width: 34rem;
+}
+
+.services-sys-detail-hero__kicker {
+  color: rgb(77 87 92 / 0.74);
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
 }
 
 .services-sys-detail-hero__title {
-  max-width: 14ch;
-  margin: 0 auto;
-  color: var(--color-white);
-  line-height: 1.03;
-  letter-spacing: -0.026em;
-  text-shadow: 0 10px 28px rgb(0 0 0 / 0.28);
+  max-width: 12ch;
+  margin: 0.55rem 0 0;
+  color: var(--color-secondary-950);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
   text-wrap: balance;
 }
 
 .services-sys-detail-hero__description {
-  max-width: 34rem;
-  margin: 1rem auto 0;
-  color: rgb(255 255 255 / 0.82);
-  line-height: 1.65;
+  max-width: 28rem;
+  margin: 0.75rem 0 0;
+  color: rgb(28 36 40 / 0.7);
+  line-height: 1.68;
   text-wrap: pretty;
 }
 
 @media (max-width: 767px) {
+  .services-sys-detail-hero__content {
+    max-width: 22rem;
+  }
+
   .services-sys-detail-hero__title {
-    max-width: 10.2ch;
+    max-width: 10.5ch;
   }
 
   .services-sys-detail-hero__description {
-    max-width: 22rem;
-    margin-top: 0.8rem;
+    max-width: 21rem;
+    margin-top: 0.65rem;
+  }
+
+  .services-sys-detail-hero__overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgb(249 247 241 / 0.92) 0%,
+        rgb(249 247 241 / 0.7) 24%,
+        rgb(249 247 241 / 0.48) 58%,
+        rgb(244 240 232 / 0.78) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgb(249 247 241 / 0.72) 0%,
+        rgb(249 247 241 / 0.2) 52%,
+        rgb(249 247 241 / 0.62) 100%
+      );
   }
 }
 </style>

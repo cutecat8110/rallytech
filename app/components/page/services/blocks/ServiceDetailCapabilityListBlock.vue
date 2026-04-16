@@ -49,13 +49,13 @@ defineProps<{
 .services-sys-detail-capabilities {
   display: flex;
   flex-direction: column;
-  gap: 1.35rem;
+  gap: 1.2rem;
   counter-reset: capability-item;
 }
 
 .services-sys-detail-capabilities__item {
   position: relative;
-  padding: 1.2rem 0 0 4.2rem;
+  padding: 1rem 0 0 3.6rem;
   border-top: 1px solid
     color-mix(
       in srgb,
@@ -67,7 +67,7 @@ defineProps<{
 .services-sys-detail-capabilities__item::before {
   content: counter(capability-item, decimal-leading-zero);
   position: absolute;
-  top: 1.12rem;
+  top: 0.95rem;
   left: 0;
   color: var(--color-text-tertiary);
   font: var(--text-label-s);
@@ -87,8 +87,8 @@ defineProps<{
 .services-sys-detail-capabilities__copy {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
-  margin-top: 0.7rem;
+  gap: 0.7rem;
+  margin-top: 0.6rem;
 }
 
 @media (min-width: 1024px) {

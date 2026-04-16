@@ -35,16 +35,14 @@ defineProps<{
 .services-sys-detail-summary {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  gap: 0.95rem;
   max-width: 48rem;
-  padding: 1.4rem 1.5rem;
-  border-left: 3px solid
-    color-mix(in srgb, var(--color-primary-500) 72%, transparent);
-  background: color-mix(
-    in srgb,
-    var(--color-primary-50) 54%,
-    var(--color-white)
-  );
-  border-radius: 0 var(--radius-l) var(--radius-l) 0;
+  padding-top: 1rem;
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
 }
 </style>

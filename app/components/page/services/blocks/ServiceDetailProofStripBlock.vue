@@ -34,38 +34,29 @@ defineProps<{
 
 <style scoped>
 .services-sys-detail-proof-strip__title {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.35rem;
+  max-width: 26rem;
 }
 
 .services-sys-detail-proof-strip__grid {
   display: grid;
-  gap: 0.95rem;
+  gap: 1rem 1.4rem;
 }
 
 .services-sys-detail-proof-strip__item {
-  padding: 1.05rem 1rem 1.15rem;
-  border: 1px solid
+  padding-top: 0.9rem;
+  border-top: 1px solid
     color-mix(
       in srgb,
-      var(--color-secondary-950) 8%,
+      var(--color-secondary-950) 10%,
       var(--color-border-subtle)
     );
-  border-top: 2px solid
-    color-mix(in srgb, var(--color-primary-500) 64%, transparent);
-  border-radius: var(--radius-l);
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(242 247 247 / 0.8) 100%
-    ),
-    var(--color-white);
 }
 
 @media (min-width: 768px) {
   .services-sys-detail-proof-strip__grid {
     grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    gap: 1rem;
+    gap: 1.15rem 1.4rem;
   }
 }
 </style>

@@ -42,27 +42,17 @@ defineProps<{
 
 .services-sys-detail-process-steps {
   display: grid;
-  gap: 1rem;
+  gap: 1rem 1.3rem;
 }
 
 .services-sys-detail-process-steps__item {
-  padding: 1.1rem 1.15rem;
-  border: 1px solid
+  padding-top: 0.95rem;
+  border-top: 1px solid
     color-mix(
       in srgb,
-      var(--color-secondary-950) 8%,
+      var(--color-secondary-950) 10%,
       var(--color-border-subtle)
     );
-  border-top: 2px solid
-    color-mix(in srgb, var(--color-primary-500) 68%, transparent);
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(243 248 248 / 0.82) 100%
-    ),
-    var(--color-white);
-  box-shadow: none;
 }
 
 @media (min-width: 768px) {

@@ -37,7 +37,7 @@ const accordionUi = {
       {{ block.title }}
     </h3>
 
-    <div class="services-sys-detail-accordion surface-sys-card">
+    <div class="services-sys-detail-accordion">
       <UAccordion :items="getAccordionItems(block)" :ui="accordionUi" />
     </div>
 
@@ -53,14 +53,11 @@ const accordionUi = {
 }
 
 .services-sys-detail-accordion {
-  padding-inline: 1.2rem;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(241 246 246 / 0.8) 100%
-    ),
-    var(--color-white);
-  box-shadow: 0 18px 44px rgb(6 20 27 / 0.05);
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
 }
 </style>

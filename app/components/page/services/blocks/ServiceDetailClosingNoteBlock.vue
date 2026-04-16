@@ -25,7 +25,11 @@ defineProps<{
   gap: 0.8rem;
   max-width: 44rem;
   padding-top: 1.25rem;
-  border-top: 2px solid
-    color-mix(in srgb, var(--color-primary-500) 68%, transparent);
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
 }
 </style>

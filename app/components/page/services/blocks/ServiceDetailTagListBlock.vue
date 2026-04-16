@@ -35,23 +35,15 @@ defineProps<{
 .services-sys-detail-tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem 0.95rem;
 }
 
 .services-sys-detail-tag-list__item {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2.35rem;
-  padding: 0.55rem 0.82rem;
-  border: 1px solid
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid
     color-mix(in srgb, var(--color-primary-200) 58%, var(--color-border-subtle));
-  border-radius: var(--radius-full);
-  color: var(--color-primary-800);
-  background: color-mix(
-    in srgb,
-    var(--color-primary-50) 82%,
-    var(--color-white)
-  );
+  color: var(--color-text-secondary);
 }
 </style>

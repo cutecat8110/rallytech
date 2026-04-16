@@ -36,7 +36,7 @@ const isDenseMobileService = computed(() =>
         />
 
         <div class="services-sys-detail-shell__main">
-          <section class="services-sys-detail-intro surface-sys-card">
+          <section class="services-sys-detail-intro">
             <div class="services-sys-detail-intro__band">
               <div
                 v-if="props.detailPage.heroFocusItems.length"
@@ -89,15 +89,15 @@ const isDenseMobileService = computed(() =>
 .services-sys-detail-stage {
   background: linear-gradient(
     180deg,
-    color-mix(in srgb, var(--color-primary-50) 26%, var(--color-white)) 0%,
-    var(--color-white) 14%,
-    color-mix(in srgb, var(--color-secondary-50) 26%, var(--color-white)) 100%
+    rgb(249 247 241 / 1) 0%,
+    rgb(255 255 255 / 1) 18%,
+    rgb(247 245 239 / 1) 100%
   );
 }
 
 .services-sys-detail-shell {
   display: grid;
-  gap: 1.6rem;
+  gap: 1.85rem;
 }
 
 .services-sys-detail-shell__main {
@@ -105,32 +105,23 @@ const isDenseMobileService = computed(() =>
 }
 
 .services-sys-detail-intro {
-  padding: clamp(1.3rem, 2vw, 1.7rem);
-  border: 1px solid
+  padding-block: clamp(1.35rem, 2vw, 1.9rem);
+  border-block: 1px solid
     color-mix(
       in srgb,
       var(--color-secondary-950) 10%,
       var(--color-border-subtle)
     );
-  border-radius: var(--radius-xl);
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.98) 0%,
-      rgb(242 247 247 / 0.82) 100%
-    ),
-    var(--color-white);
-  box-shadow: 0 18px 40px rgb(6 20 27 / 0.05);
 }
 
 .services-sys-detail-intro__band {
   display: grid;
-  gap: 1.35rem;
+  gap: 1.25rem;
 }
 
 .services-sys-detail-focus-strip {
   display: grid;
-  gap: 0.95rem;
+  gap: 0.75rem;
   align-content: start;
 }
 
@@ -141,21 +132,20 @@ const isDenseMobileService = computed(() =>
 }
 
 .services-sys-detail-focus-strip__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
+  display: grid;
+  gap: 0.45rem;
 }
 
 .services-sys-detail-focus-strip__chip {
-  display: inline-flex;
-  align-items: center;
-  min-height: 2.3rem;
-  padding: 0.52rem 0.78rem;
-  border: 1px solid
-    color-mix(in srgb, var(--color-primary-300) 36%, var(--color-border-subtle));
-  border-radius: var(--radius-full);
-  color: var(--color-primary-800);
-  background: rgb(255 255 255 / 0.92);
+  display: block;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
+  color: var(--color-text-secondary);
 }
 
 .services-sys-detail-intro__copy {
@@ -167,44 +157,52 @@ const isDenseMobileService = computed(() =>
 
 .services-sys-detail-intro__lead {
   color: var(--color-text-primary);
-  line-height: 1.7;
+  line-height: 1.74;
   letter-spacing: -0.012em;
   text-wrap: pretty;
 }
 
 .services-sys-detail-intro__support {
   color: var(--color-text-secondary);
-  line-height: 1.78;
+  line-height: 1.74;
   text-wrap: pretty;
 }
 
 @media (max-width: 767px) {
   .services-sys-detail-shell--dense-mobile {
-    gap: 1.2rem;
+    gap: 1.15rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-intro {
-    padding: 1.05rem;
-    border-radius: var(--radius-l);
+    padding-block: 1rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__band {
-    gap: 1rem;
+    gap: 0.9rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-focus-strip {
-    gap: 0.7rem;
+    gap: 0.55rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     .services-sys-detail-focus-strip__list {
-    gap: 0.45rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.8rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     .services-sys-detail-focus-strip__chip {
-    min-height: 2.05rem;
-    padding: 0.42rem 0.62rem;
+    padding: 0;
+    border-bottom: none;
+  }
+
+  .services-sys-detail-shell--dense-mobile
+    .services-sys-detail-focus-strip__chip:not(:first-child)::before {
+    content: '\00b7';
+    margin-right: 0.45rem;
+    color: var(--color-text-tertiary);
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__copy {
@@ -226,8 +224,7 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-sidebar__link) {
-    min-height: 2.7rem;
-    padding: 0.68rem 0.84rem;
+    padding: 0.2rem 0 0.65rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-blocks) {
@@ -237,21 +234,21 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-block + .services-sys-detail-block) {
-    padding-top: 2rem;
+    padding-top: 1.8rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-block) {
-    gap: 0.7rem;
+    gap: 0.62rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-block__eyebrow) {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-block__title) {
-    margin-bottom: 0.95rem;
+    margin-bottom: 0.85rem;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -261,25 +258,19 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-media-feature__media) {
-    min-height: 13rem;
-    border-radius: var(--radius-l);
+    min-height: 12rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-media-feature__copy) {
-    gap: 0.72rem;
-    margin-top: 0.7rem;
+    gap: 0.7rem;
+    margin-top: 0.6rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-media-feature__highlights) {
-    gap: 0.45rem;
-    margin-top: 0.9rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-media-feature__highlight) {
-    padding: 0.46rem 0.62rem;
+    gap: 0.4rem 0.85rem;
+    margin-top: 0.8rem;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -289,7 +280,7 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-proof-strip__item) {
-    padding: 0.85rem 0.82rem 0.92rem;
+    padding-top: 0.75rem;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -320,7 +311,7 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-card-grid__item) {
-    padding: 0.95rem 0.92rem 1rem;
+    padding-top: 0.85rem;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -330,38 +321,20 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-process-steps__item) {
-    padding: 0.92rem 0.96rem;
+    padding-top: 0.82rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-tag-list) {
-    gap: 0.55rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-tag-list__item) {
-    min-height: 2.1rem;
-    padding: 0.45rem 0.68rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-accordion) {
-    padding-inline: 0.92rem;
+    gap: 0.4rem 0.7rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-quote) {
-    padding: 1.1rem 1rem 1rem 1.3rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-quote::before) {
-    top: 0.5rem;
-    left: 0.68rem;
-    font-size: 2.35rem;
+    padding-left: 1.05rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-summary) {
-    padding: 1rem 1.05rem;
+    padding-top: 0.9rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-closing) {
@@ -373,12 +346,12 @@ const isDenseMobileService = computed(() =>
   .services-sys-detail-shell {
     grid-template-columns: minmax(15rem, 17rem) minmax(0, 1fr);
     align-items: start;
-    gap: clamp(2rem, 3vw, 3.4rem);
+    gap: clamp(2.3rem, 3vw, 3.8rem);
   }
 
   .services-sys-detail-intro__band {
-    grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr);
-    gap: clamp(1.7rem, 2.8vw, 2.5rem);
+    grid-template-columns: minmax(12rem, 14rem) minmax(0, 1fr);
+    gap: clamp(1.9rem, 3vw, 3rem);
     align-items: start;
   }
 }

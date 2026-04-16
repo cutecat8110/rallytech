@@ -18,7 +18,7 @@ const blockClassName = computed(
 
 <template>
   <section class="services-sys-detail-media-feature" :class="blockClassName">
-    <div class="services-sys-detail-media-feature__media surface-sys-card">
+    <div class="services-sys-detail-media-feature__media">
       <img
         :src="resolvedImage.src"
         :alt="block.imageAlt || resolvedImage.alt"
@@ -62,21 +62,14 @@ const blockClassName = computed(
 <style scoped>
 .services-sys-detail-media-feature {
   display: grid;
-  gap: 1.6rem;
+  gap: 1.35rem;
 }
 
 .services-sys-detail-media-feature__media {
   min-height: clamp(18rem, 34vw, 23rem);
-  padding: 0;
   overflow: hidden;
-  border: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 10%,
-      var(--color-border-subtle)
-    );
-  border-radius: var(--radius-xl);
-  box-shadow: 0 20px 42px rgb(6 20 27 / 0.08);
+  border-radius: clamp(1.1rem, 2vw, 1.6rem);
+  background: color-mix(in srgb, var(--color-secondary-100) 78%, white);
 }
 
 .services-sys-detail-media-feature__image {
@@ -84,50 +77,44 @@ const blockClassName = computed(
   height: 100%;
   object-fit: cover;
   object-position: center;
-  transform: scale(1.02);
+  filter: saturate(0.84) contrast(0.98) brightness(0.98);
 }
 
 .services-sys-detail-media-feature__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 35rem;
-  padding-block: 0.2rem;
+  max-width: 33rem;
 }
 
 .services-sys-detail-media-feature__copy {
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
-  margin-top: 0.85rem;
+  gap: 0.8rem;
+  margin-top: 0.7rem;
 }
 
 .services-sys-detail-media-feature__highlights {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.625rem;
-  margin-top: 1.2rem;
+  gap: 0.5rem 0.95rem;
+  margin-top: 1rem;
 }
 
 .services-sys-detail-media-feature__highlight {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.55rem 0.75rem;
-  border: 1px solid
-    color-mix(in srgb, var(--color-primary-200) 52%, var(--color-border-subtle));
-  color: var(--color-primary-800);
-  background: color-mix(
-    in srgb,
-    var(--color-primary-50) 84%,
-    var(--color-white)
-  );
+  color: var(--color-text-secondary);
+}
+
+.services-sys-detail-media-feature__highlight:not(:first-child)::before {
+  content: '\00b7';
+  margin-right: 0.55rem;
+  color: var(--color-text-tertiary);
 }
 
 @media (min-width: 768px) {
   .services-sys-detail-media-feature {
-    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
-    gap: clamp(1.9rem, 3vw, 2.6rem);
+    grid-template-columns: minmax(0, 1.14fr) minmax(0, 0.86fr);
+    gap: clamp(2.2rem, 3.4vw, 3.2rem);
     align-items: center;
   }
 

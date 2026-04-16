@@ -33,7 +33,6 @@ const serviceItems = computed(() =>
           class="services-sys-detail-sidebar__link services-sys-detail-sidebar__link--active"
           aria-current="page"
         >
-          <UIcon :name="item.icon" class="size-4" />
           <span>{{ item.shortLabel }}</span>
         </span>
 
@@ -42,7 +41,6 @@ const serviceItems = computed(() =>
           :to="item.to"
           class="services-sys-detail-sidebar__link"
         >
-          <UIcon :name="item.icon" class="size-4" />
           <span>{{ item.shortLabel }}</span>
         </NuxtLink>
       </template>
@@ -55,7 +53,7 @@ const serviceItems = computed(() =>
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.95rem;
+  gap: 0.75rem;
 }
 
 .services-sys-detail-sidebar__label {
@@ -66,9 +64,15 @@ const serviceItems = computed(() =>
 
 .services-sys-detail-sidebar__nav {
   display: flex;
-  gap: 0.75rem;
-  padding-bottom: 0.2rem;
+  gap: 1rem;
+  padding-bottom: 0.15rem;
   overflow-x: auto;
+  border-bottom: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 8%,
+      var(--color-border-subtle)
+    );
   scrollbar-width: none;
 }
 
@@ -77,54 +81,49 @@ const serviceItems = computed(() =>
 }
 
 .services-sys-detail-sidebar__link {
-  display: inline-grid;
+  position: relative;
+  display: inline-flex;
   flex: 0 0 auto;
-  grid-template-columns: auto minmax(0, 1fr);
   align-items: center;
-  gap: 0.65rem;
-  min-height: 2.95rem;
-  padding: 0.78rem 0.95rem;
-  border: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 8%,
-      var(--color-border-subtle)
-    );
-  border-radius: var(--radius-full);
+  padding: 0.25rem 0 0.8rem;
   color: var(--color-text-secondary);
-  background: rgb(255 255 255 / 0.94);
-  box-shadow: 0 12px 30px rgb(6 20 27 / 0.04);
+  background: transparent;
   transition:
     color 180ms ease,
-    border-color 180ms ease,
-    background-color 180ms ease,
-    transform 180ms ease,
-    box-shadow 180ms ease;
+    opacity 180ms ease;
+}
+
+.services-sys-detail-sidebar__link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: transparent;
+  transition: background-color 180ms ease;
 }
 
 .services-sys-detail-sidebar__link:hover {
-  color: var(--color-primary-700);
-  border-color: color-mix(
-    in srgb,
-    var(--color-primary-200) 60%,
-    var(--color-border-subtle)
-  );
-  background: rgb(255 255 255 / 1);
-  box-shadow: 0 16px 34px rgb(6 20 27 / 0.08);
-  transform: translateY(-1px);
+  color: var(--color-secondary-950);
+}
+
+.services-sys-detail-sidebar__link:focus-visible {
+  outline: none;
+  color: var(--color-secondary-950);
 }
 
 .services-sys-detail-sidebar__link--active {
   color: var(--color-secondary-950);
-  border-color: color-mix(
+}
+
+.services-sys-detail-sidebar__link:hover::after,
+.services-sys-detail-sidebar__link:focus-visible::after,
+.services-sys-detail-sidebar__link--active::after {
+  background: color-mix(
     in srgb,
-    var(--color-primary-300) 58%,
-    var(--color-border-subtle)
-  );
-  background: linear-gradient(
-    120deg,
-    color-mix(in srgb, var(--color-primary-50) 92%, var(--color-white)) 0%,
-    color-mix(in srgb, var(--color-secondary-50) 65%, var(--color-white)) 100%
+    var(--color-primary-500) 58%,
+    var(--color-secondary-950)
   );
 }
 
@@ -132,60 +131,45 @@ const serviceItems = computed(() =>
   .services-sys-detail-sidebar {
     position: sticky;
     top: calc(var(--layout-header-m) + 1.5rem);
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .services-sys-detail-sidebar__nav {
     flex-direction: column;
-    gap: 0.4rem;
-    padding: 0.75rem;
-    border: 1px solid
+    gap: 0.25rem;
+    padding: 0 0 0 1rem;
+    border-bottom: none;
+    border-left: 1px solid
       color-mix(
         in srgb,
-        var(--color-secondary-950) 8%,
+        var(--color-secondary-950) 10%,
         var(--color-border-subtle)
       );
-    border-radius: var(--radius-xl);
-    background:
-      linear-gradient(
-        180deg,
-        rgb(255 255 255 / 0.98) 0%,
-        rgb(242 247 247 / 0.82) 100%
-      ),
-      var(--color-white);
-    box-shadow: 0 18px 36px rgb(6 20 27 / 0.05);
     overflow: visible;
   }
 
   .services-sys-detail-sidebar__link {
     width: 100%;
-    min-height: auto;
-    padding: 0.78rem 0.9rem;
-    border: 1px solid transparent;
-    border-radius: var(--radius-m);
-    background: transparent;
-    box-shadow: none;
+    padding: 0.38rem 0 0.38rem 0.25rem;
   }
 
-  .services-sys-detail-sidebar__link:hover {
-    transform: none;
-    color: var(--color-secondary-950);
-    border-color: color-mix(
-      in srgb,
-      var(--color-primary-200) 58%,
-      var(--color-border-subtle)
-    );
-    background: rgb(255 255 255 / 0.92);
+  .services-sys-detail-sidebar__link::after {
+    left: calc(-1rem - 1px);
+    right: auto;
+    top: 0.15rem;
+    bottom: 0.15rem;
+    width: 2px;
+    height: auto;
   }
 
-  .services-sys-detail-sidebar__link--active {
-    border-color: color-mix(
+  .services-sys-detail-sidebar__link:hover::after,
+  .services-sys-detail-sidebar__link:focus-visible::after,
+  .services-sys-detail-sidebar__link--active::after {
+    background: color-mix(
       in srgb,
-      var(--color-primary-300) 52%,
-      var(--color-border-subtle)
+      var(--color-primary-500) 60%,
+      var(--color-secondary-950)
     );
-    background: rgb(255 255 255 / 1);
-    box-shadow: 0 10px 24px rgb(6 20 27 / 0.06);
   }
 }
 </style>

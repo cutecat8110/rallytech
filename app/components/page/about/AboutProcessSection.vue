@@ -2,27 +2,18 @@
 import { computed } from 'vue'
 
 const messages = useRallyMessages()
-const { activeMode } = useHomePageImageMode()
-
-// 每個步驟對應的 Slot State
-const stepStates: Array<'01' | '02' | '03' | '04'> = ['01', '02', '03', '04']
+const processIcons = [
+  'i-lucide-clipboard-list',
+  'i-lucide-route',
+  'i-lucide-cpu',
+  'i-lucide-badge-check'
+]
 
 const processSteps = computed(() =>
-  messages.value.aboutPage.process.steps.map((step, index) => {
-    const state = stepStates[index]
-    const entry = getHomePageImageEntry('about-process-step', state)
-
-    // 簡單的影像來源決策邏輯 (配合 Mode 切換)
-    const imageSrc =
-      activeMode.value === 'nano'
-        ? (entry.liveNano?.src ?? entry.latestCandidate?.src ?? entry.stock.src)
-        : entry.stock.src
-
-    return {
-      ...step,
-      imageSrc
-    }
-  })
+  messages.value.aboutPage.process.steps.map((step, index) => ({
+    ...step,
+    icon: processIcons[index] ?? 'i-lucide-circle-check'
+  }))
 )
 </script>
 
@@ -36,9 +27,7 @@ const processSteps = computed(() =>
         >
           {{ messages.aboutPage.process.kicker }}
         </p>
-        <h2
-          class="about-sys-process__title type-sys-headline-l text-neutral-900"
-        >
+        <h2 class="about-sys-process__title type-sys-headline-l text-neutral-900">
           {{ messages.aboutPage.process.title }}
         </h2>
       </div>
@@ -50,12 +39,8 @@ const processSteps = computed(() =>
           class="about-sys-process__step"
         >
           <div class="about-sys-process__orbit">
-            <span class="about-sys-process__image-wrapper">
-              <img
-                :src="step.imageSrc"
-                :alt="step.title"
-                class="about-sys-process__image"
-              />
+            <span class="about-sys-process__icon">
+              <UIcon :name="step.icon" class="size-8" />
             </span>
             <span class="about-sys-process__number type-sys-label-m">
               {{ step.number }}
@@ -116,11 +101,8 @@ const processSteps = computed(() =>
   aspect-ratio: 1;
   border-radius: 999px;
   border: 1px solid rgb(15 23 42 / 0.06);
-  background: radial-gradient(
-      circle at 50% 38%,
-      rgb(255 255 255 / 0.98),
-      rgb(250 250 250 / 0.88)
-    ),
+  background:
+    radial-gradient(circle at 50% 38%, rgb(255 255 255 / 0.98), rgb(250 250 250 / 0.88)),
     linear-gradient(180deg, rgb(248 250 252 / 1), rgb(255 255 255 / 1));
   box-shadow:
     inset 0 0 0 1rem rgb(255 255 255 / 0.72),
@@ -135,22 +117,14 @@ const processSteps = computed(() =>
   border: 1px solid rgb(15 23 42 / 0.06);
 }
 
-.about-sys-process__image-wrapper {
+.about-sys-process__icon {
   display: inline-flex;
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 4.75rem;
+  height: 4.75rem;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  overflow: hidden;
-  border: 1px solid rgb(15 23 42 / 0.06);
-  box-shadow: var(--shadow-1);
-}
-
-.about-sys-process__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: var(--color-secondary-700);
 }
 
 .about-sys-process__number {
@@ -168,7 +142,6 @@ const processSteps = computed(() =>
   color: white;
   box-shadow: 0 1rem 1.8rem rgb(15 23 42 / 0.16);
 }
-
 
 .about-sys-process__label {
   max-width: 12ch;

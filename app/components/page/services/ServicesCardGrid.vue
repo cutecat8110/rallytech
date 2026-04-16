@@ -62,49 +62,42 @@ const serviceItems = computed(() =>
             v-for="item in serviceItems"
             :key="item.slug"
             :to="item.to"
-            class="services-sys-card"
+            class="services-sys-listing"
           >
-            <div class="services-sys-card__media">
+            <div class="services-sys-listing__media">
               <img
                 :src="item.image.src"
                 :alt="item.image.alt"
-                class="services-sys-card__image"
+                class="services-sys-listing__image"
                 :style="{ objectPosition: item.image.objectPosition }"
                 decoding="async"
                 @error="
                   handleCardImageError(item.imageKey, item.usesNanoCandidate)
                 "
               />
-              <div class="services-sys-card__media-overlay" />
+              <div class="services-sys-listing__media-overlay" />
             </div>
 
-            <div class="services-sys-card__body">
-              <div class="services-sys-card__meta" aria-hidden="true">
-                <span class="services-sys-card__icon">
-                  <UIcon :name="item.icon" class="size-5" />
-                </span>
-                <p class="type-sys-label-s services-sys-card__eyebrow">
-                  {{ item.englishTitle }}
-                </p>
-              </div>
+            <div class="services-sys-listing__body">
+              <p class="type-sys-label-s services-sys-listing__eyebrow">
+                {{ item.englishTitle }}
+              </p>
 
-              <div class="services-sys-card__main">
-                <h2 class="type-sys-headline-s services-sys-card__title">
-                  {{ item.shortLabel }}
-                </h2>
+              <h2 class="type-sys-headline-s services-sys-listing__title">
+                {{ item.shortLabel }}
+              </h2>
 
-                <p class="type-sys-body-s services-sys-card__description">
-                  {{ item.description }}
-                </p>
+              <p class="type-sys-body-s services-sys-listing__description">
+                {{ item.description }}
+              </p>
 
-                <span class="services-sys-card__cta type-sys-label-s">
-                  <span>{{ messages.servicesPage.cardCtaLabel }}</span>
-                  <UIcon
-                    name="i-ic-baseline-arrow-forward"
-                    class="services-sys-card__cta-icon size-4"
-                  />
-                </span>
-              </div>
+              <span class="services-sys-listing__cta type-sys-label-s">
+                <span>{{ messages.servicesPage.cardCtaLabel }}</span>
+                <UIcon
+                  name="i-ic-baseline-arrow-forward"
+                  class="services-sys-listing__cta-icon size-4"
+                />
+              </span>
             </div>
           </NuxtLink>
         </div>
@@ -115,282 +108,184 @@ const serviceItems = computed(() =>
 
 <style scoped>
 .services-sys-overview-grid {
-  position: relative;
-  z-index: 1;
-  padding-block: clamp(2rem, 4vw, 3rem) clamp(2.35rem, 4.4vw, 3.65rem);
+  padding-block: clamp(2.6rem, 5vw, 4.4rem) clamp(3.2rem, 5vw, 4.8rem);
   background: linear-gradient(
     180deg,
-    rgb(255 255 255 / 1) 0%,
-    rgb(248 250 251 / 1) 66%,
-    rgb(243 246 247 / 1) 100%
+    rgb(249 247 241 / 1) 0%,
+    rgb(255 255 255 / 1) 28%,
+    rgb(247 245 239 / 1) 100%
   );
 }
 
 .services-sys-overview-grid__rail {
   width: 100%;
-  max-width: 75rem;
+  max-width: 80rem;
   margin-inline: auto;
-}
-
-.services-sys-overview-grid::before {
-  content: '';
-  position: absolute;
-  inset: 0 0 auto;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent 0%,
-    rgb(10 18 22 / 0.08) 14%,
-    rgb(10 18 22 / 0.08) 86%,
-    transparent 100%
-  );
 }
 
 .services-sys-grid {
   display: grid;
-  gap: 0.85rem;
+  gap: clamp(2rem, 4vw, 3rem) clamp(1.8rem, 3vw, 2.75rem);
 }
 
-.services-sys-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  border: 1px solid rgb(10 18 22 / 0.08);
-  border-radius: 0;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.985) 0%,
-      rgb(248 250 251 / 0.97) 100%
-    ),
-    linear-gradient(145deg, rgb(255 255 255 / 1) 0%, rgb(243 246 247 / 1) 100%);
-  box-shadow:
-    0 8px 20px rgb(6 20 27 / 0.045),
-    0 3px 8px rgb(6 20 27 / 0.022);
+.services-sys-listing {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+  padding-top: 1.35rem;
+  border-top: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 10%,
+      var(--color-border-subtle)
+    );
   text-decoration: none;
-  transition:
-    transform 180ms ease,
-    border-color 180ms ease,
-    box-shadow 180ms ease;
 }
 
-.services-sys-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(rgb(10 18 22 / 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgb(10 18 22 / 0.03) 1px, transparent 1px);
-  background-size:
-    100% 3.1rem,
-    3.1rem 100%;
-  opacity: 0.2;
-  pointer-events: none;
-}
-
-.services-sys-card:hover {
-  transform: translateY(-2px);
-  border-color: rgb(10 18 22 / 0.1);
-  box-shadow:
-    0 11px 24px rgb(6 20 27 / 0.06),
-    0 4px 10px rgb(6 20 27 / 0.026);
-}
-
-.services-sys-card:focus-visible {
-  outline: none;
-  border-color: rgb(10 18 22 / 0.1);
-  box-shadow:
-    0 0 0 2px rgb(161 235 223 / 0.24),
-    0 11px 24px rgb(6 20 27 / 0.06),
-    0 4px 10px rgb(6 20 27 / 0.026);
-}
-
-.services-sys-card__media {
+.services-sys-listing__media {
   position: relative;
+  overflow: hidden;
+  border-radius: clamp(1rem, 2vw, 1.55rem);
   aspect-ratio: 4 / 3;
-  background: color-mix(in srgb, var(--color-secondary-100) 88%, white);
+  background: color-mix(in srgb, var(--color-secondary-100) 84%, white);
 }
 
-.services-sys-card__image {
+.services-sys-listing__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: saturate(0.9) contrast(1.02) brightness(0.96);
+  filter: saturate(0.82) contrast(0.98) brightness(0.98);
+  transition: transform 260ms ease;
 }
 
-.services-sys-card__media-overlay {
+.services-sys-listing__media-overlay {
   position: absolute;
   inset: 0;
   background:
     linear-gradient(
       180deg,
-      rgb(255 255 255 / 0.08) 0%,
-      rgb(255 255 255 / 0.02) 28%,
-      rgb(10 18 22 / 0.1) 100%
+      rgb(255 255 255 / 0.2) 0%,
+      rgb(255 255 255 / 0.05) 32%,
+      rgb(32 38 42 / 0.14) 100%
     ),
     linear-gradient(
-      90deg,
-      rgb(10 18 22 / 0.04) 0%,
-      transparent 32%,
-      transparent 68%,
-      rgb(10 18 22 / 0.09) 100%
+      140deg,
+      rgb(255 255 255 / 0.04) 0%,
+      transparent 54%,
+      rgb(255 255 255 / 0.08) 100%
     );
 }
 
-.services-sys-card__body {
-  position: relative;
+.services-sys-listing__body {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  gap: 0.58rem;
-  padding: 0.82rem 0.82rem 0.76rem;
+  gap: 0.55rem;
 }
 
-.services-sys-card__meta {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.services-sys-card__icon {
-  display: inline-flex;
-  width: 1.7rem;
-  height: 1.7rem;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgb(10 18 22 / 0.08);
-  color: var(--color-primary-700);
-  background: rgb(255 255 255 / 0.9);
-  box-shadow: inset 0 0 0 1px rgb(10 18 22 / 0.03);
-}
-
-.services-sys-card__eyebrow {
-  min-width: 0;
-  color: rgb(10 18 22 / 0.36);
+.services-sys-listing__eyebrow {
+  color: rgb(77 87 92 / 0.74);
   letter-spacing: 0.11em;
   text-transform: uppercase;
   line-height: 1.15;
-  overflow-wrap: anywhere;
-  font-size: 0.62rem;
+  font-size: 0.64rem;
 }
 
-.services-sys-card__main {
-  display: flex;
-  min-width: 0;
-  flex-direction: column;
-  flex: 1;
-}
-
-.services-sys-card__title {
+.services-sys-listing__title {
   color: var(--color-secondary-950);
-  line-height: 1.06;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  line-height: 1.08;
+  max-width: 17ch;
+  text-wrap: balance;
 }
 
-.services-sys-card__description {
-  max-width: none;
-  margin-top: 0.34rem;
+.services-sys-listing__description {
+  max-width: 31rem;
+  margin-top: 0.2rem;
   color: var(--color-text-secondary);
-  line-height: 1.46;
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  line-height: 1.65;
+  text-wrap: pretty;
 }
 
-.services-sys-card__cta {
+.services-sys-listing__cta {
   display: inline-flex;
   align-items: center;
-  align-self: flex-end;
   gap: 0.35rem;
-  margin-top: auto;
-  padding-top: 0.5rem;
-  color: var(--color-primary-700);
+  margin-top: 0.55rem;
+  color: rgb(42 56 61 / 0.74);
   transition:
     color 180ms ease,
     gap 180ms ease,
     transform 180ms ease;
 }
 
-.services-sys-card__cta-icon {
+.services-sys-listing__cta-icon {
   flex-shrink: 0;
 }
 
-.services-sys-card:hover .services-sys-card__cta,
-.services-sys-card:focus-visible .services-sys-card__cta {
+.services-sys-listing:hover .services-sys-listing__image,
+.services-sys-listing:focus-visible .services-sys-listing__image {
+  transform: scale(1.02);
+}
+
+.services-sys-listing:hover .services-sys-listing__title,
+.services-sys-listing:focus-visible .services-sys-listing__title {
+  color: color-mix(
+    in srgb,
+    var(--color-primary-800) 26%,
+    var(--color-secondary-950)
+  );
+}
+
+.services-sys-listing:hover .services-sys-listing__cta,
+.services-sys-listing:focus-visible .services-sys-listing__cta {
   gap: 0.48rem;
-  color: var(--color-primary-800);
-  transform: translateX(2px);
+  color: var(--color-secondary-950);
+}
+
+.services-sys-listing:focus-visible {
+  outline: none;
+}
+
+.services-sys-listing:focus-visible .services-sys-listing__media {
+  box-shadow: 0 0 0 2px rgb(178 214 207 / 0.42);
 }
 
 @media (min-width: 768px) {
   .services-sys-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.92rem;
   }
 
-  .services-sys-card__media {
-    aspect-ratio: 4 / 3;
+  .services-sys-grid > :nth-child(-n + 2) {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .services-sys-grid > :nth-child(2n) {
+    margin-top: clamp(1.35rem, 3vw, 2.8rem);
+  }
+
+  .services-sys-listing__body {
+    max-width: 33rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .services-sys-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.88rem;
-  }
-
-  .services-sys-card {
-    min-height: 100%;
-  }
-
-  .services-sys-card__media {
-    aspect-ratio: 4 / 3;
-  }
-
-  .services-sys-card__media-overlay {
-    background:
-      linear-gradient(
-        180deg,
-        rgb(255 255 255 / 0.06) 0%,
-        rgb(255 255 255 / 0.02) 22%,
-        rgb(10 18 22 / 0.1) 100%
-      ),
-      linear-gradient(
-        90deg,
-        rgb(10 18 22 / 0.03) 0%,
-        transparent 30%,
-        rgb(10 18 22 / 0.1) 100%
-      );
-  }
-
-  .services-sys-card__body {
-    gap: 0.54rem;
-    padding: 0.78rem 0.78rem 0.72rem;
-  }
-
-  .services-sys-card__title {
-    max-width: none;
+  .services-sys-listing__media {
+    aspect-ratio: 16 / 11;
   }
 }
 
 @media (max-width: 767px) {
-  .services-sys-grid {
-    gap: 0.85rem;
+  .services-sys-grid > :first-child {
+    border-top: none;
+    padding-top: 0;
   }
 
-  .services-sys-card__media {
+  .services-sys-listing__media {
     aspect-ratio: 16 / 10;
   }
 
-  .services-sys-card__cta {
-    align-self: flex-end;
+  .services-sys-listing__title {
+    max-width: 14ch;
   }
 }
 </style>
