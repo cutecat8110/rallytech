@@ -3,7 +3,7 @@
 import HomeHeroSection from '~/components/page/home/HomeHeroSection.vue'
 import HomeAboutSection from '~/components/page/home/HomeAboutSection.vue'
 import HomeServicesSection from '~/components/page/home/HomeServicesSection.vue'
-import HomeProcessSection from '~/components/page/home/HomeProcessSection.vue'
+import SharedProcessSection from '~/components/shared/SharedProcessSection.vue'
 import HomeOneTouchSection from '~/components/page/home/HomeOneTouchSection.vue'
 import HomeBrandMainActionSection from '~/components/page/home/HomeBrandMainActionSection.vue'
 
@@ -35,7 +35,7 @@ useSeoMeta({
     <HomeServicesSection />
 
     <!-- 區塊 06：交付流程 -->
-    <HomeProcessSection />
+    <SharedProcessSection source="home" />
 
     <!-- 區塊 07：一站式整合導覽 -->
     <HomeOneTouchSection />

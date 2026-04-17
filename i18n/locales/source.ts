@@ -155,8 +155,8 @@ const messages = {
       ctaLabel: 'Read more'
     },
     process: {
-      kicker: '',
-      title: 'Our Process',
+      kicker: 'Work Process',
+      title: 'Our Working Process',
       steps: [
         { number: '01', title: 'Client Requirements' },
         { number: '02', title: 'Planning' },

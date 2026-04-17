@@ -11,11 +11,11 @@ export type HomePageSingleImageSlotKey =
   | 'mission-cutout'
   | 'connector-image'
 
-export type HomePageStateAwareSlotKey = 'mission-square'
+export type HomePageStateAwareSlotKey = 'mission-square' | 'about-process-step'
 export type HomePageImageSlotKey =
   | HomePageSingleImageSlotKey
   | HomePageStateAwareSlotKey
-export type HomePageImageStateKey = 'mission' | 'join-us'
+export type HomePageImageStateKey = 'mission' | 'join-us' | '01' | '02' | '03' | '04'
 
 export interface HomePageImageAsset {
   src: string
@@ -41,9 +41,9 @@ export interface HomePageImageSlotRegistry {
 }
 
 export interface HomePageStateAwareImageRegistry {
-  slot: 'mission-square'
+  slot: HomePageStateAwareSlotKey
   liveSource: HomePageImageSourceKey
-  states: Record<HomePageImageStateKey, HomePageImageSlotRegistry>
+  states: Record<string, HomePageImageSlotRegistry>
 }
 
 export interface HomePageImageRegistry {
@@ -53,6 +53,7 @@ export interface HomePageImageRegistry {
   'services-surface': HomePageImageSlotRegistry
   'ote-background': HomePageImageSlotRegistry
   'mission-square': HomePageStateAwareImageRegistry
+  'about-process-step': HomePageStateAwareImageRegistry
   'mission-cutout': HomePageImageSlotRegistry
   'connector-image': HomePageImageSlotRegistry
 }
@@ -713,8 +714,11 @@ export function getHomePageImageEntry(
       throw new Error('Slot "' + slot + '" requires state.')
     }
 
-    return (homePageImageRegistry[slot as HomePageStateAwareSlotKey] as any)
-      .states[state]
+    return (
+      homePageImageRegistry[
+        slot as HomePageStateAwareSlotKey
+      ] as HomePageStateAwareImageRegistry
+    ).states[state] as HomePageImageSlotRegistry
   }
 
   return homePageImageRegistry[slot as HomePageSingleImageSlotKey]

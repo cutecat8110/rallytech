@@ -149,8 +149,8 @@ const messages = {
       ctaLabel: '查看詳情'
     },
     process: {
-      kicker: '專案流程',
-      title: '專案怎麼往下走',
+      kicker: '交付流程',
+      title: '工作怎麼往下走',
       steps: [
         { number: '01', title: '範圍確認' },
         { number: '02', title: '技術規劃' },

@@ -161,8 +161,8 @@ const messages = {
       ctaLabel: 'View Details'
     },
     process: {
-      kicker: 'Project Flow',
-      title: 'How Projects Move Forward',
+      kicker: 'Delivery Process',
+      title: 'How Work Moves Forward',
       steps: [
         { number: '01', title: 'Scope Review' },
         { number: '02', title: 'Technical Planning' },

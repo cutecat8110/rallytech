@@ -154,9 +154,9 @@ watch(isMobileMenuOpen, (open) => {
           class="inline-flex shrink-0 items-center"
         >
           <img
-            src="/images/brand/rallytech-logo-text-only.svg"
+            src="/images/brand/RallyTech_Logo_EN.svg"
             :alt="messages.nav.logoAlt"
-            class="h-6 w-auto md:h-7"
+            class="h-7 w-auto md:h-8"
           />
         </NuxtLink>
 

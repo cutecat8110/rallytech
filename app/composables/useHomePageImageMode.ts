@@ -17,8 +17,8 @@ function collectHomeLatestCandidates() {
     homePageImageRegistry['about-detail'].latestCandidate,
     homePageImageRegistry['services-surface'].latestCandidate,
     homePageImageRegistry['ote-background'].latestCandidate,
-    homePageImageRegistry['mission-square'].states.mission.latestCandidate,
-    homePageImageRegistry['mission-square'].states['join-us'].latestCandidate,
+    homePageImageRegistry['mission-square'].states.mission?.latestCandidate,
+    homePageImageRegistry['mission-square'].states['join-us']?.latestCandidate,
     homePageImageRegistry['mission-cutout'].latestCandidate,
     homePageImageRegistry['connector-image'].latestCandidate
   ]

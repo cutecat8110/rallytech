@@ -47,7 +47,7 @@ const capabilitySurfaceStyle = computed(() => ({
           class="about-sys-capabilities__tile"
         >
           <span class="about-sys-capabilities__icon">
-            <UIcon :name="item.icon" class="size-6" />
+            <UIcon :name="item.icon" class="size-7" />
           </span>
           <p class="about-sys-capabilities__label type-sys-title-m">
             {{ item.label }}
@@ -61,55 +61,23 @@ const capabilitySurfaceStyle = computed(() => ({
 <style scoped>
 .about-sys-capabilities {
   position: relative;
-  overflow: hidden;
   padding-block: 0;
   color: white;
   background:
     linear-gradient(
       180deg,
-      rgb(4 10 14 / 0.5) 0%,
-      rgb(4 10 14 / 0.28) 20%,
-      rgb(4 10 14 / 0.52) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgb(4 10 14 / 0.86) 0%,
-      rgb(4 10 14 / 0.44) 40%,
-      rgb(4 10 14 / 0.66) 100%
+      rgba(4, 10, 14, 0.45) 0%,
+      rgba(4, 10, 14, 0.3) 50%,
+      rgba(4, 10, 14, 0.45) 100%
     ),
     var(--about-capabilities-image) center center / cover no-repeat,
-    linear-gradient(
-      160deg,
-      var(--color-secondary-950) 0%,
-      var(--color-secondary-900) 100%
-    );
-}
-
-.about-sys-capabilities::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      0deg,
-      rgb(255 255 255 / 0.02) 0%,
-      rgb(255 255 255 / 0) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgb(255 255 255 / 0.03) 0,
-      rgb(255 255 255 / 0.03) 1px,
-      transparent 1px,
-      transparent calc(100% / 3)
-    );
-  opacity: 0.5;
-  pointer-events: none;
+    var(--color-secondary-950);
 }
 
 .about-sys-capabilities__grid {
   display: grid;
   gap: 1px;
-  background: rgb(255 255 255 / 0.08);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .about-sys-capabilities__lead,
@@ -117,70 +85,61 @@ const capabilitySurfaceStyle = computed(() => ({
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 9rem;
-  padding: 1.25rem 1.35rem;
-  overflow: hidden;
-  background:
-    linear-gradient(180deg, rgb(255 255 255 / 0.08), rgb(255 255 255 / 0.05)),
-    rgb(20 38 58 / 0.68);
-  backdrop-filter: blur(3px);
+  min-height: 10rem;
+  padding: 1.5rem;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .about-sys-capabilities__lead {
   align-items: center;
   justify-content: center;
-  padding: clamp(2rem, 3.2vw, 2.7rem) clamp(1.4rem, 2.6vw, 2rem);
   text-align: center;
-  background:
-    linear-gradient(
-      180deg,
-      rgb(255 255 255 / 0.08) 0%,
-      rgb(255 255 255 / 0) 100%
-    ),
-    linear-gradient(
-      180deg,
-      rgb(7 17 26 / 0.26) 0%,
-      rgb(7 17 26 / 0.78) 100%
-    ),
-    rgb(12 26 40 / 0.78);
-}
-
-.about-sys-capabilities__title {
-  max-width: 5.4em;
-  margin-inline: auto;
-  color: white;
-  line-height: 1.02;
-  letter-spacing: -0.03em;
-  word-break: keep-all;
-  overflow-wrap: normal;
-  text-wrap: balance;
-  text-shadow: 0 0.4rem 1.25rem rgb(4 10 14 / 0.18);
+  background: rgba(12, 22, 34, 0.5);
 }
 
 .about-sys-capabilities__tile {
   align-items: center;
   justify-content: center;
-  gap: 0.9rem;
+  gap: 1.25rem;
   text-align: center;
+  cursor: default;
+}
+
+/* 建立固定的深淺交錯層次感，且不隨 Hover 改變 */
+.about-sys-capabilities__tile:nth-child(2) { background: rgba(15, 23, 42, 0.28); }
+.about-sys-capabilities__tile:nth-child(3) { background: rgba(15, 23, 42, 0.42); }
+.about-sys-capabilities__tile:nth-child(4) { background: rgba(15, 23, 42, 0.32); }
+.about-sys-capabilities__tile:nth-child(5) { background: rgba(15, 23, 42, 0.48); }
+.about-sys-capabilities__tile:nth-child(6) { background: rgba(15, 23, 42, 0.24); }
+.about-sys-capabilities__tile:nth-child(7) { background: rgba(15, 23, 42, 0.38); }
+.about-sys-capabilities__tile:nth-child(8) { background: rgba(15, 23, 42, 0.44); }
+.about-sys-capabilities__tile:nth-child(9) { background: rgba(15, 23, 42, 0.3); }
+
+/* 徹底移除所有 Hover 狀態的 CSS 規則 */
+
+.about-sys-capabilities__title {
+  max-width: 5.4em;
+  margin-inline: auto;
+  color: white;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .about-sys-capabilities__icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.85rem;
-  height: 2.85rem;
-  flex-shrink: 0;
-  margin-bottom: 0;
-  color: rgb(226 246 242 / 0.98);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .about-sys-capabilities__label {
-  max-width: 11ch;
+  max-width: 12ch;
   margin-inline: auto;
   color: white;
-  line-height: 1.2;
+  line-height: 1.35;
   text-wrap: balance;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -192,7 +151,7 @@ const capabilitySurfaceStyle = computed(() => ({
 @media (min-width: 1200px) {
   .about-sys-capabilities__grid {
     grid-template-columns: minmax(0, 0.82fr) repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(8.25rem, auto));
+    grid-template-rows: repeat(4, minmax(9.5rem, auto));
   }
 
   .about-sys-capabilities__lead {
@@ -203,28 +162,19 @@ const capabilitySurfaceStyle = computed(() => ({
 @media (max-width: 1199px) {
   .about-sys-capabilities__lead {
     grid-column: 1 / -1;
-    min-height: 10rem;
-  }
-
-  .about-sys-capabilities__title {
-    max-width: 5.4em;
+    min-height: 12rem;
   }
 }
 
 @media (max-width: 639px) {
   .about-sys-capabilities__lead,
   .about-sys-capabilities__tile {
-    min-height: 7.5rem;
-    padding: 1rem;
-  }
-
-  .about-sys-capabilities__lead {
-    min-height: 8.4rem;
+    min-height: 9.5rem;
+    padding: 1.5rem;
   }
 
   .about-sys-capabilities__title {
-    font-size: clamp(2rem, 8.5vw, 2.5rem);
-    max-width: 5.6em;
+    font-size: clamp(2.25rem, 9vw, 2.75rem);
   }
 }
 </style>

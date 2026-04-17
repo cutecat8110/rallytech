@@ -2,7 +2,7 @@
 import AboutHeroSection from '~/components/page/about/AboutHeroSection.vue'
 import AboutIntroSection from '~/components/page/about/AboutIntroSection.vue'
 import AboutCapabilitySection from '~/components/page/about/AboutCapabilitySection.vue'
-import AboutProcessSection from '~/components/page/about/AboutProcessSection.vue'
+import SharedProcessSection from '~/components/shared/SharedProcessSection.vue'
 
 definePageMeta({
   layout: 'frontend'
@@ -23,6 +23,6 @@ useSeoMeta({
     <AboutHeroSection />
     <AboutIntroSection />
     <AboutCapabilitySection />
-    <AboutProcessSection />
+    <SharedProcessSection source="about" />
   </main>
 </template>
