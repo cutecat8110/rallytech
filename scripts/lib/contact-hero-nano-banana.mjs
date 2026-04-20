@@ -115,6 +115,7 @@ export async function writeManifest(slot = DEFAULT_SLOT, manifest) {
 }
 
 export async function syncRegistryFromManifest(slot = DEFAULT_SLOT, manifest) {
+  const slotDefinition = getSlotDefinition(slot)
   const promotedCandidate =
     manifest.candidates.find((candidate) => candidate.status === 'promoted') ??
     null
@@ -127,7 +128,7 @@ export async function syncRegistryFromManifest(slot = DEFAULT_SLOT, manifest) {
       ) ?? null
 
   const registrySource = {
-    slot: manifest.slot,
+    slot: slotDefinition.slot,
     liveSource:
       manifest.liveSource === 'nano' && promotedCandidate ? 'nano' : 'stock',
     stock: createStockAsset(manifest.stock),

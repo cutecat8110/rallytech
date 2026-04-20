@@ -70,27 +70,31 @@ const aboutPoints = computed(() =>
         </article>
 
         <figure
-          class="home-sys-about__media-composite justify-self-end"
+          class="home-sys-about__media-composite justify-self-center"
           :aria-label="messages.home.about.mediaLabel"
         >
           <div class="home-sys-about__media-clip">
-            <div class="home-sys-about__media-pane">
+            <div
+              class="home-sys-about__media-pane home-sys-about__media-pane--primary"
+            >
               <img
                 :src="aboutPrimaryImage.src"
                 :alt="
                   aboutPrimaryImage.alt || messages.home.about.primaryImageAlt
                 "
-                class="home-sys-about__media-image home-sys-about__media-image--left"
+                class="home-sys-about__media-image home-sys-about__media-image--primary"
                 @error="handleAboutPrimaryError"
               />
             </div>
-            <div class="home-sys-about__media-pane">
+            <div
+              class="home-sys-about__media-pane home-sys-about__media-pane--detail"
+            >
               <img
                 :src="aboutDetailImage.src"
                 :alt="
                   aboutDetailImage.alt || messages.home.about.detailImageAlt
                 "
-                class="home-sys-about__media-image home-sys-about__media-image--right"
+                class="home-sys-about__media-image home-sys-about__media-image--detail"
                 @error="handleAboutDetailError"
               />
             </div>
@@ -143,26 +147,44 @@ const aboutPoints = computed(() =>
 
 .home-sys-about__media-composite {
   position: relative;
-  width: min(100%, 24.5rem);
-  min-height: clamp(25rem, 39vw, 34rem);
+  isolation: isolate;
+  width: min(100%, 36.5rem);
+  min-height: clamp(22rem, 27vw, 27rem);
   margin-inline: auto;
 }
 
 .home-sys-about__media-clip {
   position: absolute;
   inset: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  overflow: hidden;
-  border: 1px solid rgb(15 23 42 / 0.06);
-  border-radius: 0 0 20rem 20rem;
-  box-shadow: var(--shadow-1);
-  background: rgb(255 255 255 / 0.98);
+  overflow: visible;
 }
 
 .home-sys-about__media-pane {
-  position: relative;
-  min-height: 100%;
+  position: absolute;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid rgb(15 23 42 / 0.08);
+  background: rgb(255 255 255 / 0.98);
+  box-shadow: 0 2rem 4.5rem -1.75rem rgb(15 23 42 / 0.22);
+}
+
+.home-sys-about__media-pane--primary {
+  top: clamp(0.4rem, 1vw, 0.8rem);
+  left: 0;
+  z-index: 2;
+  width: 78%;
+  height: 68%;
+  border-radius: 1.1rem;
+}
+
+.home-sys-about__media-pane--detail {
+  right: 0;
+  bottom: clamp(0.5rem, 1vw, 0.75rem);
+  z-index: 1;
+  width: 44%;
+  height: 38%;
+  border-radius: 0.9rem;
+  opacity: 0.88;
 }
 
 .home-sys-about__media-image {
@@ -171,38 +193,55 @@ const aboutPoints = computed(() =>
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: scale(1.03);
 }
 
-.home-sys-about__media-image--left {
-  object-position: 52% 6%;
+.home-sys-about__media-image--primary {
+  object-position: 0% 46%;
 }
 
-.home-sys-about__media-image--right {
-  object-position: 72% 42%;
+.home-sys-about__media-image--detail {
+  object-position: 50% 50%;
 }
 
 .home-sys-about__motif {
   --motif-position: absolute;
 
   position: absolute;
-  bottom: clamp(1.3rem, 2.8vw, 1.75rem);
-  left: clamp(-1rem, -1.4vw, -0.65rem);
-  z-index: 2;
-  transform: scale(0.88);
+  bottom: clamp(0.35rem, 1vw, 0.7rem);
+  left: clamp(-0.45rem, -0.7vw, -0.2rem);
+  z-index: 3;
+  transform: scale(0.6);
   transform-origin: bottom left;
 }
 
 @media (max-width: 767px) {
   .home-sys-about__media-composite {
-    min-height: 22rem;
-    width: min(100%, 18.25rem);
+    width: min(100%, 19.75rem);
+    min-height: 20.75rem;
+  }
+
+  .home-sys-about__media-pane {
+    box-shadow: 0 1.5rem 3rem -1.25rem rgb(15 23 42 / 0.22);
+  }
+
+  .home-sys-about__media-pane--primary {
+    width: 100%;
+    height: 64%;
+    border-radius: 1rem;
+  }
+
+  .home-sys-about__media-pane--detail {
+    bottom: 0;
+    right: 0.5rem;
+    width: 54%;
+    height: 34%;
+    border-radius: 0.85rem;
   }
 
   .home-sys-about__motif {
-    bottom: 1.15rem;
-    left: -0.8rem;
-    transform: scale(0.68);
+    bottom: 0.2rem;
+    left: -0.1rem;
+    transform: scale(0.48);
   }
 }
 </style>

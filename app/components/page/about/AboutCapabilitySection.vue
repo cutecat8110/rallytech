@@ -2,7 +2,8 @@
 import { computed } from 'vue'
 
 const messages = useRallyMessages()
-const { resolvedImage: surfaceImage } = useHomePageImageAsset('services-surface')
+const { resolvedImage: surfaceImage } =
+  useHomePageImageAsset('services-surface')
 
 const capabilityIcons = [
   'i-lucide-cable',
@@ -61,7 +62,7 @@ const capabilitySurfaceStyle = computed(() => ({
 <style scoped>
 .about-sys-capabilities {
   position: relative;
-  padding-block: 0;
+  padding-block: clamp(3rem, 5vw, 4.5rem);
   color: white;
   background:
     linear-gradient(
@@ -85,7 +86,7 @@ const capabilitySurfaceStyle = computed(() => ({
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 10rem;
+  min-height: 9.25rem;
   padding: 1.5rem;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -107,19 +108,35 @@ const capabilitySurfaceStyle = computed(() => ({
 }
 
 /* 建立固定的深淺交錯層次感，且不隨 Hover 改變 */
-.about-sys-capabilities__tile:nth-child(2) { background: rgba(15, 23, 42, 0.28); }
-.about-sys-capabilities__tile:nth-child(3) { background: rgba(15, 23, 42, 0.42); }
-.about-sys-capabilities__tile:nth-child(4) { background: rgba(15, 23, 42, 0.32); }
-.about-sys-capabilities__tile:nth-child(5) { background: rgba(15, 23, 42, 0.48); }
-.about-sys-capabilities__tile:nth-child(6) { background: rgba(15, 23, 42, 0.24); }
-.about-sys-capabilities__tile:nth-child(7) { background: rgba(15, 23, 42, 0.38); }
-.about-sys-capabilities__tile:nth-child(8) { background: rgba(15, 23, 42, 0.44); }
-.about-sys-capabilities__tile:nth-child(9) { background: rgba(15, 23, 42, 0.3); }
+.about-sys-capabilities__tile:nth-child(2) {
+  background: rgba(15, 23, 42, 0.28);
+}
+.about-sys-capabilities__tile:nth-child(3) {
+  background: rgba(15, 23, 42, 0.42);
+}
+.about-sys-capabilities__tile:nth-child(4) {
+  background: rgba(15, 23, 42, 0.32);
+}
+.about-sys-capabilities__tile:nth-child(5) {
+  background: rgba(15, 23, 42, 0.48);
+}
+.about-sys-capabilities__tile:nth-child(6) {
+  background: rgba(15, 23, 42, 0.24);
+}
+.about-sys-capabilities__tile:nth-child(7) {
+  background: rgba(15, 23, 42, 0.38);
+}
+.about-sys-capabilities__tile:nth-child(8) {
+  background: rgba(15, 23, 42, 0.44);
+}
+.about-sys-capabilities__tile:nth-child(9) {
+  background: rgba(15, 23, 42, 0.3);
+}
 
 /* 徹底移除所有 Hover 狀態的 CSS 規則 */
 
 .about-sys-capabilities__title {
-  max-width: 5.4em;
+  max-width: 7em;
   margin-inline: auto;
   color: white;
   line-height: 1.1;
@@ -151,7 +168,7 @@ const capabilitySurfaceStyle = computed(() => ({
 @media (min-width: 1200px) {
   .about-sys-capabilities__grid {
     grid-template-columns: minmax(0, 0.82fr) repeat(2, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(9.5rem, auto));
+    grid-template-rows: repeat(4, minmax(8.875rem, auto));
   }
 
   .about-sys-capabilities__lead {
@@ -167,9 +184,13 @@ const capabilitySurfaceStyle = computed(() => ({
 }
 
 @media (max-width: 639px) {
+  .about-sys-capabilities {
+    padding-block: clamp(3rem, 12vw, 4rem);
+  }
+
   .about-sys-capabilities__lead,
   .about-sys-capabilities__tile {
-    min-height: 9.5rem;
+    min-height: 8.75rem;
     padding: 1.5rem;
   }
 

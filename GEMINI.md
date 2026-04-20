@@ -28,6 +28,7 @@
 ## 3. 開發流程與規範
 
 ### 基礎指令
+
 - **安裝**：`npm install`
 - **開發環境**：`npm run dev`
 - **建置與預覽**：`npm run build` && `npm run preview`
@@ -35,13 +36,16 @@
   - 包含 `format:check`, `lint`, `guard:ui-buttons`, `typecheck`。
 
 ### AI 協作 SOP (`AGENTS.md`)
+
 AI Agent 必須嚴格遵守 `AGENTS.md` 定義的流程：
+
 1. **研究優先**：實作前必先閱讀 `docs/` 下的對應文件。
 2. **Skill 判定**：每一輪對話需重新評估所需的專門 Skill。
 3. **強制驗證**：修改後必須執行 `npm run lint` 與 `npm run typecheck`。
 4. **回報格式**：必須包含 Objective, Constraints, Options, Recommendation, Decision 與設計合規清單。
 
 ### 設計與實作細則
+
 - **Nuxt UI First**：優先選用 `@nuxt/ui` 元件，避免自行實作。
 - **CSS Ownership**：遵循 `docs/design/01` 定義的四層 ownership 規則。
 - **按鈕規範**：主按鈕 (Primary Button) 必須使用白字 (由 `npm run guard:ui-buttons` 驗證)。

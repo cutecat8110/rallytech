@@ -746,11 +746,7 @@ function createAboutProcessStepRegistrySource(manifest) {
         '03',
         manifest.states['03']
       ),
-      '04': createStateSlotRegistrySource(
-        manifest,
-        '04',
-        manifest.states['04']
-      )
+      '04': createStateSlotRegistrySource(manifest, '04', manifest.states['04'])
     }
   }
 }

@@ -111,7 +111,7 @@ const messages = {
     items: [
       { label: 'About', href: '/about' },
       { label: 'Services', href: '/services' },
-      { label: 'One-Touch Experience', href: '#one-touch-experience' }
+      { label: 'One-Touch Experience', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -134,9 +134,9 @@ const messages = {
       title: 'A Delivery Partner for Control, Monitoring, and Commissioning',
       description:
         'Founded in 2014, Rally Technology supports automation control, monitoring systems, commissioning, and customized system delivery across project and site environments.',
-      mediaLabel: 'Modern technology facility facade image pair',
-      primaryImageAlt: 'Modern high-tech commercial building',
-      detailImageAlt: 'Modern glass facade detail',
+      mediaLabel: 'Rally Technology office logo wall and workspace image pair',
+      primaryImageAlt: 'Rally Technology office logo wall',
+      detailImageAlt: 'Rally Technology open office workspace',
       points: [
         {
           title: 'Company Role',
@@ -174,7 +174,7 @@ const messages = {
       title: 'One-Touch Experience',
       description:
         'Use one integration layer to connect SCADA, alarm workflows, historian data, and utilities information.',
-      ctaLabel: 'Start an Inquiry',
+      ctaLabel: 'View Integration Flow',
       items: [
         'SCADA Data',
         'Alarm Workflow',
@@ -257,15 +257,54 @@ const messages = {
         'Browse Rally Technology service scopes for control interfaces, field support, control migration, plant-data platforms, industrial networks, remote monitoring, and alarm workflows.'
     },
     hero: {
-      kicker: 'Services',
-      title: 'Industrial Automation Service Scopes',
-      description:
-        'Service scopes for renewable energy, industrial, chemical, pharmaceutical, and EPC projects, from operator graphics and field support to plant data, networks, and alarm workflows.',
-      asideLabel: 'Service Scope'
+      title: 'Industrial Automation Service Scopes'
     },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Scope at a Glance'
+  },
+  oneTouchPage: {
+    seo: {
+      title: 'One-Touch Experience | Rally Technology',
+      description:
+        'See how Rally Technology connects SCADA, alarm workflows, vibration monitoring, historians, and utilities data into one cross-system integration flow.'
+    },
+    hero: {
+      title: 'One-Touch Experience',
+      imageAlt: 'Industrial control room and monitoring systems'
+    },
+    modules: [
+      {
+        id: 'data-integration',
+        title: 'Data Integration',
+        description:
+          'Connect plant, equipment, and reporting data so teams can work from one usable operational view.'
+      },
+      {
+        id: 'alarm-workflow',
+        title: 'Alarm Workflow and Commissioning',
+        description:
+          'Align alarm routing, notification logic, and commissioning checks so critical events reach the right team faster.'
+      },
+      {
+        id: 'vibration-analysis',
+        title: 'Vibration Analysis',
+        description:
+          'Support vibration-monitoring workflows that surface abnormal conditions earlier and help maintenance teams act with better context.'
+      },
+      {
+        id: 'historian-deployment',
+        title: 'Local / Cloud Historian Deployment',
+        description:
+          'Deploy historian environments that keep process data available for troubleshooting, reporting, and long-term review.'
+      },
+      {
+        id: 'utilities-integration',
+        title: 'Utilities and Facilities Integration',
+        description:
+          'Connect utilities and facilities systems with monitoring, control, and reporting workflows in one cross-system layer.'
+      }
+    ]
   },
   serviceDetailPages: serviceDetailPagesEn,
   contactPage: {
@@ -275,9 +314,7 @@ const messages = {
         'Contact Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
     },
     hero: {
-      title: 'Contact Us',
-      description:
-        'Share your scope, site conditions, or upgrade plan. We will help clarify the next workable step.'
+      title: 'Contact Us'
     },
     intro: {
       title: 'Start an Inquiry',

@@ -1,4 +1,7 @@
-import { readManifest, syncRegistryFromManifest } from './lib/home-hero-nano-banana.mjs'
+import {
+  readManifest,
+  syncRegistryFromManifest
+} from './lib/home-hero-nano-banana.mjs'
 
 async function main() {
   const manifest = await readManifest('about-process-step')

@@ -66,8 +66,8 @@ const isServicesRoute = computed(
 )
 
 const segmentedButtonUi = {
-  base: 'h-[1.875rem] justify-center rounded-none px-0 shadow-none ring-0 focus-visible:ring-2 focus-visible:ring-secondary-200/90',
-  label: 'tracking-[0.08em]'
+  base: 'h-[var(--home-sys-header-control-height)] justify-center rounded-none px-0 shadow-none ring-0 focus-visible:ring-2 focus-visible:ring-secondary-200/90',
+  label: 'text-[0.75rem] font-semibold tracking-[0.08em]'
 } as const
 
 const contactButtonUi = {
@@ -124,7 +124,9 @@ watch(isMobileMenuOpen, (open) => {
 </script>
 
 <template>
-  <header class="sticky top-0 z-50 border-b border-neutral-200 bg-white">
+  <header
+    class="home-sys-header sticky top-0 z-50 border-b border-neutral-200 bg-white"
+  >
     <div class="bg-secondary-900 text-white">
       <div class="page-sys-shell--wide">
         <div class="home-sys-header__top">
@@ -151,12 +153,12 @@ watch(isMobileMenuOpen, (open) => {
         <NuxtLink
           :to="homePath"
           :aria-label="messages.nav.homeAriaLabel"
-          class="inline-flex shrink-0 items-center"
+          class="home-sys-header__brand-link inline-flex shrink-0 items-center"
         >
           <img
-            src="/images/brand/RallyTech_Logo_EN.svg"
+            src="/images/brand/RallyTech_FullLogo_Header.svg"
             :alt="messages.nav.logoAlt"
-            class="h-7 w-auto md:h-8"
+            class="home-sys-header__logo"
           />
         </NuxtLink>
 
@@ -327,7 +329,7 @@ watch(isMobileMenuOpen, (open) => {
               isMobileMenuOpen ? 'i-ic-baseline-close' : 'i-ic-baseline-menu'
             "
             :ui="mobileMenuTriggerUi"
-            class="size-10 justify-center !border-secondary-800 !bg-secondary-800 !text-white hover:!bg-secondary-700 active:!bg-secondary-800 focus-visible:!bg-secondary-700 lg:hidden"
+            class="home-sys-header__mobile-menu-button justify-center !border-secondary-800 !bg-secondary-800 !text-white hover:!bg-secondary-700 active:!bg-secondary-800 focus-visible:!bg-secondary-700 lg:hidden"
             :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
             aria-controls="mobile-nav-panel"
             :aria-label="
@@ -457,22 +459,46 @@ watch(isMobileMenuOpen, (open) => {
 </template>
 
 <style scoped>
+.home-sys-header {
+  --home-sys-header-logo-height: clamp(2.5rem, 12.3vw, 3rem);
+  --home-sys-header-top-min-height: 1.55rem;
+  --home-sys-header-top-padding-block: 0.06rem;
+  --home-sys-header-top-column-gap: 0.5rem;
+  --home-sys-header-main-min-height: 4.35rem;
+  --home-sys-header-main-padding-block: 0.4rem;
+  --home-sys-header-control-height: 2.75rem;
+  --home-sys-header-main-gap: 0.75rem;
+  --home-sys-header-control-gap: 0.4rem;
+  --home-sys-header-services-menu-gap: 0.55rem;
+  --home-sys-header-services-menu-width: min(34rem, 72vw);
+}
+
 .home-sys-header__top {
   display: flex;
-  min-height: 1.85rem;
+  min-height: var(--home-sys-header-top-min-height);
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.2rem 1rem;
-  padding-block: 0.14rem;
+  gap: 0.2rem var(--home-sys-header-top-column-gap);
+  padding-block: var(--home-sys-header-top-padding-block);
 }
 
 .home-sys-header__main {
   display: grid;
-  min-height: 4.25rem;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  min-height: var(--home-sys-header-main-min-height);
+  grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: clamp(1rem, 2.4vw, 2.75rem);
-  padding-block: 0.6rem;
+  gap: var(--home-sys-header-main-gap);
+  padding-block: var(--home-sys-header-main-padding-block);
+}
+
+.home-sys-header__brand-link {
+  min-width: 0;
+}
+
+.home-sys-header__logo {
+  display: block;
+  width: auto;
+  height: var(--home-sys-header-logo-height);
 }
 
 .home-sys-header__nav {
@@ -487,9 +513,26 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
 }
 
+.home-sys-header__nav-group::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 20;
+  width: var(--home-sys-header-services-menu-width);
+  height: calc(var(--home-sys-header-services-menu-gap) + 1px);
+  content: '';
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+.home-sys-header__nav-group:hover::after,
+.home-sys-header__nav-group:focus-within::after {
+  pointer-events: auto;
+}
+
 .home-sys-header__nav-link {
   display: inline-flex;
-  min-height: 2.5rem;
+  min-height: var(--home-sys-header-control-height);
   align-items: center;
   gap: 0.16rem;
   color: var(--color-text-secondary);
@@ -515,10 +558,10 @@ watch(isMobileMenuOpen, (open) => {
 
 .home-sys-header__services-menu {
   position: absolute;
-  top: calc(100% + 0.55rem);
+  top: calc(100% + var(--home-sys-header-services-menu-gap));
   left: 50%;
   z-index: 30;
-  width: min(34rem, 72vw);
+  width: var(--home-sys-header-services-menu-width);
   padding: 0.6rem;
   border: 1px solid rgb(10 18 22 / 0.08);
   border-radius: var(--radius-xl);
@@ -529,7 +572,7 @@ watch(isMobileMenuOpen, (open) => {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate(-50%, 0.55rem);
+  transform: translate(-50%, var(--home-sys-header-services-menu-gap));
   transition:
     opacity 180ms ease,
     transform 180ms ease,
@@ -606,7 +649,7 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__actions {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: var(--home-sys-header-control-gap);
   justify-self: end;
 }
 
@@ -637,7 +680,7 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 .home-sys-header__image-mode-button {
-  width: 3rem;
+  width: 3.25rem;
 }
 
 .home-sys-header__segmented-button {
@@ -647,6 +690,9 @@ watch(isMobileMenuOpen, (open) => {
     var(--color-white)
   ) !important;
   background: transparent !important;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
   transition: background-color 160ms ease;
 }
 
@@ -656,6 +702,8 @@ watch(isMobileMenuOpen, (open) => {
 
 .home-sys-header__segmented-button :deep(*) {
   color: currentColor !important;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 .home-sys-header__segmented-button:hover,
@@ -686,14 +734,16 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__contact-button {
   color: var(--color-white) !important;
   background: var(--color-secondary-800) !important;
-  min-height: 2.6rem;
-  padding-inline: 1.15rem;
+  min-height: var(--home-sys-header-control-height);
+  padding-inline: 1.35rem;
   border-radius: 0;
+  font-weight: 700;
   letter-spacing: 0.06em;
 }
 
 .home-sys-header__contact-button :deep(*) {
   color: currentColor !important;
+  font-weight: inherit;
 }
 
 .home-sys-header__contact-button:hover,
@@ -717,6 +767,11 @@ watch(isMobileMenuOpen, (open) => {
 
 .home-sys-header__locale-button {
   min-width: 4.6rem;
+}
+
+.home-sys-header__mobile-menu-button {
+  width: var(--home-sys-header-control-height);
+  height: var(--home-sys-header-control-height);
 }
 
 .home-sys-header__mobile-nav-group {
@@ -791,6 +846,15 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 @media (min-width: 768px) {
+  .home-sys-header {
+    --home-sys-header-logo-height: 3.5rem;
+    --home-sys-header-top-column-gap: 1rem;
+    --home-sys-header-main-min-height: 4.85rem;
+    --home-sys-header-main-padding-block: 0.35rem;
+    --home-sys-header-main-gap: clamp(0.8rem, 1.4vw, 1.75rem);
+    --home-sys-header-control-gap: 0.45rem;
+  }
+
   .home-sys-header__image-mode {
     display: inline-flex;
   }
@@ -800,20 +864,23 @@ watch(isMobileMenuOpen, (open) => {
   }
 }
 
+@media (min-width: 1024px) {
+  .home-sys-header__main {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+}
+
 @media (max-width: 767px) {
   .home-sys-header__mobile-image-mode {
     display: inline-flex;
   }
 
-  .home-sys-header__main {
-    grid-template-columns: minmax(8rem, 1fr) auto auto;
-    gap: 0.65rem;
-    min-height: 4rem;
-    padding-block: 0.6rem;
+  .home-sys-header__top a {
+    font-size: 0.75rem;
   }
 
   .home-sys-header__mobile-image-mode .home-sys-header__image-mode-button {
-    width: 2.65rem;
+    width: 2.85rem;
   }
 }
 </style>

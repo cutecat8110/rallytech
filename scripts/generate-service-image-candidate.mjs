@@ -24,9 +24,17 @@ async function main() {
 
   const slotDefinition = getSlotDefinition(slot)
   const apiKey = process.env.GEMINI_API_KEY
-  const model = String(args.model || process.env.NANO_BANANA_MODEL || 'gemini-3.1-flash-image-preview')
-  const aspectRatio = String(args['aspect-ratio'] || slotDefinition.defaultAspectRatio)
-  const imageSize = String(args['image-size'] || slotDefinition.defaultImageSize)
+  const model = String(
+    args.model ||
+      process.env.NANO_BANANA_MODEL ||
+      'gemini-3.1-flash-image-preview'
+  )
+  const aspectRatio = String(
+    args['aspect-ratio'] || slotDefinition.defaultAspectRatio
+  )
+  const imageSize = String(
+    args['image-size'] || slotDefinition.defaultImageSize
+  )
   const referenceArg = args.reference || null
   const notes = args.notes || ''
   const promptId = args['prompt-id'] || slotDefinition.defaultPromptId
@@ -38,22 +46,40 @@ async function main() {
 
   const requestParts = [{ text: prompt }]
   if (referenceImage) {
-    requestParts.push({ inlineData: { mimeType: referenceImage.mimeType, data: referenceImage.data } })
+    requestParts.push({
+      inlineData: {
+        mimeType: referenceImage.mimeType,
+        data: referenceImage.data
+      }
+    })
   }
 
-  const imageConfig = model === 'gemini-2.5-flash-image' ? { aspectRatio } : { aspectRatio, imageSize }
+  const imageConfig =
+    model === 'gemini-2.5-flash-image'
+      ? { aspectRatio }
+      : { aspectRatio, imageSize }
 
-  const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-    body: JSON.stringify({ contents: [{ parts: requestParts }], generationConfig: { imageConfig } })
-  })
+  const response = await fetch(
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`,
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
+      body: JSON.stringify({
+        contents: [{ parts: requestParts }],
+        generationConfig: { imageConfig }
+      })
+    }
+  )
 
   const responseJson = await response.json()
-  if (!response.ok) throw new Error(`Nano Banana failed: ${JSON.stringify(responseJson)}`)
+  if (!response.ok)
+    throw new Error(`Nano Banana failed: ${JSON.stringify(responseJson)}`)
 
   const imagePart = pickFirstImagePart(responseJson)
-  if (!imagePart?.data) throw new Error(`No image returned. Response: ${pickTextResponse(responseJson)}`)
+  if (!imagePart?.data)
+    throw new Error(
+      `No image returned. Response: ${pickTextResponse(responseJson)}`
+    )
 
   const candidateId = createCandidateId(slot)
   const outputPath = createOutputPath(slot, candidateId, imagePart.mimeType)
@@ -62,11 +88,21 @@ async function main() {
 
   const manifest = await readManifest(slot)
   manifest.candidates.push({
-    slot, candidateId, label: slotDefinition.candidateLabel, model,
-    promptId, promptFile, prompt, aspectRatio, imageSize,
+    slot,
+    candidateId,
+    label: slotDefinition.candidateLabel,
+    model,
+    promptId,
+    promptFile,
+    prompt,
+    aspectRatio,
+    imageSize,
     sourceReference: referenceImage?.sourceReference || null,
-    createdAt: new Date().toISOString(), status: 'candidate',
-    outputPath, outputBytes: buffer.byteLength, notes,
+    createdAt: new Date().toISOString(),
+    status: 'candidate',
+    outputPath,
+    outputBytes: buffer.byteLength,
+    notes,
     responseText: pickTextResponse(responseJson) || null
   })
 

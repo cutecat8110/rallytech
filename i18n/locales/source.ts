@@ -106,7 +106,7 @@ const messages = {
     items: [
       { label: 'About', href: '#about' },
       { label: 'Services', href: '/services' },
-      { label: 'OTE', href: '#one-touch-experience' }
+      { label: 'OTE', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -193,7 +193,8 @@ const messages = {
           value: 'join-us',
           label: 'Join Us!',
           title: 'Join Us!',
-          description: `Join us in our journey of innovation. Visit our website for our services, case studies, and our impact on various industries. Contact us to unlock your organization's engineering potential.`,
+          description:
+            "Join us in our journey of innovation. Visit our website for our services, case studies, and our impact on various industries. Contact us to unlock your organization's engineering potential.",
           ctaLabel: 'Read More',
           imageAlt: 'Pentagon Engineering source join-us reference image'
         }
@@ -248,15 +249,54 @@ const messages = {
         'Hidden source-reference services overview used to proofread service naming and card copy against the live reference site.'
     },
     hero: {
-      kicker: 'Services',
-      title: 'Core Services for Industrial Automation Delivery',
-      description:
-        'Source-reference layer retained for proofreading against the live services overview.',
-      asideLabel: 'Main industrial automation services'
+      title: 'Core Services for Industrial Automation Delivery'
     },
     cardCtaLabel: 'Read more',
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Source Reference Focus'
+  },
+  oneTouchPage: {
+    seo: {
+      title: 'One Touch Experience | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference One Touch Experience page used to proofread page structure and visible copy.'
+    },
+    hero: {
+      title: 'One Touch Experience',
+      imageAlt: 'Pentagon Engineering source one-touch page hero background'
+    },
+    modules: [
+      {
+        id: 'data-integration',
+        title: 'Data Integration',
+        description:
+          'Data integration in engineering is the process of harmonizing and consolidating data from various sources and systems within an organization. Here at Pentagon, we ensure that this integration creates a unified dataset that improves decision-making, streamlines operations, and enhances overall project management.'
+      },
+      {
+        id: 'alarm-workflow',
+        title: 'Call-Out System Integration and Commissioning',
+        description:
+          'Efficient project execution is our priority. Our engineering and construction company specializes in seamless call-out system integration and commissioning. From concept to completion, we ensure your systems are fully integrated, tested, and ready for operation.'
+      },
+      {
+        id: 'vibration-analysis',
+        title: 'Vibration Analysis',
+        description:
+          'Efficient project execution is our priority. Our engineering and construction company specializes in seamless call-out system integration and commissioning. From concept to completion, we ensure your systems are fully integrated, tested, and ready for operation.'
+      },
+      {
+        id: 'historian-deployment',
+        title: 'Local/Cloud Historians Deployment',
+        description:
+          'We provide superior services with the Local/Cloud Historians Deployment. Elevate your data management with our local/cloud historians execution. Seamlessly store, access, and analyze critical data for better decision-making and project efficiency.'
+      },
+      {
+        id: 'utilities-integration',
+        title: 'Manure Management System Integration',
+        description:
+          'We are experts in Manure Management System Integration. We seamlessly combine technology and sustainability for efficient and eco-friendly solutions. Elevate your farming practices with us.'
+      }
+    ]
   },
   serviceDetailPages: serviceDetailPagesSource,
   contactPage: {
@@ -266,8 +306,7 @@ const messages = {
         'Hidden source-reference contact page used to proofread contact-page structure and visible copy.'
     },
     hero: {
-      title: 'Contact Us',
-      description: 'Start the conversation from your current project needs.'
+      title: 'Contact Us'
     },
     intro: {
       title: 'Contact Us',

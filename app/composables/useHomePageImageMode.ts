@@ -37,7 +37,7 @@ export function useHomePageImageMode() {
   const preferredMode = useCookie<HomePageImageSourceKey>(
     HOME_PAGE_IMAGE_COOKIE,
     {
-      default: () => 'stock',
+      default: () => 'nano',
       sameSite: 'lax'
     }
   )

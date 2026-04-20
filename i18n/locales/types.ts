@@ -12,6 +12,13 @@ export type ServiceSlug =
   | 'remote-monitoring-and-data'
   | 'alarm-monitoring'
 
+export type OneTouchModuleId =
+  | 'data-integration'
+  | 'alarm-workflow'
+  | 'vibration-analysis'
+  | 'historian-deployment'
+  | 'utilities-integration'
+
 export interface CompanyMessages {
   displayName: string
   legalName: string
@@ -145,14 +152,30 @@ export interface ServicesPageMessages {
     description: string
   }
   hero: {
-    kicker: string
     title: string
-    description: string
-    asideLabel: string
   }
   cardCtaLabel: string
   detailBackLabel: string
   detailFocusLabel: string
+}
+
+export interface OneTouchModuleMessages {
+  id: OneTouchModuleId
+  title: string
+  secondaryTitle?: string
+  description: string
+}
+
+export interface OneTouchPageMessages {
+  seo: {
+    title: string
+    description: string
+  }
+  hero: {
+    title: string
+    imageAlt: string
+  }
+  modules: OneTouchModuleMessages[]
 }
 
 export interface ServiceDetailSidebarMessages {
@@ -329,7 +352,6 @@ export interface ContactPageMessages {
   }
   hero: {
     title: string
-    description: string
   }
   intro: {
     title: string
@@ -406,6 +428,7 @@ export interface RallyTechLocaleMessages {
   aboutPage: AboutPageMessages
   servicesCatalog: ServiceCatalogItemMessages[]
   servicesPage: ServicesPageMessages
+  oneTouchPage: OneTouchPageMessages
   serviceDetailPages: ServiceDetailPagesMessages
   contactPage: ContactPageMessages
   footer: FooterMessages

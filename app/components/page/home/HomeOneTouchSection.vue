@@ -11,6 +11,7 @@ const oneTouchBackgroundStyle = computed(() => ({
 const messages = useRallyMessages()
 const localePath = useLocalePath()
 const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
+const oneTouchPath = computed(() => localePath('/one-touch-experience'))
 </script>
 
 <template>
@@ -40,7 +41,7 @@ const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
 
               <div class="home-sys-ote__action-wrap">
                 <UButton
-                  :to="localePath('/contact')"
+                  :to="oneTouchPath"
                   color="primary"
                   variant="solid"
                   size="lg"

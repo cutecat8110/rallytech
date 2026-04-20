@@ -4,6 +4,7 @@ export type HomePageImageSourceKey = 'stock' | 'nano'
 
 export type HomePageSingleImageSlotKey =
   | 'home-hero'
+  | 'about-hero'
   | 'about-primary'
   | 'about-detail'
   | 'services-surface'
@@ -15,7 +16,13 @@ export type HomePageStateAwareSlotKey = 'mission-square' | 'about-process-step'
 export type HomePageImageSlotKey =
   | HomePageSingleImageSlotKey
   | HomePageStateAwareSlotKey
-export type HomePageImageStateKey = 'mission' | 'join-us' | '01' | '02' | '03' | '04'
+export type HomePageImageStateKey =
+  | 'mission'
+  | 'join-us'
+  | '01'
+  | '02'
+  | '03'
+  | '04'
 
 export interface HomePageImageAsset {
   src: string
@@ -48,6 +55,7 @@ export interface HomePageStateAwareImageRegistry {
 
 export interface HomePageImageRegistry {
   'home-hero': HomePageImageSlotRegistry
+  'about-hero': HomePageImageSlotRegistry
   'about-primary': HomePageImageSlotRegistry
   'about-detail': HomePageImageSlotRegistry
   'services-surface': HomePageImageSlotRegistry
@@ -106,102 +114,65 @@ export const homePageImageRegistry: HomePageImageRegistry = {
       notes: 'Strict Inward Focus v15 - candidate 3'
     }
   },
-  'about-primary': {
-    slot: 'about-primary',
-    liveSource: 'nano',
+  'about-hero': {
+    slot: 'about-hero',
+    liveSource: 'stock',
     stock: {
-      src: '/images/stock/home/about-glass-office-towers.jpg',
-      alt: 'Ã§ÂÂ¾Ã¤Â»Â£Ã©Â«ËœÃ§Â§â€˜Ã¦Å â‚¬Ã¥Â»ÂºÃ§Â¯â€°Ã¥Â¤â€“Ã¨Â§â‚¬',
-      label: 'About Primary Stock Asset',
+      src: '/images/company/office/rallytech-office-lounge-wide.jpg',
+      alt: '雷力科技辦公室交流與休憩空間',
+      label: 'RallyTech Office Lounge Wide',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Flickr / Openverse',
-      sourceReference: 'https://www.flickr.com/photos/84509731@N00/6336008954',
-      createdAt: null,
-      licenseNote: 'CC BY 2.0',
-      notes:
-        'Canonical stock placeholder for the About section primary facade image role.'
-    },
-    liveNano: {
-      src: '/images/generated/home/about-primary/about-primary-20260414095218355-ew0j7u.jpg',
-      alt: '',
-      label: 'Nano About Primary Candidate',
-      candidateId: 'about-primary-20260414095218355-ew0j7u',
-      model: 'gemini-3-pro-image-preview',
-      promptId: 'about-primary-v2',
-      source: 'Nano Banana',
+      source: 'RallyTech company photo set',
       sourceReference: null,
-      createdAt: '2026-04-14T09:52:18.366Z',
+      createdAt: '2026-04-20',
       licenseNote:
-        'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+        '公司自有實拍素材，使用者已確認可供官網使用，無可見浮水印，2026-04-20。',
+      notes: 'Company photo for the About page hero background.'
     },
-    latestCandidate: {
-      src: '/images/generated/home/about-primary/about-primary-20260414095218355-ew0j7u.jpg',
-      alt: '',
-      label: 'Nano About Primary Candidate',
-      candidateId: 'about-primary-20260414095218355-ew0j7u',
-      model: 'gemini-3-pro-image-preview',
-      promptId: 'about-primary-v2',
-      source: 'Nano Banana',
+    liveNano: null,
+    latestCandidate: null
+  },
+  'about-primary': {
+    slot: 'about-primary',
+    liveSource: 'stock',
+    stock: {
+      src: '/images/company/office/rallytech-office-logo-wall.jpg',
+      alt: '雷力科技辦公室 Logo 品牌牆',
+      label: 'RallyTech Office Logo Wall',
+      candidateId: null,
+      model: null,
+      promptId: null,
+      source: 'RallyTech company photo set',
       sourceReference: null,
-      createdAt: '2026-04-14T09:52:18.366Z',
+      createdAt: '2026-04-20',
       licenseNote:
-        'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
-    }
+        '公司自有實拍素材，使用者已確認可供官網使用，無可見浮水印，2026-04-20。',
+      notes: 'Company photo for homepage and About intro primary media.'
+    },
+    liveNano: null,
+    latestCandidate: null
   },
   'about-detail': {
     slot: 'about-detail',
-    liveSource: 'nano',
+    liveSource: 'stock',
     stock: {
-      src: '/images/stock/home/about-glass-facade-detail.jpg',
-      alt: 'Ã§ÂÂ¾Ã¤Â»Â£Ã§Å½Â»Ã§â€™Æ’Ã§Â«â€¹Ã©ÂÂ¢Ã§Â´Â°Ã§Â¯â‚¬',
-      label: 'About Detail Stock Asset',
+      src: '/images/company/office/rallytech-office-workspace-row.jpg',
+      alt: '雷力科技辦公區環境照',
+      label: 'RallyTech Office Workspace Row',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference:
-        'https://www.pexels.com/photo/reflective-glass-facade-of-modern-office-building-33643675/',
-      createdAt: null,
-      licenseNote: 'Pexels License',
-      notes:
-        'Canonical stock placeholder for the About section secondary facade-detail image role.'
-    },
-    liveNano: {
-      src: '/images/generated/home/about-detail/about-detail-20260414095251649-u4bhzb.jpg',
-      alt: '',
-      label: 'Nano About Detail Candidate',
-      candidateId: 'about-detail-20260414095251649-u4bhzb',
-      model: 'gemini-3-pro-image-preview',
-      promptId: 'about-detail-v2',
-      source: 'Nano Banana',
+      source: 'RallyTech company photo set',
       sourceReference: null,
-      createdAt: '2026-04-14T09:52:51.662Z',
+      createdAt: '2026-04-20',
       licenseNote:
-        'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+        '公司自有實拍素材，使用者已確認可供官網使用，無可見浮水印，2026-04-20。',
+      notes: 'Company photo for homepage and About intro detail media.'
     },
-    latestCandidate: {
-      src: '/images/generated/home/about-detail/about-detail-20260414095251649-u4bhzb.jpg',
-      alt: '',
-      label: 'Nano About Detail Candidate',
-      candidateId: 'about-detail-20260414095251649-u4bhzb',
-      model: 'gemini-3-pro-image-preview',
-      promptId: 'about-detail-v2',
-      source: 'Nano Banana',
-      sourceReference: null,
-      createdAt: '2026-04-14T09:52:51.662Z',
-      licenseNote:
-        'Generated with Gemini image generation (SynthID watermark).',
-      notes:
-        'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
-    }
+    liveNano: null,
+    latestCandidate: null
   },
   'services-surface': {
     slot: 'services-surface',

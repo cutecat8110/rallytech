@@ -36,15 +36,20 @@ const contactSlots = [{ slot: 'contact-hero' }]
 
 async function runCommand(scriptName, slotInfo) {
   return new Promise((resolve, reject) => {
-    const slotDesc = slotInfo.state ? `${slotInfo.slot} (${slotInfo.state})` : slotInfo.slot
+    const slotDesc = slotInfo.state
+      ? `${slotInfo.slot} (${slotInfo.state})`
+      : slotInfo.slot
     console.log(`\n>>> Generating Pro image for slot: ${slotDesc}...`)
-    
+
     // We strictly enforce NO TEXT, NO LOGOS, NO SLOGANS in the notes to reinforce negative constraints
     const args = [
       scriptName,
-      '--slot', slotInfo.slot,
-      '--model', 'gemini-3-pro-image-preview',
-      '--notes', 'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+      '--slot',
+      slotInfo.slot,
+      '--model',
+      'gemini-3-pro-image-preview',
+      '--notes',
+      'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
     ]
 
     if (slotInfo.state) {
@@ -63,7 +68,9 @@ async function runCommand(scriptName, slotInfo) {
 async function main() {
   const total = homeSlots.length + serviceSlots.length + contactSlots.length
   console.log(`Starting global Pro generation for ${total} images...`)
-  console.log('CONSTRAINT: Ensuring NO embedded text or slogans in all outputs.')
+  console.log(
+    'CONSTRAINT: Ensuring NO embedded text or slogans in all outputs.'
+  )
 
   // 1. Home
   for (const info of homeSlots) {

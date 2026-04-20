@@ -146,7 +146,7 @@ function handleFormSubmit() {
 <template>
   <div class="contact-sys-page">
     <PageHeroShell
-      class="contact-sys-hero text-white"
+      class="contact-sys-hero"
       variant="page"
       shell="wide"
       content-align="center"
@@ -161,21 +161,9 @@ function handleFormSubmit() {
         />
       </template>
 
-      <template #overlay>
-        <div class="contact-sys-hero__overlay" />
-      </template>
-
-      <div class="contact-sys-hero__content">
-        <h1 class="type-sys-display-l contact-sys-hero__title text-white">
-          {{ contactMessages.hero.title }}
-        </h1>
-        <p
-          v-if="contactMessages.hero.description"
-          class="contact-sys-hero__description type-sys-body-m text-white/84"
-        >
-          {{ contactMessages.hero.description }}
-        </p>
-      </div>
+      <h1 class="type-sys-display-l page-hero-shell__heading">
+        {{ contactMessages.hero.title }}
+      </h1>
     </PageHeroShell>
 
     <section class="section-sys-shell contact-sys-main-section">
@@ -398,51 +386,8 @@ function handleFormSubmit() {
   background: var(--color-white);
 }
 
-.contact-sys-hero {
-  background: linear-gradient(
-    180deg,
-    rgb(25 47 79 / 0.82) 0%,
-    rgb(25 47 79 / 0.78) 100%
-  );
-}
-
 .contact-sys-hero__image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: saturate(0.84) contrast(0.96) brightness(0.88);
-  transform: scale(1.035);
-}
-
-.contact-sys-hero__overlay {
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgb(25 47 79 / 0.8) 0%, rgb(25 47 79 / 0.78) 100%),
-    linear-gradient(90deg, rgb(255 255 255 / 0.03) 0%, transparent 38%);
-}
-
-.contact-sys-hero__content {
-  max-width: 44rem;
-  margin-inline: auto;
-  text-align: center;
-  display: grid;
-  gap: 0.85rem;
-}
-
-.contact-sys-hero__title {
-  max-width: 14ch;
-  margin-inline: auto;
-  font-size: clamp(1.8rem, 3.6vw, 2.7rem);
-  line-height: 1.03;
-  letter-spacing: -0.026em;
-  text-wrap: balance;
-}
-
-.contact-sys-hero__description {
-  max-width: 34rem;
-  margin-inline: auto;
-  text-wrap: pretty;
+  object-position: center;
 }
 
 .contact-sys-main-section {

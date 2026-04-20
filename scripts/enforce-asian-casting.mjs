@@ -8,7 +8,14 @@ async function main() {
   for (const file of files) {
     if (!file.endsWith('.txt')) continue
     // Only process service-related prompts
-    if (file.startsWith('home-') || file.startsWith('about-') || file.startsWith('mission-') || file.startsWith('ote-') || file.startsWith('connector-') || file.startsWith('contact-')) {
+    if (
+      file.startsWith('home-') ||
+      file.startsWith('about-') ||
+      file.startsWith('mission-') ||
+      file.startsWith('ote-') ||
+      file.startsWith('connector-') ||
+      file.startsWith('contact-')
+    ) {
       continue
     }
 
@@ -17,26 +24,35 @@ async function main() {
     let json
     try {
       json = JSON.parse(content)
-    } catch (e) {
+    } catch {
       console.error(`Failed to parse ${file}`)
       continue
     }
 
     const text = content.toLowerCase()
-    const needsCasting = text.includes('engineer') || text.includes('operator') || text.includes('technician') || text.includes('hand') || text.includes('people') || text.includes('person')
-    
+    const needsCasting =
+      text.includes('engineer') ||
+      text.includes('operator') ||
+      text.includes('technician') ||
+      text.includes('hand') ||
+      text.includes('people') ||
+      text.includes('person')
+
     if (needsCasting && !json.human_casting) {
       json.human_casting = {
-        rule: "all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team",
-        styling: "modern Taiwanese industrial workplace styling, practical and understated",
-        guardrails: "avoid caricature, exaggerated ethnic markers, or non-Asian faces"
+        rule: 'all visible faces and people must strictly read as East Asian professionals from a Taiwan-based engineering team',
+        styling:
+          'modern Taiwanese industrial workplace styling, practical and understated',
+        guardrails:
+          'avoid caricature, exaggerated ethnic markers, or non-Asian faces'
       }
-      
+
       if (!json.commercial_constraints) {
         json.commercial_constraints = []
       }
-      
-      const constraint = "all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context"
+
+      const constraint =
+        'all visible human subjects must strictly read as East Asian and Taiwan-based in a professional context'
       if (!json.commercial_constraints.includes(constraint)) {
         json.commercial_constraints.push(constraint)
       }

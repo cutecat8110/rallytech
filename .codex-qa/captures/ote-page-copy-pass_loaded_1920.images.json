@@ -5,8 +5,5 @@
   "imageCount": 0,
   "brokenImages": [],
   "suspiciousImages": [],
-  "headings": [
-    "404",
-    "Page not found: /one-touch-experience"
-  ]
+  "headings": ["404", "Page not found: /one-touch-experience"]
 }

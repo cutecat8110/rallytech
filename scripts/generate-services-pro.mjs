@@ -23,12 +23,15 @@ for (const slug of slugs) {
 async function runCommand(slot) {
   return new Promise((resolve, reject) => {
     console.log(`\n>>> Generating Pro image for slot: ${slot}...`)
-    
+
     const args = [
       'scripts/generate-service-image-candidate.mjs',
-      '--slot', slot,
-      '--model', 'gemini-3-pro-image-preview',
-      '--notes', 'Enforcing strict East Asian/Taiwanese casting and Pro-model visual upgrade.'
+      '--slot',
+      slot,
+      '--model',
+      'gemini-3-pro-image-preview',
+      '--notes',
+      'Enforcing strict East Asian/Taiwanese casting and Pro-model visual upgrade.'
     ]
 
     const child = spawn('node', args, { stdio: 'inherit' })
@@ -41,7 +44,9 @@ async function runCommand(slot) {
 }
 
 async function main() {
-  console.log(`Starting targeted Pro generation for ${slots.length} service images...`)
+  console.log(
+    `Starting targeted Pro generation for ${slots.length} service images...`
+  )
   console.log('CONSTRAINT: Ensuring East Asian / Taiwanese faces and NO text.')
 
   for (const slot of slots) {

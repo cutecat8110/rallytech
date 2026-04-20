@@ -23,11 +23,17 @@ for (const slug of slugs) {
 async function runCommand(slot) {
   return new Promise((resolve, reject) => {
     console.log(`\n>>> Generating image for slot: ${slot}...`)
-    const child = spawn('node', [
-      'scripts/generate-service-image-candidate.mjs',
-      '--slot', slot,
-      '--notes', 'Batch generation for services overhaul'
-    ], { stdio: 'inherit' })
+    const child = spawn(
+      'node',
+      [
+        'scripts/generate-service-image-candidate.mjs',
+        '--slot',
+        slot,
+        '--notes',
+        'Batch generation for services overhaul'
+      ],
+      { stdio: 'inherit' }
+    )
 
     child.on('close', (code) => {
       if (code === 0) resolve()

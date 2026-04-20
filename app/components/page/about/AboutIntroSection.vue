@@ -4,10 +4,8 @@ const {
   resolvedImage: primaryImage,
   handleImageError: handlePrimaryImageError
 } = useAboutPageImageAsset('about-primary')
-const {
-  resolvedImage: detailImage,
-  handleImageError: handleDetailImageError
-} = useAboutPageImageAsset('about-detail')
+const { resolvedImage: detailImage, handleImageError: handleDetailImageError } =
+  useAboutPageImageAsset('about-detail')
 </script>
 
 <template>
@@ -19,18 +17,20 @@ const {
           <div class="about-sys-intro__gallery">
             <div class="about-sys-intro__frame about-sys-intro__frame--primary">
               <img
-                :src="primaryImage.src"
-                :alt="primaryImage.alt || messages.aboutPage.intro.title"
-                class="about-sys-intro__image"
-                @error="handlePrimaryImageError"
-              />
-            </div>
-            <div class="about-sys-intro__frame about-sys-intro__frame--secondary">
-              <img
                 :src="detailImage.src"
                 :alt="detailImage.alt || messages.aboutPage.hero.title"
-                class="about-sys-intro__image"
+                class="about-sys-intro__image about-sys-intro__image--primary"
                 @error="handleDetailImageError"
+              />
+            </div>
+            <div
+              class="about-sys-intro__frame about-sys-intro__frame--secondary"
+            >
+              <img
+                :src="primaryImage.src"
+                :alt="primaryImage.alt || messages.aboutPage.intro.title"
+                class="about-sys-intro__image about-sys-intro__image--secondary"
+                @error="handlePrimaryImageError"
               />
             </div>
           </div>
@@ -43,7 +43,9 @@ const {
           >
             {{ messages.aboutPage.intro.kicker }}
           </p>
-          <h2 class="about-sys-intro__title type-sys-headline-l text-neutral-900">
+          <h2
+            class="about-sys-intro__title type-sys-headline-l text-neutral-900"
+          >
             {{ messages.aboutPage.intro.title }}
           </h2>
           <div class="about-sys-intro__body">
@@ -111,8 +113,8 @@ const {
 .about-sys-intro__gallery {
   position: relative;
   width: 100%;
-  max-width: 36rem;
-  aspect-ratio: 4 / 3.2;
+  max-width: 38rem;
+  aspect-ratio: 4 / 3.05;
 }
 
 .about-sys-intro__frame {
@@ -127,16 +129,16 @@ const {
 .about-sys-intro__frame--primary {
   top: 0;
   right: 0;
-  width: 75%;
-  height: 85%;
+  width: 73%;
+  height: 80%;
   z-index: 1;
 }
 
 .about-sys-intro__frame--secondary {
   bottom: 0;
   left: 0;
-  width: 55%;
-  height: 65%;
+  width: 66%;
+  height: 58%;
   z-index: 2;
   box-shadow: 0 2.5rem 5rem -1.25rem rgb(15 23 42 / 0.18);
 }
@@ -145,6 +147,14 @@ const {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about-sys-intro__image--primary {
+  object-position: 50% 50%;
+}
+
+.about-sys-intro__image--secondary {
+  object-position: 0% 46%;
 }
 
 @media (min-width: 1024px) {
@@ -172,12 +182,22 @@ const {
   }
 
   .about-sys-intro__gallery {
-    max-width: 22rem;
-    aspect-ratio: 4 / 3.5;
+    max-width: 22.5rem;
+    aspect-ratio: 4 / 3.15;
   }
 
   .about-sys-intro__frame {
     border-radius: 1rem;
+  }
+
+  .about-sys-intro__frame--primary {
+    width: 73%;
+    height: 76%;
+  }
+
+  .about-sys-intro__frame--secondary {
+    width: 72%;
+    height: 56%;
   }
 
   .about-sys-intro__title {

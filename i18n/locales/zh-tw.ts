@@ -102,7 +102,7 @@ const messages = {
     items: [
       { label: '關於我們', href: '/about' },
       { label: '服務項目', href: '/services' },
-      { label: '一站式整合', href: '#one-touch-experience' }
+      { label: '一站式整合', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -124,9 +124,9 @@ const messages = {
       title: '承接控制、監控與試車交付的整合夥伴',
       description:
         '雷力科技成立於 2014 年，承接自動化控制、監控系統、試車支援與客製系統交付，服務專案端與現場端需求。',
-      mediaLabel: '現代高科技建築與設施立面雙圖組合',
-      primaryImageAlt: '現代高科技商業大樓',
-      detailImageAlt: '高科技建築玻璃立面細節',
+      mediaLabel: '雷力科技辦公室 Logo 牆與辦公區雙圖組合',
+      primaryImageAlt: '雷力科技辦公室 Logo 品牌牆',
+      detailImageAlt: '雷力科技開放式辦公區環境',
       points: [
         {
           title: '公司角色',
@@ -162,7 +162,7 @@ const messages = {
       title: '一站式整合',
       description:
         '把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。',
-      ctaLabel: '開始洽詢',
+      ctaLabel: '查看整合方式',
       items: [
         'SCADA 資料',
         '告警流程',
@@ -244,15 +244,59 @@ const messages = {
         '瀏覽雷力科技的服務範圍，涵蓋操作畫面、現場支援、控制搬遷、資料平台、工業網路、遠端監控與告警流程。'
     },
     hero: {
-      kicker: '服務項目',
-      title: '工業自動化服務範圍',
-      description:
-        '面向再生能源、工業、化工、製藥與 EPC 專案，從操作畫面、現場支援到資料平台、網路與告警流程。',
-      asideLabel: '服務範圍'
+      title: '工業自動化服務範圍'
     },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',
     detailFocusLabel: '快速看懂'
+  },
+  oneTouchPage: {
+    seo: {
+      title: '一站式整合 | 雷力科技 Rally Technology',
+      description:
+        '了解雷力科技如何把 SCADA、告警流程、振動監測、Historian 與公用廠務資料接在同一層跨系統整合流程。'
+    },
+    hero: {
+      title: '一站式整合',
+      imageAlt: '工業控制室與監控系統畫面'
+    },
+    modules: [
+      {
+        id: 'data-integration',
+        title: '資料整合',
+        secondaryTitle: 'Data Integration',
+        description:
+          '串接現場、設備與報表資料，讓團隊能在同一個可用的營運視角下工作。'
+      },
+      {
+        id: 'alarm-workflow',
+        title: '告警流程與試車',
+        secondaryTitle: 'Alarm Workflow and Commissioning',
+        description:
+          '對齊告警路由、通知邏輯與試車驗證，讓關鍵事件能更快送到正確窗口。'
+      },
+      {
+        id: 'vibration-analysis',
+        title: '振動分析',
+        secondaryTitle: 'Vibration Analysis',
+        description:
+          '支援振動監測與判讀流程，協助維護團隊更早掌握異常並判斷下一步。'
+      },
+      {
+        id: 'historian-deployment',
+        title: '本地 / 雲端 Historian 部署',
+        secondaryTitle: 'Local / Cloud Historian Deployment',
+        description:
+          '規劃 Historian 環境，讓製程資料持續支援排查、報表與長期回顧。'
+      },
+      {
+        id: 'utilities-integration',
+        title: '公用與廠務整合',
+        secondaryTitle: 'Utilities and Facilities Integration',
+        description:
+          '把公用與廠務系統接進同一層監控、控制與報表流程，形成跨系統整合視角。'
+      }
+    ]
   },
   serviceDetailPages: serviceDetailPagesZhTw,
   contactPage: {
@@ -262,9 +306,7 @@ const messages = {
         '與雷力科技討論自動化整合、控制系統、試車支援與工廠資料需求。'
     },
     hero: {
-      title: '聯絡我們',
-      description:
-        '歡迎提供專案範圍、現場條件或升級需求，我們會協助釐清下一步。'
+      title: '聯絡我們'
     },
     intro: {
       title: '開始洽詢',
