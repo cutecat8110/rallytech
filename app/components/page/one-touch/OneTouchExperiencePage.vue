@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 import type {
   OneTouchModuleId,
   OneTouchModuleMessages
@@ -104,9 +105,7 @@ const secondVisual = computed(() => ({
         <span class="one-touch-page__hero-overlay" />
       </template>
 
-      <h1 class="type-sys-display-l page-hero-shell__heading">
-        {{ pageMessages.hero.title }}
-      </h1>
+      <SharedPageHeroTitle :title="pageMessages.hero.title" />
     </PageHeroShell>
 
     <section

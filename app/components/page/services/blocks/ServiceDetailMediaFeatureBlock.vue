@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import SharedPointList from '~/components/shared/SharedPointList.vue'
 import type { ServiceDetailMediaFeatureBlockMessages } from '~~/i18n/locales/types'
 
 const props = defineProps<{
@@ -13,6 +14,10 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
 
 const blockClassName = computed(
   () => `services-sys-detail-media-feature--${props.block.layout}`
+)
+
+const highlightItems = computed(() =>
+  props.block.highlights.map((label) => ({ label }))
 )
 </script>
 
@@ -43,18 +48,14 @@ const blockClassName = computed(
         </p>
       </div>
 
-      <div
-        v-if="block.highlights.length"
+      <SharedPointList
+        v-if="highlightItems.length"
         class="services-sys-detail-media-feature__highlights"
-      >
-        <span
-          v-for="highlight in block.highlights"
-          :key="highlight"
-          class="services-sys-detail-media-feature__highlight type-sys-label-s"
-        >
-          {{ highlight }}
-        </span>
-      </div>
+        :items="highlightItems"
+        variant="inline"
+        tone="light"
+        density="compact"
+      />
     </div>
   </section>
 </template>
@@ -95,20 +96,7 @@ const blockClassName = computed(
 }
 
 .services-sys-detail-media-feature__highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.95rem;
   margin-top: 1rem;
-}
-
-.services-sys-detail-media-feature__highlight {
-  color: var(--color-text-secondary);
-}
-
-.services-sys-detail-media-feature__highlight:not(:first-child)::before {
-  content: '\00b7';
-  margin-right: 0.55rem;
-  color: var(--color-text-tertiary);
 }
 
 @media (min-width: 768px) {

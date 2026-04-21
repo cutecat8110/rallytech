@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import type { HomePageImageStateKey } from '~/utils/home-page-image-registry'
 
 const messages = useRallyMessages()
@@ -44,13 +45,13 @@ const missionTabsUi = {
       <div class="content-sys-rail">
         <div class="home-sys-mission__layout">
           <article class="home-sys-mission__copy">
-            <div class="home-sys-mission__heading max-w-xl">
-              <h2
-                class="home-sys-mission__accent-heading type-sys-headline-l text-neutral-900"
-              >
-                {{ messages.home.mission.heading }}
-              </h2>
-            </div>
+            <SharedSectionIntro
+              class="home-sys-mission__intro"
+              :title="messages.home.mission.heading"
+              tone="light"
+              align="start"
+              density="compact"
+            />
 
             <UTabs
               v-model="activeMission"
@@ -136,17 +137,12 @@ const missionTabsUi = {
   gap: 1rem;
 }
 
-.home-sys-mission__heading {
+.home-sys-mission__intro {
   max-width: 36rem;
 }
 
 .home-sys-mission__tabs {
   align-self: flex-start;
-}
-
-.home-sys-mission__accent-heading {
-  letter-spacing: 0.012em;
-  font-weight: 600;
 }
 
 .home-sys-mission__state {

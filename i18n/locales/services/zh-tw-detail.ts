@@ -14,7 +14,7 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['畫面易判讀', '告警有脈絡', '後續好維護'],
     introParagraphs: [
-      '雷力科技規劃 SCADA / HMI 畫面，讓操作端更快看懂狀態、告警與下一步動作。',
+      '進入 SCADA / HMI 圖控前，先釐清操作端在正常、異常與交接時需要哪些判斷線索。',
       '我們會把畫面層級、命名與導覽一起整理，讓系統在試車、日常操作與後續擴充時都維持一致。'
     ],
     sidebar: sharedSidebar,
@@ -93,8 +93,8 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['現場先就緒', 'FAT / SAT', '啟動支援'],
     introParagraphs: [
-      '雷力科技提供 I&E 現場支援，涵蓋 FAT / SAT、回路確認、啟動與現場排障。',
-      '重點是讓系統更快進入可施工狀態、問題更快定位，也讓試車決策能在跨團隊之間對齊。'
+      'I&E 支援的重點，是把現場訊號、回路狀態與試車節點放回同一條可追蹤的工作線。',
+      '目標是讓系統更快進入可施工狀態、問題更快定位，也讓試車決策能在跨團隊之間對齊。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -232,8 +232,8 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['切換路徑清楚', '風險可控制', '邏輯好維護'],
     introParagraphs: [
-      '雷力科技支援 PLC / DCS 程式開發、搬遷規劃與分階段切換，協助運轉中系統平穩升級。',
-      '重點是建立現場能執行的切換節奏，同時讓邏輯在測試、切換與後續維護時都保持可讀。'
+      'PLC / DCS 更新通常發生在系統仍要運轉的情境，因此首要工作是把現場能執行的步驟拆清楚。',
+      '重點是建立可驗證、可切換、可回看的節奏，同時讓邏輯在測試、切換與後續維護時都保持可讀。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -342,8 +342,8 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['資料骨幹穩定', '報表可使用', '整合更容易'],
     introParagraphs: [
-      '雷力科技以 PI Server 建立工廠資料平台，支援監看、報表與跨系統使用。',
-      '重點不是多收更多 tags，而是讓不同團隊都能接上同一條可用的資料骨幹。'
+      'PI Server 的首屏重點，是確認點位進入平台後，還能被日常查詢、計算與跨系統串接。',
+      '我們會先看資料來源、命名與使用情境，讓平台成為團隊能接上的資料骨幹，而不是只收更多 tags。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -435,7 +435,7 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['長期可追溯', '冗餘可存取', '分析報表就緒'],
     introParagraphs: [
-      '雷力科技規劃 Historian 架構，支援長期記錄、趨勢比對、追溯與報表需求。',
+      'Historian 不是只把資料存起來，而是讓時間拉長後仍能查到、比對並說明製程狀況。',
       '重點在保留週期、存取方式與冗餘設計，讓資料在幾個月或幾年後仍然可用。'
     ],
     sidebar: sharedSidebar,
@@ -516,8 +516,8 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['拓樸邊界清楚', '區隔兼顧韌性', '後續好擴充'],
     introParagraphs: [
-      '雷力科技規劃工業網路架構，支撐控制流量、現場設備與工廠資料系統。',
-      '我們會提早定義邊界、區隔與擴充路徑，避免網路成為自動化堆疊裡最脆弱的一層。'
+      '工業網路設計先處理控制流量、資料流、遠端存取與擴充邊界之間的關係。',
+      '我們會提早定義分層、區隔與維護路徑，避免網路成為自動化堆疊裡最脆弱的一層。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -595,7 +595,7 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['跨據點可視', '資料連續性', '復原有準備'],
     introParagraphs: [
-      '雷力科技協助建立遠端監看與資料連續性流程，支援分散據點與關鍵紀錄保存。',
+      '遠端監控與資料備援要同時回答三件事：看得到、傳得回，異常後還查得到。',
       '我們把可視化、資料延續與復原準備一起規劃，避免遠端存取有了，紀錄保護卻成為事後補救。'
     ],
     sidebar: sharedSidebar,
@@ -676,8 +676,8 @@ export const serviceDetailPagesZhTw = {
     },
     heroFocusItems: ['優先順序清楚', '操作判讀更快', '降低告警噪音'],
     introParagraphs: [
-      '雷力科技建立告警策略與通知流程，協助團隊更快回應真正需要處理的事件。',
-      '重點在告警優先順序、事件脈絡與升級邏輯，讓操作端少花時間篩噪音，多把時間用在正確處置。'
+      '告警監控的首要任務，是讓操作端看得出優先順序、事件脈絡與下一步處置路徑。',
+      '我們會把條件、通知與升級邏輯對齊，讓團隊少花時間篩噪音，多把時間用在正確處置。'
     ],
     sidebar: sharedSidebar,
     blocks: [

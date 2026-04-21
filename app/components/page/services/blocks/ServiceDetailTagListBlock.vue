@@ -1,9 +1,17 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import type { ServiceDetailTagListBlockMessages } from '~~/i18n/locales/types'
+import SharedPointList from '~/components/shared/SharedPointList.vue'
 
-defineProps<{
+const props = defineProps<{
   block: ServiceDetailTagListBlockMessages
 }>()
+
+const tagItems = computed(() =>
+  props.block.items.map((label) => ({
+    label
+  }))
+)
 </script>
 
 <template>
@@ -15,35 +23,17 @@ defineProps<{
       {{ block.title }}
     </h3>
 
-    <div class="services-sys-detail-tag-list">
-      <span
-        v-for="item in block.items"
-        :key="item"
-        class="services-sys-detail-tag-list__item type-sys-label-s"
-      >
-        {{ item }}
-      </span>
-    </div>
+    <SharedPointList
+      class="services-sys-detail-tag-list"
+      :items="tagItems"
+      variant="tag"
+      tone="light"
+    />
   </section>
 </template>
 
 <style scoped>
 .services-sys-detail-block__title {
   margin-bottom: 1.25rem;
-}
-
-.services-sys-detail-tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.95rem;
-}
-
-.services-sys-detail-tag-list__item {
-  display: inline-flex;
-  align-items: center;
-  padding-bottom: 0.35rem;
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--color-primary-200) 58%, var(--color-border-subtle));
-  color: var(--color-text-secondary);
 }
 </style>

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import SharedPointList from '~/components/shared/SharedPointList.vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 
 const { resolvedImage: oneTouchBackgroundImage } =
   useHomePageImageAsset('ote-background')
@@ -10,7 +12,9 @@ const oneTouchBackgroundStyle = computed(() => ({
 
 const messages = useRallyMessages()
 const localePath = useLocalePath()
-const oneTouchItems = computed(() => messages.value.home.oneTouch.items)
+const oneTouchItems = computed(() =>
+  messages.value.home.oneTouch.items.map((label) => ({ label }))
+)
 const oneTouchPath = computed(() => localePath('/one-touch-experience'))
 </script>
 
@@ -25,19 +29,14 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
         <div class="home-sys-ote__stage">
           <div class="home-sys-ote__layout">
             <article class="home-sys-ote__copy">
-              <div class="home-sys-ote__body">
-                <h2
-                  class="home-sys-ote__accent-heading type-sys-headline-l text-white"
-                >
-                  {{ messages.home.oneTouch.title }}
-                </h2>
-                <p
-                  v-if="messages.home.oneTouch.description"
-                  class="home-sys-ote__description type-sys-body-m"
-                >
-                  {{ messages.home.oneTouch.description }}
-                </p>
-              </div>
+              <SharedSectionIntro
+                class="home-sys-ote__intro"
+                :title="messages.home.oneTouch.title"
+                :description="messages.home.oneTouch.description"
+                tone="dark"
+                align="start"
+                density="default"
+              />
 
               <div class="home-sys-ote__action-wrap">
                 <UButton
@@ -52,18 +51,12 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
             </article>
 
             <div class="home-sys-ote__list">
-              <ul class="home-sys-ote__panel">
-                <li
-                  v-for="item in oneTouchItems"
-                  :key="item"
-                  class="home-sys-ote__row type-sys-body-s text-white/95"
-                >
-                  <UIcon name="i-lucide-check" class="home-sys-ote__row-icon" />
-                  <span class="home-sys-ote__row-label">
-                    {{ item }}
-                  </span>
-                </li>
-              </ul>
+              <SharedPointList
+                class="home-sys-ote__panel"
+                :items="oneTouchItems"
+                variant="check"
+                tone="dark"
+              />
             </div>
           </div>
         </div>
@@ -142,61 +135,17 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
   margin-inline: auto;
 }
 
-.home-sys-ote__body {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.875rem;
-}
-
 .home-sys-ote__action-wrap {
   width: 100%;
 }
 
-.home-sys-ote__description {
+.home-sys-ote__intro {
   max-width: 20.75rem;
-  color: rgb(255 255 255 / 0.76);
-  text-wrap: pretty;
 }
 
 .home-sys-ote__list {
   width: min(100%, 28.5rem);
   margin-inline: auto;
-}
-
-.home-sys-ote__panel {
-  display: grid;
-  gap: 0.85rem;
-}
-
-.home-sys-ote__accent-heading {
-  letter-spacing: 0.012em;
-  font-weight: 600;
-}
-
-.home-sys-ote__row {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr);
-  align-items: start;
-  gap: 0.7rem;
-  border: 1px solid rgb(255 255 255 / 0.18);
-  border-radius: var(--radius-md);
-  background: rgb(255 255 255 / 0.12);
-  padding: 1rem 1.05rem;
-  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
-  backdrop-filter: blur(10px);
-}
-
-.home-sys-ote__row-icon {
-  margin-top: 0.18rem;
-  flex-shrink: 0;
-  color: rgb(191 243 234 / 0.96);
-  font-size: 1rem;
-}
-
-.home-sys-ote__row-label {
-  min-width: 0;
-  line-height: 1.65;
 }
 
 @media (min-width: 768px) {
@@ -209,10 +158,6 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
     gap: 1.5rem;
     justify-self: start;
     margin-inline: 0;
-  }
-
-  .home-sys-ote__body {
-    gap: 1rem;
   }
 
   .home-sys-ote__list {

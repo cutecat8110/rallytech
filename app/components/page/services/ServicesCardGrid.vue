@@ -4,6 +4,8 @@ import {
   getDesiredServiceImageSource,
   resolveServiceImageAsset
 } from '~/composables/useServicePageImageAsset'
+import SharedActionLink from '~/components/shared/SharedActionLink.vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import { enrichServiceCatalog } from '~/utils/services'
 import { getServicePageImageEntry } from '~/utils/service-page-image-registry'
 
@@ -57,6 +59,16 @@ const serviceItems = computed(() =>
   <section class="services-sys-overview-grid section-sys-shell">
     <div class="page-sys-shell--wide">
       <div class="services-sys-overview-grid__rail">
+        <SharedSectionIntro
+          class="services-sys-overview-grid__intro"
+          :kicker="messages.servicesPage.intro.kicker"
+          :title="messages.servicesPage.intro.title"
+          :description="messages.servicesPage.intro.description"
+          tone="light"
+          align="start"
+          density="compact"
+        />
+
         <div class="services-sys-grid">
           <NuxtLink
             v-for="item in serviceItems"
@@ -91,13 +103,12 @@ const serviceItems = computed(() =>
                 {{ item.description }}
               </p>
 
-              <span class="services-sys-listing__cta type-sys-label-s">
-                <span>{{ messages.servicesPage.cardCtaLabel }}</span>
-                <UIcon
-                  name="i-ic-baseline-arrow-forward"
-                  class="services-sys-listing__cta-icon size-4"
-                />
-              </span>
+              <SharedActionLink
+                class="services-sys-listing__cta"
+                :label="messages.servicesPage.cardCtaLabel"
+                tone="light"
+                size="sm"
+              />
             </div>
           </NuxtLink>
         </div>
@@ -121,6 +132,11 @@ const serviceItems = computed(() =>
   width: 100%;
   max-width: 80rem;
   margin-inline: auto;
+}
+
+.services-sys-overview-grid__intro {
+  max-width: 42rem;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
 .services-sys-grid {
@@ -206,19 +222,8 @@ const serviceItems = computed(() =>
 }
 
 .services-sys-listing__cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
   margin-top: 0.55rem;
-  color: rgb(42 56 61 / 0.74);
-  transition:
-    color 180ms ease,
-    gap 180ms ease,
-    transform 180ms ease;
-}
-
-.services-sys-listing__cta-icon {
-  flex-shrink: 0;
+  --shared-action-link-color: rgb(42 56 61 / 0.74);
 }
 
 .services-sys-listing:hover .services-sys-listing__image,
@@ -237,8 +242,9 @@ const serviceItems = computed(() =>
 
 .services-sys-listing:hover .services-sys-listing__cta,
 .services-sys-listing:focus-visible .services-sys-listing__cta {
-  gap: 0.48rem;
-  color: var(--color-secondary-950);
+  --shared-action-link-color: var(--color-secondary-950);
+  --shared-action-link-gap: 0.48rem;
+  --shared-action-link-icon-translate: 0.12rem;
 }
 
 .services-sys-listing:focus-visible {

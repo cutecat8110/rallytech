@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ServiceCatalogItemMessages } from '~~/i18n/locales/types'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 
 const props = defineProps<{
   service: ServiceCatalogItemMessages
@@ -29,9 +30,7 @@ const { resolvedImage, handleImageError } = useServicePageImageAsset(
       />
     </template>
 
-    <h1 class="type-sys-display-l page-hero-shell__heading">
-      {{ service.shortLabel }}
-    </h1>
+    <SharedPageHeroTitle :title="service.shortLabel" />
   </PageHeroShell>
 </template>
 

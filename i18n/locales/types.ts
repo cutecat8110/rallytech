@@ -154,6 +154,11 @@ export interface ServicesPageMessages {
   hero: {
     title: string
   }
+  intro: {
+    kicker: string
+    title: string
+    description: string
+  }
   cardCtaLabel: string
   detailBackLabel: string
   detailFocusLabel: string
@@ -354,6 +359,7 @@ export interface ContactPageMessages {
     title: string
   }
   intro: {
+    kicker: string
     title: string
     paragraphs: string[]
   }

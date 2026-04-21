@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed, reactive } from 'vue'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 
 const messages = useRallyMessages()
 const toast = useToast()
@@ -161,23 +163,21 @@ function handleFormSubmit() {
         />
       </template>
 
-      <h1 class="type-sys-display-l page-hero-shell__heading">
-        {{ contactMessages.hero.title }}
-      </h1>
+      <SharedPageHeroTitle :title="contactMessages.hero.title" />
     </PageHeroShell>
 
     <section class="section-sys-shell contact-sys-main-section">
       <div class="page-sys-shell--wide">
         <div class="content-sys-rail contact-sys-main-grid">
           <article class="contact-sys-copy-panel">
-            <p class="contact-sys-copy-panel__eyebrow type-sys-label-m">
-              {{ messages.nav.contactCta }}
-            </p>
-            <h2
-              class="type-sys-display-m contact-sys-copy-panel__title text-neutral-950"
-            >
-              {{ contactMessages.intro.title }}
-            </h2>
+            <SharedSectionIntro
+              class="contact-sys-copy-panel__intro"
+              :kicker="contactMessages.intro.kicker"
+              :title="contactMessages.intro.title"
+              tone="light"
+              align="start"
+              density="compact"
+            />
 
             <div class="contact-sys-copy-panel__body">
               <p
@@ -415,43 +415,10 @@ function handleFormSubmit() {
   padding-top: 0.05rem;
 }
 
-.contact-sys-copy-panel__eyebrow {
-  position: relative;
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  color: color-mix(
-    in srgb,
-    var(--color-secondary-900) 82%,
-    var(--color-primary-700)
-  );
-  padding-inline-start: 0.8rem;
-}
-
-.contact-sys-copy-panel__eyebrow::before {
-  content: '';
-  position: absolute;
-  inset-inline-start: 0;
-  width: 2px;
-  height: 1.6rem;
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-900) 76%,
-    var(--color-primary-700)
-  );
-}
-
 .contact-sys-copy-panel__body {
   display: grid;
   gap: 0.9rem;
   max-width: 27rem;
-}
-
-.contact-sys-copy-panel__title {
-  max-width: 10ch;
-  font-size: clamp(1.75rem, 3vw, 2.4rem);
-  line-height: 1.06;
-  letter-spacing: -0.028em;
 }
 
 .contact-sys-copy-panel__body :deep(.type-sys-body-m) {

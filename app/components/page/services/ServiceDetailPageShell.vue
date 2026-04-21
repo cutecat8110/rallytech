@@ -97,6 +97,7 @@ const isDenseMobileService = computed(() =>
 
 .services-sys-detail-shell {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.85rem;
 }
 
@@ -284,22 +285,26 @@ const isDenseMobileService = computed(() =>
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-capabilities) {
+    :deep(.shared-point-list--variant-numbered) {
     gap: 1rem;
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-capabilities__item) {
-    padding: 0.92rem 0 0 3.15rem;
+    :deep(.shared-point-list--variant-numbered .shared-point-list__item) {
+    grid-template-columns: 2rem minmax(0, 1fr);
+    gap: 1.15rem;
+    padding-top: 0.92rem;
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-capabilities__item::before) {
-    top: 0.86rem;
+    :deep(
+      .shared-point-list--variant-numbered .shared-point-list__item:first-child
+    ) {
+    padding-top: 0;
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-capabilities__copy) {
+    :deep(.shared-point-list--variant-numbered .shared-point-list__copy) {
     gap: 0.62rem;
     margin-top: 0.55rem;
   }
@@ -325,7 +330,7 @@ const isDenseMobileService = computed(() =>
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-tag-list) {
+    :deep(.shared-point-list--variant-tag) {
     gap: 0.4rem 0.7rem;
   }
 

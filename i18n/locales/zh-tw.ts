@@ -11,56 +11,62 @@ const servicesCatalog = [
     shortLabel: 'SCADA / HMI 圖控',
     formalTitle: '監控與人機介面圖控服務',
     englishTitle: 'SCADA and HMI Graphics',
-    description: '提供操作畫面規劃，支援狀態判讀、告警脈絡與控制操作。'
+    description:
+      '把操作端需要看的狀態、告警與控制動作整理成清楚畫面，降低判讀與交接成本。'
   },
   {
     slug: 'ie-services',
     shortLabel: '儀電整合',
     formalTitle: '儀電整合服務',
     englishTitle: 'I&E Services',
-    description: '承接現場與試車支援，涵蓋 FAT / SAT、回路確認、啟動與排障。'
+    description: '確認儀表、回路與試車檢查，協助設備訊號一路銜接到啟動與排障。'
   },
   {
     slug: 'plc-dcs-programming-and-migration',
     shortLabel: 'PLC / DCS 程式與搬遷',
     formalTitle: '控制程式與系統搬遷服務',
     englishTitle: 'PLC & DCS Programming and Migration',
-    description: '承接控制邏輯開發、搬遷規劃與運轉中系統的分段切換。'
+    description: '處理控制邏輯調整、程式搬遷與切換規劃，讓既有系統能分段更新。'
   },
   {
     slug: 'pi-server',
     shortLabel: 'PI Server',
     formalTitle: '即時資料平台服務',
     englishTitle: 'PI Server',
-    description: '建置 PI 資料平台，支援蒐集、脈絡化與日常操作使用。'
+    description:
+      '把即時製程資料收進 PI 架構，建立可查詢、計算與日常操作使用的資料基礎。'
   },
   {
     slug: 'historians',
     shortLabel: 'Historians',
     formalTitle: '歷史資料平台服務',
     englishTitle: 'Historians',
-    description: '建立長期歷史資料平台，支援趨勢、報表、追溯與分析。'
+    description:
+      '保存長期製程紀錄，讓趨勢回顧、報表追蹤與異常排查有穩定資料來源。'
   },
   {
     slug: 'network-design',
     shortLabel: '工業網路設計',
     formalTitle: '工業網路設計服務',
     englishTitle: 'Network Design',
-    description: '規劃工業網路架構，支撐穩定通訊與後續擴充維護。'
+    description:
+      '整理控制網路拓樸、通訊分層與擴充邊界，支撐穩定連線與後續維護。'
   },
   {
     slug: 'remote-monitoring-and-data',
     shortLabel: '遠端監控與資料備援',
     formalTitle: '遠端監控與資料備援服務',
     englishTitle: 'Remote Monitoring and Data',
-    description: '建立遠端可視與資料回傳機制，支援分散據點與備援需求。'
+    description:
+      '讓分散設備與站點資料能遠端查看、回傳與備援，降低現場到場依賴。'
   },
   {
     slug: 'alarm-monitoring',
     shortLabel: '告警監控',
     formalTitle: '告警監控服務',
     englishTitle: 'Alarm Monitoring',
-    description: '建立告警路由與升級流程，讓事件能更快對應到處置。'
+    description:
+      '規劃告警分類、通知路徑與升級規則，讓事件從發生到處置更容易追蹤。'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -246,6 +252,12 @@ const messages = {
     hero: {
       title: '工業自動化服務範圍'
     },
+    intro: {
+      kicker: '服務導覽',
+      title: '依系統層級找到對應服務',
+      description:
+        '先確認需求落在哪一層：操作介面、現場儀電、控制邏輯、資料基礎、網路連線或事件處置，再進入對應服務內容。'
+    },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',
     detailFocusLabel: '快速看懂'
@@ -309,6 +321,7 @@ const messages = {
       title: '聯絡我們'
     },
     intro: {
+      kicker: '聯絡我們',
       title: '開始洽詢',
       paragraphs: [
         '若您要討論自動化整合、控制系統、試車支援或工廠資料需求，可從這裡開始。',

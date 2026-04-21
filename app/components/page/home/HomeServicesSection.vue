@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
+import SharedActionLink from '~/components/shared/SharedActionLink.vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import { enrichServiceCatalog } from '~/utils/services'
 
 const { resolvedImage: servicesSurfaceImage } =
@@ -35,14 +37,14 @@ const serviceItems = computed(() =>
 
     <div class="page-sys-shell--wide relative z-10">
       <div class="content-sys-rail">
-        <div class="mx-auto max-w-[38rem] text-center">
-          <p class="type-sys-kicker text-primary-300 uppercase">
-            {{ messages.home.services.kicker }}
-          </p>
-          <h2 class="type-sys-headline-l mt-3 text-white">
-            {{ messages.home.services.title }}
-          </h2>
-        </div>
+        <SharedSectionIntro
+          class="home-sys-services__intro"
+          :kicker="messages.home.services.kicker"
+          :title="messages.home.services.title"
+          tone="dark"
+          align="center"
+          density="compact"
+        />
 
         <div class="home-sys-services__grid">
           <NuxtLink
@@ -64,13 +66,12 @@ const serviceItems = computed(() =>
               {{ item.description }}
             </p>
 
-            <span class="home-sys-services__action type-sys-label-s">
-              <span>{{ messages.home.services.ctaLabel }}</span>
-              <UIcon
-                name="i-ic-baseline-arrow-forward"
-                class="home-sys-services__action-icon size-4"
-              />
-            </span>
+            <SharedActionLink
+              class="home-sys-services__action"
+              :label="messages.home.services.ctaLabel"
+              tone="dark"
+              size="sm"
+            />
           </NuxtLink>
         </div>
       </div>
@@ -115,6 +116,10 @@ const serviceItems = computed(() =>
   right: auto;
   left: max(1rem, calc(50% - 42rem));
   z-index: 0;
+}
+
+.home-sys-services__intro {
+  max-width: 38rem;
 }
 
 .home-sys-services__grid {
@@ -226,23 +231,7 @@ const serviceItems = computed(() =>
 }
 
 .home-sys-services__action {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  width: fit-content;
   margin-top: 0.95rem;
-  color: rgb(191 243 234 / 0.92);
-  transition:
-    color 180ms ease,
-    text-shadow 180ms ease;
-}
-
-.home-sys-services__action-icon {
-  flex-shrink: 0;
-  transform: translateX(0);
-  transition:
-    color 180ms ease,
-    transform 180ms ease;
 }
 
 .home-sys-services__column:hover .home-sys-services__icon,
@@ -268,13 +257,10 @@ const serviceItems = computed(() =>
 
 .home-sys-services__column:hover .home-sys-services__action,
 .home-sys-services__column:focus-visible .home-sys-services__action {
-  color: rgb(231 253 249 / 1);
-  text-shadow: 0 0.15rem 0.75rem rgb(4 9 14 / 0.24);
-}
+  --shared-action-link-color: rgb(231 253 249 / 1);
+  --shared-action-link-icon-translate: 0.16rem;
 
-.home-sys-services__column:hover .home-sys-services__action-icon,
-.home-sys-services__column:focus-visible .home-sys-services__action-icon {
-  transform: translateX(0.16rem);
+  text-shadow: 0 0.15rem 0.75rem rgb(4 9 14 / 0.24);
 }
 
 @media (min-width: 768px) {
@@ -289,13 +275,49 @@ const serviceItems = computed(() =>
     display: none;
   }
 
+  .home-sys-services__grid {
+    margin-top: 2rem;
+    gap: 0;
+  }
+
   .home-sys-services__column {
-    min-height: 10.75rem;
-    padding-right: 0.35rem;
+    display: grid;
+    grid-template-areas:
+      'icon title'
+      'icon copy'
+      '. action';
+    grid-template-columns: 2.35rem minmax(0, 1fr);
+    column-gap: 0.85rem;
+    min-height: auto;
+    padding: 1rem 0.15rem;
   }
 
   .home-sys-services__column::before {
-    inset: 0.62rem -0.2rem -0.12rem -0.2rem;
+    inset: 0.42rem -0.45rem 0.28rem -0.45rem;
+  }
+
+  .home-sys-services__icon {
+    grid-area: icon;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-top: 0.1rem;
+  }
+
+  .home-sys-services__title {
+    grid-area: title;
+    max-width: none;
+    margin-top: 0;
+  }
+
+  .home-sys-services__copy {
+    grid-area: copy;
+    max-width: none;
+    margin-top: 0.4rem;
+  }
+
+  .home-sys-services__action {
+    grid-area: action;
+    margin-top: 0.65rem;
   }
 }
 

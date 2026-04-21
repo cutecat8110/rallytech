@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 
 const messages = useRallyMessages()
 const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
@@ -23,9 +24,7 @@ const { resolvedImage, handleImageError } = useServicesOverviewHeroImageAsset()
       />
     </template>
 
-    <h1 class="type-sys-display-l page-hero-shell__heading">
-      {{ messages.servicesPage.hero.title }}
-    </h1>
+    <SharedPageHeroTitle :title="messages.servicesPage.hero.title" />
   </PageHeroShell>
 </template>
 

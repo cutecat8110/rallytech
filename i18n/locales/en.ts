@@ -12,7 +12,7 @@ const servicesCatalog = [
     formalTitle: 'SCADA and HMI Graphics',
     englishTitle: 'SCADA and HMI Graphics',
     description:
-      'Operator-facing graphics for status, alarms, and control actions at the screen level.'
+      'Turn operating states, alarms, and control actions into screens operators can read and act on quickly.'
   },
   {
     slug: 'ie-services',
@@ -20,7 +20,7 @@ const servicesCatalog = [
     formalTitle: 'I&E Services',
     englishTitle: 'I&E Services',
     description:
-      'Field and commissioning support for testing, startup, loop checks, and issue isolation.'
+      'Verify instruments, loops, and commissioning checks so field signals are ready for startup and troubleshooting.'
   },
   {
     slug: 'plc-dcs-programming-and-migration',
@@ -28,7 +28,7 @@ const servicesCatalog = [
     formalTitle: 'PLC & DCS Programming and Migration',
     englishTitle: 'PLC & DCS Programming and Migration',
     description:
-      'Control logic upgrades, migration sequencing, and cutover support for running systems.'
+      'Plan control-logic changes, migration steps, and cutover sequencing for systems that must keep running.'
   },
   {
     slug: 'pi-server',
@@ -36,7 +36,7 @@ const servicesCatalog = [
     formalTitle: 'PI Server',
     englishTitle: 'PI Server',
     description:
-      'PI infrastructure for plant data collection, contextualization, and daily use.'
+      'Build PI data foundations that make live process values available for queries, calculations, and daily operations.'
   },
   {
     slug: 'historians',
@@ -44,7 +44,7 @@ const servicesCatalog = [
     formalTitle: 'Historians',
     englishTitle: 'Historians',
     description:
-      'Long-term process records for trends, reports, traceability, and analysis.'
+      'Maintain long-term process records for trend review, report follow-up, and abnormal-condition analysis.'
   },
   {
     slug: 'network-design',
@@ -52,7 +52,7 @@ const servicesCatalog = [
     formalTitle: 'Network Design',
     englishTitle: 'Network Design',
     description:
-      'Industrial network architecture that supports stable communications and maintainable expansion.'
+      'Define control-network topology, communication layers, and expansion boundaries for maintainable connectivity.'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -60,7 +60,7 @@ const servicesCatalog = [
     formalTitle: 'Remote Monitoring and Data',
     englishTitle: 'Remote Monitoring and Data',
     description:
-      'Remote visibility and data relay for distributed sites, assets, and backup paths.'
+      'Connect distributed assets and sites for remote visibility, data relay, and backup paths when teams are off site.'
   },
   {
     slug: 'alarm-monitoring',
@@ -68,7 +68,7 @@ const servicesCatalog = [
     formalTitle: 'Alarm Monitoring',
     englishTitle: 'Alarm Monitoring',
     description:
-      'Alarm routing and escalation workflows that connect events to response.'
+      'Shape alarm classification, notification paths, and escalation rules so events are easier to track through response.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -259,6 +259,12 @@ const messages = {
     hero: {
       title: 'Industrial Automation Service Scopes'
     },
+    intro: {
+      kicker: 'Service Guide',
+      title: 'Find the right service by system layer',
+      description:
+        'Use this overview to locate the layer that needs work: operator interfaces, field I/O, control logic, plant data, network foundation, remote access, or event response.'
+    },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Scope at a Glance'
@@ -317,6 +323,7 @@ const messages = {
       title: 'Contact Us'
     },
     intro: {
+      kicker: 'Contact Us',
       title: 'Start an Inquiry',
       paragraphs: [
         'Use this page when you need to discuss automation integration, control systems, commissioning support, or plant-data delivery.',

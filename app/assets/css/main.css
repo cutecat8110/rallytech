@@ -492,6 +492,10 @@ body,
   background: color-mix(in srgb, var(--color-primary-500) 18%, transparent);
 }
 
+:where(section[id]) {
+  scroll-margin-top: calc(var(--ui-header-height) + var(--space-40));
+}
+
 .page-sys-shell {
   width: 100%;
   max-width: var(--layout-content-max);

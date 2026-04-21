@@ -251,6 +251,12 @@ const messages = {
     hero: {
       title: 'Core Services for Industrial Automation Delivery'
     },
+    intro: {
+      kicker: 'Source Guide',
+      title: 'Map the source-reference service areas',
+      description:
+        'Use this hidden source layer to compare the reference service categories before rewriting visible Rally Technology copy.'
+    },
     cardCtaLabel: 'Read more',
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Source Reference Focus'
@@ -309,6 +315,7 @@ const messages = {
       title: 'Contact Us'
     },
     intro: {
+      kicker: 'Contact Us',
       title: 'Contact Us',
       paragraphs: [
         'If you are evaluating automation integration, control systems, commissioning support, or plant-data needs, contact Pentagon Engineering.',

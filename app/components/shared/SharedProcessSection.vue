@@ -1,13 +1,18 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 
-defineProps<{
+const props = defineProps<{
   source: 'home' | 'about'
 }>()
 
 const messages = useRallyMessages()
 
-const processData = computed(() => messages.value.aboutPage.process)
+const processData = computed(() =>
+  props.source === 'home'
+    ? messages.value.home.process
+    : messages.value.aboutPage.process
+)
 
 const processIcons = [
   'i-lucide-clipboard-list',
@@ -27,19 +32,14 @@ const processSteps = computed(() =>
 <template>
   <section id="process" class="section-sys-shell bg-white">
     <div class="page-sys-shell--wide">
-      <div class="shared-sys-process__heading text-center">
-        <p
-          v-if="processData.kicker"
-          class="shared-sys-process__kicker type-sys-kicker text-primary-700 uppercase"
-        >
-          {{ processData.kicker }}
-        </p>
-        <h2
-          class="shared-sys-process__title type-sys-headline-l text-neutral-900"
-        >
-          {{ processData.title }}
-        </h2>
-      </div>
+      <SharedSectionIntro
+        class="shared-sys-process__heading"
+        :kicker="processData.kicker"
+        :title="processData.title"
+        tone="light"
+        align="center"
+        density="compact"
+      />
 
       <div class="shared-sys-process__grid">
         <article
@@ -69,25 +69,6 @@ const processSteps = computed(() =>
 <style scoped>
 .shared-sys-process__heading {
   max-width: 32rem;
-  margin-inline: auto;
-}
-
-.shared-sys-process__kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
-.shared-sys-process__kicker::before {
-  content: '';
-  display: inline-block;
-  width: 0.16rem;
-  height: 1.55rem;
-  background: currentColor;
-}
-
-.shared-sys-process__title {
-  margin-top: 1.35rem;
 }
 
 .shared-sys-process__grid {
@@ -218,18 +199,63 @@ const processSteps = computed(() =>
 }
 
 @media (max-width: 767px) {
+  .shared-sys-process__grid {
+    margin-top: 2rem;
+    gap: 0;
+  }
+
+  .shared-sys-process__step {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    align-items: center;
+    gap: 1rem;
+    padding-block: 0.95rem;
+    border-top: 1px solid
+      color-mix(
+        in srgb,
+        var(--color-secondary-950) 8%,
+        var(--color-border-subtle)
+      );
+    text-align: left;
+  }
+
+  .shared-sys-process__step:first-child {
+    border-top: none;
+  }
+
+  .shared-sys-process__step:hover {
+    transform: none;
+  }
+
   .shared-sys-process__orbit {
-    width: min(100%, 12rem);
+    width: 3.6rem;
+    box-shadow:
+      inset 0 0 0 0.35rem rgb(255 255 255 / 0.74),
+      0 0.75rem 1.4rem rgb(15 23 42 / 0.06);
+  }
+
+  .shared-sys-process__orbit::before {
+    inset: 0.5rem;
   }
 
   .shared-sys-process__icon {
-    width: 4rem;
-    height: 4rem;
+    width: 2rem;
+    height: 2rem;
   }
 
   .shared-sys-process__number {
-    width: 3.2rem;
-    height: 3.2rem;
+    right: -0.4rem;
+    bottom: -0.25rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-width: 0.16rem;
+    box-shadow: 0 0.45rem 0.9rem rgb(15 23 42 / 0.14);
+    font-size: 0.62rem;
+  }
+
+  .shared-sys-process__label {
+    max-width: none;
+    margin-top: 0;
   }
 }
 </style>

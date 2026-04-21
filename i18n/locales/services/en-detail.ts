@@ -14,7 +14,7 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Readable screens', 'Alarm context', 'Easy upkeep'],
     introParagraphs: [
-      'Rally Technology designs SCADA / HMI graphics that help operators read status, alarms, and next actions at a glance.',
+      'Before SCADA / HMI graphics are drawn, the working question is what operators need to recognize during normal operation, abnormal conditions, and handover.',
       'We organize screen hierarchy, naming, and navigation so the interface stays clear during commissioning, daily use, and later screen updates.'
     ],
     sidebar: sharedSidebar,
@@ -98,7 +98,7 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Field ready', 'FAT / SAT', 'Startup support'],
     introParagraphs: [
-      'Rally Technology supports instrumentation and electrical work across FAT / SAT, loop checks, startup, and field troubleshooting.',
+      'I&E support starts by putting field signals, loop status, and commissioning checkpoints on one traceable work path.',
       'The goal is to get systems ready for site work, isolate issues faster, and keep commissioning decisions aligned across teams.'
     ],
     sidebar: sharedSidebar,
@@ -249,8 +249,8 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Cutover path', 'Risk control', 'Maintainable logic'],
     introParagraphs: [
-      'Rally Technology supports PLC / DCS programming, migration planning, and staged cutover for running systems.',
-      'The work centers on a sequence the field can execute, with logic that stays readable during testing, cutover, and later maintenance.'
+      'PLC / DCS work often happens while the system still needs to run, so the first task is to define steps the field can actually execute.',
+      'The work centers on a sequence that can be tested, cut over, and reviewed while keeping the logic readable for later maintenance.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -366,8 +366,8 @@ export const serviceDetailPagesEn = {
       'Easier integration'
     ],
     introParagraphs: [
-      'Rally Technology uses PI Server to build plant-data platforms for monitoring, reporting, and cross-system use.',
-      'The goal is to create a data backbone other teams can actually connect to, not simply to collect more tags.'
+      'For PI Server, the key question is whether values remain usable after they enter the platform: searchable, calculable, and ready to connect with other systems.',
+      'We review data sources, naming, and usage patterns so the platform becomes a data backbone teams can work from, not just a larger tag collection.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -465,7 +465,7 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Traceable history', 'Redundant access', 'Reports ready'],
     introParagraphs: [
-      'Rally Technology plans historian environments for long-term records, trend comparison, traceability, and reporting.',
+      'A historian is not only a place to store records. It has to keep process history retrievable, comparable, and explainable over time.',
       'We focus on retention windows, access patterns, and redundancy so records remain usable months or years later.'
     ],
     sidebar: sharedSidebar,
@@ -551,8 +551,8 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Clear topology', 'Resilient segments', 'Room to expand'],
     introParagraphs: [
-      'Rally Technology plans industrial network architecture for control traffic, field devices, and plant data systems.',
-      'We define boundaries, segmentation, and growth paths early so the network does not become the weak point of the automation stack.'
+      'Industrial network design starts with the relationship between control traffic, data movement, remote access, and expansion boundaries.',
+      'We define layers, segmentation, and maintenance paths early so the network does not become the weak point of the automation stack.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -639,7 +639,7 @@ export const serviceDetailPagesEn = {
       'Recovery readiness'
     ],
     introParagraphs: [
-      'Rally Technology helps build remote monitoring and data-continuity workflows for distributed sites and critical records.',
+      'Remote monitoring and data backup have to answer three questions together: can teams see it, can data return, and can records still be reviewed after an event?',
       'We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought.'
     ],
     sidebar: sharedSidebar,
@@ -731,8 +731,8 @@ export const serviceDetailPagesEn = {
     },
     heroFocusItems: ['Clear priorities', 'Faster judgment', 'Less alarm noise'],
     introParagraphs: [
-      'Rally Technology develops alarm strategies and notification workflows that help teams respond to the right events faster.',
-      'We focus on alarm priority, context, and escalation so operators spend less time sorting noise and more time acting on real conditions.'
+      'Alarm monitoring has to make priority, event context, and the next response path clear to the operator.',
+      'We align conditions, notifications, and escalation logic so teams spend less time sorting noise and more time acting on real conditions.'
     ],
     sidebar: sharedSidebar,
     blocks: [
