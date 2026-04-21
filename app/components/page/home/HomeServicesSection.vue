@@ -88,8 +88,8 @@ const serviceItems = computed(() =>
       rgb(4 9 14 / 0.52) 64%,
       rgb(4 9 14 / 0.68) 100%
     ),
-    radial-gradient(circle at 78% 20%, rgb(48 187 165 / 0.14), transparent 30%),
-    var(--home-services-surface-image) 72% center / cover no-repeat,
+    radial-gradient(circle at 68% 20%, rgb(48 187 165 / 0.12), transparent 30%),
+    var(--home-services-surface-image) 58% center / cover no-repeat,
     linear-gradient(145deg, rgb(255 255 255 / 0.08), rgb(255 255 255 / 0) 42%),
     repeating-linear-gradient(
       -34deg,
@@ -111,13 +111,16 @@ const serviceItems = computed(() =>
   --motif-position: absolute;
 
   position: absolute;
-  top: clamp(3rem, 7vw, 5.75rem);
-  right: clamp(1.25rem, 8vw, 8rem);
-  z-index: 1;
+  top: clamp(4.6rem, 7vw, 6.1rem);
+  right: auto;
+  left: max(1rem, calc(50% - 42rem));
+  z-index: 0;
 }
 
 .home-sys-services__grid {
   margin-top: 2.5rem;
+  max-width: 76rem;
+  margin-inline: auto;
   display: grid;
   gap: 1.8rem 1.5rem;
 }

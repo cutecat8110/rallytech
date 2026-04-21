@@ -30,7 +30,7 @@ const aboutPoints = computed(() =>
   <section id="about" class="section-sys-shell bg-white">
     <div class="page-sys-shell">
       <div
-        class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-16 xl:gap-20"
+        class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-14 xl:gap-16"
       >
         <article class="home-sys-about__copy max-w-lg">
           <p
@@ -70,24 +70,12 @@ const aboutPoints = computed(() =>
         </article>
 
         <figure
-          class="home-sys-about__media-composite justify-self-center"
+          class="home-sys-about__media-composite justify-self-center lg:justify-self-start"
           :aria-label="messages.home.about.mediaLabel"
         >
           <div class="home-sys-about__media-clip">
             <div
               class="home-sys-about__media-pane home-sys-about__media-pane--primary"
-            >
-              <img
-                :src="aboutPrimaryImage.src"
-                :alt="
-                  aboutPrimaryImage.alt || messages.home.about.primaryImageAlt
-                "
-                class="home-sys-about__media-image home-sys-about__media-image--primary"
-                @error="handleAboutPrimaryError"
-              />
-            </div>
-            <div
-              class="home-sys-about__media-pane home-sys-about__media-pane--detail"
             >
               <img
                 :src="aboutDetailImage.src"
@@ -96,6 +84,18 @@ const aboutPoints = computed(() =>
                 "
                 class="home-sys-about__media-image home-sys-about__media-image--detail"
                 @error="handleAboutDetailError"
+              />
+            </div>
+            <div
+              class="home-sys-about__media-pane home-sys-about__media-pane--detail"
+            >
+              <img
+                :src="aboutPrimaryImage.src"
+                :alt="
+                  aboutPrimaryImage.alt || messages.home.about.primaryImageAlt
+                "
+                class="home-sys-about__media-image home-sys-about__media-image--primary"
+                @error="handleAboutPrimaryError"
               />
             </div>
           </div>
@@ -148,8 +148,8 @@ const aboutPoints = computed(() =>
 .home-sys-about__media-composite {
   position: relative;
   isolation: isolate;
-  width: min(100%, 36.5rem);
-  min-height: clamp(22rem, 27vw, 27rem);
+  width: min(100%, 34.75rem);
+  min-height: clamp(21rem, 25vw, 25.5rem);
   margin-inline: auto;
 }
 
@@ -170,21 +170,21 @@ const aboutPoints = computed(() =>
 
 .home-sys-about__media-pane--primary {
   top: clamp(0.4rem, 1vw, 0.8rem);
-  left: 0;
-  z-index: 2;
-  width: 78%;
-  height: 68%;
+  right: 0;
+  z-index: 1;
+  width: 74%;
+  height: 62%;
   border-radius: 1.1rem;
 }
 
 .home-sys-about__media-pane--detail {
-  right: 0;
+  left: 0;
   bottom: clamp(0.5rem, 1vw, 0.75rem);
-  z-index: 1;
-  width: 44%;
-  height: 38%;
+  z-index: 2;
+  width: 66%;
+  height: 56%;
   border-radius: 0.9rem;
-  opacity: 0.88;
+  opacity: 1;
 }
 
 .home-sys-about__media-image {
@@ -207,11 +207,18 @@ const aboutPoints = computed(() =>
   --motif-position: absolute;
 
   position: absolute;
-  bottom: clamp(0.35rem, 1vw, 0.7rem);
-  left: clamp(-0.45rem, -0.7vw, -0.2rem);
+  right: -0.5rem;
+  bottom: -0.25rem;
   z-index: 3;
-  transform: scale(0.6);
+  transform: none;
   transform-origin: bottom left;
+}
+
+@media (min-width: 1024px) {
+  .home-sys-about__media-composite {
+    width: min(100%, 33.75rem);
+    margin-inline: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -225,23 +232,23 @@ const aboutPoints = computed(() =>
   }
 
   .home-sys-about__media-pane--primary {
-    width: 100%;
-    height: 64%;
+    width: 94%;
+    height: 60%;
     border-radius: 1rem;
   }
 
   .home-sys-about__media-pane--detail {
     bottom: 0;
-    right: 0.5rem;
-    width: 54%;
-    height: 34%;
+    left: 0;
+    width: 84%;
+    height: 48%;
     border-radius: 0.85rem;
   }
 
   .home-sys-about__motif {
-    bottom: 0.2rem;
-    left: -0.1rem;
-    transform: scale(0.48);
+    right: -0.25rem;
+    bottom: -0.2rem;
+    transform: none;
   }
 }
 </style>

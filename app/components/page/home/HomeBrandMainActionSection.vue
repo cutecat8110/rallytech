@@ -120,7 +120,7 @@ const missionTabsUi = {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 82% 18%, rgb(48 187 165 / 0.12), transparent 24%),
+    radial-gradient(circle at 76% 18%, rgb(48 187 165 / 0.12), transparent 24%),
     linear-gradient(180deg, rgb(255 255 255 / 0.96), rgb(245 247 248 / 0.94));
 }
 
@@ -209,8 +209,8 @@ const missionTabsUi = {
 .home-sys-mission__figure {
   position: relative;
   min-height: clamp(21rem, 34vw, 29rem);
-  width: min(100%, 29rem);
-  justify-self: end;
+  width: min(100%, 26.5rem);
+  justify-self: center;
 }
 
 .home-sys-mission__cutout {
