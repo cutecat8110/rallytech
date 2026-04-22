@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import { lightSolidButtonTheme } from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
@@ -135,14 +136,15 @@ function handleBackToTop() {
         <div class="home-sys-footer__connector-layout">
           <div class="home-sys-footer__connector-spacer" aria-hidden="true" />
 
-          <div class="home-sys-footer__connector-copy">
-            <h2
-              id="footer-connector-heading"
-              class="home-sys-footer__connector-heading"
-            >
-              {{ footerMessages.connectorHeading }}
-            </h2>
-          </div>
+          <SharedContentHeader
+            class="home-sys-footer__connector-copy"
+            :title="footerMessages.connectorHeading"
+            title-id="footer-connector-heading"
+            tone="dark"
+            scale="closing"
+            density="compact"
+            title-tag="h2"
+          />
 
           <div class="home-sys-footer__connector-action">
             <UTheme :ui="lightSolidButtonTheme">
@@ -179,15 +181,16 @@ function handleBackToTop() {
             class="home-sys-footer__newsletter"
             aria-labelledby="footer-newsletter-heading"
           >
-            <h3
-              id="footer-newsletter-heading"
-              class="type-sys-headline-s home-sys-footer__section-title"
-            >
-              {{ footerMessages.newsletterHeading }}
-            </h3>
-            <p class="type-sys-body-s home-sys-footer__newsletter-description">
-              {{ footerMessages.newsletterDescription }}
-            </p>
+            <SharedContentHeader
+              class="home-sys-footer__section-header home-sys-footer__section-header--newsletter"
+              :title="footerMessages.newsletterHeading"
+              :description="footerMessages.newsletterDescription"
+              title-id="footer-newsletter-heading"
+              tone="dark"
+              scale="block"
+              density="compact"
+              title-tag="h3"
+            />
 
             <form
               class="home-sys-footer__newsletter-form"
@@ -220,12 +223,15 @@ function handleBackToTop() {
             class="home-sys-footer__contacts"
             aria-labelledby="footer-contacts-heading"
           >
-            <h3
-              id="footer-contacts-heading"
-              class="type-sys-headline-s home-sys-footer__section-title"
-            >
-              {{ footerMessages.contactsHeading }}
-            </h3>
+            <SharedContentHeader
+              class="home-sys-footer__section-header"
+              :title="footerMessages.contactsHeading"
+              title-id="footer-contacts-heading"
+              tone="dark"
+              scale="block"
+              density="compact"
+              title-tag="h3"
+            />
 
             <div class="home-sys-footer__contact-list">
               <a
@@ -378,18 +384,12 @@ function handleBackToTop() {
 }
 
 .home-sys-footer__connector-copy {
-  display: flex;
-  align-items: center;
   justify-content: flex-start;
+  --shared-content-header-title-color: var(--color-white);
 }
 
-.home-sys-footer__connector-heading {
+.home-sys-footer__connector-copy :deep(.shared-content-header__title) {
   max-width: 9ch;
-  font-size: clamp(2rem, 4vw, 2.95rem);
-  line-height: 1;
-  letter-spacing: -0.03em;
-  font-weight: 700;
-  text-wrap: balance;
 }
 
 .home-sys-footer__connector-action {
@@ -431,18 +431,18 @@ function handleBackToTop() {
   color: rgb(255 255 255 / 0.58);
 }
 
-.home-sys-footer__section-title {
-  color: var(--color-text-inverse);
-}
-
 .home-sys-footer__newsletter {
   display: grid;
   gap: 0.9rem;
 }
 
-.home-sys-footer__newsletter-description {
+.home-sys-footer__section-header {
+  --shared-content-header-title-color: var(--color-text-inverse);
+}
+
+.home-sys-footer__section-header--newsletter
+  :deep(.shared-content-header__description) {
   max-width: 24rem;
-  color: rgb(255 255 255 / 0.76);
 }
 
 .home-sys-footer__newsletter-form {
@@ -599,7 +599,7 @@ function handleBackToTop() {
     justify-items: start;
   }
 
-  .home-sys-footer__connector-heading {
+  .home-sys-footer__connector-copy :deep(.shared-content-header__title) {
     max-width: 8ch;
   }
 
@@ -643,11 +643,10 @@ function handleBackToTop() {
   }
 
   .home-sys-footer__connector-copy {
-    justify-content: center;
     text-align: center;
   }
 
-  .home-sys-footer__connector-heading {
+  .home-sys-footer__connector-copy :deep(.shared-content-header__title) {
     max-width: none;
   }
 

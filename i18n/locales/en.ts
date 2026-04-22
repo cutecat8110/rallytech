@@ -5,6 +5,8 @@ import type {
   ServiceCatalogItemMessages
 } from './types'
 
+// Manual copy lock: services overview copy maps docs/rewrite/文案.md (2026-04-22).
+// Do not rewrite this public i18n copy without a new manual rewrite source.
 const servicesCatalog = [
   {
     slug: 'scada-hmi-graphics',
@@ -252,18 +254,19 @@ const messages = {
   servicesCatalog,
   servicesPage: {
     seo: {
-      title: 'Services | Rally Technology',
+      title:
+        'IT / OT Integration and Cybersecurity Solutions | Rally Technology',
       description:
-        'Browse Rally Technology service scopes for control interfaces, field support, control migration, plant-data platforms, industrial networks, remote monitoring, and alarm workflows.'
+        'Rally Technology provides IT / OT integration services across enterprise IT infrastructure, industrial networks, cybersecurity, remote operations, and alarm monitoring.'
     },
     hero: {
-      title: 'Industrial Automation Service Scopes'
+      title: 'IT / OT Integration and Cybersecurity Solutions'
     },
     intro: {
       kicker: 'Service Guide',
-      title: 'Find the right service by system layer',
+      title: 'From IT infrastructure to OT field operations',
       description:
-        'Use this overview to locate the layer that needs work: operator interfaces, field I/O, control logic, plant data, network foundation, remote access, or event response.'
+        'Use this overview to locate the layer that needs work: operator interfaces, field instrumentation, control logic, data platforms, IT / OT networks, remote operations, or alarm events.'
     },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',

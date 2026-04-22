@@ -5,6 +5,7 @@ import {
   resolveServiceImageAsset
 } from '~/composables/useServicePageImageAsset'
 import SharedActionLink from '~/components/shared/SharedActionLink.vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import { enrichServiceCatalog } from '~/utils/services'
 import { getServicePageImageEntry } from '~/utils/service-page-image-registry'
@@ -91,17 +92,16 @@ const serviceItems = computed(() =>
             </div>
 
             <div class="services-sys-listing__body">
-              <p class="type-sys-label-s services-sys-listing__eyebrow">
-                {{ item.englishTitle }}
-              </p>
-
-              <h2 class="type-sys-headline-s services-sys-listing__title">
-                {{ item.shortLabel }}
-              </h2>
-
-              <p class="type-sys-body-s services-sys-listing__description">
-                {{ item.description }}
-              </p>
+              <SharedContentHeader
+                class="services-sys-listing__content-header"
+                :eyebrow="item.englishTitle"
+                :title="item.shortLabel"
+                :description="item.description"
+                tone="light"
+                scale="item"
+                density="compact"
+                title-tag="h2"
+              />
 
               <SharedActionLink
                 class="services-sys-listing__cta"
@@ -198,27 +198,27 @@ const serviceItems = computed(() =>
   gap: 0.55rem;
 }
 
-.services-sys-listing__eyebrow {
-  color: rgb(77 87 92 / 0.74);
-  letter-spacing: 0.11em;
-  text-transform: uppercase;
+.services-sys-listing__content-header {
+  max-width: 31rem;
+  --shared-content-header-eyebrow-color: rgb(77 87 92 / 0.74);
+  --shared-content-header-title-color: var(--color-secondary-950);
+  --shared-content-header-description-color: var(--color-text-secondary);
+}
+
+.services-sys-listing__content-header :deep(.shared-content-header__title) {
+  max-width: 17ch;
+}
+
+.services-sys-listing__content-header :deep(.shared-content-header__eyebrow) {
   line-height: 1.15;
   font-size: 0.64rem;
+  letter-spacing: 0.11em;
 }
 
-.services-sys-listing__title {
-  color: var(--color-secondary-950);
-  line-height: 1.08;
-  max-width: 17ch;
-  text-wrap: balance;
-}
-
-.services-sys-listing__description {
+.services-sys-listing__content-header
+  :deep(.shared-content-header__description) {
   max-width: 31rem;
-  margin-top: 0.2rem;
-  color: var(--color-text-secondary);
   line-height: 1.65;
-  text-wrap: pretty;
 }
 
 .services-sys-listing__cta {
@@ -231,9 +231,9 @@ const serviceItems = computed(() =>
   transform: scale(1.02);
 }
 
-.services-sys-listing:hover .services-sys-listing__title,
-.services-sys-listing:focus-visible .services-sys-listing__title {
-  color: color-mix(
+.services-sys-listing:hover .services-sys-listing__content-header,
+.services-sys-listing:focus-visible .services-sys-listing__content-header {
+  --shared-content-header-title-color: color-mix(
     in srgb,
     var(--color-primary-800) 26%,
     var(--color-secondary-950)
@@ -290,7 +290,7 @@ const serviceItems = computed(() =>
     aspect-ratio: 16 / 10;
   }
 
-  .services-sys-listing__title {
+  .services-sys-listing__content-header :deep(.shared-content-header__title) {
     max-width: 14ch;
   }
 }

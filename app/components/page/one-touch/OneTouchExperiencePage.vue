@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 import type {
   OneTouchModuleId,
@@ -138,18 +139,16 @@ const secondVisual = computed(() => ({
               :key="item.id"
               class="one-touch-page__module"
             >
-              <h2 class="one-touch-page__module-title type-sys-headline-l">
-                {{ item.title }}
-              </h2>
-              <p
-                v-if="item.secondaryTitle"
-                class="one-touch-page__module-secondary-title type-sys-title-m"
-              >
-                {{ item.secondaryTitle }}
-              </p>
-              <p class="one-touch-page__module-description type-sys-body-m">
-                {{ item.description }}
-              </p>
+              <SharedContentHeader
+                class="one-touch-page__module-header"
+                :title="item.title"
+                :subtitle="item.secondaryTitle"
+                :description="item.description"
+                tone="light"
+                scale="module"
+                density="compact"
+                title-tag="h2"
+              />
             </article>
           </div>
         </div>
@@ -165,18 +164,16 @@ const secondVisual = computed(() => ({
               :key="item.id"
               class="one-touch-page__module"
             >
-              <h2 class="one-touch-page__module-title type-sys-headline-l">
-                {{ item.title }}
-              </h2>
-              <p
-                v-if="item.secondaryTitle"
-                class="one-touch-page__module-secondary-title type-sys-title-m"
-              >
-                {{ item.secondaryTitle }}
-              </p>
-              <p class="one-touch-page__module-description type-sys-body-m">
-                {{ item.description }}
-              </p>
+              <SharedContentHeader
+                class="one-touch-page__module-header"
+                :title="item.title"
+                :subtitle="item.secondaryTitle"
+                :description="item.description"
+                tone="light"
+                scale="module"
+                density="compact"
+                title-tag="h2"
+              />
             </article>
           </div>
 
@@ -268,26 +265,10 @@ const secondVisual = computed(() => ({
   border-block-start: 1px solid var(--color-border-subtle);
 }
 
-.one-touch-page__module-title {
-  color: var(--color-secondary-950);
-  letter-spacing: 0;
-  text-wrap: balance;
-}
-
-.one-touch-page__module-secondary-title {
-  color: color-mix(
-    in srgb,
-    var(--color-secondary-950) 56%,
-    var(--color-primary-700)
-  );
-  margin-block-start: -0.42rem;
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-.one-touch-page__module-description {
-  color: var(--color-text-secondary);
-  text-wrap: pretty;
+.one-touch-page__module-header {
+  --shared-content-header-title-color: var(--color-secondary-950);
+  --shared-content-header-description-color: var(--color-text-secondary);
+  --shared-content-header-subtitle-gap: -0.1rem;
 }
 
 .one-touch-page__visual {

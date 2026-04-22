@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPointList from '~/components/shared/SharedPointList.vue'
+import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 import type { ServiceDetailMediaFeatureBlockMessages } from '~~/i18n/locales/types'
 
 const props = defineProps<{
   block: ServiceDetailMediaFeatureBlockMessages
+  eyebrow?: string
 }>()
 
 const { resolvedImage, handleImageError } = useServicePageImageAsset(
@@ -34,19 +37,22 @@ const highlightItems = computed(() =>
     </div>
 
     <div class="services-sys-detail-media-feature__body">
-      <h3 class="type-sys-headline-s text-neutral-950">
-        {{ block.title }}
-      </h3>
+      <SharedContentHeader
+        :eyebrow="props.eyebrow"
+        :title="block.title"
+        tone="light"
+        scale="block"
+        density="compact"
+        title-tag="h3"
+      />
 
-      <div class="services-sys-detail-media-feature__copy">
-        <p
-          v-for="paragraph in block.paragraphs"
-          :key="paragraph"
-          class="type-sys-body-s text-neutral-700"
-        >
-          {{ paragraph }}
-        </p>
-      </div>
+      <SharedTextStack
+        class="services-sys-detail-media-feature__copy"
+        :paragraphs="block.paragraphs"
+        tone="light"
+        size="sm"
+        density="compact"
+      />
 
       <SharedPointList
         v-if="highlightItems.length"
@@ -89,9 +95,6 @@ const highlightItems = computed(() =>
 }
 
 .services-sys-detail-media-feature__copy {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
   margin-top: 0.7rem;
 }
 

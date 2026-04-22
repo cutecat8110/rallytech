@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 
 const messages = useRallyMessages()
 const { resolvedImage: surfaceImage } =
@@ -37,9 +38,15 @@ const capabilitySurfaceStyle = computed(() => ({
     <div class="page-sys-shell--wide relative z-10">
       <div class="about-sys-capabilities__grid">
         <div class="about-sys-capabilities__lead">
-          <h2 class="about-sys-capabilities__title type-sys-headline-l">
-            {{ messages.aboutPage.capabilities.title }}
-          </h2>
+          <SharedContentHeader
+            class="about-sys-capabilities__title"
+            :title="messages.aboutPage.capabilities.title"
+            tone="dark"
+            align="center"
+            scale="module"
+            density="compact"
+            title-tag="h2"
+          />
         </div>
 
         <article
@@ -138,9 +145,6 @@ const capabilitySurfaceStyle = computed(() => ({
 .about-sys-capabilities__title {
   max-width: 7em;
   margin-inline: auto;
-  color: white;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
 }
 
 .about-sys-capabilities__icon {
@@ -192,10 +196,6 @@ const capabilitySurfaceStyle = computed(() => ({
   .about-sys-capabilities__tile {
     min-height: 8.75rem;
     padding: 1.5rem;
-  }
-
-  .about-sys-capabilities__title {
-    font-size: clamp(2.25rem, 9vw, 2.75rem);
   }
 }
 </style>

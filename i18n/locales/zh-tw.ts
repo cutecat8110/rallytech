@@ -5,6 +5,8 @@ import type {
   ServiceCatalogItemMessages
 } from './types'
 
+// Manual copy lock: services overview copy maps docs/rewrite/文案.md (2026-04-22).
+// Do not rewrite this public i18n copy without a new manual rewrite source.
 const servicesCatalog = [
   {
     slug: 'scada-hmi-graphics',
@@ -245,18 +247,18 @@ const messages = {
   servicesCatalog,
   servicesPage: {
     seo: {
-      title: '服務項目 | 雷力科技 Rally Technology',
+      title: 'IT / OT 整合與資安防護解決方案 | 雷力科技 Rally Technology',
       description:
-        '瀏覽雷力科技的服務範圍，涵蓋操作畫面、現場支援、控制搬遷、資料平台、工業網路、遠端監控與告警流程。'
+        '雷力科技提供橫跨 IT 與 OT 的整合服務，涵蓋企業 IT 基礎建設、工業網路、資安防護、遠端維運與告警監控。'
     },
     hero: {
-      title: '工業自動化服務範圍'
+      title: 'IT / OT 整合與資安防護解決方案'
     },
     intro: {
       kicker: '服務導覽',
-      title: '依系統層級找到對應服務',
+      title: '從 IT 基礎建設到 OT 現場維運',
       description:
-        '先確認需求落在哪一層：操作介面、現場儀電、控制邏輯、資料基礎、網路連線或事件處置，再進入對應服務內容。'
+        '先從系統層級判斷需求：操作介面、現場儀電、控制邏輯、資料平台、IT / OT 網路、遠端維運或告警事件，再進入對應服務內容。'
     },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',

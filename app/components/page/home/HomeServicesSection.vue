@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import BrandBlockMotif from '~/components/shared/BrandBlockMotif.vue'
 import SharedActionLink from '~/components/shared/SharedActionLink.vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import { enrichServiceCatalog } from '~/utils/services'
 
@@ -57,14 +58,15 @@ const serviceItems = computed(() =>
               <UIcon :name="item.icon" class="size-4.5" />
             </span>
 
-            <h3 class="home-sys-services__title type-sys-title-m text-white">
-              {{ item.shortLabel }}
-            </h3>
-            <p
-              class="home-sys-services__copy type-sys-body-s flex-1 text-white/82"
-            >
-              {{ item.description }}
-            </p>
+            <SharedContentHeader
+              class="home-sys-services__item-header"
+              :title="item.shortLabel"
+              :description="item.description"
+              tone="dark"
+              scale="item"
+              density="compact"
+              title-tag="h3"
+            />
 
             <SharedActionLink
               class="home-sys-services__action"
@@ -213,20 +215,21 @@ const serviceItems = computed(() =>
     box-shadow 180ms ease;
 }
 
-.home-sys-services__title {
+.home-sys-services__item-header {
   margin-top: 0.95rem;
-  max-width: 14ch;
-  text-wrap: balance;
+  max-width: 18rem;
+  --shared-content-header-description-color: rgb(255 255 255 / 0.82);
   transition:
     color 180ms ease,
     text-shadow 180ms ease;
 }
 
-.home-sys-services__copy {
+.home-sys-services__item-header :deep(.shared-content-header__title) {
+  max-width: 14ch;
+}
+
+.home-sys-services__item-header :deep(.shared-content-header__description) {
   max-width: 18rem;
-  margin-top: 0.7rem;
-  text-wrap: pretty;
-  color: rgb(255 255 255 / 0.82);
   transition: color 180ms ease;
 }
 
@@ -244,15 +247,12 @@ const serviceItems = computed(() =>
     0 10px 22px rgb(4 9 14 / 0.16);
 }
 
-.home-sys-services__column:hover .home-sys-services__title,
-.home-sys-services__column:focus-visible .home-sys-services__title {
-  color: rgb(255 255 255 / 1);
-  text-shadow: 0 0.15rem 0.9rem rgb(4 9 14 / 0.24);
-}
+.home-sys-services__column:hover .home-sys-services__item-header,
+.home-sys-services__column:focus-visible .home-sys-services__item-header {
+  --shared-content-header-title-color: rgb(255 255 255 / 1);
+  --shared-content-header-description-color: rgb(255 255 255 / 0.94);
 
-.home-sys-services__column:hover .home-sys-services__copy,
-.home-sys-services__column:focus-visible .home-sys-services__copy {
-  color: rgb(255 255 255 / 0.94);
+  text-shadow: 0 0.15rem 0.9rem rgb(4 9 14 / 0.24);
 }
 
 .home-sys-services__column:hover .home-sys-services__action,
@@ -283,8 +283,7 @@ const serviceItems = computed(() =>
   .home-sys-services__column {
     display: grid;
     grid-template-areas:
-      'icon title'
-      'icon copy'
+      'icon content'
       '. action';
     grid-template-columns: 2.35rem minmax(0, 1fr);
     column-gap: 0.85rem;
@@ -303,16 +302,18 @@ const serviceItems = computed(() =>
     margin-top: 0.1rem;
   }
 
-  .home-sys-services__title {
-    grid-area: title;
+  .home-sys-services__item-header {
+    grid-area: content;
     max-width: none;
     margin-top: 0;
   }
 
-  .home-sys-services__copy {
-    grid-area: copy;
+  .home-sys-services__item-header :deep(.shared-content-header__title) {
     max-width: none;
-    margin-top: 0.4rem;
+  }
+
+  .home-sys-services__item-header :deep(.shared-content-header__description) {
+    max-width: none;
   }
 
   .home-sys-services__action {

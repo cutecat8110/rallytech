@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import SharedMediaPair from '~/components/shared/SharedMediaPair.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
+import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 
 const messages = useRallyMessages()
 const {
@@ -47,15 +48,12 @@ const introFrontImage = computed(() => ({
             align="start"
             density="spacious"
           />
-          <div class="about-sys-intro__body">
-            <p
-              v-for="(paragraph, index) in messages.aboutPage.intro.paragraphs"
-              :key="index"
-              class="type-sys-body-m text-neutral-700"
-            >
-              {{ paragraph }}
-            </p>
-          </div>
+          <SharedTextStack
+            class="about-sys-intro__body"
+            :paragraphs="messages.aboutPage.intro.paragraphs"
+            tone="light"
+            size="md"
+          />
         </article>
       </div>
     </div>
@@ -81,8 +79,6 @@ const introFrontImage = computed(() => ({
 
 .about-sys-intro__body {
   margin-top: 2rem;
-  display: grid;
-  gap: 1.25rem;
 }
 
 .about-sys-intro__media {

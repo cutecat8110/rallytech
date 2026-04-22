@@ -58,28 +58,35 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
       class="services-sys-detail-block"
       :class="`services-sys-detail-block--${block.type}`"
     >
-      <p class="type-sys-label-s services-sys-detail-block__eyebrow">
+      <p
+        v-if="!block.title"
+        class="type-sys-label-s services-sys-detail-block__eyebrow"
+      >
         {{ getBlockEyebrow(block.type) }}
       </p>
 
       <ServiceDetailMediaFeatureBlock
         v-if="block.type === 'media-feature'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailProofStripBlock
         v-else-if="block.type === 'proof-strip'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailCapabilityListBlock
         v-else-if="block.type === 'capability-list'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailCardGridBlock
         v-else-if="block.type === 'card-grid'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailQuoteBlock
@@ -90,21 +97,25 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
       <ServiceDetailSummaryBlock
         v-else-if="block.type === 'summary'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailTagListBlock
         v-else-if="block.type === 'tag-list'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailAccordionBlock
         v-else-if="block.type === 'accordion'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailProcessStepsBlock
         v-else-if="block.type === 'process-steps'"
         :block="block"
+        :eyebrow="getBlockEyebrow(block.type)"
       />
 
       <ServiceDetailClosingNoteBlock

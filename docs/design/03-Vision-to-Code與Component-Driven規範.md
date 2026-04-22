@@ -65,6 +65,9 @@ Architecture Pack 至少要產出：
 - `proof-strip`
 - `stat-block`
 - `section-heading`
+- `content-header`
+- `text-stack`
+- `text-tile-grid`
 - `eyebrow`
 - `nav-group`
 
@@ -73,6 +76,19 @@ Architecture Pack 至少要產出：
 - section component 只負責組裝 block-level grammar
 - reusable primitive 負責跨 section 的穩定視覺語法
 - 同一 reference pattern 若在多頁重複，優先抽成 primitive，不留在單頁硬編
+
+### Text grammar primitives
+
+- `SharedSectionIntro`：section-level intro，只承接 kicker、title、description。
+- `SharedContentHeader`：section 內部 module / block / item / closing heading，可承接 eyebrow、subtitle、description。
+- `SharedTextStack`：多段 paragraph stack，統一 tone、density、lead-first 與 line-height。
+- `SharedTextTileGrid`：title + description / paragraphs 的文字格線，不承接 navigation card、process step 或整張互動卡。
+
+原則：
+
+- 大 section 的任務與視覺張力由 section local layout 決定；文字階層由 shared text primitive 決定。
+- 不把 `SharedSectionIntro` 擴充成萬用文字容器，避免 section intro、module heading 與小卡 title 混成同一層。
+- Footer closing heading 可使用 shared text primitive，但 Footer band geometry 與 CTA placement 留在 Footer component local。
 
 ### Hero grammar
 

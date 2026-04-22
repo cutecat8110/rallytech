@@ -6,6 +6,7 @@ import type {
 } from '~~/i18n/locales/types'
 import ServiceDetailBlocksRenderer from '~/components/page/services/ServiceDetailBlocksRenderer.vue'
 import ServiceDetailSidebar from '~/components/page/services/ServiceDetailSidebar.vue'
+import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 
 const props = defineProps<{
   service: ServiceCatalogItemMessages
@@ -63,17 +64,13 @@ const isDenseMobileService = computed(() =>
                 v-if="props.detailPage.introParagraphs.length"
                 class="services-sys-detail-intro__copy"
               >
-                <p
-                  v-for="(paragraph, index) in props.detailPage.introParagraphs"
-                  :key="paragraph"
-                  :class="
-                    index === 0
-                      ? 'type-sys-body-m services-sys-detail-intro__lead'
-                      : 'type-sys-body-s services-sys-detail-intro__support'
-                  "
-                >
-                  {{ paragraph }}
-                </p>
+                <SharedTextStack
+                  :paragraphs="props.detailPage.introParagraphs"
+                  tone="light"
+                  size="sm"
+                  density="compact"
+                  lead-first
+                />
               </div>
             </div>
           </section>
@@ -150,23 +147,7 @@ const isDenseMobileService = computed(() =>
 }
 
 .services-sys-detail-intro__copy {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   max-width: 50rem;
-}
-
-.services-sys-detail-intro__lead {
-  color: var(--color-text-primary);
-  line-height: 1.74;
-  letter-spacing: -0.012em;
-  text-wrap: pretty;
-}
-
-.services-sys-detail-intro__support {
-  color: var(--color-text-secondary);
-  line-height: 1.74;
-  text-wrap: pretty;
 }
 
 @media (max-width: 767px) {
@@ -204,18 +185,6 @@ const isDenseMobileService = computed(() =>
     content: '\00b7';
     margin-right: 0.45rem;
     color: var(--color-text-tertiary);
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__copy {
-    gap: 0.8rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__lead {
-    line-height: 1.62;
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__support {
-    line-height: 1.68;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -275,12 +244,12 @@ const isDenseMobileService = computed(() =>
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-proof-strip__grid) {
+    :deep(.services-sys-detail-proof-strip .shared-text-tile-grid) {
     gap: 0.72rem;
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-proof-strip__item) {
+    :deep(.services-sys-detail-proof-strip .shared-text-tile-grid__item) {
     padding-top: 0.75rem;
   }
 
@@ -315,7 +284,7 @@ const isDenseMobileService = computed(() =>
   }
 
   .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-card-grid__item) {
+    :deep(.services-sys-detail-card-grid .shared-text-tile-grid__item) {
     padding-top: 0.85rem;
   }
 

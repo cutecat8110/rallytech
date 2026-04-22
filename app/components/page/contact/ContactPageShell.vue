@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import { computed, reactive } from 'vue'
+import { computed, reactive, ref } from 'vue'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
+import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 
 const messages = useRallyMessages()
 const toast = useToast()
@@ -38,6 +40,14 @@ const contactFormTextareaUi = {
     'focus-visible:ring-primary-700',
     'min-h-[8rem]'
   ].join(' ')
+} as const
+
+const contactFormFeedbackId = 'contact-form-submit-feedback'
+const contactFormFeedbackVisible = ref(false)
+const contactFormFeedbackUi = {
+  root: 'rounded-sm',
+  title: 'type-sys-label-m',
+  description: 'type-sys-body-s'
 } as const
 
 const formState = reactive({
@@ -137,10 +147,13 @@ const directContactCards = computed(() => {
 })
 
 function handleFormSubmit() {
+  contactFormFeedbackVisible.value = true
+
   toast.add({
     title: contactMessages.value.form.unavailableTitle,
     description: contactMessages.value.form.unavailableDescription,
-    icon: 'i-lucide-circle-alert'
+    icon: 'i-lucide-circle-alert',
+    color: 'neutral'
   })
 }
 </script>
@@ -179,15 +192,13 @@ function handleFormSubmit() {
               density="compact"
             />
 
-            <div class="contact-sys-copy-panel__body">
-              <p
-                v-for="paragraph in contactMessages.intro.paragraphs"
-                :key="paragraph"
-                class="type-sys-body-m text-neutral-700"
-              >
-                {{ paragraph }}
-              </p>
-            </div>
+            <SharedTextStack
+              class="contact-sys-copy-panel__body"
+              :paragraphs="contactMessages.intro.paragraphs"
+              tone="light"
+              size="md"
+              density="compact"
+            />
 
             <div class="contact-sys-copy-panel__actions">
               <a
@@ -209,16 +220,23 @@ function handleFormSubmit() {
           </article>
 
           <article class="contact-sys-form-panel">
-            <div class="contact-sys-form-panel__header">
-              <h2 class="type-sys-headline-s text-neutral-950">
-                {{ contactMessages.form.title }}
-              </h2>
-              <p class="type-sys-body-s text-neutral-600">
-                {{ contactMessages.form.description }}
-              </p>
-            </div>
+            <SharedContentHeader
+              class="contact-sys-form-panel__header"
+              :title="contactMessages.form.title"
+              :description="contactMessages.form.description"
+              tone="light"
+              scale="block"
+              density="compact"
+              title-tag="h2"
+            />
 
-            <form class="contact-sys-form" @submit.prevent="handleFormSubmit">
+            <form
+              class="contact-sys-form"
+              :aria-describedby="
+                contactFormFeedbackVisible ? contactFormFeedbackId : undefined
+              "
+              @submit.prevent="handleFormSubmit"
+            >
               <div class="contact-sys-form__grid">
                 <UFormField
                   :label="contactMessages.form.fields.name.label"
@@ -322,6 +340,20 @@ function handleFormSubmit() {
                   class="contact-sys-form__submit"
                 />
               </div>
+
+              <UAlert
+                v-if="contactFormFeedbackVisible"
+                :id="contactFormFeedbackId"
+                class="contact-sys-form__feedback"
+                role="status"
+                aria-live="polite"
+                color="neutral"
+                variant="subtle"
+                icon="i-lucide-circle-alert"
+                :title="contactMessages.form.unavailableTitle"
+                :description="contactMessages.form.unavailableDescription"
+                :ui="contactFormFeedbackUi"
+              />
             </form>
           </article>
         </div>
@@ -338,7 +370,7 @@ function handleFormSubmit() {
               class="contact-sys-direct-card"
             >
               <p
-                class="type-sys-headline-s contact-sys-direct-card__title text-neutral-950"
+                class="type-sys-title-m contact-sys-direct-card__title text-neutral-950"
               >
                 {{ card.title }}
               </p>
@@ -416,14 +448,7 @@ function handleFormSubmit() {
 }
 
 .contact-sys-copy-panel__body {
-  display: grid;
-  gap: 0.9rem;
   max-width: 27rem;
-}
-
-.contact-sys-copy-panel__body :deep(.type-sys-body-m) {
-  font-size: 0.95rem;
-  line-height: 1.68;
 }
 
 .contact-sys-copy-panel__actions {
@@ -473,19 +498,7 @@ function handleFormSubmit() {
 }
 
 .contact-sys-form-panel__header {
-  display: grid;
-  gap: 0.32rem;
   max-width: 32rem;
-}
-
-.contact-sys-form-panel__header :deep(.type-sys-headline-s) {
-  font-size: 1.18rem;
-  letter-spacing: -0.018em;
-}
-
-.contact-sys-form-panel__header :deep(.type-sys-body-s) {
-  font-size: 0.9rem;
-  line-height: 1.58;
 }
 
 .contact-sys-form {
@@ -534,6 +547,10 @@ function handleFormSubmit() {
   ) !important;
 }
 
+.contact-sys-form__feedback {
+  max-width: 32rem;
+}
+
 .contact-sys-form :deep(label) {
   color: color-mix(
     in srgb,
@@ -577,7 +594,6 @@ function handleFormSubmit() {
 }
 
 .contact-sys-direct-card__title {
-  font-size: 1rem;
   letter-spacing: -0.015em;
 }
 

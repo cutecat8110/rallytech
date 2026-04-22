@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import type { HomePageImageStateKey } from '~/utils/home-page-image-registry'
 
@@ -80,16 +81,14 @@ const missionTabsUi = {
               </figure>
 
               <div class="home-sys-mission__state-copy max-w-xl">
-                <div class="home-sys-mission__state-body">
-                  <h3
-                    class="home-sys-mission__state-title type-sys-title-l text-neutral-900"
-                  >
-                    {{ activeMissionState.title }}
-                  </h3>
-                  <p class="type-sys-body-m text-neutral-700">
-                    {{ activeMissionState.description }}
-                  </p>
-                </div>
+                <SharedContentHeader
+                  class="home-sys-mission__state-body"
+                  :title="activeMissionState.title"
+                  :description="activeMissionState.description"
+                  tone="light"
+                  scale="item"
+                  title-tag="h3"
+                />
                 <UButton
                   :to="localePath('/contact')"
                   color="primary"
@@ -162,9 +161,9 @@ const missionTabsUi = {
   gap: 0.7rem;
 }
 
-.home-sys-mission__state-title {
-  letter-spacing: 0.01em;
-  font-weight: 600;
+.home-sys-mission__state-body {
+  --shared-content-header-title-color: var(--color-neutral-900);
+  --shared-content-header-description-color: var(--color-neutral-700);
 }
 
 .home-sys-mission__state-media {

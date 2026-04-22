@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import type { ServiceDetailAccordionBlockMessages } from '~~/i18n/locales/types'
 
 defineProps<{
   block: ServiceDetailAccordionBlockMessages
+  eyebrow?: string
 }>()
 
 function getAccordionItems(block: ServiceDetailAccordionBlockMessages) {
@@ -30,12 +32,16 @@ const accordionUi = {
 
 <template>
   <section>
-    <h3
+    <SharedContentHeader
       v-if="block.title"
-      class="type-sys-headline-s services-sys-detail-block__title text-neutral-950"
-    >
-      {{ block.title }}
-    </h3>
+      class="services-sys-detail-block__title"
+      :eyebrow="eyebrow"
+      :title="block.title"
+      tone="light"
+      scale="block"
+      density="compact"
+      title-tag="h3"
+    />
 
     <div class="services-sys-detail-accordion">
       <UAccordion :items="getAccordionItems(block)" :ui="accordionUi" />

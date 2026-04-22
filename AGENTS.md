@@ -9,6 +9,7 @@
 - 原則：
   - 先對齊目標與範圍，再以小步迭代實作，不一次擴張到未確認範圍。
   - **語言共識：所有與 AI 的對話、技術回報、計畫說明及文件更新，均統一使用繁體中文。**
+  - **手動文稿保護：** 標記為公司手動修正文稿並已映射至 public i18n 的內容，除非使用者提供新的手動修正文稿或明確要求覆寫，不得主動重寫、多語改寫或以 generated / reference copy 覆蓋。
 
 ## 2. 專案基線
 
@@ -139,4 +140,5 @@
 1. 工作樹可能包含使用者尚未提交的變更，禁止回滾與任意覆蓋無關檔案。
 2. 未經確認不得擴張需求範圍；若需新增區塊，先取得明確確認。
 3. 若規範與現況衝突，需在回報中清楚記錄採用依據與取捨理由。
-4. `AGENTS.md` 是協作 SOP，不是設計系統、Nuxt UI 細則、clone artifact 或 AI image phase 主檔；遇到 owner 邊界問題時，請回到 `docs/design/` 與 `docs/project/`。
+4. `docs/rewrite/文案.md` 是 2026-04-22 服務文案的手動修正來源；已映射到 `i18n/locales/en.ts`、`i18n/locales/zh-tw.ts` 與 `i18n/locales/services/*-detail.ts` 的 public copy 需視為 manual-locked copy。
+5. `AGENTS.md` 是協作 SOP，不是設計系統、Nuxt UI 細則、clone artifact 或 AI image phase 主檔；遇到 owner 邊界問題時，請回到 `docs/design/` 與 `docs/project/`。
