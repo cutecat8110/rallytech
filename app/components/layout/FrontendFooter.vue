@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
-import { lightSolidButtonTheme } from '~/utils/button-themes'
+import {
+  darkIconGhostButtonTheme,
+  floatingIconButtonTheme,
+  lightSolidButtonTheme
+} from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
 const messages = useRallyMessages()
@@ -206,15 +210,17 @@ function handleBackToTop() {
                   :ui="newsletterInputUi"
                 />
 
-                <UButton
-                  type="submit"
-                  color="neutral"
-                  variant="ghost"
-                  size="sm"
-                  icon="i-lucide-send"
-                  :aria-label="footerMessages.newsletterButtonLabel"
-                  class="home-sys-footer__newsletter-submit"
-                />
+                <UTheme :ui="darkIconGhostButtonTheme">
+                  <UButton
+                    type="submit"
+                    color="neutral"
+                    variant="ghost"
+                    size="sm"
+                    icon="i-lucide-send"
+                    :aria-label="footerMessages.newsletterButtonLabel"
+                    class="home-sys-footer__newsletter-submit"
+                  />
+                </UTheme>
               </div>
             </form>
           </article>
@@ -291,16 +297,18 @@ function handleBackToTop() {
           {{ copyrightText }}
         </p>
 
-        <UButton
-          type="button"
-          color="neutral"
-          variant="ghost"
-          size="sm"
-          icon="i-ic-baseline-keyboard-arrow-up"
-          :aria-label="footerMessages.backToTopLabel"
-          class="home-sys-footer__back-to-top"
-          @click="handleBackToTop"
-        />
+        <UTheme :ui="floatingIconButtonTheme">
+          <UButton
+            type="button"
+            color="neutral"
+            variant="ghost"
+            size="sm"
+            icon="i-ic-baseline-keyboard-arrow-up"
+            :aria-label="footerMessages.backToTopLabel"
+            class="home-sys-footer__back-to-top"
+            @click="handleBackToTop"
+          />
+        </UTheme>
       </div>
     </section>
   </footer>
@@ -315,7 +323,7 @@ function handleBackToTop() {
 }
 
 .home-sys-footer__connector {
-  --connector-band-min-height: 8.6rem;
+  --connector-band-min-height: 9.2rem;
   --connector-seam-width: 0rem;
   --connector-media-width: 0rem;
   position: relative;
@@ -364,7 +372,7 @@ function handleBackToTop() {
   gap: 1rem;
   align-items: center;
   min-height: var(--connector-band-min-height);
-  padding-block: 1.5rem;
+  padding-block: 1.7rem;
 }
 
 .home-sys-footer__connector-media {
@@ -414,7 +422,7 @@ function handleBackToTop() {
 .home-sys-footer__content-grid {
   display: grid;
   gap: 2rem;
-  padding-block: 2.35rem 2.15rem;
+  padding-block: 2.75rem 2.45rem;
 }
 
 .home-sys-footer__brand {
@@ -462,13 +470,6 @@ function handleBackToTop() {
   height: 2.55rem;
   transform: translateY(-50%);
   justify-content: center;
-  color: var(--color-white);
-  background: transparent;
-}
-
-.home-sys-footer__newsletter-submit:hover,
-.home-sys-footer__newsletter-submit:focus-visible {
-  background: rgb(255 255 255 / 0.08);
 }
 
 .home-sys-footer__contacts {
@@ -555,8 +556,8 @@ function handleBackToTop() {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 4.2rem;
-  padding-block: 0.9rem;
+  min-height: 4.4rem;
+  padding-block: 1rem;
 }
 
 .home-sys-footer__legal-copy {
@@ -572,26 +573,6 @@ function handleBackToTop() {
   height: 2.85rem;
   transform: translateY(-50%);
   justify-content: center;
-  color: var(--color-white);
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-primary-700) 64%, var(--color-secondary-900))
-      0%,
-    color-mix(in srgb, var(--color-primary-900) 82%, var(--color-secondary-950))
-      100%
-  );
-  box-shadow: 0 10px 24px rgb(0 0 0 / 0.2);
-}
-
-.home-sys-footer__back-to-top:hover,
-.home-sys-footer__back-to-top:focus-visible {
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-primary-600) 64%, var(--color-secondary-900))
-      0%,
-    color-mix(in srgb, var(--color-primary-800) 82%, var(--color-secondary-950))
-      100%
-  );
 }
 
 @media (max-width: 767px) {
@@ -615,7 +596,7 @@ function handleBackToTop() {
 
 @media (min-width: 768px) {
   .home-sys-footer__connector {
-    --connector-band-min-height: clamp(8.9rem, 10.5vw, 10.6rem);
+    --connector-band-min-height: clamp(9.4rem, 10.8vw, 11.1rem);
     --connector-seam-width: clamp(14rem, 16vw, 16.5rem);
     --connector-media-width: clamp(18rem, 22vw, 21rem);
   }
@@ -639,7 +620,7 @@ function handleBackToTop() {
   .home-sys-footer__connector-layout {
     grid-template-columns: var(--connector-seam-width) minmax(0, 1fr) auto;
     gap: clamp(1rem, 1.8vw, 1.85rem);
-    padding-block: 1.15rem;
+    padding-block: 1.35rem;
   }
 
   .home-sys-footer__connector-copy {
@@ -666,8 +647,8 @@ function handleBackToTop() {
       minmax(18rem, 1.05fr)
       minmax(16rem, 0.9fr);
     gap: clamp(1.8rem, 3vw, 3.4rem);
-    min-height: 15.5rem;
-    padding-block: 3.35rem 3rem;
+    min-height: 16.35rem;
+    padding-block: 3.85rem 3.45rem;
   }
 
   .home-sys-footer__brand {
@@ -678,7 +659,7 @@ function handleBackToTop() {
 
 @media (min-width: 1024px) {
   .home-sys-footer__connector {
-    --connector-band-min-height: clamp(9.2rem, 11vw, 10.8rem);
+    --connector-band-min-height: clamp(9.8rem, 11.4vw, 11.4rem);
     --connector-seam-width: clamp(15rem, 17vw, 17.6rem);
     --connector-media-width: clamp(19rem, 23vw, 22rem);
   }

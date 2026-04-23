@@ -5,8 +5,6 @@ import type {
   ServiceCatalogItemMessages
 } from './types'
 
-// Manual copy lock: services overview copy maps docs/rewrite/文案.md (2026-04-22).
-// Do not rewrite this public i18n copy without a new manual rewrite source.
 const servicesCatalog = [
   {
     slug: 'scada-hmi-graphics',
@@ -46,6 +44,23 @@ const servicesCatalog = [
     description:
       '保存長期製程紀錄，讓趨勢回顧、報表追蹤與異常排查有穩定資料來源。'
   },
+  // Source: docs/rewrite/文案.md items 1-3, mapped as new public services.
+  {
+    slug: 'it-infrastructure',
+    shortLabel: 'IT 建置',
+    formalTitle: 'IT 基礎建設規劃與建置服務',
+    englishTitle: 'IT Infrastructure Planning and Deployment',
+    description:
+      '規劃企業 IT 架構、伺服器、儲存與虛擬化資源，支撐穩定營運與未來擴充。'
+  },
+  {
+    slug: 'cybersecurity-network',
+    shortLabel: '資安網路建置',
+    formalTitle: '資安網路架構與防護整合服務',
+    englishTitle: 'Cybersecurity Network Architecture and Protection',
+    description:
+      '整合網路分段、存取控管、威脅防護與弱點檢測，降低企業資安風險。'
+  },
   {
     slug: 'network-design',
     shortLabel: '工業網路設計',
@@ -53,6 +68,14 @@ const servicesCatalog = [
     englishTitle: 'Network Design',
     description:
       '整理控制網路拓樸、通訊分層與擴充邊界，支撐穩定連線與後續維護。'
+  },
+  {
+    slug: 'offshore-wind-operations',
+    shortLabel: '離岸風場維運',
+    formalTitle: '離岸風場遠端維運與安全管理服務',
+    englishTitle: 'Offshore Wind Remote Operations and Security Management',
+    description:
+      '建立安全遠端連線、監控與維運流程，支援離岸風場與偏遠場域穩定運作。'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -247,18 +270,18 @@ const messages = {
   servicesCatalog,
   servicesPage: {
     seo: {
-      title: 'IT / OT 整合與資安防護解決方案 | 雷力科技 Rally Technology',
+      title: '服務項目 | 雷力科技 Rally Technology',
       description:
-        '雷力科技提供橫跨 IT 與 OT 的整合服務，涵蓋企業 IT 基礎建設、工業網路、資安防護、遠端維運與告警監控。'
+        '瀏覽雷力科技的服務範圍，涵蓋操作畫面、現場支援、控制搬遷、資料平台、IT 基礎建設、資安網路、工業網路、離岸風場維運、遠端監控與告警流程。'
     },
     hero: {
-      title: 'IT / OT 整合與資安防護解決方案'
+      title: '工業自動化服務範圍'
     },
     intro: {
       kicker: '服務導覽',
-      title: '從 IT 基礎建設到 OT 現場維運',
+      title: '依系統層級找到對應服務',
       description:
-        '先從系統層級判斷需求：操作介面、現場儀電、控制邏輯、資料平台、IT / OT 網路、遠端維運或告警事件，再進入對應服務內容。'
+        '先確認需求落在哪一層：操作介面、現場儀電、控制邏輯、資料基礎、IT 基礎建設、資安防護、工業網路、離岸風場維運、遠端監控或事件處置，再進入對應服務內容。'
     },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',

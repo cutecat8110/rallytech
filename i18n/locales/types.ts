@@ -8,7 +8,10 @@ export type ServiceSlug =
   | 'plc-dcs-programming-and-migration'
   | 'pi-server'
   | 'historians'
+  | 'it-infrastructure'
+  | 'cybersecurity-network'
   | 'network-design'
+  | 'offshore-wind-operations'
   | 'remote-monitoring-and-data'
   | 'alarm-monitoring'
 

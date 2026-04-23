@@ -45,11 +45,35 @@ const servicesCatalog = [
       'Efficient Network Design for optimized industrial communication.'
   },
   {
+    slug: 'it-infrastructure',
+    shortLabel: 'IT Infrastructure',
+    formalTitle: 'IT Infrastructure Planning and Deployment',
+    englishTitle: 'IT Infrastructure Planning and Deployment',
+    description:
+      'Manual rewrite source service: IT architecture, servers, storage, virtualization, HA/DR, and system performance foundations.'
+  },
+  {
+    slug: 'cybersecurity-network',
+    shortLabel: 'Cybersecurity Network',
+    formalTitle: 'Cybersecurity Network Architecture and Protection',
+    englishTitle: 'Cybersecurity Network Architecture and Protection',
+    description:
+      'Manual rewrite source service: network segmentation, access control, intrusion protection, Zero Trust, and vulnerability checks.'
+  },
+  {
     slug: 'network-design',
     shortLabel: 'Network Design',
     formalTitle: 'Network Design',
     englishTitle: 'Network Design',
     description: 'Specialized Historian data solutions for RNG companies.'
+  },
+  {
+    slug: 'offshore-wind-operations',
+    shortLabel: 'Offshore Wind Operations',
+    formalTitle: 'Offshore Wind Remote Operations and Security Management',
+    englishTitle: 'Offshore Wind Remote Operations and Security Management',
+    description:
+      'Manual rewrite source service: secure remote operations, monitoring, maintenance response, and safety management for offshore wind sites.'
   },
   {
     slug: 'remote-monitoring-and-data',

@@ -481,17 +481,19 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '01',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/about/process-step-01.jpg',
+          src: '/images/stock/home/services-industrial-panel-bg.jpg',
           alt: '',
           label: 'Process Step 01 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Placeholder',
-          sourceReference: null,
+          source: 'Pexels',
+          sourceReference:
+            'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
           createdAt: null,
-          licenseNote: null,
-          notes: null
+          licenseNote: 'Pexels License',
+          notes:
+            'Reused homepage services stock asset as the about-process-step 01 fallback.'
         },
         liveNano: {
           src: '/images/generated/home/about-process/01/about-process-step-01-20260415082126414-q4m8bi.jpg',
@@ -527,17 +529,19 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '02',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/about/process-step-02.jpg',
+          src: '/images/stock/home/hero-simulator-control-room.jpg',
           alt: '',
           label: 'Process Step 02 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Placeholder',
-          sourceReference: null,
+          source: 'Pexels',
+          sourceReference:
+            'https://www.pexels.com/photo/engineers-using-simulator-3862132/',
           createdAt: null,
-          licenseNote: null,
-          notes: null
+          licenseNote: 'Pexels License',
+          notes:
+            'Reused homepage hero stock asset as the about-process-step 02 fallback.'
         },
         liveNano: {
           src: '/images/generated/home/about-process/02/about-process-step-02-20260415082207544-7jig6x.jpg',
@@ -573,17 +577,19 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '03',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/about/process-step-03.jpg',
+          src: '/images/stock/home/mission-tab-mission.jpg',
           alt: '',
           label: 'Process Step 03 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Placeholder',
-          sourceReference: null,
+          source: 'Pexels',
+          sourceReference:
+            'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
           createdAt: null,
-          licenseNote: null,
-          notes: null
+          licenseNote: 'Pexels License',
+          notes:
+            'Reused homepage mission stock asset as the about-process-step 03 fallback.'
         },
         liveNano: {
           src: '/images/generated/home/about-process/03/about-process-step-03-20260415082241973-zroesd.jpg',
@@ -619,17 +625,19 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '04',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/about/process-step-04.jpg',
+          src: '/images/stock/home/footer-engineering-team.jpg',
           alt: '',
           label: 'Process Step 04 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Placeholder',
-          sourceReference: null,
+          source: 'Pexels',
+          sourceReference:
+            'https://www.pexels.com/photo/engineers-at-work-3861973/',
           createdAt: null,
-          licenseNote: null,
-          notes: null
+          licenseNote: 'Pexels License',
+          notes:
+            'Reused homepage connector stock asset as the about-process-step 04 fallback.'
         },
         liveNano: {
           src: '/images/generated/home/about-process/04/about-process-step-04-20260415082307517-dfiew8.jpg',

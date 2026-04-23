@@ -5,9 +5,6 @@ const sharedSidebar = {
   contactHeading: 'Contact Us'
 } as const
 
-// Manual copy lock: relevant mapped public service detail copy comes from
-// docs/rewrite/文案.md (2026-04-22).
-// Do not rewrite these i18n messages without a new manual rewrite source.
 export const serviceDetailPagesEn = {
   'scada-hmi-graphics': {
     seo: {
@@ -28,10 +25,10 @@ export const serviceDetailPagesEn = {
         imageAlt:
           'Engineer reviewing industrial monitoring screens on a tablet',
         layout: 'image-right',
-        title: 'The hard part is deciding what comes first',
+        title: 'SCADA / HMI screens built for real operator use',
         paragraphs: [
-          'Once a screen collects too many states, trends, and buttons, operators usually lose priority before they lack data.',
-          'We shape overview, equipment, and abnormal-condition entry points into a readable path that can keep its logic as new points are added.'
+          'Good graphics do not start with fitting more data on a page. They start with deciding what the operator needs first, what can wait, and where abnormal conditions should lead.',
+          'We align hierarchy, navigation, and status logic so the screens are easier to operate now and easier to extend later.'
         ],
         highlights: ['Readable screens', 'Alarm context', 'Easy upkeep']
       },
@@ -42,22 +39,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Screen hierarchy',
             description:
-              'Layer overview, unit, and equipment information so operators see the state that needs attention first.'
+              'Separate status, alarms, and actions so teams can read the screen without extra scanning.'
           },
           {
             title: 'Alarm context',
             description:
-              'Place alarms back with equipment and process location so teams can judge source and impact.'
+              'Show alarms with related equipment and process context instead of leaving them isolated.'
           },
           {
             title: 'Operator flow',
             description:
-              'Put routine controls, confirmations, and abnormal-entry points on one operating path.'
+              'Place common actions and abnormal-entry points where operators can reach them quickly.'
           },
           {
             title: 'Maintenance rules',
             description:
-              'Preserve naming, symbol, and layout rules so later changes do not depend on guesswork.'
+              'Keep naming and layout standards consistent so later point additions do not break the interface.'
           }
         ]
       },
@@ -88,7 +85,7 @@ export const serviceDetailPagesEn = {
       {
         type: 'closing-note',
         paragraphs: [
-          'Set SCADA / HMI rules before points, screens, or roles expand, so later additions do not become patchwork.'
+          'Bring SCADA / HMI planning in before tag growth and screen expansion begin, so later additions do not turn the interface into patchwork.'
         ]
       }
     ]
@@ -112,10 +109,10 @@ export const serviceDetailPagesEn = {
         imageAlt:
           'Close-up view of industrial instrumentation and control hardware',
         layout: 'image-left',
-        title: 'Field progress depends on shared checkpoints',
+        title: 'I&E support that keeps field work moving',
         paragraphs: [
-          'I&E work often stalls around who has confirmed what, who owns the next step, and which open item affects startup.',
-          'We connect test results, punch status, and field response into one working rhythm so cross-discipline work has a shared reference.'
+          'I&E work becomes difficult when testing, startup, punch closure, and field response are handled as separate tasks. The site needs one working sequence.',
+          'We coordinate validation points, troubleshooting, and cross-discipline handoffs so startup moves with fewer surprises.'
         ],
         highlights: ['Field ready', 'FAT / SAT', 'Startup support']
       },
@@ -126,22 +123,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Field readiness',
             description:
-              'Confirm required startup conditions, open items, and responsible handoff points.'
+              'Clarify startup conditions and acceptance points before site work begins.'
           },
           {
             title: 'FAT / SAT closure',
             description:
-              'Keep test results, punch categories, and closure status in one traceable context.'
+              'Keep testing, punch closure, and commissioning checks on the same working sequence.'
           },
           {
             title: 'Startup response',
             description:
-              'Route loop, signal, and equipment issues back to the right owner quickly.'
+              'Use troubleshooting and loop checks to reduce surprises during startup windows.'
           },
           {
             title: 'Cross-team coordination',
             description:
-              'Use shared checkpoints to align instrumentation, electrical, equipment, and construction contacts.'
+              'Align instrumentation, electrical, equipment, and site teams around one execution rhythm.'
           }
         ]
       },
@@ -201,32 +198,30 @@ export const serviceDetailPagesEn = {
           {
             title: 'FAT / SAT Support',
             description:
-              'Use when factory-test results need to be carried into final site checks before startup.'
+              'Complete the checks and punch closure needed before startup.'
           },
           {
             title: 'Power Systems Studies',
             description:
-              'Use before load additions, panel changes, or protection settings need review.'
+              'Review distribution reliability and operating risk early.'
           },
           {
             title: 'Field Troubleshooting',
             description:
-              'Use when startup or running conditions point to a site signal gap.'
+              'Respond quickly to field issues and stabilize operation.'
           },
           {
             title: 'Gas Analysis Systems',
             description:
-              'Use when analyzer signals need to feed control or data workflows.'
+              'Keep gas-composition measurement reliable in process use.'
           },
           {
             title: 'Instrument Calibration',
-            description:
-              'Use after new or replaced instruments need readings checked against site conditions.'
+            description: 'Maintain the accuracy of sensing and control points.'
           },
           {
             title: 'Power Metering',
-            description:
-              'Use when new metering points or existing meter data need clearer ownership.'
+            description: 'Track consumption, quality, and electrical-use data.'
           }
         ]
       },
@@ -240,8 +235,8 @@ export const serviceDetailPagesEn = {
         type: 'summary',
         title: 'When to Bring It In',
         paragraphs: [
-          'Bring I&E support in while FAT is still closing and startup windows can still move, before unresolved items arrive at site.',
-          'It is the right point when instrumentation, electrical, and commissioning teams need one set of working evidence.'
+          'Bring I&E support in before FAT closes and before startup windows are fixed. That is when loop checks, punch closure, and field coordination still change the outcome.',
+          'It is most useful when instrumentation, electrical, and commissioning tasks need one execution rhythm instead of separate work lists.'
         ]
       }
     ]
@@ -264,10 +259,10 @@ export const serviceDetailPagesEn = {
         mediaSlot: 'plc-dcs-programming-and-migration',
         imageAlt: 'Engineer using a laptop to review control-system settings',
         layout: 'image-right',
-        title: 'Migration risk usually hides in dependencies',
+        title: 'Migration planning has to fit the real shutdown window',
         paragraphs: [
-          'Control-system upgrades become fragile when equipment dependencies, operating habits, rollback conditions, and test order are not reviewed together.',
-          'We split the change scope into units the site can verify in sequence, so gaps are not discovered on cutover day.'
+          'PLC / DCS migration touches existing logic, shutdown limits, dependencies, and rollback conditions. It is not only a programming task.',
+          'We structure program changes, validation points, and cutover steps so the site can move without losing operational clarity.'
         ],
         highlights: ['Cutover path', 'Risk control', 'Maintainable logic']
       },
@@ -278,22 +273,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Cutover boundary',
             description:
-              'Identify affected equipment, signals, and operator interfaces so each cutover segment has a clear owner.'
+              'Map system boundaries, dependencies, and outage limits before locking the sequence.'
           },
           {
             title: 'Shutdown control',
             description:
-              'Define what can be tested, rolled back, or cannot be interrupted before using the window.'
+              'Define test windows, rollback conditions, and validation steps early.'
           },
           {
             title: 'Logic readability',
             description:
-              'Use naming, modules, and notes that support testing traceability, not only go-live.'
+              'Keep program structure understandable for testing, troubleshooting, and later change.'
           },
           {
             title: 'Recovery readiness',
             description:
-              'Keep versions, backups, and operating context ready so the team has a baseline to return to.'
+              'Prepare documents and operating context so the upgraded system is easier to restore and support.'
           }
         ]
       },
@@ -354,7 +349,7 @@ export const serviceDetailPagesEn = {
       {
         type: 'closing-note',
         paragraphs: [
-          'Bring PLC / DCS migration planning in before shutdown windows, test scope, and rollback conditions are locked. That is when risk control can be designed into the workflow instead of handled at site.'
+          'Bring PLC / DCS migration in before shutdown windows and test plans are locked. That is when cutover risk, rollback logic, and documentation can still be designed together.'
         ]
       }
     ]
@@ -381,10 +376,10 @@ export const serviceDetailPagesEn = {
         mediaSlot: 'pi-server',
         imageAlt: 'Industrial data equipment in a dark server-room environment',
         layout: 'image-left',
-        title: 'PI Server becomes difficult after the data arrives',
+        title: 'PI Server should make plant data easier to use',
         paragraphs: [
-          'When tag sources, naming, and calculation rules grow separately, the platform can become a collection that is hard to understand.',
-          'We clarify which data supports monitoring, which supports reporting, and which will be reused by other systems before deciding the structure.'
+          'PI Server work is about shaping tags, context, and source structure so monitoring, reporting, and integration do not drift apart.',
+          'We plan naming, data paths, and expansion logic early so the platform remains usable as new systems connect.'
         ],
         highlights: [
           'Stable data spine',
@@ -409,22 +404,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Data backbone',
             description:
-              'Make tags, sources, and calculated values usable across needs instead of split into separate data sets.'
+              'Collect plant data in a structure that supports dashboards, reports, and engineering review.'
           },
           {
             title: 'Context and naming',
             description:
-              'Set rules early so later additions can still be identified and managed.'
+              'Set up source structure and naming rules before later expansion creates fragmentation.'
           },
           {
             title: 'Reporting continuity',
             description:
-              'Include the granularity and calculation logic that recurring reports will need.'
+              'Build a foundation that supports recurring reporting instead of one-time setup only.'
           },
           {
             title: 'Shared visibility',
             description:
-              'Give operations, engineering, and management one traceable data source to work from.'
+              'Give operations, engineering, and management a more consistent view of current conditions.'
           }
         ]
       },
@@ -435,19 +430,19 @@ export const serviceDetailPagesEn = {
           {
             title: 'Connect plant data',
             paragraphs: [
-              'Use this when several systems need the same live values instead of separate data outlets.'
+              'Use PI Server to connect live plant data with dashboards, reports, and day-to-day operating review.'
             ]
           },
           {
             title: 'Standardize integration',
             paragraphs: [
-              'Use this when each added source brings different naming, interface, or data-definition rules.'
+              'Structure source data, naming, and interfaces so the platform can expand without becoming harder to manage.'
             ]
           },
           {
             title: 'Support reporting',
             paragraphs: [
-              'Use this when recurring reports need the same calculation basis each time.'
+              'When data is stable and understandable, reporting, trend review, and cross-team decisions move faster.'
             ]
           }
         ]
@@ -456,8 +451,8 @@ export const serviceDetailPagesEn = {
         type: 'summary',
         title: 'When to Bring It In',
         paragraphs: [
-          'Bring PI Server in before dashboards, recurring reports, or external integrations start multiplying.',
-          'That is when naming, source structure, and calculation logic can still be defined together instead of reconciled manually later.'
+          'PI Server is most useful when a site needs one stable plant-data backbone for dashboards, reports, and cross-system use.',
+          'Bring it in before tags, reports, and external integrations proliferate, so naming and source logic stay consistent.'
         ]
       }
     ]
@@ -481,10 +476,10 @@ export const serviceDetailPagesEn = {
         imageAlt:
           'Close-up view of server-rack hardware for historian infrastructure',
         layout: 'image-right',
-        title: 'Historian design starts with how records will be found later',
+        title: 'Historian design is about records you can still retrieve later',
         paragraphs: [
-          'Historical data often looks complete at collection time, then becomes hard to use when teams need event review, reporting, or audit support.',
-          'We set retention, organization, and backup choices around the retrieval scenarios that will matter months or years later.'
+          'A historian is valuable when process records can still be queried, compared, and explained long after collection.',
+          'We plan retention, retrieval, remote access, and redundancy around the way teams actually review events and produce reports.'
         ],
         highlights: ['Traceable history', 'Redundant access', 'Reports ready']
       },
@@ -495,22 +490,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Long-term retention',
             description:
-              'Set retention windows around reporting, audit, and event-review needs.'
+              'Keep process records available for comparison, investigation, and traceability over time.'
           },
           {
             title: 'Trend review',
             description:
-              'Keep trend data retrievable for comparison across different time ranges.'
+              'Structure stored data so recurring reports and cross-team analysis are easier to run.'
           },
           {
             title: 'Redundant access',
             description:
-              'Plan local and remote paths so data access does not depend on one route.'
+              'Plan local and remote access paths to reduce single-point failure risk.'
           },
           {
             title: 'Traceability',
             description:
-              'Preserve enough context to support quality, compliance, and abnormal-event explanation.'
+              'Maintain a stronger record base for compliance, quality review, and event investigation.'
           }
         ]
       },
@@ -542,46 +537,45 @@ export const serviceDetailPagesEn = {
         type: 'summary',
         title: 'When to Bring It In',
         paragraphs: [
-          'Bring historian planning in when retention rules, report formats, or audit expectations first take shape.',
-          'That is when data granularity, storage layout, and access paths can be designed together instead of patched into traceability later.'
+          'Bring historian planning in when retention rules, reporting needs, or audit expectations are first being defined.',
+          'That is the point where storage layout, access paths, and resilience can be designed for long-term use instead of retrofitted later.'
         ]
       }
     ]
   },
-  'network-design': {
+  // Source: docs/rewrite/文案.md items 1-3, mapped as new public services.
+  'it-infrastructure': {
     seo: {
-      title:
-        'Industrial Network and Cybersecurity Architecture | Rally Technology',
+      title: 'IT Infrastructure Planning and Deployment | Rally Technology',
       description:
-        'Rally Technology plans IT / OT segmentation, Defense in Depth, Zero Trust, HA / DR, and Vulnerability Scanning to reduce cybersecurity and communication risk.'
+        'Rally Technology plans enterprise IT architecture, servers, storage, and virtualization resources for stable and expandable foundations.'
     },
     heroFocusItems: [
-      'IT / OT segmentation',
-      'Layered defense',
-      'High availability and growth'
+      'Stable architecture',
+      'Simpler integration',
+      'Room to scale'
     ],
     introParagraphs: [
-      'Industrial networking is not only about connecting devices. It has to define IT / OT boundaries, control traffic, remote access, and cybersecurity protection together.',
-      'We build layered architecture around site communication and risk conditions, combining segmentation, HA / DR, Zero Trust, and Vulnerability Scanning to reduce downtime and security exposure.'
+      'IT infrastructure is not a one-off equipment purchase. It is the foundation that connects servers, storage, networks, virtualization, backup, and operational support.',
+      'We help teams assess the current environment, plan the architecture, and define a practical deployment sequence so daily operations, recovery, and future growth have a clearer base.'
     ],
     sidebar: sharedSidebar,
     blocks: [
       {
         type: 'media-feature',
-        mediaSlot: 'network-design',
+        mediaSlot: 'it-infrastructure',
         imageAlt:
-          'Network hardware and connected cabling in an industrial environment',
-        layout: 'image-left',
-        title:
-          'Network and security boundaries need to be set before systems expand',
+          'Engineer reviewing server equipment beside data center racks',
+        layout: 'image-right',
+        title: 'IT infrastructure should be planned as an operating foundation',
         paragraphs: [
-          'As enterprise IT, industrial equipment, and remote-access needs grow, networks can collect exceptions that are hard to manage while security boundaries become unclear.',
-          'We review Compute / Storage / Network needs, Core / Control / Field layering, and IT / OT segmentation so connectivity, permissions, and maintenance ownership have a traceable baseline.'
+          'Enterprise IT environments depend on servers, storage, virtualization, backup, and access control working together. Without a shared plan, later expansion and maintenance become a set of disconnected fixes.',
+          'Rally Technology organizes resource allocation, system integration, and maintenance boundaries so the environment can support daily operations and project growth.'
         ],
         highlights: [
-          'IT / OT segmentation',
-          'Layered defense',
-          'High availability and growth'
+          'Stable architecture',
+          'Simpler integration',
+          'Room to scale'
         ]
       },
       {
@@ -589,24 +583,24 @@ export const serviceDetailPagesEn = {
         title: 'Key Priorities',
         items: [
           {
-            title: 'Layered architecture',
+            title: 'Architecture planning',
             description:
-              'Structure topology around Core / Control / Field layers and site communication needs to reduce interference.'
+              'Plan server, storage, network, and virtualization architecture around operating needs and the current environment.'
           },
           {
-            title: 'Access control',
+            title: 'Resource integration',
             description:
-              'Use IT / OT segmentation, VPN, and identity access management to define who can connect, when, and what they can operate.'
+              'Bring compute, storage, and platform resources into a more maintainable management model.'
           },
           {
-            title: 'Cybersecurity protection',
+            title: 'High availability',
             description:
-              'Combine Defense in Depth, Zero Trust, IPS / Threat Protection, and Vulnerability Scanning to keep risk exposure visible.'
+              'Include HA / DR and data protection early so single failures create less operational impact.'
           },
           {
-            title: 'Resilience and expansion',
+            title: 'Performance tuning',
             description:
-              'Include HA / DR, redundant topology, and future equipment onboarding in the design.'
+              'Adjust resource allocation for the expected workload while preserving expansion flexibility.'
           }
         ]
       },
@@ -615,21 +609,137 @@ export const serviceDetailPagesEn = {
         title: 'Scope and Method',
         items: [
           {
-            title: 'IT / OT architecture planning',
+            title: 'IT architecture planning',
             paragraphs: [
-              'We align enterprise IT infrastructure and industrial network needs, from Compute / Storage / Network through control-network layering.'
+              'Assess existing equipment, system needs, and expansion limits to define an infrastructure roadmap that fits the business environment.'
             ]
           },
           {
-            title: 'Segmentation and security boundaries',
+            title: 'Virtualization and resource integration',
             paragraphs: [
-              'We plan network segmentation, firewalls, VPN, and permission control so changes can be introduced gradually without disrupting existing services.'
+              'Plan server virtualization, storage layout, and resource-management practices that make the foundation easier to operate.'
             ]
           },
           {
-            title: 'Monitoring and risk tracking',
+            title: 'Backup and recovery design',
             paragraphs: [
-              'Traffic analysis, Vulnerability Scanning, and risk assessment keep network and cybersecurity conditions easier to review over time.'
+              'Define availability, backup, and disaster-recovery logic around service importance so teams have a workable recovery path.'
+            ]
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: 'Deployment Flow',
+        items: [
+          {
+            stepLabel: '01',
+            title: 'Assess the current state',
+            description:
+              'Review existing equipment, workloads, data-retention needs, and maintenance pain points.'
+          },
+          {
+            stepLabel: '02',
+            title: 'Design the architecture',
+            description:
+              'Plan server, storage, virtualization, backup, and management boundaries.'
+          },
+          {
+            stepLabel: '03',
+            title: 'Deploy in phases',
+            description:
+              'Sequence implementation around risk and timing to reduce disruption to current operations.'
+          },
+          {
+            stepLabel: '04',
+            title: 'Validate and hand over',
+            description:
+              'Confirm performance, backup behavior, and operations documentation so the team can manage the environment.'
+          }
+        ]
+      }
+    ]
+  },
+  'cybersecurity-network': {
+    seo: {
+      title:
+        'Cybersecurity Network Architecture and Protection | Rally Technology',
+      description:
+        'Rally Technology integrates network segmentation, access control, threat protection, and vulnerability checks to reduce cybersecurity risk.'
+    },
+    heroFocusItems: [
+      'Segmented access',
+      'Lower attack risk',
+      'Ongoing vulnerability checks'
+    ],
+    introParagraphs: [
+      'Cybersecurity network deployment starts with clear access boundaries between users, systems, data, and devices.',
+      'We help plan segmentation, protection, remote access, and vulnerability-check workflows so organizations can keep operations efficient while reducing exposure.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'cybersecurity-network',
+        imageAlt: 'Engineer adjusting a core network switch in a data center',
+        layout: 'image-left',
+        title: 'Cybersecurity networks need maintainable protection boundaries',
+        paragraphs: [
+          'Connecting systems through a firewall is not enough. Long-term protection depends on understandable zones, permissions, monitoring, and vulnerability response.',
+          'Rally Technology connects segmentation, access control, intrusion protection, and assessment cadence so IT / OT teams can see where risk sits and keep the controls maintainable.'
+        ],
+        highlights: [
+          'Segmented access',
+          'Lower attack risk',
+          'Ongoing vulnerability checks'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Key Priorities',
+        items: [
+          {
+            title: 'Network segmentation',
+            description:
+              'Separate network zones by role, system, and risk level to reduce lateral-movement exposure.'
+          },
+          {
+            title: 'Access control',
+            description:
+              'Define VPN, authentication, and permission logic for both remote and internal access.'
+          },
+          {
+            title: 'Threat protection',
+            description:
+              'Integrate firewalls, IPS, and monitoring mechanisms to increase abnormal-activity visibility.'
+          },
+          {
+            title: 'Vulnerability checks',
+            description:
+              'Use regular assessments and remediation tracking so protection does not stop at initial deployment.'
+          }
+        ]
+      },
+      {
+        type: 'capability-list',
+        title: 'Scope and Method',
+        items: [
+          {
+            title: 'Cybersecurity network architecture',
+            paragraphs: [
+              'Map critical systems, user roles, and data flows before defining segmentation, isolation, and protection-device placement.'
+            ]
+          },
+          {
+            title: 'Remote access and Zero Trust',
+            paragraphs: [
+              'Design verification, authorization, and access workflows around user roles and operating scenarios to reduce the exposed surface.'
+            ]
+          },
+          {
+            title: 'Vulnerability assessment and follow-up',
+            paragraphs: [
+              'Plan assessment, risk ranking, and remediation guidance so cybersecurity work has clear priorities.'
             ]
           }
         ]
@@ -637,42 +747,44 @@ export const serviceDetailPagesEn = {
       {
         type: 'closing-note',
         paragraphs: [
-          'Review network and cybersecurity architecture before new server rooms, production lines, plants, or remote connections expand. The later segmentation, permissions, and redundancy wait, the more they become retrofit work.'
+          'Bring cybersecurity network planning in before new systems, remote maintenance, or cross-team data connections are finalized. That is when segmentation and access boundaries can still be designed cleanly.'
         ]
       }
     ]
   },
-  'remote-monitoring-and-data': {
+  'offshore-wind-operations': {
     seo: {
-      title: 'Remote Monitoring and Data | Rally Technology',
+      title:
+        'Offshore Wind Remote Operations and Security Management | Rally Technology',
       description:
-        'Rally Technology supports remote operations for offshore wind and remote sites through Secure Remote Access, SCADA / PLC / HMI maintenance, and OT status monitoring.'
+        'Rally Technology builds secure remote connections, monitoring, maintenance response, and safety-management workflows for offshore wind and remote sites.'
     },
     heroFocusItems: [
       'Secure remote operation',
-      'Real-time fault response',
+      'Faster fault response',
       'Lower site risk'
     ],
     introParagraphs: [
-      'Offshore wind and remote sites need maintenance workflows that balance stability, security, and fast response.',
-      'We combine OT system experience with cybersecurity architecture to build remote operations that can be operated, monitored, and traced.'
+      'Offshore wind operations are shaped by weather, travel constraints, and site risk, so remote visibility, remote support, and safety workflows need to be planned together.',
+      'We help build secure remote connections, monitoring, and alarm-response workflows so teams can judge conditions faster, plan action, and reduce unnecessary site visits.'
     ],
     sidebar: sharedSidebar,
     blocks: [
       {
         type: 'media-feature',
-        mediaSlot: 'remote-monitoring-and-data',
-        imageAlt: 'Remote monitoring workstation with multiple screens',
+        mediaSlot: 'offshore-wind-operations',
+        imageAlt:
+          'Offshore wind turbines and offshore electrical infrastructure',
         layout: 'image-right',
         title:
-          'Remote operations have to manage secure access and operating responsibility together',
+          'Offshore wind operations need remote support and safety designed together',
         paragraphs: [
-          'In high-restriction, hard-to-reach sites, the issue is not only whether a team can connect. It is who can sign in safely, what they can see, how they decide, and what record remains afterward.',
-          'We place Secure Remote Access, SCADA / PLC / HMI support, OT network status monitoring, and permission workflows into one operating architecture to reduce travel and site risk.'
+          'Remote-site maintenance pressure is not only about equipment. Teams also need to know who can connect safely, how events are evaluated, when dispatch is needed, and how site risk is controlled.',
+          'Rally Technology combines remote access, SCADA / PLC / HMI support, alarm monitoring, and permission workflows so operations teams can keep a steadier maintenance rhythm.'
         ],
         highlights: [
           'Secure remote operation',
-          'Real-time fault response',
+          'Faster fault response',
           'Lower site risk'
         ]
       },
@@ -683,22 +795,214 @@ export const serviceDetailPagesEn = {
           {
             title: 'Secure remote access',
             description:
-              'Design Secure Remote Access and permission control so remote operation has clear boundaries.'
+              'Plan VPN, permissions, and connection workflows to reduce the safety and security risk of remote maintenance.'
           },
           {
-            title: 'System maintenance support',
+            title: 'Equipment visibility',
             description:
-              'Support SCADA / PLC / HMI maintenance and abnormal-condition review so field issues can be narrowed faster.'
+              'Connect SCADA, control systems, and key signals so teams can support remote review and follow-up.'
           },
           {
-            title: 'OT status monitoring',
+            title: 'Event response',
             description:
-              'Integrate OT network and equipment status so maintenance teams can follow critical signals in real time.'
+              'Define alarm, dispatch, and escalation logic so abnormal events reach the right response path faster.'
           },
           {
-            title: 'Remote event handling',
+            title: 'Safety management',
             description:
-              'Establish remote alarm analysis and handling workflows to improve fault diagnosis and response speed.'
+              'Include permissions, records, and maintenance workflows in the management model to lower operating risk.'
+          }
+        ]
+      },
+      {
+        type: 'capability-list',
+        title: 'Scope and Method',
+        items: [
+          {
+            title: 'Remote operations architecture',
+            paragraphs: [
+              'Plan remote access, monitoring data, and operating permissions so teams can support the site within a defined safety boundary.'
+            ]
+          },
+          {
+            title: 'SCADA / PLC / HMI support',
+            paragraphs: [
+              'Support monitoring screens, control signals, and equipment status so teams can evaluate abnormal conditions and maintain systems.'
+            ]
+          },
+          {
+            title: 'Alarm and incident management',
+            paragraphs: [
+              'Organize alarm priorities, notifications, and escalation flow so remote-site incidents do not stall at information gaps.'
+            ]
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        title: 'When It Fits',
+        paragraphs: [
+          'Use this service when wind farms, offshore substations, or remote sites need remote support, lower dependence on site visits, or a clearer model for maintenance permissions and incident response.'
+        ]
+      }
+    ]
+  },
+  // Source: docs/rewrite/文案.md item 4, backfilled into the existing network-design service.
+  'network-design': {
+    seo: {
+      title: 'Network Design | Rally Technology',
+      description:
+        'Rally Technology plans industrial networks around Core / Control / Field layers to improve communication stability and reduce system risk.'
+    },
+    heroFocusItems: [
+      'Clear layered architecture',
+      'Stable device communication',
+      'Lower system risk'
+    ],
+    introParagraphs: [
+      'Industrial network design focuses on Core / Control / Field layers, field-device communication, and control-data exchange so automation systems have a stable network foundation.',
+      'We define topology, segmentation, redundancy, and maintenance paths early so the control network does not become a system-risk source during expansion or abnormal conditions.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'network-design',
+        imageAlt:
+          'Network hardware and connected cabling in an industrial environment',
+        layout: 'image-left',
+        title:
+          'Industrial networks need clear control layers and communication paths',
+        paragraphs: [
+          'Good industrial networks do not start by connecting equipment and repairing the structure later. They start by defining the communication tasks and risk boundaries of the Core, Control, and Field layers.',
+          'We plan topology, network isolation, redundancy paths, and communication performance together so control systems stay stable during daily operation and later expansion.'
+        ],
+        highlights: [
+          'Clear layered architecture',
+          'Stable device communication',
+          'Lower system risk'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Key Priorities',
+        items: [
+          {
+            title: 'Layered architecture',
+            description:
+              'Organize communication responsibilities around Core / Control / Field layers so network roles are easier to understand.'
+          },
+          {
+            title: 'IT / OT separation',
+            description:
+              'Clarify control-network boundaries from other networks to reduce traffic interference and access risk.'
+          },
+          {
+            title: 'High-availability topology',
+            description:
+              'Include redundancy, failure scenarios, and critical paths in the design to improve site communication resilience.'
+          },
+          {
+            title: 'Communication performance',
+            description:
+              'Review latency, packet flow, and device connection needs to reduce downtime caused by unstable communication.'
+          }
+        ]
+      },
+      {
+        type: 'capability-list',
+        title: 'Scope and Method',
+        items: [
+          {
+            title: 'Topology planning',
+            paragraphs: [
+              'We structure how controllers, field devices, switches, and data systems connect so the industrial network topology stays clear.'
+            ]
+          },
+          {
+            title: 'Segmentation and isolation',
+            paragraphs: [
+              'We plan IT / OT boundaries, VLANs, and network-zone isolation to reduce unexpected traffic and access risk.'
+            ]
+          },
+          {
+            title: 'Stability and performance',
+            paragraphs: [
+              'Redundancy topology, latency, and packet paths are included in the design to improve field-device communication stability.'
+            ]
+          },
+          {
+            title: 'Industrial cybersecurity handoff',
+            paragraphs: [
+              'Protection and monitoring interfaces are reserved within the industrial network scope so later security controls can align with the control-network boundary.'
+            ]
+          }
+        ]
+      },
+      {
+        type: 'closing-note',
+        paragraphs: [
+          'Set industrial network design before control systems, field devices, and data platforms expand heavily. That is when layers, isolation, and redundancy can still be designed cleanly.'
+        ]
+      }
+    ]
+  },
+  'remote-monitoring-and-data': {
+    seo: {
+      title: 'Remote Monitoring and Data | Rally Technology',
+      description:
+        'Rally Technology helps build remote monitoring and data-continuity workflows for distributed sites and critical records.'
+    },
+    heroFocusItems: [
+      'Remote visibility',
+      'Data continuity',
+      'Recovery readiness'
+    ],
+    introParagraphs: [
+      'Remote monitoring and data backup have to answer three questions together: can teams see it, can data return, and can records still be reviewed after an event?',
+      'We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'remote-monitoring-and-data',
+        imageAlt: 'Remote monitoring workstation with multiple screens',
+        layout: 'image-right',
+        title: 'Remote visibility works best with continuity planning',
+        paragraphs: [
+          'Remote monitoring is only reliable when teams can still review status, retrieve records, and recover evidence after an abnormal event.',
+          'We combine cross-site visibility, backup paths, and recovery logic so remote operations stay usable under pressure.'
+        ],
+        highlights: [
+          'Remote visibility',
+          'Data continuity',
+          'Recovery readiness'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Key Priorities',
+        items: [
+          {
+            title: 'Cross-site visibility',
+            description:
+              'Make important site status easier to review across multiple locations.'
+          },
+          {
+            title: 'Record continuity',
+            description:
+              'Plan monitoring together with backup paths so important records remain available later.'
+          },
+          {
+            title: 'Recovery readiness',
+            description:
+              'Keep stronger evidence and state history available when teams need to recover or investigate.'
+          },
+          {
+            title: 'Access boundaries',
+            description:
+              'Shape remote visibility around actual operational needs and clear risk limits.'
           }
         ]
       },
@@ -708,24 +1012,24 @@ export const serviceDetailPagesEn = {
         columns: 3,
         items: [
           {
-            title: 'Offshore wind operations',
+            title: 'Cross-site monitoring',
             description:
-              'Use when offshore wind or remote sites need to reduce travel risk while keeping maintenance responsive.'
+              'Let teams follow important sites without always being on location.'
           },
           {
-            title: 'Remote operation management',
+            title: 'Data backup',
             description:
-              'Use when maintenance depends on remote access and login permissions or operating workflows need clearer control.'
+              'Reduce the risk of losing critical records when one storage path fails.'
           },
           {
-            title: 'SCADA / OT centralized management',
+            title: 'Event review',
             description:
-              'Use when SCADA / OT systems need centralized monitoring, analysis, and maintenance support.'
+              'Preserve the context needed for incident review and future improvement.'
           },
           {
-            title: 'Maintenance-cost control',
+            title: 'Business continuity',
             description:
-              'Use when remote handling can shorten fault isolation and reduce field-maintenance load.'
+              'Keep information access and decision support moving during remote or unexpected conditions.'
           }
         ]
       },
@@ -733,27 +1037,28 @@ export const serviceDetailPagesEn = {
         type: 'summary',
         title: 'When to Bring It In',
         paragraphs: [
-          'Design remote access, monitoring, and permission workflows when offshore wind or remote sites are being built.',
-          'That is when secure channels, operating responsibility, and event traceability can become one maintenance system instead of add-ons after launch.'
+          'Bring remote monitoring and data-continuity planning in before sites, backup paths, and remote roles are all defined separately.',
+          'That is when visibility, recovery expectations, and access boundaries can still be designed as one workflow.'
         ]
       }
     ]
   },
+  // Source: docs/rewrite/文案.md item 5, backfilled into the existing alarm-monitoring service.
   'alarm-monitoring': {
     seo: {
       title:
         'Alarm Monitoring and Visualized Operations Management | Rally Technology',
       description:
-        'Rally Technology integrates alarm monitoring, event notification, trend analysis, and operations workflows so IT / OT teams can respond to the events that matter.'
+        'Rally Technology integrates alarm monitoring, event notification, trend analysis, and maintenance workflows so IT / OT teams can respond to the right events faster.'
     },
     heroFocusItems: [
       'Clear priorities',
-      'Faster event handling',
+      'Faster event response',
       'Less alarm noise'
     ],
     introParagraphs: [
-      'In IT and OT environments, missing a unified monitoring and alarm mechanism makes problems harder to catch in time and leaves operators sorting noise.',
-      'We build alarm routing, event notification, and escalation workflows so teams spend more attention on judging and handling critical issues.'
+      'Alarm monitoring and system maintenance need to make priority, event context, and the next response path clear to IT / OT teams.',
+      'We align conditions, notifications, trend analysis, and escalation logic so teams spend less time sorting noise and more time acting on events that need attention.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -763,14 +1068,15 @@ export const serviceDetailPagesEn = {
         imageAlt:
           'Monitoring display showing industrial alarm and status information',
         layout: 'image-left',
-        title: 'Alarm monitoring has to move real events to the front',
+        title:
+          'Alarm monitoring should connect events with maintenance workflows',
         paragraphs: [
-          'When alarms, performance data, Vulnerability Scanning results, and maintenance workflows sit in separate systems, teams struggle to decide which event needs attention first.',
-          'We integrate IT / OT equipment monitoring, alarm notification, historical trends, and event management into a visualized and traceable operations workflow.'
+          'When every event looks urgent, or maintenance teams cannot tell what needs action first, the problem is often unclear priority, notification, and context rather than a lack of information.',
+          'We organize alarm conditions, real-time notification, escalation flow, and trend analysis so teams can judge severity faster and track follow-up more clearly.'
         ],
         highlights: [
           'Clear priorities',
-          'Faster event handling',
+          'Faster event response',
           'Less alarm noise'
         ]
       },
@@ -779,24 +1085,24 @@ export const serviceDetailPagesEn = {
         title: 'Key Priorities',
         items: [
           {
-            title: 'Priority order',
+            title: 'Alarm priority',
             description:
-              'Set alarm categories and severity logic so events that need intervention are seen first.'
+              'Make critical conditions easier to recognize before low-value noise takes over attention.'
           },
           {
             title: 'Real-time notification',
             description:
-              'Connect event notification and escalation workflows to shorten fault location and response time.'
+              'Define notification timing, recipients, and escalation rules so events move into response faster.'
           },
           {
             title: 'Trend analysis',
             description:
-              'Preserve historical data and performance context to support abnormal-condition detection and later review.'
+              'Connect alarms back to equipment status and historical trends instead of leaving events isolated.'
           },
           {
             title: 'Risk tracking',
             description:
-              'Connect Vulnerability Scanning results with maintenance events so risk status can be followed.'
+              'Record response history and improvement actions so operations teams can keep reducing repeat risk.'
           }
         ]
       },
@@ -807,19 +1113,19 @@ export const serviceDetailPagesEn = {
           {
             title: 'Integrated monitoring',
             paragraphs: [
-              'We integrate IT / OT equipment and system data sources into a centralized monitoring and visual operations view.'
+              'We help integrate system status, equipment signals, and critical alarms so IT / OT teams can evaluate events from one clearer view.'
             ]
           },
           {
             title: 'Alarm and event workflow',
             paragraphs: [
-              'We plan real-time alarms, notification paths, escalation rules, and event management so responsibility and response order stay clear.'
+              'Alarm conditions, recipients, escalation rules, and response ownership are defined clearly so events spend less time stalled in triage.'
             ]
           },
           {
             title: 'Data and risk management',
             paragraphs: [
-              'Historical trends, performance monitoring, abnormal-condition detection, and vulnerability results support data-driven maintenance judgment.'
+              'Trend analysis and event records help operations teams track recurring risks and plan follow-up improvements.'
             ]
           }
         ]
@@ -827,7 +1133,7 @@ export const serviceDetailPagesEn = {
       {
         type: 'closing-note',
         paragraphs: [
-          'When abnormal conditions are hard to detect, monitoring is scattered, or operations still depend heavily on manual handling, organize alarm and event logic first. The later this waits, the more alarm noise can dilute real risk.'
+          'Bring alarm monitoring and system-maintenance planning in before new points, screens, and notification rules pile up. That is when priorities, ownership, and follow-up methods can still be defined cleanly.'
         ]
       }
     ]

@@ -119,13 +119,8 @@ const serviceItems = computed(() =>
 
 <style scoped>
 .services-sys-overview-grid {
-  padding-block: clamp(2.6rem, 5vw, 4.4rem) clamp(3.2rem, 5vw, 4.8rem);
-  background: linear-gradient(
-    180deg,
-    rgb(249 247 241 / 1) 0%,
-    rgb(255 255 255 / 1) 28%,
-    rgb(247 245 239 / 1) 100%
-  );
+  padding-block: var(--layout-section-padding-default);
+  background: var(--color-bg-page);
 }
 
 .services-sys-overview-grid__rail {
@@ -136,12 +131,12 @@ const serviceItems = computed(() =>
 
 .services-sys-overview-grid__intro {
   max-width: 42rem;
-  margin-bottom: clamp(2rem, 4vw, 3rem);
+  margin-bottom: clamp(2.25rem, 4vw, 3.4rem);
 }
 
 .services-sys-grid {
   display: grid;
-  gap: clamp(2rem, 4vw, 3rem) clamp(1.8rem, 3vw, 2.75rem);
+  gap: clamp(2.2rem, 4vw, 3.25rem) clamp(1.9rem, 3vw, 2.9rem);
 }
 
 .services-sys-listing {
@@ -275,8 +270,46 @@ const serviceItems = computed(() =>
 }
 
 @media (min-width: 1280px) {
+  .services-sys-overview-grid__rail {
+    max-width: 96rem;
+  }
+
+  .services-sys-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.7rem, 3vw, 2.4rem) clamp(1.25rem, 2vw, 2rem);
+  }
+
+  .services-sys-grid > * {
+    margin-top: 0;
+  }
+
+  .services-sys-grid > :nth-child(2n) {
+    margin-top: 0;
+  }
+
+  .services-sys-grid > :nth-child(-n + 3) {
+    border-top: none;
+    padding-top: 0;
+  }
+
   .services-sys-listing__media {
     aspect-ratio: 16 / 11;
+  }
+}
+
+@media (min-width: 1536px) {
+  .services-sys-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1.45rem, 2.2vw, 2rem) clamp(1.15rem, 1.8vw, 1.75rem);
+  }
+
+  .services-sys-grid > :nth-child(-n + 4) {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .services-sys-listing__media {
+    aspect-ratio: 16 / 10;
   }
 }
 

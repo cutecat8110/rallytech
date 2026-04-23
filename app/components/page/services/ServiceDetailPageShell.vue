@@ -95,7 +95,7 @@ const isDenseMobileService = computed(() =>
 .services-sys-detail-shell {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 1.85rem;
+  gap: 2.15rem;
 }
 
 .services-sys-detail-shell__main {
@@ -103,7 +103,7 @@ const isDenseMobileService = computed(() =>
 }
 
 .services-sys-detail-intro {
-  padding-block: clamp(1.35rem, 2vw, 1.9rem);
+  padding-block: clamp(1.8rem, 2.8vw, 2.6rem);
   border-block: 1px solid
     color-mix(
       in srgb,
@@ -114,7 +114,7 @@ const isDenseMobileService = computed(() =>
 
 .services-sys-detail-intro__band {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.55rem;
 }
 
 .services-sys-detail-focus-strip {
@@ -152,15 +152,15 @@ const isDenseMobileService = computed(() =>
 
 @media (max-width: 767px) {
   .services-sys-detail-shell--dense-mobile {
-    gap: 1.15rem;
+    gap: 1.25rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-intro {
-    padding-block: 1rem;
+    padding-block: 1.15rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__band {
-    gap: 0.9rem;
+    gap: 1rem;
   }
 
   .services-sys-detail-shell--dense-mobile .services-sys-detail-focus-strip {
@@ -198,17 +198,17 @@ const isDenseMobileService = computed(() =>
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-blocks) {
-    gap: 2.55rem;
-    margin-top: 2.2rem;
+    gap: 2.8rem;
+    margin-top: 2.4rem;
   }
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-block + .services-sys-detail-block) {
-    padding-top: 1.8rem;
+    padding-top: 1.95rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-block) {
-    gap: 0.62rem;
+    gap: 0.7rem;
   }
 
   .services-sys-detail-shell--dense-mobile
@@ -218,7 +218,7 @@ const isDenseMobileService = computed(() =>
 
   .services-sys-detail-shell--dense-mobile
     :deep(.services-sys-detail-block__title) {
-    margin-bottom: 0.85rem;
+    margin-bottom: 0.98rem;
   }
 
   .services-sys-detail-shell--dense-mobile

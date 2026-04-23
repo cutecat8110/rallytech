@@ -67,6 +67,13 @@ const GENERATED_OUTPUT_DIRECTORIES = Object.freeze({
   'home-hero': '/images/generated/home/hero',
   'about-primary': '/images/generated/home/about-primary',
   'about-detail': '/images/generated/home/about-detail',
+  /* prettier-ignore */
+  'about-process-step': {
+    '01': '/images/generated/home/about-process/01',
+    '02': '/images/generated/home/about-process/02',
+    '03': '/images/generated/home/about-process/03',
+    '04': '/images/generated/home/about-process/04'
+  },
   'services-surface': '/images/generated/home/services-surface',
   'ote-background': '/images/generated/home/ote-background',
   /* prettier-ignore */
@@ -729,6 +736,10 @@ function getCanonicalStockScopeDirectory(scope) {
 
   if (normalizedScope === 'homepage') {
     return `${activeStockCanonicalRoot}/home`
+  }
+
+  if (normalizedScope === 'company/office') {
+    return '/images/company/office'
   }
 
   return `${activeStockCanonicalRoot}/${normalizedScope.replace(/\\/g, '/')}`

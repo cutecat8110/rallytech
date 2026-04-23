@@ -23,13 +23,16 @@ export const serviceVisualMeta = [
   },
   { slug: 'pi-server', order: 4, icon: 'i-lucide-database-zap' },
   { slug: 'historians', order: 5, icon: 'i-lucide-database' },
-  { slug: 'network-design', order: 6, icon: 'i-lucide-network' },
+  { slug: 'it-infrastructure', order: 6, icon: 'i-lucide-server' },
+  { slug: 'cybersecurity-network', order: 7, icon: 'i-lucide-shield-check' },
+  { slug: 'network-design', order: 8, icon: 'i-lucide-network' },
+  { slug: 'offshore-wind-operations', order: 9, icon: 'i-lucide-wind' },
   {
     slug: 'remote-monitoring-and-data',
-    order: 7,
+    order: 10,
     icon: 'i-lucide-radio-tower'
   },
-  { slug: 'alarm-monitoring', order: 8, icon: 'i-lucide-bell-ring' }
+  { slug: 'alarm-monitoring', order: 11, icon: 'i-lucide-bell-ring' }
 ] as const satisfies readonly ServiceVisualMeta[]
 
 const serviceSlugSet = new Set<ServiceSlug>(

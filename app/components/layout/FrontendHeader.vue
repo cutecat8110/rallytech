@@ -1,7 +1,10 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
 import { siteLocaleCodes } from '~/composables/useRallyI18n'
-import { secondarySolidButtonTheme } from '~/utils/button-themes'
+import {
+  headerSegmentedButtonTheme,
+  secondarySolidButtonTheme
+} from '~/utils/button-themes'
 import { enrichServiceCatalog } from '~/utils/services'
 
 const isMobileMenuOpen = ref(false)
@@ -64,31 +67,6 @@ const isServicesRoute = computed(
     route.path === servicesRootPath.value ||
     route.path.startsWith(`${servicesRootPath.value}/`)
 )
-
-const segmentedButtonUi = {
-  base: 'h-[var(--home-sys-header-control-height)] justify-center rounded-none px-0 shadow-none ring-0 focus-visible:ring-2 focus-visible:ring-secondary-200/90',
-  label: 'text-[0.75rem] font-semibold tracking-[0.08em]'
-} as const
-
-const contactButtonUi = {
-  base: '!text-white [&_*]:!text-white',
-  label: '!text-white'
-} as const
-
-const mobileMenuTriggerUi = {
-  leadingIcon: 'size-5 !text-white'
-} as const
-
-const segmentedButtonStateClass = {
-  active: 'home-sys-header__segmented-button--active',
-  inactive: 'home-sys-header__segmented-button--inactive'
-} as const
-
-function getSegmentedButtonStateClass(isActive: boolean) {
-  return isActive
-    ? segmentedButtonStateClass.active
-    : segmentedButtonStateClass.inactive
-}
 
 function closeMobileMenu() {
   isMobileMenuOpen.value = false
@@ -222,58 +200,55 @@ watch(isMobileMenuOpen, (open) => {
         </nav>
 
         <div class="home-sys-header__actions">
-          <div
-            v-if="showNanoToggle"
-            class="home-sys-header__image-mode"
-            role="group"
-            :aria-label="nanoToggleLabel"
-          >
-            <UButton
-              v-for="item in imageModeOptions"
-              :key="item.mode"
-              type="button"
-              color="neutral"
-              variant="ghost"
-              size="xs"
-              :label="item.label"
-              :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
-              :class="[
-                'home-sys-header__segmented-button',
-                'home-sys-header__image-mode-button',
-                getSegmentedButtonStateClass(
-                  (item.mode === 'nano') === isNanoEnabled
-                )
-              ]"
-              :ui="segmentedButtonUi"
-              :aria-pressed="
-                (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
-              "
-              @click="setPreferredMode(item.mode)"
-            />
-          </div>
+          <UTheme v-if="showNanoToggle" :ui="headerSegmentedButtonTheme">
+            <div
+              class="home-sys-header__image-mode"
+              role="group"
+              :aria-label="nanoToggleLabel"
+            >
+              <UButton
+                v-for="item in imageModeOptions"
+                :key="item.mode"
+                type="button"
+                color="neutral"
+                variant="ghost"
+                size="xs"
+                :label="item.label"
+                :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
+                :class="[
+                  'home-sys-header__segmented-button',
+                  'home-sys-header__image-mode-button'
+                ]"
+                :aria-pressed="
+                  (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
+                "
+                @click="setPreferredMode(item.mode)"
+              />
+            </div>
+          </UTheme>
 
-          <div
-            class="home-sys-header__locale"
-            role="group"
-            :aria-label="messages.nav.languageLabel"
-          >
-            <UButton
-              v-for="item in localeLinks"
-              :key="item.code"
-              :to="item.to"
-              color="neutral"
-              variant="ghost"
-              size="xs"
-              :label="item.label"
-              :class="[
-                'home-sys-header__segmented-button',
-                'home-sys-header__locale-button',
-                getSegmentedButtonStateClass(locale === item.code)
-              ]"
-              :ui="segmentedButtonUi"
-              :aria-current="locale === item.code ? 'page' : undefined"
-            />
-          </div>
+          <UTheme :ui="headerSegmentedButtonTheme">
+            <div
+              class="home-sys-header__locale"
+              role="group"
+              :aria-label="messages.nav.languageLabel"
+            >
+              <UButton
+                v-for="item in localeLinks"
+                :key="item.code"
+                :to="item.to"
+                color="neutral"
+                variant="ghost"
+                size="xs"
+                :label="item.label"
+                :class="[
+                  'home-sys-header__segmented-button',
+                  'home-sys-header__locale-button'
+                ]"
+                :aria-current="locale === item.code ? 'page' : undefined"
+              />
+            </div>
+          </UTheme>
 
           <UTheme :ui="secondarySolidButtonTheme">
             <UButton
@@ -283,62 +258,56 @@ watch(isMobileMenuOpen, (open) => {
               size="sm"
               :label="messages.nav.contactCta"
               class="home-sys-header__contact-button hidden md:inline-flex"
-              :ui="{
-                base: '!text-white [&_*]:!text-white',
-                label: '!text-white'
-              }"
             />
           </UTheme>
 
-          <div
-            v-if="showNanoToggle"
-            class="home-sys-header__mobile-image-mode"
-            role="group"
-            :aria-label="nanoToggleLabel"
-          >
+          <UTheme v-if="showNanoToggle" :ui="headerSegmentedButtonTheme">
+            <div
+              class="home-sys-header__mobile-image-mode"
+              role="group"
+              :aria-label="nanoToggleLabel"
+            >
+              <UButton
+                v-for="item in imageModeOptions"
+                :key="`mobile-${item.mode}`"
+                type="button"
+                color="neutral"
+                variant="ghost"
+                size="xs"
+                :label="item.label"
+                :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
+                :class="[
+                  'home-sys-header__segmented-button',
+                  'home-sys-header__image-mode-button'
+                ]"
+                :aria-pressed="
+                  (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
+                "
+                @click="setPreferredMode(item.mode)"
+              />
+            </div>
+          </UTheme>
+
+          <UTheme :ui="secondarySolidButtonTheme">
             <UButton
-              v-for="item in imageModeOptions"
-              :key="`mobile-${item.mode}`"
               type="button"
               color="neutral"
-              variant="ghost"
+              variant="solid"
               size="xs"
-              :label="item.label"
-              :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
-              :class="[
-                'home-sys-header__segmented-button',
-                'home-sys-header__image-mode-button',
-                getSegmentedButtonStateClass(
-                  (item.mode === 'nano') === isNanoEnabled
-                )
-              ]"
-              :ui="segmentedButtonUi"
-              :aria-pressed="
-                (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
+              :icon="
+                isMobileMenuOpen ? 'i-ic-baseline-close' : 'i-ic-baseline-menu'
               "
-              @click="setPreferredMode(item.mode)"
+              class="home-sys-header__mobile-menu-button justify-center lg:hidden"
+              :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
+              aria-controls="mobile-nav-panel"
+              :aria-label="
+                isMobileMenuOpen
+                  ? messages.nav.mobileCloseLabel
+                  : messages.nav.mobileOpenLabel
+              "
+              @click="isMobileMenuOpen = !isMobileMenuOpen"
             />
-          </div>
-
-          <UButton
-            type="button"
-            color="neutral"
-            variant="outline"
-            size="xs"
-            :icon="
-              isMobileMenuOpen ? 'i-ic-baseline-close' : 'i-ic-baseline-menu'
-            "
-            :ui="mobileMenuTriggerUi"
-            class="home-sys-header__mobile-menu-button justify-center !border-secondary-800 !bg-secondary-800 !text-white hover:!bg-secondary-700 active:!bg-secondary-800 focus-visible:!bg-secondary-700 lg:hidden"
-            :aria-expanded="isMobileMenuOpen ? 'true' : 'false'"
-            aria-controls="mobile-nav-panel"
-            :aria-label="
-              isMobileMenuOpen
-                ? messages.nav.mobileCloseLabel
-                : messages.nav.mobileOpenLabel
-            "
-            @click="isMobileMenuOpen = !isMobileMenuOpen"
-          />
+          </UTheme>
         </div>
       </div>
     </div>
@@ -425,34 +394,30 @@ watch(isMobileMenuOpen, (open) => {
             size="md"
             block
             :label="messages.nav.contactCta"
-            class="home-sys-header__contact-button mt-2 !text-white [&_*]:!text-white"
-            :ui="contactButtonUi"
+            class="home-sys-header__contact-button mt-2"
             @click="closeMobileMenu"
           />
         </UTheme>
-        <div
-          class="mt-2 grid grid-cols-3 gap-0 border border-secondary-200 bg-secondary-50 p-0"
-          role="group"
-          :aria-label="messages.nav.languageLabel"
-        >
-          <UButton
-            v-for="item in localeLinks"
-            :key="`mobile-locale-${item.code}`"
-            :to="item.to"
-            color="neutral"
-            variant="ghost"
-            size="sm"
-            :label="item.label"
-            :class="[
-              'home-sys-header__segmented-button',
-              'justify-center',
-              getSegmentedButtonStateClass(locale === item.code)
-            ]"
-            :ui="segmentedButtonUi"
-            :aria-current="locale === item.code ? 'page' : undefined"
-            @click="closeMobileMenu"
-          />
-        </div>
+        <UTheme :ui="headerSegmentedButtonTheme">
+          <div
+            class="mt-2 grid grid-cols-3 gap-0 border border-secondary-200 bg-secondary-50 p-0"
+            role="group"
+            :aria-label="messages.nav.languageLabel"
+          >
+            <UButton
+              v-for="item in localeLinks"
+              :key="`mobile-locale-${item.code}`"
+              :to="item.to"
+              color="neutral"
+              variant="ghost"
+              size="sm"
+              :label="item.label"
+              class="home-sys-header__segmented-button justify-center"
+              :aria-current="locale === item.code ? 'page' : undefined"
+              @click="closeMobileMenu"
+            />
+          </div>
+        </UTheme>
       </nav>
     </div>
   </header>
@@ -684,56 +649,14 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 .home-sys-header__segmented-button {
-  color: color-mix(
-    in srgb,
-    var(--color-secondary-700) 82%,
-    var(--color-white)
-  ) !important;
-  background: transparent !important;
-  font-size: 0.75rem;
-  font-weight: 700;
   line-height: 1;
-  transition: background-color 160ms ease;
 }
 
 .home-sys-header__segmented-button:not(:disabled):not([aria-disabled='true']) {
   cursor: pointer;
 }
 
-.home-sys-header__segmented-button :deep(*) {
-  color: currentColor !important;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-.home-sys-header__segmented-button:hover,
-.home-sys-header__segmented-button:focus-visible {
-  color: var(--color-white) !important;
-  background: var(--color-secondary-600) !important;
-}
-
-.home-sys-header__segmented-button--active {
-  color: var(--color-white) !important;
-  background: var(--color-secondary-600) !important;
-}
-
-.home-sys-header__segmented-button--active:hover,
-.home-sys-header__segmented-button--active:focus-visible {
-  color: var(--color-white) !important;
-  background: var(--color-secondary-600) !important;
-}
-
-.home-sys-header__segmented-button:disabled,
-.home-sys-header__segmented-button[aria-disabled='true'] {
-  color: var(--color-neutral-400) !important;
-  background: transparent !important;
-  opacity: 0.45;
-  cursor: not-allowed;
-}
-
 .home-sys-header__contact-button {
-  color: var(--color-white) !important;
-  background: var(--color-secondary-800) !important;
   min-height: var(--home-sys-header-control-height);
   padding-inline: 1.35rem;
   border-radius: 0;
@@ -742,14 +665,7 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 .home-sys-header__contact-button :deep(*) {
-  color: currentColor !important;
   font-weight: inherit;
-}
-
-.home-sys-header__contact-button:hover,
-.home-sys-header__contact-button:focus-visible {
-  color: var(--color-white) !important;
-  background: var(--color-secondary-700) !important;
 }
 
 .home-sys-header__locale {

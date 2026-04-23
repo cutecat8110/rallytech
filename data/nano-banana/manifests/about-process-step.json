@@ -6,13 +6,13 @@
       "slot": "about-process-step",
       "state": "01",
       "stock": {
-        "src": "/images/stock/about/process-step-01.jpg",
+        "src": "/images/stock/home/services-industrial-panel-bg.jpg",
         "alt": "",
         "label": "Process Step 01 Stock",
-        "source": "Placeholder",
-        "assetPage": null,
-        "licenseNote": null,
-        "notes": null
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
+        "licenseNote": "Pexels License",
+        "notes": "Reused existing homepage services stock asset as the about-process-step 01 fallback."
       },
       "candidates": [
         {
@@ -135,13 +135,13 @@
       "slot": "about-process-step",
       "state": "02",
       "stock": {
-        "src": "/images/stock/about/process-step-02.jpg",
+        "src": "/images/stock/home/hero-simulator-control-room.jpg",
         "alt": "",
         "label": "Process Step 02 Stock",
-        "source": "Placeholder",
-        "assetPage": null,
-        "licenseNote": null,
-        "notes": null
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/engineers-using-simulator-3862132/",
+        "licenseNote": "Pexels License",
+        "notes": "Reused existing homepage hero stock asset as the about-process-step 02 fallback."
       },
       "candidates": [
         {
@@ -264,13 +264,13 @@
       "slot": "about-process-step",
       "state": "03",
       "stock": {
-        "src": "/images/stock/about/process-step-03.jpg",
+        "src": "/images/stock/home/mission-tab-mission.jpg",
         "alt": "",
         "label": "Process Step 03 Stock",
-        "source": "Placeholder",
-        "assetPage": null,
-        "licenseNote": null,
-        "notes": null
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
+        "licenseNote": "Pexels License",
+        "notes": "Reused existing homepage mission stock asset as the about-process-step 03 fallback."
       },
       "candidates": [
         {
@@ -393,13 +393,13 @@
       "slot": "about-process-step",
       "state": "04",
       "stock": {
-        "src": "/images/stock/about/process-step-04.jpg",
+        "src": "/images/stock/home/footer-engineering-team.jpg",
         "alt": "",
         "label": "Process Step 04 Stock",
-        "source": "Placeholder",
-        "assetPage": null,
-        "licenseNote": null,
-        "notes": null
+        "source": "Pexels",
+        "assetPage": "https://www.pexels.com/photo/engineers-at-work-3861973/",
+        "licenseNote": "Pexels License",
+        "notes": "Reused existing homepage connector stock asset as the about-process-step 04 fallback."
       },
       "candidates": [
         {

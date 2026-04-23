@@ -5,8 +5,6 @@ import type {
   ServiceCatalogItemMessages
 } from './types'
 
-// Manual copy lock: services overview copy maps docs/rewrite/文案.md (2026-04-22).
-// Do not rewrite this public i18n copy without a new manual rewrite source.
 const servicesCatalog = [
   {
     slug: 'scada-hmi-graphics',
@@ -48,6 +46,23 @@ const servicesCatalog = [
     description:
       'Maintain long-term process records for trend review, report follow-up, and abnormal-condition analysis.'
   },
+  // Source: docs/rewrite/文案.md items 1-3, mapped as new public services.
+  {
+    slug: 'it-infrastructure',
+    shortLabel: 'IT Infrastructure',
+    formalTitle: 'IT Infrastructure Planning and Deployment',
+    englishTitle: 'IT Infrastructure Planning and Deployment',
+    description:
+      'Plan enterprise IT architecture, servers, storage, and virtualization resources for stable operation and future expansion.'
+  },
+  {
+    slug: 'cybersecurity-network',
+    shortLabel: 'Cybersecurity Network',
+    formalTitle: 'Cybersecurity Network Architecture and Protection',
+    englishTitle: 'Cybersecurity Network Architecture and Protection',
+    description:
+      'Integrate network segmentation, access control, threat protection, and vulnerability checks to reduce cybersecurity risk.'
+  },
   {
     slug: 'network-design',
     shortLabel: 'Network Design',
@@ -55,6 +70,14 @@ const servicesCatalog = [
     englishTitle: 'Network Design',
     description:
       'Define control-network topology, communication layers, and expansion boundaries for maintainable connectivity.'
+  },
+  {
+    slug: 'offshore-wind-operations',
+    shortLabel: 'Offshore Wind Operations',
+    formalTitle: 'Offshore Wind Remote Operations and Security Management',
+    englishTitle: 'Offshore Wind Remote Operations and Security Management',
+    description:
+      'Establish secure remote connections, monitoring, and maintenance workflows for offshore wind and remote-site operations.'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -254,19 +277,18 @@ const messages = {
   servicesCatalog,
   servicesPage: {
     seo: {
-      title:
-        'IT / OT Integration and Cybersecurity Solutions | Rally Technology',
+      title: 'Services | Rally Technology',
       description:
-        'Rally Technology provides IT / OT integration services across enterprise IT infrastructure, industrial networks, cybersecurity, remote operations, and alarm monitoring.'
+        'Browse Rally Technology service scopes for control interfaces, field support, control migration, plant-data platforms, IT infrastructure, cybersecurity networks, industrial networks, offshore wind operations, remote monitoring, and alarm workflows.'
     },
     hero: {
-      title: 'IT / OT Integration and Cybersecurity Solutions'
+      title: 'Industrial Automation Service Scopes'
     },
     intro: {
       kicker: 'Service Guide',
-      title: 'From IT infrastructure to OT field operations',
+      title: 'Find the right service by system layer',
       description:
-        'Use this overview to locate the layer that needs work: operator interfaces, field instrumentation, control logic, data platforms, IT / OT networks, remote operations, or alarm events.'
+        'Use this overview to locate the layer that needs work: operator interfaces, field I/O, control logic, plant data, IT infrastructure, cybersecurity, industrial networks, offshore wind operations, remote access, or event response.'
     },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',

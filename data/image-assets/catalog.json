@@ -185,7 +185,9 @@
       "usedBy": [
         "docs/references/首頁媒體素材來源.md#Footer connector",
         "data/nano-banana/manifests/connector-image.json#stock",
-        "app/utils/home-page-image-registry.ts#connector-image.stock"
+        "app/utils/home-page-image-registry.ts#connector-image.stock",
+        "app/utils/home-page-image-registry.ts#about-process-step.states.04.stock",
+        "data/nano-banana/manifests/about-process-step.json#states.04.stock"
       ],
       "replacedBy": null,
       "notes": "Canonical stock placeholder for the footer connector breakout image role. Active canonical stock asset stored under /images/stock/home/."
@@ -206,7 +208,9 @@
       "usedBy": [
         "docs/references/首頁媒體素材來源.md#Hero",
         "data/nano-banana/manifests/home-hero.json#stock",
-        "app/utils/home-page-image-registry.ts#home-hero.stock"
+        "app/utils/home-page-image-registry.ts#home-hero.stock",
+        "app/utils/home-page-image-registry.ts#about-process-step.states.02.stock",
+        "data/nano-banana/manifests/about-process-step.json#states.02.stock"
       ],
       "replacedBy": null,
       "notes": "Current approved homepage Hero stock asset. Active canonical stock asset stored under /images/stock/home/."
@@ -269,7 +273,9 @@
       "usedBy": [
         "docs/references/首頁媒體素材來源.md#Mission tab - mission",
         "data/nano-banana/manifests/mission-square.json#states.mission.stock",
-        "app/utils/home-page-image-registry.ts#mission-square.states.mission.stock"
+        "app/utils/home-page-image-registry.ts#mission-square.states.mission.stock",
+        "app/utils/home-page-image-registry.ts#about-process-step.states.03.stock",
+        "data/nano-banana/manifests/about-process-step.json#states.03.stock"
       ],
       "replacedBy": null,
       "notes": "Current approved stock image for the Mission square mission state. Active canonical stock asset stored under /images/stock/home/."
@@ -311,7 +317,9 @@
       "usedBy": [
         "docs/references/首頁媒體素材來源.md#Services bg",
         "data/nano-banana/manifests/services-surface.json#stock",
-        "app/utils/home-page-image-registry.ts#services-surface.stock"
+        "app/utils/home-page-image-registry.ts#services-surface.stock",
+        "app/utils/home-page-image-registry.ts#about-process-step.states.01.stock",
+        "data/nano-banana/manifests/about-process-step.json#states.01.stock"
       ],
       "replacedBy": null,
       "notes": "Canonical stock placeholder for the Services section background surface role. Active canonical stock asset stored under /images/stock/home/."
@@ -515,6 +523,186 @@
       ],
       "replacedBy": null,
       "notes": "Photo by Albert Stoynov. Selected for the Network Design detail hero to signal resilient physical OT network infrastructure."
+    },
+    {
+      "assetId": "it-infrastructure-overview-card-server-racks-engineer",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/it-infrastructure/overview-card-server-racks-engineer.jpg",
+      "canonicalName": "overview-card-server-racks-engineer.jpg",
+      "scope": "services/it-infrastructure",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-overview-card",
+        "app/utils/service-page-image-registry.ts#it-infrastructure.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Christina Morillo. Selected for docs/rewrite/文案.md item 1 to represent hands-on IT infrastructure deployment."
+    },
+    {
+      "assetId": "it-infrastructure-detail-hero-data-center-racks",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/it-infrastructure/detail-hero-data-center-racks.jpg",
+      "canonicalName": "detail-hero-data-center-racks.jpg",
+      "scope": "services/it-infrastructure",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/server-racks-on-data-center-5408005/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-detail-hero",
+        "app/utils/service-page-image-registry.ts#it-infrastructure.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Brett Sayles. Selected for docs/rewrite/文案.md item 1 to anchor the detail hero in server-room infrastructure."
+    },
+    {
+      "assetId": "it-infrastructure-detail-feature-data-hub-storage",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/it-infrastructure/detail-feature-data-hub-storage.jpg",
+      "canonicalName": "detail-feature-data-hub-storage.jpg",
+      "scope": "services/it-infrastructure",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/close-up-of-a-data-hub-diskstation-19825057/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-detail-feature",
+        "app/utils/service-page-image-registry.ts#it-infrastructure.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Jakub Zerdzicki. Selected for docs/rewrite/文案.md item 1 to show storage and data-infrastructure detail."
+    },
+    {
+      "assetId": "cybersecurity-network-overview-card-network-rack",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/cybersecurity-network/overview-card-network-rack.jpg",
+      "canonicalName": "overview-card-network-rack.jpg",
+      "scope": "services/cybersecurity-network",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/network-rack-17323801/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-overview-card",
+        "app/utils/service-page-image-registry.ts#cybersecurity-network.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by panumas nikhomkhai. Selected for docs/rewrite/文案.md item 2 to represent protected network infrastructure."
+    },
+    {
+      "assetId": "cybersecurity-network-detail-hero-engineer-core-switch",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/cybersecurity-network/detail-hero-engineer-core-switch.jpg",
+      "canonicalName": "detail-hero-engineer-core-switch.jpg",
+      "scope": "services/cybersecurity-network",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/engineer-fixing-core-swith-in-data-center-room-19226354/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-detail-hero",
+        "app/utils/service-page-image-registry.ts#cybersecurity-network.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by panumas nikhomkhai. Selected for docs/rewrite/文案.md item 2 to show hands-on switch and access-boundary work."
+    },
+    {
+      "assetId": "cybersecurity-network-detail-feature-server-cables",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/cybersecurity-network/detail-feature-server-cables.jpg",
+      "canonicalName": "detail-feature-server-cables.jpg",
+      "scope": "services/cybersecurity-network",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/cables-connected-on-server-2881229/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-detail-feature",
+        "app/utils/service-page-image-registry.ts#cybersecurity-network.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Brett Sayles. Selected for docs/rewrite/文案.md item 2 to express segmented cabling and network protection context."
+    },
+    {
+      "assetId": "offshore-wind-operations-overview-card-offshore-wind-turbines",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/offshore-wind-operations/overview-card-offshore-wind-turbines.jpg",
+      "canonicalName": "overview-card-offshore-wind-turbines.jpg",
+      "scope": "services/offshore-wind-operations",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/wind-turbines-on-the-sea-13223602/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-overview-card",
+        "app/utils/service-page-image-registry.ts#offshore-wind-operations.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Damir K. Selected for docs/rewrite/文案.md item 3 to represent offshore wind operations as a standalone service."
+    },
+    {
+      "assetId": "offshore-wind-operations-detail-hero-offshore-electrical-station",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/offshore-wind-operations/detail-hero-offshore-electrical-station.jpg",
+      "canonicalName": "detail-hero-offshore-electrical-station.jpg",
+      "scope": "services/offshore-wind-operations",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/wind-turbines-and-electrical-station-in-the-sea-26971292/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-detail-hero",
+        "app/utils/service-page-image-registry.ts#offshore-wind-operations.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by ZhiCheng Zhang. Selected for docs/rewrite/文案.md item 3 to show offshore electrical infrastructure and remote operations context."
+    },
+    {
+      "assetId": "offshore-wind-operations-detail-feature-north-sea-wind-turbines",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/offshore-wind-operations/detail-feature-north-sea-wind-turbines.jpg",
+      "canonicalName": "detail-feature-north-sea-wind-turbines.jpg",
+      "scope": "services/offshore-wind-operations",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Pexels",
+      "licenseNote": "Pexels License",
+      "sourceReference": "https://www.pexels.com/photo/offshore-wind-turbines-in-north-sea-scotland-31656794/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-detail-feature",
+        "app/utils/service-page-image-registry.ts#offshore-wind-operations.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Photo by Ben Jackson. Selected for docs/rewrite/文案.md item 3 to show remote offshore wind site context."
     },
     {
       "assetId": "network-design-detail-feature-network-servers-connected-cables",
@@ -6569,6 +6757,193 @@
       ],
       "replacedBy": null,
       "notes": "Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS."
+    },
+    {
+      "assetId": "rallytech-full-logo-header",
+      "kind": "brand",
+      "status": "deprecated",
+      "publicPath": "/images/brand/RallyTech_FullLogo_Header.svg",
+      "canonicalName": "rallytech-full-logo-header.svg",
+      "scope": "brand-system",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology brand export",
+      "licenseNote": "Proprietary internal brand asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "Legacy unused full-logo header export retained on disk for archival reference. Not wired into current runtime."
+    },
+    {
+      "assetId": "rallytech-logo-en",
+      "kind": "brand",
+      "status": "deprecated",
+      "publicPath": "/images/brand/RallyTech_Logo_EN.svg",
+      "canonicalName": "rallytech-logo-en.svg",
+      "scope": "brand-system",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology brand export",
+      "licenseNote": "Proprietary internal brand asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "Legacy unused English logo export retained on disk for archival reference. Not wired into current runtime."
+    },
+    {
+      "assetId": "rallytech-meeting-room-front",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-meeting-room-front.jpg",
+      "canonicalName": "rallytech-meeting-room-front.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-meeting-room-glass",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-meeting-room-glass.jpg",
+      "canonicalName": "rallytech-meeting-room-glass.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-meeting-room-screen",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-meeting-room-screen.jpg",
+      "canonicalName": "rallytech-meeting-room-screen.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-entry-corridor",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-entry-corridor.jpg",
+      "canonicalName": "rallytech-office-entry-corridor.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-logo-wall",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-logo-wall.jpg",
+      "canonicalName": "rallytech-office-logo-wall.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/home-page-image-registry.ts#about-primary.stock"],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-lounge-wide",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-lounge-wide.jpg",
+      "canonicalName": "rallytech-office-lounge-wide.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/home-page-image-registry.ts#about-hero.stock"],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-workspace-row",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-workspace-row.jpg",
+      "canonicalName": "rallytech-office-workspace-row.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/home-page-image-registry.ts#about-detail.stock"],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-workspace-wide",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-workspace-wide.jpg",
+      "canonicalName": "rallytech-office-workspace-wide.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "rallytech-office-workstation-corridor",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/company/office/rallytech-office-workstation-corridor.jpg",
+      "canonicalName": "rallytech-office-workstation-corridor.jpg",
+      "scope": "company/office",
+      "slot": null,
+      "state": null,
+      "source": "Rally Technology internal office photography",
+      "licenseNote": "Rally Technology proprietary internal office photography asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [],
+      "replacedBy": null,
+      "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
     }
   ]
 }

@@ -236,11 +236,11 @@ const secondVisual = computed(() => ({
 .one-touch-page__body-section {
   position: relative;
   background: var(--color-bg-page);
-  padding-block: 4.25rem;
+  padding-block: var(--layout-section-padding-default);
 }
 
 .one-touch-page__body-section--first {
-  padding-block-start: 4.35rem;
+  padding-block-start: var(--layout-section-padding-default);
 }
 
 .one-touch-page__split {
@@ -322,11 +322,11 @@ const secondVisual = computed(() => ({
 
 @media (max-width: 1023px) {
   .one-touch-page__body-section {
-    padding-block: 3rem;
+    padding-block: var(--layout-section-padding-default);
   }
 
   .one-touch-page__body-section--first {
-    padding-block-start: 2.45rem;
+    padding-block-start: var(--layout-section-padding-default);
   }
 
   .one-touch-page__split {
@@ -353,6 +353,16 @@ const secondVisual = computed(() => ({
     width: min(100%, 32rem);
     aspect-ratio: 434 / 575;
     border-radius: 10px 120px 10px 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .one-touch-page__body-section {
+    padding-block: 3rem;
+  }
+
+  .one-touch-page__body-section--first {
+    padding-block-start: 3rem;
   }
 }
 

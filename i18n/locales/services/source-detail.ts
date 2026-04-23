@@ -571,6 +571,182 @@ export const serviceDetailPagesSource = {
       }
     ]
   },
+  'it-infrastructure': {
+    seo: {
+      title:
+        'IT Infrastructure Planning and Deployment | Manual Rewrite Source',
+      description:
+        'Manual rewrite source service for IT architecture, server, storage, virtualization, HA/DR, and performance foundations.'
+    },
+    heroFocusItems: [
+      'IT architecture planning',
+      'Virtualization and resource integration',
+      'HA / DR and performance'
+    ],
+    introParagraphs: [
+      'This source-reference service was added from docs/rewrite/文案.md item 1. It frames IT infrastructure as a planning and deployment service covering enterprise IT architecture, servers, storage, virtualization, high availability, disaster recovery, and performance optimization.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'it-infrastructure',
+        imageAlt: 'IT infrastructure source-reference image',
+        layout: 'image-right',
+        title: 'Manual source item 1 becomes a new public service',
+        paragraphs: [
+          'The source material positions IT infrastructure as the foundation for stable operations and future expansion.',
+          'The public rewrite should keep this as a standalone service rather than folding it into industrial network design.'
+        ],
+        highlights: [
+          'Architecture planning',
+          'Resource integration',
+          'Operational continuity'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Manual Source Focus',
+        items: [
+          {
+            title: 'Architecture',
+            description:
+              'Enterprise IT architecture, server, storage, and virtualization planning.'
+          },
+          {
+            title: 'Continuity',
+            description:
+              'High availability, backup, and disaster recovery planning.'
+          },
+          {
+            title: 'Performance',
+            description: 'Resource and system performance optimization.'
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        paragraphs: [
+          'Use this source layer only to verify structure and naming. Public copy lives in zh-tw/en detail locales.'
+        ]
+      }
+    ]
+  },
+  'cybersecurity-network': {
+    seo: {
+      title:
+        'Cybersecurity Network Architecture and Protection | Manual Rewrite Source',
+      description:
+        'Manual rewrite source service for network segmentation, access control, intrusion protection, Zero Trust, and vulnerability checks.'
+    },
+    heroFocusItems: [
+      'Network segmentation',
+      'Access and threat protection',
+      'Vulnerability checks'
+    ],
+    introParagraphs: [
+      'This source-reference service was added from docs/rewrite/文案.md item 2. It frames cybersecurity network deployment as an architecture and protection service covering segmentation, access control, intrusion prevention, Zero Trust, and vulnerability assessment.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'cybersecurity-network',
+        imageAlt: 'Cybersecurity network source-reference image',
+        layout: 'image-left',
+        title: 'Manual source item 2 becomes a new public service',
+        paragraphs: [
+          'The source material separates cybersecurity network deployment from general industrial network design.',
+          'The public rewrite should keep protection, identity, and vulnerability work in this standalone service.'
+        ],
+        highlights: ['Segmentation', 'Access control', 'Ongoing assessment']
+      },
+      {
+        type: 'proof-strip',
+        title: 'Manual Source Focus',
+        items: [
+          {
+            title: 'Segmentation',
+            description: 'Network segmentation and secure architecture.'
+          },
+          {
+            title: 'Protection',
+            description: 'Access control, IPS, VPN, and Zero Trust concepts.'
+          },
+          {
+            title: 'Assessment',
+            description: 'Vulnerability scanning and remediation follow-up.'
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        paragraphs: [
+          'Use this source layer only to verify structure and naming. Public copy lives in zh-tw/en detail locales.'
+        ]
+      }
+    ]
+  },
+  'offshore-wind-operations': {
+    seo: {
+      title:
+        'Offshore Wind Remote Operations and Security Management | Manual Rewrite Source',
+      description:
+        'Manual rewrite source service for offshore wind remote operations, secure access, monitoring, maintenance response, and safety management.'
+    },
+    heroFocusItems: [
+      'Secure remote operations',
+      'Monitoring and maintenance response',
+      'Safety management'
+    ],
+    introParagraphs: [
+      'This source-reference service was added from docs/rewrite/文案.md item 3. It frames offshore wind work as a standalone remote operations and security management service, not as a replacement for remote monitoring and data backup.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'offshore-wind-operations',
+        imageAlt: 'Offshore wind source-reference image',
+        layout: 'image-right',
+        title: 'Manual source item 3 becomes a new public service',
+        paragraphs: [
+          'The source material focuses on secure remote operation, monitoring, fault handling, and site safety for offshore wind and remote assets.',
+          'The public rewrite should keep this service separate from remote monitoring and data backup.'
+        ],
+        highlights: [
+          'Remote operations',
+          'Incident response',
+          'Safety workflow'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Manual Source Focus',
+        items: [
+          {
+            title: 'Remote Access',
+            description: 'Secure connection and permission workflows.'
+          },
+          {
+            title: 'Monitoring',
+            description: 'SCADA, PLC, HMI, and equipment-state visibility.'
+          },
+          {
+            title: 'Safety',
+            description:
+              'Maintenance and safety-management workflows for remote sites.'
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        paragraphs: [
+          'Use this source layer only to verify structure and naming. Public copy lives in zh-tw/en detail locales.'
+        ]
+      }
+    ]
+  },
   'network-design': {
     seo: {
       title: 'Network Design | Pentagon Engineering Source Reference',

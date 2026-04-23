@@ -883,6 +883,141 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       }
     }
   },
+  'it-infrastructure': {
+    'overview-card': {
+      slot: 'it-infrastructure-overview-card',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/it-infrastructure/overview-card-server-racks-engineer.jpg',
+        alt: '',
+        label: 'it-infrastructure-overview-card stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-hero': {
+      slot: 'it-infrastructure-detail-hero',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/it-infrastructure/detail-hero-data-center-racks.jpg',
+        alt: '',
+        label: 'it-infrastructure-detail-hero stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/server-racks-on-data-center-5408005/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-feature': {
+      slot: 'it-infrastructure-detail-feature',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/it-infrastructure/detail-feature-data-hub-storage.jpg',
+        alt: '',
+        label: 'it-infrastructure-detail-feature stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/close-up-of-a-data-hub-diskstation-19825057/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    }
+  },
+  'cybersecurity-network': {
+    'overview-card': {
+      slot: 'cybersecurity-network-overview-card',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/cybersecurity-network/overview-card-network-rack.jpg',
+        alt: '',
+        label: 'cybersecurity-network-overview-card stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference: 'https://www.pexels.com/photo/network-rack-17323801/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-hero': {
+      slot: 'cybersecurity-network-detail-hero',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/cybersecurity-network/detail-hero-engineer-core-switch.jpg',
+        alt: '',
+        label: 'cybersecurity-network-detail-hero stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/engineer-fixing-core-swith-in-data-center-room-19226354/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-feature': {
+      slot: 'cybersecurity-network-detail-feature',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/cybersecurity-network/detail-feature-server-cables.jpg',
+        alt: '',
+        label: 'cybersecurity-network-detail-feature stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/cables-connected-on-server-2881229/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    }
+  },
   'network-design': {
     'overview-card': {
       slot: 'network-design-overview-card',
@@ -1036,6 +1171,74 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
           'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.',
         objectPosition: 'center center'
       }
+    }
+  },
+  'offshore-wind-operations': {
+    'overview-card': {
+      slot: 'offshore-wind-operations-overview-card',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/offshore-wind-operations/overview-card-offshore-wind-turbines.jpg',
+        alt: '',
+        label: 'offshore-wind-operations-overview-card stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/wind-turbines-on-the-sea-13223602/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-hero': {
+      slot: 'offshore-wind-operations-detail-hero',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/offshore-wind-operations/detail-hero-offshore-electrical-station.jpg',
+        alt: '',
+        label: 'offshore-wind-operations-detail-hero stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/wind-turbines-and-electrical-station-in-the-sea-26971292/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-feature': {
+      slot: 'offshore-wind-operations-detail-feature',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/offshore-wind-operations/detail-feature-north-sea-wind-turbines.jpg',
+        alt: '',
+        label: 'offshore-wind-operations-detail-feature stock image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Pexels',
+        sourceReference:
+          'https://www.pexels.com/photo/offshore-wind-turbines-in-north-sea-scotland-31656794/',
+        createdAt: null,
+        licenseNote: 'Pexels License',
+        notes:
+          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        objectPosition: 'center center'
+      },
+      liveNano: null,
+      latestCandidate: null
     }
   },
   'remote-monitoring-and-data': {

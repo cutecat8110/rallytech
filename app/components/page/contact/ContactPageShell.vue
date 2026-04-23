@@ -5,6 +5,7 @@ import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import SharedTextStack from '~/components/shared/SharedTextStack.vue'
+import { darkIconGhostButtonTheme } from '~/utils/button-themes'
 
 const messages = useRallyMessages()
 const toast = useToast()
@@ -44,6 +45,7 @@ const contactFormTextareaUi = {
 
 const contactFormFeedbackId = 'contact-form-submit-feedback'
 const contactFormFeedbackVisible = ref(false)
+const isMapFrameLoaded = ref(false)
 const contactFormFeedbackUi = {
   root: 'rounded-sm',
   title: 'type-sys-label-m',
@@ -201,21 +203,24 @@ function handleFormSubmit() {
             />
 
             <div class="contact-sys-copy-panel__actions">
-              <a
+              <UTheme
                 v-for="action in introActions"
                 :key="action.key"
-                :href="action.href"
-                class="contact-sys-copy-panel__action"
-                :aria-label="action.label"
-                :title="action.label"
-                :target="action.target"
-                :rel="action.target ? 'noreferrer' : undefined"
+                :ui="darkIconGhostButtonTheme"
               >
-                <UIcon
-                  :name="action.icon"
-                  class="contact-sys-copy-panel__action-icon size-4"
+                <UButton
+                  :href="action.href"
+                  color="neutral"
+                  variant="ghost"
+                  size="sm"
+                  :icon="action.icon"
+                  class="contact-sys-copy-panel__action"
+                  :aria-label="action.label"
+                  :title="action.label"
+                  :target="action.target"
+                  :rel="action.target ? 'noreferrer' : undefined"
                 />
-              </a>
+              </UTheme>
             </div>
           </article>
 
@@ -361,54 +366,65 @@ function handleFormSubmit() {
     </section>
 
     <section class="contact-sys-direct-section">
-      <div class="page-sys-shell--wide">
-        <div class="content-sys-rail">
-          <div class="contact-sys-direct-frame">
-            <article
-              v-for="card in directContactCards"
-              :key="card.key"
-              class="contact-sys-direct-card"
+      <div class="contact-sys-direct-rail">
+        <div class="contact-sys-direct-frame">
+          <article
+            v-for="card in directContactCards"
+            :key="card.key"
+            class="contact-sys-direct-card"
+          >
+            <p
+              class="type-sys-title-m contact-sys-direct-card__title text-neutral-950"
             >
-              <p
-                class="type-sys-title-m contact-sys-direct-card__title text-neutral-950"
-              >
-                {{ card.title }}
+              {{ card.title }}
+            </p>
+
+            <a
+              :href="card.primary.href"
+              class="type-sys-body-m contact-sys-direct-card__link"
+              :target="card.key === 'location' ? '_blank' : undefined"
+              :rel="card.key === 'location' ? 'noreferrer' : undefined"
+            >
+              {{ card.primary.value }}
+            </a>
+
+            <div v-if="card.secondary" class="contact-sys-direct-card__meta">
+              <p class="type-sys-label-s text-neutral-500">
+                {{ card.secondary.label }}
               </p>
-
               <a
-                :href="card.primary.href"
-                class="type-sys-body-m contact-sys-direct-card__link"
-                :target="card.key === 'location' ? '_blank' : undefined"
-                :rel="card.key === 'location' ? 'noreferrer' : undefined"
+                :href="card.secondary.href"
+                class="type-sys-body-s contact-sys-direct-card__link"
               >
-                {{ card.primary.value }}
+                {{ card.secondary.value }}
               </a>
-
-              <div v-if="card.secondary" class="contact-sys-direct-card__meta">
-                <p class="type-sys-label-s text-neutral-500">
-                  {{ card.secondary.label }}
-                </p>
-                <a
-                  :href="card.secondary.href"
-                  class="type-sys-body-s contact-sys-direct-card__link"
-                >
-                  {{ card.secondary.value }}
-                </a>
-              </div>
-            </article>
-          </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="contact-sys-map-section">
-      <iframe
-        :src="company.mapEmbedUrl"
-        class="contact-sys-map-section__iframe"
-        loading="eager"
-        :title="contactMessages.map.iframeTitle"
-        referrerpolicy="no-referrer-when-downgrade"
-      />
+      <div
+        class="contact-sys-map-frame"
+        :class="{ 'contact-sys-map-frame--loaded': isMapFrameLoaded }"
+      >
+        <div
+          class="contact-sys-map-frame__viewport"
+          :aria-label="contactMessages.map.iframeTitle"
+        >
+          <iframe
+            :src="company.mapEmbedUrl"
+            class="contact-sys-map-section__iframe"
+            loading="eager"
+            :title="contactMessages.map.iframeTitle"
+            referrerpolicy="no-referrer-when-downgrade"
+            @load="isMapFrameLoaded = true"
+            @error="isMapFrameLoaded = false"
+          />
+          <div class="contact-sys-map-frame__overlay" aria-hidden="true" />
+        </div>
+      </div>
     </section>
   </div>
 </template>
@@ -425,7 +441,8 @@ function handleFormSubmit() {
 .contact-sys-main-section {
   position: relative;
   isolation: isolate;
-  padding-block: clamp(2.75rem, 4.4vw, 3.5rem) clamp(1.1rem, 2vw, 1.6rem);
+  padding-block: var(--layout-section-padding-default)
+    var(--layout-section-padding-compact);
 }
 
 .contact-sys-main-section::after {
@@ -459,35 +476,10 @@ function handleFormSubmit() {
 }
 
 .contact-sys-copy-panel__action {
-  display: inline-flex;
   width: 2.55rem;
   height: 2.55rem;
-  align-items: center;
   justify-content: center;
-  color: var(--color-white);
-  text-decoration: none;
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-900) 82%,
-    var(--color-primary-700)
-  );
-  transition:
-    transform 180ms ease,
-    background-color 180ms ease;
-}
-
-.contact-sys-copy-panel__action:hover,
-.contact-sys-copy-panel__action:focus-visible {
-  transform: translateY(-1px);
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-800) 74%,
-    var(--color-primary-700)
-  );
-}
-
-.contact-sys-copy-panel__action-icon {
-  transform: scale(0.92);
+  border-radius: 0;
 }
 
 .contact-sys-form-panel {
@@ -531,20 +523,6 @@ function handleFormSubmit() {
   justify-content: center;
   border-radius: 0;
   letter-spacing: 0.04em;
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-900) 76%,
-    var(--color-primary-700)
-  ) !important;
-}
-
-.contact-sys-form__submit:hover,
-.contact-sys-form__submit:focus-visible {
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-800) 66%,
-    var(--color-primary-700)
-  ) !important;
 }
 
 .contact-sys-form__feedback {
@@ -573,11 +551,18 @@ function handleFormSubmit() {
 .contact-sys-direct-section {
   position: relative;
   isolation: isolate;
-  padding-block: 0 calc(var(--layout-section-padding-compact) - 1.15rem);
+  padding-block: 0;
+  border-top: 1px solid rgb(35 56 82 / 0.08);
+  background: var(--color-white);
 }
 
 .contact-sys-direct-section::after {
   content: none;
+}
+
+.contact-sys-direct-rail {
+  width: 100%;
+  padding-inline: var(--layout-header-padding-inline);
 }
 
 .contact-sys-direct-frame {
@@ -585,7 +570,8 @@ function handleFormSubmit() {
   z-index: 1;
   display: grid;
   gap: 1.4rem;
-  padding-block: 1rem;
+  width: 100%;
+  padding-block: clamp(1.6rem, 2.8vw, 2.2rem);
 }
 
 .contact-sys-direct-card {
@@ -616,14 +602,77 @@ function handleFormSubmit() {
 }
 
 .contact-sys-map-section {
+  padding-block: 0;
   border-top: 1px solid rgb(35 56 82 / 0.08);
+  background: var(--color-secondary-950);
+}
+
+.contact-sys-map-frame {
+  position: relative;
+  min-height: clamp(20rem, 70vw, 24rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 18%, rgb(48 187 165 / 0.22), transparent 44%),
+    linear-gradient(
+      145deg,
+      var(--color-secondary-950) 0%,
+      var(--color-secondary-900) 62%,
+      var(--color-secondary-800) 100%
+    );
+}
+
+.contact-sys-map-frame__viewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.09), transparent 36%),
+    repeating-linear-gradient(
+      90deg,
+      rgb(255 255 255 / 0.04) 0,
+      rgb(255 255 255 / 0.04) 1px,
+      transparent 1px,
+      transparent 3rem
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgb(255 255 255 / 0.035) 0,
+      rgb(255 255 255 / 0.035) 1px,
+      transparent 1px,
+      transparent 3rem
+    ),
+    color-mix(in srgb, var(--color-secondary-950) 88%, var(--color-primary-700));
 }
 
 .contact-sys-map-section__iframe {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   display: block;
   width: 100%;
-  min-height: clamp(16.75rem, 21vw, 19.5rem);
+  height: 100%;
   border: 0;
+  background: transparent;
+  opacity: 0.86;
+  filter: saturate(0.84) contrast(0.96) brightness(0.9);
+  transition:
+    opacity 180ms ease,
+    filter 180ms ease;
+}
+
+.contact-sys-map-frame--loaded .contact-sys-map-section__iframe {
+  opacity: 0.94;
+  filter: saturate(0.9) contrast(0.98) brightness(0.94);
+}
+
+.contact-sys-map-frame__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(180deg, rgb(4 12 16 / 0.18) 0%, rgb(4 12 16 / 0.34) 100%),
+    radial-gradient(circle at 18% 82%, rgb(48 187 165 / 0.32), transparent 34%);
+  pointer-events: none;
 }
 
 @media (min-width: 768px) {
@@ -639,8 +688,6 @@ function handleFormSubmit() {
   .contact-sys-direct-frame {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 0;
-    border-top: 1px solid rgb(35 56 82 / 0.08);
-    border-bottom: 1px solid rgb(35 56 82 / 0.08);
   }
 
   .contact-sys-direct-card {
@@ -651,15 +698,15 @@ function handleFormSubmit() {
   .contact-sys-direct-card + .contact-sys-direct-card {
     border-left: 1px solid rgb(35 56 82 / 0.08);
   }
+
+  .contact-sys-map-frame {
+    min-height: clamp(22rem, 42vw, 34rem);
+  }
 }
 
 @media (min-width: 1024px) {
   .contact-sys-main-grid {
     gap: 2.45rem;
-  }
-
-  .contact-sys-map-section__iframe {
-    min-height: 19.75rem;
   }
 }
 

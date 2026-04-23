@@ -130,17 +130,17 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
 .services-sys-detail-blocks {
   display: flex;
   flex-direction: column;
-  gap: clamp(3.8rem, 5vw, 5.4rem);
-  margin-top: clamp(3rem, 4vw, 4.2rem);
+  gap: clamp(4.2rem, 5.4vw, 6rem);
+  margin-top: clamp(3.4rem, 4.4vw, 4.8rem);
 }
 
 .services-sys-detail-block {
   display: grid;
-  gap: 0.7rem;
+  gap: 0.85rem;
 }
 
 .services-sys-detail-block + .services-sys-detail-block {
-  padding-top: clamp(1rem, 2vw, 1.4rem);
+  padding-top: clamp(1.25rem, 2.2vw, 1.75rem);
 }
 
 .services-sys-detail-block__eyebrow {
