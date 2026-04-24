@@ -48,6 +48,16 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
 
   return labelMap.get(blockType) ?? ''
 }
+
+function getRenderedBlockEyebrow(block: ServiceDetailBlockMessages) {
+  const eyebrow = getBlockEyebrow(block.type)
+  const title =
+    'title' in block && typeof block.title === 'string'
+      ? block.title.trim()
+      : ''
+
+  return eyebrow && eyebrow !== title ? eyebrow : undefined
+}
 </script>
 
 <template>
@@ -59,34 +69,34 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
       :class="`services-sys-detail-block--${block.type}`"
     >
       <p
-        v-if="!block.title"
+        v-if="!block.title && getRenderedBlockEyebrow(block)"
         class="type-sys-label-s services-sys-detail-block__eyebrow"
       >
-        {{ getBlockEyebrow(block.type) }}
+        {{ getRenderedBlockEyebrow(block) }}
       </p>
 
       <ServiceDetailMediaFeatureBlock
         v-if="block.type === 'media-feature'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailProofStripBlock
         v-else-if="block.type === 'proof-strip'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailCapabilityListBlock
         v-else-if="block.type === 'capability-list'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailCardGridBlock
         v-else-if="block.type === 'card-grid'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailQuoteBlock
@@ -97,25 +107,25 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
       <ServiceDetailSummaryBlock
         v-else-if="block.type === 'summary'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailTagListBlock
         v-else-if="block.type === 'tag-list'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailAccordionBlock
         v-else-if="block.type === 'accordion'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailProcessStepsBlock
         v-else-if="block.type === 'process-steps'"
         :block="block"
-        :eyebrow="getBlockEyebrow(block.type)"
+        :eyebrow="getRenderedBlockEyebrow(block)"
       />
 
       <ServiceDetailClosingNoteBlock

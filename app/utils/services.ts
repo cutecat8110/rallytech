@@ -32,7 +32,8 @@ export const serviceVisualMeta = [
     order: 10,
     icon: 'i-lucide-radio-tower'
   },
-  { slug: 'alarm-monitoring', order: 11, icon: 'i-lucide-bell-ring' }
+  { slug: 'alarm-monitoring', order: 11, icon: 'i-lucide-bell-ring' },
+  { slug: 'web-development', order: 12, icon: 'i-lucide-code-xml' }
 ] as const satisfies readonly ServiceVisualMeta[]
 
 const serviceSlugSet = new Set<ServiceSlug>(

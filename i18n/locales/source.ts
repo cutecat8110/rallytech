@@ -90,6 +90,14 @@ const servicesCatalog = [
     englishTitle: 'Alarm Monitoring',
     description:
       'Alarm Monitoring to ensure safety and efficiency in RNG facilities.'
+  },
+  {
+    slug: 'web-development',
+    shortLabel: 'Web Development',
+    formalTitle: 'Web Development',
+    englishTitle: 'Web Development',
+    description:
+      'Kevin manual copy source service for corporate websites, product and service pages, member portals, admin systems, and integration-ready web platforms.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

@@ -94,6 +94,14 @@ const servicesCatalog = [
     englishTitle: 'Alarm Monitoring',
     description:
       'Shape alarm classification, notification paths, and escalation rules so events are easier to track through response.'
+  },
+  {
+    slug: 'web-development',
+    shortLabel: 'Web Development',
+    formalTitle: 'Web Development',
+    englishTitle: 'Web Development',
+    description:
+      'Plan website structure, user flow, and technical implementation around brand, operations, and real usage needs.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

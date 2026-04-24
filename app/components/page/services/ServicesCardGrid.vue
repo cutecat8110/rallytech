@@ -120,7 +120,7 @@ const serviceItems = computed(() =>
 <style scoped>
 .services-sys-overview-grid {
   padding-block: var(--layout-section-padding-default);
-  background: var(--color-bg-page);
+  background: var(--color-white);
 }
 
 .services-sys-overview-grid__rail {

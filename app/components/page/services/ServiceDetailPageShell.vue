@@ -84,12 +84,7 @@ const isDenseMobileService = computed(() =>
 
 <style scoped>
 .services-sys-detail-stage {
-  background: linear-gradient(
-    180deg,
-    rgb(249 247 241 / 1) 0%,
-    rgb(255 255 255 / 1) 18%,
-    rgb(247 245 239 / 1) 100%
-  );
+  background: var(--color-white);
 }
 
 .services-sys-detail-shell {

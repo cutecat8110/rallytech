@@ -1025,5 +1025,66 @@ export const serviceDetailPagesSource = {
         ]
       }
     ]
+  },
+  'web-development': {
+    seo: {
+      title: 'Web Development | Kevin Manual Copy Source',
+      description:
+        'Kevin manual copy source service for corporate websites, product and service pages, member portals, admin systems, and integration-ready web platforms.'
+    },
+    heroFocusItems: [
+      'Tailored to business needs',
+      'Frontend and backend integration',
+      'Stable launch and future growth'
+    ],
+    introParagraphs: [
+      'This source-reference service was added from docs/rewrite/Kevin-網頁開發服務雙語文案.md. It frames web development as a standalone service covering corporate websites, product and service pages, member portals, admin systems, content workflows, and system integration.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'web-development',
+        imageAlt: 'Kevin web development source-reference image',
+        layout: 'image-right',
+        title: 'Kevin manual copy becomes a new public service',
+        paragraphs: [
+          'The source material positions web development as a digital platform service rather than only visual page production.',
+          'The public rewrite should preserve the focus on information architecture, frontend and backend implementation, admin workflow, API integration, testing, launch, and future expansion.'
+        ],
+        highlights: [
+          'Business-fit architecture',
+          'Integrated implementation',
+          'Scalable foundation'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Manual Source Focus',
+        items: [
+          {
+            title: 'Planning',
+            description:
+              'Audience, content hierarchy, feature scope, and data boundaries should be defined before implementation.'
+          },
+          {
+            title: 'Implementation',
+            description:
+              'Frontend pages, backend logic, admin workflow, and data flow are treated as one coordinated build.'
+          },
+          {
+            title: 'Integration',
+            description:
+              'Forms, memberships, CRM, ERP, and internal or external systems can be connected where reliable data exchange is needed.'
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        paragraphs: [
+          'Use this source layer only to verify Kevin copy structure and naming. Public copy lives in zh-tw/en detail locales.'
+        ]
+      }
+    ]
   }
 } satisfies ServiceDetailPagesMessages

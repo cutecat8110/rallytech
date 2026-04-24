@@ -901,7 +901,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
-        objectPosition: 'center center'
+        objectPosition: '60% 44%'
       },
       liveNano: null,
       latestCandidate: null
@@ -923,7 +923,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
-        objectPosition: 'center center'
+        objectPosition: '42% 50%'
       },
       liveNano: null,
       latestCandidate: null
@@ -945,7 +945,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
-        objectPosition: 'center center'
+        objectPosition: '56% 48%'
       },
       liveNano: null,
       latestCandidate: null
@@ -968,7 +968,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
-        objectPosition: 'center center'
+        objectPosition: '44% 46%'
       },
       liveNano: null,
       latestCandidate: null
@@ -990,7 +990,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
-        objectPosition: 'center center'
+        objectPosition: '54% 48%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1012,7 +1012,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
-        objectPosition: 'center center'
+        objectPosition: '54% 48%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1191,7 +1191,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
-        objectPosition: 'center center'
+        objectPosition: '60% 46%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1213,7 +1213,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
-        objectPosition: 'center center'
+        objectPosition: '58% 44%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1235,7 +1235,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         licenseNote: 'Pexels License',
         notes:
           'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
-        objectPosition: 'center center'
+        objectPosition: '60% 50%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1555,6 +1555,71 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
           'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.',
         objectPosition: 'center center'
       }
+    }
+  },
+  'web-development': {
+    'overview-card': {
+      slot: 'web-development-overview-card',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/web-development/overview-card-web-development-kevin-workspace.jpg',
+        alt: '',
+        label: 'web-development-overview-card Kevin provided image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Kevin / Rally Technology provided visual asset',
+        sourceReference: null,
+        createdAt: null,
+        licenseNote: 'Rally Technology proprietary provided visual asset.',
+        notes:
+          'Kevin-provided visual selected for the Web Development new service overview card.',
+        objectPosition: '55% 44%'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-hero': {
+      slot: 'web-development-detail-hero',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/web-development/detail-hero-web-development-kevin-workspace.jpg',
+        alt: '',
+        label: 'web-development-detail-hero Kevin provided image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Kevin / Rally Technology provided visual asset',
+        sourceReference: null,
+        createdAt: null,
+        licenseNote: 'Rally Technology proprietary provided visual asset.',
+        notes:
+          'Kevin-provided visual selected for the Web Development detail hero.',
+        objectPosition: '56% 44%'
+      },
+      liveNano: null,
+      latestCandidate: null
+    },
+    'detail-feature': {
+      slot: 'web-development-detail-feature',
+      liveSource: 'stock',
+      stock: {
+        src: '/images/stock/services/web-development/detail-feature-web-development-kevin-workspace.jpg',
+        alt: '',
+        label: 'web-development-detail-feature Kevin provided image',
+        candidateId: null,
+        model: null,
+        promptId: null,
+        source: 'Kevin / Rally Technology provided visual asset',
+        sourceReference: null,
+        createdAt: null,
+        licenseNote: 'Rally Technology proprietary provided visual asset.',
+        notes:
+          'Kevin-provided visual selected for the Web Development detail feature.',
+        objectPosition: '56% 44%'
+      },
+      liveNano: null,
+      latestCandidate: null
     }
   }
 } as ServicePageImageRegistry

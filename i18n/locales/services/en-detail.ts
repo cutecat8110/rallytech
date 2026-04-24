@@ -1137,5 +1137,154 @@ export const serviceDetailPagesEn = {
         ]
       }
     ]
+  },
+  'web-development': {
+    seo: {
+      title: 'Web Development | Rally Technology',
+      description:
+        'Rally Technology provides custom web development for corporate websites, service pages, member portals, admin systems, and connected digital platforms.'
+    },
+    heroFocusItems: [
+      'Tailored to business needs',
+      'Integrated across frontend and backend',
+      'Built for stable launch and future growth'
+    ],
+    introParagraphs: [
+      'Rally Technology provides custom web development services for corporate websites, product and service pages, member portals, and admin systems. We define the site structure, user flow, and technical implementation around each client’s brand, business process, and real operating needs, so the website becomes more than a visual presence.',
+      'We work to high industry standards across frontend, backend, integrations, testing, and deployment, with close attention to performance, security, maintainability, and scalability. Whether the project is a new build, a redesign, or a functional upgrade, the result is delivered on a stable and extensible foundation.'
+    ],
+    sidebar: sharedSidebar,
+    blocks: [
+      {
+        type: 'media-feature',
+        mediaSlot: 'web-development',
+        imageAlt:
+          'Desktop and laptop showing website interface and development workspace',
+        layout: 'image-right',
+        title:
+          'Web development should turn a company website into a digital platform the business can truly operate on',
+        paragraphs: [
+          'Strong web development is not only about polished pages. It is about making brand presentation, content management, user interaction, and connected data work together reliably over time.',
+          'We begin by clarifying information architecture, user scenarios, and system boundaries, then implement the frontend, backend, admin workflow, and integrations in a coordinated way. This keeps the website consistent, manageable, and ready to grow as content expands, features evolve, or connected systems change.'
+        ],
+        highlights: [
+          'Tailored planning',
+          'Standards-based development',
+          'Stable delivery'
+        ]
+      },
+      {
+        type: 'proof-strip',
+        title: 'Key Priorities',
+        items: [
+          {
+            title: 'Business-fit architecture',
+            description:
+              'We shape the website structure around real business goals, services, and workflows instead of forcing the project into a generic template.'
+          },
+          {
+            title: 'Integrated implementation',
+            description:
+              'We build pages, functions, admin tools, and data flow together so the platform works as one system.'
+          },
+          {
+            title: 'Standards-based delivery',
+            description:
+              'We use leading frameworks, version control, testing, and deployment practices to improve quality, security, and long-term maintainability.'
+          },
+          {
+            title: 'Scalable foundation',
+            description:
+              'We leave room for future pages, languages, modules, and integrations so expansion does not require starting over.'
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: 'Scope and Method',
+        items: [
+          {
+            stepLabel: '01',
+            title: 'Discovery and architecture planning',
+            description:
+              'We define audience, content structure, feature scope, and data boundaries before design and development begin.'
+          },
+          {
+            stepLabel: '02',
+            title: 'Interface and responsive experience',
+            description:
+              'We create clear interfaces that remain consistent and usable across desktop and mobile.'
+          },
+          {
+            stepLabel: '03',
+            title: 'Frontend and backend development',
+            description:
+              'We implement customer-facing pages, business logic, content handling, and admin functions as one coordinated build.'
+          },
+          {
+            stepLabel: '04',
+            title: 'CMS and workflow support',
+            description:
+              'We structure the backend so teams can manage updates, content, and daily operations more efficiently after launch.'
+          },
+          {
+            stepLabel: '05',
+            title: 'API and system integration',
+            description:
+              'We connect forms, memberships, CRM, ERP, or other systems where the website needs reliable data exchange.'
+          },
+          {
+            stepLabel: '06',
+            title: 'Testing, launch, and growth planning',
+            description:
+              'We prepare validation, deployment, and future expansion so the platform stays stable as it evolves.'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'Applied Focus',
+        columns: 3,
+        items: [
+          {
+            title: 'Corporate websites',
+            description:
+              'Present the company clearly across brand, services, and contact channels.'
+          },
+          {
+            title: 'Product and service pages',
+            description:
+              'Explain value, differentiation, and solutions in a more structured way.'
+          },
+          {
+            title: 'Member and admin systems',
+            description:
+              'Support account-based features, operational workflows, and managed content.'
+          },
+          {
+            title: 'Campaign and project pages',
+            description:
+              'Build focused digital experiences for launches, promotions, or lead-generation goals.'
+          },
+          {
+            title: 'Multilingual websites',
+            description:
+              'Keep multiple language versions aligned within one maintainable structure.'
+          },
+          {
+            title: 'Business system integration',
+            description:
+              'Extend the website into an active business touchpoint instead of leaving it as a standalone front end.'
+          }
+        ]
+      },
+      {
+        type: 'summary',
+        title: 'When to Bring It In',
+        paragraphs: [
+          'Bring web development planning in early when launching a new corporate website, redesigning an existing one, improving digital workflows, or preparing to connect the site with memberships, forms, CRM, ERP, or internal systems. The earlier the structure and data flow are defined, the easier it is to control future expansion, maintenance, and redesign costs.'
+        ]
+      }
+    ]
   }
 } satisfies ServiceDetailPagesMessages

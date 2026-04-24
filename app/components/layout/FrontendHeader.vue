@@ -315,7 +315,7 @@ watch(isMobileMenuOpen, (open) => {
     <div
       v-if="isMobileMenuOpen"
       id="mobile-nav-panel"
-      class="border-t border-neutral-200 bg-white lg:hidden"
+      class="home-sys-header__mobile-nav-panel border-t border-neutral-200 bg-white lg:hidden"
     >
       <nav class="page-sys-shell--wide flex flex-col gap-2 py-4">
         <template v-for="item in navItems" :key="`mobile-${item.label}`">
@@ -436,6 +436,14 @@ watch(isMobileMenuOpen, (open) => {
   --home-sys-header-control-gap: 0.4rem;
   --home-sys-header-services-menu-gap: 0.55rem;
   --home-sys-header-services-menu-width: min(34rem, 72vw);
+  --home-sys-header-mobile-panel-offset: calc(
+    var(--home-sys-header-top-min-height) +
+      var(--home-sys-header-top-padding-block) +
+      var(--home-sys-header-top-padding-block) +
+      var(--home-sys-header-main-min-height) +
+      var(--home-sys-header-main-padding-block) +
+      var(--home-sys-header-main-padding-block) + 1px
+  );
 }
 
 .home-sys-header__top {
@@ -688,6 +696,14 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__mobile-menu-button {
   width: var(--home-sys-header-control-height);
   height: var(--home-sys-header-control-height);
+}
+
+.home-sys-header__mobile-nav-panel {
+  max-height: calc(100dvh - var(--home-sys-header-mobile-panel-offset));
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
 }
 
 .home-sys-header__mobile-nav-group {

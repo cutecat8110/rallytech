@@ -14,6 +14,7 @@ export type ServiceSlug =
   | 'offshore-wind-operations'
   | 'remote-monitoring-and-data'
   | 'alarm-monitoring'
+  | 'web-development'
 
 export type OneTouchModuleId =
   | 'data-integration'

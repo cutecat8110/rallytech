@@ -92,6 +92,14 @@ const servicesCatalog = [
     englishTitle: 'Alarm Monitoring',
     description:
       '規劃告警分類、通知路徑與升級規則，讓事件從發生到處置更容易追蹤。'
+  },
+  {
+    slug: 'web-development',
+    shortLabel: '網頁開發',
+    formalTitle: '網頁開發服務',
+    englishTitle: 'Web Development',
+    description:
+      '依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作。'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

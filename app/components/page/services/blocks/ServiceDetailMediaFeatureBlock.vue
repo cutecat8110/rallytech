@@ -73,6 +73,7 @@ const highlightItems = computed(() =>
 }
 
 .services-sys-detail-media-feature__media {
+  position: relative;
   min-height: clamp(18rem, 34vw, 23rem);
   overflow: hidden;
   border-radius: clamp(1.1rem, 2vw, 1.6rem);
@@ -80,6 +81,9 @@ const highlightItems = computed(() =>
 }
 
 .services-sys-detail-media-feature__image {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;

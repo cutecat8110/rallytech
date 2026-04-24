@@ -6944,6 +6944,66 @@
       "usedBy": [],
       "replacedBy": null,
       "notes": "RallyTech internal office photo retained in the company office image path by catalog helper policy."
+    },
+    {
+      "assetId": "web-development-overview-card-kevin-workspace",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/web-development/overview-card-web-development-kevin-workspace.jpg",
+      "canonicalName": "overview-card-web-development-kevin-workspace.jpg",
+      "scope": "services/web-development",
+      "slot": "overview-card",
+      "state": null,
+      "source": "Kevin / Rally Technology provided visual asset",
+      "licenseNote": "Rally Technology proprietary provided visual asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#web-development-overview-card",
+        "app/utils/service-page-image-registry.ts#web-development.overview-card"
+      ],
+      "replacedBy": null,
+      "notes": "Kevin-provided visual selected for the Web Development new service overview card."
+    },
+    {
+      "assetId": "web-development-detail-hero-kevin-workspace",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/web-development/detail-hero-web-development-kevin-workspace.jpg",
+      "canonicalName": "detail-hero-web-development-kevin-workspace.jpg",
+      "scope": "services/web-development",
+      "slot": "detail-hero",
+      "state": null,
+      "source": "Kevin / Rally Technology provided visual asset",
+      "licenseNote": "Rally Technology proprietary provided visual asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#web-development-detail-hero",
+        "app/utils/service-page-image-registry.ts#web-development.detail-hero"
+      ],
+      "replacedBy": null,
+      "notes": "Kevin-provided visual selected for the Web Development detail hero."
+    },
+    {
+      "assetId": "web-development-detail-feature-kevin-workspace",
+      "kind": "stock",
+      "status": "active",
+      "publicPath": "/images/stock/services/web-development/detail-feature-web-development-kevin-workspace.jpg",
+      "canonicalName": "detail-feature-web-development-kevin-workspace.jpg",
+      "scope": "services/web-development",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "Kevin / Rally Technology provided visual asset",
+      "licenseNote": "Rally Technology proprietary provided visual asset.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#web-development-detail-feature",
+        "app/utils/service-page-image-registry.ts#web-development.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "Kevin-provided visual selected for the Web Development detail feature."
     }
   ]
 }
