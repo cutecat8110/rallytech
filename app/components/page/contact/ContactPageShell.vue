@@ -5,7 +5,7 @@ import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import SharedTextStack from '~/components/shared/SharedTextStack.vue'
-import { darkIconGhostButtonTheme } from '~/utils/button-themes'
+import { iconUtilityLightButtonTheme } from '~/utils/button-themes'
 
 const messages = useRallyMessages()
 const toast = useToast()
@@ -206,7 +206,7 @@ function handleFormSubmit() {
               <UTheme
                 v-for="action in introActions"
                 :key="action.key"
-                :ui="darkIconGhostButtonTheme"
+                :ui="iconUtilityLightButtonTheme"
               >
                 <UButton
                   :href="action.href"
@@ -479,7 +479,6 @@ function handleFormSubmit() {
   width: 2.55rem;
   height: 2.55rem;
   justify-content: center;
-  border-radius: 0;
 }
 
 .contact-sys-form-panel {
@@ -519,10 +518,6 @@ function handleFormSubmit() {
 
 .contact-sys-form__submit {
   min-width: 9.75rem;
-  min-height: 2.95rem;
-  justify-content: center;
-  border-radius: 0;
-  letter-spacing: 0.04em;
 }
 
 .contact-sys-form__feedback {

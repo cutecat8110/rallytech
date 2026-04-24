@@ -262,6 +262,55 @@ const messages = {
         'Detailed Design & Modeling'
       ]
     },
+    partners: {
+      kicker: 'Partnerships',
+      title: 'Platform partners and technology references',
+      description:
+        'This source layer keeps the partnership cue while the public locales use Rally Technology platform proof and partner-context wording.',
+      proofLabel: 'Source cue: partnerships and official partner proof',
+      items: [
+        {
+          name: 'Siemens',
+          tag: 'Automation platform',
+          description:
+            'User-provided platform reference for the public About partner section.',
+          image: {
+            src: '/images/brand/siemens-platform-badge.svg',
+            alt: 'Siemens platform visual badge'
+          }
+        },
+        {
+          name: 'WinCC OA',
+          tag: 'Partner proof',
+          description:
+            'Official partner-proof reference used by the public About partner section.',
+          image: {
+            src: '/images/brand/wincc-oa-platform-badge.svg',
+            alt: 'WinCC OA platform visual badge'
+          }
+        },
+        {
+          name: 'AVEVA PI',
+          tag: 'PI / Historian',
+          description:
+            'User-provided AVEVA PI and OSIsoft platform reference for the public About partner section.',
+          image: {
+            src: '/images/brand/aveva-pi-platform-badge.svg',
+            alt: 'AVEVA PI platform visual badge'
+          }
+        },
+        {
+          name: 'Palo Alto Networks',
+          tag: 'IT / OT security',
+          description:
+            'User-provided Palo Alto platform reference for the public About partner section.',
+          image: {
+            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            alt: 'Palo Alto Networks platform visual badge'
+          }
+        }
+      ]
+    },
     process: {
       kicker: 'Work Process',
       title: 'Our Working Process',
@@ -291,7 +340,83 @@ const messages = {
     },
     cardCtaLabel: 'Read more',
     detailBackLabel: 'All Services',
-    detailFocusLabel: 'Source Reference Focus'
+    detailFocusLabel: 'Source Reference Focus',
+    contextsSection: {
+      kicker: 'Reference Contexts',
+      title: 'Map source evidence back to common project contexts',
+      description:
+        'This hidden section helps QA compare Rally Technology keyword groupings with source-supported project situations before public copy is finalized.',
+      items: [
+        {
+          title: 'Renewable energy and offshore wind',
+          description:
+            'Reference-supported renewable energy, offshore wind, remote monitoring, and maintenance-response language.'
+        },
+        {
+          title: 'Energy management and facilities',
+          description:
+            'Reference-supported energy management, facilities, utilities, HVAC, and chiller-system monitoring language.'
+        },
+        {
+          title: 'Oil and gas and remote sites',
+          description:
+            'Reference-supported historian, remote monitoring, and data-continuity language for oil and gas and remote operations.'
+        },
+        {
+          title: 'Ports and transport infrastructure',
+          description:
+            'Reference-supported port, traffic and transport, and infrastructure-monitoring proof from partner materials.'
+        },
+        {
+          title: 'Factory and site monitoring',
+          description:
+            'Reference-supported central monitoring, plant data, and automation architecture vocabulary.'
+        },
+        {
+          title: 'Cross-system reporting',
+          description:
+            'Reference-supported PI Server, historian, reporting, and cross-system data-backbone language.'
+        }
+      ]
+    },
+    technologySection: {
+      kicker: 'Reference Platforms',
+      title: 'Track which platform terms are supported by source evidence',
+      description:
+        'This hidden section distinguishes platform and delivery terms that are supported by source material from terms that still need internal confirmation.',
+      items: [
+        {
+          title: 'SCADA / HMI and SCADA package planning',
+          description:
+            'Supported by source monitoring, operator-interface, alarm, and integration scope.'
+        },
+        {
+          title: 'WinCC OA and AVEVA System Platform',
+          description:
+            'Supported by official Rally Technology platform references in external research notes.'
+        },
+        {
+          title: 'PI Server / PI System / historians',
+          description:
+            'Supported by source-reference PI Server and historian pages plus reporting and traceability copy.'
+        },
+        {
+          title: 'PLC / DCS and commissioning',
+          description:
+            'Supported by source PLC / DCS, FAT / SAT, and commissioning language.'
+        },
+        {
+          title: 'Industrial networks and cybersecurity',
+          description:
+            'Supported by source network-design, segmentation, remote-access, and security vocabulary.'
+        },
+        {
+          title: 'Industrial websites and web applications',
+          description:
+            'Supported by Rally Technology manual web-development copy, not by legacy Pentagon reference pages.'
+        }
+      ]
+    }
   },
   oneTouchPage: {
     seo: {

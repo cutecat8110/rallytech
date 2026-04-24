@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // cspell:words iconify
-import { darkOutlineButtonTheme } from '~/utils/button-themes'
+import { contrastSolidLightButtonTheme } from '~/utils/button-themes'
 import type { Topic } from './types'
 
 const previewRoute = '/design-system'
@@ -38,6 +38,12 @@ const quickLinks: Topic[] = [
     description: 'Shadow-1 / 2 / 3 層級'
   },
   {
+    id: 'foundation-buttons',
+    icon: 'i-ic-baseline-smart-button',
+    title: 'Buttons 按鈕',
+    description: '公開站 CTA taxonomy 與 internal-only preview'
+  },
+  {
     id: 'foundation-space',
     icon: 'i-ic-baseline-straighten',
     title: 'Space 間距',
@@ -66,7 +72,8 @@ const quickLinks: Topic[] = [
 const designPrinciples = [
   '語意優先：先定角色，再選色階',
   'Nuxt UI 三層：app/app.config.ts → UTheme → 元件 :ui/class',
-  '色彩鎖定：深色骨架統一使用 Secondary 700-950'
+  '色彩鎖定：深色骨架統一使用 Secondary 700-950',
+  '公開站按鈕只保留 5 種 archetype，internal-only 變體不上 production'
 ] as const
 </script>
 
@@ -132,13 +139,19 @@ const designPrinciples = [
               <li v-for="item in designPrinciples" :key="item">• {{ item }}</li>
             </ul>
             <div class="grid gap-3 sm:grid-cols-2">
-              <UButton color="primary" variant="solid" block>
-                主要行動按鈕範式
-              </UButton>
-              <UTheme :ui="darkOutlineButtonTheme">
-                <UButton block color="neutral" variant="outline">
-                  深色次操作
-                </UButton>
+              <UButton
+                color="primary"
+                variant="solid"
+                block
+                label="Primary solid"
+              />
+              <UTheme :ui="contrastSolidLightButtonTheme">
+                <UButton
+                  block
+                  color="neutral"
+                  variant="solid"
+                  label="Contrast solid"
+                />
               </UTheme>
             </div>
           </div>

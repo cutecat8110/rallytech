@@ -2,8 +2,9 @@
 import { computed, ref, watch } from 'vue'
 import { siteLocaleCodes } from '~/composables/useRallyI18n'
 import {
-  headerSegmentedButtonTheme,
-  secondarySolidButtonTheme
+  contrastSolidDarkButtonTheme,
+  iconUtilityLightButtonTheme,
+  segmentedControlButtonTheme
 } from '~/utils/button-themes'
 import { enrichServiceCatalog } from '~/utils/services'
 
@@ -200,7 +201,7 @@ watch(isMobileMenuOpen, (open) => {
         </nav>
 
         <div class="home-sys-header__actions">
-          <UTheme v-if="showNanoToggle" :ui="headerSegmentedButtonTheme">
+          <UTheme v-if="showNanoToggle" :ui="segmentedControlButtonTheme">
             <div
               class="home-sys-header__image-mode"
               role="group"
@@ -227,7 +228,7 @@ watch(isMobileMenuOpen, (open) => {
             </div>
           </UTheme>
 
-          <UTheme :ui="headerSegmentedButtonTheme">
+          <UTheme :ui="segmentedControlButtonTheme">
             <div
               class="home-sys-header__locale"
               role="group"
@@ -250,7 +251,7 @@ watch(isMobileMenuOpen, (open) => {
             </div>
           </UTheme>
 
-          <UTheme :ui="secondarySolidButtonTheme">
+          <UTheme :ui="contrastSolidDarkButtonTheme">
             <UButton
               :to="contactPath"
               color="neutral"
@@ -261,7 +262,7 @@ watch(isMobileMenuOpen, (open) => {
             />
           </UTheme>
 
-          <UTheme v-if="showNanoToggle" :ui="headerSegmentedButtonTheme">
+          <UTheme v-if="showNanoToggle" :ui="segmentedControlButtonTheme">
             <div
               class="home-sys-header__mobile-image-mode"
               role="group"
@@ -288,12 +289,12 @@ watch(isMobileMenuOpen, (open) => {
             </div>
           </UTheme>
 
-          <UTheme :ui="secondarySolidButtonTheme">
+          <UTheme :ui="iconUtilityLightButtonTheme">
             <UButton
               type="button"
               color="neutral"
-              variant="solid"
-              size="xs"
+              variant="ghost"
+              size="sm"
               :icon="
                 isMobileMenuOpen ? 'i-ic-baseline-close' : 'i-ic-baseline-menu'
               "
@@ -333,22 +334,24 @@ watch(isMobileMenuOpen, (open) => {
                 {{ item.label }}
               </NuxtLink>
 
-              <UButton
-                type="button"
-                color="neutral"
-                variant="ghost"
-                size="sm"
-                :icon="
-                  isMobileServicesOpen
-                    ? 'i-ic-baseline-keyboard-arrow-up'
-                    : 'i-ic-baseline-keyboard-arrow-down'
-                "
-                class="home-sys-header__mobile-services-toggle"
-                :aria-expanded="isMobileServicesOpen ? 'true' : 'false'"
-                aria-controls="mobile-services-submenu"
-                :aria-label="item.label"
-                @click.stop="toggleMobileServicesMenu"
-              />
+              <UTheme :ui="iconUtilityLightButtonTheme">
+                <UButton
+                  type="button"
+                  color="neutral"
+                  variant="ghost"
+                  size="sm"
+                  :icon="
+                    isMobileServicesOpen
+                      ? 'i-ic-baseline-keyboard-arrow-up'
+                      : 'i-ic-baseline-keyboard-arrow-down'
+                  "
+                  class="home-sys-header__mobile-services-toggle"
+                  :aria-expanded="isMobileServicesOpen ? 'true' : 'false'"
+                  aria-controls="mobile-services-submenu"
+                  :aria-label="item.label"
+                  @click.stop="toggleMobileServicesMenu"
+                />
+              </UTheme>
             </div>
 
             <div
@@ -386,7 +389,7 @@ watch(isMobileMenuOpen, (open) => {
             {{ item.label }}
           </NuxtLink>
         </template>
-        <UTheme :ui="secondarySolidButtonTheme">
+        <UTheme :ui="contrastSolidDarkButtonTheme">
           <UButton
             :to="contactPath"
             color="neutral"
@@ -398,7 +401,7 @@ watch(isMobileMenuOpen, (open) => {
             @click="closeMobileMenu"
           />
         </UTheme>
-        <UTheme :ui="headerSegmentedButtonTheme">
+        <UTheme :ui="segmentedControlButtonTheme">
           <div
             class="mt-2 grid grid-cols-3 gap-0 border border-secondary-200 bg-secondary-50 p-0"
             role="group"
@@ -667,13 +670,6 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__contact-button {
   min-height: var(--home-sys-header-control-height);
   padding-inline: 1.35rem;
-  border-radius: 0;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-
-.home-sys-header__contact-button :deep(*) {
-  font-weight: inherit;
 }
 
 .home-sys-header__locale {

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">Siemens platform badge</title>
+  <desc id="desc">Site-local visual badge for Siemens automation ecosystem.</desc>
+  <defs>
+    <linearGradient id="mark" x1="40" y1="30" x2="316" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18a999"/>
+      <stop offset="1" stop-color="#35566f"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#dbe4ea" stroke-width="1">
+    <path d="M23 32h314"/>
+    <path d="M23 75h314"/>
+    <path d="M23 118h314"/>
+    <path d="M82 20v110"/>
+    <path d="M214 20v110"/>
+  </g>
+  <g transform="translate(42 41)" fill="none" stroke="url(#mark)" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <path d="M0 37h34l17-25 18 50 18-37h33"/>
+    <circle cx="0" cy="37" r="5" fill="#18a999" stroke="none"/>
+    <circle cx="120" cy="37" r="5" fill="#35566f" stroke="none"/>
+  </g>
+  <text x="42" y="98" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" letter-spacing="3">SIEMENS</text>
+  <text x="44" y="120" fill="#5c6f82" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">AUTOMATION ECOSYSTEM</text>
+</svg>

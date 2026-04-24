@@ -10,7 +10,7 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '監控與人機介面圖控服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技規劃 SCADA / HMI 畫面，讓現場更快看懂狀態、告警與操作動作。'
+        '雷力科技規劃 SCADA / HMI、WinCC OA 與 AVEVA System Platform 類畫面，讓現場更快看懂狀態、告警與操作動作。'
     },
     heroFocusItems: ['畫面易判讀', '告警有脈絡', '後續好維護'],
     introParagraphs: [
@@ -30,6 +30,16 @@ export const serviceDetailPagesZhTw = {
           '我們把層級、導覽與狀態邏輯一起整理，讓畫面現在好操作，之後新增點位也不容易失序。'
         ],
         highlights: ['畫面易判讀', '告警有脈絡', '後續好維護']
+      },
+      {
+        type: 'tag-list',
+        title: '平台與交付焦點',
+        items: [
+          'SCADA package',
+          'WinCC OA',
+          'AVEVA System Platform',
+          'Operator graphics'
+        ]
       },
       {
         type: 'proof-strip',
@@ -338,7 +348,7 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '即時資料平台服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技以 PI Server 建立工廠資料平台，支援監看、報表與跨系統使用。'
+        '雷力科技以 PI Server / PI System 建立工廠資料平台，支援監看、報表、工業分析與跨系統使用。'
     },
     heroFocusItems: ['資料骨幹穩定', '報表可使用', '整合更容易'],
     introParagraphs: [
@@ -363,9 +373,10 @@ export const serviceDetailPagesZhTw = {
         type: 'tag-list',
         title: '關鍵標籤',
         items: [
-          'Plant data backbone',
-          'Operational visibility',
           'PI Server',
+          'PI System',
+          'Industrial data platform',
+          'Industrial analytics',
           'Cross-system integration'
         ]
       },
@@ -431,7 +442,7 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '歷史資料平台服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技規劃 Historian 架構，支援長期記錄、趨勢比對、追溯與報表需求。'
+        '雷力科技規劃 Historian 架構，支援長期記錄、趨勢比對、追溯、報表與能源場域資料保留需求。'
     },
     heroFocusItems: ['長期可追溯', '冗餘可存取', '分析報表就緒'],
     introParagraphs: [
@@ -503,7 +514,7 @@ export const serviceDetailPagesZhTw = {
         title: '適合提早納入的情境',
         paragraphs: [
           'Historian 規劃最好在保留規則、報表需求或稽核期待剛開始被定義時就納入。',
-          '這時儲存配置、存取路徑與韌性設計還能為長期使用一起建立，而不是事後補強。'
+          '這時儲存配置、存取路徑與韌性設計還能為長期使用一起建立，而不是事後補強；對 oil & gas、能源與高合規場域尤其重要。'
         ]
       }
     ]
@@ -616,12 +627,12 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '資安網路架構與防護整合服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技整合網路分段、存取控管、威脅防護與弱點檢測，協助企業降低資安風險。'
+        '雷力科技整合網路分段、存取控管、資安設計與弱點檢測，協助企業降低 IT / OT 資安風險。'
     },
     heroFocusItems: ['網路分段控管', '降低攻擊風險', '持續弱點檢測'],
     introParagraphs: [
       '資安網路建置的核心，是先把使用者、系統、資料與設備之間的存取邊界定義清楚。',
-      '我們協助規劃分段、防護、遠端存取與弱點檢測機制，讓企業在維持營運效率的同時降低暴露風險。'
+      '我們協助規劃分段、防護、遠端存取與資安設計所需的弱點檢測機制，讓企業在維持營運效率的同時降低暴露風險。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -697,7 +708,7 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '離岸風場遠端維運與安全管理服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技建立離岸風場遠端連線、監控、維運回應與安全管理流程，支援偏遠場域穩定運作。'
+        '雷力科技建立離岸風場 SCADA 監控、遠端連線、維運回應與安全管理流程，支援 offshore wind monitoring system 與偏遠場域穩定運作。'
     },
     heroFocusItems: ['遠端安全操作', '即時故障處理', '降低現場風險'],
     introParagraphs: [
@@ -771,7 +782,7 @@ export const serviceDetailPagesZhTw = {
         type: 'summary',
         title: '適合導入的情境',
         paragraphs: [
-          '當風場、海上變電站或偏遠站點需要遠端支援、降低到場依賴，或重新整理維運權限與事件處理流程時，這項服務可以先成為維運架構的起點。'
+          '當風場、海上變電站或偏遠站點需要離岸風場 SCADA 監控、降低到場依賴，或重新整理維運權限與事件處理流程時，這項服務可以先成為維運架構的起點。'
         ]
       }
     ]
@@ -869,12 +880,12 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '遠端監控與資料備援服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技協助建立遠端監看與資料連續性流程，支援分散據點與關鍵紀錄保存。'
+        '雷力科技協助建立遠端監看、infrastructure monitoring 與資料連續性流程，支援分散據點、油氣場域與關鍵紀錄保存。'
     },
     heroFocusItems: ['跨據點可視', '資料連續性', '復原有準備'],
     introParagraphs: [
       '遠端監控與資料備援要同時回答三件事：看得到、傳得回，異常後還查得到。',
-      '我們把可視化、資料延續與復原準備一起規劃，避免遠端存取有了，紀錄保護卻成為事後補救。'
+      '我們把可視化、資料延續與復原準備一起規劃，避免遠端存取有了，紀錄保護卻成為事後補救，這也常見於 oil & gas 與遠端基礎設施場景。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -951,12 +962,12 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '告警監控與可視化維運管理服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技整合告警監控、事件通知、趨勢分析與維運流程，協助 IT / OT 團隊快速回應真正需要處理的事件。'
+        '雷力科技整合告警監控、即時通知、趨勢分析與維運流程，協助 IT / OT 團隊建立可持續維護的 industrial alarm notification system。'
     },
     heroFocusItems: ['優先順序清楚', '事件快速處理', '降低告警噪音'],
     introParagraphs: [
       '告警監控與系統維運的首要任務，是讓 IT / OT 團隊看得出優先順序、事件脈絡與下一步處置路徑。',
-      '我們會把條件、通知、趨勢分析與升級邏輯對齊，讓團隊少花時間篩噪音，多把時間用在真正需要處理的事件。'
+      '我們會把條件、即時通知、趨勢分析與升級邏輯對齊，讓團隊少花時間篩噪音，多把時間用在真正需要處理的事件。'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -1034,11 +1045,11 @@ export const serviceDetailPagesZhTw = {
     seo: {
       title: '網頁開發服務 | 雷力科技 Rally Technology',
       description:
-        '雷力科技提供客製化網頁開發服務，依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作。'
+        '雷力科技提供客製化工業網站與 Web 應用開發服務，依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作。'
     },
     heroFocusItems: ['貼合企業需求', '前後端整合完整', '穩定上線且可持續擴充'],
     introParagraphs: [
-      '雷力科技提供客製化的網頁開發服務，從企業官網、產品服務頁、會員入口到後台管理系統，依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作，讓網站不只是展示頁面，而是能真正支撐業務與管理的數位平台。',
+      '雷力科技提供客製化的工業網站與 Web 應用開發服務，從企業官網、產品服務頁、會員入口到後台管理系統，依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作，讓網站不只是展示頁面，而是能真正支撐業務與管理的數位平台。',
       '我們採用業界頂尖規格標準進行前端、後端、資料整合、測試與部署，兼顧效能、安全性、維護性與後續擴充彈性。無論是新建網站、舊站改版或功能升級，都能在一致架構下穩定推進。'
     ],
     sidebar: sharedSidebar,

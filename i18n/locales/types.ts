@@ -87,6 +87,21 @@ export interface AboutPageMessages {
     title: string
     items: string[]
   }
+  partners: {
+    kicker: string
+    title: string
+    description: string
+    proofLabel: string
+    items: Array<{
+      name: string
+      tag: string
+      description: string
+      image: {
+        src: string
+        alt: string
+      }
+    }>
+  }
   process: {
     kicker: string
     title: string
@@ -166,6 +181,18 @@ export interface ServicesPageMessages {
   cardCtaLabel: string
   detailBackLabel: string
   detailFocusLabel: string
+  contextsSection: {
+    kicker: string
+    title: string
+    description: string
+    items: TextPair[]
+  }
+  technologySection: {
+    kicker: string
+    title: string
+    description: string
+    items: TextPair[]
+  }
 }
 
 export interface OneTouchModuleMessages {

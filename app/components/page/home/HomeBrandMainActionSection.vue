@@ -32,7 +32,7 @@ const activeMissionState = computed(
 
 const missionTabsUi = {
   root: 'w-fit',
-  list: 'inline-flex rounded-none border border-neutral-200 bg-white p-1 shadow-[var(--shadow-1)]',
+  list: 'inline-flex rounded-none border border-neutral-200 bg-white p-1 shadow-none',
   indicator: 'rounded-none bg-primary-700 shadow-none',
   trigger:
     'min-w-[7.25rem] cursor-pointer justify-center rounded-none px-4 py-2 type-sys-label-s text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white',

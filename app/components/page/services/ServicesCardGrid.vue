@@ -238,8 +238,6 @@ const serviceItems = computed(() =>
 .services-sys-listing:hover .services-sys-listing__cta,
 .services-sys-listing:focus-visible .services-sys-listing__cta {
   --shared-action-link-color: var(--color-secondary-950);
-  --shared-action-link-gap: 0.48rem;
-  --shared-action-link-icon-translate: 0.12rem;
 }
 
 .services-sys-listing:focus-visible {

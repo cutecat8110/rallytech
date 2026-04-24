@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">Palo Alto Networks platform badge</title>
+  <desc id="desc">Site-local visual badge for Palo Alto Networks IT and OT security.</desc>
+  <defs>
+    <linearGradient id="shield" x1="52" y1="22" x2="304" y2="124" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18a999"/>
+      <stop offset="1" stop-color="#344f6f"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#dbe4ea" stroke-width="1">
+    <path d="M28 34h304"/>
+    <path d="M28 116h304"/>
+    <path d="M68 22v106"/>
+    <path d="M292 22v106"/>
+  </g>
+  <path d="M55 42l42-15 42 15v30c0 30-19 48-42 59-23-11-42-29-42-59V42z" fill="none" stroke="url(#shield)" stroke-linejoin="round" stroke-width="5"/>
+  <path d="M76 78h42m-42 17h28" fill="none" stroke="#18a999" stroke-linecap="round" stroke-width="5"/>
+  <text x="154" y="69" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Palo Alto</text>
+  <text x="154" y="99" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700">Networks</text>
+  <text x="156" y="121" fill="#5c6f82" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">IT / OT SECURITY</text>
+</svg>

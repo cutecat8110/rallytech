@@ -34,6 +34,12 @@ const foundationTopics: Topic[] = [
     description: 'Shadow-1 / 2 / 3 層級'
   },
   {
+    id: 'foundation-buttons',
+    icon: 'i-ic-baseline-smart-button',
+    title: 'Buttons 按鈕',
+    description: '公開站 CTA taxonomy 與 internal-only 邊界'
+  },
+  {
     id: 'foundation-space',
     icon: 'i-ic-baseline-straighten',
     title: 'Space 間距',

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /source
+Disallow: /design-system
+Disallow: /design-system-color-lab
+
+Sitemap: https://www.rallytech.com.tw/sitemap.xml

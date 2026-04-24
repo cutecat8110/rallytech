@@ -12,7 +12,7 @@ const servicesCatalog = [
     formalTitle: '監控與人機介面圖控服務',
     englishTitle: 'SCADA and HMI Graphics',
     description:
-      '把操作端需要看的狀態、告警與控制動作整理成清楚畫面，降低判讀與交接成本。'
+      '承接 SCADA / HMI、WinCC OA 與 AVEVA System Platform 類監控畫面規劃，讓狀態、告警與操作脈絡更容易判讀。'
   },
   {
     slug: 'ie-services',
@@ -34,7 +34,7 @@ const servicesCatalog = [
     formalTitle: '即時資料平台服務',
     englishTitle: 'PI Server',
     description:
-      '把即時製程資料收進 PI 架構，建立可查詢、計算與日常操作使用的資料基礎。'
+      '把即時製程資料收進 PI Server / PI System 架構，建立可查詢、計算與跨系統使用的工業資料平台。'
   },
   {
     slug: 'historians',
@@ -59,7 +59,7 @@ const servicesCatalog = [
     formalTitle: '資安網路架構與防護整合服務',
     englishTitle: 'Cybersecurity Network Architecture and Protection',
     description:
-      '整合網路分段、存取控管、威脅防護與弱點檢測，降低企業資安風險。'
+      '整合網路分段、存取控管、威脅防護與資安設計，降低企業 IT / OT 環境的暴露風險。'
   },
   {
     slug: 'network-design',
@@ -75,7 +75,7 @@ const servicesCatalog = [
     formalTitle: '離岸風場遠端維運與安全管理服務',
     englishTitle: 'Offshore Wind Remote Operations and Security Management',
     description:
-      '建立安全遠端連線、監控與維運流程，支援離岸風場與偏遠場域穩定運作。'
+      '建立離岸風場 SCADA 監控、遠端維運與安全連線流程，支援 offshore wind monitoring 與偏遠場域穩定運作。'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -83,7 +83,7 @@ const servicesCatalog = [
     formalTitle: '遠端監控與資料備援服務',
     englishTitle: 'Remote Monitoring and Data',
     description:
-      '讓分散設備與站點資料能遠端查看、回傳與備援，降低現場到場依賴。'
+      '讓分散設備與站點資料能遠端查看、回傳與備援，支援 infrastructure monitoring 與跨據點營運判讀。'
   },
   {
     slug: 'alarm-monitoring',
@@ -91,7 +91,7 @@ const servicesCatalog = [
     formalTitle: '告警監控服務',
     englishTitle: 'Alarm Monitoring',
     description:
-      '規劃告警分類、通知路徑與升級規則，讓事件從發生到處置更容易追蹤。'
+      '規劃告警分類、即時通知與升級規則，讓事件從發生到處置更容易追蹤。'
   },
   {
     slug: 'web-development',
@@ -99,7 +99,7 @@ const servicesCatalog = [
     formalTitle: '網頁開發服務',
     englishTitle: 'Web Development',
     description:
-      '依據品牌定位、營運流程與實際使用情境，規劃網站架構、介面流程與技術實作。'
+      '依據品牌定位、營運流程與實際使用情境，規劃工業網站與 Web 應用的架構、介面流程與技術實作。'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -148,7 +148,7 @@ const messages = {
     seo: {
       title: '雷力科技 Rally Technology',
       description:
-        '雷力科技專注自動化控制與監控系統整合，服務再生能源、工業、化工、製藥與 EPC 專案。'
+        '雷力科技提供 SCADA、PI Server、Historian、工業網路設計與離岸風場維運整合，支援再生能源、工業自動化與跨系統監控需求。'
     },
     hero: {
       kicker: '自動化控制與監控整合',
@@ -238,7 +238,7 @@ const messages = {
     seo: {
       title: '關於我們 | 雷力科技 Rally Technology',
       description:
-        '了解雷力科技如何以自動化控制與監控系統整合，支援再生能源、工業、化工、製藥與 EPC 專案。'
+        '了解雷力科技如何以 SCADA、PI Server、Historian、工業網路設計與離岸風場維運整合，支援再生能源與工業專案。'
     },
     hero: {
       title: '關於我們'
@@ -264,6 +264,55 @@ const messages = {
         '一站式整合'
       ]
     },
+    partners: {
+      kicker: '合作夥伴',
+      title: '合作夥伴與平台生態',
+      description:
+        '從 Siemens WinCC OA 到 AVEVA PI 與 Palo Alto Networks，雷力把控制、資料與資安平台放進同一套可交付的整合脈絡。',
+      proofLabel: 'WinCC OA Partner proof 已由官方合作夥伴頁支撐',
+      items: [
+        {
+          name: 'Siemens',
+          tag: '自動化平台',
+          description:
+            '對應控制系統、SCADA 架構與現場自動化專案常見的 Siemens 生態。',
+          image: {
+            src: '/images/brand/siemens-platform-badge.svg',
+            alt: 'Siemens 平台視覺標章'
+          }
+        },
+        {
+          name: 'WinCC OA',
+          tag: '官方 Partner proof',
+          description:
+            '以 WinCC OA Partner 基礎支撐 SCADA / HMI 監控平台規劃、畫面與交付工作。',
+          image: {
+            src: '/images/brand/wincc-oa-platform-badge.svg',
+            alt: 'WinCC OA 平台視覺標章'
+          }
+        },
+        {
+          name: 'AVEVA PI',
+          tag: 'PI / Historian',
+          description:
+            '承接 AVEVA PI / OSIsoft PI System 類即時資料、Historian 與跨系統資料使用情境。',
+          image: {
+            src: '/images/brand/aveva-pi-platform-badge.svg',
+            alt: 'AVEVA PI 平台視覺標章'
+          }
+        },
+        {
+          name: 'Palo Alto Networks',
+          tag: 'IT / OT 資安',
+          description:
+            '對應工業網路分段、遠端存取與 IT / OT security handoff 的資安平台脈絡。',
+          image: {
+            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            alt: 'Palo Alto Networks 平台視覺標章'
+          }
+        }
+      ]
+    },
     process: {
       kicker: '交付流程',
       title: '工作怎麼往下走',
@@ -280,7 +329,7 @@ const messages = {
     seo: {
       title: '服務項目 | 雷力科技 Rally Technology',
       description:
-        '瀏覽雷力科技的服務範圍，涵蓋操作畫面、現場支援、控制搬遷、資料平台、IT 基礎建設、資安網路、工業網路、離岸風場維運、遠端監控與告警流程。'
+        '瀏覽雷力科技的 SCADA / HMI、PI Server、Historian、WinCC OA、AVEVA System Platform、工業網路設計、資安設計、離岸風場維運、遠端監控與告警整合服務。'
     },
     hero: {
       title: '工業自動化服務範圍'
@@ -289,17 +338,93 @@ const messages = {
       kicker: '服務導覽',
       title: '依系統層級找到對應服務',
       description:
-        '先確認需求落在哪一層：操作介面、現場儀電、控制邏輯、資料基礎、IT 基礎建設、資安防護、工業網路、離岸風場維運、遠端監控或事件處置，再進入對應服務內容。'
+        '先確認需求落在哪一層：SCADA / HMI、PLC / DCS、PI Server / Historian、工業網路、資安防護、離岸風場維運、遠端監控、告警通知或跨系統整合，再進入對應服務內容。'
     },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',
-    detailFocusLabel: '快速看懂'
+    detailFocusLabel: '快速看懂',
+    contextsSection: {
+      kicker: '常見產業情境',
+      title: '把關鍵字放回真正的專案場景',
+      description:
+        '我們以既有服務頁承接再生能源、離岸風場、能源管理、油氣與基礎設施監控等需求，而不是把不相干的詞硬塞進同一頁。',
+      items: [
+        {
+          title: '再生能源與離岸風場 SCADA',
+          description:
+            '承接 renewable energy SCADA、wind farm SCADA system 與 offshore wind farm monitoring 等需求，整合 SCADA、遠端連線、告警回應與離岸風場維運流程。'
+        },
+        {
+          title: '能源管理與公用廠務整合',
+          description:
+            '從 EMS、energy management system 到 utilities / facilities integration，將公用系統、HVAC、chiller 與報表資料接回監看與分析流程。'
+        },
+        {
+          title: '油氣與偏遠場域監控',
+          description:
+            '以 Historian、remote monitoring、alarm workflow 與資料連續性設計，支援 oil & gas、remote site 與高合規場域的紀錄與營運判讀。'
+        },
+        {
+          title: '港口與交通基礎設施',
+          description:
+            '支援 port energy management、traffic & transport 與 infrastructure monitoring 情境，讓跨站點狀態、事件與維運節奏更容易掌握。'
+        },
+        {
+          title: '工廠與廠務監測',
+          description:
+            '把中央監控、空調、冰機與工廠資料分析接到同一套自動化與監看架構，減少系統各自為政。'
+        },
+        {
+          title: '跨系統報表與營運視角',
+          description:
+            '用 PI Server、Historian 與一站式整合流程串接監看、報表、趨勢與工程檢視，建立可延續的 industrial data platform。'
+        }
+      ]
+    },
+    technologySection: {
+      kicker: '技術與交付焦點',
+      title: '從平台名稱回到可交付的系統能力',
+      description:
+        '搜尋會找平台名詞，但真正會累積排名的，是每個平台在頁面裡被清楚說明成什麼工作內容、什麼交付邊界。',
+      items: [
+        {
+          title: 'SCADA / HMI 與 SCADA package 規劃',
+          description:
+            '承接 SCADA system integrator、SCADA package、real-time industrial monitoring system 等需求，聚焦畫面層級、告警脈絡與可維護的操作流程。'
+        },
+        {
+          title: 'WinCC OA 與 AVEVA System Platform',
+          description:
+            '以既有監控平台能力承接 WinCC OA 與 AVEVA System Platform 類專案，讓 operator graphics、alarm workflow 與 cross-system integration 有一致結構。'
+        },
+        {
+          title: 'PI Server / PI System / Historians',
+          description:
+            '把 PI Server、PI System、Historian 與 trend reporting 接回工業資料平台，支援 industrial analytics、traceability 與 recurring reporting。'
+        },
+        {
+          title: 'PLC / DCS 與試車整合',
+          description:
+            '將 PLC / DCS programming、migration、FAT / SAT 與 commissioning support 接在同一條可驗證的交付路徑上。'
+        },
+        {
+          title: '工業網路設計與資安設計',
+          description:
+            '把 industrial network design、IT / OT segmentation、remote access 與 cybersecurity handoff 提早納入，降低後續擴充與維護風險。'
+        },
+        {
+          title: '工業網站與 Web 應用',
+          description:
+            '從 custom industrial website design 到 industrial web application development，規劃內容架構、流程與後續可維運的數位平台。'
+        }
+      ]
+    }
   },
   oneTouchPage: {
     seo: {
       title: '一站式整合 | 雷力科技 Rally Technology',
       description:
-        '了解雷力科技如何把 SCADA、告警流程、振動監測、Historian 與公用廠務資料接在同一層跨系統整合流程。'
+        '了解雷力科技如何把 SCADA、告警流程、PI Server / Historian、振動監測、能源管理與公用廠務資料接在同一層跨系統整合流程。'
     },
     hero: {
       title: '一站式整合',
@@ -311,14 +436,14 @@ const messages = {
         title: '資料整合',
         secondaryTitle: 'Data Integration',
         description:
-          '串接現場、設備與報表資料，讓團隊能在同一個可用的營運視角下工作。'
+          '串接 SCADA、PI Server、Historian、設備與報表資料，讓團隊能在同一個可用的營運視角下工作。'
       },
       {
         id: 'alarm-workflow',
         title: '告警流程與試車',
         secondaryTitle: 'Alarm Workflow and Commissioning',
         description:
-          '對齊告警路由、通知邏輯與試車驗證，讓關鍵事件能更快送到正確窗口。'
+          '對齊告警路由、即時通知邏輯與試車驗證，讓關鍵事件能更快送到正確窗口。'
       },
       {
         id: 'vibration-analysis',
@@ -332,14 +457,14 @@ const messages = {
         title: '本地 / 雲端 Historian 部署',
         secondaryTitle: 'Local / Cloud Historian Deployment',
         description:
-          '規劃 Historian 環境，讓製程資料持續支援排查、報表與長期回顧。'
+          '規劃 Historian 與 PI 類資料環境，讓製程資料持續支援排查、報表與長期回顧。'
       },
       {
         id: 'utilities-integration',
         title: '公用與廠務整合',
         secondaryTitle: 'Utilities and Facilities Integration',
         description:
-          '把公用與廠務系統接進同一層監控、控制與報表流程，形成跨系統整合視角。'
+          '把 EMS、公用與廠務系統含 HVAC / chiller 監測接進同一層監控、控制與報表流程，形成跨系統整合視角。'
       }
     ]
   },
@@ -348,7 +473,7 @@ const messages = {
     seo: {
       title: '聯絡我們 | 雷力科技 Rally Technology',
       description:
-        '與雷力科技討論自動化整合、控制系統、試車支援與工廠資料需求。'
+        '與雷力科技討論 SCADA、PI Server、工業網路設計、離岸風場維運與跨系統監控整合需求。'
     },
     hero: {
       title: '聯絡我們'

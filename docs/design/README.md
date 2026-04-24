@@ -13,17 +13,22 @@
 - 前端：確認 token 使用方式、Nuxt UI 覆寫順序與 artifact grammar。
 - AI agent：確認 `docs/design/` 的 owner 邊界，不重複解讀同一條規則。
 
-## 先讀哪三份
+## 先讀哪幾份
 
 1. [01-設計系統規則總綱.md](./01-設計系統規則總綱.md)
 2. [02-AI切版與Preview維運規範.md](./02-AI切版與Preview維運規範.md)
 3. [03-Vision-to-Code與Component-Driven規範.md](./03-Vision-to-Code與Component-Driven規範.md)
+
+按鈕治理與公開站 CTA taxonomy 補充：
+
+4. [04-公開站按鈕治理矩陣.md](./04-公開站按鈕治理矩陣.md)
 
 ## 各檔分工
 
 - `01`：design system foundations、semantic-first、四層 ownership、promotion rule。
 - `02`：Nuxt UI implementation order、`app/app.config.ts` / `<UTheme>` / `:ui` / local style 的用法與 preview 驗證。
 - `03`：Vision-to-Code grammar、Architecture Pack / Implementation Contract 欄位與 component-driven 拆解順序。
+- `04`：公開站按鈕 taxonomy、size ladder、section mapping 與 internal-only 邊界。
 - `tokens/*.json`：設計數值鏡像與對照資料，不作執行期真實值。
 
 ## tokens 用途

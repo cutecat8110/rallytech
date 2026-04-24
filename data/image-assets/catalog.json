@@ -107,6 +107,94 @@
       "notes": "Legacy unused symbol export retained on disk for archival reference. Not wired into current runtime."
     },
     {
+      "assetId": "siemens-platform-badge",
+      "kind": "brand",
+      "status": "active",
+      "publicPath": "/images/brand/siemens-platform-badge.svg",
+      "canonicalName": "siemens-platform-badge.svg",
+      "scope": "about",
+      "slot": "partners",
+      "state": "siemens",
+      "source": "Rally Technology local partner badge artwork",
+      "licenseNote": "Site-local nominative platform badge. Not an official Siemens logo. Siemens trademarks remain with their owner.",
+      "sourceReference": "docs/project/07-外部品牌素材研究與內容生產規劃.md",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/關於我們合作夥伴素材來源.md#siemens-platform-badge",
+        "i18n/locales/zh-tw.ts#aboutPage.partners",
+        "i18n/locales/en.ts#aboutPage.partners",
+        "app/components/page/about/AboutPartnerSection.vue"
+      ],
+      "replacedBy": null,
+      "notes": "Consistent site-local visual badge created for the About partner section to avoid mixing differently sourced third-party logo files."
+    },
+    {
+      "assetId": "wincc-oa-platform-badge",
+      "kind": "brand",
+      "status": "active",
+      "publicPath": "/images/brand/wincc-oa-platform-badge.svg",
+      "canonicalName": "wincc-oa-platform-badge.svg",
+      "scope": "about",
+      "slot": "partners",
+      "state": "wincc-oa",
+      "source": "Rally Technology local partner badge artwork",
+      "licenseNote": "Site-local nominative platform badge. Not an official Siemens or WinCC OA logo. Trademarks remain with their owners.",
+      "sourceReference": "https://www.winccoa.com/community/community-programs/partner/default-e0467250506805802bd7a2083b499f8c.html",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/關於我們合作夥伴素材來源.md#wincc-oa-platform-badge",
+        "i18n/locales/zh-tw.ts#aboutPage.partners",
+        "i18n/locales/en.ts#aboutPage.partners",
+        "app/components/page/about/AboutPartnerSection.vue"
+      ],
+      "replacedBy": null,
+      "notes": "Consistent site-local visual badge created for the About partner section. The external source supports the public WinCC OA Partner proof."
+    },
+    {
+      "assetId": "aveva-pi-platform-badge",
+      "kind": "brand",
+      "status": "active",
+      "publicPath": "/images/brand/aveva-pi-platform-badge.svg",
+      "canonicalName": "aveva-pi-platform-badge.svg",
+      "scope": "about",
+      "slot": "partners",
+      "state": "aveva-pi",
+      "source": "Rally Technology local partner badge artwork",
+      "licenseNote": "Site-local nominative platform badge. Not an official AVEVA logo. AVEVA and PI trademarks remain with their owners.",
+      "sourceReference": "https://www.aveva.com/en/products/aveva-pi-system/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/關於我們合作夥伴素材來源.md#aveva-pi-platform-badge",
+        "i18n/locales/zh-tw.ts#aboutPage.partners",
+        "i18n/locales/en.ts#aboutPage.partners",
+        "app/components/page/about/AboutPartnerSection.vue"
+      ],
+      "replacedBy": null,
+      "notes": "Consistent site-local visual badge created for the About partner section. Public copy references AVEVA PI and OSIsoft PI System as platform context, not as a new partner claim."
+    },
+    {
+      "assetId": "palo-alto-networks-platform-badge",
+      "kind": "brand",
+      "status": "active",
+      "publicPath": "/images/brand/palo-alto-networks-platform-badge.svg",
+      "canonicalName": "palo-alto-networks-platform-badge.svg",
+      "scope": "about",
+      "slot": "partners",
+      "state": "palo-alto-networks",
+      "source": "Rally Technology local partner badge artwork",
+      "licenseNote": "Site-local nominative platform badge. Not an official Palo Alto Networks logo. Trademarks remain with their owner.",
+      "sourceReference": "https://www.siemens.com/en-us/ecosystem/palo-alto-networks/",
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/關於我們合作夥伴素材來源.md#palo-alto-networks-platform-badge",
+        "i18n/locales/zh-tw.ts#aboutPage.partners",
+        "i18n/locales/en.ts#aboutPage.partners",
+        "app/components/page/about/AboutPartnerSection.vue"
+      ],
+      "replacedBy": null,
+      "notes": "Consistent site-local visual badge created for the About partner section. The external source supports the industrial automation security ecosystem context."
+    },
+    {
       "assetId": "contact-hero-urban-roofline",
       "kind": "stock",
       "status": "active",

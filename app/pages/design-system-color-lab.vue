@@ -1,8 +1,31 @@
 <script setup lang="ts">
-import {
-  accentSolidButtonTheme,
-  darkGhostButtonTheme
-} from '~/utils/button-themes'
+const internalDarkGhostButtonTheme = {
+  button: {
+    base: [
+      'text-white/90',
+      'bg-white/10',
+      'hover:bg-white/16',
+      'hover:text-white',
+      'active:bg-white/16',
+      'active:text-white',
+      'focus-visible:bg-white/16',
+      'focus-visible:text-white'
+    ].join(' ')
+  }
+} as const
+
+const internalAccentSolidButtonTheme = {
+  button: {
+    base: [
+      'bg-accent-700',
+      'text-white',
+      'hover:bg-accent-600',
+      'active:bg-accent-600',
+      'focus-visible:bg-accent-600',
+      'focus-visible:text-white'
+    ].join(' ')
+  }
+} as const
 
 // 色彩方向模型
 type ColorDirection = {
@@ -254,7 +277,7 @@ useSeoMeta({
               <UButton type="button" color="primary" variant="solid" size="md">
                 預約諮詢
               </UButton>
-              <UTheme :ui="darkGhostButtonTheme">
+              <UTheme :ui="internalDarkGhostButtonTheme">
                 <UButton
                   type="button"
                   color="neutral"
@@ -542,12 +565,12 @@ useSeoMeta({
             這段是首頁結尾區塊的色彩測試點，確認深色背景下主要行動按鈕是否足夠突出。
           </p>
           <div class="mt-8 flex flex-wrap gap-3">
-            <UTheme :ui="accentSolidButtonTheme">
+            <UTheme :ui="internalAccentSolidButtonTheme">
               <UButton type="button" color="neutral" variant="ghost" size="md">
                 立即聯絡
               </UButton>
             </UTheme>
-            <UTheme :ui="darkGhostButtonTheme">
+            <UTheme :ui="internalDarkGhostButtonTheme">
               <UButton type="button" color="neutral" variant="ghost" size="md">
                 下載公司簡介
               </UButton>

@@ -40,17 +40,13 @@ const textClass = computed(() =>
   --shared-action-link-color: var(--color-text-secondary);
   --shared-action-link-gap: 0.35rem;
   --shared-action-link-icon-size: 1rem;
-  --shared-action-link-icon-translate: 0;
 
   display: inline-flex;
   width: fit-content;
   align-items: center;
   gap: var(--shared-action-link-gap);
   color: var(--shared-action-link-color);
-  transition:
-    color 180ms ease,
-    gap 180ms ease,
-    text-shadow 180ms ease;
+  transition: color 180ms ease;
 }
 
 .shared-action-link--tone-dark {
@@ -69,9 +65,6 @@ const textClass = computed(() =>
   width: var(--shared-action-link-icon-size);
   height: var(--shared-action-link-icon-size);
   flex-shrink: 0;
-  transform: translateX(var(--shared-action-link-icon-translate));
-  transition:
-    color 180ms ease,
-    transform 180ms ease;
+  transition: color 180ms ease;
 }
 </style>

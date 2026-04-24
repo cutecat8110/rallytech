@@ -10,7 +10,7 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'SCADA and HMI Graphics | Rally Technology',
       description:
-        'Rally Technology designs SCADA / HMI graphics that make plant status, alarms, and operator actions easier to read.'
+        'Rally Technology designs SCADA / HMI, WinCC OA, and AVEVA System Platform graphics that make plant status, alarms, and operator actions easier to read.'
     },
     heroFocusItems: ['Readable screens', 'Alarm context', 'Easy upkeep'],
     introParagraphs: [
@@ -31,6 +31,16 @@ export const serviceDetailPagesEn = {
           'We align hierarchy, navigation, and status logic so the screens are easier to operate now and easier to extend later.'
         ],
         highlights: ['Readable screens', 'Alarm context', 'Easy upkeep']
+      },
+      {
+        type: 'tag-list',
+        title: 'Platform Focus',
+        items: [
+          'SCADA package',
+          'WinCC OA',
+          'AVEVA System Platform',
+          'Operator graphics'
+        ]
       },
       {
         type: 'proof-strip',
@@ -358,7 +368,7 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'PI Server | Rally Technology',
       description:
-        'Rally Technology uses PI Server to build plant-data platforms for monitoring, reporting, and cross-system use.'
+        'Rally Technology uses PI Server / PI System to build plant-data platforms for monitoring, reporting, industrial analytics, and cross-system use.'
     },
     heroFocusItems: [
       'Stable data spine',
@@ -391,9 +401,10 @@ export const serviceDetailPagesEn = {
         type: 'tag-list',
         title: 'Key Terms',
         items: [
-          'Plant data backbone',
-          'Operational visibility',
           'PI Server',
+          'PI System',
+          'Industrial data platform',
+          'Industrial analytics',
           'Cross-system integration'
         ]
       },
@@ -461,7 +472,7 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'Historians | Rally Technology',
       description:
-        'Rally Technology plans historian environments for long-term records, trend comparison, traceability, and reporting.'
+        'Rally Technology plans historian environments for long-term records, trend comparison, traceability, reporting, and energy-sector data retention.'
     },
     heroFocusItems: ['Traceable history', 'Redundant access', 'Reports ready'],
     introParagraphs: [
@@ -538,7 +549,7 @@ export const serviceDetailPagesEn = {
         title: 'When to Bring It In',
         paragraphs: [
           'Bring historian planning in when retention rules, reporting needs, or audit expectations are first being defined.',
-          'That is the point where storage layout, access paths, and resilience can be designed for long-term use instead of retrofitted later.'
+          'That is the point where storage layout, access paths, and resilience can be designed for long-term use instead of retrofitted later, especially in oil and gas, energy, and higher-compliance environments.'
         ]
       }
     ]
@@ -665,7 +676,7 @@ export const serviceDetailPagesEn = {
       title:
         'Cybersecurity Network Architecture and Protection | Rally Technology',
       description:
-        'Rally Technology integrates network segmentation, access control, threat protection, and vulnerability checks to reduce cybersecurity risk.'
+        'Rally Technology integrates network segmentation, access control, cybersecurity design, and vulnerability checks to reduce IT / OT cybersecurity risk.'
     },
     heroFocusItems: [
       'Segmented access',
@@ -674,7 +685,7 @@ export const serviceDetailPagesEn = {
     ],
     introParagraphs: [
       'Cybersecurity network deployment starts with clear access boundaries between users, systems, data, and devices.',
-      'We help plan segmentation, protection, remote access, and vulnerability-check workflows so organizations can keep operations efficient while reducing exposure.'
+      'We help plan segmentation, protection, remote access, and the vulnerability-check workflows needed for cybersecurity design so organizations can keep operations efficient while reducing exposure.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -757,7 +768,7 @@ export const serviceDetailPagesEn = {
       title:
         'Offshore Wind Remote Operations and Security Management | Rally Technology',
       description:
-        'Rally Technology builds secure remote connections, monitoring, maintenance response, and safety-management workflows for offshore wind and remote sites.'
+        'Rally Technology builds offshore wind SCADA monitoring, secure remote connections, maintenance response, and safety-management workflows for offshore wind and remote sites.'
     },
     heroFocusItems: [
       'Secure remote operation',
@@ -842,7 +853,7 @@ export const serviceDetailPagesEn = {
         type: 'summary',
         title: 'When It Fits',
         paragraphs: [
-          'Use this service when wind farms, offshore substations, or remote sites need remote support, lower dependence on site visits, or a clearer model for maintenance permissions and incident response.'
+          'Use this service when wind farms, offshore substations, or remote sites need offshore wind farm monitoring, lower dependence on site visits, or a clearer model for maintenance permissions and incident response.'
         ]
       }
     ]
@@ -951,7 +962,7 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'Remote Monitoring and Data | Rally Technology',
       description:
-        'Rally Technology helps build remote monitoring and data-continuity workflows for distributed sites and critical records.'
+        'Rally Technology helps build remote monitoring, infrastructure monitoring, and data-continuity workflows for distributed sites, oil and gas assets, and critical records.'
     },
     heroFocusItems: [
       'Remote visibility',
@@ -960,7 +971,7 @@ export const serviceDetailPagesEn = {
     ],
     introParagraphs: [
       'Remote monitoring and data backup have to answer three questions together: can teams see it, can data return, and can records still be reviewed after an event?',
-      'We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought.'
+      'We plan visibility, continuity, and recovery together so remote access does not leave record protection as an afterthought, which matters especially for oil and gas and remote infrastructure operations.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -1049,7 +1060,7 @@ export const serviceDetailPagesEn = {
       title:
         'Alarm Monitoring and Visualized Operations Management | Rally Technology',
       description:
-        'Rally Technology integrates alarm monitoring, event notification, trend analysis, and maintenance workflows so IT / OT teams can respond to the right events faster.'
+        'Rally Technology integrates alarm monitoring, real-time notification, trend analysis, and maintenance workflows so IT / OT teams can build a more durable industrial alarm notification system.'
     },
     heroFocusItems: [
       'Clear priorities',
@@ -1058,7 +1069,7 @@ export const serviceDetailPagesEn = {
     ],
     introParagraphs: [
       'Alarm monitoring and system maintenance need to make priority, event context, and the next response path clear to IT / OT teams.',
-      'We align conditions, notifications, trend analysis, and escalation logic so teams spend less time sorting noise and more time acting on events that need attention.'
+      'We align conditions, real-time notifications, trend analysis, and escalation logic so teams spend less time sorting noise and more time acting on events that need attention.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -1142,7 +1153,7 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'Web Development | Rally Technology',
       description:
-        'Rally Technology provides custom web development for corporate websites, service pages, member portals, admin systems, and connected digital platforms.'
+        'Rally Technology provides custom industrial website design and web application development for corporate websites, service pages, member portals, admin systems, and connected digital platforms.'
     },
     heroFocusItems: [
       'Tailored to business needs',
@@ -1150,7 +1161,7 @@ export const serviceDetailPagesEn = {
       'Built for stable launch and future growth'
     ],
     introParagraphs: [
-      'Rally Technology provides custom web development services for corporate websites, product and service pages, member portals, and admin systems. We define the site structure, user flow, and technical implementation around each client’s brand, business process, and real operating needs, so the website becomes more than a visual presence.',
+      'Rally Technology provides custom industrial website design and web application development for corporate websites, product and service pages, member portals, and admin systems. We define the site structure, user flow, and technical implementation around each client’s brand, business process, and real operating needs, so the website becomes more than a visual presence.',
       'We work to high industry standards across frontend, backend, integrations, testing, and deployment, with close attention to performance, security, maintainability, and scalability. Whether the project is a new build, a redesign, or a functional upgrade, the result is delivered on a stable and extensible foundation.'
     ],
     sidebar: sharedSidebar,

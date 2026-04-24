@@ -2,9 +2,9 @@
 import { computed, ref } from 'vue'
 import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import {
-  darkIconGhostButtonTheme,
-  floatingIconButtonTheme,
-  lightSolidButtonTheme
+  contrastSolidLightButtonTheme,
+  iconUtilityDarkButtonTheme,
+  iconUtilityEmphasisButtonTheme
 } from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
@@ -104,6 +104,10 @@ const newsletterInputUi = {
   ].join(' ')
 } as const
 
+const newsletterSubmitUi = {
+  base: 'justify-center px-0 py-0 gap-0 ring-0 shadow-none'
+} as const
+
 function handleNewsletterSubmit() {
   toast.add({
     title: footerMessages.value.newsletterUnavailableTitle,
@@ -151,7 +155,7 @@ function handleBackToTop() {
           />
 
           <div class="home-sys-footer__connector-action">
-            <UTheme :ui="lightSolidButtonTheme">
+            <UTheme :ui="contrastSolidLightButtonTheme">
               <UButton
                 :to="contactPath"
                 color="neutral"
@@ -210,7 +214,7 @@ function handleBackToTop() {
                   :ui="newsletterInputUi"
                 />
 
-                <UTheme :ui="darkIconGhostButtonTheme">
+                <UTheme :ui="iconUtilityDarkButtonTheme">
                   <UButton
                     type="submit"
                     color="neutral"
@@ -218,6 +222,7 @@ function handleBackToTop() {
                     size="sm"
                     icon="i-lucide-send"
                     :aria-label="footerMessages.newsletterButtonLabel"
+                    :ui="newsletterSubmitUi"
                     class="home-sys-footer__newsletter-submit"
                   />
                 </UTheme>
@@ -297,7 +302,7 @@ function handleBackToTop() {
           {{ copyrightText }}
         </p>
 
-        <UTheme :ui="floatingIconButtonTheme">
+        <UTheme :ui="iconUtilityEmphasisButtonTheme">
           <UButton
             type="button"
             color="neutral"
@@ -407,10 +412,7 @@ function handleBackToTop() {
 
 .home-sys-footer__connector-cta {
   min-width: 8.8rem;
-  min-height: 3rem;
-  justify-content: center;
   padding-inline: 1.7rem;
-  border-radius: 0;
 }
 
 .home-sys-footer__content-band {

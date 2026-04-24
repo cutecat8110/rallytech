@@ -7,6 +7,7 @@ import TypographySection from '~/components/page/design-system/TypographySection
 import IconsSection from '~/components/page/design-system/IconsSection.vue'
 import RadiusSection from '~/components/page/design-system/RadiusSection.vue'
 import ShadowsSection from '~/components/page/design-system/ShadowsSection.vue'
+import ButtonsSection from '~/components/page/design-system/ButtonsSection.vue'
 import SpaceSection from '~/components/page/design-system/SpaceSection.vue'
 import BreakpointsSection from '~/components/page/design-system/BreakpointsSection.vue'
 import GridSection from '~/components/page/design-system/GridSection.vue'
@@ -21,7 +22,7 @@ definePageMeta({
 useSeoMeta({
   title: 'Design System / RallyTech',
   description:
-    'RallyTech 設計系統活體展示頁，集中檢視色彩、字體、間距、圓角與版面規則。',
+    'RallyTech 設計系統活體展示頁，集中檢視色彩、字體、按鈕、間距、圓角與版面規則。',
   robots: 'noindex, nofollow'
 })
 </script>
@@ -70,6 +71,7 @@ useSeoMeta({
           <IconsSection />
           <RadiusSection />
           <ShadowsSection />
+          <ButtonsSection />
           <SpaceSection />
         </div>
       </div>

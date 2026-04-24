@@ -7,6 +7,8 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { prerender: true },
     '/en': { prerender: true },
+    '/sitemap.xml': { prerender: true },
+    '/page-sitemap.xml': { prerender: true },
     '/source': {
       prerender: true,
       headers: {

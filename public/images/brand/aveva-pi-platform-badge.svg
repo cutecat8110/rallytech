@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">AVEVA PI platform badge</title>
+  <desc id="desc">Site-local visual badge for AVEVA PI and industrial data infrastructure.</desc>
+  <defs>
+    <linearGradient id="data" x1="44" y1="24" x2="304" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#18a999"/>
+      <stop offset="0.55" stop-color="#526c91"/>
+      <stop offset="1" stop-color="#7a5aa6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#dbe4ea" stroke-width="1">
+    <path d="M34 116h292"/>
+    <path d="M34 91h292"/>
+    <path d="M34 66h292"/>
+    <path d="M34 41h292"/>
+  </g>
+  <g transform="translate(45 34)" fill="none" stroke="url(#data)" stroke-width="5">
+    <path d="M0 70c32-54 64-54 96 0s64 54 96 0 64-54 96 0" stroke-linecap="round"/>
+    <circle cx="0" cy="70" r="5" fill="#18a999" stroke="none"/>
+    <circle cx="96" cy="70" r="5" fill="#526c91" stroke="none"/>
+    <circle cx="192" cy="70" r="5" fill="#6a659a" stroke="none"/>
+    <circle cx="288" cy="70" r="5" fill="#7a5aa6" stroke="none"/>
+  </g>
+  <text x="42" y="78" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" letter-spacing="1.5">AVEVA PI</text>
+  <text x="44" y="118" fill="#5c6f82" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">INDUSTRIAL DATA PLATFORM</text>
+</svg>

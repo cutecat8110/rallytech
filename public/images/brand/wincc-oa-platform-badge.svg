@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">WinCC OA platform badge</title>
+  <desc id="desc">Site-local visual badge for Siemens WinCC OA SCADA platform.</desc>
+  <defs>
+    <linearGradient id="scan" x1="48" y1="26" x2="310" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#20b8a5"/>
+      <stop offset="1" stop-color="#2d5f7d"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="#dbe4ea" stroke-width="1">
+    <rect x="25" y="25" width="310" height="98" rx="6"/>
+    <path d="M25 53h310"/>
+    <path d="M72 53v70"/>
+    <path d="M138 53v70"/>
+    <path d="M204 53v70"/>
+    <path d="M270 53v70"/>
+  </g>
+  <g transform="translate(42 38)">
+    <rect width="44" height="10" rx="2" fill="#20b8a5"/>
+    <rect x="54" width="28" height="10" rx="2" fill="#7da2b8"/>
+    <rect x="92" width="18" height="10" rx="2" fill="#2d5f7d"/>
+  </g>
+  <path d="M43 88c26-19 43-19 68 0s43 19 68 0 43-19 68 0 43 19 69 0" fill="none" stroke="url(#scan)" stroke-linecap="round" stroke-width="5"/>
+  <text x="42" y="82" fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700">WinCC OA</text>
+  <text x="44" y="118" fill="#5c6f82" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">SIEMENS SCADA PARTNER</text>
+</svg>

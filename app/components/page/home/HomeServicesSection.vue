@@ -258,9 +258,6 @@ const serviceItems = computed(() =>
 .home-sys-services__column:hover .home-sys-services__action,
 .home-sys-services__column:focus-visible .home-sys-services__action {
   --shared-action-link-color: rgb(231 253 249 / 1);
-  --shared-action-link-icon-translate: 0.16rem;
-
-  text-shadow: 0 0.15rem 0.75rem rgb(4 9 14 / 0.24);
 }
 
 @media (min-width: 768px) {

@@ -7,7 +7,13 @@ export default defineAppConfig({
     },
     button: {
       slots: {
-        base: 'cursor-pointer rounded-none disabled:cursor-not-allowed aria-disabled:cursor-not-allowed'
+        base: [
+          'cursor-pointer',
+          'justify-center',
+          'rounded-none',
+          'disabled:cursor-not-allowed',
+          'aria-disabled:cursor-not-allowed'
+        ].join(' ')
       },
       compoundVariants: [
         {
@@ -17,25 +23,16 @@ export default defineAppConfig({
             base: [
               'bg-primary-700',
               'text-white',
-              'ring-1 ring-transparent',
-              'shadow-md shadow-primary-950/15',
-              'motion-safe:transition-[transform,box-shadow,background-color]',
-              'motion-safe:duration-200',
-              'hover:bg-primary-700',
-              'hover:-translate-y-px',
-              'hover:shadow-lg',
-              'hover:shadow-primary-950/20',
-              'hover:ring-primary-300/35',
-              'active:translate-y-0',
+              'ring-1 ring-primary-950/10',
+              'shadow-none',
+              'motion-safe:transition-[background-color,border-color,color]',
+              'motion-safe:duration-[180ms]',
+              'hover:bg-primary-600',
               'active:bg-primary-800',
-              'active:shadow-md',
-              'active:shadow-primary-950/15',
               'focus-visible:bg-primary-700',
               'focus-visible:text-white',
               'focus-visible:ring-2',
-              'focus-visible:ring-primary-200/70',
-              'focus-visible:shadow-lg',
-              'focus-visible:shadow-primary-950/18',
+              'focus-visible:ring-primary-200/75',
               '[&_*]:text-white'
             ].join(' '),
             label: 'text-white',
@@ -47,31 +44,31 @@ export default defineAppConfig({
       variants: {
         size: {
           xs: {
-            base: 'type-sys-label-s px-3 py-2 gap-1.5',
+            base: 'type-sys-label-s min-h-8 px-3 py-1.5 gap-1.5',
             leadingIcon: 'size-4',
             leadingAvatarSize: '3xs',
             trailingIcon: 'size-4'
           },
           sm: {
-            base: 'type-sys-label-s px-4 py-2 gap-1.5',
+            base: 'type-sys-label-s min-h-9 px-4 py-2 gap-1.5',
             leadingIcon: 'size-4',
             leadingAvatarSize: '3xs',
             trailingIcon: 'size-4'
           },
           md: {
-            base: 'type-sys-label-m px-5 py-2 gap-1.5',
+            base: 'type-sys-label-m min-h-10 px-5 py-2 gap-2',
             leadingIcon: 'size-5',
             leadingAvatarSize: '2xs',
             trailingIcon: 'size-5'
           },
           lg: {
-            base: 'type-sys-label-m px-6 py-2.5 gap-2',
+            base: 'type-sys-label-m min-h-11 px-6 py-2.5 gap-2',
             leadingIcon: 'size-5',
             leadingAvatarSize: '2xs',
             trailingIcon: 'size-5'
           },
           xl: {
-            base: 'type-sys-label-m px-8 py-3 gap-2',
+            base: 'type-sys-label-m min-h-12 px-8 py-3 gap-2.5',
             leadingIcon: 'size-6',
             leadingAvatarSize: 'xs',
             trailingIcon: 'size-6'

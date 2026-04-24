@@ -12,7 +12,7 @@ const servicesCatalog = [
     formalTitle: 'SCADA and HMI Graphics',
     englishTitle: 'SCADA and HMI Graphics',
     description:
-      'Turn operating states, alarms, and control actions into screens operators can read and act on quickly.'
+      'Support SCADA / HMI, WinCC OA, and AVEVA System Platform graphics planning that keeps status, alarms, and operator context readable.'
   },
   {
     slug: 'ie-services',
@@ -36,7 +36,7 @@ const servicesCatalog = [
     formalTitle: 'PI Server',
     englishTitle: 'PI Server',
     description:
-      'Build PI data foundations that make live process values available for queries, calculations, and daily operations.'
+      'Build PI Server / PI System data foundations that make live process values available for queries, calculations, and cross-system use.'
   },
   {
     slug: 'historians',
@@ -61,7 +61,7 @@ const servicesCatalog = [
     formalTitle: 'Cybersecurity Network Architecture and Protection',
     englishTitle: 'Cybersecurity Network Architecture and Protection',
     description:
-      'Integrate network segmentation, access control, threat protection, and vulnerability checks to reduce cybersecurity risk.'
+      'Integrate network segmentation, access control, threat protection, and cybersecurity design to reduce IT / OT exposure risk.'
   },
   {
     slug: 'network-design',
@@ -77,7 +77,7 @@ const servicesCatalog = [
     formalTitle: 'Offshore Wind Remote Operations and Security Management',
     englishTitle: 'Offshore Wind Remote Operations and Security Management',
     description:
-      'Establish secure remote connections, monitoring, and maintenance workflows for offshore wind and remote-site operations.'
+      'Establish offshore wind SCADA monitoring, remote maintenance, and secure access workflows for offshore wind and remote-site operations.'
   },
   {
     slug: 'remote-monitoring-and-data',
@@ -85,7 +85,7 @@ const servicesCatalog = [
     formalTitle: 'Remote Monitoring and Data',
     englishTitle: 'Remote Monitoring and Data',
     description:
-      'Connect distributed assets and sites for remote visibility, data relay, and backup paths when teams are off site.'
+      'Connect distributed assets and sites for remote visibility, data relay, and backup paths across infrastructure and remote operations.'
   },
   {
     slug: 'alarm-monitoring',
@@ -93,7 +93,7 @@ const servicesCatalog = [
     formalTitle: 'Alarm Monitoring',
     englishTitle: 'Alarm Monitoring',
     description:
-      'Shape alarm classification, notification paths, and escalation rules so events are easier to track through response.'
+      'Shape alarm classification, real-time notifications, and escalation rules so events are easier to track through response.'
   },
   {
     slug: 'web-development',
@@ -101,7 +101,7 @@ const servicesCatalog = [
     formalTitle: 'Web Development',
     englishTitle: 'Web Development',
     description:
-      'Plan website structure, user flow, and technical implementation around brand, operations, and real usage needs.'
+      'Plan industrial websites and web applications around brand, operations, and real usage needs.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 
@@ -151,7 +151,7 @@ const messages = {
     seo: {
       title: 'Rally Technology',
       description:
-        'Rally Technology supports automation control and monitoring systems for renewable energy, industrial, chemical, pharmaceutical, and EPC projects.'
+        'Rally Technology supports SCADA, PI Server, historians, industrial network design, and offshore wind operations for renewable energy and industrial automation projects.'
     },
     hero: {
       kicker: 'Automation Control and Monitoring',
@@ -245,7 +245,7 @@ const messages = {
     seo: {
       title: 'About Us | Rally Technology',
       description:
-        'Learn how Rally Technology supports automation control and monitoring systems across renewable energy, industrial, chemical, pharmaceutical, and EPC projects.'
+        'Learn how Rally Technology supports SCADA, PI Server, historians, industrial network design, and offshore wind operations across renewable energy and industrial projects.'
     },
     hero: {
       title: 'About Us'
@@ -271,6 +271,56 @@ const messages = {
         'One-Touch Integration'
       ]
     },
+    partners: {
+      kicker: 'Partners',
+      title: 'Partner and platform ecosystem',
+      description:
+        'From Siemens WinCC OA to AVEVA PI and Palo Alto Networks, Rally connects control, data, and security platforms into one delivery context.',
+      proofLabel:
+        'WinCC OA Partner proof is supported by the official partner page',
+      items: [
+        {
+          name: 'Siemens',
+          tag: 'Automation platform',
+          description:
+            'Aligns with Siemens ecosystems commonly found in controls, SCADA architecture, and site automation projects.',
+          image: {
+            src: '/images/brand/siemens-platform-badge.svg',
+            alt: 'Siemens platform visual badge'
+          }
+        },
+        {
+          name: 'WinCC OA',
+          tag: 'Official partner proof',
+          description:
+            'Supports SCADA / HMI platform planning, operator graphics, and delivery work through the WinCC OA Partner foundation.',
+          image: {
+            src: '/images/brand/wincc-oa-platform-badge.svg',
+            alt: 'WinCC OA platform visual badge'
+          }
+        },
+        {
+          name: 'AVEVA PI',
+          tag: 'PI / Historian',
+          description:
+            'Covers AVEVA PI / OSIsoft PI System style real-time data, historian, and cross-system data use cases.',
+          image: {
+            src: '/images/brand/aveva-pi-platform-badge.svg',
+            alt: 'AVEVA PI platform visual badge'
+          }
+        },
+        {
+          name: 'Palo Alto Networks',
+          tag: 'IT / OT security',
+          description:
+            'Fits industrial network segmentation, remote access, and IT / OT security handoff contexts.',
+          image: {
+            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            alt: 'Palo Alto Networks platform visual badge'
+          }
+        }
+      ]
+    },
     process: {
       kicker: 'Delivery Process',
       title: 'How Work Moves Forward',
@@ -287,7 +337,7 @@ const messages = {
     seo: {
       title: 'Services | Rally Technology',
       description:
-        'Browse Rally Technology service scopes for control interfaces, field support, control migration, plant-data platforms, IT infrastructure, cybersecurity networks, industrial networks, offshore wind operations, remote monitoring, and alarm workflows.'
+        'Browse Rally Technology service scopes for SCADA / HMI, PI Server, historians, WinCC OA, AVEVA System Platform, industrial network design, cybersecurity architecture, offshore wind operations, remote monitoring, and alarm workflows.'
     },
     hero: {
       title: 'Industrial Automation Service Scopes'
@@ -296,17 +346,94 @@ const messages = {
       kicker: 'Service Guide',
       title: 'Find the right service by system layer',
       description:
-        'Use this overview to locate the layer that needs work: operator interfaces, field I/O, control logic, plant data, IT infrastructure, cybersecurity, industrial networks, offshore wind operations, remote access, or event response.'
+        'Use this overview to locate the layer that needs work: SCADA / HMI, PLC / DCS, PI Server / historians, industrial networks, cybersecurity, offshore wind operations, remote monitoring, alarm notification, or cross-system integration.'
     },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',
-    detailFocusLabel: 'Scope at a Glance'
+    detailFocusLabel: 'Scope at a Glance',
+    contextsSection: {
+      kicker: 'Common Project Contexts',
+      title: 'Turn search terms back into real project situations',
+      description:
+        'We use existing service scopes to support renewable energy, offshore wind, energy management, oil and gas, and infrastructure monitoring work instead of forcing unrelated keywords onto one page.',
+      items: [
+        {
+          title: 'Renewable energy and offshore wind SCADA',
+          description:
+            'Support renewable energy SCADA, wind farm SCADA system, and offshore wind farm monitoring work by aligning SCADA, remote access, alarm response, and maintenance workflow.'
+        },
+        {
+          title: 'Energy management and utilities integration',
+          description:
+            'Connect EMS, energy management system, and utilities / facilities integration needs so HVAC, chiller, and reporting data feed back into one monitoring flow.'
+        },
+        {
+          title: 'Oil and gas and remote-site monitoring',
+          description:
+            'Use historians, remote monitoring, alarm workflow, and data-continuity planning to support oil and gas, remote assets, and higher-compliance operating environments.'
+        },
+        {
+          title: 'Ports and transport infrastructure',
+          description:
+            'Support port energy management, traffic and transport, and infrastructure monitoring situations where teams need clearer cross-site status and maintenance coordination.'
+        },
+        {
+          title: 'Factory and facility monitoring',
+          description:
+            'Bring central monitoring, HVAC, chiller systems, and plant-data analysis into one automation and monitoring structure instead of leaving each system isolated.'
+        },
+        {
+          title: 'Cross-system reporting and operations visibility',
+          description:
+            'Use PI Server, historians, and one-touch integration logic to connect monitoring, reporting, trend review, and engineering follow-up in one industrial data platform.'
+        }
+      ]
+    },
+    technologySection: {
+      kicker: 'Platform and Delivery Focus',
+      title:
+        'Translate platform names into work that can actually be delivered',
+      description:
+        'Searches may start with platform names, but rankings improve when those platforms are clearly explained as real scope, operating boundary, and delivery method.',
+      items: [
+        {
+          title: 'SCADA / HMI and SCADA package planning',
+          description:
+            'Support SCADA system integrator, SCADA package, and real-time industrial monitoring system work with screen hierarchy, alarm context, and maintainable operator flow.'
+        },
+        {
+          title: 'WinCC OA and AVEVA System Platform',
+          description:
+            'Use existing monitoring-platform capability to support WinCC OA and AVEVA System Platform projects with clearer operator graphics, alarm workflow, and cross-system consistency.'
+        },
+        {
+          title: 'PI Server / PI System / historians',
+          description:
+            'Bring PI Server, PI System, historians, and trend reporting into one plant-data foundation that supports industrial analytics, traceability, and recurring reporting.'
+        },
+        {
+          title: 'PLC / DCS and commissioning integration',
+          description:
+            'Keep PLC / DCS programming, migration, FAT / SAT, and commissioning support on one execution path the site can validate and maintain.'
+        },
+        {
+          title: 'Industrial network design and cybersecurity design',
+          description:
+            'Bring industrial network design, IT / OT segmentation, remote access, and cybersecurity handoff in early so expansion and maintenance risk stay lower later.'
+        },
+        {
+          title: 'Industrial websites and web applications',
+          description:
+            'From custom industrial website design to industrial web application development, structure content, user flow, and operations support into one maintainable digital platform.'
+        }
+      ]
+    }
   },
   oneTouchPage: {
     seo: {
       title: 'One-Touch Experience | Rally Technology',
       description:
-        'See how Rally Technology connects SCADA, alarm workflows, vibration monitoring, historians, and utilities data into one cross-system integration flow.'
+        'See how Rally Technology connects SCADA, alarm workflows, PI Server / historians, vibration monitoring, energy management, and utilities data into one cross-system integration flow.'
     },
     hero: {
       title: 'One-Touch Experience',
@@ -317,13 +444,13 @@ const messages = {
         id: 'data-integration',
         title: 'Data Integration',
         description:
-          'Connect plant, equipment, and reporting data so teams can work from one usable operational view.'
+          'Connect SCADA, PI Server, historian, equipment, and reporting data so teams can work from one usable operational view.'
       },
       {
         id: 'alarm-workflow',
         title: 'Alarm Workflow and Commissioning',
         description:
-          'Align alarm routing, notification logic, and commissioning checks so critical events reach the right team faster.'
+          'Align alarm routing, real-time notification logic, and commissioning checks so critical events reach the right team faster.'
       },
       {
         id: 'vibration-analysis',
@@ -335,13 +462,13 @@ const messages = {
         id: 'historian-deployment',
         title: 'Local / Cloud Historian Deployment',
         description:
-          'Deploy historian environments that keep process data available for troubleshooting, reporting, and long-term review.'
+          'Deploy historian and PI-style data environments that keep process data available for troubleshooting, reporting, and long-term review.'
       },
       {
         id: 'utilities-integration',
         title: 'Utilities and Facilities Integration',
         description:
-          'Connect utilities and facilities systems with monitoring, control, and reporting workflows in one cross-system layer.'
+          'Connect EMS, utilities, and facilities systems including HVAC and chiller monitoring with monitoring, control, and reporting workflows in one cross-system layer.'
       }
     ]
   },
@@ -350,7 +477,7 @@ const messages = {
     seo: {
       title: 'Contact Us | Rally Technology',
       description:
-        'Contact Rally Technology about automation integration, control systems, commissioning support, and plant-data delivery.'
+        'Contact Rally Technology about SCADA, PI Server, industrial network design, offshore wind operations, and cross-system monitoring integration.'
     },
     hero: {
       title: 'Contact Us'
