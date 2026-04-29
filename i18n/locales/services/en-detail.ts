@@ -544,6 +544,11 @@ export const serviceDetailPagesEn = {
               'Reduce single points of failure and operating downtime.'
           },
           {
+            title: 'Better resource visibility',
+            description:
+              'Improve resource integration efficiency and management visibility.'
+          },
+          {
             title: 'Support future growth',
             description:
               'Keep architecture ready for business expansion and system growth.'
@@ -631,14 +636,24 @@ export const serviceDetailPagesEn = {
               'Integrate firewalls, IPS, and threat-protection capabilities.'
           },
           {
-            title: 'VPN and IAM',
+            title: 'VPN security architecture',
             description:
-              'Design Site-to-Site, Remote Access, and identity access management mechanisms.'
+              'Design secure Site-to-Site and Remote Access connectivity.'
           },
           {
-            title: 'Zero Trust and vulnerability scanning',
+            title: 'Identity and access management',
             description:
-              'Plan Zero Trust architecture, vulnerability scanning, and risk assessment.'
+              'Use IAM mechanisms to strengthen identity, permissions, and access control.'
+          },
+          {
+            title: 'Zero Trust architecture',
+            description:
+              'Plan and introduce Zero Trust architecture to reduce risk from over-trusted access.'
+          },
+          {
+            title: 'Vulnerability scanning and risk assessment',
+            description:
+              'Run vulnerability scanning and risk assessment as part of active risk management.'
           }
         ]
       },
@@ -656,6 +671,11 @@ export const serviceDetailPagesEn = {
             title: 'Create security boundaries',
             description:
               'Make boundaries, permissions, and traffic relationships visible and controllable.'
+          },
+          {
+            title: 'Improve defense and response',
+            description:
+              'Raise the overall security protection level and response capability.'
           },
           {
             title: 'Support remote work',
@@ -729,6 +749,11 @@ export const serviceDetailPagesEn = {
             title: 'Remote alarm-event analysis',
             description:
               'Create event judgment, escalation, and response workflows.'
+          },
+          {
+            title: 'Maintenance permission and workflow control',
+            description:
+              'Keep remote maintenance governed by clear permissions, procedures, and traceable records.'
           }
         ]
       },
@@ -746,6 +771,10 @@ export const serviceDetailPagesEn = {
           {
             title: 'Faster response',
             description: 'Improve fault diagnosis and response speed.'
+          },
+          {
+            title: 'Stable wind-power systems',
+            description: 'Keep critical wind-power systems operating reliably.'
           },
           {
             title: 'Security-ready operations',
@@ -800,21 +829,26 @@ export const serviceDetailPagesEn = {
         type: 'proof-strip',
         eyebrow: false,
         tone: 'dark',
-        title: 'The core of industrial network design',
+        title: 'Service value of industrial network design',
         items: [
           {
-            title: 'Core / Control / Field',
+            title: 'Stable production systems',
             description:
-              'Create clear layered architecture and management boundaries.'
+              'Keep production systems stable and reduce interruption risk.'
           },
           {
-            title: 'IT / OT isolation',
-            description: 'Reduce abnormal spread and cybersecurity risk.'
+            title: 'Lower communication risk',
+            description: 'Reduce equipment abnormality and communication risk.'
           },
           {
-            title: 'High-availability topology',
+            title: 'Stronger industrial security',
             description:
-              'Improve device communication and control-system reliability.'
+              'Strengthen cybersecurity protection for industrial environments.'
+          },
+          {
+            title: 'Manageable and scalable',
+            description:
+              'Provide a network architecture that can be managed and expanded.'
           }
         ]
       },
@@ -841,6 +875,11 @@ export const serviceDetailPagesEn = {
             title: 'Latency and packet optimization',
             description:
               'Improve equipment communication efficiency and stability.'
+          },
+          {
+            title: 'Industrial cybersecurity integration',
+            description:
+              'Include cybersecurity protection in the industrial network architecture to reduce system and security risk.'
           }
         ]
       },
@@ -983,6 +1022,10 @@ export const serviceDetailPagesEn = {
             description: 'Reduce the time needed to locate and resolve faults.'
           },
           {
+            title: 'Higher maintenance efficiency',
+            description: 'Improve maintenance efficiency and service quality.'
+          },
+          {
             title: 'Data-driven operations',
             description: 'Build a stronger data basis for operations decisions.'
           }
@@ -1006,12 +1049,22 @@ export const serviceDetailPagesEn = {
           {
             title: 'Historical data and trend analysis',
             description:
-              'Connect historical data, trend analysis, and abnormal detection.'
+              'Connect historical data and trend analysis to support status review and judgment.'
           },
           {
-            title: 'Operations workflow and risk tracking',
+            title: 'Performance monitoring and abnormal detection',
             description:
-              'Integrate event management, permission control, and vulnerability findings.'
+              'Track performance changes and abnormal signals so teams can identify issues earlier.'
+          },
+          {
+            title: 'Operations workflow and event management',
+            description:
+              'Integrate event management and permission control so maintenance response remains traceable.'
+          },
+          {
+            title: 'Vulnerability findings and risk tracking',
+            description:
+              'Bring vulnerability findings into the maintenance context and track risk handling over time.'
           }
         ]
       },
@@ -1053,9 +1106,9 @@ export const serviceDetailPagesEn = {
           'We begin by clarifying information architecture, user scenarios, and system boundaries, then implement the frontend, backend, admin workflow, and integrations in a coordinated way.'
         ],
         highlights: [
-          'Tailored planning',
-          'Standards-based development',
-          'Stable delivery'
+          'Tailored to business needs',
+          'Integrated across frontend and backend',
+          'Built for stable launch and future growth'
         ]
       },
       {

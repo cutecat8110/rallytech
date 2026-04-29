@@ -508,6 +508,10 @@ export const serviceDetailPagesZhTw = {
             title: '降低營運風險',
             description: '降低系統單點故障與營運中斷風險。'
           },
+          {
+            title: '提升管理可視性',
+            description: '提升資源整合效率與管理可視性。'
+          },
           { title: '支撐業務成長', description: '支撐未來業務成長與系統擴展。' }
         ]
       },
@@ -580,12 +584,20 @@ export const serviceDetailPagesZhTw = {
             description: '整合防火牆、IPS 與 Threat Protection 能力。'
           },
           {
-            title: 'VPN 與 IAM',
-            description: '建立 Site-to-Site、Remote Access 與身分存取管理機制。'
+            title: 'VPN 安全架構',
+            description: '建立 Site-to-Site 與 Remote Access 的安全連線架構。'
           },
           {
-            title: 'Zero Trust 與弱點掃描',
-            description: '導入零信任架構規劃、弱點掃描與風險評估。'
+            title: '身分與存取管理',
+            description: '導入 IAM 機制，強化身分、權限與存取控管。'
+          },
+          {
+            title: 'Zero Trust 架構',
+            description: '規劃與導入零信任架構，降低過度信任帶來的風險。'
+          },
+          {
+            title: '弱點掃描與風險評估',
+            description: '持續執行弱點掃描與風險評估，強化主動風險管理。'
           }
         ]
       },
@@ -602,6 +614,10 @@ export const serviceDetailPagesZhTw = {
           {
             title: '建立安全邊界',
             description: '讓網路邊界、權限與流量關係可視且可控。'
+          },
+          {
+            title: '提升防護與應變',
+            description: '提升整體資安防護層級與應變能力。'
           },
           {
             title: '支援遠端作業',
@@ -665,6 +681,10 @@ export const serviceDetailPagesZhTw = {
           {
             title: '告警事件遠端分析與處理',
             description: '建立事件判斷、升級與處理流程。'
+          },
+          {
+            title: '維運權限與操作流程控管',
+            description: '讓遠端維運具備清楚權限、操作流程與追蹤依據。'
           }
         ]
       },
@@ -681,6 +701,10 @@ export const serviceDetailPagesZhTw = {
           {
             title: '提升反應速度',
             description: '提升故障診斷與處理反應速度。'
+          },
+          {
+            title: '穩定關鍵風電系統',
+            description: '確保關鍵風電系統穩定運作。'
           },
           {
             title: '符合資安要求',
@@ -729,14 +753,24 @@ export const serviceDetailPagesZhTw = {
         type: 'proof-strip',
         eyebrow: false,
         tone: 'dark',
-        title: '工業網路設計的核心',
+        title: '工業網路設計的服務價值',
         items: [
           {
-            title: 'Core / Control / Field',
-            description: '建立清楚的分層式架構與管理邊界。'
+            title: '穩定不中斷',
+            description: '確保生產系統穩定與不中斷。'
           },
-          { title: 'IT / OT 隔離', description: '降低異常擴散與資安風險。' },
-          { title: '高可用拓撲', description: '提升設備通訊與控制系統穩定性。' }
+          {
+            title: '降低通訊風險',
+            description: '降低設備異常與通訊風險。'
+          },
+          {
+            title: '強化資安防護',
+            description: '強化工業環境資安防護能力。'
+          },
+          {
+            title: '可管理且可擴展',
+            description: '提供可管理且可擴展的網路架構。'
+          }
         ]
       },
       {
@@ -759,6 +793,10 @@ export const serviceDetailPagesZhTw = {
           {
             title: '通訊延遲與封包優化',
             description: '改善設備通訊效率與穩定性。'
+          },
+          {
+            title: '工業資安防護整合',
+            description: '將資安防護納入工業網路架構，降低系統異常與資安風險。'
           }
         ]
       },
@@ -878,6 +916,10 @@ export const serviceDetailPagesZhTw = {
             description: '即時掌握系統與設備運作狀態。'
           },
           { title: '縮短處理時間', description: '縮短故障定位與處理時間。' },
+          {
+            title: '提升維運效率',
+            description: '提升維運效率與服務品質。'
+          },
           { title: '數據驅動維運', description: '建立數據驅動的營運決策能力。' }
         ]
       },
@@ -896,11 +938,19 @@ export const serviceDetailPagesZhTw = {
           },
           {
             title: '歷史數據與趨勢分析',
-            description: '結合歷史數據、趨勢分析與異常偵測。'
+            description: '結合歷史數據與趨勢分析，支援狀態回看與判斷。'
           },
           {
-            title: '維運流程與風險追蹤',
-            description: '整合事件管理、權限控管與弱點掃描結果。'
+            title: '效能監測與異常偵測',
+            description: '持續觀察效能變化與異常訊號，協助團隊提早發現問題。'
+          },
+          {
+            title: '維運流程與事件管理整合',
+            description: '整合事件管理與權限控管，讓維運回應能被追蹤。'
+          },
+          {
+            title: '弱點掃描結果整合與風險追蹤',
+            description: '把弱點掃描結果納入維運脈絡，持續追蹤風險處理狀態。'
           }
         ]
       },
@@ -939,7 +989,7 @@ export const serviceDetailPagesZhTw = {
           '好的網頁開發，不只是把畫面做出來，而是讓品牌呈現、內容管理、互動流程與系統資料能在同一個平台上長期穩定運作。',
           '我們會先釐清資訊架構、使用情境與系統邊界，再整合前端、後端、後台流程與外部串接，讓網站在內容增加、功能擴充或需要連接其他系統時，仍然保持一致、清楚且易於管理。'
         ],
-        highlights: ['客製規劃', '標準開發', '穩定交付']
+        highlights: ['貼合企業需求', '前後端整合完整', '穩定上線且可持續擴充']
       },
       {
         type: 'proof-strip',
