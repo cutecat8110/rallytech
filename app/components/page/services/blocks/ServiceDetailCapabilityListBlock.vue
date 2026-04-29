@@ -12,7 +12,7 @@ const props = defineProps<{
 const capabilityItems = computed(() =>
   props.block.items.map((item) => ({
     title: item.title,
-    paragraphs: item.paragraphs
+    paragraphs: item.paragraphs ?? (item.description ? [item.description] : [])
   }))
 )
 </script>

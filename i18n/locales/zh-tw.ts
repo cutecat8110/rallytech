@@ -336,89 +336,13 @@ const messages = {
     },
     intro: {
       kicker: '服務導覽',
-      title: '依系統層級找到對應服務',
+      title: '從現場系統到營運資料，找到需要補強的服務範圍',
       description:
-        '先確認需求落在哪一層：SCADA / HMI、PLC / DCS、PI Server / Historian、工業網路、資安防護、離岸風場維運、遠端監控、告警通知或跨系統整合，再進入對應服務內容。'
+        '無論是操作畫面、控制邏輯、即時資料、工業網路、遠端監控或告警流程，雷力協助專案團隊釐清系統現況，銜接後續規劃、建置與維運交接。'
     },
     cardCtaLabel: '查看詳情',
     detailBackLabel: '所有服務',
-    detailFocusLabel: '快速看懂',
-    contextsSection: {
-      kicker: '常見產業情境',
-      title: '把關鍵字放回真正的專案場景',
-      description:
-        '我們以既有服務頁承接再生能源、離岸風場、能源管理、油氣與基礎設施監控等需求，而不是把不相干的詞硬塞進同一頁。',
-      items: [
-        {
-          title: '再生能源與離岸風場 SCADA',
-          description:
-            '承接 renewable energy SCADA、wind farm SCADA system 與 offshore wind farm monitoring 等需求，整合 SCADA、遠端連線、告警回應與離岸風場維運流程。'
-        },
-        {
-          title: '能源管理與公用廠務整合',
-          description:
-            '從 EMS、energy management system 到 utilities / facilities integration，將公用系統、HVAC、chiller 與報表資料接回監看與分析流程。'
-        },
-        {
-          title: '油氣與偏遠場域監控',
-          description:
-            '以 Historian、remote monitoring、alarm workflow 與資料連續性設計，支援 oil & gas、remote site 與高合規場域的紀錄與營運判讀。'
-        },
-        {
-          title: '港口與交通基礎設施',
-          description:
-            '支援 port energy management、traffic & transport 與 infrastructure monitoring 情境，讓跨站點狀態、事件與維運節奏更容易掌握。'
-        },
-        {
-          title: '工廠與廠務監測',
-          description:
-            '把中央監控、空調、冰機與工廠資料分析接到同一套自動化與監看架構，減少系統各自為政。'
-        },
-        {
-          title: '跨系統報表與營運視角',
-          description:
-            '用 PI Server、Historian 與一站式整合流程串接監看、報表、趨勢與工程檢視，建立可延續的 industrial data platform。'
-        }
-      ]
-    },
-    technologySection: {
-      kicker: '技術與交付焦點',
-      title: '從平台名稱回到可交付的系統能力',
-      description:
-        '搜尋會找平台名詞，但真正會累積排名的，是每個平台在頁面裡被清楚說明成什麼工作內容、什麼交付邊界。',
-      items: [
-        {
-          title: 'SCADA / HMI 與 SCADA package 規劃',
-          description:
-            '承接 SCADA system integrator、SCADA package、real-time industrial monitoring system 等需求，聚焦畫面層級、告警脈絡與可維護的操作流程。'
-        },
-        {
-          title: 'WinCC OA 與 AVEVA System Platform',
-          description:
-            '以既有監控平台能力承接 WinCC OA 與 AVEVA System Platform 類專案，讓 operator graphics、alarm workflow 與 cross-system integration 有一致結構。'
-        },
-        {
-          title: 'PI Server / PI System / Historians',
-          description:
-            '把 PI Server、PI System、Historian 與 trend reporting 接回工業資料平台，支援 industrial analytics、traceability 與 recurring reporting。'
-        },
-        {
-          title: 'PLC / DCS 與試車整合',
-          description:
-            '將 PLC / DCS programming、migration、FAT / SAT 與 commissioning support 接在同一條可驗證的交付路徑上。'
-        },
-        {
-          title: '工業網路設計與資安設計',
-          description:
-            '把 industrial network design、IT / OT segmentation、remote access 與 cybersecurity handoff 提早納入，降低後續擴充與維護風險。'
-        },
-        {
-          title: '工業網站與 Web 應用',
-          description:
-            '從 custom industrial website design 到 industrial web application development，規劃內容架構、流程與後續可維運的數位平台。'
-        }
-      ]
-    }
+    detailFocusLabel: '快速看懂'
   },
   oneTouchPage: {
     seo: {

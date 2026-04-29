@@ -23,12 +23,12 @@ defineProps<{
 
     <div class="services-sys-detail-process-steps">
       <article
-        v-for="item in block.items"
-        :key="`${item.stepLabel}-${item.title}`"
+        v-for="(item, index) in block.items"
+        :key="`${item.stepLabel ?? index}-${item.title}`"
         class="services-sys-detail-process-steps__item"
       >
         <p class="type-sys-kicker text-primary-700 uppercase">
-          {{ item.stepLabel }}
+          {{ item.stepLabel ?? String(index + 1).padStart(2, '0') }}
         </p>
         <SharedContentHeader
           class="services-sys-detail-process-steps__content"

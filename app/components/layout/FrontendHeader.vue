@@ -27,7 +27,8 @@ const navItems = computed(() =>
   messages.value.nav.items.map((item) => ({
     ...item,
     isServices: item.href === '/services',
-    to: resolveNavItemPath(item.href)
+    to: resolveNavItemPath(item.href),
+    isActive: isNavItemActive(item.href)
   }))
 )
 const serviceLinks = computed(() =>
@@ -40,6 +41,7 @@ const serviceLinks = computed(() =>
 const company = computed(() => messages.value.company)
 const homePath = computed(() => localePath('/'))
 const contactPath = computed(() => localePath('/contact'))
+const isContactRoute = computed(() => isLocalizedPathActive(contactPath.value))
 const localeLinks = computed(() =>
   siteLocaleCodes.map((code) => ({
     code,
@@ -88,6 +90,33 @@ function resolveNavItemPath(href: string) {
   }
 
   return href
+}
+
+function normalizePath(path: string) {
+  if (path.length > 1 && path.endsWith('/')) {
+    return path.slice(0, -1)
+  }
+
+  return path
+}
+
+function isLocalizedPathActive(path: string) {
+  const currentPath = normalizePath(route.path)
+  const targetPath = normalizePath(path)
+
+  if (targetPath === '/') {
+    return currentPath === '/'
+  }
+
+  return currentPath === targetPath || currentPath.startsWith(`${targetPath}/`)
+}
+
+function isNavItemActive(href: string) {
+  if (href === '/services') {
+    return isServicesRoute.value
+  }
+
+  return isLocalizedPathActive(resolveNavItemPath(href).split('#')[0] || '/')
 }
 
 watch(isMobileMenuOpen, (open) => {
@@ -194,6 +223,10 @@ watch(isMobileMenuOpen, (open) => {
               v-else
               :to="item.to"
               class="type-sys-nav home-sys-header__nav-link"
+              :class="{
+                'home-sys-header__nav-link--active': item.isActive
+              }"
+              :aria-current="item.isActive ? 'page' : undefined"
             >
               {{ item.label }}
             </NuxtLink>
@@ -259,6 +292,10 @@ watch(isMobileMenuOpen, (open) => {
               size="sm"
               :label="messages.nav.contactCta"
               class="home-sys-header__contact-button hidden md:inline-flex"
+              :class="{
+                'home-sys-header__contact-button--active': isContactRoute
+              }"
+              :aria-current="isContactRoute ? 'page' : undefined"
             />
           </UTheme>
 
@@ -384,6 +421,10 @@ watch(isMobileMenuOpen, (open) => {
             v-else
             :to="item.to"
             class="type-sys-title-m home-sys-header__mobile-link"
+            :class="{
+              'home-sys-header__mobile-link--active': item.isActive
+            }"
+            :aria-current="item.isActive ? 'page' : undefined"
             @click="closeMobileMenu"
           >
             {{ item.label }}
@@ -398,6 +439,10 @@ watch(isMobileMenuOpen, (open) => {
             block
             :label="messages.nav.contactCta"
             class="home-sys-header__contact-button mt-2"
+            :class="{
+              'home-sys-header__contact-button--active': isContactRoute
+            }"
+            :aria-current="isContactRoute ? 'page' : undefined"
             @click="closeMobileMenu"
           />
         </UTheme>
@@ -670,6 +715,12 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__contact-button {
   min-height: var(--home-sys-header-control-height);
   padding-inline: 1.35rem;
+}
+
+.home-sys-header__contact-button--active {
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.52) inset,
+    0 0 0 2px color-mix(in srgb, var(--color-primary-500) 32%, transparent);
 }
 
 .home-sys-header__locale {

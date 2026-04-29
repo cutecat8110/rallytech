@@ -91,20 +91,6 @@ else {
     Write-Host "npx version: $npxVersion"
 }
 
-Write-Step "Checking python package: mcp-server-fetch"
-try {
-    $pipShow = & python "-m" "pip" "show" "mcp-server-fetch" 2>&1
-    if ($LASTEXITCODE -ne 0 -or -not ($pipShow | Out-String).Contains("Name: mcp-server-fetch")) {
-        Add-Issue "python package mcp-server-fetch is not installed."
-    }
-    else {
-        Write-Host ($pipShow | Out-String)
-    }
-}
-catch {
-    Add-Issue "Failed to query python package mcp-server-fetch: $($_.Exception.Message)"
-}
-
 Write-Step "Checking vendored custom skills"
 $ExpectedSkillNames = Get-ChildItem -LiteralPath $ExpectedSkillsRoot -Directory | Select-Object -ExpandProperty Name
 foreach ($SkillName in $ExpectedSkillNames) {
@@ -114,15 +100,15 @@ foreach ($SkillName in $ExpectedSkillNames) {
     }
 }
 
-Write-Step "Checking config.toml MCP entries"
+Write-Step "Checking config.toml capability baseline"
 if (-not (Test-Path -LiteralPath $ConfigPath)) {
     Add-Issue "Missing Codex config: $ConfigPath"
 }
 else {
     $configContent = Get-Content -LiteralPath $ConfigPath -Raw
     foreach ($mcpName in @("chrome-devtools", "playwright", "context7", "memory", "fetch")) {
-        if (-not $configContent.Contains("[mcp_servers.$mcpName]")) {
-            Add-Issue "Missing MCP config entry: $mcpName"
+        if ($configContent.Contains("[mcp_servers.$mcpName]")) {
+            Add-Notice "Legacy MCP config entry still exists: $mcpName. Codex 5.5 toolkit keeps MCPs task-activated; remove this entry unless a current workflow explicitly needs it."
         }
     }
 }

@@ -27,7 +27,7 @@
 ## 三大分區分工
 
 - [project/README.md](./project/README.md)
-  專案定位、IA、服務命名、skills/MCP baseline、reference clone workflow、AI image phase gate 與新 thread 快速總覽。
+  專案定位、IA、服務命名、skills / task-activated tools policy、reference clone workflow、AI image phase gate 與新 thread 快速總覽。
 - [design/README.md](./design/README.md)
   design system foundations、Nuxt UI implementation rules、Vision-to-Code grammar。
 - [references/README.md](./references/README.md)

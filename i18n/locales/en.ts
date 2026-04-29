@@ -344,90 +344,13 @@ const messages = {
     },
     intro: {
       kicker: 'Service Guide',
-      title: 'Find the right service by system layer',
+      title: 'Find the service scope behind your system, data, and site needs',
       description:
-        'Use this overview to locate the layer that needs work: SCADA / HMI, PLC / DCS, PI Server / historians, industrial networks, cybersecurity, offshore wind operations, remote monitoring, alarm notification, or cross-system integration.'
+        'From operator screens and control logic to plant data, industrial networks, remote monitoring, and alarm workflows, Rally helps project teams clarify the current system state and connect the next planning, delivery, and handover steps.'
     },
     cardCtaLabel: 'View Details',
     detailBackLabel: 'All Services',
-    detailFocusLabel: 'Scope at a Glance',
-    contextsSection: {
-      kicker: 'Common Project Contexts',
-      title: 'Turn search terms back into real project situations',
-      description:
-        'We use existing service scopes to support renewable energy, offshore wind, energy management, oil and gas, and infrastructure monitoring work instead of forcing unrelated keywords onto one page.',
-      items: [
-        {
-          title: 'Renewable energy and offshore wind SCADA',
-          description:
-            'Support renewable energy SCADA, wind farm SCADA system, and offshore wind farm monitoring work by aligning SCADA, remote access, alarm response, and maintenance workflow.'
-        },
-        {
-          title: 'Energy management and utilities integration',
-          description:
-            'Connect EMS, energy management system, and utilities / facilities integration needs so HVAC, chiller, and reporting data feed back into one monitoring flow.'
-        },
-        {
-          title: 'Oil and gas and remote-site monitoring',
-          description:
-            'Use historians, remote monitoring, alarm workflow, and data-continuity planning to support oil and gas, remote assets, and higher-compliance operating environments.'
-        },
-        {
-          title: 'Ports and transport infrastructure',
-          description:
-            'Support port energy management, traffic and transport, and infrastructure monitoring situations where teams need clearer cross-site status and maintenance coordination.'
-        },
-        {
-          title: 'Factory and facility monitoring',
-          description:
-            'Bring central monitoring, HVAC, chiller systems, and plant-data analysis into one automation and monitoring structure instead of leaving each system isolated.'
-        },
-        {
-          title: 'Cross-system reporting and operations visibility',
-          description:
-            'Use PI Server, historians, and one-touch integration logic to connect monitoring, reporting, trend review, and engineering follow-up in one industrial data platform.'
-        }
-      ]
-    },
-    technologySection: {
-      kicker: 'Platform and Delivery Focus',
-      title:
-        'Translate platform names into work that can actually be delivered',
-      description:
-        'Searches may start with platform names, but rankings improve when those platforms are clearly explained as real scope, operating boundary, and delivery method.',
-      items: [
-        {
-          title: 'SCADA / HMI and SCADA package planning',
-          description:
-            'Support SCADA system integrator, SCADA package, and real-time industrial monitoring system work with screen hierarchy, alarm context, and maintainable operator flow.'
-        },
-        {
-          title: 'WinCC OA and AVEVA System Platform',
-          description:
-            'Use existing monitoring-platform capability to support WinCC OA and AVEVA System Platform projects with clearer operator graphics, alarm workflow, and cross-system consistency.'
-        },
-        {
-          title: 'PI Server / PI System / historians',
-          description:
-            'Bring PI Server, PI System, historians, and trend reporting into one plant-data foundation that supports industrial analytics, traceability, and recurring reporting.'
-        },
-        {
-          title: 'PLC / DCS and commissioning integration',
-          description:
-            'Keep PLC / DCS programming, migration, FAT / SAT, and commissioning support on one execution path the site can validate and maintain.'
-        },
-        {
-          title: 'Industrial network design and cybersecurity design',
-          description:
-            'Bring industrial network design, IT / OT segmentation, remote access, and cybersecurity handoff in early so expansion and maintenance risk stay lower later.'
-        },
-        {
-          title: 'Industrial websites and web applications',
-          description:
-            'From custom industrial website design to industrial web application development, structure content, user flow, and operations support into one maintainable digital platform.'
-        }
-      ]
-    }
+    detailFocusLabel: 'Scope at a Glance'
   },
   oneTouchPage: {
     seo: {

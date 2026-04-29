@@ -181,18 +181,6 @@ export interface ServicesPageMessages {
   cardCtaLabel: string
   detailBackLabel: string
   detailFocusLabel: string
-  contextsSection: {
-    kicker: string
-    title: string
-    description: string
-    items: TextPair[]
-  }
-  technologySection: {
-    kicker: string
-    title: string
-    description: string
-    items: TextPair[]
-  }
 }
 
 export interface OneTouchModuleMessages {
@@ -221,7 +209,8 @@ export interface ServiceDetailSidebarMessages {
 
 export interface ServiceDetailCapabilityItemMessages {
   title: string
-  paragraphs: string[]
+  paragraphs?: string[]
+  description?: string
 }
 
 export interface ServiceDetailProofItemMessages {
@@ -235,7 +224,7 @@ export interface ServiceDetailAccordionItemMessages {
 }
 
 export interface ServiceDetailProcessStepItemMessages {
-  stepLabel: string
+  stepLabel?: string
   title: string
   description: string
 }
@@ -253,11 +242,13 @@ export interface ServiceDetailBlockBaseMessages {
     | 'process-steps'
     | 'closing-note'
   title?: string
+  eyebrow?: string | false
 }
 
 export interface ServiceDetailMediaFeatureBlockMessages extends ServiceDetailBlockBaseMessages {
   type: 'media-feature'
   mediaSlot: ServiceSlug
+  imageRole?: 'overview-card' | 'detail-hero' | 'detail-feature'
   imageAlt: string
   layout: 'image-left' | 'image-right'
   title: string
@@ -267,6 +258,7 @@ export interface ServiceDetailMediaFeatureBlockMessages extends ServiceDetailBlo
 
 export interface ServiceDetailProofStripBlockMessages extends ServiceDetailBlockBaseMessages {
   type: 'proof-strip'
+  tone?: 'light' | 'dark'
   items: ServiceDetailProofItemMessages[]
 }
 

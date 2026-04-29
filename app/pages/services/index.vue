@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import ServicesCardGrid from '~/components/page/services/ServicesCardGrid.vue'
-import ServicesContextSections from '~/components/page/services/ServicesContextSections.vue'
 import ServicesOverviewHero from '~/components/page/services/ServicesOverviewHero.vue'
 import {
   SITE_NAME,
@@ -84,6 +83,5 @@ useHead(() => ({
   <div>
     <ServicesOverviewHero />
     <ServicesCardGrid />
-    <ServicesContextSections />
   </div>
 </template>

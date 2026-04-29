@@ -50,6 +50,14 @@ function getBlockEyebrow(blockType: ServiceDetailBlockMessages['type']) {
 }
 
 function getRenderedBlockEyebrow(block: ServiceDetailBlockMessages) {
+  if (block.eyebrow === false) {
+    return undefined
+  }
+
+  if (typeof block.eyebrow === 'string') {
+    return block.eyebrow.trim() || undefined
+  }
+
   const eyebrow = getBlockEyebrow(block.type)
   const title =
     'title' in block && typeof block.title === 'string'
@@ -141,7 +149,7 @@ function getRenderedBlockEyebrow(block: ServiceDetailBlockMessages) {
   display: flex;
   flex-direction: column;
   gap: clamp(4.2rem, 5.4vw, 6rem);
-  margin-top: clamp(3.4rem, 4.4vw, 4.8rem);
+  margin-top: 0;
 }
 
 .services-sys-detail-block {

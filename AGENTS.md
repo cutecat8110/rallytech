@@ -55,6 +55,7 @@
 1. 啟動前
    - 先讀本檔與優先參考文件。
    - 先確認需求屬於已確認範圍，避免超範圍實作。
+   - 依 `docs/project/04` 確認本輪可用的 Codex app 能力；前端視覺與互動任務優先採 Computer Use first。
 2. 規格對齊
    - 先確認目標、成功條件、範圍邊界與驗證方式。
    - 若任務屬於 reference clone / 高擬真重建，先依 `docs/project/05` 鎖定 artifact gate 與 claim level。
@@ -67,9 +68,12 @@
 4. 實作
    - 依 `docs/design/01 / 02 / 03` 與 `docs/project/04 / 05` 的 owner 邊界實作。
    - 僅修改已確認範圍，不主動新增未確認區塊。
+   - 採用 Codex 5.5 SDLC loop：Ground → Plan → Implement → Inspect → Verify → Review → Report；只有跨日或週期性任務才建立 automation / follow-up。
+   - 整合 Codex 內建能力後，需把不再必要的 plugins / apps / MCP 從預設流程與 toolkit baseline 移出，只保留任務明確需要且目前 session 已授權的工具。
 5. 驗證
    - 預設執行 `npm run lint` + `npm run typecheck`。
    - 若本輪涉及 `UButton` 內容結構，另加跑 `npm run guard:ui-buttons`。
+   - 前端視覺、RWD、互動與公開頁 QA 預設優先使用 Codex 內建 Computer Use 取得 rendered page truth；Playwright / capture script 主要用於批次截圖、跨頁 regression 與可重複 evidence。
    - 若本輪屬於 clone workflow，依 `docs/project/04 / 05` 補齊 preflight、capture 與 downgrade 驗證。
 6. 回報
    - 說明變更內容、驗證結果、skill 使用情況、風險、假設與必要取捨。
@@ -89,6 +93,7 @@
 
 - 一般開發預設執行：`npm run lint` + `npm run typecheck`
 - 若本輪涉及 `UButton` 內容結構，需額外執行：`npm run guard:ui-buttons`
+- 前端視覺與 RWD QA 預設先用 Codex Computer Use 檢查目標頁 desktop / mobile rendered state；需要全站或多頁 regression 時再補 Playwright / capture script。
 - 若本輪屬於 clone / screenshot-to-code / URL clone，依 `docs/project/04 / 05` 決定是否執行：
   - `npm run workflow:clone:preflight`
   - `npm run capture:local:home` 或其他 capture 驗證

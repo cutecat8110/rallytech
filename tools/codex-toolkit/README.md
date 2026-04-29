@@ -1,6 +1,6 @@
 # Codex Toolkit
 
-`tools/codex-toolkit/` 是本專案內版控的 Codex 搬機工具包。它保存可共享、可重建的設定與內容，讓我們在新 Windows 電腦上可以從 repo 還原 custom skills、MCP 設定、rules 與 repo-local environment。
+`tools/codex-toolkit/` 是本專案內版控的 Codex 搬機工具包。它保存可共享、可重建的設定與內容，讓我們在新 Windows 電腦上可以從 repo 還原 custom skills、rules 與 repo-local environment。
 
 這個 toolkit 不保存完整個人 profile。`auth.json`、`sessions/`、`memories/`、`history.jsonl` 這類私人狀態仍由匯出腳本輸出到 repo 外，不進 git。
 
@@ -55,11 +55,7 @@ repo 內不保存以下內容：
 2. 安裝 Node.js 與 npm。基線版本為 `Node v24.14.0`、`npm 11.11.0`。
 3. 安裝 Python。基線版本為 `Python 3.14.3`。
 4. 安裝 Google Chrome。
-5. 安裝 fetch MCP 依賴：
-
-```powershell
-python -m pip install mcp-server-fetch
-```
+5. 確認 Codex Desktop 已登入，並可使用目前 session 提供的 Computer Use / in-app browser / apps / plugins。
 
 ## 還原流程
 
@@ -96,13 +92,7 @@ powershell -ExecutionPolicy Bypass -File .\tools\codex-toolkit\scripts\install-w
 
 ## 驗證流程
 
-1. 開啟 Chrome remote debugging：
-
-```powershell
-chrome.exe --remote-debugging-port=9222
-```
-
-2. 執行驗證腳本：
+執行驗證腳本：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\tools\codex-toolkit\scripts\verify-windows.ps1
@@ -111,12 +101,13 @@ powershell -ExecutionPolicy Bypass -File .\tools\codex-toolkit\scripts\verify-wi
 驗證腳本會檢查：
 
 - `node` / `npm` / `python` 是否可用，且版本不低於目前基線
-- `python -m pip show mcp-server-fetch`
 - `npx`
 - `%USERPROFILE%\.codex\skills` 是否有完整 vendored skills
-- `%USERPROFILE%\.codex\config.toml` 是否含 5 個 MCP server 設定
+- `%USERPROFILE%\.codex\config.toml` 是否仍殘留舊版常駐 MCP 設定
 - repo-local `.codex/environments/environment.toml` 是否存在
 - `npm run workflow:clone:preflight` 是否可通過
+
+Codex 5.5 之後，本 toolkit 不再把 `chrome-devtools`、`playwright`、`context7`、`memory`、`fetch` 當成新機預設常駐 MCP。需要第三方 connector、MCP 或 app 時，依任務啟用並在回報中標記 evidence 來源。
 
 ## 私人備份流程
 
@@ -133,14 +124,14 @@ powershell -ExecutionPolicy Bypass -File .\tools\codex-toolkit\scripts\export-pr
 
 建議做法：
 
-1. 先用 repo 內 toolkit 還原 custom skills、MCP 與 rules。
+1. 先用 repo 內 toolkit 還原 custom skills、rules 與 repo-local environment。
 2. 再視需要從 `live-profile/` 挑選性搬入私人資料。
 3. `auth.json` 優先保留做備份，新機仍建議重新登入。
 
 ## 維護原則
 
 - 新增或調整 custom skills 後，記得同步更新 `tools/codex-toolkit/skills/`。
-- 調整 MCP baseline 或 feature flags 後，記得同步更新 `templates/config.windows.toml`。
+- 調整 feature flags 或 task-activated MCP policy 後，記得同步更新 `templates/config.windows.toml`。
 - 調整 repo-local Codex environment 後，記得同步更新 `project/environment.toml`。
 - `.system` skills 由 Codex 安裝提供，不 vendoring 進 repo。
 - `rules/default.rules` 目前採 raw 帶入策略。若其中仍有歷史本機工具或舊 skill 路徑，verify script 會提出 warning，方便在新機上決定是否保留或清理。

@@ -12,7 +12,7 @@ const props = defineProps<{
 
 const { resolvedImage, handleImageError } = useServicePageImageAsset(
   props.block.mediaSlot,
-  'detail-feature'
+  props.block.imageRole ?? 'detail-feature'
 )
 
 const blockClassName = computed(

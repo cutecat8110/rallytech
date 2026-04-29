@@ -13,8 +13,6 @@ const props = defineProps<{
   detailPage: ServiceDetailPageMessages
 }>()
 
-const messages = useRallyMessages()
-
 const isDenseMobileService = computed(() =>
   ['ie-services', 'plc-dcs-programming-and-migration'].includes(
     props.service.slug
@@ -32,48 +30,21 @@ const isDenseMobileService = computed(() =>
         }"
       >
         <ServiceDetailSidebar
+          class="services-sys-detail-shell__sidebar"
           :service="props.service"
           :heading="props.detailPage.sidebar.servicesHeading"
         />
 
         <div class="services-sys-detail-shell__main">
-          <section class="services-sys-detail-intro">
-            <div class="services-sys-detail-intro__band">
-              <div
-                v-if="props.detailPage.heroFocusItems.length"
-                class="services-sys-detail-focus-strip"
-              >
-                <p
-                  class="type-sys-kicker services-sys-detail-focus-strip__label"
-                >
-                  {{ messages.servicesPage.detailFocusLabel }}
-                </p>
-
-                <div class="services-sys-detail-focus-strip__list">
-                  <span
-                    v-for="item in props.detailPage.heroFocusItems"
-                    :key="item"
-                    class="services-sys-detail-focus-strip__chip type-sys-label-s"
-                  >
-                    {{ item }}
-                  </span>
-                </div>
-              </div>
-
-              <div
-                v-if="props.detailPage.introParagraphs.length"
-                class="services-sys-detail-intro__copy"
-              >
-                <SharedTextStack
-                  :paragraphs="props.detailPage.introParagraphs"
-                  tone="light"
-                  size="sm"
-                  density="compact"
-                  lead-first
-                />
-              </div>
-            </div>
-          </section>
+          <SharedTextStack
+            v-if="props.detailPage.introParagraphs.length"
+            class="services-sys-detail-main-lead"
+            :paragraphs="props.detailPage.introParagraphs"
+            tone="light"
+            size="md"
+            density="compact"
+            lead-first
+          />
 
           <ServiceDetailBlocksRenderer :blocks="props.detailPage.blocks" />
         </div>
@@ -97,99 +68,32 @@ const isDenseMobileService = computed(() =>
   min-width: 0;
 }
 
-.services-sys-detail-intro {
-  padding-block: clamp(1.8rem, 2.8vw, 2.6rem);
-  border-block: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 10%,
-      var(--color-border-subtle)
-    );
+.services-sys-detail-main-lead {
+  width: min(100%, 56rem);
+  margin-bottom: clamp(2.1rem, 3.4vw, 3.3rem);
 }
 
-.services-sys-detail-intro__band {
-  display: grid;
-  gap: 1.55rem;
-}
+@media (max-width: 1023px) {
+  .services-sys-detail-shell {
+    gap: clamp(3rem, 9vw, 4.2rem);
+  }
 
-.services-sys-detail-focus-strip {
-  display: grid;
-  gap: 0.75rem;
-  align-content: start;
-}
+  .services-sys-detail-shell__main {
+    order: 1;
+  }
 
-.services-sys-detail-focus-strip__label {
-  color: var(--color-text-tertiary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-}
+  .services-sys-detail-shell__sidebar {
+    order: 2;
+  }
 
-.services-sys-detail-focus-strip__list {
-  display: grid;
-  gap: 0.45rem;
-}
-
-.services-sys-detail-focus-strip__chip {
-  display: block;
-  padding-bottom: 0.55rem;
-  border-bottom: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 10%,
-      var(--color-border-subtle)
-    );
-  color: var(--color-text-secondary);
-}
-
-.services-sys-detail-intro__copy {
-  max-width: 50rem;
+  .services-sys-detail-main-lead {
+    margin-bottom: clamp(2rem, 7vw, 2.8rem);
+  }
 }
 
 @media (max-width: 767px) {
   .services-sys-detail-shell--dense-mobile {
     gap: 1.25rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-intro {
-    padding-block: 1.15rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-intro__band {
-    gap: 1rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile .services-sys-detail-focus-strip {
-    gap: 0.55rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    .services-sys-detail-focus-strip__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.8rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    .services-sys-detail-focus-strip__chip {
-    padding: 0;
-    border-bottom: none;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    .services-sys-detail-focus-strip__chip:not(:first-child)::before {
-    content: '\00b7';
-    margin-right: 0.45rem;
-    color: var(--color-text-tertiary);
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-sidebar__nav) {
-    gap: 0.5rem;
-  }
-
-  .services-sys-detail-shell--dense-mobile
-    :deep(.services-sys-detail-sidebar__link) {
-    padding: 0.2rem 0 0.65rem;
   }
 
   .services-sys-detail-shell--dense-mobile :deep(.services-sys-detail-blocks) {
@@ -316,12 +220,6 @@ const isDenseMobileService = computed(() =>
     grid-template-columns: minmax(15rem, 17rem) minmax(0, 1fr);
     align-items: start;
     gap: clamp(2.3rem, 3vw, 3.8rem);
-  }
-
-  .services-sys-detail-intro__band {
-    grid-template-columns: minmax(12rem, 14rem) minmax(0, 1fr);
-    gap: clamp(1.9rem, 3vw, 3rem);
-    align-items: start;
   }
 }
 </style>

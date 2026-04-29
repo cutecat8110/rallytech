@@ -57,7 +57,7 @@
 - `01`：專案定位、受眾、語言策略、目前共識與範圍邊界。
 - `02`：網站 IA、頁面角色、首頁區塊藍圖與一站式整合承接項目。
 - `03`：8 項服務主清單、中英文命名規則與舊站映射。
-- `04`：skills / MCP baseline、workflow、QA、commit/PR 規範與 capability gate。
+- `04`：skills / task-activated tools policy、workflow、QA、commit/PR 規範與 capability gate。
 - `05`：reference clone workflow、artifact 介面、downgrade 規則與 AI image phase。
 
 ## 補充文件

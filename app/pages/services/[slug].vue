@@ -89,17 +89,20 @@ const serviceOgImage = computed(() =>
     getServicePageImageEntry(service.value.slug, 'detail-hero').stock.src
   )
 )
+const servicePageTitle = computed(
+  () => `${service.value.shortLabel} | ${SITE_NAME}`
+)
 
 useSeoMeta({
-  title: () => detailPage.value.seo.title,
+  title: () => servicePageTitle.value,
   description: () => detailPage.value.seo.description,
-  ogTitle: () => detailPage.value.seo.title,
+  ogTitle: () => servicePageTitle.value,
   ogDescription: () => detailPage.value.seo.description,
   ogType: 'website',
   ogSiteName: SITE_NAME,
   ogImage: () => serviceOgImage.value,
   twitterCard: 'summary_large_image',
-  twitterTitle: () => detailPage.value.seo.title,
+  twitterTitle: () => servicePageTitle.value,
   twitterDescription: () => detailPage.value.seo.description,
   twitterImage: () => serviceOgImage.value,
   robots: () => (locale.value === 'source' ? 'noindex,nofollow' : undefined)

@@ -334,89 +334,13 @@ const messages = {
     },
     intro: {
       kicker: 'Source Guide',
-      title: 'Map the source-reference service areas',
+      title: 'Map source services to system, data, and site needs',
       description:
-        'Use this hidden source layer to compare the reference service categories before rewriting visible Rally Technology copy.'
+        'Use this hidden source layer to compare how the reference service categories support operator screens, control logic, plant data, networks, remote monitoring, and alarm workflows.'
     },
     cardCtaLabel: 'Read more',
     detailBackLabel: 'All Services',
-    detailFocusLabel: 'Source Reference Focus',
-    contextsSection: {
-      kicker: 'Reference Contexts',
-      title: 'Map source evidence back to common project contexts',
-      description:
-        'This hidden section helps QA compare Rally Technology keyword groupings with source-supported project situations before public copy is finalized.',
-      items: [
-        {
-          title: 'Renewable energy and offshore wind',
-          description:
-            'Reference-supported renewable energy, offshore wind, remote monitoring, and maintenance-response language.'
-        },
-        {
-          title: 'Energy management and facilities',
-          description:
-            'Reference-supported energy management, facilities, utilities, HVAC, and chiller-system monitoring language.'
-        },
-        {
-          title: 'Oil and gas and remote sites',
-          description:
-            'Reference-supported historian, remote monitoring, and data-continuity language for oil and gas and remote operations.'
-        },
-        {
-          title: 'Ports and transport infrastructure',
-          description:
-            'Reference-supported port, traffic and transport, and infrastructure-monitoring proof from partner materials.'
-        },
-        {
-          title: 'Factory and site monitoring',
-          description:
-            'Reference-supported central monitoring, plant data, and automation architecture vocabulary.'
-        },
-        {
-          title: 'Cross-system reporting',
-          description:
-            'Reference-supported PI Server, historian, reporting, and cross-system data-backbone language.'
-        }
-      ]
-    },
-    technologySection: {
-      kicker: 'Reference Platforms',
-      title: 'Track which platform terms are supported by source evidence',
-      description:
-        'This hidden section distinguishes platform and delivery terms that are supported by source material from terms that still need internal confirmation.',
-      items: [
-        {
-          title: 'SCADA / HMI and SCADA package planning',
-          description:
-            'Supported by source monitoring, operator-interface, alarm, and integration scope.'
-        },
-        {
-          title: 'WinCC OA and AVEVA System Platform',
-          description:
-            'Supported by official Rally Technology platform references in external research notes.'
-        },
-        {
-          title: 'PI Server / PI System / historians',
-          description:
-            'Supported by source-reference PI Server and historian pages plus reporting and traceability copy.'
-        },
-        {
-          title: 'PLC / DCS and commissioning',
-          description:
-            'Supported by source PLC / DCS, FAT / SAT, and commissioning language.'
-        },
-        {
-          title: 'Industrial networks and cybersecurity',
-          description:
-            'Supported by source network-design, segmentation, remote-access, and security vocabulary.'
-        },
-        {
-          title: 'Industrial websites and web applications',
-          description:
-            'Supported by Rally Technology manual web-development copy, not by legacy Pentagon reference pages.'
-        }
-      ]
-    }
+    detailFocusLabel: 'Source Reference Focus'
   },
   oneTouchPage: {
     seo: {

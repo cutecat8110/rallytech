@@ -51,9 +51,23 @@ const serviceItems = computed(() =>
 <style scoped>
 .services-sys-detail-sidebar {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1rem, 3.4vw, 1.35rem);
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 8%,
+      var(--color-border-subtle)
+    );
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(
+      180deg,
+      rgb(255 255 255 / 0.9),
+      color-mix(in srgb, var(--color-secondary-50) 54%, white)
+    ),
+    var(--color-white);
 }
 
 .services-sys-detail-sidebar__label {
@@ -63,58 +77,84 @@ const serviceItems = computed(() =>
 }
 
 .services-sys-detail-sidebar__nav {
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 0.15rem;
-  overflow-x: auto;
-  border-bottom: 1px solid
-    color-mix(
-      in srgb,
-      var(--color-secondary-950) 8%,
-      var(--color-border-subtle)
-    );
-  scrollbar-width: none;
-}
-
-.services-sys-detail-sidebar__nav::-webkit-scrollbar {
-  display: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  overflow: visible;
 }
 
 .services-sys-detail-sidebar__link {
   position: relative;
-  display: inline-flex;
-  flex: 0 0 auto;
+  display: flex;
+  min-width: 0;
+  min-height: 3rem;
   align-items: center;
-  padding: 0.25rem 0 0.8rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid
+    color-mix(
+      in srgb,
+      var(--color-secondary-950) 9%,
+      var(--color-border-subtle)
+    );
+  border-radius: var(--radius-sm);
   color: var(--color-text-secondary);
-  background: transparent;
+  background: color-mix(in srgb, var(--color-secondary-50) 52%, white);
+  line-height: 1.38;
+  overflow-wrap: anywhere;
   transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
     color 180ms ease,
     opacity 180ms ease;
+}
+
+.services-sys-detail-sidebar__link span {
+  min-width: 0;
 }
 
 .services-sys-detail-sidebar__link::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 1px;
+  left: 0.85rem;
+  right: 0.85rem;
+  bottom: 0.45rem;
+  height: 2px;
+  border-radius: var(--radius-full);
   background: transparent;
   transition: background-color 180ms ease;
 }
 
 .services-sys-detail-sidebar__link:hover {
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary-500) 26%,
+    var(--color-border-subtle)
+  );
   color: var(--color-secondary-950);
+  background: color-mix(in srgb, var(--color-primary-50) 64%, white);
 }
 
 .services-sys-detail-sidebar__link:focus-visible {
-  outline: none;
+  outline: 2px solid
+    color-mix(in srgb, var(--color-primary-400) 48%, transparent);
+  outline-offset: 2px;
   color: var(--color-secondary-950);
 }
 
 .services-sys-detail-sidebar__link--active {
+  border-color: color-mix(
+    in srgb,
+    var(--color-primary-500) 34%,
+    var(--color-border-subtle)
+  );
   color: var(--color-secondary-950);
+  background:
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--color-primary-100) 72%, white),
+      color-mix(in srgb, var(--color-primary-50) 62%, white)
+    ),
+    var(--color-white);
 }
 
 .services-sys-detail-sidebar__link:hover::after,
@@ -127,14 +167,28 @@ const serviceItems = computed(() =>
   );
 }
 
+@media (min-width: 640px) and (max-width: 1023px) {
+  .services-sys-detail-sidebar__nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.7rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .services-sys-detail-sidebar {
     position: sticky;
     top: calc(var(--layout-header-m) + 1.5rem);
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background: transparent;
   }
 
   .services-sys-detail-sidebar__nav {
+    display: flex;
     flex-direction: column;
     gap: 0.25rem;
     padding: 0 0 0 1rem;
@@ -150,7 +204,12 @@ const serviceItems = computed(() =>
 
   .services-sys-detail-sidebar__link {
     width: 100%;
+    min-height: 0;
     padding: 0.38rem 0 0.38rem 0.25rem;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    overflow-wrap: normal;
   }
 
   .services-sys-detail-sidebar__link::after {
@@ -160,6 +219,7 @@ const serviceItems = computed(() =>
     bottom: 0.15rem;
     width: 2px;
     height: auto;
+    border-radius: var(--radius-full);
   }
 
   .services-sys-detail-sidebar__link:hover::after,
