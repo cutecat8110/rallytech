@@ -1,4 +1,8 @@
 import {
+  appendAiImageUsageLog,
+  resolveUsageMetadata
+} from './lib/ai-image-usage-log.mjs'
+import {
   createCandidateId,
   createOutputPath,
   getSlotDefinition,
@@ -16,6 +20,7 @@ import {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2))
+  const usage = resolveUsageMetadata(args)
   const slot = 'contact-hero'
 
   await loadEnvFiles()
@@ -82,6 +87,7 @@ async function main() {
     )
 
   const candidateId = createCandidateId(slot)
+  const createdAt = new Date().toISOString()
   const outputPath = createOutputPath(slot, candidateId, imagePart.mimeType)
   const buffer = Buffer.from(imagePart.data, 'base64')
   await writeGeneratedImage(outputPath, buffer)
@@ -98,7 +104,7 @@ async function main() {
     aspectRatio,
     imageSize,
     sourceReference: referenceImage?.sourceReference || null,
-    createdAt: new Date().toISOString(),
+    createdAt,
     status: 'candidate',
     outputPath,
     outputBytes: buffer.byteLength,
@@ -108,9 +114,21 @@ async function main() {
 
   await writeManifest(slot, manifest)
   await syncRegistryFromManifest(slot, manifest)
+  const usageLogPath = await appendAiImageUsageLog({
+    usage,
+    candidateId,
+    slot,
+    model,
+    outputPath,
+    createdAt
+  })
 
   console.log(`Created candidate for ${slot}: ${candidateId}`)
   console.log(`Output: ${outputPath}`)
+  console.log(`Usage log: ${usageLogPath}`)
 }
 
-main().catch(console.error)
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error)
+  process.exitCode = 1
+})

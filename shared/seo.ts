@@ -1,5 +1,9 @@
 /* eslint-disable @stylistic/quote-props */
-import type { PublicLocaleCode, ServiceSlug } from '../i18n/locales/types'
+import type {
+  ProductSlug,
+  PublicLocaleCode,
+  ServiceSlug
+} from '../i18n/locales/types'
 
 export const SITE_URL = 'https://www.rallytech.com.tw'
 export const SITE_NAME = 'Rally Technology'
@@ -20,10 +24,17 @@ export const PUBLIC_SITE_LOCALES = [
 export const PUBLIC_PAGE_PATHS = [
   '/',
   '/about',
+  '/products',
   '/services',
   '/one-touch-experience',
   '/contact'
 ] as const
+
+export const PUBLIC_PRODUCT_SLUGS = [
+  'wincc-oa',
+  'aveva',
+  'siemens-plc'
+] as const satisfies readonly ProductSlug[]
 
 export const PUBLIC_SERVICE_SLUGS = [
   'scada-hmi-graphics',

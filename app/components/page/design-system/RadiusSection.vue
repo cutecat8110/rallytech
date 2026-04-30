@@ -8,13 +8,13 @@ const radiusTokens: RadiusToken[] = [
     token: 'XS',
     value: '2px',
     previewClass: 'rounded-xs',
-    usage: '細微圓角元件'
+    usage: '公開站 boxed buttons / 精密控制'
   },
   {
     token: 'S',
     value: '4px',
     previewClass: 'rounded-sm',
-    usage: '輸入與小按鈕'
+    usage: '輸入與小型 surface'
   },
   {
     token: 'M',

@@ -10,7 +10,7 @@ export default defineAppConfig({
         base: [
           'cursor-pointer',
           'justify-center',
-          'rounded-none',
+          'rounded-xs',
           'disabled:cursor-not-allowed',
           'aria-disabled:cursor-not-allowed'
         ].join(' ')

@@ -19,13 +19,10 @@ type OneTouchModuleWithImage = OneTouchModuleMessages & {
 }
 
 const messages = useRallyMessages()
+const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
+  useHomePageImageAsset('ote-background')
 
 const pageMessages = computed(() => messages.value.oneTouchPage)
-
-const heroImage = {
-  src: '/images/stock/services/overview/services-overview-hero-control-room.jpg',
-  objectPosition: 'center 58%'
-}
 
 const moduleImages: Record<OneTouchModuleId, OneTouchImageAsset> = {
   'data-integration': {
@@ -97,8 +94,9 @@ const secondVisual = computed(() => ({
           :src="heroImage.src"
           :alt="pageMessages.hero.imageAlt"
           class="one-touch-page__hero-image"
-          :style="{ objectPosition: heroImage.objectPosition }"
+          :style="{ objectPosition: 'center 58%' }"
           decoding="async"
+          @error="handleHeroImageError"
         />
       </template>
 

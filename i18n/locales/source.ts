@@ -1,6 +1,8 @@
 import { referencePagesSource } from './reference-pages.generated'
+import { productDetailPagesSource } from './products/source-detail'
 import { serviceDetailPagesSource } from './services/source-detail'
 import type {
+  ProductCatalogItemMessages,
   RallyTechLocaleMessages,
   ServiceCatalogItemMessages
 } from './types'
@@ -101,6 +103,54 @@ const servicesCatalog = [
   }
 ] satisfies ServiceCatalogItemMessages[]
 
+const productsCatalog = [
+  {
+    slug: 'wincc-oa',
+    shortLabel: 'WinCC OA',
+    formalTitle: 'WinCC Open Architecture Development',
+    englishTitle: 'WinCC Open Architecture Development',
+    categoryLabel: 'DMC source: SCADA / HMI',
+    description:
+      'Source notes for WinCC OA: open architecture SCADA / HMI, distributed and redundant systems, PLC interfacing, and WinCC OA extensions.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
+    badge: {
+      src: '/images/brand/wincc-oa-platform-badge.svg',
+      alt: 'WinCC OA platform visual badge'
+    }
+  },
+  {
+    slug: 'aveva',
+    shortLabel: 'AVEVA',
+    formalTitle: 'AVEVA Programming',
+    englishTitle: 'AVEVA Programming',
+    categoryLabel: 'DMC source: SCADA / HMI',
+    description:
+      'Source notes for AVEVA: System Platform, InTouch HMI, Historian, visualization, data management, and operations intelligence.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
+    badge: {
+      src: '/images/brand/aveva-platform-badge.svg',
+      alt: 'AVEVA platform visual badge'
+    }
+  },
+  {
+    slug: 'siemens-plc',
+    shortLabel: 'Siemens S7 PLC',
+    formalTitle: 'Siemens S7 PLC Programming',
+    englishTitle: 'Siemens S7 PLC Programming',
+    categoryLabel: 'DMC source: PLC Programming',
+    description:
+      'Source notes for Siemens PLC: S7 / SIMATIC hardware, TIA Portal, WinCC, PLC / HMI programming, commissioning, migration, and PROFIBUS / PROFINET.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
+    badge: {
+      src: '/images/brand/siemens-platform-badge.svg',
+      alt: 'Siemens platform visual badge'
+    }
+  }
+] satisfies ProductCatalogItemMessages[]
+
 const messages = {
   company: {
     displayName: 'Pentagon Engineering',
@@ -137,8 +187,9 @@ const messages = {
     },
     items: [
       { label: 'About', href: '#about' },
+      { label: 'Products', href: '/products' },
       { label: 'Services', href: '/services' },
-      { label: 'OTE', href: '/one-touch-experience' }
+      { label: 'Unified Customer Journey', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -197,7 +248,7 @@ const messages = {
       ]
     },
     oneTouch: {
-      title: 'The One-Touch Experience.',
+      title: 'Unified Customer Journey',
       description:
         'Integrate plant data, alarm workflows, historians, and utilities systems in one delivery path.',
       ctaLabel: 'Read More',
@@ -342,14 +393,33 @@ const messages = {
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Source Reference Focus'
   },
-  oneTouchPage: {
+  productsCatalog,
+  productsPage: {
     seo: {
-      title: 'One Touch Experience | Pentagon Engineering Source Reference',
+      title: 'Products | DMC Source Reference Notes',
       description:
-        'Hidden source-reference One Touch Experience page used to proofread page structure and visible copy.'
+        'Hidden source-reference product overview used to proofread DMC source notes for WinCC OA, AVEVA, and Siemens S7 PLC pages.'
     },
     hero: {
-      title: 'One Touch Experience',
+      title: 'Products'
+    },
+    intro: {
+      kicker: 'Source Guide',
+      title: 'Map product references to platform integration pages',
+      description:
+        'Use this hidden source layer to compare DMC product-page emphasis against the Rally public copy rewrite boundary.'
+    },
+    cardCtaLabel: 'Read source notes',
+    detailBackLabel: 'All Products'
+  },
+  oneTouchPage: {
+    seo: {
+      title: 'Unified Customer Journey | Pentagon Engineering Source Reference',
+      description:
+        'Hidden source-reference Unified Customer Journey page used to proofread page structure and visible copy.'
+    },
+    hero: {
+      title: 'Unified Customer Journey',
       imageAlt: 'Pentagon Engineering source one-touch page hero background'
     },
     modules: [
@@ -386,6 +456,7 @@ const messages = {
     ]
   },
   serviceDetailPages: serviceDetailPagesSource,
+  productDetailPages: productDetailPagesSource,
   contactPage: {
     seo: {
       title: 'Contact Us | Pentagon Engineering Source Reference',

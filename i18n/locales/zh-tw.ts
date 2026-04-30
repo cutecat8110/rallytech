@@ -1,6 +1,8 @@
 import { referencePagesZhTw } from './reference-pages.generated'
+import { productDetailPagesZhTw } from './products/zh-tw-detail'
 import { serviceDetailPagesZhTw } from './services/zh-tw-detail'
 import type {
+  ProductCatalogItemMessages,
   RallyTechLocaleMessages,
   ServiceCatalogItemMessages
 } from './types'
@@ -103,6 +105,54 @@ const servicesCatalog = [
   }
 ] satisfies ServiceCatalogItemMessages[]
 
+const productsCatalog = [
+  {
+    slug: 'wincc-oa',
+    shortLabel: 'WinCC OA',
+    formalTitle: 'WinCC OA SCADA 平台整合',
+    englishTitle: 'WinCC OA SCADA Platform Integration',
+    categoryLabel: 'SCADA 平台',
+    description:
+      '適合需要分散式 SCADA、備援與操作畫面標準化的專案，雷力協助規劃 WinCC OA 架構、PLC 通訊與後續維護交接。',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
+    badge: {
+      src: '/images/brand/wincc-oa-platform-badge.svg',
+      alt: 'WinCC OA 平台視覺標章'
+    }
+  },
+  {
+    slug: 'aveva',
+    shortLabel: 'AVEVA',
+    formalTitle: 'AVEVA System Platform 整合',
+    englishTitle: 'AVEVA System Platform Integration',
+    categoryLabel: 'SCADA 與營運平台',
+    description:
+      '適合需要 System Platform、InTouch HMI 與 Historian 串接的場域，雷力協助整理工廠模型、資料脈絡與報表使用情境。',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
+    badge: {
+      src: '/images/brand/aveva-platform-badge.svg',
+      alt: 'AVEVA 平台視覺標章'
+    }
+  },
+  {
+    slug: 'siemens-plc',
+    shortLabel: '西門子 PLC',
+    formalTitle: '西門子 PLC 自動化整合',
+    englishTitle: 'Siemens PLC Automation Integration',
+    categoryLabel: 'PLC 平台',
+    description:
+      '適合 Siemens S7 / SIMATIC 控制系統的新建、改造與搬遷，雷力協助 TIA Portal 工程、HMI / SCADA 協調與試車交接。',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
+    badge: {
+      src: '/images/brand/siemens-platform-badge.svg',
+      alt: 'Siemens 平台視覺標章'
+    }
+  }
+] satisfies ProductCatalogItemMessages[]
+
 const messages = {
   company: {
     displayName: '雷力科技 Rally Technology',
@@ -140,8 +190,9 @@ const messages = {
     },
     items: [
       { label: '關於我們', href: '/about' },
+      { label: '產品', href: '/products' },
       { label: '服務項目', href: '/services' },
-      { label: '一站式整合', href: '/one-touch-experience' }
+      { label: '全方位整合服務', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -198,7 +249,7 @@ const messages = {
       ]
     },
     oneTouch: {
-      title: '一站式整合',
+      title: '全方位整合服務',
       description:
         '把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。',
       ctaLabel: '查看整合方式',
@@ -261,7 +312,7 @@ const messages = {
         'PLC / DCS',
         'PI / Historian',
         '工業網路',
-        '一站式整合'
+        '全方位整合服務'
       ]
     },
     partners: {
@@ -344,14 +395,33 @@ const messages = {
     detailBackLabel: '所有服務',
     detailFocusLabel: '快速看懂'
   },
+  productsCatalog,
+  productsPage: {
+    seo: {
+      title: '產品 | 雷力科技 Rally Technology',
+      description:
+        '瀏覽雷力科技可承接的 WinCC OA、AVEVA 與西門子 PLC 平台整合能力，了解各平台適合的 SCADA / HMI、營運資料與控制系統導入情境。'
+    },
+    hero: {
+      title: '產品平台'
+    },
+    intro: {
+      kicker: '產品平台',
+      title: '把 SCADA、營運資料與控制系統平台導入現場',
+      description:
+        '從 WinCC OA、AVEVA 到 Siemens PLC，雷力協助專案團隊釐清平台定位、系統介面與後續維護方式，讓產品不只是被安裝，而是能接上現場操作、資料使用與交付流程。'
+    },
+    cardCtaLabel: '查看產品',
+    detailBackLabel: '所有產品'
+  },
   oneTouchPage: {
     seo: {
-      title: '一站式整合 | 雷力科技 Rally Technology',
+      title: '全方位整合服務 | 雷力科技 Rally Technology',
       description:
         '了解雷力科技如何把 SCADA、告警流程、PI Server / Historian、振動監測、能源管理與公用廠務資料接在同一層跨系統整合流程。'
     },
     hero: {
-      title: '一站式整合',
+      title: '全方位整合服務',
       imageAlt: '工業控制室與監控系統畫面'
     },
     modules: [
@@ -393,6 +463,7 @@ const messages = {
     ]
   },
   serviceDetailPages: serviceDetailPagesZhTw,
+  productDetailPages: productDetailPagesZhTw,
   contactPage: {
     seo: {
       title: '聯絡我們 | 雷力科技 Rally Technology',

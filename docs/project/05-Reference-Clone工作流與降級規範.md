@@ -173,6 +173,7 @@ Gate：沒有 implementation contract，不進入程式實作。
 - AI 生圖不取代 reference truth capture。
 - 長期圖像 guardrails 放在 `.agents/ai-image-context.md`。
 - active brief / prompt / manifest 與 candidate history 放在 `data/nano-banana/`，並採 slot-aware scaffold。
+- 每次 AI 生圖成功後，必須在 `docs/project/ai-image-usage/YYYY-MM-DD.md` 追加每日用量紀錄；缺少使用人、使用頁面或生成費用時，不得送出生成請求。
 - AI 圖像 prompt research、recipe 與迭代筆記可放在 `docs/references/`，但 workflow owner 仍是本檔。
 
 ### AI image metadata 解釋
@@ -181,6 +182,16 @@ Gate：沒有 implementation contract，不進入程式實作。
 - `prompt brief`：本輪生成或編修所依據的簡短提示詞摘要
 - `source-of-truth note`：這張圖要忠實承接的 reference 構圖、情緒、角色或裁切依據
 - `acceptance note`：本輪何時算可接受，例如「構圖與 reference 同類型、張力到位、無品牌衝突」
+
+### AI image usage metadata
+
+生圖用量紀錄是治理與成本追蹤資料，不屬於 prompt、candidate manifest 或長期圖像 guardrails。生成腳本需在 API request 前取得：
+
+- `usage-user`：使用人
+- `page-used`：使用頁面，例如首頁 / Landing Page / 產品頁
+- `generation-cost`：本次生成費用，由使用者以實際幣別文字輸入
+
+紀錄檔以台北時區的生成日期命名，日期欄位使用 `yyyy/M/d` 格式；每筆紀錄需包含生成次數、candidateId、slot、model 與 outputPath，確保費用紀錄可回查到實際候選圖。
 
 ## 5. URL / Image / Multi-page 的專用要求
 

@@ -1,4 +1,8 @@
 import {
+  appendAiImageUsageLog,
+  resolveUsageMetadata
+} from './lib/ai-image-usage-log.mjs'
+import {
   createCandidateId,
   createOutputPath,
   getCandidateCollection,
@@ -22,6 +26,7 @@ const DEFAULT_SLOT = 'home-hero'
 
 async function main() {
   const args = parseArgs(process.argv.slice(2))
+  const usage = resolveUsageMetadata(args)
   const slot = String(args.slot ?? DEFAULT_SLOT)
   const state =
     typeof args.state === 'string' ? String(args.state).trim() : null
@@ -130,6 +135,7 @@ async function main() {
   }
 
   const candidateId = createCandidateId(slot, state)
+  const createdAt = new Date().toISOString()
   const outputPath = createOutputPath(
     slot,
     candidateId,
@@ -154,7 +160,7 @@ async function main() {
     aspectRatio,
     imageSize,
     sourceReference: referenceImage?.sourceReference ?? null,
-    createdAt: new Date().toISOString(),
+    createdAt,
     status: 'candidate',
     outputPath,
     outputBytes: buffer.byteLength,
@@ -164,11 +170,20 @@ async function main() {
 
   await writeManifest(slot, manifest)
   await syncRegistryFromManifest(slot, manifest)
+  const usageLogPath = await appendAiImageUsageLog({
+    usage,
+    candidateId,
+    slot,
+    model,
+    outputPath,
+    createdAt
+  })
 
   console.log(
     `Created ${stateDefinition?.displayName ?? slotDefinition.displayName} candidate: ${candidateId}`
   )
   console.log(`Output: ${outputPath}`)
+  console.log(`Usage log: ${usageLogPath}`)
 }
 
 await main().catch((error) => {

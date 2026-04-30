@@ -17,6 +17,7 @@ const publicArchetypes = [
     owner: 'Layer 2 `app/app.config.ts`',
     usage: '首頁 hero、首頁 section CTA、contact submit',
     size: '`lg` 為預設，首頁 hero 使用 `xl`',
+    radius: '`rounded-xs` / 2px',
     motion: 'Hover 只做背景色階切換；active 用較深色；focus 使用品牌 ring'
   },
   {
@@ -25,6 +26,7 @@ const publicArchetypes = [
     owner: 'Layer 3 `button-themes.ts`',
     usage: 'Header contact、footer connector',
     size: 'Header 使用 `sm`；footer connector 使用 `lg`',
+    radius: '`rounded-xs` / 2px',
     motion:
       '深底版本維持深色實底；白底版本 hover 會染上淡主色，文字與 focus ring 同步切到主色系'
   },
@@ -34,6 +36,7 @@ const publicArchetypes = [
     owner: 'Layer 3 `button-themes.ts`',
     usage: 'Header FREE/AI、語系切換',
     size: '`xs` 為預設',
+    radius: '`rounded-xs` / 2px',
     motion:
       '未選取白底項 hover / focus 會切到淡主色底與深主色文字；已選取實底維持現況'
   },
@@ -44,6 +47,7 @@ const publicArchetypes = [
     usage:
       'Header mobile controls、contact quick actions、newsletter submit、back-to-top',
     size: '`sm` 為預設 icon size',
+    radius: '`rounded-xs` / 2px',
     motion:
       'Inline 與 emphasis 模式都只做 fill 與 text 的細微切換；focus 才加強 ring'
   },
@@ -53,6 +57,7 @@ const publicArchetypes = [
     owner: 'Shared primitive',
     usage: 'Home services / services overview cards',
     size: '`sm` 為預設',
+    radius: 'No box radius',
     motion: '只允許文字與 icon 色彩加深，不使用位移、box、shadow 或 fill'
   }
 ] as const
@@ -85,6 +90,13 @@ const sectionMapping = [
     size: '`lg` / hero `xl`',
     owner: 'Global `UButton`',
     note: '唯一品牌主 CTA'
+  },
+  {
+    section: 'Mission tabs',
+    archetype: 'Segmented control',
+    size: '`sm`',
+    owner: 'Local `UTabs :ui`',
+    note: '沿用 2px radius 與 flat chromatic control 語言'
   },
   {
     section: 'Footer connector',
@@ -167,7 +179,7 @@ const internalAccentSolidButtonTheme = {
       <SectionHeader
         eyebrow="Foundations"
         title="Buttons 按鈕"
-        description="公開站只保留 5 種可感知的按鈕語言。Global standard 管 primary solid 與 size ladder，其他都必須落在 approved `UTheme` family 或 `SharedActionLink`。"
+        description="公開站只保留 5 種可感知的按鈕語言。Global standard 管 primary solid、2px button radius 與 size ladder，其他都必須落在 approved `UTheme` family 或 `SharedActionLink`。"
       />
 
       <div class="buttons-sys-grid">
@@ -176,7 +188,8 @@ const internalAccentSolidButtonTheme = {
             <p class="type-sys-title-m text-neutral-950">Public contract</p>
             <p class="type-sys-body-s text-neutral-600">
               正式站只使用以下 archetype，hover 統一收斂為 color / border / ring
-              only；白底家族以輕主色染色建立互動感。
+              only；boxed button-like controls 統一使用 2px
+              精密圓角，白底家族以輕主色染色建立互動感。
             </p>
           </div>
 
@@ -300,6 +313,10 @@ const internalAccentSolidButtonTheme = {
                   <div>
                     <dt>Size</dt>
                     <dd>{{ item.size }}</dd>
+                  </div>
+                  <div>
+                    <dt>Radius</dt>
+                    <dd>{{ item.radius }}</dd>
                   </div>
                   <div>
                     <dt>Motion</dt>
@@ -500,6 +517,7 @@ const internalAccentSolidButtonTheme = {
 .buttons-sys-segmented {
   display: inline-flex;
   border: 1px solid var(--color-secondary-200);
+  border-radius: var(--radius-xs);
   background: color-mix(
     in srgb,
     var(--color-secondary-50) 82%,

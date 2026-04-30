@@ -1,4 +1,5 @@
 import { spawn } from 'node:child_process'
+import { resolveUsageMetadata } from './lib/ai-image-usage-log.mjs'
 
 const slugs = [
   'scada-hmi-graphics',
@@ -20,7 +21,7 @@ for (const slug of slugs) {
   }
 }
 
-async function runCommand(slot) {
+async function runCommand(slot, usage) {
   return new Promise((resolve, reject) => {
     console.log(`\n>>> Generating Pro image for slot: ${slot}...`)
 
@@ -31,7 +32,15 @@ async function runCommand(slot) {
       '--model',
       'gemini-3-pro-image-preview',
       '--notes',
-      'Enforcing strict East Asian/Taiwanese casting and Pro-model visual upgrade.'
+      'Enforcing strict East Asian/Taiwanese casting and Pro-model visual upgrade.',
+      '--usage-user',
+      usage.user,
+      '--page-used',
+      usage.pageUsed,
+      '--generation-cost',
+      usage.generationCost,
+      '--number-of-generations',
+      '1'
     ]
 
     const child = spawn('node', args, { stdio: 'inherit' })
@@ -44,6 +53,8 @@ async function runCommand(slot) {
 }
 
 async function main() {
+  const args = parseArgs(process.argv.slice(2))
+  const usage = resolveUsageMetadata(args)
   console.log(
     `Starting targeted Pro generation for ${slots.length} service images...`
   )
@@ -51,7 +62,7 @@ async function main() {
 
   for (const slot of slots) {
     try {
-      await runCommand(slot)
+      await runCommand(slot, usage)
     } catch (e) {
       console.error(e.message)
     }
@@ -60,4 +71,33 @@ async function main() {
   console.log('\nService-specific Pro generation completed.')
 }
 
-main().catch(console.error)
+function parseArgs(argv) {
+  const args = { _: [] }
+
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index]
+
+    if (!token.startsWith('--')) {
+      args._.push(token)
+      continue
+    }
+
+    const key = token.slice(2)
+    const nextToken = argv[index + 1]
+
+    if (!nextToken || nextToken.startsWith('--')) {
+      args[key] = true
+      continue
+    }
+
+    args[key] = nextToken
+    index += 1
+  }
+
+  return args
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error)
+  process.exitCode = 1
+})

@@ -1,5 +1,6 @@
 import {
   PUBLIC_PAGE_PATHS,
+  PUBLIC_PRODUCT_SLUGS,
   PUBLIC_SERVICE_SLUGS,
   PUBLIC_SITE_LOCALES,
   getLocalizedPath,
@@ -22,6 +23,11 @@ export default defineEventHandler((event) => {
     ...PUBLIC_SITE_LOCALES.flatMap((locale) =>
       PUBLIC_PAGE_PATHS.map((path) =>
         withSiteUrl(getLocalizedPath(locale.code, path))
+      )
+    ),
+    ...PUBLIC_SITE_LOCALES.flatMap((locale) =>
+      PUBLIC_PRODUCT_SLUGS.map((slug) =>
+        withSiteUrl(getLocalizedPath(locale.code, `/products/${slug}`))
       )
     ),
     ...PUBLIC_SITE_LOCALES.flatMap((locale) =>

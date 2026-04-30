@@ -1,6 +1,8 @@
 import { referencePagesEn } from './reference-pages.generated'
+import { productDetailPagesEn } from './products/en-detail'
 import { serviceDetailPagesEn } from './services/en-detail'
 import type {
+  ProductCatalogItemMessages,
   RallyTechLocaleMessages,
   ServiceCatalogItemMessages
 } from './types'
@@ -105,6 +107,54 @@ const servicesCatalog = [
   }
 ] satisfies ServiceCatalogItemMessages[]
 
+const productsCatalog = [
+  {
+    slug: 'wincc-oa',
+    shortLabel: 'WinCC OA',
+    formalTitle: 'WinCC OA SCADA Platform Integration',
+    englishTitle: 'WinCC OA SCADA Platform Integration',
+    categoryLabel: 'SCADA Platform',
+    description:
+      'For projects that need distributed SCADA, redundancy, and operator-screen standards, Rally helps plan WinCC OA architecture, PLC communication, and handover.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
+    badge: {
+      src: '/images/brand/wincc-oa-platform-badge.svg',
+      alt: 'WinCC OA platform visual badge'
+    }
+  },
+  {
+    slug: 'aveva',
+    shortLabel: 'AVEVA',
+    formalTitle: 'AVEVA System Platform Integration',
+    englishTitle: 'AVEVA System Platform Integration',
+    categoryLabel: 'SCADA and Operations Platform',
+    description:
+      'For sites using System Platform, InTouch HMI, and Historian together, Rally helps organize the plant model, data context, and reporting use cases.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
+    badge: {
+      src: '/images/brand/aveva-platform-badge.svg',
+      alt: 'AVEVA platform visual badge'
+    }
+  },
+  {
+    slug: 'siemens-plc',
+    shortLabel: 'Siemens PLC',
+    formalTitle: 'Siemens PLC Automation Integration',
+    englishTitle: 'Siemens PLC Automation Integration',
+    categoryLabel: 'PLC Platform',
+    description:
+      'For new builds, upgrades, and migrations on Siemens S7 / SIMATIC systems, Rally supports TIA Portal engineering, HMI / SCADA coordination, and commissioning handover.',
+    sourceUrl:
+      'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
+    badge: {
+      src: '/images/brand/siemens-platform-badge.svg',
+      alt: 'Siemens platform visual badge'
+    }
+  }
+] satisfies ProductCatalogItemMessages[]
+
 const messages = {
   company: {
     displayName: 'Rally Technology',
@@ -143,8 +193,9 @@ const messages = {
     },
     items: [
       { label: 'About', href: '/about' },
+      { label: 'Products', href: '/products' },
       { label: 'Services', href: '/services' },
-      { label: 'One-Touch Experience', href: '/one-touch-experience' }
+      { label: 'Unified Customer Journey', href: '/one-touch-experience' }
     ]
   },
   home: {
@@ -204,7 +255,7 @@ const messages = {
       ]
     },
     oneTouch: {
-      title: 'One-Touch Experience',
+      title: 'Unified Customer Journey',
       description:
         'Use one integration layer to connect SCADA, alarm workflows, historian data, and utilities information.',
       ctaLabel: 'View Integration Flow',
@@ -268,7 +319,7 @@ const messages = {
         'PLC / DCS',
         'PI / Historian',
         'Industrial Networks',
-        'One-Touch Integration'
+        'Unified Customer Journey'
       ]
     },
     partners: {
@@ -352,14 +403,34 @@ const messages = {
     detailBackLabel: 'All Services',
     detailFocusLabel: 'Scope at a Glance'
   },
+  productsCatalog,
+  productsPage: {
+    seo: {
+      title: 'Products | Rally Technology',
+      description:
+        'Explore Rally Technology product-platform capabilities for WinCC OA, AVEVA, and Siemens PLC projects across SCADA / HMI, operations data, and control-system delivery.'
+    },
+    hero: {
+      title: 'Product Platforms'
+    },
+    intro: {
+      kicker: 'Product Platforms',
+      title:
+        'Bring SCADA, operations data, and control platforms into the site',
+      description:
+        'From WinCC OA and AVEVA to Siemens PLC, Rally helps project teams clarify platform roles, system interfaces, and maintenance handover so product platforms connect with real operator workflows, data use, and delivery needs.'
+    },
+    cardCtaLabel: 'View Product',
+    detailBackLabel: 'All Products'
+  },
   oneTouchPage: {
     seo: {
-      title: 'One-Touch Experience | Rally Technology',
+      title: 'Unified Customer Journey | Rally Technology',
       description:
         'See how Rally Technology connects SCADA, alarm workflows, PI Server / historians, vibration monitoring, energy management, and utilities data into one cross-system integration flow.'
     },
     hero: {
-      title: 'One-Touch Experience',
+      title: 'Unified Customer Journey',
       imageAlt: 'Industrial control room and monitoring systems'
     },
     modules: [
@@ -396,6 +467,7 @@ const messages = {
     ]
   },
   serviceDetailPages: serviceDetailPagesEn,
+  productDetailPages: productDetailPagesEn,
   contactPage: {
     seo: {
       title: 'Contact Us | Rally Technology',

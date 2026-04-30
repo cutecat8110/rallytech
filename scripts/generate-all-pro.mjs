@@ -1,4 +1,5 @@
 import { spawn } from 'node:child_process'
+import { resolveUsageMetadata } from './lib/ai-image-usage-log.mjs'
 
 const homeSlots = [
   { slot: 'home-hero' },
@@ -34,7 +35,7 @@ for (const slug of serviceSlugs) {
 
 const contactSlots = [{ slot: 'contact-hero' }]
 
-async function runCommand(scriptName, slotInfo) {
+async function runCommand(scriptName, slotInfo, usage) {
   return new Promise((resolve, reject) => {
     const slotDesc = slotInfo.state
       ? `${slotInfo.slot} (${slotInfo.state})`
@@ -49,7 +50,15 @@ async function runCommand(scriptName, slotInfo) {
       '--model',
       'gemini-3-pro-image-preview',
       '--notes',
-      'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.'
+      'Global Pro-model visual upgrade. STRICT REQUIREMENT: NO EMBEDDED TEXT, NO SLOGANS, NO LOGOS, NO UI ELEMENTS.',
+      '--usage-user',
+      usage.user,
+      '--page-used',
+      usage.pageUsed,
+      '--generation-cost',
+      usage.generationCost,
+      '--number-of-generations',
+      '1'
     ]
 
     if (slotInfo.state) {
@@ -66,6 +75,8 @@ async function runCommand(scriptName, slotInfo) {
 }
 
 async function main() {
+  const args = parseArgs(process.argv.slice(2))
+  const usage = resolveUsageMetadata(args)
   const total = homeSlots.length + serviceSlots.length + contactSlots.length
   console.log(`Starting global Pro generation for ${total} images...`)
   console.log(
@@ -75,7 +86,7 @@ async function main() {
   // 1. Home
   for (const info of homeSlots) {
     try {
-      await runCommand('scripts/generate-home-hero-candidate.mjs', info)
+      await runCommand('scripts/generate-home-hero-candidate.mjs', info, usage)
     } catch (e) {
       console.error(e.message)
     }
@@ -84,7 +95,11 @@ async function main() {
   // 2. Services
   for (const info of serviceSlots) {
     try {
-      await runCommand('scripts/generate-service-image-candidate.mjs', info)
+      await runCommand(
+        'scripts/generate-service-image-candidate.mjs',
+        info,
+        usage
+      )
     } catch (e) {
       console.error(e.message)
     }
@@ -93,7 +108,11 @@ async function main() {
   // 3. Contact
   for (const info of contactSlots) {
     try {
-      await runCommand('scripts/generate-contact-hero-candidate.mjs', info)
+      await runCommand(
+        'scripts/generate-contact-hero-candidate.mjs',
+        info,
+        usage
+      )
     } catch (e) {
       console.error(e.message)
     }
@@ -102,4 +121,33 @@ async function main() {
   console.log('\nGlobal Pro generation completed.')
 }
 
-main().catch(console.error)
+function parseArgs(argv) {
+  const args = { _: [] }
+
+  for (let index = 0; index < argv.length; index += 1) {
+    const token = argv[index]
+
+    if (!token.startsWith('--')) {
+      args._.push(token)
+      continue
+    }
+
+    const key = token.slice(2)
+    const nextToken = argv[index + 1]
+
+    if (!nextToken || nextToken.startsWith('--')) {
+      args[key] = true
+      continue
+    }
+
+    args[key] = nextToken
+    index += 1
+  }
+
+  return args
+}
+
+main().catch((error) => {
+  console.error(error instanceof Error ? error.message : error)
+  process.exitCode = 1
+})

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import {
   contrastSolidLightButtonTheme,
@@ -13,6 +13,8 @@ const { t } = useI18n()
 const toast = useToast()
 const localePath = useLocalePath()
 const newsletterEmail = ref('')
+const isBackToTopVisible = ref(false)
+const BACK_TO_TOP_REVEAL_OFFSET = 320
 const {
   resolvedImage: connectorImage,
   handleImageError: handleConnectorImageError
@@ -118,11 +120,28 @@ function handleNewsletterSubmit() {
   newsletterEmail.value = ''
 }
 
+function updateBackToTopVisibility() {
+  if (!import.meta.client) return
+
+  isBackToTopVisible.value = window.scrollY > BACK_TO_TOP_REVEAL_OFFSET
+}
+
 function handleBackToTop() {
   if (!import.meta.client) return
 
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
+
+onMounted(() => {
+  updateBackToTopVisibility()
+  window.addEventListener('scroll', updateBackToTopVisibility, {
+    passive: true
+  })
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', updateBackToTopVisibility)
+})
 </script>
 
 <template>
@@ -310,7 +329,12 @@ function handleBackToTop() {
             size="sm"
             icon="i-ic-baseline-keyboard-arrow-up"
             :aria-label="footerMessages.backToTopLabel"
-            class="home-sys-footer__back-to-top"
+            :class="[
+              'home-sys-footer__back-to-top',
+              {
+                'home-sys-footer__back-to-top--visible': isBackToTopVisible
+              }
+            ]"
             @click="handleBackToTop"
           />
         </UTheme>
@@ -568,13 +592,50 @@ function handleBackToTop() {
 }
 
 .home-sys-footer__back-to-top {
-  position: absolute;
-  inset-inline-end: var(--layout-content-padding-inline);
-  top: 50%;
+  --back-to-top-enter-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --back-to-top-exit-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  right: clamp(1rem, 3vw, 1.75rem);
+  bottom: clamp(1rem, 3vw, 1.75rem);
+  z-index: 40;
   width: 2.85rem;
   height: 2.85rem;
-  transform: translateY(-50%);
   justify-content: center;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, 0.55rem, 0) scale(0.96);
+  transition:
+    opacity 260ms var(--back-to-top-exit-ease),
+    transform 320ms var(--back-to-top-exit-ease),
+    visibility 0s linear 320ms;
+  will-change: opacity, transform;
+}
+
+.home-sys-footer__back-to-top--visible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate3d(0, 0, 0) scale(1);
+  transition:
+    opacity 360ms var(--back-to-top-enter-ease),
+    transform 440ms var(--back-to-top-enter-ease),
+    visibility 0s linear 0s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-sys-footer__back-to-top {
+    transform: translate3d(0, 0, 0) scale(1);
+    transition:
+      opacity 1ms linear,
+      visibility 0s linear 1ms;
+  }
+
+  .home-sys-footer__back-to-top--visible {
+    transition:
+      opacity 1ms linear,
+      visibility 0s linear 0s;
+  }
 }
 
 @media (max-width: 767px) {
@@ -589,10 +650,6 @@ function handleBackToTop() {
   .home-sys-footer__connector-cta {
     min-width: 8rem;
     min-height: 2.9rem;
-  }
-
-  .home-sys-footer__legal-shell {
-    padding-inline-end: calc(var(--layout-content-padding-inline) + 3.8rem);
   }
 }
 

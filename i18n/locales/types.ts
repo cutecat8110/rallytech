@@ -16,6 +16,8 @@ export type ServiceSlug =
   | 'alarm-monitoring'
   | 'web-development'
 
+export type ProductSlug = 'wincc-oa' | 'aveva' | 'siemens-plc'
+
 export type OneTouchModuleId =
   | 'data-integration'
   | 'alarm-workflow'
@@ -68,6 +70,20 @@ export interface ServiceCatalogItemMessages {
   formalTitle: string
   englishTitle: string
   description: string
+}
+
+export interface ProductCatalogItemMessages {
+  slug: ProductSlug
+  shortLabel: string
+  formalTitle: string
+  englishTitle: string
+  categoryLabel: string
+  description: string
+  sourceUrl: string
+  badge: {
+    src: string
+    alt: string
+  }
 }
 
 export interface AboutPageMessages {
@@ -181,6 +197,23 @@ export interface ServicesPageMessages {
   cardCtaLabel: string
   detailBackLabel: string
   detailFocusLabel: string
+}
+
+export interface ProductsPageMessages {
+  seo: {
+    title: string
+    description: string
+  }
+  hero: {
+    title: string
+  }
+  intro: {
+    kicker: string
+    title: string
+    description: string
+  }
+  cardCtaLabel: string
+  detailBackLabel: string
 }
 
 export interface OneTouchModuleMessages {
@@ -333,6 +366,105 @@ export type ServiceDetailPagesMessages = Record<
   ServiceDetailPageMessages
 >
 
+export interface ProductDetailSidebarMessages {
+  productsHeading: string
+}
+
+export interface ProductDetailProofItemMessages {
+  title: string
+  description: string
+}
+
+export interface ProductDetailCapabilityItemMessages {
+  title: string
+  paragraphs?: string[]
+  description?: string
+}
+
+export interface ProductDetailProcessStepItemMessages {
+  stepLabel?: string
+  title: string
+  description: string
+}
+
+export interface ProductDetailBlockBaseMessages {
+  type:
+    | 'platform-overview'
+    | 'proof-strip'
+    | 'capability-list'
+    | 'card-grid'
+    | 'tag-list'
+    | 'process-steps'
+    | 'closing-note'
+  title?: string
+  eyebrow?: string | false
+}
+
+export interface ProductDetailPlatformOverviewBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'platform-overview'
+  title: string
+  paragraphs: string[]
+  highlights: string[]
+}
+
+export interface ProductDetailProofStripBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'proof-strip'
+  tone?: 'light' | 'dark'
+  items: ProductDetailProofItemMessages[]
+}
+
+export interface ProductDetailCapabilityListBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'capability-list'
+  items: ProductDetailCapabilityItemMessages[]
+}
+
+export interface ProductDetailCardGridBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'card-grid'
+  items: TextPair[]
+  columns?: 2 | 3
+}
+
+export interface ProductDetailTagListBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'tag-list'
+  items: string[]
+}
+
+export interface ProductDetailProcessStepsBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'process-steps'
+  items: ProductDetailProcessStepItemMessages[]
+}
+
+export interface ProductDetailClosingNoteBlockMessages extends ProductDetailBlockBaseMessages {
+  type: 'closing-note'
+  paragraphs: string[]
+}
+
+export type ProductDetailBlockMessages =
+  | ProductDetailPlatformOverviewBlockMessages
+  | ProductDetailProofStripBlockMessages
+  | ProductDetailCapabilityListBlockMessages
+  | ProductDetailCardGridBlockMessages
+  | ProductDetailTagListBlockMessages
+  | ProductDetailProcessStepsBlockMessages
+  | ProductDetailClosingNoteBlockMessages
+
+export interface ProductDetailPageMessages {
+  seo: {
+    title: string
+    description: string
+  }
+  sourceUrl: string
+  heroFocusItems: string[]
+  introParagraphs: string[]
+  sidebar: ProductDetailSidebarMessages
+  blocks: ProductDetailBlockMessages[]
+}
+
+export type ProductDetailPagesMessages = Record<
+  ProductSlug,
+  ProductDetailPageMessages
+>
+
 export interface ContactPageFieldMessages {
   label: string
   placeholder: string
@@ -457,8 +589,11 @@ export interface RallyTechLocaleMessages {
   aboutPage: AboutPageMessages
   servicesCatalog: ServiceCatalogItemMessages[]
   servicesPage: ServicesPageMessages
+  productsCatalog: ProductCatalogItemMessages[]
+  productsPage: ProductsPageMessages
   oneTouchPage: OneTouchPageMessages
   serviceDetailPages: ServiceDetailPagesMessages
+  productDetailPages: ProductDetailPagesMessages
   contactPage: ContactPageMessages
   footer: FooterMessages
   referencePages: ReferencePagesMessages

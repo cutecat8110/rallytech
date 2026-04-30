@@ -32,10 +32,10 @@ const activeMissionState = computed(
 
 const missionTabsUi = {
   root: 'w-fit',
-  list: 'inline-flex rounded-none border border-neutral-200 bg-white p-1 shadow-none',
-  indicator: 'rounded-none bg-primary-700 shadow-none',
+  list: 'inline-flex rounded-xs border border-neutral-200 bg-white p-1 shadow-none',
+  indicator: 'rounded-xs bg-primary-700 shadow-none',
   trigger:
-    'min-w-[7.25rem] cursor-pointer justify-center rounded-none px-4 py-2 type-sys-label-s text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white',
+    'min-w-[7.25rem] cursor-pointer justify-center rounded-xs px-4 py-2 type-sys-label-s text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white',
   label: 'tracking-[0.08em] uppercase'
 } as const
 </script>

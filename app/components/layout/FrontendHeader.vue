@@ -6,9 +6,11 @@ import {
   iconUtilityLightButtonTheme,
   segmentedControlButtonTheme
 } from '~/utils/button-themes'
+import { enrichProductCatalog } from '~/utils/products'
 import { enrichServiceCatalog } from '~/utils/services'
 
 const isMobileMenuOpen = ref(false)
+const isMobileProductsOpen = ref(false)
 const isMobileServicesOpen = ref(false)
 const messages = useRallyMessages()
 const localePath = useLocalePath()
@@ -22,13 +24,22 @@ const {
   setPreferredMode
 } = useHomePageImageMode()
 
+const productsRootPath = computed(() => localePath('/products'))
 const servicesRootPath = computed(() => localePath('/services'))
 const navItems = computed(() =>
   messages.value.nav.items.map((item) => ({
     ...item,
+    isProducts: item.href === '/products',
     isServices: item.href === '/services',
     to: resolveNavItemPath(item.href),
     isActive: isNavItemActive(item.href)
+  }))
+)
+const productLinks = computed(() =>
+  enrichProductCatalog(messages.value.productsCatalog).map((item) => ({
+    ...item,
+    to: localePath(`/products/${item.slug}`),
+    isCurrent: route.path === localePath(`/products/${item.slug}`)
   }))
 )
 const serviceLinks = computed(() =>
@@ -62,6 +73,14 @@ const nanoToggleLabel = computed(() =>
 )
 
 const showNanoToggle = computed(() => isImageToggleVisible.value)
+const isProductsOverviewRoute = computed(
+  () => route.path === productsRootPath.value
+)
+const isProductsRoute = computed(
+  () =>
+    route.path === productsRootPath.value ||
+    route.path.startsWith(`${productsRootPath.value}/`)
+)
 const isServicesOverviewRoute = computed(
   () => route.path === servicesRootPath.value
 )
@@ -73,11 +92,26 @@ const isServicesRoute = computed(
 
 function closeMobileMenu() {
   isMobileMenuOpen.value = false
+  isMobileProductsOpen.value = false
   isMobileServicesOpen.value = false
 }
 
+function toggleMobileProductsMenu() {
+  const shouldOpen = !isMobileProductsOpen.value
+  isMobileProductsOpen.value = shouldOpen
+
+  if (shouldOpen) {
+    isMobileServicesOpen.value = false
+  }
+}
+
 function toggleMobileServicesMenu() {
-  isMobileServicesOpen.value = !isMobileServicesOpen.value
+  const shouldOpen = !isMobileServicesOpen.value
+  isMobileServicesOpen.value = shouldOpen
+
+  if (shouldOpen) {
+    isMobileProductsOpen.value = false
+  }
 }
 
 function resolveNavItemPath(href: string) {
@@ -112,6 +146,10 @@ function isLocalizedPathActive(path: string) {
 }
 
 function isNavItemActive(href: string) {
+  if (href === '/products') {
+    return isProductsRoute.value
+  }
+
   if (href === '/services') {
     return isServicesRoute.value
   }
@@ -121,13 +159,13 @@ function isNavItemActive(href: string) {
 
 watch(isMobileMenuOpen, (open) => {
   if (!open) {
+    isMobileProductsOpen.value = false
     isMobileServicesOpen.value = false
     return
   }
 
-  if (isServicesRoute.value) {
-    isMobileServicesOpen.value = true
-  }
+  isMobileProductsOpen.value = isProductsRoute.value
+  isMobileServicesOpen.value = isServicesRoute.value
 })
 </script>
 
@@ -173,7 +211,56 @@ watch(isMobileMenuOpen, (open) => {
         <nav class="home-sys-header__nav hidden lg:flex">
           <template v-for="item in navItems" :key="item.label">
             <div
-              v-if="item.isServices"
+              v-if="item.isProducts"
+              class="home-sys-header__nav-group"
+              :class="{ 'home-sys-header__nav-group--active': isProductsRoute }"
+            >
+              <NuxtLink
+                :to="item.to"
+                class="type-sys-nav home-sys-header__nav-link home-sys-header__nav-link--services"
+                :class="{
+                  'home-sys-header__nav-link--active': isProductsRoute
+                }"
+                :aria-current="isProductsOverviewRoute ? 'page' : undefined"
+              >
+                <span>{{ item.label }}</span>
+                <UIcon
+                  name="i-ic-baseline-keyboard-arrow-down"
+                  class="home-sys-header__nav-chevron size-4"
+                />
+              </NuxtLink>
+
+              <div
+                class="home-sys-header__services-menu home-sys-header__services-menu--products"
+                :aria-label="item.label"
+              >
+                <div
+                  class="home-sys-header__services-menu-grid home-sys-header__services-menu-grid--products"
+                >
+                  <NuxtLink
+                    v-for="product in productLinks"
+                    :key="product.slug"
+                    :to="product.to"
+                    class="home-sys-header__services-menu-link"
+                    :class="{
+                      'home-sys-header__services-menu-link--active':
+                        product.isCurrent
+                    }"
+                    :aria-current="product.isCurrent ? 'page' : undefined"
+                  >
+                    <span class="home-sys-header__services-menu-icon">
+                      <UIcon :name="product.icon" class="size-4" />
+                    </span>
+                    <span class="home-sys-header__services-menu-label">
+                      {{ product.shortLabel }}
+                    </span>
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+
+            <div
+              v-else-if="item.isServices"
               class="home-sys-header__nav-group"
               :class="{ 'home-sys-header__nav-group--active': isServicesRoute }"
             >
@@ -357,7 +444,70 @@ watch(isMobileMenuOpen, (open) => {
     >
       <nav class="page-sys-shell--wide flex flex-col gap-2 py-4">
         <template v-for="item in navItems" :key="`mobile-${item.label}`">
-          <div v-if="item.isServices" class="home-sys-header__mobile-nav-group">
+          <div v-if="item.isProducts" class="home-sys-header__mobile-nav-group">
+            <div class="home-sys-header__mobile-nav-row">
+              <NuxtLink
+                :to="item.to"
+                class="type-sys-title-m home-sys-header__mobile-link"
+                :class="{
+                  'home-sys-header__mobile-link--active': isProductsRoute
+                }"
+                :aria-current="isProductsOverviewRoute ? 'page' : undefined"
+                @click="closeMobileMenu"
+              >
+                {{ item.label }}
+              </NuxtLink>
+
+              <UTheme :ui="iconUtilityLightButtonTheme">
+                <UButton
+                  type="button"
+                  color="neutral"
+                  variant="ghost"
+                  size="sm"
+                  :icon="
+                    isMobileProductsOpen
+                      ? 'i-ic-baseline-keyboard-arrow-up'
+                      : 'i-ic-baseline-keyboard-arrow-down'
+                  "
+                  class="home-sys-header__mobile-services-toggle"
+                  :aria-expanded="isMobileProductsOpen ? 'true' : 'false'"
+                  aria-controls="mobile-products-submenu"
+                  :aria-label="item.label"
+                  @click.stop="toggleMobileProductsMenu"
+                />
+              </UTheme>
+            </div>
+
+            <div
+              v-if="isMobileProductsOpen"
+              id="mobile-products-submenu"
+              class="home-sys-header__mobile-services-list"
+            >
+              <NuxtLink
+                v-for="product in productLinks"
+                :key="`mobile-product-${product.slug}`"
+                :to="product.to"
+                class="home-sys-header__mobile-service-link"
+                :class="{
+                  'home-sys-header__mobile-service-link--active':
+                    product.isCurrent
+                }"
+                :aria-current="product.isCurrent ? 'page' : undefined"
+                @click="closeMobileMenu"
+              >
+                <span
+                  class="home-sys-header__mobile-service-label type-sys-label-s"
+                >
+                  {{ product.shortLabel }}
+                </span>
+              </NuxtLink>
+            </div>
+          </div>
+
+          <div
+            v-else-if="item.isServices"
+            class="home-sys-header__mobile-nav-group"
+          >
             <div class="home-sys-header__mobile-nav-row">
               <NuxtLink
                 :to="item.to"
@@ -615,6 +765,14 @@ watch(isMobileMenuOpen, (open) => {
   gap: 0.45rem;
 }
 
+.home-sys-header__services-menu--products {
+  width: min(22rem, 72vw);
+}
+
+.home-sys-header__services-menu-grid--products {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .home-sys-header__services-menu-link {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -679,6 +837,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   gap: 0;
   border: 1px solid var(--color-secondary-200);
+  border-radius: var(--radius-xs);
   background: color-mix(
     in srgb,
     var(--color-secondary-50) 82%,
@@ -692,6 +851,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   gap: 0;
   border: 1px solid var(--color-secondary-200);
+  border-radius: var(--radius-xs);
   background: color-mix(
     in srgb,
     var(--color-secondary-50) 82%,
@@ -728,6 +888,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   gap: 0;
   border: 1px solid var(--color-secondary-200);
+  border-radius: var(--radius-xs);
   background: color-mix(
     in srgb,
     var(--color-secondary-50) 82%,
