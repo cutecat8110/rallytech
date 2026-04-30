@@ -272,7 +272,7 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
   position: relative;
   min-height: clamp(15rem, 28vw, 20rem);
   overflow: hidden;
-  border-radius: clamp(1.1rem, 2vw, 1.6rem);
+  border-radius: var(--radius-xl);
   background: color-mix(in srgb, var(--color-secondary-100) 78%, white);
 }
 

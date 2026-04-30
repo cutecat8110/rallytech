@@ -102,7 +102,7 @@ const productItems = computed(() =>
       var(--color-secondary-950) 9%,
       var(--color-border-subtle)
     );
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   color: var(--color-text-secondary);
   background: color-mix(in srgb, var(--color-secondary-50) 52%, white);
   line-height: 1.38;
@@ -120,6 +120,7 @@ const productItems = computed(() =>
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(10 18 22 / 0.08);
+  border-radius: var(--radius-md);
   color: var(--color-primary-700);
   background: rgb(255 255 255 / 0.86);
 }

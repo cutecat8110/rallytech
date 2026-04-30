@@ -781,7 +781,7 @@ watch(isMobileMenuOpen, (open) => {
   min-height: 3rem;
   padding: 0.72rem 0.8rem;
   border: 1px solid transparent;
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-md);
   color: var(--color-text-secondary);
   background: transparent;
   transition:
@@ -816,6 +816,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   justify-content: center;
   border: 1px solid rgb(10 18 22 / 0.08);
+  border-radius: var(--radius-md);
   color: var(--color-primary-700);
   background: rgb(255 255 255 / 0.92);
 }
@@ -931,7 +932,7 @@ watch(isMobileMenuOpen, (open) => {
   min-height: 3rem;
   flex: 1;
   align-items: center;
-  border-radius: var(--radius-l);
+  border-radius: var(--radius-md);
   padding-inline: 0.75rem;
   color: var(--color-text-secondary);
   transition:

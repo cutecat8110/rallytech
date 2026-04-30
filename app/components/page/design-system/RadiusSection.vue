@@ -20,22 +20,67 @@ const radiusTokens: RadiusToken[] = [
     token: 'M',
     value: '8px',
     previewClass: 'rounded-md',
-    usage: '標準容器與卡片'
+    usage: 'Compact surface / nav row / icon tile'
   },
-  { token: 'L', value: '12px', previewClass: 'rounded-lg', usage: '大型容器' },
+  {
+    token: 'L',
+    value: '12px',
+    previewClass: 'rounded-lg',
+    usage: 'Standard card / content panel'
+  },
   {
     token: 'XL',
     value: '16px',
     previewClass: 'rounded-xl',
-    usage: '主視覺容器'
+    usage: 'Large media / overlay shell'
   },
   {
     token: 'Full',
     value: '999px',
     previewClass: 'rounded-full',
-    usage: 'Pill / Badge'
+    usage: 'Pill / circular marker only'
   }
 ]
+
+const radiusContracts = [
+  {
+    type: 'Precision control',
+    token: 'XS / 2px',
+    usage: 'Button、icon utility、segmented control、mission tabs',
+    owner: 'Layer 2 `app.config.ts` / Layer 3 `UTheme`'
+  },
+  {
+    type: 'Field surface',
+    token: 'S / 4px',
+    usage: 'Input、textarea、select、newsletter input、form feedback',
+    owner: 'Layer 2 `app.config.ts` / local `:ui`'
+  },
+  {
+    type: 'Compact surface',
+    token: 'M / 8px',
+    usage: 'Sidebar mobile cards、dropdown items、mobile nav row、icon tiles',
+    owner: 'Component local style'
+  },
+  {
+    type: 'Standard card',
+    token: 'L / 12px',
+    usage:
+      'Product/service cards、content panels、proof strips、contact info cards',
+    owner: 'Component local style / `surface-sys-card`'
+  },
+  {
+    type: 'Large media / overlay',
+    token: 'XL / 16px',
+    usage: 'Dropdown shell、large media frame、page visual panel',
+    owner: 'Component local style'
+  },
+  {
+    type: 'Brand narrative geometry',
+    token: 'Named local pattern',
+    usage: 'One-touch / hero / editorial asymmetric industrial cut',
+    owner: 'Component local CSS variables + docs governance'
+  }
+] as const
 </script>
 
 <template>
@@ -78,6 +123,39 @@ const radiusTokens: RadiusToken[] = [
               </td>
               <td class="type-sys-body-s px-4 py-3 text-neutral-700">
                 {{ token.usage }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="overflow-x-auto border border-neutral-200 bg-white">
+        <table class="min-w-full text-left">
+          <thead class="border-b border-neutral-200 bg-neutral-50">
+            <tr>
+              <th class="type-sys-label-m px-4 py-3 text-neutral-900">Type</th>
+              <th class="type-sys-label-m px-4 py-3 text-neutral-900">Token</th>
+              <th class="type-sys-label-m px-4 py-3 text-neutral-900">Usage</th>
+              <th class="type-sys-label-m px-4 py-3 text-neutral-900">Owner</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              v-for="contract in radiusContracts"
+              :key="contract.type"
+              class="border-b border-neutral-200 last:border-b-0"
+            >
+              <td class="type-sys-body-s px-4 py-3 text-neutral-900">
+                {{ contract.type }}
+              </td>
+              <td class="type-sys-body-s px-4 py-3 text-neutral-700">
+                {{ contract.token }}
+              </td>
+              <td class="type-sys-body-s px-4 py-3 text-neutral-700">
+                {{ contract.usage }}
+              </td>
+              <td class="type-sys-body-s px-4 py-3 text-neutral-700">
+                {{ contract.owner }}
               </td>
             </tr>
           </tbody>

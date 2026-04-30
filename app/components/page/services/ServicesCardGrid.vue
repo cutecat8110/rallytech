@@ -156,7 +156,7 @@ const serviceItems = computed(() =>
 .services-sys-listing__media {
   position: relative;
   overflow: hidden;
-  border-radius: clamp(1rem, 2vw, 1.55rem);
+  border-radius: var(--radius-xl);
   aspect-ratio: 4 / 3;
   background: color-mix(in srgb, var(--color-secondary-100) 84%, white);
 }

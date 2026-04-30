@@ -96,7 +96,7 @@ const serviceItems = computed(() =>
       var(--color-secondary-950) 9%,
       var(--color-border-subtle)
     );
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   color: var(--color-text-secondary);
   background: color-mix(in srgb, var(--color-secondary-50) 52%, white);
   line-height: 1.38;

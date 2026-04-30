@@ -130,7 +130,7 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
   overflow: hidden;
   border: 1px solid
     color-mix(in srgb, var(--color-border-subtle) 82%, var(--color-primary-200));
-  border-radius: 0.5rem;
+  border-radius: var(--radius-lg);
   background: rgb(255 255 255 / 0.9);
   box-shadow: 0 1.25rem 2.8rem rgb(15 23 42 / 0.07);
   transition:

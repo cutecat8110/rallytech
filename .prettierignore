@@ -1,5 +1,6 @@
 .env.example
 .codex-temp
+.playwright-mcp/
 data/nano-banana/prompts/*.txt
 tools/codex-toolkit/skills/**
 *.svg

@@ -124,7 +124,7 @@ const frontImageStyle = computed(() => ({
   right: 0;
   width: 74%;
   height: 62%;
-  border-radius: 1.1rem;
+  border-radius: var(--radius-xl);
 }
 
 .shared-media-pair--compact .shared-media-pair__frame--front {
@@ -132,7 +132,7 @@ const frontImageStyle = computed(() => ({
   left: 0;
   width: 66%;
   height: 56%;
-  border-radius: 0.9rem;
+  border-radius: var(--radius-lg);
 }
 
 .shared-media-pair--compact .shared-media-pair__decor {
@@ -147,7 +147,7 @@ const frontImageStyle = computed(() => ({
 
 .shared-media-pair--editorial .shared-media-pair__frame {
   border: 1px solid rgb(0 0 0 / 0.05);
-  border-radius: 1.5rem;
+  border-radius: var(--radius-xl);
   background: var(--color-neutral-100);
   box-shadow: 0 2rem 4rem -1rem rgb(15 23 42 / 0.12);
 }
@@ -193,7 +193,7 @@ const frontImageStyle = computed(() => ({
   .shared-media-pair--compact .shared-media-pair__frame--back {
     width: 94%;
     height: 60%;
-    border-radius: 1rem;
+    border-radius: var(--radius-xl);
   }
 
   .shared-media-pair--compact .shared-media-pair__frame--front {
@@ -201,7 +201,7 @@ const frontImageStyle = computed(() => ({
     left: 0;
     width: 84%;
     height: 48%;
-    border-radius: 0.85rem;
+    border-radius: var(--radius-lg);
   }
 
   .shared-media-pair--compact .shared-media-pair__decor {
@@ -217,7 +217,7 @@ const frontImageStyle = computed(() => ({
   }
 
   .shared-media-pair--editorial .shared-media-pair__frame {
-    border-radius: 1rem;
+    border-radius: var(--radius-xl);
   }
 
   .shared-media-pair--editorial .shared-media-pair__frame--back {

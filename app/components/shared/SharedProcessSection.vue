@@ -96,7 +96,7 @@ const processSteps = computed(() =>
   place-items: center;
   width: min(100%, 13.5rem);
   aspect-ratio: 1;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: 1px solid rgb(15 23 42 / 0.06);
   background:
     radial-gradient(
@@ -122,7 +122,7 @@ const processSteps = computed(() =>
   content: '';
   position: absolute;
   inset: 1.1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: 1px solid rgb(15 23 42 / 0.06);
 }
 
@@ -132,7 +132,7 @@ const processSteps = computed(() =>
   height: 4.75rem;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   color: var(--color-secondary-700);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -151,7 +151,7 @@ const processSteps = computed(() =>
   height: 3.45rem;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: var(--radius-full);
   border: 0.28rem solid white;
   background: color-mix(in srgb, var(--color-secondary-950) 88%, black);
   color: white;
@@ -175,6 +175,53 @@ const processSteps = computed(() =>
   .shared-sys-process__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .shared-sys-process__grid {
+    width: min(100%, 44rem);
+    margin-inline: auto;
+    gap: 1.65rem 2rem;
+  }
+
+  .shared-sys-process__step:hover {
+    transform: translateY(-0.35rem);
+  }
+
+  .shared-sys-process__orbit {
+    width: min(100%, 10.25rem);
+    box-shadow:
+      inset 0 0 0 0.72rem rgb(255 255 255 / 0.72),
+      0 1rem 2rem rgb(15 23 42 / 0.055);
+  }
+
+  .shared-sys-process__step:hover .shared-sys-process__orbit {
+    box-shadow:
+      inset 0 0 0 0.72rem rgb(255 255 255 / 0.88),
+      0 1.25rem 2.4rem rgb(15 23 42 / 0.09);
+  }
+
+  .shared-sys-process__orbit::before {
+    inset: 0.82rem;
+  }
+
+  .shared-sys-process__icon {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+
+  .shared-sys-process__number {
+    right: 0.45rem;
+    bottom: 0.42rem;
+    width: 2.65rem;
+    height: 2.65rem;
+    border-width: 0.22rem;
+    box-shadow: 0 0.75rem 1.35rem rgb(15 23 42 / 0.14);
+  }
+
+  .shared-sys-process__label {
+    margin-top: 1rem;
   }
 }
 

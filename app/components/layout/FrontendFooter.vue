@@ -89,7 +89,7 @@ const contactMetaItems = computed(() =>
 
 const newsletterInputUi = {
   base: [
-    'rounded-none',
+    'rounded-sm',
     'border-0',
     'bg-white/10',
     'text-white',
@@ -640,16 +640,70 @@ onBeforeUnmount(() => {
 
 @media (max-width: 767px) {
   .home-sys-footer__connector-layout {
-    justify-items: start;
+    justify-items: center;
+    gap: 1.15rem;
+    text-align: center;
+  }
+
+  .home-sys-footer__connector-copy {
+    justify-content: center;
   }
 
   .home-sys-footer__connector-copy :deep(.shared-content-header__title) {
-    max-width: 8ch;
+    max-width: min(100%, 16rem);
+  }
+
+  .home-sys-footer__connector-action {
+    justify-content: center;
   }
 
   .home-sys-footer__connector-cta {
     min-width: 8rem;
     min-height: 2.9rem;
+  }
+
+  .home-sys-footer__content-grid {
+    justify-items: center;
+    gap: 2.15rem;
+    text-align: center;
+  }
+
+  .home-sys-footer__brand,
+  .home-sys-footer__newsletter,
+  .home-sys-footer__contacts {
+    width: min(100%, 22rem);
+    justify-items: center;
+  }
+
+  .home-sys-footer__brand-subline,
+  .home-sys-footer__section-header--newsletter
+    :deep(.shared-content-header__description) {
+    margin-inline: auto;
+  }
+
+  .home-sys-footer__newsletter-form,
+  .home-sys-footer__newsletter-field {
+    width: 100%;
+  }
+
+  .home-sys-footer__newsletter-field {
+    max-width: 22rem;
+    margin-inline: auto;
+  }
+
+  .home-sys-footer__contact-list {
+    width: min(100%, 18.5rem);
+    justify-items: stretch;
+  }
+
+  .home-sys-footer__contact-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .home-sys-footer__contact-meta {
+    justify-items: center;
+    text-align: center;
   }
 }
 
@@ -716,6 +770,32 @@ onBeforeUnmount(() => {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-sys-footer__content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.35rem 2.6rem;
+    min-height: auto;
+  }
+
+  .home-sys-footer__brand {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: start;
+    max-width: 24rem;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  .home-sys-footer__brand-subline {
+    margin-inline: auto;
+  }
+
+  .home-sys-footer__newsletter,
+  .home-sys-footer__contacts {
+    min-width: 0;
+  }
+}
+
 @media (min-width: 1024px) {
   .home-sys-footer__connector {
     --connector-band-min-height: clamp(9.8rem, 11.4vw, 11.4rem);
@@ -728,6 +808,10 @@ onBeforeUnmount(() => {
   }
 
   .home-sys-footer__content-grid {
+    grid-template-columns:
+      minmax(13.5rem, 0.8fr)
+      minmax(20rem, 1.12fr)
+      minmax(17rem, 0.95fr);
     gap: clamp(2.25rem, 3.2vw, 3.9rem);
   }
 }

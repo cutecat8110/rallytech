@@ -31,12 +31,12 @@ const activeMissionState = computed(
 )
 
 const missionTabsUi = {
-  root: 'w-fit',
-  list: 'inline-flex rounded-xs border border-neutral-200 bg-white p-1 shadow-none',
+  root: 'w-full md:w-fit',
+  list: 'grid w-full grid-cols-2 rounded-xs border border-neutral-200 bg-white p-1 shadow-none md:inline-flex md:w-auto',
   indicator: 'rounded-xs bg-primary-700 shadow-none',
   trigger:
-    'min-w-[7.25rem] cursor-pointer justify-center rounded-xs px-4 py-2 type-sys-label-s text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white',
-  label: 'tracking-[0.08em] uppercase'
+    'min-w-0 cursor-pointer justify-center rounded-xs px-2 py-2 type-sys-label-s text-center text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white md:min-w-[7.25rem] md:px-4',
+  label: 'whitespace-normal leading-snug tracking-[0.06em] uppercase md:whitespace-nowrap md:tracking-[0.08em]'
 } as const
 </script>
 
@@ -166,9 +166,18 @@ const missionTabsUi = {
   --shared-content-header-description-color: var(--color-neutral-700);
 }
 
+.home-sys-mission__tabs :deep([role='tab']:not([data-state='active']):hover),
+.home-sys-mission__tabs
+  :deep([role='tab']:not([data-state='active']):focus-visible) {
+  color: var(--color-primary-950);
+}
+
 .home-sys-mission__state-media {
   width: min(100%, 9rem);
   aspect-ratio: 1;
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.62),
+    0 14px 28px rgb(10 18 22 / 0.08);
 }
 
 .home-sys-media-frame--light {
@@ -183,7 +192,8 @@ const missionTabsUi = {
 }
 
 .home-sys-media-frame--trapezoid {
-  clip-path: var(--home-media-mask-trapezoid);
+  border-radius: 0;
+  clip-path: polygon(11% 0, 100% 0, 100% 89%, 89% 100%, 0 100%, 0 11%);
 }
 
 .home-sys-media-frame__image--focus-center {
@@ -208,33 +218,53 @@ const missionTabsUi = {
   justify-self: center;
 }
 
+.home-sys-mission__figure::before {
+  position: absolute;
+  inset: clamp(0.55rem, 1.2vw, 0.85rem) clamp(0.5rem, 1vw, 0.75rem)
+    clamp(0.45rem, 1vw, 0.7rem) clamp(0.65rem, 1.35vw, 1rem);
+  z-index: 0;
+  border: 1px solid rgb(34 48 56 / 0.1);
+  background:
+    linear-gradient(135deg, rgb(255 255 255 / 0.8), rgb(255 255 255 / 0.2)),
+    linear-gradient(180deg, rgb(48 187 165 / 0.08), transparent 58%);
+  box-shadow:
+    inset 0 1px 0 rgb(255 255 255 / 0.72),
+    0 20px 44px rgb(10 18 22 / 0.09);
+  clip-path: polygon(9% 0, 100% 0, 100% 90%, 89% 100%, 0 100%, 0 9%);
+  content: '';
+}
+
 .home-sys-mission__cutout {
   position: absolute;
   inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 44% center;
+  object-position: 46% center;
   filter: saturate(0.92) contrast(1.03);
-  clip-path: polygon(18% 0, 100% 0, 100% 90%, 84% 100%, 0 100%, 0 14%);
+  clip-path: polygon(11% 0, 100% 0, 100% 91%, 89% 100%, 0 100%, 0 11%);
   -webkit-mask-image:
-    linear-gradient(to left, black 88%, transparent 100%),
-    linear-gradient(to top, black 92%, transparent 100%);
+    linear-gradient(to left, black 94%, rgb(0 0 0 / 0.72) 100%),
+    linear-gradient(to top, black 96%, rgb(0 0 0 / 0.82) 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
   mask-image:
-    linear-gradient(to left, black 88%, transparent 100%),
-    linear-gradient(to top, black 92%, transparent 100%);
+    linear-gradient(to left, black 94%, rgb(0 0 0 / 0.72) 100%),
+    linear-gradient(to top, black 96%, rgb(0 0 0 / 0.82) 100%);
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
 }
 
 .home-sys-mission__figure-glow {
   position: absolute;
-  inset: 22% 2% 6% 24%;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgb(48 187 165 / 0.18), transparent 68%);
-  filter: blur(18px);
+  inset: 17% 3% 4% 20%;
+  z-index: 0;
+  border-radius: var(--radius-full);
+  background:
+    radial-gradient(circle at 58% 42%, rgb(48 187 165 / 0.2), transparent 58%),
+    radial-gradient(circle at 78% 72%, rgb(10 18 22 / 0.1), transparent 64%);
+  filter: blur(16px);
   pointer-events: none;
 }
 
@@ -244,8 +274,42 @@ const missionTabsUi = {
   }
 
   .home-sys-mission__state {
-    grid-template-columns: 1fr;
-    gap: 0.95rem;
+    --home-mission-state-media-size: clamp(7.25rem, 29vw, 7.75rem);
+
+    grid-template-columns:
+      minmax(0, var(--home-mission-state-media-size))
+      minmax(0, 1fr);
+    align-items: start;
+    gap: 0.75rem;
+  }
+
+  .home-sys-mission__state-media {
+    width: 100%;
+    max-width: var(--home-mission-state-media-size);
+  }
+
+  .home-sys-mission__state-copy {
+    gap: 0.78rem;
+  }
+
+  .home-sys-mission__state-body {
+    gap: 0.5rem;
+  }
+
+  .home-sys-mission__figure {
+    min-height: clamp(16.4rem, 73vw, 19rem);
+    width: min(100%, 22.5rem);
+    justify-self: end;
+  }
+
+  .home-sys-mission__figure::before {
+    inset: 0.5rem 0.45rem 0.45rem 0.55rem;
+    clip-path: polygon(8% 0, 100% 0, 100% 91%, 90% 100%, 0 100%, 0 8%);
+  }
+
+  .home-sys-mission__cutout {
+    object-position: 50% 43%;
+    clip-path: polygon(9% 0, 100% 0, 100% 92%, 90% 100%, 0 100%, 0 9%);
   }
 }
 
@@ -269,6 +333,22 @@ const missionTabsUi = {
     width: 100%;
     max-width: 11rem;
     align-self: start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .home-sys-mission__layout {
+    gap: clamp(1.75rem, 3vw, 2.2rem);
+  }
+
+  .home-sys-mission__figure {
+    min-height: clamp(21rem, 42vw, 24rem);
+    width: min(62vw, 32rem);
+    justify-self: end;
+  }
+
+  .home-sys-mission__cutout {
+    object-position: 48% center;
   }
 }
 

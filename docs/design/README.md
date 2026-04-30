@@ -1,6 +1,6 @@
 # 設計文件入口
 
-最後更新：2026-04-02
+最後更新：2026-04-30
 
 ## 文件目的
 
@@ -19,9 +19,10 @@
 2. [02-AI切版與Preview維運規範.md](./02-AI切版與Preview維運規範.md)
 3. [03-Vision-to-Code與Component-Driven規範.md](./03-Vision-to-Code與Component-Driven規範.md)
 
-按鈕治理與公開站 CTA taxonomy 補充：
+按鈕與 radius 治理補充：
 
 4. [04-公開站按鈕治理矩陣.md](./04-公開站按鈕治理矩陣.md)
+5. [05-公開站Radius治理矩陣.md](./05-公開站Radius治理矩陣.md)
 
 ## 各檔分工
 
@@ -29,6 +30,7 @@
 - `02`：Nuxt UI implementation order、`app/app.config.ts` / `<UTheme>` / `:ui` / local style 的用法與 preview 驗證。
 - `03`：Vision-to-Code grammar、Architecture Pack / Implementation Contract 欄位與 component-driven 拆解順序。
 - `04`：公開站按鈕 taxonomy、size ladder、section mapping 與 internal-only 邊界。
+- `05`：公開站 radius 階層、surface mapping、brand narrative geometry 與 QA 規則。
 - `tokens/*.json`：設計數值鏡像與對照資料，不作執行期真實值。
 
 ## tokens 用途

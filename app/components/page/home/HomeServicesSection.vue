@@ -135,9 +135,9 @@ const serviceItems = computed(() =>
 .home-sys-services__column {
   position: relative;
   display: flex;
-  min-height: 12rem;
+  min-height: 13.2rem;
   flex-direction: column;
-  padding: 1rem 0.95rem 0.9rem 0.15rem;
+  padding: 1.18rem 0.95rem 1.18rem 0.2rem;
   border-top: 1px solid rgb(255 255 255 / 0.15);
   text-decoration: none;
   isolation: isolate;
@@ -150,7 +150,7 @@ const serviceItems = computed(() =>
 .home-sys-services__column::before {
   content: '';
   position: absolute;
-  inset: 0.78rem -0.35rem -0.2rem -0.4rem;
+  inset: 0.42rem -0.42rem -0.52rem -0.48rem;
   z-index: -1;
   border: 1px solid rgb(255 255 255 / 0.06);
   background:
@@ -203,7 +203,7 @@ const serviceItems = computed(() =>
   height: 2.25rem;
   align-items: center;
   justify-content: center;
-  border-radius: 0.85rem;
+  border-radius: var(--radius-md);
   border: 1px solid rgb(255 255 255 / 0.08);
   color: rgb(161 235 223 / 0.94);
   background: rgb(255 255 255 / 0.035);
@@ -285,11 +285,11 @@ const serviceItems = computed(() =>
     grid-template-columns: 2.35rem minmax(0, 1fr);
     column-gap: 0.85rem;
     min-height: auto;
-    padding: 1rem 0.15rem;
+    padding: 1.12rem 0.15rem;
   }
 
   .home-sys-services__column::before {
-    inset: 0.42rem -0.45rem 0.28rem -0.45rem;
+    inset: 0.38rem -0.45rem 0.18rem -0.45rem;
   }
 
   .home-sys-services__icon {

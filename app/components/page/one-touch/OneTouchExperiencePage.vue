@@ -201,6 +201,10 @@ const secondVisual = computed(() => ({
 
 <style scoped>
 .one-touch-page {
+  --one-touch-brand-media-corner: var(--radius-lg);
+  --one-touch-brand-media-main-arc: 8.75rem;
+  --one-touch-brand-media-main-arc-tablet: 7.5rem;
+  --one-touch-brand-media-accent-arc: 6.25rem;
   color: var(--color-text-primary);
 }
 
@@ -286,7 +290,9 @@ const secondVisual = computed(() => ({
 .one-touch-page__visual-main {
   width: min(100%, 27.125rem);
   aspect-ratio: 434 / 575;
-  border-radius: 10px 140px 10px 10px;
+  border-radius: var(--one-touch-brand-media-corner)
+    var(--one-touch-brand-media-main-arc) var(--one-touch-brand-media-corner)
+    var(--one-touch-brand-media-corner);
 }
 
 .one-touch-page__visual-accent {
@@ -294,7 +300,9 @@ const secondVisual = computed(() => ({
   inset-block-start: 0;
   width: min(9rem, 29%);
   aspect-ratio: 158 / 575;
-  border-radius: 10px 10px 100px 100px;
+  border-radius: var(--one-touch-brand-media-corner)
+    var(--one-touch-brand-media-corner) var(--one-touch-brand-media-accent-arc)
+    var(--one-touch-brand-media-accent-arc);
   opacity: 0.88;
   box-shadow: 0 1rem 2.2rem rgb(13 31 38 / 0.1);
 }
@@ -350,7 +358,9 @@ const secondVisual = computed(() => ({
   .one-touch-page__visual-main {
     width: min(100%, 32rem);
     aspect-ratio: 434 / 575;
-    border-radius: 10px 120px 10px 10px;
+    border-radius: var(--one-touch-brand-media-corner)
+      var(--one-touch-brand-media-main-arc-tablet)
+      var(--one-touch-brand-media-corner) var(--one-touch-brand-media-corner);
   }
 }
 
