@@ -31,12 +31,12 @@ const activeMissionState = computed(
 )
 
 const missionTabsUi = {
-  root: 'w-full md:w-fit',
-  list: 'grid w-full grid-cols-2 rounded-xs border border-neutral-200 bg-white p-1 shadow-none md:inline-flex md:w-auto',
+  root: 'w-full xl:w-fit',
+  list: 'grid w-full grid-cols-2 rounded-xs border border-neutral-200 bg-white p-1 shadow-none xl:inline-flex xl:w-auto',
   indicator: 'rounded-xs bg-primary-700 shadow-none',
   trigger:
-    'min-w-0 cursor-pointer justify-center rounded-xs px-2 py-2 type-sys-label-s text-center text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white md:min-w-[7.25rem] md:px-4',
-  label: 'whitespace-normal leading-snug tracking-[0.06em] uppercase md:whitespace-nowrap md:tracking-[0.08em]'
+    'min-w-0 cursor-pointer justify-center rounded-xs px-2 py-2 type-sys-label-s text-center text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white xl:min-w-[7.25rem] xl:px-4',
+  label: 'whitespace-normal leading-snug tracking-[0.06em] uppercase xl:whitespace-nowrap xl:tracking-[0.08em]'
 } as const
 </script>
 
@@ -66,20 +66,6 @@ const missionTabsUi = {
             />
 
             <div class="home-sys-mission__state">
-              <figure
-                class="home-sys-mission__state-media home-sys-media-frame home-sys-media-frame--light home-sys-media-frame--square home-sys-media-frame--trapezoid"
-              >
-                <img
-                  :src="missionSquareImage.src"
-                  :alt="missionSquareImage.alt || activeMissionState.imageAlt"
-                  class="home-sys-media-frame__image home-sys-media-frame__image--focus-center"
-                  @error="handleMissionSquareError"
-                />
-                <div
-                  class="home-sys-media-frame__overlay home-sys-media-frame__overlay--light"
-                />
-              </figure>
-
               <div class="home-sys-mission__state-copy max-w-xl">
                 <SharedContentHeader
                   class="home-sys-mission__state-body"
@@ -97,6 +83,20 @@ const missionTabsUi = {
                   :label="activeMissionState.ctaLabel"
                 />
               </div>
+
+              <figure
+                class="home-sys-mission__state-media home-sys-media-frame home-sys-media-frame--light home-sys-media-frame--square home-sys-media-frame--trapezoid"
+              >
+                <img
+                  :src="missionSquareImage.src"
+                  :alt="missionSquareImage.alt || activeMissionState.imageAlt"
+                  class="home-sys-media-frame__image home-sys-media-frame__image--focus-center"
+                  @error="handleMissionSquareError"
+                />
+                <div
+                  class="home-sys-media-frame__overlay home-sys-media-frame__overlay--light"
+                />
+              </figure>
             </div>
           </article>
 
@@ -270,26 +270,25 @@ const missionTabsUi = {
 
 @media (max-width: 767px) {
   .home-sys-mission__copy {
-    gap: 0.95rem;
+    gap: 1.05rem;
   }
 
   .home-sys-mission__state {
-    --home-mission-state-media-size: clamp(7.25rem, 29vw, 7.75rem);
-
-    grid-template-columns:
-      minmax(0, var(--home-mission-state-media-size))
-      minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     align-items: start;
-    gap: 0.75rem;
+    gap: 1.05rem;
   }
 
   .home-sys-mission__state-media {
     width: 100%;
-    max-width: var(--home-mission-state-media-size);
+    max-width: none;
+    aspect-ratio: 16 / 7;
+    clip-path: none;
   }
 
   .home-sys-mission__state-copy {
-    gap: 0.78rem;
+    gap: 0.9rem;
+    max-width: 34rem;
   }
 
   .home-sys-mission__state-body {
@@ -297,9 +296,7 @@ const missionTabsUi = {
   }
 
   .home-sys-mission__figure {
-    min-height: clamp(16.4rem, 73vw, 19rem);
-    width: min(100%, 22.5rem);
-    justify-self: end;
+    display: none;
   }
 
   .home-sys-mission__figure::before {
@@ -308,7 +305,7 @@ const missionTabsUi = {
   }
 
   .home-sys-mission__cutout {
-    object-position: 50% 43%;
+    object-position: 50% 39%;
     clip-path: polygon(9% 0, 100% 0, 100% 92%, 90% 100%, 0 100%, 0 9%);
   }
 }
@@ -338,17 +335,34 @@ const missionTabsUi = {
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .home-sys-mission__layout {
-    gap: clamp(1.75rem, 3vw, 2.2rem);
+    gap: clamp(1.55rem, 2.4vw, 2rem);
+  }
+
+  .home-sys-mission__copy {
+    gap: 1.15rem;
+  }
+
+  .home-sys-mission__state {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+  }
+
+  .home-sys-mission__state-copy {
+    max-width: 42rem;
+  }
+
+  .home-sys-mission__state-media {
+    max-width: none;
+    aspect-ratio: 21 / 8;
+    clip-path: none;
   }
 
   .home-sys-mission__figure {
-    min-height: clamp(21rem, 42vw, 24rem);
-    width: min(62vw, 32rem);
-    justify-self: end;
+    display: none;
   }
 
   .home-sys-mission__cutout {
-    object-position: 48% center;
+    object-position: 50% 43%;
   }
 }
 
@@ -364,14 +378,28 @@ const missionTabsUi = {
 
   .home-sys-mission__state {
     margin-top: auto;
+    grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
     align-items: end;
     column-gap: 1.65rem;
     row-gap: 1rem;
   }
 
-  .home-sys-mission__state-copy,
-  .home-sys-mission__state-media {
+  .home-sys-mission__state-copy {
+    order: 2;
     align-self: end;
+  }
+
+  .home-sys-mission__state-media {
+    order: 1;
+    width: 100%;
+    max-width: 11rem;
+    align-self: end;
+    aspect-ratio: 1;
+    clip-path: polygon(11% 0, 100% 0, 100% 89%, 89% 100%, 0 100%, 0 11%);
+  }
+
+  .home-sys-mission__figure {
+    display: block;
   }
 }
 </style>
