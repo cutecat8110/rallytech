@@ -53,7 +53,7 @@ const contactFormFeedbackUi = {
 } as const
 
 const contactQuickActionUi = {
-  base: 'ring-0 hover:ring-0 active:ring-0 focus-visible:ring-2 focus-visible:ring-primary-200/75'
+  base: 'ring-0 hover:ring-0 active:ring-0 focus-visible:ring-0'
 } as const
 
 const formState = reactive({
@@ -483,7 +483,28 @@ function handleFormSubmit() {
 .contact-sys-copy-panel__action {
   width: 2.55rem;
   height: 2.55rem;
+  color: var(--color-secondary-900);
+  background: transparent;
+  box-shadow: none;
   justify-content: center;
+}
+
+.contact-sys-copy-panel__action:hover,
+.contact-sys-copy-panel__action:focus-visible {
+  color: var(--color-primary-950);
+  background: color-mix(in srgb, var(--color-primary-50) 72%, white);
+  box-shadow: none;
+}
+
+.contact-sys-copy-panel__action:active {
+  color: var(--color-primary-950);
+  background: var(--color-primary-100);
+  box-shadow: none;
+}
+
+.contact-sys-copy-panel__action:focus-visible {
+  box-shadow: 0 0 0 2px
+    color-mix(in srgb, var(--color-primary-300) 72%, transparent);
 }
 
 .contact-sys-form-panel {
