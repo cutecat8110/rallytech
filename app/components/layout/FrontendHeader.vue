@@ -379,10 +379,6 @@ watch(isMobileMenuOpen, (open) => {
               size="sm"
               :label="messages.nav.contactCta"
               class="home-sys-header__contact-button hidden md:inline-flex"
-              :class="{
-                'home-sys-header__contact-button--active': isContactRoute
-              }"
-              :aria-current="isContactRoute ? 'page' : undefined"
             />
           </UTheme>
 
@@ -876,12 +872,6 @@ watch(isMobileMenuOpen, (open) => {
 .home-sys-header__contact-button {
   min-height: var(--home-sys-header-control-height);
   padding-inline: 1.35rem;
-}
-
-.home-sys-header__contact-button--active {
-  box-shadow:
-    0 0 0 1px rgb(255 255 255 / 0.52) inset,
-    0 0 0 2px color-mix(in srgb, var(--color-primary-500) 32%, transparent);
 }
 
 .home-sys-header__locale {

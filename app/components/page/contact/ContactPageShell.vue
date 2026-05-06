@@ -52,6 +52,10 @@ const contactFormFeedbackUi = {
   description: 'type-sys-body-s'
 } as const
 
+const contactQuickActionUi = {
+  base: 'ring-0 hover:ring-0 active:ring-0 focus-visible:ring-2 focus-visible:ring-primary-200/75'
+} as const
+
 const formState = reactive({
   name: '',
   company: '',
@@ -215,6 +219,7 @@ function handleFormSubmit() {
                   size="sm"
                   :icon="action.icon"
                   class="contact-sys-copy-panel__action"
+                  :ui="contactQuickActionUi"
                   :aria-label="action.label"
                   :title="action.label"
                   :target="action.target"
