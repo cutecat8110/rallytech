@@ -119,8 +119,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
     badge: {
-      src: '/images/brand/wincc-oa-platform-badge.svg',
-      alt: 'WinCC OA platform visual badge'
+      src: '/images/brand/wincc-oa-logo.svg',
+      alt: 'WinCC OA official logo'
     }
   },
   {
@@ -134,8 +134,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
     badge: {
-      src: '/images/brand/aveva-platform-badge.svg',
-      alt: 'AVEVA platform visual badge'
+      src: '/images/brand/aveva-logo.svg',
+      alt: 'AVEVA official logo'
     }
   },
   {
@@ -149,8 +149,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
     badge: {
-      src: '/images/brand/siemens-platform-badge.svg',
-      alt: 'Siemens platform visual badge'
+      src: '/images/brand/siemens-logo.svg',
+      alt: 'Siemens official logo'
     }
   }
 ] satisfies ProductCatalogItemMessages[]
@@ -324,39 +324,37 @@ const messages = {
     },
     partners: {
       kicker: 'Partners',
-      title: 'Partner and platform ecosystem',
+      title: 'Partners and technology platforms',
       description:
-        'From Siemens WinCC OA to AVEVA PI and Palo Alto Networks, Rally connects control, data, and security platforms into one delivery context.',
-      proofLabel:
-        'WinCC OA Partner proof is supported by the official partner page',
+        'Rally works across control, monitoring, data, and security platforms to clarify interfaces and keep delivery easier to validate, hand over, and maintain.',
       items: [
         {
           name: 'Siemens',
-          tag: 'Automation platform',
+          tag: 'Control and automation platform',
           description:
-            'Aligns with Siemens ecosystems commonly found in controls, SCADA architecture, and site automation projects.',
+            'Supports Siemens control systems and SCADA architecture by clarifying interface coordination, site testing, and handover needs.',
           image: {
-            src: '/images/brand/siemens-platform-badge.svg',
+            src: '/images/brand/siemens-logo.svg',
             alt: 'Siemens platform visual badge'
           }
         },
         {
           name: 'WinCC OA',
-          tag: 'Official partner proof',
+          tag: 'SCADA / HMI platform',
           description:
-            'Supports SCADA / HMI platform planning, operator graphics, and delivery work through the WinCC OA Partner foundation.',
+            'Connects monitoring graphics, alarm context, system validation, and maintenance needs so operator-facing work is easier to read and hand over.',
           image: {
-            src: '/images/brand/wincc-oa-platform-badge.svg',
+            src: '/images/brand/wincc-oa-logo.svg',
             alt: 'WinCC OA platform visual badge'
           }
         },
         {
           name: 'AVEVA PI',
-          tag: 'PI / Historian',
+          tag: 'Data platform / Historian',
           description:
-            'Covers AVEVA PI / OSIsoft PI System style real-time data, historian, and cross-system data use cases.',
+            'Supports live data, historical records, reports, and traceability so data platforms connect with site and operations needs.',
           image: {
-            src: '/images/brand/aveva-pi-platform-badge.svg',
+            src: '/images/brand/aveva-logo.svg',
             alt: 'AVEVA PI platform visual badge'
           }
         },
@@ -364,9 +362,9 @@ const messages = {
           name: 'Palo Alto Networks',
           tag: 'IT / OT security',
           description:
-            'Fits industrial network segmentation, remote access, and IT / OT security handoff contexts.',
+            'Supports industrial network segmentation, remote access, and cybersecurity handoff to reduce interface risk across IT / OT environments.',
           image: {
-            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            src: '/images/brand/palo-alto-networks-logo.svg',
             alt: 'Palo Alto Networks platform visual badge'
           }
         }

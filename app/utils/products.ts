@@ -3,6 +3,13 @@ import type {
   ProductSlug
 } from '~~/i18n/locales/types'
 
+export interface ProductContentImageMeta {
+  id: string
+  src: string
+  alt: string
+  objectPosition?: string
+}
+
 export interface ProductVisualMeta {
   slug: ProductSlug
   order: number
@@ -17,6 +24,7 @@ export interface ProductVisualMeta {
     alt: string
     objectPosition?: string
   }
+  contentImages?: ProductContentImageMeta[]
 }
 
 export const productVisualMeta = [
@@ -30,10 +38,24 @@ export const productVisualMeta = [
       objectPosition: 'center'
     },
     detailFeatureImage: {
-      src: '/images/stock/services/scada-hmi-graphics/industrial-hmi-operator-tablet.jpg',
-      alt: 'Engineer using an industrial HMI tablet beside control equipment',
+      src: '/images/references/dmc/wincc-oa/dmc-wincc-oa-scada-hmi-platform.jpg',
+      alt: 'SIMATIC WinCC OA SCADA and HMI platform reference image',
       objectPosition: 'center'
-    }
+    },
+    contentImages: [
+      {
+        id: 'partner-ecosystem',
+        src: '/images/references/dmc/wincc-oa/dmc-wincc-oa-premium-solution-partner.jpg',
+        alt: 'SIMATIC WinCC OA Premium Solution Partner reference badge',
+        objectPosition: 'center'
+      },
+      {
+        id: 'optional-extensions',
+        src: '/images/references/dmc/wincc-oa/dmc-wincc-oa-optional-extensions.png',
+        alt: 'WinCC OA optional extensions reference diagram',
+        objectPosition: 'center'
+      }
+    ]
   },
   {
     slug: 'aveva',
@@ -45,10 +67,18 @@ export const productVisualMeta = [
       objectPosition: 'center'
     },
     detailFeatureImage: {
-      src: '/images/stock/services/historians/detail-hero-engineer-data-screens.jpg',
-      alt: 'Engineer reviewing operations data on industrial display screens',
+      src: '/images/references/dmc/aveva/dmc-aveva-historian-client-web.png',
+      alt: 'AVEVA Historian client web reference image',
       objectPosition: 'center'
-    }
+    },
+    contentImages: [
+      {
+        id: 'partner-ecosystem',
+        src: '/images/references/dmc/aveva/dmc-aveva-certified-system-integrator.png',
+        alt: 'AVEVA System Integrator badge reference image',
+        objectPosition: 'center'
+      }
+    ]
   },
   {
     slug: 'siemens-plc',
@@ -60,10 +90,30 @@ export const productVisualMeta = [
       objectPosition: 'center'
     },
     detailFeatureImage: {
-      src: '/images/stock/services/plc-dcs-programming-and-migration/control-system-engineer-laptop.jpg',
-      alt: 'Control system engineer reviewing PLC logic on a laptop',
+      src: '/images/references/dmc/siemens-plc/dmc-siemens-s7-1500-plc.jpg',
+      alt: 'Siemens SIMATIC S7-1500 PLC reference image',
       objectPosition: 'center'
-    }
+    },
+    contentImages: [
+      {
+        id: 's7-1200',
+        src: '/images/references/dmc/siemens-plc/dmc-siemens-s7-1200-plc.jpg',
+        alt: 'Siemens SIMATIC S7-1200 PLC reference image',
+        objectPosition: 'center'
+      },
+      {
+        id: 'tia-portal',
+        src: '/images/references/dmc/siemens-plc/dmc-siemens-tia-portal.jpg',
+        alt: 'Siemens TIA Portal configuration reference image',
+        objectPosition: 'center'
+      },
+      {
+        id: 'pcs7',
+        src: '/images/references/dmc/siemens-plc/dmc-siemens-pcs7-screenshot.jpg',
+        alt: 'Siemens PCS7 reference screenshot',
+        objectPosition: 'center'
+      }
+    ]
   }
 ] as const satisfies readonly ProductVisualMeta[]
 
@@ -103,6 +153,21 @@ const productDetailFeatureImageMap: Readonly<
   {} as Record<ProductSlug, ProductVisualMeta['detailFeatureImage']>
 )
 
+const productContentImagesMap: Readonly<
+  Partial<Record<ProductSlug, NonNullable<ProductVisualMeta['contentImages']>>>
+> = productVisualMeta.reduce(
+  (accumulator, item) => {
+    if ('contentImages' in item && item.contentImages?.length) {
+      accumulator[item.slug] = item.contentImages
+    }
+
+    return accumulator
+  },
+  {} as Partial<
+    Record<ProductSlug, NonNullable<ProductVisualMeta['contentImages']>>
+  >
+)
+
 const productOrderMap: Readonly<Record<ProductSlug, number>> =
   productVisualMeta.reduce(
     (accumulator, item) => {
@@ -127,6 +192,18 @@ export function getProductHeroImage(slug: ProductSlug) {
 
 export function getProductDetailFeatureImage(slug: ProductSlug) {
   return productDetailFeatureImageMap[slug]
+}
+
+export function getProductContentImages(slug: ProductSlug) {
+  return productContentImagesMap[slug] ?? []
+}
+
+export function getProductContentImage(slug: ProductSlug, imageId?: string) {
+  if (!imageId) {
+    return undefined
+  }
+
+  return productContentImagesMap[slug]?.find((image) => image.id === imageId)
 }
 
 export function getProductOrder(slug: ProductSlug) {

@@ -1,0 +1,299 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - link "+886-3-552-9933" [ref=e8] [cursor=pointer]:
+        - /url: tel:+88635529933
+        - text: +886-3-552-9933
+      - link "sales@rallytech.com.tw" [ref=e10] [cursor=pointer]:
+        - /url: mailto:sales@rallytech.com.tw
+        - text: sales@rallytech.com.tw
+    - generic [ref=e13]:
+      - link "雷力科技首頁" [ref=e14] [cursor=pointer]:
+        - /url: /
+        - img "雷力科技" [ref=e15]
+      - navigation [ref=e16]:
+        - link "關於我們" [ref=e17] [cursor=pointer]:
+          - /url: /about
+        - link "產品" [ref=e19] [cursor=pointer]:
+          - /url: /products
+          - generic [ref=e20]: 產品
+        - link "服務項目" [ref=e23] [cursor=pointer]:
+          - /url: /services
+          - generic [ref=e24]: 服務項目
+        - link "全方位整合服務" [ref=e26] [cursor=pointer]:
+          - /url: /one-touch-experience
+      - generic [ref=e27]:
+        - group "切換首頁 Nano 候選圖片" [ref=e28]:
+          - button "FREE" [ref=e29] [cursor=pointer]:
+            - generic [ref=e30]: FREE
+          - button "AI" [pressed] [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: AI
+        - group "切換語言" [ref=e33]:
+          - link "中文" [ref=e34] [cursor=pointer]:
+            - /url: /products/siemens-plc
+            - generic [ref=e35]: 中文
+          - link "英文" [ref=e36] [cursor=pointer]:
+            - /url: /en/products/siemens-plc
+            - generic [ref=e37]: 英文
+          - link "原始文案" [ref=e38] [cursor=pointer]:
+            - /url: /source/products/siemens-plc
+            - generic [ref=e39]: 原始文案
+        - link "聯絡我們" [ref=e40] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e41]: 聯絡我們
+  - main [ref=e42]:
+    - generic [ref=e43]:
+      - generic [ref=e44]:
+        - img [ref=e46]
+        - heading "西門子 PLC" [level=1] [ref=e50]
+      - generic [ref=e53]:
+        - navigation "產品" [ref=e54]:
+          - paragraph [ref=e55]: 產品
+          - generic [ref=e56]:
+            - link "WinCC OA" [ref=e57] [cursor=pointer]:
+              - /url: /products/wincc-oa
+              - generic [ref=e58]: WinCC OA
+            - link "AVEVA" [ref=e59] [cursor=pointer]:
+              - /url: /products/aveva
+              - generic [ref=e60]: AVEVA
+            - generic [ref=e62]: 西門子 PLC
+        - generic [ref=e63]:
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: Siemens S7 專案通常位在機台控制、製程協調、HMI 可視性、網路整合與未來搬遷決策的核心。
+            - paragraph [ref=e66]: 雷力科技會把 Siemens PLC 工作視為完整工程週期：釐清規格、規劃程式結構、協調 HMI / SCADA 訊號、測試通訊、支援試車，並交付現場能維護的系統。
+          - generic [ref=e67]:
+            - generic [ref=e69]:
+              - img "Siemens SIMATIC S7-1500 PLC reference image" [ref=e71]
+              - generic [ref=e72]:
+                - heading "把 Siemens PLC 放進控制、畫面與網路一起規劃" [level=3] [ref=e74]
+                - generic [ref=e75]:
+                  - paragraph [ref=e76]: Siemens S7 環境可能包含現行控制器、遠端 I/O、舊型設備、工程工具、HMI / SCADA 軟體、DCS 脈絡與工業網路。
+                  - paragraph [ref=e77]: 成功的專案不只是撰寫程式，而是需要清楚規格、有結構的 PLC Block、命名規範、HMI 協調、可行的模擬或分階段測試、試車支援，以及舊系統搬遷規劃。
+                  - paragraph [ref=e78]: 雷力會把 Siemens PLC 工作與周邊系統一起協調：操作畫面、SCADA Tag、告警、Historian 資料、網路邊界、現場設備與長期維護文件。
+                - list [ref=e79]:
+                  - listitem [ref=e80]:
+                    - generic [ref=e81]: 現行與舊型控制器
+                  - listitem [ref=e82]:
+                    - text: ·
+                    - generic [ref=e83]: TIA Portal 與 SIMATIC 脈絡
+                  - listitem [ref=e84]:
+                    - text: ·
+                    - generic [ref=e85]: HMI 與 SCADA 協調
+                  - listitem [ref=e86]:
+                    - text: ·
+                    - generic [ref=e87]: 搬遷規劃
+                  - listitem [ref=e88]:
+                    - text: ·
+                    - generic [ref=e89]: 工業網路整合
+            - generic [ref=e91]:
+              - heading "Siemens PLC 導入範圍" [level=3] [ref=e93]
+              - generic [ref=e94]:
+                - article [ref=e95]:
+                  - heading "PLC 交付週期" [level=4] [ref=e97]
+                  - paragraph [ref=e99]: 需要規格協助、結構化程式、模擬思維測試、系統設計、試車與啟用後支援。
+                - article [ref=e100]:
+                  - heading "硬體脈絡" [level=4] [ref=e102]
+                  - paragraph [ref=e104]: 需要同時檢視 S7-1500、S7-1200、ET 200SP、舊型 S7、S5、TI 控制器與切換限制。
+                - article [ref=e105]:
+                  - heading "軟體脈絡" [level=4] [ref=e107]
+                  - paragraph [ref=e109]: 把工程工具、HMI / SCADA 軟體、DCS 脈絡與資料系統期望連回專案範圍。
+                - article [ref=e110]:
+                  - heading "整合情境" [level=4] [ref=e112]
+                  - paragraph [ref=e114]: 常見於遠端通訊、Fieldbus、機器視覺、資料串接、備援協定與高速機台控制等工程情境。
+            - generic [ref=e116]:
+              - heading "雷力承接範圍" [level=3] [ref=e118]
+              - list [ref=e119]:
+                - listitem [ref=e120]:
+                  - generic [ref=e121]: "01"
+                  - generic [ref=e122]:
+                    - paragraph [ref=e123]: 規格與控制設計
+                    - paragraph [ref=e125]: 把機台或製程行為轉成 PLC 結構、順序邏輯、連鎖、告警、操作動作與可測試的驗收項目。
+                - listitem [ref=e126]:
+                  - generic [ref=e127]: "02"
+                  - generic [ref=e128]:
+                    - paragraph [ref=e129]: PLC / HMI / SCADA 協調
+                    - paragraph [ref=e131]: 對齊 PLC Tag、HMI 畫面、SCADA 點位、Historian 需求、告警處理與操作流程。
+                - listitem [ref=e132]:
+                  - generic [ref=e133]: "03"
+                  - generic [ref=e134]:
+                    - paragraph [ref=e135]: 搬遷與相容性規劃
+                    - paragraph [ref=e137]: 在改動既有系統前，先評估舊型控制器、Step 7 或 SIMATIC Manager 脈絡、網路限制、I/O 假設與切換風險。
+                - listitem [ref=e138]:
+                  - generic [ref=e139]: "04"
+                  - generic [ref=e140]:
+                    - paragraph [ref=e141]: 試車與交接
+                    - paragraph [ref=e143]: 支援分段測試、通訊檢查、現場問題定位、啟動協調與維護團隊所需文件。
+                - listitem [ref=e144]:
+                  - generic [ref=e145]: "05"
+                  - generic [ref=e146]:
+                    - paragraph [ref=e147]: DCS 與 Siemens 周邊脈絡
+                    - paragraph [ref=e149]: 依專案需求，協調 Siemens PLC 範圍與 DCS、HMI / SCADA、網路設計、驗證需求及上層資料 / 報表系統。
+            - generic [ref=e150]:
+              - generic [ref=e151]:
+                - heading "Siemens 硬體覆蓋範圍" [level=3] [ref=e153]
+                - generic [ref=e154]:
+                  - article [ref=e155]:
+                    - heading "S7-1500 / F / T / R / H / HF" [level=4] [ref=e157]
+                    - paragraph [ref=e159]: 適用於機台、製程、安全、備援與較高可用性架構的現行控制器家族。
+                  - article [ref=e160]:
+                    - heading "S7-1200 / F / G2" [level=4] [ref=e162]
+                    - paragraph [ref=e164]: 適用於機台、skid、小型系統與分散式控制需求的 compact 控制器。
+                  - article [ref=e165]:
+                    - heading "SIMATIC ET 200SP" [level=4] [ref=e167]
+                    - paragraph [ref=e169]: 遠端 I/O 與分散式控制脈絡，需與網路與盤體設計一起規劃。
+                  - article [ref=e170]:
+                    - heading "S7-300 / F / T" [level=4] [ref=e172]
+                    - paragraph [ref=e174]: 舊型平台脈絡，常見於支援、搬遷、相容性檢查與分階段汰換。
+                  - article [ref=e175]:
+                    - heading "S7-400 / H" [level=4] [ref=e177]
+                    - paragraph [ref=e179]: 大型或備援舊系統脈絡，切換方式與停機假設需要更謹慎地規劃。
+                  - article [ref=e180]:
+                    - heading "S7-200、S5 與 TI-505" [level=4] [ref=e182]
+                    - paragraph [ref=e184]: 較舊控制器家族，通常需要先做搬遷評估，再改動既有系統。
+              - figure [ref=e185]:
+                - img "Siemens SIMATIC S7-1200 PLC reference image" [ref=e186]
+            - generic [ref=e187]:
+              - generic [ref=e188]:
+                - heading "Siemens 軟體覆蓋範圍" [level=3] [ref=e190]
+                - generic [ref=e191]:
+                  - article [ref=e192]:
+                    - heading "TIA Portal" [level=4] [ref=e194]
+                    - paragraph [ref=e196]: 現行 Siemens 控制器、HMI 與試車工作的工程環境。
+                  - article [ref=e197]:
+                    - heading "SIMATIC Manager / Step 7" [level=4] [ref=e199]
+                    - paragraph [ref=e201]: 舊型工程脈絡，可能需要支援、文件整理或搬遷規劃。
+                  - article [ref=e202]:
+                    - heading "WinCC 與 WinCC OA" [level=4] [ref=e204]
+                    - paragraph [ref=e206]: HMI / SCADA 軟體脈絡，需要對齊 PLC Tag、告警與操作流程。
+                  - article [ref=e207]:
+                    - heading "WinCC Basic / Comfort / Advanced" [level=4] [ref=e209]
+                    - paragraph [ref=e211]: Panel 與機台層 HMI 範圍，用於操作可視性與現場控制。
+                  - article [ref=e212]:
+                    - heading "WinCC Professional / Unified" [level=4] [ref=e214]
+                    - paragraph [ref=e216]: 較大型 HMI / SCADA 與現代化視覺化脈絡，支援廠級營運。
+                  - article [ref=e217]:
+                    - heading "PCS7、PCS neo、SIMATIC IT 與 SIMOTION" [level=4] [ref=e219]
+                    - paragraph [ref=e221]: DCS、MES、運動控制與上層整合需求的 Siemens 生態脈絡。
+              - figure [ref=e222]:
+                - img "Siemens TIA Portal configuration reference image" [ref=e223]
+            - generic [ref=e224]:
+              - generic [ref=e225]:
+                - heading "服務與整合覆蓋範圍" [level=3] [ref=e227]
+                - generic [ref=e228]:
+                  - article [ref=e229]:
+                    - heading "PLC 與 HMI 程式設計" [level=4] [ref=e231]
+                    - paragraph [ref=e233]: 規劃 PLC 邏輯與 HMI 行為，讓操作員能看懂、診斷並支援控制行為。
+                  - article [ref=e234]:
+                    - heading "Service calls 與 automation support" [level=4] [ref=e236]
+                    - paragraph [ref=e238]: 協助現場團隊定位控制、通訊與啟用問題，提供實務工程支援。
+                  - article [ref=e239]:
+                    - heading "Platform integration" [level=4] [ref=e241]
+                    - paragraph [ref=e243]: 把 PLC 範圍接到 SCADA、MES、Historian、報表或外部資料系統需求。
+                  - article [ref=e244]:
+                    - heading "SCADA software" [level=4] [ref=e246]
+                    - paragraph [ref=e248]: 協調 PLC Tag、告警、操作畫面與監控點位和上位系統的關係。
+                  - article [ref=e249]:
+                    - heading "Legacy system migration" [level=4] [ref=e251]
+                    - paragraph [ref=e253]: 在替換前評估舊控制器、軟體工具、I/O 假設與切換風險。
+                  - article [ref=e254]:
+                    - heading "PROFIBUS / PROFINET integration" [level=4] [ref=e256]
+                    - paragraph [ref=e258]: 以試車、診斷與可維護性為前提，規劃 fieldbus 與工業乙太網路徑。
+              - figure [ref=e259]:
+                - img "Siemens PLC remote communication reference image" [ref=e260]
+                - img "Siemens SIMBA PROFIBUS simulation reference image" [ref=e261]
+                - img "Keyence camera integration with Siemens PLC reference image" [ref=e262]
+                - img "Siemens S7 PLC data integration reference image" [ref=e263]
+                - img "Siemens S7-1200 serial communication reference image" [ref=e264]
+                - img "Redundant communication protocol reference image" [ref=e265]
+                - img "High-speed machine control reference image" [ref=e266]
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - heading "DCS 與產業情境" [level=3] [ref=e270]
+                - generic [ref=e271]:
+                  - article [ref=e272]:
+                    - heading "PCS7 與 PCS neo DCS" [level=4] [ref=e274]
+                    - paragraph [ref=e276]: 大型製程環境可能需要 FEED study、規格、程式、安裝、qualification 與試車規劃。
+                  - article [ref=e277]:
+                    - heading "製程與機台產業" [level=4] [ref=e279]
+                    - paragraph [ref=e281]: Siemens PLC 範圍可能出現在航太、汽車、食品飲料、醫療製藥、油氣、包裝與 converting lines。
+                  - article [ref=e282]:
+                    - heading "可重用邏輯標準" [level=4] [ref=e284]
+                    - paragraph [ref=e286]: 定義 Block 結構、命名、文件與測試期望，避免後續修改只依賴個人記憶。
+              - figure [ref=e287]:
+                - img "Siemens PCS7 reference screenshot" [ref=e288]
+                - img "Aerospace industry automation reference image" [ref=e289]
+                - img "Automotive automation reference image" [ref=e290]
+                - img "Food and beverage production automation reference image" [ref=e291]
+                - img "Medical and pharmaceutical production reference image" [ref=e292]
+                - img "Oil and gas drilling reference image" [ref=e293]
+                - img "Packaging machinery reference image" [ref=e294]
+                - img "Printing and converting line reference image" [ref=e295]
+                - img "Automation engineering solutions reference image" [ref=e296]
+            - generic [ref=e298]:
+              - heading "從控制邏輯到試車交接" [level=3] [ref=e300]
+              - generic [ref=e301]:
+                - article [ref=e302]:
+                  - paragraph [ref=e303]: "01"
+                  - generic [ref=e304]:
+                    - heading "確認機台或製程範圍" [level=4] [ref=e305]
+                    - paragraph [ref=e306]: 釐清順序、安全邊界、連鎖、網路限制、HMI 需求與搬遷假設。
+                - article [ref=e307]:
+                  - paragraph [ref=e308]: "02"
+                  - generic [ref=e309]:
+                    - heading "設計控制結構" [level=4] [ref=e310]
+                    - paragraph [ref=e311]: 規劃 PLC Block、Tag 命名、告警行為、通訊點位、模擬方式與 SCADA / HMI 介面。
+                - article [ref=e312]:
+                  - paragraph [ref=e313]: "03"
+                  - generic [ref=e314]:
+                    - heading "測試與試車" [level=4] [ref=e315]
+                    - paragraph [ref=e316]: 依序驗證邏輯、I/O、通訊、告警、操作動作與現場行為。
+                - article [ref=e317]:
+                  - paragraph [ref=e318]: "04"
+                  - generic [ref=e319]:
+                    - heading "支援切換與交接" [level=4] [ref=e320]
+                    - paragraph [ref=e321]: 收斂搬遷風險，整理關鍵行為，協助系統交給現場維護。
+            - paragraph [ref=e325]: Siemens PLC 專案若能把控制器選型、軟體脈絡、HMI / SCADA 訊號、網路假設、搬遷風險與試車證據放在同一條交付路徑上，後續維護會清楚很多。
+  - contentinfo [ref=e326]:
+    - region "工業自動化整合夥伴" [ref=e327]:
+      - figure [ref=e328]
+      - generic [ref=e330]:
+        - heading "工業自動化整合夥伴" [level=2] [ref=e333]
+        - link "聯絡我們" [ref=e335] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e336]: 聯絡我們
+    - generic [ref=e339]:
+      - article [ref=e340]:
+        - paragraph [ref=e341]: 雷力科技 Rally Technology
+        - paragraph [ref=e342]: 雷力科技股份有限公司
+      - article "電子報" [ref=e343]:
+        - generic [ref=e344]:
+          - heading "電子報" [level=3] [ref=e345]
+          - paragraph [ref=e346]: 訂閱電子報，掌握雷力科技最新消息。
+        - generic [ref=e348]:
+          - textbox "輸入 Email" [ref=e350]
+          - button "訂閱" [ref=e351] [cursor=pointer]
+      - article "聯絡方式" [ref=e353]:
+        - heading "聯絡方式" [level=3] [ref=e355]
+        - generic [ref=e356]:
+          - link "電話 +886-3-552-9933" [ref=e357] [cursor=pointer]:
+            - /url: tel:+88635529933
+            - generic [ref=e359]:
+              - generic [ref=e360]: 電話
+              - generic [ref=e361]: +886-3-552-9933
+          - link "電子郵件 sales@rallytech.com.tw" [ref=e362] [cursor=pointer]:
+            - /url: mailto:sales@rallytech.com.tw
+            - generic [ref=e364]:
+              - generic [ref=e365]: 電子郵件
+              - generic [ref=e366]: sales@rallytech.com.tw
+        - generic [ref=e367]:
+          - generic [ref=e368]:
+            - term [ref=e369]: 傳真
+            - definition [ref=e370]:
+              - link "+886-3-552-9797" [ref=e371] [cursor=pointer]:
+                - /url: tel:+88635529797
+          - generic [ref=e372]:
+            - term [ref=e373]: 地址
+            - definition [ref=e374]:
+              - link "302081 新竹縣竹北市惟馨街 95 號 3 樓之 5" [ref=e375] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan
+    - paragraph [ref=e378]: © 2026 雷力科技。版權所有。

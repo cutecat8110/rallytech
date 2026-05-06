@@ -117,8 +117,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
     badge: {
-      src: '/images/brand/wincc-oa-platform-badge.svg',
-      alt: 'WinCC OA 平台視覺標章'
+      src: '/images/brand/wincc-oa-logo.svg',
+      alt: 'WinCC OA 官方標誌'
     }
   },
   {
@@ -132,8 +132,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
     badge: {
-      src: '/images/brand/aveva-platform-badge.svg',
-      alt: 'AVEVA 平台視覺標章'
+      src: '/images/brand/aveva-logo.svg',
+      alt: 'AVEVA 官方標誌'
     }
   },
   {
@@ -147,8 +147,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
     badge: {
-      src: '/images/brand/siemens-platform-badge.svg',
-      alt: 'Siemens 平台視覺標章'
+      src: '/images/brand/siemens-logo.svg',
+      alt: 'Siemens 官方標誌'
     }
   }
 ] satisfies ProductCatalogItemMessages[]
@@ -317,38 +317,37 @@ const messages = {
     },
     partners: {
       kicker: '合作夥伴',
-      title: '合作夥伴與平台生態',
+      title: '合作夥伴與技術平台',
       description:
-        '從 Siemens WinCC OA 到 AVEVA PI 與 Palo Alto Networks，雷力把控制、資料與資安平台放進同一套可交付的整合脈絡。',
-      proofLabel: 'WinCC OA Partner proof 已由官方合作夥伴頁支撐',
+        '雷力在控制、監控、資料與資安平台之間協助釐清介面與交付邊界，讓專案從規劃到維護都有一致脈絡。',
       items: [
         {
           name: 'Siemens',
-          tag: '自動化平台',
+          tag: '控制與自動化平台',
           description:
-            '對應控制系統、SCADA 架構與現場自動化專案常見的 Siemens 生態。',
+            '熟悉 Siemens 控制系統與 SCADA 架構，協助專案釐清介面協調、現場測試與後續交接。',
           image: {
-            src: '/images/brand/siemens-platform-badge.svg',
+            src: '/images/brand/siemens-logo.svg',
             alt: 'Siemens 平台視覺標章'
           }
         },
         {
           name: 'WinCC OA',
-          tag: '官方 Partner proof',
+          tag: 'SCADA / HMI 平台',
           description:
-            '以 WinCC OA Partner 基礎支撐 SCADA / HMI 監控平台規劃、畫面與交付工作。',
+            '協助監控畫面、告警脈絡、系統驗證與維護需求銜接，讓操作端更容易判讀與交接。',
           image: {
-            src: '/images/brand/wincc-oa-platform-badge.svg',
+            src: '/images/brand/wincc-oa-logo.svg',
             alt: 'WinCC OA 平台視覺標章'
           }
         },
         {
           name: 'AVEVA PI',
-          tag: 'PI / Historian',
+          tag: '資料平台 / Historian',
           description:
-            '承接 AVEVA PI / OSIsoft PI System 類即時資料、Historian 與跨系統資料使用情境。',
+            '支援即時資料、歷史資料、報表與追溯情境，讓資料平台能接上現場與營運需求。',
           image: {
-            src: '/images/brand/aveva-pi-platform-badge.svg',
+            src: '/images/brand/aveva-logo.svg',
             alt: 'AVEVA PI 平台視覺標章'
           }
         },
@@ -356,9 +355,9 @@ const messages = {
           name: 'Palo Alto Networks',
           tag: 'IT / OT 資安',
           description:
-            '對應工業網路分段、遠端存取與 IT / OT security handoff 的資安平台脈絡。',
+            '對應工業網路分段、遠端存取與資安交接，協助 IT / OT 環境降低介面風險。',
           image: {
-            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            src: '/images/brand/palo-alto-networks-logo.svg',
             alt: 'Palo Alto Networks 平台視覺標章'
           }
         }

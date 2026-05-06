@@ -42,86 +42,159 @@ export const productDetailPagesEn = {
       {
         type: 'proof-strip',
         tone: 'dark',
-        title: 'When WinCC OA should be evaluated early',
+        title: 'WinCC OA implementation scope',
+        mediaId: 'partner-ecosystem',
+        mediaPlacement: 'after',
         items: [
           {
-            title: 'Multi-system connectivity',
+            title: 'Open architecture IT infrastructure',
             description:
-              'PLCs, protocols, SCADA servers, and operator stations need to work together across different site conditions.'
+              'Plan the server, network, access, and deployment foundation for open architecture installations before application work expands.'
           },
           {
-            title: 'Redundancy and multiple stations',
+            title: 'Distributed systems',
             description:
-              'The system needs a clear model for redundancy, user roles, and operator-station responsibilities.'
+              'Shape multi-station and multi-site SCADA layouts so roles, communications, and operator responsibilities stay clear.'
           },
           {
-            title: 'Screen standardization',
+            title: 'Redundant systems',
             description:
-              'Equipment status, alarms, and process context need to become displays that operators can read and trust.'
+              'Define redundancy expectations, failover behavior, and maintenance responsibilities before commissioning pressure rises.'
           },
           {
-            title: 'Maintainable expansion',
+            title: 'High-speed standalone machine systems',
             description:
-              'Future reporting, scheduling, recipes, web access, BACnet, or maintenance extensions need room in the architecture.'
+              'Support standalone machine systems where communication timing, operator response, and local reliability matter.'
+          },
+          {
+            title: 'HMI-to-PLC interfacing',
+            description:
+              'Coordinate HMI points with PLC data so screens, alarms, and status displays reflect traceable field signals.'
+          },
+          {
+            title: 'PLC programming',
+            description:
+              'Align PLC logic, communication expectations, and SCADA integration details when control behavior affects the operator layer.'
           }
         ]
       },
       {
         type: 'capability-list',
-        title: 'How Rally supports implementation',
+        title: 'Industry fit',
         items: [
           {
-            title: 'Architecture and infrastructure planning',
+            title: 'Pharmaceutical',
             paragraphs: [
-              'Define server roles, network boundaries, redundancy expectations, user access, and deployment assumptions before screen and tag work become difficult to reorganize.'
+              'WinCC OA can support regulated production environments where operator visibility, controlled change, and maintainable records matter.'
             ]
           },
           {
-            title: 'SCADA / HMI implementation',
+            title: 'Machine Tool',
             paragraphs: [
-              'Build operator views, equipment pages, alarm context, navigation, and status displays around how the site team monitors the process.'
+              'Machine systems can use WinCC OA when standalone control, high-speed communication, and clear machine-state visibility are required.'
             ]
           },
           {
-            title: 'PLC and protocol coordination',
+            title: 'Oil and Gas',
             paragraphs: [
-              'Coordinate S7, EtherNet/IP, OPC, and project-specific communication needs so the SCADA layer receives usable and traceable signals.'
-            ]
-          },
-          {
-            title: 'Extension and handover readiness',
-            paragraphs: [
-              'Plan object structure, naming, notes, and future extension paths so later modifications can be scoped without rediscovering the whole system.'
+              'Distributed assets, networked monitoring, and redundancy planning make WinCC OA a useful platform candidate for oil and gas operations.'
             ]
           }
         ]
       },
       {
         type: 'card-grid',
-        title: 'What to clarify before implementation',
+        title: 'Optional extension planning',
+        mediaId: 'optional-extensions',
+        mediaPlacement: 'after',
         columns: 3,
         items: [
           {
-            title: 'Redundancy model',
+            title: 'WinCC OA Operator',
             description:
-              'Clarify standalone, redundant, distributed, and multi-user expectations before server and network design are fixed.'
+              'Plan operator-facing tools and views around the way site teams monitor and respond.'
           },
           {
-            title: 'Screen standards',
+            title: 'Options for Web Functions',
             description:
-              'Set naming, color, alarm, navigation, and object reuse rules early so graphics remain consistent as the project grows.'
+              'Prepare browser-based access scenarios where remote or distributed teams need controlled visibility.'
           },
           {
-            title: 'Extension path',
+            title: 'WinCC OA Videos',
             description:
-              'Identify whether the system may need reporting, scheduling, recipes, video, BACnet, web access, or maintenance extensions later.'
+              'Coordinate video context with operator screens when visual confirmation improves response.'
+          },
+          {
+            title: 'WinCC OA BACnet',
+            description:
+              'Account for building or facility integration where BACnet data needs to join the SCADA view.'
+          },
+          {
+            title: 'WinCC OA Scheduler',
+            description:
+              'Support scheduled actions or operating windows that need to be visible and maintainable.'
+          },
+          {
+            title: 'WinCC OA Recipes',
+            description:
+              'Plan recipe handling when operators need consistent product, batch, or machine setup parameters.'
+          },
+          {
+            title: 'WinCC OA GIS Reviewer',
+            description:
+              'Use geographic context when distributed assets need map-based review.'
+          },
+          {
+            title: 'WinCC OA Report',
+            description:
+              'Prepare reporting needs early so data structure, naming, and review expectations are aligned.'
+          },
+          {
+            title: 'WinCC OA CommCenter',
+            description:
+              'Coordinate communication and notification needs with alarm and operations workflows.'
+          },
+          {
+            title: 'Advanced Maintenance Suite',
+            description:
+              'Include maintenance context when service workflows need to connect with the SCADA model.'
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: 'From architecture review to maintainable operation',
+        items: [
+          {
+            stepLabel: '01',
+            title: 'Confirm the SCADA operating model',
+            description:
+              'Clarify standalone, distributed, redundant, or high-speed machine requirements before screens and extensions are designed.'
+          },
+          {
+            stepLabel: '02',
+            title: 'Plan connectivity and extension boundaries',
+            description:
+              'Map PLC interfaces, protocols, user roles, web access, reporting, video, BACnet, scheduling, recipe, GIS, and maintenance needs.'
+          },
+          {
+            stepLabel: '03',
+            title: 'Build operator workflows',
+            description:
+              'Turn architecture decisions into HMI standards, alarm context, navigation, diagnostics, and site-ready operating procedures.'
+          },
+          {
+            stepLabel: '04',
+            title: 'Handover for long-term ownership',
+            description:
+              'Document the system structure, extension assumptions, and support model so the site can maintain and expand the platform.'
           }
         ]
       },
       {
         type: 'closing-note',
         paragraphs: [
-          'If a project already involves multi-site monitoring, redundancy, operator-screen redesign, or future expansion, WinCC OA architecture and maintenance rules should be clarified before screen implementation begins.'
+          'With a WinCC OA Partner foundation, Rally can help project teams turn these platform services, industry requirements, and extension paths into an implementation plan that stays maintainable after startup.'
         ]
       }
     ]
@@ -140,8 +213,8 @@ export const productDetailPagesEn = {
       'Historian and operations data'
     ],
     introParagraphs: [
-      'AVEVA is useful when HMI, SCADA, historian data, and operations context need to live inside one shared plant model.',
-      'Rally helps project teams organize System Platform, InTouch HMI, historian tags, reporting, and dashboard use cases so the platform is not only collecting data, but also usable for operations and maintenance.'
+      'Formerly known as Wonderware, AVEVA is useful when HMI, SCADA, data management, and operational intelligence need to live inside one shared plant model.',
+      'Rally helps project teams organize System Platform, InTouch HMI, Historian data, reporting, and dashboard use cases so the platform is not only collecting data, but also usable for operations and maintenance.'
     ],
     sidebar: {
       productsHeading: 'Products'
@@ -166,20 +239,22 @@ export const productDetailPagesEn = {
       {
         type: 'proof-strip',
         tone: 'light',
-        title: 'What the AVEVA platform can support',
+        title: 'AVEVA product coverage',
+        mediaId: 'partner-ecosystem',
+        mediaPlacement: 'after',
         items: [
           {
-            title: 'System Platform',
+            title: 'AVEVA System Platform',
             description:
               'A foundation when SCADA, MES, or IIoT initiatives need a centralized plant model, shared templates, and consistent configuration.'
           },
           {
-            title: 'InTouch HMI',
+            title: 'AVEVA InTouch HMI',
             description:
               'Real-time process visibility, situational awareness, operator navigation, and modern monitoring graphics.'
           },
           {
-            title: 'Historian',
+            title: 'AVEVA Historian',
             description:
               'Production-data collection, trend review, analysis support, and report or dashboard data sets.'
           },
@@ -192,16 +267,16 @@ export const productDetailPagesEn = {
       },
       {
         type: 'capability-list',
-        title: 'How Rally organizes the AVEVA architecture',
+        title: 'Rally implementation scope',
         items: [
           {
-            title: 'Plant model and template planning',
+            title: 'System Platform architecture',
             paragraphs: [
-              'Define area, equipment, object, and naming structures so System Platform remains understandable as more assets and displays are added.'
+              'Define area, equipment, object, and naming structures so the object-oriented plant model remains understandable as more assets, templates, and displays are added.'
             ]
           },
           {
-            title: 'HMI and operator workflow',
+            title: 'InTouch HMI and operator workflow',
             paragraphs: [
               'Design screen hierarchy, alarm context, navigation, and status presentation around how operators respond to process conditions.'
             ]
@@ -209,7 +284,7 @@ export const productDetailPagesEn = {
           {
             title: 'Historian and reporting readiness',
             paragraphs: [
-              'Coordinate tag selection, data-resolution assumptions, trend views, query needs, and reporting boundaries with operations and engineering users.'
+              'Coordinate tag selection, real-time and historical data access, data-resolution assumptions, trend views, query needs, and reporting boundaries with operations and engineering users.'
             ]
           },
           {
@@ -222,7 +297,7 @@ export const productDetailPagesEn = {
       },
       {
         type: 'card-grid',
-        title: 'What to clarify before implementation',
+        title: 'Implementation focus',
         columns: 3,
         items: [
           {
@@ -236,9 +311,39 @@ export const productDetailPagesEn = {
               'Clarify what should be standardized, what can vary by asset, and how future changes will be reviewed.'
           },
           {
-            title: 'Data use cases',
+            title: 'Data aggregation and monitoring',
             description:
-              'Tie historian, trend, report, and dashboard scope to real operating questions instead of collecting data without a decision path.'
+              'Tie real-time visualization, historian trends, reports, dashboards, and custom queries to real operating questions instead of collecting data without a decision path.'
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: 'From plant model to usable operations data',
+        items: [
+          {
+            stepLabel: '01',
+            title: 'Define the plant model',
+            description:
+              'Align area, equipment, object, and naming rules before templates, graphics, and historian tags spread across the system.'
+          },
+          {
+            stepLabel: '02',
+            title: 'Build HMI and data standards',
+            description:
+              'Shape InTouch screens, alarm context, Historian tags, reports, dashboards, and query needs around real operating decisions.'
+          },
+          {
+            stepLabel: '03',
+            title: 'Integrate with control and data systems',
+            description:
+              'Connect AVEVA scope with PLC, SCADA, network, MES, reporting, and maintenance stakeholders.'
+          },
+          {
+            stepLabel: '04',
+            title: 'Prepare handover',
+            description:
+              'Document object structure, template rules, data assumptions, and support responsibilities for site ownership.'
           }
         ]
       },
@@ -290,7 +395,7 @@ export const productDetailPagesEn = {
       {
         type: 'proof-strip',
         tone: 'light',
-        title: 'When Siemens PLC scope should be clarified early',
+        title: 'Siemens PLC implementation scope',
         items: [
           {
             title: 'PLC delivery lifecycle',
@@ -300,7 +405,7 @@ export const productDetailPagesEn = {
           {
             title: 'Hardware context',
             description:
-              'Current controllers, remote I/O, legacy platforms, and cutover constraints need to be reviewed together.'
+              'S7-1500, S7-1200, ET 200SP, legacy S7, S5, and TI controller constraints need to be reviewed together.'
           },
           {
             title: 'Software context',
@@ -316,7 +421,7 @@ export const productDetailPagesEn = {
       },
       {
         type: 'capability-list',
-        title: 'How Rally supports implementation',
+        title: 'Rally implementation scope',
         items: [
           {
             title: 'Specification and control design',
@@ -352,18 +457,135 @@ export const productDetailPagesEn = {
       },
       {
         type: 'card-grid',
-        title: 'What to clarify before implementation',
+        title: 'Siemens hardware coverage',
+        mediaId: 's7-1200',
+        mediaPlacement: 'after',
         columns: 3,
         items: [
           {
-            title: 'Controller generation',
+            title: 'S7-1500 / F / T / R / H / HF',
             description:
-              'Confirm whether the project centers on current controllers, remote I/O, or legacy hardware before tools and migration scope are fixed.'
+              'Current controller families for machine, process, safety, redundancy, and higher-availability architectures.'
           },
           {
-            title: 'Network and protocol path',
+            title: 'S7-1200 / F / G2',
             description:
-              'Map fieldbus, serial, cellular, redundant protocol, and other communication needs against commissioning and support risk.'
+              'Compact controllers for machines, skids, small systems, and distributed control needs.'
+          },
+          {
+            title: 'SIMATIC ET 200SP',
+            description:
+              'Remote I/O and distributed control context that should be planned with network and panel design.'
+          },
+          {
+            title: 'S7-300 / F / T',
+            description:
+              'Legacy platform context for support, migration, compatibility review, and phased replacement.'
+          },
+          {
+            title: 'S7-400 / H',
+            description:
+              'Large or redundant legacy system context where cutover and uptime assumptions need careful planning.'
+          },
+          {
+            title: 'S7-200, S5, and TI-505',
+            description:
+              'Older controller families that often require migration assessment before active system changes.'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'Siemens software coverage',
+        mediaId: 'tia-portal',
+        mediaPlacement: 'after',
+        columns: 3,
+        items: [
+          {
+            title: 'TIA Portal',
+            description:
+              'Engineering environment for current Siemens controller, HMI, and commissioning work.'
+          },
+          {
+            title: 'SIMATIC Manager / Step 7',
+            description:
+              'Legacy engineering context that may need support, documentation, or migration planning.'
+          },
+          {
+            title: 'WinCC and WinCC OA',
+            description:
+              'HMI / SCADA software context that must align with PLC tags, alarms, and operator workflows.'
+          },
+          {
+            title: 'WinCC Basic / Comfort / Advanced',
+            description:
+              'Panel and machine-level HMI scope for operator visibility and local control.'
+          },
+          {
+            title: 'WinCC Professional / Unified',
+            description:
+              'Larger HMI / SCADA and modern visualization context for plant-level operations.'
+          },
+          {
+            title: 'PCS7, PCS neo, SIMATIC IT, and SIMOTION',
+            description:
+              'Broader Siemens ecosystem context for DCS, MES, motion, and higher-level integration needs.'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'Service and integration coverage',
+        columns: 3,
+        items: [
+          {
+            title: 'PLC and HMI programming',
+            description:
+              'Structure PLC logic and HMI behavior so operators can see, diagnose, and support control behavior.'
+          },
+          {
+            title: 'Service calls and automation support',
+            description:
+              'Help site teams isolate control, communication, and startup issues with practical engineering support.'
+          },
+          {
+            title: 'Platform integration',
+            description:
+              'Connect PLC scope with SCADA, MES, historian, reporting, or external data-system needs.'
+          },
+          {
+            title: 'SCADA software',
+            description:
+              'Coordinate PLC tags, alarms, operator screens, and monitoring points with supervisory systems.'
+          },
+          {
+            title: 'Legacy system migration',
+            description:
+              'Assess old controllers, software tools, I/O assumptions, and cutover risk before replacement work.'
+          },
+          {
+            title: 'PROFIBUS / PROFINET integration',
+            description:
+              'Plan fieldbus and industrial Ethernet paths around commissioning, diagnostics, and maintainability.'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'DCS and industry contexts',
+        mediaId: 'pcs7',
+        mediaPlacement: 'after',
+        columns: 3,
+        items: [
+          {
+            title: 'PCS7 and PCS neo DCS',
+            description:
+              'Large process environments may need FEED studies, specification support, programming, installation, qualification, and commissioning planning.'
+          },
+          {
+            title: 'Process and machine industries',
+            description:
+              'Siemens PLC scope can appear in aerospace, automotive, food and beverage, medical and pharmaceutical, oil and gas, packaging, and converting lines.'
           },
           {
             title: 'Reusable logic standards',
@@ -400,6 +622,12 @@ export const productDetailPagesEn = {
             description:
               'Close migration risks, document key behavior, and support the transition to site ownership.'
           }
+        ]
+      },
+      {
+        type: 'closing-note',
+        paragraphs: [
+          'A Siemens PLC project becomes easier to support when controller selection, software context, HMI / SCADA signals, network assumptions, migration risk, and commissioning evidence are planned as one delivery path.'
         ]
       }
     ]

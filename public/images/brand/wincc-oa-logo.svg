@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink"  id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 219.9 219.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #01656e;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #ffd732;
+      }
+
+      .cls-3 {
+        fill: #00557c;
+      }
+
+      .cls-4 {
+        fill: #1fb9d8;
+      }
+    </style>
+  </defs>
+  <g id="winccoa">
+    <rect class="cls-4" width="50.1" height="50.1"/>
+    <rect class="cls-3" x="56.6" width="50.1" height="50.1"/>
+    <rect class="cls-1" x="113.2" width="50.1" height="50.1"/>
+    <rect class="cls-4" x="169.8" width="50.1" height="50.1"/>
+    <rect class="cls-3" y="56.6" width="50.1" height="50.1"/>
+    <rect class="cls-2" x="56.6" y="56.6" width="50.1" height="50.1"/>
+    <rect class="cls-4" x="113.2" y="56.6" width="50.1" height="50.1"/>
+    <rect class="cls-2" x="169.8" y="56.6" width="50.1" height="50.1"/>
+    <rect class="cls-2" y="113.2" width="50.1" height="50.1"/>
+    <rect class="cls-1" x="56.6" y="113.2" width="50.1" height="50.1"/>
+    <rect class="cls-3" x="113.2" y="113.2" width="50.1" height="50.1"/>
+    <rect class="cls-1" x="169.8" y="113.2" width="50.1" height="50.1"/>
+    <rect class="cls-3" y="169.8" width="50.1" height="50.1"/>
+    <rect class="cls-2" x="56.6" y="169.8" width="50.1" height="50.1"/>
+    <rect class="cls-1" x="113.2" y="169.8" width="50.1" height="50.1"/>
+    <rect class="cls-4" x="169.8" y="169.8" width="50.1" height="50.1"/>
+  </g>
+</svg>

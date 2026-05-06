@@ -126,6 +126,7 @@ const productItems = computed(() =>
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 1.125rem;
   border: 1px solid rgb(10 18 22 / 0.08);
   border-radius: var(--radius-md);
   background:
@@ -140,7 +141,9 @@ const productItems = computed(() =>
 .products-sys-listing__badge {
   display: block;
   width: min(17rem, 82%);
+  max-height: 6.25rem;
   height: auto;
+  object-fit: contain;
 }
 
 .products-sys-listing__body {

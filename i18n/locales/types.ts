@@ -107,7 +107,6 @@ export interface AboutPageMessages {
     kicker: string
     title: string
     description: string
-    proofLabel: string
     items: Array<{
       name: string
       tag: string
@@ -398,6 +397,9 @@ export interface ProductDetailBlockBaseMessages {
     | 'closing-note'
   title?: string
   eyebrow?: string | false
+  mediaId?: string
+  mediaIds?: string[]
+  mediaPlacement?: 'side' | 'after'
 }
 
 export interface ProductDetailPlatformOverviewBlockMessages extends ProductDetailBlockBaseMessages {

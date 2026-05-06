@@ -115,8 +115,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/wincc-open-architecture-development/',
     badge: {
-      src: '/images/brand/wincc-oa-platform-badge.svg',
-      alt: 'WinCC OA platform visual badge'
+      src: '/images/brand/wincc-oa-logo.svg',
+      alt: 'WinCC OA official logo'
     }
   },
   {
@@ -130,8 +130,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
     badge: {
-      src: '/images/brand/aveva-platform-badge.svg',
-      alt: 'AVEVA platform visual badge'
+      src: '/images/brand/aveva-logo.svg',
+      alt: 'AVEVA official logo'
     }
   },
   {
@@ -145,8 +145,8 @@ const productsCatalog = [
     sourceUrl:
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/plc-programming/siemens-s7-plc-programming/',
     badge: {
-      src: '/images/brand/siemens-platform-badge.svg',
-      alt: 'Siemens platform visual badge'
+      src: '/images/brand/siemens-logo.svg',
+      alt: 'Siemens official logo'
     }
   }
 ] satisfies ProductCatalogItemMessages[]
@@ -318,7 +318,6 @@ const messages = {
       title: 'Platform partners and technology references',
       description:
         'This source layer keeps the partnership cue while the public locales use Rally Technology platform proof and partner-context wording.',
-      proofLabel: 'Source cue: partnerships and official partner proof',
       items: [
         {
           name: 'Siemens',
@@ -326,7 +325,7 @@ const messages = {
           description:
             'User-provided platform reference for the public About partner section.',
           image: {
-            src: '/images/brand/siemens-platform-badge.svg',
+            src: '/images/brand/siemens-logo.svg',
             alt: 'Siemens platform visual badge'
           }
         },
@@ -336,7 +335,7 @@ const messages = {
           description:
             'Official partner-proof reference used by the public About partner section.',
           image: {
-            src: '/images/brand/wincc-oa-platform-badge.svg',
+            src: '/images/brand/wincc-oa-logo.svg',
             alt: 'WinCC OA platform visual badge'
           }
         },
@@ -346,7 +345,7 @@ const messages = {
           description:
             'User-provided AVEVA PI and OSIsoft platform reference for the public About partner section.',
           image: {
-            src: '/images/brand/aveva-pi-platform-badge.svg',
+            src: '/images/brand/aveva-logo.svg',
             alt: 'AVEVA PI platform visual badge'
           }
         },
@@ -356,7 +355,7 @@ const messages = {
           description:
             'User-provided Palo Alto platform reference for the public About partner section.',
           image: {
-            src: '/images/brand/palo-alto-networks-platform-badge.svg',
+            src: '/images/brand/palo-alto-networks-logo.svg',
             alt: 'Palo Alto Networks platform visual badge'
           }
         }

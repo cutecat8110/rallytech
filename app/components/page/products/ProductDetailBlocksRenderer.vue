@@ -9,7 +9,11 @@ import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPointList from '~/components/shared/SharedPointList.vue'
 import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 import SharedTextTileGrid from '~/components/shared/SharedTextTileGrid.vue'
-import { getProductDetailFeatureImage } from '~/utils/products'
+import {
+  type ProductContentImageMeta,
+  getProductContentImage,
+  getProductDetailFeatureImage
+} from '~/utils/products'
 
 const props = defineProps<{
   product: ProductCatalogItemMessages
@@ -44,6 +48,18 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
     paragraphs: item.paragraphs ?? (item.description ? [item.description] : [])
   }))
 }
+
+function getBlockMediaItems(block: ProductDetailBlockMessages) {
+  const imageIds = block.mediaIds ?? (block.mediaId ? [block.mediaId] : [])
+
+  return imageIds
+    .map((imageId) => getProductContentImage(props.product.slug, imageId))
+    .filter((image): image is ProductContentImageMeta => image !== undefined)
+}
+
+function hasBlockMedia(block: ProductDetailBlockMessages) {
+  return getBlockMediaItems(block).length > 0
+}
 </script>
 
 <template>
@@ -52,7 +68,12 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
       v-for="(block, index) in props.blocks"
       :key="`${block.type}-${index}`"
       class="products-sys-detail-block"
-      :class="`products-sys-detail-block--${block.type}`"
+      :class="[
+        `products-sys-detail-block--${block.type}`,
+        hasBlockMedia(block)
+          ? `products-sys-detail-block--media-${block.mediaPlacement ?? 'after'}`
+          : undefined
+      ]"
     >
       <div
         v-if="block.type === 'platform-overview'"
@@ -230,6 +251,26 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
           lead-first
         />
       </section>
+
+      <figure
+        v-if="block.type !== 'platform-overview' && hasBlockMedia(block)"
+        class="products-sys-detail-block-media"
+        :class="{
+          'products-sys-detail-block-media--grid':
+            getBlockMediaItems(block).length > 1
+        }"
+      >
+        <img
+          v-for="image in getBlockMediaItems(block)"
+          :key="image.id"
+          :src="image.src"
+          :alt="image.alt"
+          class="products-sys-detail-block-media__image"
+          :style="{ objectPosition: image.objectPosition ?? 'center' }"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
     </section>
   </div>
 </template>
@@ -257,6 +298,11 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
 .products-sys-detail-block--process-steps,
 .products-sys-detail-block--closing-note {
   max-width: 52rem;
+}
+
+.products-sys-detail-block--media-after,
+.products-sys-detail-block--media-side {
+  max-width: 58rem;
 }
 
 .products-sys-detail-block__title {
@@ -312,6 +358,34 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
   box-shadow: var(--shadow-lg);
 }
 
+.products-sys-detail-block-media {
+  margin: clamp(0.35rem, 1vw, 0.8rem) 0 0;
+  overflow: hidden;
+  background: transparent;
+}
+
+.products-sys-detail-block-media__image {
+  display: block;
+  width: 100%;
+  max-height: clamp(11rem, 20vw, 16rem);
+  object-fit: contain;
+  object-position: center;
+}
+
+.products-sys-detail-block-media--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: clamp(0.85rem, 1.8vw, 1.2rem);
+}
+
+.products-sys-detail-block-media--grid .products-sys-detail-block-media__image {
+  aspect-ratio: 16 / 10;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
 .products-sys-detail-capabilities {
   max-width: 52rem;
 }
@@ -348,6 +422,20 @@ function getCapabilityItems(block: ProductDetailCapabilityListBlockMessages) {
 
   .products-sys-detail-process-steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .products-sys-detail-block--media-side {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.7fr);
+    gap: clamp(1.8rem, 3vw, 2.8rem);
+    align-items: center;
+  }
+
+  .products-sys-detail-block--media-side > section {
+    min-width: 0;
+  }
+
+  .products-sys-detail-block--media-side .products-sys-detail-block-media {
+    align-self: center;
   }
 }
 

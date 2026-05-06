@@ -19,13 +19,6 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
           align="start"
           density="compact"
         />
-
-        <div class="about-sys-partners__proof">
-          <UIcon name="i-lucide-badge-check" class="size-5" />
-          <span class="type-sys-label-s">
-            {{ messages.aboutPage.partners.proofLabel }}
-          </span>
-        </div>
       </div>
 
       <div class="about-sys-partners__grid">
@@ -45,7 +38,12 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
           </div>
 
           <div class="about-sys-partners__body">
-            <UBadge color="neutral" variant="subtle" size="sm">
+            <UBadge
+              class="about-sys-partners__tag"
+              color="neutral"
+              variant="subtle"
+              size="sm"
+            >
               {{ partner.tag }}
             </UBadge>
             <h3 class="about-sys-partners__name type-sys-title-l">
@@ -94,26 +92,7 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
 .about-sys-partners__header {
   position: relative;
   z-index: 1;
-  display: grid;
-  gap: 1.5rem;
-  align-items: end;
-}
-
-.about-sys-partners__proof {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  width: fit-content;
-  max-width: 24rem;
-  padding: 0.85rem 1rem;
-  border-left: 3px solid var(--color-primary-600);
-  color: color-mix(
-    in srgb,
-    var(--color-secondary-950) 78%,
-    var(--color-primary-700)
-  );
-  background: rgb(255 255 255 / 0.72);
-  box-shadow: 0 1rem 2rem rgb(15 23 42 / 0.06);
+  max-width: 48rem;
 }
 
 .about-sys-partners__grid {
@@ -151,7 +130,7 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
 
 .about-sys-partners__media {
   display: flex;
-  min-height: 9.25rem;
+  min-height: 8.5rem;
   align-items: center;
   justify-content: center;
   padding: 1.35rem;
@@ -162,7 +141,7 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
 
 .about-sys-partners__image {
   width: min(100%, 20rem);
-  max-height: 8.4rem;
+  max-height: 6rem;
   object-fit: contain;
 }
 
@@ -172,6 +151,10 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
   padding: 1.25rem;
   border-top: 1px solid
     color-mix(in srgb, var(--color-border-subtle) 76%, white);
+}
+
+.about-sys-partners__tag {
+  justify-self: start;
 }
 
 .about-sys-partners__name {
@@ -186,14 +169,6 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
 }
 
 @media (min-width: 768px) {
-  .about-sys-partners__header {
-    grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.48fr);
-  }
-
-  .about-sys-partners__proof {
-    justify-self: end;
-  }
-
   .about-sys-partners__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -208,10 +183,6 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
 @media (max-width: 767px) {
   .about-sys-partners__header {
     text-align: left;
-  }
-
-  .about-sys-partners__proof {
-    max-width: 100%;
   }
 
   .about-sys-partners__media {

@@ -18,6 +18,7 @@ export const productDetailPagesSource = {
     introParagraphs: [
       'Source coverage note: this page captures the DMC product body only, excluding global navigation, newsletter, footer, map, office list, and generic CTA chrome.',
       'The DMC page frames WinCC OA around cross-platform hardware/software integration, reusable objects, industrial SCADA / HMI operation, distributed architecture, redundancy, PLC interfacing, and optional WinCC OA extensions.',
+      'Original DMC partner section records that DMC is a WinCC OA Solutions Partner with trained WinCC OA engineers, then lists OA services, industries, and optional extensions.',
       'DMC-specific claims about hundreds of projects, Premium Solution Partner imagery, trained DMC engineers, DMC offices, and DMC project acceleration are recorded only as excluded source claims, not Rally facts.'
     ],
     sidebar: {
@@ -58,7 +59,7 @@ export const productDetailPagesSource = {
           {
             title: 'Partner services',
             description:
-              'The source lists infrastructure setup, distributed systems, redundant systems, standalone high-speed machine systems, HMI-to-PLC interfacing, and PLC programming. DMC partner/team claims remain excluded.'
+              'The source lists IT infrastructure setup for open architecture installations, distributed systems, redundant systems, standalone machine systems with high-speed communication requirements, HMI-to-PLC interfacing, and PLC programming. DMC partner/team claims remain excluded.'
           },
           {
             title: 'Extensions and industries',
@@ -87,6 +88,22 @@ export const productDetailPagesSource = {
             title: 'Industry and extension context',
             paragraphs: [
               'Use industries and extension names only as platform context or planning topics; do not imply Rally has delivered those DMC-specific projects.'
+            ]
+          },
+          {
+            title: 'DMC OA service topics',
+            paragraphs: [
+              'IT infrastructure setup for open architecture installations; distributed systems; redundant systems; standalone machine systems with high-speed communication requirements; interfacing HMI with any PLC; PLC programming.'
+            ]
+          },
+          {
+            title: 'DMC industry fit topics',
+            paragraphs: ['Pharmaceutical; Machine Tool; Oil and Gas.']
+          },
+          {
+            title: 'DMC optional extension topics',
+            paragraphs: [
+              'WinCC OA Operator; Options for Web Functions; WinCC OA Videos; WinCC OA BACnet; WinCC OA Scheduler; WinCC OA Recipes; WinCC OA GIS Reviewer; WinCC OA Report; WinCC OA CommCenter; Advanced Maintenance Suite.'
             ]
           }
         ]
@@ -128,6 +145,8 @@ export const productDetailPagesSource = {
           'OPC',
           'Reusable objects',
           'Operator',
+          'Web Functions',
+          'Videos',
           'BACnet',
           'Scheduler',
           'Recipes',
@@ -151,6 +170,7 @@ export const productDetailPagesSource = {
     introParagraphs: [
       'Source coverage note: this page captures the DMC product body only, excluding global navigation, newsletter, footer, map, office list, and generic CTA chrome.',
       'The DMC page frames AVEVA, formerly Wonderware, as an industrial software suite for HMI, SCADA, data management, and operational intelligence, then focuses on System Platform, InTouch HMI, and Historian.',
+      'Original DMC partner section records AVEVA System Platform as an object-oriented plant model, states DMC has certified developers and certified AVEVA System Integrator Partner status, and introduces the product list that follows.',
       'DMC-specific claims about certified developers, certified system integrator partner status, completed AVEVA projects, customer scale, DMC offices, and DMC acceleration CTAs are recorded only as excluded source claims.'
     ],
     sidebar: {
@@ -181,7 +201,7 @@ export const productDetailPagesSource = {
           {
             title: 'Suite framing',
             description:
-              'The source identifies AVEVA as the former Wonderware suite and describes it around HMI, SCADA, data management, and operational intelligence. DMC service claims remain DMC-only.'
+              'The source identifies AVEVA as the former Wonderware suite and describes it around HMI, SCADA, data management, operational intelligence, programming, integration, and support services. DMC service claims remain DMC-only.'
           },
           {
             title: 'System Platform',
@@ -197,6 +217,11 @@ export const productDetailPagesSource = {
             title: 'Historian',
             description:
               'The source describes high-resolution time-series capture and compression, real-time and historical data access, trending, analysis, reporting, dashboards, and custom queries.'
+          },
+          {
+            title: 'DMC AVEVA images',
+            description:
+              'The source includes an AVEVA Certified System Integrator badge image and an AVEVA Historian client web image. Image use is documented separately; certification / partner claims remain DMC-only.'
           }
         ]
       },
@@ -207,7 +232,7 @@ export const productDetailPagesSource = {
           {
             title: 'Plant model and template governance',
             paragraphs: [
-              'Use concepts around model-driven plant hierarchy, centralized configuration, reusable templates, and consistent naming to frame implementation planning.'
+              'Use concepts around object-oriented plant modeling, model-driven plant hierarchy, centralized configuration, reusable templates, seamless integration, and consistent naming to frame implementation planning.'
             ]
           },
           {
@@ -220,6 +245,12 @@ export const productDetailPagesSource = {
             title: 'Data lifecycle',
             paragraphs: [
               'Use real-time and historical data access, trend analysis, custom queries, and operations context without copying DMC performance or customer-result claims.'
+            ]
+          },
+          {
+            title: 'DMC AVEVA product topics',
+            paragraphs: [
+              'AVEVA System Platform; AVEVA InTouch HMI; AVEVA Historian; SCADA; MES; IIoT; real-time visualization; data aggregation; system-wide monitoring; dashboards; custom queries.'
             ]
           }
         ]
@@ -287,6 +318,7 @@ export const productDetailPagesSource = {
     introParagraphs: [
       'Source coverage note: this page captures the DMC product body only, excluding global navigation, newsletter, footer, map, office list, and generic CTA chrome.',
       'The DMC page frames Siemens PLC programming across specification, code development, PLC-SIM simulation, system design, commissioning, Siemens expertise, hardware, software, services, reusable S7 libraries, example projects, PCS7 / PCS neo DCS, and industry experience.',
+      'Original DMC imagery includes Siemens SIMATIC S7-1500 PLC, Siemens SIMATIC S7-1200 PLC, Siemens TIA Portal configuration, and Siemens PCS7 screenshot assets. Engineering example and industry images are source context only and are not used on the public Rally product page.',
       'DMC-specific claims about hundreds of solutions, Siemens Solution Partner status, one of the largest certified teams in the US, DMC project examples, reusable S7 code ownership, industry track record, DMC offices, and DMC acceleration CTAs are recorded only as excluded source claims.'
     ],
     sidebar: {
@@ -333,6 +365,11 @@ export const productDetailPagesSource = {
             title: 'Examples, DCS, and industries',
             description:
               'The source includes DMC examples, PCS7 / PCS neo DCS services, and industries such as aerospace and defense, automotive, food and beverage, medical and pharmaceutical, oil and gas, packaging machinery, and printing / converting.'
+          },
+          {
+            title: 'DMC Siemens images',
+            description:
+              'The public Rally product page uses only the core product images for S7-1500, S7-1200, TIA Portal, and PCS7. Engineering example and industry images remain source context and are not Rally case proof.'
           }
         ]
       },
@@ -350,6 +387,24 @@ export const productDetailPagesSource = {
             title: 'Siemens ecosystem scope',
             paragraphs: [
               'Use S7 controller families, ET 200SP, TIA Portal, WinCC, PCS7 / PCS neo, Step 7, and industrial network integration as ecosystem coverage topics.'
+            ]
+          },
+          {
+            title: 'DMC Siemens hardware topics',
+            paragraphs: [
+              'S7-1500/F/T/R/H/HF; S7-1200/F/G2; SIMATIC ET 200SP; legacy controllers including S7-300/F/T, S7-400/H, S7-200, S5, and TI-505.'
+            ]
+          },
+          {
+            title: 'DMC Siemens software topics',
+            paragraphs: [
+              'TIA Portal; WinCC; WinCC Open Architecture; WinCC Basic / Comfort / Advanced; WinCC Professional; WinCC Unified; PCS7; PCS neo; SIMATIC IT; SIMOTION; Step 7.'
+            ]
+          },
+          {
+            title: 'DMC Siemens service topics',
+            paragraphs: [
+              'PLC and HMI programming; Siemens service calls; Siemens automation support; platform integration; SCADA software; legacy system migration; PROFIBUS / PROFINET integration.'
             ]
           },
           {

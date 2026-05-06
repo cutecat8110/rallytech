@@ -38,86 +38,152 @@ export const productDetailPagesZhTw = {
       {
         type: 'proof-strip',
         tone: 'dark',
-        title: '適合優先評估 WinCC OA 的情境',
+        title: 'WinCC OA 導入範圍',
+        mediaId: 'partner-ecosystem',
+        mediaPlacement: 'after',
         items: [
           {
-            title: '多系統連線',
+            title: '開放式架構 IT 基礎環境',
             description:
-              'PLC、通訊協定、SCADA Server 與操作站需要在不同現場條件下協同運作。'
+              '在應用程式與畫面工作擴大前，先規劃開放式架構所需的伺服器、網路、權限與部署基礎。'
           },
           {
-            title: '備援與多操作站',
+            title: '分散式系統',
             description:
-              '系統不能只看單機畫面，還要預先整理備援切換、使用者角色與操作站分工。'
+              '針對多操作站或多站點 SCADA 需求，整理角色、通訊與操作責任。'
           },
           {
-            title: '畫面標準化',
+            title: '備援系統',
             description:
-              '設備狀態、告警與製程脈絡需要整理成操作員可判斷、可追蹤的日常監控畫面。'
+              '在試車壓力升高前，先定義備援期望、切換行為與維護責任。'
           },
           {
-            title: '後續擴充維護',
+            title: '高速通訊的獨立機台系統',
             description:
-              '未來可能加入報表、排程、配方、Web、BACnet 或維護相關擴充，需要先留下可延展的結構。'
+              '支援需要通訊時序、操作反應與現場可靠性的 standalone machine systems。'
+          },
+          {
+            title: 'HMI 與任意 PLC 介接',
+            description:
+              '協調 HMI 點位與 PLC 資料，讓畫面、告警與狀態資訊能對應可追蹤的現場訊號。'
+          },
+          {
+            title: 'PLC 程式設計',
+            description:
+              '當控制邏輯會影響操作層時，一併對齊 PLC 邏輯、通訊期望與 SCADA 整合細節。'
           }
         ]
       },
       {
         type: 'capability-list',
-        title: '雷力如何協助導入',
+        title: '適用產業情境',
         items: [
           {
-            title: '架構與基礎環境規劃',
+            title: 'Pharmaceutical',
             paragraphs: [
-              '在畫面與 Tag 工作深入前，先釐清伺服器角色、網路邊界、備援期望、使用者權限與部署假設。'
+              'WinCC OA 可支援需要操作可視性、受控變更與可維護紀錄的製藥生產環境。'
             ]
           },
           {
-            title: 'SCADA / HMI 實作',
+            title: 'Machine Tool',
             paragraphs: [
-              '依現場監控方式建立操作畫面、設備頁、告警脈絡、導覽與狀態資訊。'
+              '當機台系統需要獨立控制、高速通訊與清楚的機台狀態可視性時，可評估 WinCC OA。'
             ]
           },
           {
-            title: 'PLC 與通訊協調',
+            title: 'Oil and Gas',
             paragraphs: [
-              '協調 S7、EtherNet/IP、OPC 與專案所需通訊，讓 SCADA 層取得可使用、可追蹤的訊號。'
-            ]
-          },
-          {
-            title: '擴充與交接準備',
-            paragraphs: [
-              '整理物件結構、命名、註記與未來擴充路徑，降低後續改版時重新摸索系統的成本。'
+              '分散式資產、網路監控與備援規劃，讓 WinCC OA 可作為油氣營運的候選平台。'
             ]
           }
         ]
       },
       {
         type: 'card-grid',
-        title: '導入前需要先釐清的事',
+        title: 'Optional extensions 規劃',
+        mediaId: 'optional-extensions',
+        mediaPlacement: 'after',
         columns: 3,
         items: [
           {
-            title: '備援模型',
-            description:
-              '在伺服器與網路設計定案前，先確認單機、備援、分散式與多使用者運轉需求。'
+            title: 'WinCC OA Operator',
+            description: '依現場監控與回應方式，規劃操作員使用的工具與畫面。'
           },
           {
-            title: '畫面標準',
+            title: 'Options for Web Functions',
             description:
-              '提早定義命名、色彩、告警、導覽與物件重用規則，讓畫面在後續擴充時仍保持一致。'
+              '當遠端或分散式團隊需要受控可視性時，預先評估 Web 存取情境。'
           },
           {
-            title: '擴充路徑',
+            title: 'WinCC OA Videos',
+            description: '當影像確認能改善操作回應時，協調影像脈絡與操作畫面。'
+          },
+          {
+            title: 'WinCC OA BACnet',
             description:
-              '判斷未來是否可能需要報表、排程、配方、影像、BACnet、Web 存取或維護相關擴充。'
+              '若建築或廠務資料需要納入 SCADA 視圖，需先評估 BACnet 整合方式。'
+          },
+          {
+            title: 'WinCC OA Scheduler',
+            description: '支援排程動作或操作時段需要被顯示、追蹤與維護的情境。'
+          },
+          {
+            title: 'WinCC OA Recipes',
+            description:
+              '當操作員需要一致的產品、批次或機台設定參數時，需規劃配方管理。'
+          },
+          {
+            title: 'WinCC OA GIS Reviewer',
+            description: '分散式資產需要地理脈絡時，可納入地圖式檢視規劃。'
+          },
+          {
+            title: 'WinCC OA Report',
+            description: '提早整理報表需求，讓資料結構、命名與審閱方式能對齊。'
+          },
+          {
+            title: 'WinCC OA CommCenter',
+            description: '把通訊與通知需求放進告警與營運流程一起規劃。'
+          },
+          {
+            title: 'Advanced Maintenance Suite',
+            description: '當維護流程需要連回 SCADA 模型時，需一併整理維護脈絡。'
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: '從架構檢視到可維護運轉',
+        items: [
+          {
+            stepLabel: '01',
+            title: '確認 SCADA 操作模型',
+            description:
+              '先釐清單機、分散式、備援或高速機台需求，再進入畫面與 extension 設計。'
+          },
+          {
+            stepLabel: '02',
+            title: '規劃連線與擴充邊界',
+            description:
+              '整理 PLC 介面、通訊協定、使用者角色、Web 存取、報表、影像、BACnet、排程、配方、GIS 與維護需求。'
+          },
+          {
+            stepLabel: '03',
+            title: '建立操作流程',
+            description:
+              '把架構決策轉成 HMI 標準、告警脈絡、導覽、診斷方式與現場可執行的操作程序。'
+          },
+          {
+            stepLabel: '04',
+            title: '交接給長期維護',
+            description:
+              '整理系統結構、extension 假設與支援模型，讓現場能維護並延伸平台。'
           }
         ]
       },
       {
         type: 'closing-note',
         paragraphs: [
-          '如果專案已經涉及多站點監控、備援切換、操作畫面重整或未來擴充，WinCC OA 的架構與維護規則應在畫面實作前先整理。'
+          '以 WinCC OA Partner 能力基礎，雷力可協助專案團隊把平台服務、產業條件與 extension 路徑整理成啟用後仍可維護的導入計畫。'
         ]
       }
     ]
@@ -132,8 +198,8 @@ export const productDetailPagesZhTw = {
       'https://www.dmcinfo.com/services/manufacturing-automation-and-intelligence/hmi-and-scada-programming/aveva-programming/',
     heroFocusItems: ['System Platform', 'InTouch HMI', 'Historian 與營運資料'],
     introParagraphs: [
-      'AVEVA 適合需要把 HMI、SCADA、Historian 與營運資料放在同一套工廠模型裡管理的場域。',
-      '雷力科技協助專案團隊整理 System Platform、InTouch HMI、Historian Tag、報表與 Dashboard 使用情境，讓平台不只收資料，也能被操作與維護團隊長期使用。'
+      'AVEVA 前身為 Wonderware，適合需要把 HMI、SCADA、資料管理與營運智慧放在同一套工廠模型裡管理的場域。',
+      '雷力科技協助專案團隊整理 System Platform、InTouch HMI、Historian 資料、報表與 Dashboard 使用情境，讓平台不只收資料，也能被操作與維護團隊長期使用。'
     ],
     sidebar: {
       productsHeading: '產品'
@@ -158,20 +224,22 @@ export const productDetailPagesZhTw = {
       {
         type: 'proof-strip',
         tone: 'light',
-        title: 'AVEVA 平台能支撐的工作',
+        title: 'AVEVA 產品覆蓋範圍',
+        mediaId: 'partner-ecosystem',
+        mediaPlacement: 'after',
         items: [
           {
-            title: 'System Platform',
+            title: 'AVEVA System Platform',
             description:
               '當 SCADA、MES 或 IIoT 需要集中式工廠模型、共用模板與一致設定時，可作為核心基礎。'
           },
           {
-            title: 'InTouch HMI',
+            title: 'AVEVA InTouch HMI',
             description:
               '支援即時製程可視性、情境感知、操作導覽與現代化圖控畫面。'
           },
           {
-            title: 'Historian',
+            title: 'AVEVA Historian',
             description:
               '建立生產資料收集、趨勢檢視、分析支援與報表 / Dashboard 資料集的基礎。'
           },
@@ -184,16 +252,16 @@ export const productDetailPagesZhTw = {
       },
       {
         type: 'capability-list',
-        title: '雷力如何協助整理 AVEVA 架構',
+        title: '雷力承接範圍',
         items: [
           {
-            title: '工廠模型與模板規劃',
+            title: 'System Platform 架構',
             paragraphs: [
-              '定義區域、設備、物件與命名結構，讓 System Platform 在新增資產與畫面後仍保持可讀性。'
+              '定義區域、設備、物件與命名結構，讓 object-oriented plant model 在新增資產、模板與畫面後仍保持可讀性。'
             ]
           },
           {
-            title: 'HMI 與操作流程',
+            title: 'InTouch HMI 與操作流程',
             paragraphs: [
               '依操作員回應製程狀態的方式，設計畫面階層、告警脈絡、導覽與狀態呈現。'
             ]
@@ -201,7 +269,7 @@ export const productDetailPagesZhTw = {
           {
             title: 'Historian 與報表準備',
             paragraphs: [
-              '與營運及工程使用者確認 Tag 選取、資料解析度假設、趨勢畫面、查詢需求與報表邊界。'
+              '與營運及工程使用者確認 Tag 選取、即時與歷史資料存取、資料解析度假設、趨勢畫面、查詢需求與報表邊界。'
             ]
           },
           {
@@ -214,7 +282,7 @@ export const productDetailPagesZhTw = {
       },
       {
         type: 'card-grid',
-        title: '導入前需要先釐清的事',
+        title: '導入重點',
         columns: 3,
         items: [
           {
@@ -228,9 +296,39 @@ export const productDetailPagesZhTw = {
               '確認哪些內容應標準化、哪些可依設備差異調整，以及未來修改如何審查。'
           },
           {
-            title: '資料用途',
+            title: '資料彙整與監控',
             description:
-              '把 Historian、趨勢、報表與 Dashboard 範圍綁定實際營運問題，避免只收資料卻沒有決策路徑。'
+              '把即時視覺化、Historian 趨勢、報表、Dashboard 與自訂查詢綁定實際營運問題，避免只收資料卻沒有決策路徑。'
+          }
+        ]
+      },
+      {
+        type: 'process-steps',
+        title: '從工廠模型到可使用的營運資料',
+        items: [
+          {
+            stepLabel: '01',
+            title: '定義工廠模型',
+            description:
+              '在模板、圖控與 Historian Tag 擴散前，先對齊區域、設備、物件與命名規則。'
+          },
+          {
+            stepLabel: '02',
+            title: '建立 HMI 與資料標準',
+            description:
+              '依實際營運決策，整理 InTouch 畫面、告警脈絡、Historian Tag、報表、Dashboard 與查詢需求。'
+          },
+          {
+            stepLabel: '03',
+            title: '整合控制與資料系統',
+            description:
+              '協調 AVEVA 與 PLC、SCADA、網路、MES、報表及維護團隊的介面。'
+          },
+          {
+            stepLabel: '04',
+            title: '準備維護交接',
+            description:
+              '文件化物件結構、模板規則、資料假設與支援責任，讓現場能接手維護。'
           }
         ]
       },
@@ -278,7 +376,7 @@ export const productDetailPagesZhTw = {
       {
         type: 'proof-strip',
         tone: 'light',
-        title: '適合優先整理 Siemens PLC 的情境',
+        title: 'Siemens PLC 導入範圍',
         items: [
           {
             title: 'PLC 交付週期',
@@ -288,7 +386,7 @@ export const productDetailPagesZhTw = {
           {
             title: '硬體脈絡',
             description:
-              '需要同時檢視現行控制器、遠端 I/O、舊型平台與切換限制。'
+              '需要同時檢視 S7-1500、S7-1200、ET 200SP、舊型 S7、S5、TI 控制器與切換限制。'
           },
           {
             title: '軟體脈絡',
@@ -304,7 +402,7 @@ export const productDetailPagesZhTw = {
       },
       {
         type: 'capability-list',
-        title: '雷力如何協助導入',
+        title: '雷力承接範圍',
         items: [
           {
             title: '規格與控制設計',
@@ -340,18 +438,129 @@ export const productDetailPagesZhTw = {
       },
       {
         type: 'card-grid',
-        title: '導入前需要先釐清的事',
+        title: 'Siemens 硬體覆蓋範圍',
+        mediaId: 's7-1200',
+        mediaPlacement: 'after',
         columns: 3,
         items: [
           {
-            title: '控制器世代',
+            title: 'S7-1500 / F / T / R / H / HF',
             description:
-              '先確認專案核心是現行控制器、遠端 I/O，或舊型硬體，再決定工具與搬遷範圍。'
+              '適用於機台、製程、安全、備援與較高可用性架構的現行控制器家族。'
           },
           {
-            title: '網路與協定路徑',
+            title: 'S7-1200 / F / G2',
             description:
-              '把 Fieldbus、Serial、Cellular、備援協定與其他通訊需求放進試車及維護風險一起評估。'
+              '適用於機台、skid、小型系統與分散式控制需求的 compact 控制器。'
+          },
+          {
+            title: 'SIMATIC ET 200SP',
+            description:
+              '遠端 I/O 與分散式控制脈絡，需與網路與盤體設計一起規劃。'
+          },
+          {
+            title: 'S7-300 / F / T',
+            description:
+              '舊型平台脈絡，常見於支援、搬遷、相容性檢查與分階段汰換。'
+          },
+          {
+            title: 'S7-400 / H',
+            description:
+              '大型或備援舊系統脈絡，切換方式與停機假設需要更謹慎地規劃。'
+          },
+          {
+            title: 'S7-200、S5 與 TI-505',
+            description:
+              '較舊控制器家族，通常需要先做搬遷評估，再改動既有系統。'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'Siemens 軟體覆蓋範圍',
+        mediaId: 'tia-portal',
+        mediaPlacement: 'after',
+        columns: 3,
+        items: [
+          {
+            title: 'TIA Portal',
+            description: '現行 Siemens 控制器、HMI 與試車工作的工程環境。'
+          },
+          {
+            title: 'SIMATIC Manager / Step 7',
+            description: '舊型工程脈絡，可能需要支援、文件整理或搬遷規劃。'
+          },
+          {
+            title: 'WinCC 與 WinCC OA',
+            description:
+              'HMI / SCADA 軟體脈絡，需要對齊 PLC Tag、告警與操作流程。'
+          },
+          {
+            title: 'WinCC Basic / Comfort / Advanced',
+            description: 'Panel 與機台層 HMI 範圍，用於操作可視性與現場控制。'
+          },
+          {
+            title: 'WinCC Professional / Unified',
+            description: '較大型 HMI / SCADA 與現代化視覺化脈絡，支援廠級營運。'
+          },
+          {
+            title: 'PCS7、PCS neo、SIMATIC IT 與 SIMOTION',
+            description: 'DCS、MES、運動控制與上層整合需求的 Siemens 生態脈絡。'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: '服務與整合覆蓋範圍',
+        columns: 3,
+        items: [
+          {
+            title: 'PLC 與 HMI 程式設計',
+            description:
+              '規劃 PLC 邏輯與 HMI 行為，讓操作員能看懂、診斷並支援控制行為。'
+          },
+          {
+            title: 'Service calls 與 automation support',
+            description:
+              '協助現場團隊定位控制、通訊與啟用問題，提供實務工程支援。'
+          },
+          {
+            title: 'Platform integration',
+            description:
+              '把 PLC 範圍接到 SCADA、MES、Historian、報表或外部資料系統需求。'
+          },
+          {
+            title: 'SCADA software',
+            description:
+              '協調 PLC Tag、告警、操作畫面與監控點位和上位系統的關係。'
+          },
+          {
+            title: 'Legacy system migration',
+            description: '在替換前評估舊控制器、軟體工具、I/O 假設與切換風險。'
+          },
+          {
+            title: 'PROFIBUS / PROFINET integration',
+            description:
+              '以試車、診斷與可維護性為前提，規劃 fieldbus 與工業乙太網路徑。'
+          }
+        ]
+      },
+      {
+        type: 'card-grid',
+        title: 'DCS 與產業情境',
+        mediaId: 'pcs7',
+        mediaPlacement: 'after',
+        columns: 3,
+        items: [
+          {
+            title: 'PCS7 與 PCS neo DCS',
+            description:
+              '大型製程環境可能需要 FEED study、規格、程式、安裝、qualification 與試車規劃。'
+          },
+          {
+            title: '製程與機台產業',
+            description:
+              'Siemens PLC 範圍可能出現在航太、汽車、食品飲料、醫療製藥、油氣、包裝與 converting lines。'
           },
           {
             title: '可重用邏輯標準',
@@ -386,6 +595,12 @@ export const productDetailPagesZhTw = {
             title: '支援切換與交接',
             description: '收斂搬遷風險，整理關鍵行為，協助系統交給現場維護。'
           }
+        ]
+      },
+      {
+        type: 'closing-note',
+        paragraphs: [
+          'Siemens PLC 專案若能把控制器選型、軟體脈絡、HMI / SCADA 訊號、網路假設、搬遷風險與試車證據放在同一條交付路徑上，後續維護會清楚很多。'
         ]
       }
     ]
