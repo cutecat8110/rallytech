@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" role="img" aria-labelledby="title desc">
+  <title id="title">Grayscale image placeholder</title>
+  <desc id="desc">Neutral grayscale placeholder reserved for a future approved visual asset.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0f2f3"/>
+      <stop offset=".5" stop-color="#d1d6d9"/>
+      <stop offset="1" stop-color="#9ea7ad"/>
+    </linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M60 0H0v60" fill="none" stroke="#838c92" stroke-opacity=".2" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <rect width="900" height="900" fill="url(#grid)"/>
+  <path d="M95 710 320 485l135 135 112-112 290 290H95z" fill="#757f85" opacity=".32"/>
+  <circle cx="695" cy="220" r="70" fill="#757f85" opacity=".25"/>
+</svg>

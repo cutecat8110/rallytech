@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "pi-server-detail-hero stock image",
-    "licenseNote": "Pexels License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Pexels",
-    "sourceReference": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
-    "src": "/images/stock/services/pi-server/detail-hero-server-room-operations.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/hero.svg"
   },
   "candidates": [
     {

@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "scada-hmi-graphics-overview-card stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/white-digital-device-at-71-lS_YkX3QS9c",
-    "src": "/images/stock/services/scada-hmi-graphics/overview-card-hmi-control-screen.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/square.svg"
   },
   "candidates": [
     {

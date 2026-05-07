@@ -87,7 +87,7 @@
 - prompt research、recipe 與來源判讀放在 `docs/references/`。
 - 生成圖片輸出仍沿用 `public/images/generated/...`；manifest 只保存 metadata 與路徑。
 - 每次生成成功後，generate script 會追加 `docs/project/ai-image-usage/YYYY-MM-DD.md`；使用人、使用頁面與生成費用是必填 CLI metadata。
-- active stock 的 `stock.src` 與 candidate 的 `sourceReference` 應跟隨 `data/image-assets/catalog.json` 的 canonical stock path（目前首頁為 `/images/stock/home/`）。
+- active fallback 的 `stock.src` 與 candidate 的 `sourceReference` 應跟隨 `data/image-assets/catalog.json`；免費圖庫已撤下時，fallback 改指向 `/images/placeholders/grayscale/`。
 - generate / promote workflow 會同步更新 `app/utils/home-page-image-registry.ts` 與 `data/image-assets/catalog.json`。
 - 不把這個資料夾當成 `public/images` 的 owner docs；若 inventory 或 naming 規則要改，回到 `data/image-assets/`。
 - 若流程規則要改，回到 `docs/project/05-Reference-Clone工作流與降級規範.md`。

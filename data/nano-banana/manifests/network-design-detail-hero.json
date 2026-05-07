@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "network-design-detail-hero stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-network-with-wires-connected-to-it-dyUp7WPu5q4",
-    "src": "/images/stock/services/network-design/detail-hero-industrial-network-room.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/hero.svg"
   },
   "candidates": [
     {

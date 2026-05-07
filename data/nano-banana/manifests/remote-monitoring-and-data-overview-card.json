@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "remote-monitoring-and-data-overview-card stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/a-control-room-with-a-map-on-the-wall-tDc7zZ93cr8",
-    "src": "/images/stock/services/remote-monitoring-and-data/overview-card-monitor-wall-control-center.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/square.svg"
   },
   "candidates": [
     {

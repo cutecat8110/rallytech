@@ -17,9 +17,7 @@ const messages = useRallyMessages()
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const servicesPath = computed(() => localePath('/services'))
-const servicesOgImage = withSiteUrl(
-  '/images/stock/services/overview/services-overview-hero-control-room.jpg'
-)
+const servicesOgImage = withSiteUrl('/images/placeholders/grayscale/hero.svg')
 
 useSeoMeta({
   title: () => messages.value.servicesPage.seo.title,

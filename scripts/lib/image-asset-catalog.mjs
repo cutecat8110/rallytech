@@ -49,6 +49,8 @@ const imageReferenceDocPaths = Object.freeze([
 export const IMAGE_ASSET_KINDS = Object.freeze([
   'brand',
   'stock',
+  'provided',
+  'placeholder',
   'ai-generated'
 ])
 export const IMAGE_ASSET_STATUSES = Object.freeze([
@@ -87,7 +89,7 @@ const GENERATED_OUTPUT_DIRECTORIES = Object.freeze({
 })
 
 /**
- * @typedef {'brand' | 'stock' | 'ai-generated'} ImageAssetKind
+ * @typedef {'brand' | 'stock' | 'provided' | 'placeholder' | 'ai-generated'} ImageAssetKind
  * @typedef {'active' | 'candidate-history' | 'deprecated'} ImageAssetStatus
  *
  * @typedef {Object} ImageAssetRecord

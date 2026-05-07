@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { siteLocaleCodes } from '~/composables/useRallyI18n'
+import { publicLocaleCodes } from '~/composables/useRallyI18n'
 import {
   contrastSolidDarkButtonTheme,
   iconUtilityLightButtonTheme,
@@ -17,12 +17,6 @@ const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 const { locale } = useI18n()
 const route = useRoute()
-const {
-  hasAnyLatestCandidate,
-  isImageToggleVisible,
-  isNanoEnabled,
-  setPreferredMode
-} = useHomePageImageMode()
 
 const productsRootPath = computed(() => localePath('/products'))
 const servicesRootPath = computed(() => localePath('/services'))
@@ -54,25 +48,13 @@ const homePath = computed(() => localePath('/'))
 const contactPath = computed(() => localePath('/contact'))
 const isContactRoute = computed(() => isLocalizedPathActive(contactPath.value))
 const localeLinks = computed(() =>
-  siteLocaleCodes.map((code) => ({
+  publicLocaleCodes.map((code) => ({
     code,
     label: messages.value.nav.languageOptions[code],
     to: switchLocalePath(code) || localePath('/')
   }))
 )
 
-const imageModeOptions = [
-  { mode: 'stock', label: 'FREE' },
-  { mode: 'nano', label: 'AI' }
-] as const
-
-const nanoToggleLabel = computed(() =>
-  hasAnyLatestCandidate.value
-    ? messages.value.nav.nanoToggleAvailable
-    : messages.value.nav.nanoToggleUnavailable
-)
-
-const showNanoToggle = computed(() => isImageToggleVisible.value)
 const isProductsOverviewRoute = computed(
   () => route.path === productsRootPath.value
 )
@@ -321,33 +303,6 @@ watch(isMobileMenuOpen, (open) => {
         </nav>
 
         <div class="home-sys-header__actions">
-          <UTheme v-if="showNanoToggle" :ui="segmentedControlButtonTheme">
-            <div
-              class="home-sys-header__image-mode"
-              role="group"
-              :aria-label="nanoToggleLabel"
-            >
-              <UButton
-                v-for="item in imageModeOptions"
-                :key="item.mode"
-                type="button"
-                color="neutral"
-                variant="ghost"
-                size="xs"
-                :label="item.label"
-                :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
-                :class="[
-                  'home-sys-header__segmented-button',
-                  'home-sys-header__image-mode-button'
-                ]"
-                :aria-pressed="
-                  (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
-                "
-                @click="setPreferredMode(item.mode)"
-              />
-            </div>
-          </UTheme>
-
           <UTheme :ui="segmentedControlButtonTheme">
             <div
               class="home-sys-header__locale"
@@ -380,33 +335,6 @@ watch(isMobileMenuOpen, (open) => {
               :label="messages.nav.contactCta"
               class="home-sys-header__contact-button hidden md:inline-flex"
             />
-          </UTheme>
-
-          <UTheme v-if="showNanoToggle" :ui="segmentedControlButtonTheme">
-            <div
-              class="home-sys-header__mobile-image-mode"
-              role="group"
-              :aria-label="nanoToggleLabel"
-            >
-              <UButton
-                v-for="item in imageModeOptions"
-                :key="`mobile-${item.mode}`"
-                type="button"
-                color="neutral"
-                variant="ghost"
-                size="xs"
-                :label="item.label"
-                :disabled="item.mode === 'nano' && !hasAnyLatestCandidate"
-                :class="[
-                  'home-sys-header__segmented-button',
-                  'home-sys-header__image-mode-button'
-                ]"
-                :aria-pressed="
-                  (item.mode === 'nano') === isNanoEnabled ? 'true' : 'false'
-                "
-                @click="setPreferredMode(item.mode)"
-              />
-            </div>
           </UTheme>
 
           <UTheme :ui="iconUtilityLightButtonTheme">
@@ -594,7 +522,7 @@ watch(isMobileMenuOpen, (open) => {
         </UTheme>
         <UTheme :ui="segmentedControlButtonTheme">
           <div
-            class="mt-2 grid grid-cols-3 gap-0 border border-secondary-200 bg-secondary-50 p-0"
+            class="mt-2 grid grid-cols-2 gap-0 border border-secondary-200 bg-secondary-50 p-0"
             role="group"
             :aria-label="messages.nav.languageLabel"
           >
@@ -829,38 +757,6 @@ watch(isMobileMenuOpen, (open) => {
   justify-self: end;
 }
 
-.home-sys-header__image-mode {
-  display: none;
-  align-items: center;
-  gap: 0;
-  border: 1px solid var(--color-secondary-200);
-  border-radius: var(--radius-xs);
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-50) 82%,
-    var(--color-white)
-  );
-  padding: 0;
-}
-
-.home-sys-header__mobile-image-mode {
-  display: none;
-  align-items: center;
-  gap: 0;
-  border: 1px solid var(--color-secondary-200);
-  border-radius: var(--radius-xs);
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-50) 82%,
-    var(--color-white)
-  );
-  padding: 0;
-}
-
-.home-sys-header__image-mode-button {
-  width: 3.25rem;
-}
-
 .home-sys-header__segmented-button {
   line-height: 1;
 }
@@ -986,10 +882,6 @@ watch(isMobileMenuOpen, (open) => {
     --home-sys-header-control-gap: 0.45rem;
   }
 
-  .home-sys-header__image-mode {
-    display: inline-flex;
-  }
-
   .home-sys-header__locale {
     display: inline-flex;
   }
@@ -1002,16 +894,8 @@ watch(isMobileMenuOpen, (open) => {
 }
 
 @media (max-width: 767px) {
-  .home-sys-header__mobile-image-mode {
-    display: inline-flex;
-  }
-
   .home-sys-header__top a {
     font-size: 0.75rem;
-  }
-
-  .home-sys-header__mobile-image-mode .home-sys-header__image-mode-button {
-    width: 2.85rem;
   }
 }
 </style>

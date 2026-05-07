@@ -11,9 +11,7 @@ const messages = useRallyMessages()
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const contactPath = computed(() => localePath('/contact'))
-const contactOgImage = withSiteUrl(
-  '/images/stock/contact/contact-hero-control-room-team.jpg'
-)
+const contactOgImage = withSiteUrl('/images/placeholders/grayscale/hero.svg')
 
 useSeoMeta({
   title: () => messages.value.contactPage.seo.title,

@@ -25,17 +25,16 @@ export const contactPageHeroImage: ContactPageImageSlotRegistry = {
   slot: 'contact-hero',
   liveSource: 'nano',
   stock: {
-    src: '/images/stock/contact/contact-hero-urban-roofline.jpg',
+    src: '/images/placeholders/grayscale/hero.svg',
     alt: 'Modern urban roofline and glass towers under an overcast sky',
     label: 'Contact Page Hero Stock Image',
     candidateId: null,
     model: null,
     promptId: null,
-    source: 'Pexels',
-    sourceReference:
-      'https://www.pexels.com/photo/shanghai-skyscrapers-with-modern-roof-structure-35632125/',
+    source: 'RallyTech grayscale placeholder',
+    sourceReference: null,
     createdAt: null,
-    licenseNote: 'Pexels License',
+    licenseNote: 'Internal placeholder; 待補正式素材',
     notes:
       'Selected for the contact-page hero because the broad roofline and distant glass towers produce a calmer page-title banner that is closer to the reference contact page rhythm than the previous control-room scene.',
     objectPosition: 'center 58%'

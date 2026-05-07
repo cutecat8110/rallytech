@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "historians-detail-feature stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-rack-of-computer-equipment-eqd0f78u9nI",
-    "src": "/images/stock/services/historians/historian-server-rack-close-up.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/portrait.svg"
   },
   "candidates": [
     {

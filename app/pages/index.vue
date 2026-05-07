@@ -13,9 +13,7 @@ definePageMeta({
 
 const messages = useRallyMessages()
 const { locale } = useI18n()
-const homeOgImage = withSiteUrl(
-  '/images/stock/home/hero-simulator-control-room.jpg'
-)
+const homeOgImage = withSiteUrl('/images/placeholders/grayscale/hero.svg')
 
 useSeoMeta({
   title: () => messages.value.home.seo.title,

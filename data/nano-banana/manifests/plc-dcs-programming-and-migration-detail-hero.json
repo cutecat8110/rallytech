@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "plc-dcs-programming-and-migration-detail-hero stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/man-works-on-a-computer-in-a-manufacturing-setting-RyMTGAYZpjY",
-    "src": "/images/stock/services/plc-dcs-programming-and-migration/detail-hero-automation-engineer-laptop.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/hero.svg"
   },
   "candidates": [
     {

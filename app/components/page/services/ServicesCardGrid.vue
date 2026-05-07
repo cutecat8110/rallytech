@@ -258,10 +258,6 @@ const serviceItems = computed(() =>
     padding-top: 0;
   }
 
-  .services-sys-grid > :nth-child(2n) {
-    margin-top: clamp(1.35rem, 3vw, 2.8rem);
-  }
-
   .services-sys-listing__body {
     max-width: 33rem;
   }

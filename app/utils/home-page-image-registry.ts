@@ -72,18 +72,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'home-hero',
     liveSource: 'nano',
     stock: {
-      src: '/images/stock/home/hero-simulator-control-room.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: '',
       label: 'Stock Hero',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference:
-        'https://www.pexels.com/photo/engineers-using-simulator-3862132/',
+      source: 'RallyTech grayscale placeholder',
+      sourceReference: null,
       createdAt: null,
-      licenseNote: 'Pexels License',
-      notes: 'Current approved homepage Hero asset.'
+      licenseNote: 'Internal placeholder; 待補正式素材',
+      notes: '待補正式素材。原免費圖庫已撤下。'
     },
     liveNano: {
       src: '/images/generated/home/hero/home-hero-20260415053535242-5lupkr.jpg',
@@ -178,19 +177,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'services-surface',
     liveSource: 'nano',
     stock: {
-      src: '/images/stock/home/services-industrial-panel-bg.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: 'Ã¥Â·Â¥Ã¦Â¥Â­Ã©ÂÂ¢Ã¦ÂÂ¿Ã¨Æ’Å’Ã¦â„¢Â¯',
       label: 'Services Surface Stock Asset',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference:
-        'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
+      source: 'RallyTech grayscale placeholder',
+      sourceReference: null,
       createdAt: null,
-      licenseNote: 'Pexels License',
-      notes:
-        'Canonical stock placeholder for the Services section background surface role.'
+      licenseNote: 'Internal placeholder; 待補正式素材',
+      notes: '待補正式素材。原免費圖庫已撤下。'
     },
     liveNano: {
       src: '/images/generated/home/services-surface/services-surface-20260414095323038-stbd7u.jpg',
@@ -227,18 +224,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'ote-background',
     liveSource: 'nano',
     stock: {
-      src: '/images/stock/home/ote-control-room-bg.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: 'Ã¦â€¢Â´Ã¥ÂË†Ã§â€ºÂ£Ã¦Å½Â§Ã¥Â®Â¤Ã¨Æ’Å’Ã¦â„¢Â¯',
       label: 'OTE Background Stock Asset',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference: 'https://www.pexels.com/photo/control-room-256219/',
+      source: 'RallyTech grayscale placeholder',
+      sourceReference: null,
       createdAt: null,
-      licenseNote: 'Pexels License',
-      notes:
-        'Canonical stock placeholder for the One-Touch Experience section background image role.'
+      licenseNote: 'Internal placeholder; 待補正式素材',
+      notes: '待補正式素材。原免費圖庫已撤下。'
     },
     liveNano: {
       src: '/images/generated/home/ote-background/ote-background-20260414095354979-oqxa07.jpg',
@@ -280,18 +276,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: 'mission',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/mission-tab-mission.jpg',
+          src: '/images/placeholders/grayscale/square.svg',
           alt: '',
           label: 'Mission State Stock Image',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes: 'Current approved stock image for the mission tab state.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/mission-square/mission/mission-square-mission-20260414095425066-u3vzh9.jpg',
@@ -329,18 +324,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: 'join-us',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/mission-tab-join-us.jpg',
+          src: '/images/placeholders/grayscale/square.svg',
           alt: '',
           label: 'Join Us State Stock Image',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/female-engineer-with-equipment-3862635/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes: 'Current approved stock image for the Join Us tab state.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/mission-square/join-us/mission-square-join-us-20260414095456057-vz9w3t.jpg',
@@ -379,18 +373,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'mission-cutout',
     liveSource: 'nano',
     stock: {
-      src: '/images/stock/home/mission-engineer-cutout.jpg',
+      src: '/images/placeholders/grayscale/cutout.svg',
       alt: '',
       label: 'Mission Cutout Stock Image',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference:
-        'https://www.pexels.com/photo/engineer-reviewing-documents-in-factory-32845698/',
+      source: 'RallyTech grayscale placeholder',
+      sourceReference: null,
       createdAt: null,
-      licenseNote: 'Pexels License',
-      notes: 'Current approved stock image for the mission cutout.'
+      licenseNote: 'Internal placeholder; 待補正式素材',
+      notes: '待補正式素材。原免費圖庫已撤下。'
     },
     liveNano: {
       src: '/images/generated/home/mission-cutout/mission-cutout-20260414095532473-gkr1ql.jpg',
@@ -427,19 +420,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
     slot: 'connector-image',
     liveSource: 'nano',
     stock: {
-      src: '/images/stock/home/footer-engineering-team.jpg',
+      src: '/images/placeholders/grayscale/landscape.svg',
       alt: 'Ã¥Â·Â¥Ã§Â¨â€¹Ã¥Å“ËœÃ©Å¡Å Ã¦â€“Â¼Ã¥Â¯Â¦Ã©Â©â€”Ã§â€™Â°Ã¥Â¢Æ’Ã¥Ââ€Ã¤Â½Å“Ã¨Â¨Å½Ã¨Â«â€“',
       label: 'Connector Image Stock Asset',
       candidateId: null,
       model: null,
       promptId: null,
-      source: 'Pexels',
-      sourceReference:
-        'https://www.pexels.com/photo/engineers-at-work-3861973/',
+      source: 'RallyTech grayscale placeholder',
+      sourceReference: null,
       createdAt: null,
-      licenseNote: 'Pexels License',
-      notes:
-        'Canonical stock placeholder for the footer connector breakout image role.'
+      licenseNote: 'Internal placeholder; 待補正式素材',
+      notes: '待補正式素材。原免費圖庫已撤下。'
     },
     liveNano: {
       src: '/images/generated/home/connector-image/connector-image-20260414095600902-dvpnai.jpg',
@@ -481,19 +472,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '01',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/services-industrial-panel-bg.jpg',
+          src: '/images/placeholders/grayscale/hero.svg',
           alt: '',
           label: 'Process Step 01 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes:
-            'Reused homepage services stock asset as the about-process-step 01 fallback.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/about-process/01/about-process-step-01-20260415082126414-q4m8bi.jpg',
@@ -529,19 +518,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '02',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/hero-simulator-control-room.jpg',
+          src: '/images/placeholders/grayscale/hero.svg',
           alt: '',
           label: 'Process Step 02 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/engineers-using-simulator-3862132/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes:
-            'Reused homepage hero stock asset as the about-process-step 02 fallback.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/about-process/02/about-process-step-02-20260415082207544-7jig6x.jpg',
@@ -577,19 +564,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '03',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/mission-tab-mission.jpg',
+          src: '/images/placeholders/grayscale/square.svg',
           alt: '',
           label: 'Process Step 03 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/electrician-operating-switchboard-17842834/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes:
-            'Reused homepage mission stock asset as the about-process-step 03 fallback.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/about-process/03/about-process-step-03-20260415082241973-zroesd.jpg',
@@ -625,19 +610,17 @@ export const homePageImageRegistry: HomePageImageRegistry = {
         state: '04',
         liveSource: 'nano',
         stock: {
-          src: '/images/stock/home/footer-engineering-team.jpg',
+          src: '/images/placeholders/grayscale/landscape.svg',
           alt: '',
           label: 'Process Step 04 Stock',
           candidateId: null,
           model: null,
           promptId: null,
-          source: 'Pexels',
-          sourceReference:
-            'https://www.pexels.com/photo/engineers-at-work-3861973/',
+          source: 'RallyTech grayscale placeholder',
+          sourceReference: null,
           createdAt: null,
-          licenseNote: 'Pexels License',
-          notes:
-            'Reused homepage connector stock asset as the about-process-step 04 fallback.'
+          licenseNote: 'Internal placeholder; 待補正式素材',
+          notes: '待補正式素材。原免費圖庫已撤下。'
         },
         liveNano: {
           src: '/images/generated/home/about-process/04/about-process-step-04-20260415082307517-dfiew8.jpg',

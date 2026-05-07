@@ -49,18 +49,17 @@ export const servicesOverviewHeroRegistry: ServicesOverviewHeroRegistry = {
   slot: 'services-overview-hero',
   liveSource: 'nano',
   stock: {
-    src: '/images/stock/services/overview/services-overview-hero-control-room.jpg',
+    src: '/images/placeholders/grayscale/hero.svg',
     alt: '',
     label: 'services-overview-hero stock image',
     candidateId: null,
     model: null,
     promptId: null,
-    source: 'Unsplash',
-    sourceReference:
-      'https://unsplash.com/photos/a-control-room-with-a-desk-and-two-chairs-p7Bfwn_VKRQ',
+    source: 'RallyTech grayscale placeholder',
+    sourceReference: null,
     createdAt: null,
-    licenseNote: 'Unsplash License',
-    notes: null,
+    licenseNote: 'Internal placeholder; 待補正式素材',
+    notes: '待補正式素材。原免費圖庫已撤下。',
     objectPosition: 'center center'
   },
   liveNano: {
@@ -101,18 +100,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'scada-hmi-graphics-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/scada-hmi-graphics/overview-card-hmi-control-screen.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'scada-hmi-graphics-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/white-digital-device-at-71-lS_YkX3QS9c',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -154,18 +152,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'scada-hmi-graphics-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'scada-hmi-graphics-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/advanced-control-room-in-el-agustino-lima-32529341/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -205,18 +202,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'scada-hmi-graphics-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/scada-hmi-graphics/industrial-hmi-operator-tablet.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'scada-hmi-graphics-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/person-holding-black-tablet-computer-Bg0Geue-cY8',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -260,18 +256,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'ie-services-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/ie-services/overview-card-instrument-panel-gauges.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'ie-services-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/white-and-red-electric-meter-dIrSAyhCDa0',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -311,18 +306,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'ie-services-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/ie-services/detail-hero-electrical-engineer-inspection.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'ie-services-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-man-in-a-factory-working-on-a-piece-of-equipment-zekShM5_K64',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -362,18 +356,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'ie-services-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/ie-services/instrument-control-panel-close-up.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'ie-services-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-close-up-of-a-control-panel-AGQZprOABgQ',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -415,18 +408,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'plc-dcs-programming-and-migration-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/plc-dcs-programming-and-migration/overview-card-plc-control-cabinet.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'plc-dcs-programming-and-migration-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/electrical-panel-with-wires-and-components-q0Jo_J5YxHY',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -468,18 +460,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'plc-dcs-programming-and-migration-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/plc-dcs-programming-and-migration/detail-hero-automation-engineer-laptop.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'plc-dcs-programming-and-migration-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/man-works-on-a-computer-in-a-manufacturing-setting-RyMTGAYZpjY',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -521,18 +512,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'plc-dcs-programming-and-migration-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/plc-dcs-programming-and-migration/control-system-engineer-laptop.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'plc-dcs-programming-and-migration-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-using-black-laptop-computer-aL2rxQhEfAM',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -578,18 +568,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'pi-server-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/pi-server/overview-card-server-rack-lights.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'pi-server-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-close-up-of-a-green-light-in-a-server-zMrGQu21qcU',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -629,18 +618,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'pi-server-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/pi-server/detail-hero-server-room-operations.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'pi-server-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/server-racks-on-data-center-4508751/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -680,18 +668,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'pi-server-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/pi-server/industrial-server-room-dashboard.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'pi-server-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-close-up-of-a-computer-in-a-dark-room-Kqg_6JPhxRk',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -733,18 +720,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'historians-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/historians/overview-card-industrial-server-rack.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'historians-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/close-up-of-computer-hardware-17489157/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -784,18 +770,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'historians-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/historians/detail-hero-engineer-data-screens.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'historians-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/man-in-white-and-black-striped-polo-shirt-in-front-of-monitor-At4udACn5oA',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -835,18 +820,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'historians-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/historians/historian-server-rack-close-up.jpg',
+        src: '/images/placeholders/grayscale/portrait.svg',
         alt: '',
         label: 'historians-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-close-up-of-a-rack-of-computer-equipment-eqd0f78u9nI',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -888,19 +872,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'it-infrastructure-overview-card',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/it-infrastructure/overview-card-server-racks-engineer.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'it-infrastructure-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '60% 44%'
       },
       liveNano: null,
@@ -910,19 +892,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'it-infrastructure-detail-hero',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/it-infrastructure/detail-hero-data-center-racks.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'it-infrastructure-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/server-racks-on-data-center-5408005/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '42% 50%'
       },
       liveNano: null,
@@ -932,19 +912,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'it-infrastructure-detail-feature',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/it-infrastructure/detail-feature-data-hub-storage.jpg',
+        src: '/images/placeholders/grayscale/portrait.svg',
         alt: '',
         label: 'it-infrastructure-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/close-up-of-a-data-hub-diskstation-19825057/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 1 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '56% 48%'
       },
       liveNano: null,
@@ -956,18 +934,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'cybersecurity-network-overview-card',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/cybersecurity-network/overview-card-network-rack.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'cybersecurity-network-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference: 'https://www.pexels.com/photo/network-rack-17323801/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '44% 46%'
       },
       liveNano: null,
@@ -977,19 +954,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'cybersecurity-network-detail-hero',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/cybersecurity-network/detail-hero-engineer-core-switch.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'cybersecurity-network-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/engineer-fixing-core-swith-in-data-center-room-19226354/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '54% 48%'
       },
       liveNano: null,
@@ -999,19 +974,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'cybersecurity-network-detail-feature',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/cybersecurity-network/detail-feature-server-cables.jpg',
+        src: '/images/placeholders/grayscale/portrait.svg',
         alt: '',
         label: 'cybersecurity-network-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/cables-connected-on-server-2881229/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 2 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '54% 48%'
       },
       liveNano: null,
@@ -1023,18 +996,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'network-design-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/network-design/overview-card-network-switch-cables.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'network-design-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/blue-utp-cord-40XgDxBfYXM',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1074,18 +1046,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'network-design-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/network-design/detail-hero-industrial-network-room.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'network-design-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-close-up-of-a-network-with-wires-connected-to-it-dyUp7WPu5q4',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1125,18 +1096,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'network-design-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/network-design/network-servers-connected-cables.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'network-design-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/network-servers-are-connected-with-cables-3qZ6qT1DKxU',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1178,19 +1148,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'offshore-wind-operations-overview-card',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/offshore-wind-operations/overview-card-offshore-wind-turbines.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'offshore-wind-operations-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/wind-turbines-on-the-sea-13223602/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '60% 46%'
       },
       liveNano: null,
@@ -1200,19 +1168,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'offshore-wind-operations-detail-hero',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/offshore-wind-operations/detail-hero-offshore-electrical-station.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'offshore-wind-operations-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/wind-turbines-and-electrical-station-in-the-sea-26971292/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '58% 44%'
       },
       liveNano: null,
@@ -1222,19 +1188,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'offshore-wind-operations-detail-feature',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/offshore-wind-operations/detail-feature-north-sea-wind-turbines.jpg',
+        src: '/images/placeholders/grayscale/portrait.svg',
         alt: '',
         label: 'offshore-wind-operations-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/offshore-wind-turbines-in-north-sea-scotland-31656794/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes:
-          'Stock asset selected for docs/rewrite/文案.md item 3 new service.',
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: '60% 50%'
       },
       liveNano: null,
@@ -1246,18 +1210,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'remote-monitoring-and-data-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/remote-monitoring-and-data/overview-card-monitor-wall-control-center.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'remote-monitoring-and-data-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-control-room-with-a-map-on-the-wall-tDc7zZ93cr8',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1299,18 +1262,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'remote-monitoring-and-data-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/remote-monitoring-and-data/detail-hero-remote-monitoring-laptop.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'remote-monitoring-and-data-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/technicians-in-control-room-operating-machinery-32845695/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1352,18 +1314,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'remote-monitoring-and-data-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/remote-monitoring-and-data/remote-monitoring-control-room.jpg',
+        src: '/images/placeholders/grayscale/portrait.svg',
         alt: '',
         label: 'remote-monitoring-and-data-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-man-sitting-in-front-of-multiple-monitors-TtMKq3lJm-U',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1407,18 +1368,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'alarm-monitoring-overview-card',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/alarm-monitoring/overview-card-industrial-alarm-panel.jpg',
+        src: '/images/placeholders/grayscale/square.svg',
         alt: '',
         label: 'alarm-monitoring-overview-card stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/colorful-buttons-on-wall-19316514/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1458,18 +1418,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'alarm-monitoring-detail-hero',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/alarm-monitoring/detail-hero-control-room-alarm-screens.jpg',
+        src: '/images/placeholders/grayscale/hero.svg',
         alt: '',
         label: 'alarm-monitoring-detail-hero stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Pexels',
-        sourceReference:
-          'https://www.pexels.com/photo/engineer-at-control-room-monitoring-screens-32845700/',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Pexels License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1509,18 +1468,17 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'alarm-monitoring-detail-feature',
       liveSource: 'nano',
       stock: {
-        src: '/images/stock/services/alarm-monitoring/alarm-monitoring-screen.jpg',
+        src: '/images/placeholders/grayscale/landscape.svg',
         alt: '',
         label: 'alarm-monitoring-detail-feature stock image',
         candidateId: null,
         model: null,
         promptId: null,
-        source: 'Unsplash',
-        sourceReference:
-          'https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-shelf-2116Y7fsQu0',
+        source: 'RallyTech grayscale placeholder',
+        sourceReference: null,
         createdAt: null,
-        licenseNote: 'Unsplash License',
-        notes: null,
+        licenseNote: 'Internal placeholder; 待補正式素材',
+        notes: '待補正式素材。原免費圖庫已撤下。',
         objectPosition: 'center center'
       },
       liveNano: {
@@ -1562,7 +1520,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-overview-card',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/web-development/overview-card-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/overview-card-web-development-kevin-workspace.jpg',
         alt: '',
         label: 'web-development-overview-card Kevin provided image',
         candidateId: null,
@@ -1583,7 +1541,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-detail-hero',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/web-development/detail-hero-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/detail-hero-web-development-kevin-workspace.jpg',
         alt: '',
         label: 'web-development-detail-hero Kevin provided image',
         candidateId: null,
@@ -1604,7 +1562,7 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-detail-feature',
       liveSource: 'stock',
       stock: {
-        src: '/images/stock/services/web-development/detail-feature-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/detail-feature-web-development-kevin-workspace.jpg',
         alt: '',
         label: 'web-development-detail-feature Kevin provided image',
         candidateId: null,

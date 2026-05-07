@@ -12,7 +12,7 @@ const { locale } = useI18n()
 const localePath = useLocalePath()
 const oneTouchPath = computed(() => localePath('/one-touch-experience'))
 const oneTouchOgImage = withSiteUrl(
-  '/images/stock/services/remote-monitoring-and-data/remote-monitoring-control-room.jpg'
+  '/images/placeholders/grayscale/portrait.svg'
 )
 
 useSeoMeta({

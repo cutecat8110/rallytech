@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "historians-overview-card stock image",
-    "licenseNote": "Pexels License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Pexels",
-    "sourceReference": "https://www.pexels.com/photo/close-up-of-computer-hardware-17489157/",
-    "src": "/images/stock/services/historians/overview-card-industrial-server-rack.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/square.svg"
   },
   "candidates": [
     {

@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "alarm-monitoring-detail-hero stock image",
-    "licenseNote": "Pexels License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Pexels",
-    "sourceReference": "https://www.pexels.com/photo/engineer-at-control-room-monitoring-screens-32845700/",
-    "src": "/images/stock/services/alarm-monitoring/detail-hero-control-room-alarm-screens.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/hero.svg"
   },
   "candidates": [
     {

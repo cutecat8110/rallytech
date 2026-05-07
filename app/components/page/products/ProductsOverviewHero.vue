@@ -14,7 +14,7 @@ const messages = useRallyMessages()
   >
     <template #media>
       <img
-        src="/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg"
+        src="/images/placeholders/grayscale/hero.svg"
         alt=""
         class="products-sys-overview-hero__image"
         decoding="async"

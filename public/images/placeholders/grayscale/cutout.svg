@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 960" role="img" aria-labelledby="title desc">
+  <title id="title">Grayscale cutout placeholder</title>
+  <desc id="desc">Neutral grayscale cutout placeholder reserved for a future approved visual asset.</desc>
+  <defs>
+    <linearGradient id="figure" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#cfd4d7"/>
+      <stop offset="1" stop-color="#858f95"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="960" fill="#eef0f1"/>
+  <path d="M0 720 720 520v440H0z" fill="#d3d7da"/>
+  <circle cx="360" cy="285" r="112" fill="url(#figure)" opacity=".78"/>
+  <path d="M170 845c22-214 92-342 190-342s168 128 190 342H170z" fill="url(#figure)" opacity=".72"/>
+  <path d="M90 845h540" stroke="#727c82" stroke-opacity=".35" stroke-width="12" stroke-linecap="round"/>
+</svg>

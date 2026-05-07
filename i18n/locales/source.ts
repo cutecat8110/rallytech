@@ -177,13 +177,10 @@ const messages = {
     contactCta: 'Contact Us',
     mobileOpenLabel: 'Open menu',
     mobileCloseLabel: 'Close menu',
-    nanoToggleAvailable: 'Toggle homepage Nano candidate images',
-    nanoToggleUnavailable: 'No homepage Nano candidate images are available',
     languageLabel: 'Switch language',
     languageOptions: {
       ['zh-tw']: '中文',
-      en: '英文',
-      source: '原始文案'
+      en: '英文'
     },
     items: [
       { label: 'About', href: '#about' },

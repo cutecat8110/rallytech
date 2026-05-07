@@ -299,923 +299,6 @@
       "notes": "Archived from the user-provided root public SVG into the brand asset path for the About partner section."
     },
     {
-      "assetId": "contact-hero-urban-roofline",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/contact/contact-hero-urban-roofline.jpg",
-      "canonicalName": "contact-hero-urban-roofline.jpg",
-      "scope": "contact",
-      "slot": "contact-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/shanghai-skyscrapers-with-modern-roof-structure-35632125/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/聯絡頁媒體素材來源.md#contact-hero",
-        "app/utils/contact-page-image-registry.ts#contactPageHeroImage",
-        "app/components/page/contact/ContactPageShell.vue#contact-sys-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Contact-page hero stock asset. The broad urban roofline and distant glass towers produce a calmer page-title banner that is closer to the reference contact-page hero rhythm while still fitting Rally Technology's built-environment positioning."
-    },
-    {
-      "assetId": "about-glass-facade-detail",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/about-glass-facade-detail.jpg",
-      "canonicalName": "about-glass-facade-detail.jpg",
-      "scope": "homepage",
-      "slot": "about-detail",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/reflective-glass-facade-of-modern-office-building-33643675/",
-      "manifestPath": "data/nano-banana/manifests/about-detail.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#About detail",
-        "data/nano-banana/manifests/about-detail.json#stock",
-        "app/utils/home-page-image-registry.ts#about-detail.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Canonical stock placeholder for the About section secondary facade-detail image role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "about-glass-office-towers",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/about-glass-office-towers.jpg",
-      "canonicalName": "about-glass-office-towers.jpg",
-      "scope": "homepage",
-      "slot": "about-primary",
-      "state": null,
-      "source": "Flickr / Openverse",
-      "licenseNote": "CC BY 2.0",
-      "sourceReference": "https://www.flickr.com/photos/84509731@N00/6336008954",
-      "manifestPath": "data/nano-banana/manifests/about-primary.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#About main",
-        "data/nano-banana/manifests/about-primary.json#stock",
-        "app/utils/home-page-image-registry.ts#about-primary.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Canonical stock placeholder for the About section primary facade image role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "footer-engineering-team",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/footer-engineering-team.jpg",
-      "canonicalName": "footer-engineering-team.jpg",
-      "scope": "homepage",
-      "slot": "connector-image",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/engineers-at-work-3861973/",
-      "manifestPath": "data/nano-banana/manifests/connector-image.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Footer connector",
-        "data/nano-banana/manifests/connector-image.json#stock",
-        "app/utils/home-page-image-registry.ts#connector-image.stock",
-        "app/utils/home-page-image-registry.ts#about-process-step.states.04.stock",
-        "data/nano-banana/manifests/about-process-step.json#states.04.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Canonical stock placeholder for the footer connector breakout image role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "hero-simulator-control-room",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/hero-simulator-control-room.jpg",
-      "canonicalName": "hero-simulator-control-room.jpg",
-      "scope": "homepage",
-      "slot": "home-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/engineers-using-simulator-3862132/",
-      "manifestPath": "data/nano-banana/manifests/home-hero.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Hero",
-        "data/nano-banana/manifests/home-hero.json#stock",
-        "app/utils/home-page-image-registry.ts#home-hero.stock",
-        "app/utils/home-page-image-registry.ts#about-process-step.states.02.stock",
-        "data/nano-banana/manifests/about-process-step.json#states.02.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Current approved homepage Hero stock asset. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "mission-engineer-cutout",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/mission-engineer-cutout.jpg",
-      "canonicalName": "mission-engineer-cutout.jpg",
-      "scope": "homepage",
-      "slot": "mission-cutout",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/engineer-reviewing-documents-in-factory-32845698/",
-      "manifestPath": "data/nano-banana/manifests/mission-cutout.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Mission cutout",
-        "data/nano-banana/manifests/mission-cutout.json#stock",
-        "app/utils/home-page-image-registry.ts#mission-cutout.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Current approved stock image for the mission cutout role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "mission-tab-join-us",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/mission-tab-join-us.jpg",
-      "canonicalName": "mission-tab-join-us.jpg",
-      "scope": "homepage",
-      "slot": "mission-square",
-      "state": "join-us",
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/female-engineer-with-equipment-3862635/",
-      "manifestPath": "data/nano-banana/manifests/mission-square.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Mission tab - join us",
-        "data/nano-banana/manifests/mission-square.json#states.join-us.stock",
-        "app/utils/home-page-image-registry.ts#mission-square.states.join-us.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Current approved stock image for the Mission square join-us state. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "mission-tab-mission",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/mission-tab-mission.jpg",
-      "canonicalName": "mission-tab-mission.jpg",
-      "scope": "homepage",
-      "slot": "mission-square",
-      "state": "mission",
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
-      "manifestPath": "data/nano-banana/manifests/mission-square.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Mission tab - mission",
-        "data/nano-banana/manifests/mission-square.json#states.mission.stock",
-        "app/utils/home-page-image-registry.ts#mission-square.states.mission.stock",
-        "app/utils/home-page-image-registry.ts#about-process-step.states.03.stock",
-        "data/nano-banana/manifests/about-process-step.json#states.03.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Current approved stock image for the Mission square mission state. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "ote-control-room-bg",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/ote-control-room-bg.jpg",
-      "canonicalName": "ote-control-room-bg.jpg",
-      "scope": "homepage",
-      "slot": "ote-background",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/control-room-256219/",
-      "manifestPath": "data/nano-banana/manifests/ote-background.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#OTE bg",
-        "data/nano-banana/manifests/ote-background.json#stock",
-        "app/utils/home-page-image-registry.ts#ote-background.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Canonical stock placeholder for the One-Touch Experience section background image role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "services-industrial-panel-bg",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/home/services-industrial-panel-bg.jpg",
-      "canonicalName": "services-industrial-panel-bg.jpg",
-      "scope": "homepage",
-      "slot": "services-surface",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/electrician-operating-switchboard-17842834/",
-      "manifestPath": "data/nano-banana/manifests/services-surface.json",
-      "usedBy": [
-        "docs/references/首頁媒體素材來源.md#Services bg",
-        "data/nano-banana/manifests/services-surface.json#stock",
-        "app/utils/home-page-image-registry.ts#services-surface.stock",
-        "app/utils/home-page-image-registry.ts#about-process-step.states.01.stock",
-        "data/nano-banana/manifests/about-process-step.json#states.01.stock"
-      ],
-      "replacedBy": null,
-      "notes": "Canonical stock placeholder for the Services section background surface role. Active canonical stock asset stored under /images/stock/home/."
-    },
-    {
-      "assetId": "alarm-monitoring-detail-feature-screen",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/alarm-monitoring/alarm-monitoring-screen.jpg",
-      "canonicalName": "alarm-monitoring-screen.jpg",
-      "scope": "services/alarm-monitoring",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-shelf-2116Y7fsQu0",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-detail-feature",
-        "app/utils/service-page-image-registry.ts#alarm-monitoring.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Nopparuj Lamaikul. Selected for the Alarm Monitoring detail feature block to reinforce alert visibility and operator response context."
-    },
-    {
-      "assetId": "alarm-monitoring-detail-hero-control-room-alarm-screens",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/alarm-monitoring/detail-hero-control-room-alarm-screens.jpg",
-      "canonicalName": "detail-hero-control-room-alarm-screens.jpg",
-      "scope": "services/alarm-monitoring",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/engineer-at-control-room-monitoring-screens-32845700/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-detail-hero",
-        "app/utils/service-page-image-registry.ts#alarm-monitoring.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Sergey Sergeev. Selected for the Alarm Monitoring detail hero to establish response speed and operator awareness."
-    },
-    {
-      "assetId": "alarm-monitoring-overview-card-industrial-alarm-panel",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/alarm-monitoring/overview-card-industrial-alarm-panel.jpg",
-      "canonicalName": "overview-card-industrial-alarm-panel.jpg",
-      "scope": "services/alarm-monitoring",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/colorful-buttons-on-wall-19316514/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#alarm-monitoring-overview-card",
-        "app/utils/service-page-image-registry.ts#alarm-monitoring.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Joao Jesus. Selected for the Alarm Monitoring overview card to keep the thumbnail tied to recognizable alarm hardware."
-    },
-    {
-      "assetId": "historians-detail-hero-engineer-data-screens",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/historians/detail-hero-engineer-data-screens.jpg",
-      "canonicalName": "detail-hero-engineer-data-screens.jpg",
-      "scope": "services/historians",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/man-in-white-and-black-striped-polo-shirt-in-front-of-monitor-At4udACn5oA",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#historians-detail-hero",
-        "app/utils/service-page-image-registry.ts#historians.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Battlecreek Coffee Roasters. Selected for the Historians detail hero to introduce operator review and data continuity context."
-    },
-    {
-      "assetId": "historians-detail-feature-server-rack-close-up",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/historians/historian-server-rack-close-up.jpg",
-      "canonicalName": "historian-server-rack-close-up.jpg",
-      "scope": "services/historians",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-rack-of-computer-equipment-eqd0f78u9nI",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#historians-detail-feature",
-        "app/utils/service-page-image-registry.ts#historians.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Tyler. Selected for the Historians detail feature block to reinforce long-term data retention and rack-level infrastructure."
-    },
-    {
-      "assetId": "historians-overview-card-industrial-server-rack",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/historians/overview-card-industrial-server-rack.jpg",
-      "canonicalName": "overview-card-industrial-server-rack.jpg",
-      "scope": "services/historians",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/close-up-of-computer-hardware-17489157/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#historians-overview-card",
-        "app/utils/service-page-image-registry.ts#historians.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by panumas nikhomkhai. Selected for the Historians overview card to keep the thumbnail focused on retention infrastructure."
-    },
-    {
-      "assetId": "ie-detail-hero-electrical-engineer-inspection",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/ie-services/detail-hero-electrical-engineer-inspection.jpg",
-      "canonicalName": "detail-hero-electrical-engineer-inspection.jpg",
-      "scope": "services/ie-services",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-man-in-a-factory-working-on-a-piece-of-equipment-zekShM5_K64",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#ie-services-detail-hero",
-        "app/utils/service-page-image-registry.ts#ie-services.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Alireza Hatami. Selected for the I&E detail hero to foreground field-readiness and on-site execution."
-    },
-    {
-      "assetId": "ie-detail-feature-instrument-control-panel-close-up",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/ie-services/instrument-control-panel-close-up.jpg",
-      "canonicalName": "instrument-control-panel-close-up.jpg",
-      "scope": "services/ie-services",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-control-panel-AGQZprOABgQ",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#ie-services-detail-feature",
-        "app/utils/service-page-image-registry.ts#ie-services.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by iSawRed. Selected for the I&E detail feature block to emphasize field instrumentation and electrical-panel context."
-    },
-    {
-      "assetId": "ie-overview-card-instrument-panel-gauges",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/ie-services/overview-card-instrument-panel-gauges.jpg",
-      "canonicalName": "overview-card-instrument-panel-gauges.jpg",
-      "scope": "services/ie-services",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/white-and-red-electric-meter-dIrSAyhCDa0",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#ie-services-overview-card",
-        "app/utils/service-page-image-registry.ts#ie-services.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Mick Haupt. Selected for the I&E overview card to keep the thumbnail tied to instrumentation and panel recognition."
-    },
-    {
-      "assetId": "network-design-detail-hero-industrial-network-room",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/network-design/detail-hero-industrial-network-room.jpg",
-      "canonicalName": "detail-hero-industrial-network-room.jpg",
-      "scope": "services/network-design",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-network-with-wires-connected-to-it-dyUp7WPu5q4",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#network-design-detail-hero",
-        "app/utils/service-page-image-registry.ts#network-design.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Albert Stoynov. Selected for the Network Design detail hero to signal resilient physical OT network infrastructure."
-    },
-    {
-      "assetId": "it-infrastructure-overview-card-server-racks-engineer",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/it-infrastructure/overview-card-server-racks-engineer.jpg",
-      "canonicalName": "overview-card-server-racks-engineer.jpg",
-      "scope": "services/it-infrastructure",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/software-engineer-standing-beside-server-racks-1181354/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-overview-card",
-        "app/utils/service-page-image-registry.ts#it-infrastructure.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Christina Morillo. Selected for docs/rewrite/文案.md item 1 to represent hands-on IT infrastructure deployment."
-    },
-    {
-      "assetId": "it-infrastructure-detail-hero-data-center-racks",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/it-infrastructure/detail-hero-data-center-racks.jpg",
-      "canonicalName": "detail-hero-data-center-racks.jpg",
-      "scope": "services/it-infrastructure",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/server-racks-on-data-center-5408005/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-detail-hero",
-        "app/utils/service-page-image-registry.ts#it-infrastructure.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Brett Sayles. Selected for docs/rewrite/文案.md item 1 to anchor the detail hero in server-room infrastructure."
-    },
-    {
-      "assetId": "it-infrastructure-detail-feature-data-hub-storage",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/it-infrastructure/detail-feature-data-hub-storage.jpg",
-      "canonicalName": "detail-feature-data-hub-storage.jpg",
-      "scope": "services/it-infrastructure",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/close-up-of-a-data-hub-diskstation-19825057/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#it-infrastructure-detail-feature",
-        "app/utils/service-page-image-registry.ts#it-infrastructure.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Jakub Zerdzicki. Selected for docs/rewrite/文案.md item 1 to show storage and data-infrastructure detail."
-    },
-    {
-      "assetId": "cybersecurity-network-overview-card-network-rack",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/cybersecurity-network/overview-card-network-rack.jpg",
-      "canonicalName": "overview-card-network-rack.jpg",
-      "scope": "services/cybersecurity-network",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/network-rack-17323801/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-overview-card",
-        "app/utils/service-page-image-registry.ts#cybersecurity-network.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by panumas nikhomkhai. Selected for docs/rewrite/文案.md item 2 to represent protected network infrastructure."
-    },
-    {
-      "assetId": "cybersecurity-network-detail-hero-engineer-core-switch",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/cybersecurity-network/detail-hero-engineer-core-switch.jpg",
-      "canonicalName": "detail-hero-engineer-core-switch.jpg",
-      "scope": "services/cybersecurity-network",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/engineer-fixing-core-swith-in-data-center-room-19226354/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-detail-hero",
-        "app/utils/service-page-image-registry.ts#cybersecurity-network.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by panumas nikhomkhai. Selected for docs/rewrite/文案.md item 2 to show hands-on switch and access-boundary work."
-    },
-    {
-      "assetId": "cybersecurity-network-detail-feature-server-cables",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/cybersecurity-network/detail-feature-server-cables.jpg",
-      "canonicalName": "detail-feature-server-cables.jpg",
-      "scope": "services/cybersecurity-network",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/cables-connected-on-server-2881229/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#cybersecurity-network-detail-feature",
-        "app/utils/service-page-image-registry.ts#cybersecurity-network.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Brett Sayles. Selected for docs/rewrite/文案.md item 2 to express segmented cabling and network protection context."
-    },
-    {
-      "assetId": "offshore-wind-operations-overview-card-offshore-wind-turbines",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/offshore-wind-operations/overview-card-offshore-wind-turbines.jpg",
-      "canonicalName": "overview-card-offshore-wind-turbines.jpg",
-      "scope": "services/offshore-wind-operations",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/wind-turbines-on-the-sea-13223602/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-overview-card",
-        "app/utils/service-page-image-registry.ts#offshore-wind-operations.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Damir K. Selected for docs/rewrite/文案.md item 3 to represent offshore wind operations as a standalone service."
-    },
-    {
-      "assetId": "offshore-wind-operations-detail-hero-offshore-electrical-station",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/offshore-wind-operations/detail-hero-offshore-electrical-station.jpg",
-      "canonicalName": "detail-hero-offshore-electrical-station.jpg",
-      "scope": "services/offshore-wind-operations",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/wind-turbines-and-electrical-station-in-the-sea-26971292/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-detail-hero",
-        "app/utils/service-page-image-registry.ts#offshore-wind-operations.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by ZhiCheng Zhang. Selected for docs/rewrite/文案.md item 3 to show offshore electrical infrastructure and remote operations context."
-    },
-    {
-      "assetId": "offshore-wind-operations-detail-feature-north-sea-wind-turbines",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/offshore-wind-operations/detail-feature-north-sea-wind-turbines.jpg",
-      "canonicalName": "detail-feature-north-sea-wind-turbines.jpg",
-      "scope": "services/offshore-wind-operations",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/offshore-wind-turbines-in-north-sea-scotland-31656794/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#offshore-wind-operations-detail-feature",
-        "app/utils/service-page-image-registry.ts#offshore-wind-operations.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Ben Jackson. Selected for docs/rewrite/文案.md item 3 to show remote offshore wind site context."
-    },
-    {
-      "assetId": "network-design-detail-feature-network-servers-connected-cables",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/network-design/network-servers-connected-cables.jpg",
-      "canonicalName": "network-servers-connected-cables.jpg",
-      "scope": "services/network-design",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/network-servers-are-connected-with-cables-3qZ6qT1DKxU",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#network-design-detail-feature",
-        "app/utils/service-page-image-registry.ts#network-design.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Fabio Sasso. Selected for the Network Design detail feature block to express topology, connectivity, and maintainable OT networking."
-    },
-    {
-      "assetId": "network-design-overview-card-network-switch-cables",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/network-design/overview-card-network-switch-cables.jpg",
-      "canonicalName": "overview-card-network-switch-cables.jpg",
-      "scope": "services/network-design",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/blue-utp-cord-40XgDxBfYXM",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#network-design-overview-card",
-        "app/utils/service-page-image-registry.ts#network-design.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Jordan Harrison. Selected for the Network Design overview card to keep the thumbnail aligned with OT cabling and topology signals."
-    },
-    {
-      "assetId": "services-overview-hero-control-room",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/overview/services-overview-hero-control-room.jpg",
-      "canonicalName": "services-overview-hero-control-room.jpg",
-      "scope": "services/overview",
-      "slot": "overview-hero",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-control-room-with-a-desk-and-two-chairs-p7Bfwn_VKRQ",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#services-overview-hero",
-        "app/utils/service-page-image-registry.ts#servicesOverviewHeroImage"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Miha Meglic. Replaced the earlier overview hero selection on 2026-04-09 to make the first impression read as a broader industrial automation control-center overview rather than a single-service scene."
-    },
-    {
-      "assetId": "pi-server-detail-hero-server-room-operations",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/pi-server/detail-hero-server-room-operations.jpg",
-      "canonicalName": "detail-hero-server-room-operations.jpg",
-      "scope": "services/pi-server",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/server-racks-on-data-center-4508751/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#pi-server-detail-hero",
-        "app/utils/service-page-image-registry.ts#pi-server.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Brett Sayles. Selected for the PI Server detail hero to communicate an operations-grade data backbone."
-    },
-    {
-      "assetId": "pi-server-detail-feature-industrial-server-room-dashboard",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/pi-server/industrial-server-room-dashboard.jpg",
-      "canonicalName": "industrial-server-room-dashboard.jpg",
-      "scope": "services/pi-server",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-computer-in-a-dark-room-Kqg_6JPhxRk",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#pi-server-detail-feature",
-        "app/utils/service-page-image-registry.ts#pi-server.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Tyler. Selected for the PI Server detail feature block to convey plant-data infrastructure and dashboard operations."
-    },
-    {
-      "assetId": "pi-server-overview-card-server-rack-lights",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/pi-server/overview-card-server-rack-lights.jpg",
-      "canonicalName": "overview-card-server-rack-lights.jpg",
-      "scope": "services/pi-server",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-green-light-in-a-server-zMrGQu21qcU",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#pi-server-overview-card",
-        "app/utils/service-page-image-registry.ts#pi-server.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Tyler. Selected for the PI Server overview card to make data infrastructure legible at thumbnail size."
-    },
-    {
-      "assetId": "plc-dcs-detail-feature-control-system-engineer-laptop",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/control-system-engineer-laptop.jpg",
-      "canonicalName": "control-system-engineer-laptop.jpg",
-      "scope": "services/plc-dcs-programming-and-migration",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/woman-in-white-long-sleeve-shirt-using-black-laptop-computer-aL2rxQhEfAM",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-detail-feature",
-        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by ThisisEngineering. Selected for the PLC and DCS detail feature block to support programming, migration, and staged cutover narratives."
-    },
-    {
-      "assetId": "plc-dcs-detail-hero-automation-engineer-laptop",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/detail-hero-automation-engineer-laptop.jpg",
-      "canonicalName": "detail-hero-automation-engineer-laptop.jpg",
-      "scope": "services/plc-dcs-programming-and-migration",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/man-works-on-a-computer-in-a-manufacturing-setting-RyMTGAYZpjY",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-detail-hero",
-        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by TECNIC Bioprocess Solutions. Selected for the PLC and DCS detail hero to emphasize staged programming and migration work."
-    },
-    {
-      "assetId": "plc-dcs-overview-card-plc-control-cabinet",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/plc-dcs-programming-and-migration/overview-card-plc-control-cabinet.jpg",
-      "canonicalName": "overview-card-plc-control-cabinet.jpg",
-      "scope": "services/plc-dcs-programming-and-migration",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/electrical-panel-with-wires-and-components-q0Jo_J5YxHY",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#plc-dcs-programming-and-migration-overview-card",
-        "app/utils/service-page-image-registry.ts#plc-dcs-programming-and-migration.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Aleksandr Lyaptsev. Selected for the PLC and DCS overview card to keep cabinet-level automation hardware readable."
-    },
-    {
-      "assetId": "remote-monitoring-detail-hero-remote-monitoring-laptop",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/remote-monitoring-and-data/detail-hero-remote-monitoring-laptop.jpg",
-      "canonicalName": "detail-hero-remote-monitoring-laptop.jpg",
-      "scope": "services/remote-monitoring-and-data",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/technicians-in-control-room-operating-machinery-32845695/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-detail-hero",
-        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Sergey Sergeev. Selected for the Remote Monitoring detail hero to foreground distributed operations and rapid data access."
-    },
-    {
-      "assetId": "remote-monitoring-overview-card-monitor-wall-control-center",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/remote-monitoring-and-data/overview-card-monitor-wall-control-center.jpg",
-      "canonicalName": "overview-card-monitor-wall-control-center.jpg",
-      "scope": "services/remote-monitoring-and-data",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-control-room-with-a-map-on-the-wall-tDc7zZ93cr8",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-overview-card",
-        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Debbie Whittam. Selected for the Remote Monitoring overview card to make multi-site visibility clear in compact form."
-    },
-    {
-      "assetId": "remote-monitoring-detail-feature-control-room",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/remote-monitoring-and-data/remote-monitoring-control-room.jpg",
-      "canonicalName": "remote-monitoring-control-room.jpg",
-      "scope": "services/remote-monitoring-and-data",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/a-man-sitting-in-front-of-multiple-monitors-TtMKq3lJm-U",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#remote-monitoring-and-data-detail-feature",
-        "app/utils/service-page-image-registry.ts#remote-monitoring-and-data.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Tasha Kostyuk. Selected for the Remote Monitoring and Data detail feature block to emphasize remote visibility and multi-screen monitoring."
-    },
-    {
-      "assetId": "scada-detail-hero-control-room-operator",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg",
-      "canonicalName": "detail-hero-control-room-operator.jpg",
-      "scope": "services/scada-hmi-graphics",
-      "slot": "detail-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/advanced-control-room-in-el-agustino-lima-32529341/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-detail-hero",
-        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.detail-hero"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Fernando Narvaez. Selected for the SCADA detail hero to add an operations-led first impression."
-    },
-    {
-      "assetId": "scada-detail-feature-hmi-operator-tablet",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/scada-hmi-graphics/industrial-hmi-operator-tablet.jpg",
-      "canonicalName": "industrial-hmi-operator-tablet.jpg",
-      "scope": "services/scada-hmi-graphics",
-      "slot": "detail-feature",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/person-holding-black-tablet-computer-Bg0Geue-cY8",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-detail-feature",
-        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.detail-feature"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by ThisisEngineering. Selected for the SCADA detail feature block to reinforce operator visibility and interface context."
-    },
-    {
-      "assetId": "scada-overview-card-hmi-control-screen",
-      "kind": "stock",
-      "status": "active",
-      "publicPath": "/images/stock/services/scada-hmi-graphics/overview-card-hmi-control-screen.jpg",
-      "canonicalName": "overview-card-hmi-control-screen.jpg",
-      "scope": "services/scada-hmi-graphics",
-      "slot": "overview-card",
-      "state": null,
-      "source": "Unsplash",
-      "licenseNote": "Unsplash License",
-      "sourceReference": "https://unsplash.com/photos/white-digital-device-at-71-lS_YkX3QS9c",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/服務內頁媒體素材來源.md#scada-hmi-graphics-overview-card",
-        "app/utils/service-page-image-registry.ts#scada-hmi-graphics.overview-card"
-      ],
-      "replacedBy": null,
-      "notes": "Photo by Mika Baumeister. Selected for the SCADA overview card to keep the thumbnail centered on interface clarity."
-    },
-    {
-      "assetId": "contact-hero-control-room-team",
-      "kind": "stock",
-      "status": "candidate-history",
-      "publicPath": "/images/stock/contact/contact-hero-control-room-team.jpg",
-      "canonicalName": "contact-hero-control-room-team.jpg",
-      "scope": "contact",
-      "slot": "contact-hero",
-      "state": null,
-      "source": "Pexels",
-      "licenseNote": "Pexels License",
-      "sourceReference": "https://www.pexels.com/photo/technicians-at-work-32845695/",
-      "manifestPath": null,
-      "usedBy": [
-        "docs/references/聯絡頁媒體素材來源.md#contact-hero-control-room-team"
-      ],
-      "replacedBy": null,
-      "notes": "Previous contact hero candidate (indoor control room scene), retained as archival history."
-    },
-    {
       "assetId": "hero-main-control-room",
       "kind": "stock",
       "status": "deprecated",
@@ -1229,7 +312,7 @@
       "sourceReference": null,
       "manifestPath": null,
       "usedBy": [],
-      "replacedBy": "hero-simulator-control-room",
+      "replacedBy": null,
       "notes": "Deprecated legacy Hero stock file retained for archival compare only. Not referenced by manifests or runtime."
     },
     {
@@ -1263,7 +346,7 @@
       "sourceReference": null,
       "manifestPath": null,
       "usedBy": [],
-      "replacedBy": "ote-control-room-bg",
+      "replacedBy": null,
       "notes": "Deprecated legacy One-Touch Experience stock file retained for archival compare only. Not referenced by manifests or runtime."
     },
     {
@@ -2210,7 +1293,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/about-glass-facade-detail.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/about-detail.json",
       "usedBy": [
         "data/nano-banana/manifests/about-detail.json#candidates.about-detail-20260402092045197-5w3n8s"
@@ -2305,7 +1388,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/about-glass-office-towers.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/about-primary.json",
       "usedBy": [
         "data/nano-banana/manifests/about-primary.json#candidates.about-primary-20260402092007659-61uz1p"
@@ -2780,7 +1863,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/footer-engineering-team.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/connector-image.json",
       "usedBy": [
         "data/nano-banana/manifests/connector-image.json#candidates.connector-image-20260402092622310-jjmepa"
@@ -2799,7 +1882,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/footer-engineering-team.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/connector-image.json",
       "usedBy": [
         "data/nano-banana/manifests/connector-image.json#candidates.connector-image-20260402094936217-ylj9zz"
@@ -2875,7 +1958,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260401091817773-8vhfv7"
@@ -2894,7 +1977,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260402013212629-rtqdwl"
@@ -2913,7 +1996,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260402013623433-s5t4l1"
@@ -2932,7 +2015,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260402091925280-2odmz4"
@@ -2951,7 +2034,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260402094559341-9yjh4n"
@@ -2970,7 +2053,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/hero-simulator-control-room.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/home-hero.json",
       "usedBy": [
         "data/nano-banana/manifests/home-hero.json#candidates.home-hero-20260409081229380-0f5cak"
@@ -3560,7 +2643,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-engineer-cutout.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-cutout.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-cutout.json#candidates.mission-cutout-20260402092524108-mw7ka1"
@@ -3579,7 +2662,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-engineer-cutout.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-cutout.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-cutout.json#candidates.mission-cutout-20260402093105132-vwmm8f"
@@ -3598,7 +2681,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-engineer-cutout.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-cutout.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-cutout.json#candidates.mission-cutout-20260402094844834-ck4k1q"
@@ -3674,7 +2757,7 @@
       "state": "join-us",
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-tab-join-us.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-square.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-square.json#states.join-us.candidates.mission-square-join-us-20260402092418793-wts9q0"
@@ -3693,7 +2776,7 @@
       "state": "join-us",
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-tab-join-us.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-square.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-square.json#states.join-us.candidates.mission-square-join-us-20260402094759653-wxiyj9"
@@ -3769,7 +2852,7 @@
       "state": "mission",
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-tab-mission.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-square.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-square.json#states.mission.candidates.mission-square-mission-20260402092316259-s7he85"
@@ -3788,7 +2871,7 @@
       "state": "mission",
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/mission-tab-mission.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/mission-square.json",
       "usedBy": [
         "data/nano-banana/manifests/mission-square.json#states.mission.candidates.mission-square-mission-20260402094727279-eey1ly"
@@ -3864,7 +2947,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/ote-control-room-bg.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/ote-background.json",
       "usedBy": [
         "data/nano-banana/manifests/ote-background.json#candidates.ote-background-20260402092236964-kczdy6"
@@ -3883,7 +2966,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/ote-control-room-bg.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/ote-background.json",
       "usedBy": [
         "data/nano-banana/manifests/ote-background.json#candidates.ote-background-20260402094641991-lhlwvm"
@@ -3902,7 +2985,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/ote-control-room-bg.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/ote-background.json",
       "usedBy": [
         "data/nano-banana/manifests/ote-background.json#candidates.ote-background-20260409081653809-detcfn"
@@ -3921,7 +3004,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/ote-control-room-bg.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/ote-background.json",
       "usedBy": [
         "data/nano-banana/manifests/ote-background.json#candidates.ote-background-20260409082217560-n440zv"
@@ -3997,7 +3080,7 @@
       "state": null,
       "source": "Nano Banana",
       "licenseNote": "Generated with Gemini image generation (SynthID watermark).",
-      "sourceReference": "/images/stock/home/services-industrial-panel-bg.jpg",
+      "sourceReference": null,
       "manifestPath": "data/nano-banana/manifests/services-surface.json",
       "usedBy": [
         "data/nano-banana/manifests/services-surface.json#candidates.services-surface-20260402092127038-o18bcu"
@@ -7139,9 +6222,9 @@
     },
     {
       "assetId": "web-development-overview-card-kevin-workspace",
-      "kind": "stock",
+      "kind": "provided",
       "status": "active",
-      "publicPath": "/images/stock/services/web-development/overview-card-web-development-kevin-workspace.jpg",
+      "publicPath": "/images/provided/services/web-development/overview-card-web-development-kevin-workspace.jpg",
       "canonicalName": "overview-card-web-development-kevin-workspace.jpg",
       "scope": "services/web-development",
       "slot": "overview-card",
@@ -7159,9 +6242,9 @@
     },
     {
       "assetId": "web-development-detail-hero-kevin-workspace",
-      "kind": "stock",
+      "kind": "provided",
       "status": "active",
-      "publicPath": "/images/stock/services/web-development/detail-hero-web-development-kevin-workspace.jpg",
+      "publicPath": "/images/provided/services/web-development/detail-hero-web-development-kevin-workspace.jpg",
       "canonicalName": "detail-hero-web-development-kevin-workspace.jpg",
       "scope": "services/web-development",
       "slot": "detail-hero",
@@ -7179,9 +6262,9 @@
     },
     {
       "assetId": "web-development-detail-feature-kevin-workspace",
-      "kind": "stock",
+      "kind": "provided",
       "status": "active",
-      "publicPath": "/images/stock/services/web-development/detail-feature-web-development-kevin-workspace.jpg",
+      "publicPath": "/images/provided/services/web-development/detail-feature-web-development-kevin-workspace.jpg",
       "canonicalName": "detail-feature-web-development-kevin-workspace.jpg",
       "scope": "services/web-development",
       "slot": "detail-feature",
@@ -7196,6 +6279,263 @@
       ],
       "replacedBy": null,
       "notes": "Kevin-provided visual selected for the Web Development detail feature."
+    },
+    {
+      "assetId": "placeholder-contact-hero",
+      "kind": "placeholder",
+      "status": "active",
+      "publicPath": "/images/placeholders/grayscale/hero.svg",
+      "canonicalName": "hero.svg",
+      "scope": "contact",
+      "slot": "contact-hero",
+      "state": null,
+      "source": "RallyTech grayscale placeholder",
+      "licenseNote": "Internal placeholder; 待補正式素材",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/聯絡頁媒體素材來源.md#contact-hero",
+        "app/utils/contact-page-image-registry.ts#contactPageHeroImage",
+        "app/components/page/contact/ContactPageShell.vue#contact-sys-hero"
+      ],
+      "replacedBy": null,
+      "notes": "待補正式素材。原免費圖庫已撤下。"
+    },
+    {
+      "assetId": "placeholder-about-detail",
+      "kind": "placeholder",
+      "status": "active",
+      "publicPath": "/images/placeholders/grayscale/landscape.svg",
+      "canonicalName": "landscape.svg",
+      "scope": "homepage",
+      "slot": "about-detail",
+      "state": null,
+      "source": "RallyTech grayscale placeholder",
+      "licenseNote": "Internal placeholder; 待補正式素材",
+      "sourceReference": null,
+      "manifestPath": "data/nano-banana/manifests/about-detail.json",
+      "usedBy": [
+        "docs/references/首頁媒體素材來源.md#About detail",
+        "data/nano-banana/manifests/about-detail.json#stock",
+        "app/utils/home-page-image-registry.ts#about-detail.stock"
+      ],
+      "replacedBy": null,
+      "notes": "待補正式素材。原免費圖庫已撤下。"
+    },
+    {
+      "assetId": "placeholder-mission-cutout",
+      "kind": "placeholder",
+      "status": "active",
+      "publicPath": "/images/placeholders/grayscale/cutout.svg",
+      "canonicalName": "cutout.svg",
+      "scope": "homepage",
+      "slot": "mission-cutout",
+      "state": null,
+      "source": "RallyTech grayscale placeholder",
+      "licenseNote": "Internal placeholder; 待補正式素材",
+      "sourceReference": null,
+      "manifestPath": "data/nano-banana/manifests/mission-cutout.json",
+      "usedBy": [
+        "docs/references/首頁媒體素材來源.md#Mission cutout",
+        "data/nano-banana/manifests/mission-cutout.json#stock",
+        "app/utils/home-page-image-registry.ts#mission-cutout.stock"
+      ],
+      "replacedBy": null,
+      "notes": "待補正式素材。原免費圖庫已撤下。"
+    },
+    {
+      "assetId": "placeholder-mission-square-join-us",
+      "kind": "placeholder",
+      "status": "active",
+      "publicPath": "/images/placeholders/grayscale/square.svg",
+      "canonicalName": "square.svg",
+      "scope": "homepage",
+      "slot": "mission-square",
+      "state": "join-us",
+      "source": "RallyTech grayscale placeholder",
+      "licenseNote": "Internal placeholder; 待補正式素材",
+      "sourceReference": null,
+      "manifestPath": "data/nano-banana/manifests/mission-square.json",
+      "usedBy": [
+        "docs/references/首頁媒體素材來源.md#Mission tab - join us",
+        "data/nano-banana/manifests/mission-square.json#states.join-us.stock",
+        "app/utils/home-page-image-registry.ts#mission-square.states.join-us.stock"
+      ],
+      "replacedBy": null,
+      "notes": "待補正式素材。原免費圖庫已撤下。"
+    },
+    {
+      "assetId": "placeholder-detail-feature-2",
+      "kind": "placeholder",
+      "status": "active",
+      "publicPath": "/images/placeholders/grayscale/portrait.svg",
+      "canonicalName": "portrait.svg",
+      "scope": "services/historians",
+      "slot": "detail-feature",
+      "state": null,
+      "source": "RallyTech grayscale placeholder",
+      "licenseNote": "Internal placeholder; 待補正式素材",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": [
+        "docs/references/服務內頁媒體素材來源.md#historians-detail-feature",
+        "app/utils/service-page-image-registry.ts#historians.detail-feature"
+      ],
+      "replacedBy": null,
+      "notes": "待補正式素材。原免費圖庫已撤下。"
+    },
+    {
+      "assetId": "provided-dmc-aveva-dmc-aveva-certified-system-integrator",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/aveva/dmc-aveva-certified-system-integrator.png",
+      "canonicalName": "dmc-aveva-certified-system-integrator.png",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-aveva-dmc-aveva-historian-client-web",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/aveva/dmc-aveva-historian-client-web.png",
+      "canonicalName": "dmc-aveva-historian-client-web.png",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-siemens-plc-dmc-siemens-pcs7-screenshot",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/siemens-plc/dmc-siemens-pcs7-screenshot.jpg",
+      "canonicalName": "dmc-siemens-pcs7-screenshot.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-siemens-plc-dmc-siemens-s7-1200-plc",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/siemens-plc/dmc-siemens-s7-1200-plc.jpg",
+      "canonicalName": "dmc-siemens-s7-1200-plc.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-siemens-plc-dmc-siemens-s7-1500-plc",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/siemens-plc/dmc-siemens-s7-1500-plc.jpg",
+      "canonicalName": "dmc-siemens-s7-1500-plc.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-siemens-plc-dmc-siemens-tia-portal",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/siemens-plc/dmc-siemens-tia-portal.jpg",
+      "canonicalName": "dmc-siemens-tia-portal.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-wincc-oa-dmc-wincc-oa-optional-extensions",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/wincc-oa/dmc-wincc-oa-optional-extensions.png",
+      "canonicalName": "dmc-wincc-oa-optional-extensions.png",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-wincc-oa-dmc-wincc-oa-premium-solution-partner",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/wincc-oa/dmc-wincc-oa-premium-solution-partner.jpg",
+      "canonicalName": "dmc-wincc-oa-premium-solution-partner.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
+    },
+    {
+      "assetId": "provided-dmc-wincc-oa-dmc-wincc-oa-scada-hmi-platform",
+      "kind": "provided",
+      "status": "active",
+      "publicPath": "/images/references/dmc/wincc-oa/dmc-wincc-oa-scada-hmi-platform.jpg",
+      "canonicalName": "dmc-wincc-oa-scada-hmi-platform.jpg",
+      "scope": "products/references",
+      "slot": "product-reference",
+      "state": null,
+      "source": "User-confirmed licensed reference image",
+      "licenseNote": "Authorized reference image retained for product context.",
+      "sourceReference": null,
+      "manifestPath": null,
+      "usedBy": ["app/utils/products.ts", "docs/references/??????.md"],
+      "replacedBy": null,
+      "notes": "???????? reference image???????????"
     }
   ]
 }

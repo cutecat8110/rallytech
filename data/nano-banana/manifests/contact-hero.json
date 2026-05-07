@@ -2,13 +2,13 @@
   "slot": "contact-hero",
   "liveSource": "nano",
   "stock": {
-    "src": "/images/stock/contact/contact-hero-urban-roofline.jpg",
+    "src": "/images/placeholders/grayscale/hero.svg",
     "alt": "Modern urban roofline and glass towers under an overcast sky",
     "label": "Contact Page Hero Stock Image",
-    "source": "Pexels",
-    "sourceReference": "https://www.pexels.com/photo/shanghai-skyscrapers-with-modern-roof-structure-35632125/",
-    "licenseNote": "Pexels License",
-    "notes": "Selected for the contact-page hero because the broad roofline and distant glass towers produce a calmer page-title banner that is closer to the reference contact page rhythm than the previous control-room scene.",
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center 58%"
   },
   "candidates": [

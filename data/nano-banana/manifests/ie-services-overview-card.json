@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "ie-services-overview-card stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/white-and-red-electric-meter-dIrSAyhCDa0",
-    "src": "/images/stock/services/ie-services/overview-card-instrument-panel-gauges.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/square.svg"
   },
   "candidates": [
     {

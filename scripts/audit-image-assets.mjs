@@ -42,10 +42,12 @@ const summary = {
   diskFileCount: diskFiles.length,
   missingCount: issues.length,
   byKind: Object.fromEntries(
-    ['brand', 'stock', 'ai-generated'].map((kind) => [
-      kind,
-      catalog.records.filter((record) => record.kind === kind).length
-    ])
+    ['brand', 'stock', 'provided', 'placeholder', 'ai-generated'].map(
+      (kind) => [
+        kind,
+        catalog.records.filter((record) => record.kind === kind).length
+      ]
+    )
   ),
   byStatus: Object.fromEntries(
     ['active', 'candidate-history', 'deprecated'].map((status) => [
@@ -166,9 +168,12 @@ function collectManifestIssues() {
       )
     }
 
-    if (reference.kind === 'stock' && record.kind !== 'stock') {
+    if (
+      reference.kind === 'stock' &&
+      !['stock', 'provided', 'placeholder'].includes(record.kind)
+    ) {
       issues.push(
-        `Manifest stock reference "${reference.publicPath}" must map to a stock record, received "${record.kind}".`
+        `Manifest stock reference "${reference.publicPath}" must map to a stock/provided/placeholder record, received "${record.kind}".`
       )
     }
 
@@ -201,7 +206,7 @@ function collectReferenceDocIssues() {
     const matchingRecords = catalog.records.filter(
       (record) =>
         basename(record.publicPath) === filename &&
-        record.kind === 'stock' &&
+        ['stock', 'provided', 'placeholder'].includes(record.kind) &&
         record.status === 'active'
     )
 

@@ -138,8 +138,8 @@ const productsCatalog = [
   },
   {
     slug: 'siemens-plc',
-    shortLabel: '西門子 PLC',
-    formalTitle: '西門子 PLC 自動化整合',
+    shortLabel: 'Siemens PLC',
+    formalTitle: 'Siemens PLC 自動化整合',
     englishTitle: 'Siemens PLC Automation Integration',
     categoryLabel: 'PLC 平台',
     description:
@@ -180,13 +180,10 @@ const messages = {
     contactCta: '聯絡我們',
     mobileOpenLabel: '開啟選單',
     mobileCloseLabel: '關閉選單',
-    nanoToggleAvailable: '切換首頁 Nano 候選圖片',
-    nanoToggleUnavailable: '目前尚未有可切換的首頁 Nano 候選圖片',
     languageLabel: '切換語言',
     languageOptions: {
       ['zh-tw']: '中文',
-      en: '英文',
-      source: '原始文案'
+      en: '英文'
     },
     items: [
       { label: '關於我們', href: '/about' },
@@ -399,7 +396,7 @@ const messages = {
     seo: {
       title: '產品 | 雷力科技 Rally Technology',
       description:
-        '瀏覽雷力科技可承接的 WinCC OA、AVEVA 與西門子 PLC 平台整合能力，了解各平台適合的 SCADA / HMI、營運資料與控制系統導入情境。'
+        '瀏覽雷力科技可承接的 WinCC OA、AVEVA 與 Siemens PLC 平台整合能力，了解各平台適合的 SCADA / HMI、營運資料與控制系統導入情境。'
     },
     hero: {
       title: '產品平台'

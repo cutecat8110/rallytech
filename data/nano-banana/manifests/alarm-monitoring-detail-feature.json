@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "alarm-monitoring-detail-feature stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/a-computer-monitor-sitting-on-top-of-a-shelf-2116Y7fsQu0",
-    "src": "/images/stock/services/alarm-monitoring/alarm-monitoring-screen.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/landscape.svg"
   },
   "candidates": [
     {

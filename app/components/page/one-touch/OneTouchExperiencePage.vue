@@ -26,27 +26,27 @@ const pageMessages = computed(() => messages.value.oneTouchPage)
 
 const moduleImages: Record<OneTouchModuleId, OneTouchImageAsset> = {
   'data-integration': {
-    src: '/images/stock/services/remote-monitoring-and-data/remote-monitoring-control-room.jpg',
+    src: '/images/placeholders/grayscale/portrait.svg',
     alt: '控制室多螢幕監控畫面',
     objectPosition: 'center center'
   },
   'alarm-workflow': {
-    src: '/images/stock/services/alarm-monitoring/overview-card-industrial-alarm-panel.jpg',
+    src: '/images/placeholders/grayscale/square.svg',
     alt: '工業告警與控制按鈕面板',
     objectPosition: 'center center'
   },
   'vibration-analysis': {
-    src: '/images/stock/services/ie-services/instrument-control-panel-close-up.jpg',
+    src: '/images/placeholders/grayscale/landscape.svg',
     alt: '儀表與工業設備監測面板',
     objectPosition: 'center center'
   },
   'historian-deployment': {
-    src: '/images/stock/services/historians/historian-server-rack-close-up.jpg',
+    src: '/images/placeholders/grayscale/portrait.svg',
     alt: '伺服器機櫃與資料連線設備',
     objectPosition: 'center center'
   },
   'utilities-integration': {
-    src: '/images/stock/services/plc-dcs-programming-and-migration/overview-card-plc-control-cabinet.jpg',
+    src: '/images/placeholders/grayscale/square.svg',
     alt: '控制櫃內部接線與控制模組',
     objectPosition: 'center center'
   }

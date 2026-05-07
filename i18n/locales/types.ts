@@ -49,10 +49,8 @@ export interface NavMessages {
   contactCta: string
   mobileOpenLabel: string
   mobileCloseLabel: string
-  nanoToggleAvailable: string
-  nanoToggleUnavailable: string
   languageLabel: string
-  languageOptions: Record<SiteLocaleCode, string>
+  languageOptions: Record<PublicLocaleCode, string>
   items: Array<{
     label: string
     href: NavItemHref

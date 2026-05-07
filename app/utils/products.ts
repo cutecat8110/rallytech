@@ -33,7 +33,7 @@ export const productVisualMeta = [
     order: 1,
     icon: 'i-lucide-monitor-smartphone',
     heroImage: {
-      src: '/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: 'Control room operator reviewing industrial monitoring screens',
       objectPosition: 'center'
     },
@@ -62,7 +62,7 @@ export const productVisualMeta = [
     order: 2,
     icon: 'i-lucide-database-zap',
     heroImage: {
-      src: '/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: 'Industrial control room with operators monitoring production systems',
       objectPosition: 'center'
     },
@@ -85,7 +85,7 @@ export const productVisualMeta = [
     order: 3,
     icon: 'i-lucide-cpu',
     heroImage: {
-      src: '/images/stock/services/plc-dcs-programming-and-migration/detail-hero-automation-engineer-laptop.jpg',
+      src: '/images/placeholders/grayscale/hero.svg',
       alt: 'Automation engineer working beside industrial PLC equipment',
       objectPosition: 'center'
     },

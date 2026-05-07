@@ -34,7 +34,7 @@ const publicArchetypes = [
     key: 'segmented-control',
     title: 'Segmented control',
     owner: 'Layer 3 `button-themes.ts`',
-    usage: 'Header FREE/AI、語系切換',
+    usage: 'Header 語系切換、section tabs',
     size: '`xs` 為預設',
     radius: '`rounded-xs` / 2px',
     motion:
@@ -71,7 +71,7 @@ const sectionMapping = [
     note: '保留公開 CTA，但不再借用 icon/menu 語氣'
   },
   {
-    section: 'Header FREE / AI、語系',
+    section: 'Header 語系',
     archetype: 'Segmented control',
     size: '`xs`',
     owner: '`segmentedControlButtonTheme`',
@@ -241,14 +241,14 @@ const internalAccentSolidButtonTheme = {
                       color="neutral"
                       variant="ghost"
                       size="xs"
-                      label="FREE"
+                      label="中文"
                       aria-current="page"
                     />
                     <UButton
                       color="neutral"
                       variant="ghost"
                       size="xs"
-                      label="AI"
+                      label="英文"
                     />
                   </div>
                 </UTheme>

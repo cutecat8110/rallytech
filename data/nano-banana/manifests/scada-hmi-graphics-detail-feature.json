@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "scada-hmi-graphics-detail-feature stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/person-holding-black-tablet-computer-Bg0Geue-cY8",
-    "src": "/images/stock/services/scada-hmi-graphics/industrial-hmi-operator-tablet.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/landscape.svg"
   },
   "candidates": [
     {

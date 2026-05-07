@@ -17,9 +17,7 @@ const messages = useRallyMessages()
 const { locale } = useI18n()
 const localePath = useLocalePath()
 const productsPath = computed(() => localePath('/products'))
-const productsOgImage = withSiteUrl(
-  '/images/stock/services/scada-hmi-graphics/detail-hero-control-room-operator.jpg'
-)
+const productsOgImage = withSiteUrl('/images/placeholders/grayscale/hero.svg')
 
 useSeoMeta({
   title: () => messages.value.productsPage.seo.title,

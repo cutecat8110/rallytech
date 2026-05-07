@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "network-design-detail-feature stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/network-servers-are-connected-with-cables-3qZ6qT1DKxU",
-    "src": "/images/stock/services/network-design/network-servers-connected-cables.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/landscape.svg"
   },
   "candidates": [
     {

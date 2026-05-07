@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "pi-server-overview-card stock image",
-    "licenseNote": "Unsplash License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Unsplash",
-    "sourceReference": "https://unsplash.com/photos/a-close-up-of-a-green-light-in-a-server-zMrGQu21qcU",
-    "src": "/images/stock/services/pi-server/overview-card-server-rack-lights.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/square.svg"
   },
   "candidates": [
     {

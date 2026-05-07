@@ -72,7 +72,7 @@
 
 - `assetId` 必須是 lowercase kebab-case。
 - brand 的 canonical 命名一律採 kebab-case，例如 `rallytech-logo-text-only.svg`。
-- active stock 的 canonical path 一律採 `/images/stock/<scope>/`。
+- active placeholder 的 canonical path 一律採 `/images/placeholders/grayscale/`；自有或授權提供圖依來源放在 `/images/company/`、`/images/references/`、`/images/provided/`。
 - `public/images/demo/**` 現在只保留給 deprecated legacy stock 檔案。
 - `public/images/generated/**` 保留現有 slot-aware 路徑與 candidate naming：
   - 單一 slot：`<slot>-<timestamp>-<suffix>`

@@ -4,12 +4,12 @@
   "stock": {
     "alt": "",
     "label": "remote-monitoring-and-data-detail-hero stock image",
-    "licenseNote": "Pexels License",
-    "notes": null,
+    "licenseNote": "Internal placeholder; 待補正式素材",
+    "notes": "待補正式素材。原免費圖庫已撤下。",
     "objectPosition": "center center",
-    "source": "Pexels",
-    "sourceReference": "https://www.pexels.com/photo/technicians-in-control-room-operating-machinery-32845695/",
-    "src": "/images/stock/services/remote-monitoring-and-data/detail-hero-remote-monitoring-laptop.jpg"
+    "source": "RallyTech grayscale placeholder",
+    "sourceReference": null,
+    "src": "/images/placeholders/grayscale/hero.svg"
   },
   "candidates": [
     {
