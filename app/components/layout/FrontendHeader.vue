@@ -4,7 +4,7 @@ import { publicLocaleCodes } from '~/composables/useRallyI18n'
 import {
   contrastSolidDarkButtonTheme,
   iconUtilityLightButtonTheme,
-  segmentedControlButtonTheme
+  plainIconUtilityLightButtonTheme
 } from '~/utils/button-themes'
 import { enrichProductCatalog } from '~/utils/products'
 import { enrichServiceCatalog } from '~/utils/services'
@@ -47,12 +47,21 @@ const company = computed(() => messages.value.company)
 const homePath = computed(() => localePath('/'))
 const contactPath = computed(() => localePath('/contact'))
 const isContactRoute = computed(() => isLocalizedPathActive(contactPath.value))
-const localeLinks = computed(() =>
-  publicLocaleCodes.map((code) => ({
-    code,
-    label: messages.value.nav.languageOptions[code],
-    to: switchLocalePath(code) || localePath('/')
-  }))
+const nextLocaleCode = computed(() =>
+  locale.value === publicLocaleCodes[0]
+    ? publicLocaleCodes[1]
+    : publicLocaleCodes[0]
+)
+const nextLocaleLink = computed(() => ({
+  code: nextLocaleCode.value,
+  label: messages.value.nav.languageOptions[nextLocaleCode.value],
+  to: switchLocalePath(nextLocaleCode.value) || localePath('/')
+}))
+const nextLocaleShortLabel = computed(() =>
+  nextLocaleCode.value === 'en' ? 'EN' : '中'
+)
+const nextLocaleAriaLabel = computed(
+  () => `${messages.value.nav.languageLabel}：${nextLocaleLink.value.label}`
 )
 
 const isProductsOverviewRoute = computed(
@@ -303,27 +312,17 @@ watch(isMobileMenuOpen, (open) => {
         </nav>
 
         <div class="home-sys-header__actions">
-          <UTheme :ui="segmentedControlButtonTheme">
-            <div
-              class="home-sys-header__locale"
-              role="group"
-              :aria-label="messages.nav.languageLabel"
-            >
-              <UButton
-                v-for="item in localeLinks"
-                :key="item.code"
-                :to="item.to"
-                color="neutral"
-                variant="ghost"
-                size="xs"
-                :label="item.label"
-                :class="[
-                  'home-sys-header__segmented-button',
-                  'home-sys-header__locale-button'
-                ]"
-                :aria-current="locale === item.code ? 'page' : undefined"
-              />
-            </div>
+          <UTheme :ui="plainIconUtilityLightButtonTheme">
+            <UButton
+              :to="nextLocaleLink.to"
+              color="neutral"
+              variant="ghost"
+              size="sm"
+              leading-icon="i-ic-baseline-language"
+              :label="nextLocaleShortLabel"
+              class="home-sys-header__language-button justify-center"
+              :aria-label="nextLocaleAriaLabel"
+            />
           </UTheme>
 
           <UTheme :ui="contrastSolidDarkButtonTheme">
@@ -519,26 +518,6 @@ watch(isMobileMenuOpen, (open) => {
             :aria-current="isContactRoute ? 'page' : undefined"
             @click="closeMobileMenu"
           />
-        </UTheme>
-        <UTheme :ui="segmentedControlButtonTheme">
-          <div
-            class="mt-2 grid grid-cols-2 gap-0 border border-secondary-200 bg-secondary-50 p-0"
-            role="group"
-            :aria-label="messages.nav.languageLabel"
-          >
-            <UButton
-              v-for="item in localeLinks"
-              :key="`mobile-locale-${item.code}`"
-              :to="item.to"
-              color="neutral"
-              variant="ghost"
-              size="sm"
-              :label="item.label"
-              class="home-sys-header__segmented-button justify-center"
-              :aria-current="locale === item.code ? 'page' : undefined"
-              @click="closeMobileMenu"
-            />
-          </div>
         </UTheme>
       </nav>
     </div>
@@ -757,35 +736,15 @@ watch(isMobileMenuOpen, (open) => {
   justify-self: end;
 }
 
-.home-sys-header__segmented-button {
-  line-height: 1;
-}
-
-.home-sys-header__segmented-button:not(:disabled):not([aria-disabled='true']) {
-  cursor: pointer;
-}
-
 .home-sys-header__contact-button {
   min-height: var(--home-sys-header-control-height);
   padding-inline: 1.35rem;
 }
 
-.home-sys-header__locale {
-  display: none;
-  align-items: center;
-  gap: 0;
-  border: 1px solid var(--color-secondary-200);
-  border-radius: var(--radius-xs);
-  background: color-mix(
-    in srgb,
-    var(--color-secondary-50) 82%,
-    var(--color-white)
-  );
-  padding: 0;
-}
-
-.home-sys-header__locale-button {
-  min-width: 4.6rem;
+.home-sys-header__language-button {
+  min-width: var(--home-sys-header-control-height);
+  min-height: var(--home-sys-header-control-height);
+  height: var(--home-sys-header-control-height);
 }
 
 .home-sys-header__mobile-menu-button {
@@ -880,10 +839,6 @@ watch(isMobileMenuOpen, (open) => {
     --home-sys-header-main-padding-block: 0.35rem;
     --home-sys-header-main-gap: clamp(0.8rem, 1.4vw, 1.75rem);
     --home-sys-header-control-gap: 0.45rem;
-  }
-
-  .home-sys-header__locale {
-    display: inline-flex;
   }
 }
 

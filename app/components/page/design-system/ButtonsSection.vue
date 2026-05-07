@@ -6,6 +6,7 @@ import {
   iconUtilityDarkButtonTheme,
   iconUtilityEmphasisButtonTheme,
   iconUtilityLightButtonTheme,
+  plainIconUtilityLightButtonTheme,
   segmentedControlButtonTheme
 } from '~/utils/button-themes'
 import SectionHeader from './SectionHeader.vue'
@@ -34,7 +35,7 @@ const publicArchetypes = [
     key: 'segmented-control',
     title: 'Segmented control',
     owner: 'Layer 3 `button-themes.ts`',
-    usage: 'Header 語系切換、section tabs',
+    usage: 'Section tabs、局部雙態切換',
     size: '`xs` 為預設',
     radius: '`rounded-xs` / 2px',
     motion:
@@ -45,7 +46,7 @@ const publicArchetypes = [
     title: 'Icon utility',
     owner: 'Layer 3 `button-themes.ts`',
     usage:
-      'Header mobile controls、contact quick actions、newsletter submit、back-to-top',
+      'Header 語系、mobile controls、contact quick actions、newsletter submit、back-to-top',
     size: '`sm` 為預設 icon size',
     radius: '`rounded-xs` / 2px',
     motion:
@@ -72,10 +73,10 @@ const sectionMapping = [
   },
   {
     section: 'Header 語系',
-    archetype: 'Segmented control',
-    size: '`xs`',
-    owner: '`segmentedControlButtonTheme`',
-    note: '公開站控制，不得升格成 CTA'
+    archetype: 'Icon utility',
+    size: '`sm`',
+    owner: '`plainIconUtilityLightButtonTheme`',
+    note: '淡灰 pill，language icon + EN/中 direct toggle，不得升格成 CTA'
   },
   {
     section: 'Header mobile menu / service toggle',
@@ -241,14 +242,14 @@ const internalAccentSolidButtonTheme = {
                       color="neutral"
                       variant="ghost"
                       size="xs"
-                      label="中文"
+                      label="Tab A"
                       aria-current="page"
                     />
                     <UButton
                       color="neutral"
                       variant="ghost"
                       size="xs"
-                      label="英文"
+                      label="Tab B"
                     />
                   </div>
                 </UTheme>
@@ -257,13 +258,23 @@ const internalAccentSolidButtonTheme = {
                   v-else-if="item.key === 'icon-utility'"
                   class="buttons-sys-icon-preview"
                 >
+                  <UTheme :ui="plainIconUtilityLightButtonTheme">
+                    <UButton
+                      color="neutral"
+                      variant="ghost"
+                      size="sm"
+                      leading-icon="i-ic-baseline-language"
+                      label="EN"
+                      aria-label="Header language toggle"
+                    />
+                  </UTheme>
                   <UTheme :ui="iconUtilityLightButtonTheme">
                     <UButton
                       color="neutral"
                       variant="ghost"
                       size="sm"
                       icon="i-ic-baseline-menu"
-                      aria-label="Inline icon utility on light surface"
+                      aria-label="Header mobile menu"
                     />
                   </UTheme>
                   <div class="buttons-sys-icon-preview__dark">

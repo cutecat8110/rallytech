@@ -152,6 +152,48 @@ export const iconUtilityLightButtonTheme = {
   }
 } as const
 
+export const plainIconUtilityLightButtonTheme = {
+  button: {
+    base: joinClasses(
+      'group',
+      'bg-neutral-100',
+      'text-secondary-800',
+      'justify-center',
+      'px-3',
+      'py-0',
+      'gap-1.5',
+      'shadow-none',
+      'ring-0',
+      'motion-safe:transition-[background-color,color]',
+      'motion-safe:duration-[160ms]',
+      'hover:bg-neutral-200',
+      'hover:text-secondary-950',
+      'active:bg-neutral-200',
+      'active:text-secondary-950',
+      'focus-visible:bg-neutral-100',
+      'focus-visible:text-secondary-950',
+      'focus-visible:ring-2',
+      'focus-visible:ring-primary-200/75'
+    ),
+    label: joinClasses(
+      'text-current',
+      'text-[0.78rem]',
+      'font-semibold',
+      'leading-none',
+      'tracking-[0.02em]',
+      'group-hover:text-secondary-950',
+      'group-focus-visible:text-secondary-950'
+    ),
+    leadingIcon: joinClasses(
+      'text-current',
+      'size-4',
+      'group-hover:text-secondary-950',
+      'group-focus-visible:text-secondary-950'
+    ),
+    trailingIcon: 'text-current'
+  }
+} as const
+
 export const iconUtilityDarkButtonTheme = {
   button: {
     base: joinClasses(
