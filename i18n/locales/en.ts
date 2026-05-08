@@ -103,7 +103,7 @@ const servicesCatalog = [
     formalTitle: 'Web Development',
     englishTitle: 'Web Development',
     description:
-      'Plan industrial websites and web applications around brand, operations, and real usage needs.'
+      'Turn SCADA / HMI data, PI Server, historians, alarms, reports, and admin workflows into maintainable browser-based platforms.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

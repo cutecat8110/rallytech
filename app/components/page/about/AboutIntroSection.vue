@@ -32,6 +32,7 @@ const introFrontImage = computed(() => ({
         <SharedMediaPair
           class="about-sys-intro__media"
           variant="editorial"
+          tone="light"
           :back-image="introBackImage"
           :front-image="introFrontImage"
           :aria-label="messages.aboutPage.intro.title"
@@ -64,7 +65,7 @@ const introFrontImage = computed(() => ({
 .about-sys-intro__layout {
   display: grid;
   align-items: center;
-  gap: clamp(3rem, 8vw, 6rem);
+  gap: clamp(2.75rem, 7vw, 5.25rem);
 }
 
 .about-sys-intro__copy {
@@ -88,7 +89,7 @@ const introFrontImage = computed(() => ({
 
 @media (min-width: 1024px) {
   .about-sys-intro__layout {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1.02fr) minmax(0, 1fr);
   }
 }
 
@@ -102,7 +103,7 @@ const introFrontImage = computed(() => ({
 
 @media (max-width: 639px) {
   .about-sys-intro__layout {
-    gap: 2.5rem;
+    gap: 2rem;
   }
 
   .about-sys-intro__section-intro {

@@ -84,7 +84,7 @@ const designPrinciples = [
     <div class="page-sys-shell stack-sys-40">
       <div class="flex flex-wrap items-center justify-between gap-4">
         <p
-          class="type-sys-label-s inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 tracking-widest text-white/90 uppercase"
+          class="type-sys-label-s inline-flex rounded-sm border border-white/20 bg-white/10 px-4 py-2 tracking-widest text-white/90 uppercase"
         >
           {{ colorLockVersion }}
         </p>
@@ -94,7 +94,7 @@ const designPrinciples = [
           </p>
           <NuxtLink
             to="/design-system-color-lab"
-            class="type-sys-label-s inline-flex rounded-full border border-white/30 bg-white/10 px-3 py-1.5 text-white transition-colors hover:bg-white/20"
+            class="type-sys-label-s inline-flex rounded-sm border border-white/30 bg-white/10 px-3 py-1.5 text-white transition-colors hover:bg-white/20"
           >
             Color Lab
           </NuxtLink>
@@ -122,7 +122,7 @@ const designPrinciples = [
               v-for="item in quickLinks"
               :key="item.id"
               :href="`#${item.id}`"
-              class="type-sys-label-s hover:border-primary-300 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-white/80 transition-colors hover:bg-white/20 hover:text-white"
+              class="type-sys-label-s hover:border-primary-300 inline-flex items-center gap-2 rounded-sm border border-white/20 bg-white/10 px-3 py-2 text-white/80 transition-colors hover:bg-white/20 hover:text-white"
             >
               <UIcon :name="item.icon" class="text-primary-300 size-4" />
               <span>{{ item.title }}</span>

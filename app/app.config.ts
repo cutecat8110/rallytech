@@ -10,7 +10,7 @@ export default defineAppConfig({
         base: [
           'cursor-pointer',
           'justify-center',
-          'rounded-xs',
+          'rounded-sm',
           'disabled:cursor-not-allowed',
           'aria-disabled:cursor-not-allowed'
         ].join(' ')
@@ -78,17 +78,17 @@ export default defineAppConfig({
     },
     input: {
       slots: {
-        base: 'rounded-sm'
+        base: 'rounded-md'
       }
     },
     textarea: {
       slots: {
-        base: 'rounded-sm'
+        base: 'rounded-md'
       }
     },
     select: {
       slots: {
-        base: 'rounded-sm'
+        base: 'rounded-md'
       }
     }
   }

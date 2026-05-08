@@ -16,7 +16,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 
 const contactFormFieldUi = {
   base: [
-    'rounded-sm',
+    'rounded-md',
     'bg-white',
     'text-neutral-900',
     'placeholder:text-neutral-400',
@@ -30,7 +30,7 @@ const contactFormFieldUi = {
 
 const contactFormTextareaUi = {
   base: [
-    'rounded-sm',
+    'rounded-md',
     'bg-white',
     'text-neutral-900',
     'placeholder:text-neutral-400',
@@ -47,7 +47,7 @@ const contactFormFeedbackId = 'contact-form-submit-feedback'
 const contactFormFeedbackVisible = ref(false)
 const isMapFrameLoaded = ref(false)
 const contactFormFeedbackUi = {
-  root: 'rounded-sm',
+  root: 'rounded-md',
   title: 'type-sys-label-m',
   description: 'type-sys-body-s'
 } as const
@@ -630,7 +630,7 @@ function handleFormSubmit() {
 
 .contact-sys-map-frame {
   position: relative;
-  min-height: clamp(20rem, 70vw, 24rem);
+  block-size: clamp(18rem, 68vw, 22rem);
   overflow: hidden;
   background:
     radial-gradient(circle at 20% 18%, rgb(48 187 165 / 0.22), transparent 44%),
@@ -721,13 +721,17 @@ function handleFormSubmit() {
   }
 
   .contact-sys-map-frame {
-    min-height: clamp(22rem, 42vw, 34rem);
+    block-size: clamp(20rem, 44vw, 26rem);
   }
 }
 
 @media (min-width: 1024px) {
   .contact-sys-main-grid {
     gap: 2.45rem;
+  }
+
+  .contact-sys-map-frame {
+    block-size: clamp(22rem, 30vw, 25rem);
   }
 }
 

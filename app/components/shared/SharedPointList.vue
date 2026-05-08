@@ -166,7 +166,7 @@ function formatNumber(index: number) {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-md);
   background: var(--shared-point-list-marker-bg);
   color: var(--shared-point-list-marker-color);
 }

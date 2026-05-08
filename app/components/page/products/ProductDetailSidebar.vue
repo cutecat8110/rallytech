@@ -212,7 +212,7 @@ const productItems = computed(() =>
     top: 0.15rem;
     bottom: 0.15rem;
     width: 2px;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-xs);
     background: transparent;
     transition: background-color 180ms ease;
   }

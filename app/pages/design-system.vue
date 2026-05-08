@@ -47,7 +47,7 @@ useSeoMeta({
     <section class="section-sys-shell--compact bg-secondary-900">
       <div class="page-sys-shell">
         <div class="rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
-          <div class="bg-primary-500 h-1.5 w-14 rounded-full" />
+          <div class="bg-primary-500 h-1.5 w-14 rounded-xs" />
           <div class="stack-sys-8 mt-5">
             <p
               class="type-sys-label-s text-primary-300 tracking-widest uppercase"
@@ -81,7 +81,7 @@ useSeoMeta({
     <section class="section-sys-shell bg-secondary-900">
       <div class="page-sys-shell">
         <div class="rounded-lg border border-white/10 bg-white/5 p-6 md:p-8">
-          <div class="bg-primary-500 h-1.5 w-14 rounded-full" />
+          <div class="bg-primary-500 h-1.5 w-14 rounded-xs" />
           <div class="stack-sys-8 mt-5">
             <p
               class="type-sys-label-s text-primary-300 tracking-widest uppercase"

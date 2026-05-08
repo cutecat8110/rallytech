@@ -1030,59 +1030,30 @@ export const serviceDetailPagesSource = {
     seo: {
       title: 'Web Development | Kevin Manual Copy Source',
       description:
-        'Kevin manual copy source service for corporate websites, product and service pages, member portals, admin systems, and integration-ready web platforms.'
+        'Kevin manual copy source for industrial-operation web development that connects SCADA / HMI, PI Server, historians, alarms, reports, admin workflows, and notification channels.'
     },
-    heroFocusItems: [
-      'Tailored to business needs',
-      'Frontend and backend integration',
-      'Stable launch and future growth'
-    ],
+    heroFocusItems: [],
     introParagraphs: [
-      'This source-reference service was added from docs/rewrite/Kevin-網頁開發服務雙語文案.md. It frames web development as a standalone service covering corporate websites, product and service pages, member portals, admin systems, content workflows, and system integration.'
+      'This source-reference service was updated from docs/rewrite/rallytech-web-development.docx. It reframes web development as an industrial operations browser-platform service rather than a general corporate website service.'
     ],
     sidebar: sharedSidebar,
     blocks: [
       {
         type: 'media-feature',
+        eyebrow: false,
         mediaSlot: 'web-development',
         imageAlt: 'Kevin web development source-reference image',
         layout: 'image-right',
-        title: 'Kevin manual copy becomes a new public service',
+        title:
+          'Web development should turn industrial data and operating workflows into a usable digital platform',
         paragraphs: [
-          'The source material positions web development as a digital platform service rather than only visual page production.',
-          'The public rewrite should preserve the focus on information architecture, frontend and backend implementation, admin workflow, API integration, testing, launch, and future expansion.'
+          'The source material positions web development as a browser-based entry point for equipment data, alarm events, reports, maintenance records, and management workflows.',
+          'It asks the service page to emphasize data sources, user roles, operating workflows, system boundaries, admin modules, API architecture, notifications, and long-term maintenance.'
         ],
         highlights: [
-          'Business-fit architecture',
-          'Integrated implementation',
-          'Scalable foundation'
-        ]
-      },
-      {
-        type: 'proof-strip',
-        title: 'Manual Source Focus',
-        items: [
-          {
-            title: 'Planning',
-            description:
-              'Audience, content hierarchy, feature scope, and data boundaries should be defined before implementation.'
-          },
-          {
-            title: 'Implementation',
-            description:
-              'Frontend pages, backend logic, admin workflow, and data flow are treated as one coordinated build.'
-          },
-          {
-            title: 'Integration',
-            description:
-              'Forms, memberships, CRM, ERP, and internal or external systems can be connected where reliable data exchange is needed.'
-          }
-        ]
-      },
-      {
-        type: 'summary',
-        paragraphs: [
-          'Use this source layer only to verify Kevin copy structure and naming. Public copy lives in zh-tw/en detail locales.'
+          'Industrial data visibility',
+          'OT / IT integration',
+          'Maintainable browser platform'
         ]
       }
     ]

@@ -6,73 +6,79 @@ import type { RadiusToken } from './types'
 const radiusTokens: RadiusToken[] = [
   {
     token: 'XS',
-    value: '2px',
+    value: '1px',
     previewClass: 'rounded-xs',
-    usage: '公開站 boxed buttons / 精密控制'
+    usage: '細線框、微型工業標記、motif'
   },
   {
-    token: 'S',
-    value: '4px',
+    token: 'SM',
+    value: '2px',
     previewClass: 'rounded-sm',
-    usage: '輸入與小型 surface'
+    usage: 'Button、segmented control、icon utility'
   },
   {
-    token: 'M',
-    value: '8px',
+    token: 'MD',
+    value: '4px',
     previewClass: 'rounded-md',
-    usage: 'Compact surface / nav row / icon tile'
+    usage: 'Input、textarea、select、dropdown item'
   },
   {
-    token: 'L',
-    value: '12px',
+    token: 'LG',
+    value: '6px',
     previewClass: 'rounded-lg',
-    usage: 'Standard card / content panel'
+    usage: 'Standard card、sidebar panel、contact info block'
   },
   {
     token: 'XL',
-    value: '16px',
+    value: '8px',
     previewClass: 'rounded-xl',
-    usage: 'Large media / overlay shell'
+    usage: 'Large media、dropdown shell、hero visual panel'
   },
   {
     token: 'Full',
     value: '999px',
     previewClass: 'rounded-full',
-    usage: 'Pill / circular marker only'
+    usage: 'Process dial、scroll top、status dot only'
   }
 ]
 
 const radiusContracts = [
   {
     type: 'Precision control',
-    token: 'XS / 2px',
+    token: 'SM / 2px',
     usage: 'Button、icon utility、segmented control、mission tabs',
     owner: 'Layer 2 `app.config.ts` / Layer 3 `UTheme`'
   },
   {
     type: 'Field surface',
-    token: 'S / 4px',
+    token: 'MD / 4px',
     usage: 'Input、textarea、select、newsletter input、form feedback',
     owner: 'Layer 2 `app.config.ts` / local `:ui`'
   },
   {
     type: 'Compact surface',
-    token: 'M / 8px',
+    token: 'MD / 4px',
     usage: 'Sidebar mobile cards、dropdown items、mobile nav row、icon tiles',
     owner: 'Component local style'
   },
   {
     type: 'Standard card',
-    token: 'L / 12px',
+    token: 'LG / 6px',
     usage:
       'Product/service cards、content panels、proof strips、contact info cards',
     owner: 'Component local style / `surface-sys-card`'
   },
   {
     type: 'Large media / overlay',
-    token: 'XL / 16px',
+    token: 'XL / 8px',
     usage: 'Dropdown shell、large media frame、page visual panel',
     owner: 'Component local style'
+  },
+  {
+    type: 'Circular exception',
+    token: 'Full / 999px',
+    usage: 'Process dial、floating return action、status dot',
+    owner: 'Component local style + docs governance'
   },
   {
     type: 'Brand narrative geometry',

@@ -66,7 +66,7 @@ export const segmentedControlButtonTheme = {
       'group',
       'h-[var(--home-sys-header-control-height)]',
       'justify-center',
-      'rounded-xs',
+      'rounded-sm',
       'bg-transparent',
       'px-0',
       'text-secondary-700',

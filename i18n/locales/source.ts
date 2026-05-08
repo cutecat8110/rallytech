@@ -99,7 +99,7 @@ const servicesCatalog = [
     formalTitle: 'Web Development',
     englishTitle: 'Web Development',
     description:
-      'Kevin manual copy source service for corporate websites, product and service pages, member portals, admin systems, and integration-ready web platforms.'
+      'Kevin manual copy source for industrial-operation browser platforms that connect SCADA / HMI, PI Server, historians, alarms, reports, and admin workflows.'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

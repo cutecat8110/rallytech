@@ -654,6 +654,17 @@ watch(isMobileMenuOpen, (open) => {
   backdrop-filter: blur(14px);
 }
 
+.home-sys-header__services-menu::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 1rem;
+  width: 3rem;
+  height: 1px;
+  background: color-mix(in srgb, var(--color-primary-500) 58%, transparent);
+  pointer-events: none;
+}
+
 .home-sys-header__nav-group:hover .home-sys-header__services-menu,
 .home-sys-header__nav-group:focus-within .home-sys-header__services-menu {
   opacity: 1;

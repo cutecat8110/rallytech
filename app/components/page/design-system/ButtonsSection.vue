@@ -18,7 +18,7 @@ const publicArchetypes = [
     owner: 'Layer 2 `app/app.config.ts`',
     usage: '首頁 hero、首頁 section CTA、contact submit',
     size: '`lg` 為預設，首頁 hero 使用 `xl`',
-    radius: '`rounded-xs` / 2px',
+    radius: '`rounded-sm` / 2px',
     motion: 'Hover 只做背景色階切換；active 用較深色；focus 使用品牌 ring'
   },
   {
@@ -27,7 +27,7 @@ const publicArchetypes = [
     owner: 'Layer 3 `button-themes.ts`',
     usage: 'Header contact、footer connector',
     size: 'Header 使用 `sm`；footer connector 使用 `lg`',
-    radius: '`rounded-xs` / 2px',
+    radius: '`rounded-sm` / 2px',
     motion:
       '深底版本維持深色實底；白底版本 hover 會染上淡主色，文字與 focus ring 同步切到主色系'
   },
@@ -37,7 +37,7 @@ const publicArchetypes = [
     owner: 'Layer 3 `button-themes.ts`',
     usage: 'Section tabs、局部雙態切換',
     size: '`xs` 為預設',
-    radius: '`rounded-xs` / 2px',
+    radius: '`rounded-sm` / 2px',
     motion:
       '未選取白底項 hover / focus 會切到淡主色底與深主色文字；已選取實底維持現況'
   },
@@ -46,9 +46,9 @@ const publicArchetypes = [
     title: 'Icon utility',
     owner: 'Layer 3 `button-themes.ts`',
     usage:
-      'Header 語系、mobile controls、contact quick actions、newsletter submit、back-to-top',
+      'Header 語系、mobile controls、contact quick actions、newsletter submit',
     size: '`sm` 為預設 icon size',
-    radius: '`rounded-xs` / 2px',
+    radius: '`rounded-sm` / 2px',
     motion:
       'Inline 與 emphasis 模式都只做 fill 與 text 的細微切換；focus 才加強 ring'
   },
@@ -117,8 +117,8 @@ const sectionMapping = [
     section: 'Back to top',
     archetype: 'Icon utility',
     size: '`sm`',
-    owner: '`iconUtilityEmphasisButtonTheme`',
-    note: '使用較強 fill 建立存在感，但仍維持 flat chromatic motion'
+    owner: '`iconUtilityEmphasisButtonTheme` + local circular class',
+    note: '唯一 floating return action，使用 rounded-full；不回流到一般 icon utility'
   },
   {
     section: 'Home/services cards',
@@ -294,6 +294,7 @@ const internalAccentSolidButtonTheme = {
                         size="sm"
                         icon="i-ic-baseline-keyboard-arrow-up"
                         aria-label="Emphasis icon utility"
+                        class="buttons-sys-return-action-preview"
                       />
                     </UTheme>
                   </div>
@@ -528,7 +529,7 @@ const internalAccentSolidButtonTheme = {
 .buttons-sys-segmented {
   display: inline-flex;
   border: 1px solid var(--color-secondary-200);
-  border-radius: var(--radius-xs);
+  border-radius: var(--radius-sm);
   background: color-mix(
     in srgb,
     var(--color-secondary-50) 82%,
@@ -543,6 +544,10 @@ const internalAccentSolidButtonTheme = {
 
 .buttons-sys-text-cta {
   --shared-action-link-color: var(--color-secondary-950);
+}
+
+.buttons-sys-return-action-preview {
+  border-radius: var(--radius-full);
 }
 
 .buttons-sys-contract-item__copy {

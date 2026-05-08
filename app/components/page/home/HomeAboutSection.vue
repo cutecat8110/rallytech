@@ -69,6 +69,7 @@ const aboutFrontImage = computed(() => ({
         <SharedMediaPair
           class="home-sys-about__media-composite justify-self-center lg:justify-self-start"
           variant="compact"
+          tone="light"
           :back-image="aboutBackImage"
           :front-image="aboutFrontImage"
           :aria-label="messages.home.about.mediaLabel"
@@ -104,11 +105,19 @@ const aboutFrontImage = computed(() => ({
 
 .home-sys-about__media-composite {
   margin-inline: auto;
+  margin-top: 0.25rem;
 }
 
 @media (min-width: 1024px) {
   .home-sys-about__media-composite {
     margin-inline: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-sys-about__media-composite {
+    margin-top: -0.5rem;
   }
 }
 </style>

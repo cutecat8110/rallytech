@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 
 type SharedMediaPairVariant = 'compact' | 'editorial'
+type SharedMediaPairTone = 'light' | 'dark'
 
 interface SharedMediaPairImage {
   src: string
@@ -14,10 +15,12 @@ const props = withDefaults(
     backImage: SharedMediaPairImage
     frontImage: SharedMediaPairImage
     variant?: SharedMediaPairVariant
+    tone?: SharedMediaPairTone
     ariaLabel?: string
   }>(),
   {
     variant: 'compact',
+    tone: 'light',
     ariaLabel: undefined
   }
 )
@@ -27,7 +30,10 @@ const emit = defineEmits<{
   frontError: [event: Event]
 }>()
 
-const rootClass = computed(() => `shared-media-pair--${props.variant}`)
+const rootClass = computed(() => [
+  `shared-media-pair--${props.variant}`,
+  `shared-media-pair--tone-${props.tone}`
+])
 
 const backImageStyle = computed(() => ({
   objectPosition: props.backImage.objectPosition ?? 'center'
@@ -70,10 +76,31 @@ const frontImageStyle = computed(() => ({
 
 <style scoped>
 .shared-media-pair {
+  --shared-media-pair-frame-border: rgb(15 23 42 / 0.08);
+  --shared-media-pair-frame-surface: rgb(255 255 255 / 0.98);
+  --shared-media-pair-frame-shadow: 0 1.6rem 3.4rem -1.35rem rgb(15 23 42 / 0.2);
+  --shared-media-pair-front-shadow: 0 1.9rem 3.8rem -1.3rem rgb(15 23 42 / 0.22);
+  --shared-media-pair-corner-line: color-mix(
+    in srgb,
+    var(--color-primary-500) 48%,
+    transparent
+  );
   position: relative;
   isolation: isolate;
   width: 100%;
   margin: 0;
+}
+
+.shared-media-pair--tone-dark {
+  --shared-media-pair-frame-border: rgb(255 255 255 / 0.16);
+  --shared-media-pair-frame-surface: rgb(9 18 24 / 0.68);
+  --shared-media-pair-frame-shadow: 0 1.5rem 3.5rem -1.4rem rgb(0 0 0 / 0.48);
+  --shared-media-pair-front-shadow: 0 2rem 4rem -1.5rem rgb(0 0 0 / 0.56);
+  --shared-media-pair-corner-line: color-mix(
+    in srgb,
+    var(--color-primary-300) 62%,
+    transparent
+  );
 }
 
 .shared-media-pair__clip {
@@ -85,6 +112,33 @@ const frontImageStyle = computed(() => ({
 .shared-media-pair__frame {
   position: absolute;
   overflow: hidden;
+  border: 1px solid var(--shared-media-pair-frame-border);
+  background: var(--shared-media-pair-frame-surface);
+  box-shadow: var(--shared-media-pair-frame-shadow);
+}
+
+.shared-media-pair__frame::before,
+.shared-media-pair__frame::after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.shared-media-pair__frame::before {
+  top: -1px;
+  left: 0.85rem;
+  width: 2.5rem;
+  height: 1px;
+  background: var(--shared-media-pair-corner-line);
+}
+
+.shared-media-pair__frame::after {
+  top: 0.85rem;
+  left: -1px;
+  width: 1px;
+  height: 2.5rem;
+  background: var(--shared-media-pair-corner-line);
 }
 
 .shared-media-pair__frame--back {
@@ -103,117 +157,117 @@ const frontImageStyle = computed(() => ({
   object-fit: cover;
 }
 
+.shared-media-pair--tone-dark .shared-media-pair__image {
+  filter: saturate(0.98) contrast(1.02);
+}
+
 .shared-media-pair__decor {
   position: absolute;
   z-index: 3;
 }
 
 .shared-media-pair--compact {
-  width: min(100%, 34.75rem);
-  min-height: clamp(21rem, 25vw, 25.5rem);
-}
-
-.shared-media-pair--compact .shared-media-pair__frame {
-  border: 1px solid rgb(15 23 42 / 0.08);
-  background: rgb(255 255 255 / 0.98);
-  box-shadow: 0 2rem 4.5rem -1.75rem rgb(15 23 42 / 0.22);
+  width: min(100%, 35rem);
+  min-height: clamp(21rem, 25vw, 24rem);
 }
 
 .shared-media-pair--compact .shared-media-pair__frame--back {
-  top: clamp(0.4rem, 1vw, 0.8rem);
-  right: 0;
-  width: 74%;
-  height: 62%;
+  top: clamp(0.15rem, 0.65vw, 0.45rem);
+  right: clamp(0.15rem, 0.8vw, 0.55rem);
+  width: 62%;
+  height: 56%;
   border-radius: var(--radius-xl);
 }
 
 .shared-media-pair--compact .shared-media-pair__frame--front {
-  bottom: clamp(0.5rem, 1vw, 0.75rem);
+  bottom: clamp(1.45rem, 2vw, 1.9rem);
   left: 0;
-  width: 66%;
-  height: 56%;
+  width: 79%;
+  height: 64%;
   border-radius: var(--radius-lg);
+  box-shadow: var(--shared-media-pair-front-shadow);
 }
 
 .shared-media-pair--compact .shared-media-pair__decor {
-  right: -0.5rem;
-  bottom: -0.25rem;
+  right: 0;
+  bottom: 0.1rem;
+  transform: scale(0.88);
+  transform-origin: right bottom;
 }
 
 .shared-media-pair--editorial {
-  max-width: 38rem;
-  aspect-ratio: 4 / 3.05;
-}
-
-.shared-media-pair--editorial .shared-media-pair__frame {
-  border: 1px solid rgb(0 0 0 / 0.05);
-  border-radius: var(--radius-xl);
-  background: var(--color-neutral-100);
-  box-shadow: 0 2rem 4rem -1rem rgb(15 23 42 / 0.12);
+  max-width: 35rem;
+  aspect-ratio: 4 / 2.96;
 }
 
 .shared-media-pair--editorial .shared-media-pair__frame--back {
   top: 0;
   right: 0;
-  width: 73%;
-  height: 80%;
+  width: 72%;
+  height: 76%;
+  border-radius: var(--radius-xl);
 }
 
 .shared-media-pair--editorial .shared-media-pair__frame--front {
-  bottom: 0;
+  bottom: 0.8rem;
   left: 0;
-  width: 66%;
-  height: 58%;
-  box-shadow: 0 2.5rem 5rem -1.25rem rgb(15 23 42 / 0.18);
+  width: 67%;
+  height: 56%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shared-media-pair-front-shadow);
 }
 
 @media (min-width: 1024px) {
   .shared-media-pair--compact {
-    width: min(100%, 33.75rem);
+    width: min(100%, 34.75rem);
   }
 }
 
 @media (max-width: 1023px) {
   .shared-media-pair--editorial {
-    max-width: 28rem;
+    max-width: 27rem;
     margin-inline: auto;
   }
 }
 
 @media (max-width: 767px) {
   .shared-media-pair--compact {
-    width: min(100%, 19.75rem);
-    min-height: 20.75rem;
+    width: min(100%, 20.75rem);
+    min-height: 18.75rem;
   }
 
   .shared-media-pair--compact .shared-media-pair__frame {
-    box-shadow: 0 1.5rem 3rem -1.25rem rgb(15 23 42 / 0.22);
+    box-shadow: 0 1.15rem 2.35rem -1rem rgb(15 23 42 / 0.18);
   }
 
   .shared-media-pair--compact .shared-media-pair__frame--back {
-    width: 94%;
-    height: 60%;
+    top: 0.1rem;
+    right: 2.4rem;
+    width: 64%;
+    height: 54%;
     border-radius: var(--radius-xl);
   }
 
   .shared-media-pair--compact .shared-media-pair__frame--front {
-    bottom: 0;
+    bottom: 1.2rem;
     left: 0;
-    width: 84%;
-    height: 48%;
+    width: 78%;
+    height: 58%;
     border-radius: var(--radius-lg);
   }
 
   .shared-media-pair--compact .shared-media-pair__decor {
-    right: -0.25rem;
-    bottom: -0.2rem;
+    right: 2.55rem;
+    bottom: 0.35rem;
+    transform: scale(0.68);
+    transform-origin: right bottom;
   }
 }
 
 @media (max-width: 639px) {
   .shared-media-pair--editorial {
-    max-width: 22.5rem;
-    aspect-ratio: 4 / 3.15;
+    max-width: 22.25rem;
+    aspect-ratio: 4 / 2.85;
   }
 
   .shared-media-pair--editorial .shared-media-pair__frame {
@@ -221,13 +275,14 @@ const frontImageStyle = computed(() => ({
   }
 
   .shared-media-pair--editorial .shared-media-pair__frame--back {
-    width: 73%;
-    height: 76%;
+    width: 72%;
+    height: 72%;
   }
 
   .shared-media-pair--editorial .shared-media-pair__frame--front {
+    bottom: 0.6rem;
     width: 72%;
-    height: 56%;
+    height: 54%;
   }
 }
 </style>

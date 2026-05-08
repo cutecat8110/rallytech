@@ -101,7 +101,7 @@ const servicesCatalog = [
     formalTitle: '網頁開發服務',
     englishTitle: 'Web Development',
     description:
-      '依據品牌定位、營運流程與實際使用情境，規劃工業網站與 Web 應用的架構、介面流程與技術實作。'
+      '將 SCADA / HMI、PI Server、Historians、告警、報表與後台流程整合成可維護、可擴充的瀏覽器端平台。'
   }
 ] satisfies ServiceCatalogItemMessages[]
 

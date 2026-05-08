@@ -250,7 +250,7 @@ useSeoMeta({
       <div class="page-sys-shell flex min-h-[68vh] flex-col md:min-h-[76vh]">
         <div class="pt-8 md:pt-10">
           <div
-            class="inline-flex rounded-full bg-white/10 px-4 py-2 shadow-[inset_0_0_0_1px_rgb(255_255_255/0.1)]"
+            class="inline-flex rounded-sm bg-white/10 px-4 py-2 shadow-[inset_0_0_0_1px_rgb(255_255_255/0.1)]"
           >
             <p class="type-sys-label-m text-white/90">
               高端色彩定案：{{ activeDirection.name }}
@@ -411,7 +411,7 @@ useSeoMeta({
             }"
           >
             <div
-              class="h-1.5 w-12 rounded-full"
+              class="h-1.5 w-12 rounded-xs"
               :style="{ backgroundColor: activeDirection.primary }"
             />
             <p
@@ -421,9 +421,9 @@ useSeoMeta({
               {{ item }}
             </p>
             <div class="mt-4 space-y-2">
-              <div class="h-2 rounded-full bg-neutral-200/85" />
-              <div class="h-2 w-10/12 rounded-full bg-neutral-200/85" />
-              <div class="h-2 w-8/12 rounded-full bg-neutral-200/85" />
+              <div class="h-2 rounded-xs bg-neutral-200/85" />
+              <div class="h-2 w-10/12 rounded-xs bg-neutral-200/85" />
+              <div class="h-2 w-8/12 rounded-xs bg-neutral-200/85" />
             </div>
             <div
               class="mt-5 inline-flex items-center gap-2 text-sm font-medium"
@@ -471,7 +471,7 @@ useSeoMeta({
             }"
           >
             <div
-              class="h-1.5 w-10 rounded-full"
+              class="h-1.5 w-10 rounded-xs"
               :style="{ backgroundColor: activeDirection.primary }"
             />
             <p class="type-sys-title-l mt-4 text-white">
@@ -535,8 +535,8 @@ useSeoMeta({
             >
               {{ step }}
             </p>
-            <div class="mt-4 h-2 rounded-full bg-neutral-200/85" />
-            <div class="mt-2 h-2 w-9/12 rounded-full bg-neutral-200/85" />
+            <div class="mt-4 h-2 rounded-xs bg-neutral-200/85" />
+            <div class="mt-2 h-2 w-9/12 rounded-xs bg-neutral-200/85" />
           </article>
         </div>
       </div>
@@ -588,18 +588,18 @@ useSeoMeta({
             }"
           >
             <div
-              class="h-1.5 w-10 rounded-full"
+              class="h-1.5 w-10 rounded-xs"
               :style="{ backgroundColor: activeDirection.primary }"
             />
             <p class="type-sys-title-m mt-3 text-white">
               {{ item }}
             </p>
             <div
-              class="mt-3 h-2 rounded-full"
+              class="mt-3 h-2 rounded-xs"
               :style="{ backgroundColor: 'rgb(255 255 255 / 0.16)' }"
             />
             <div
-              class="mt-2 h-2 w-9/12 rounded-full"
+              class="mt-2 h-2 w-9/12 rounded-xs"
               :style="{ backgroundColor: 'rgb(255 255 255 / 0.16)' }"
             />
           </div>

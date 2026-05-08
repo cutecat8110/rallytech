@@ -1520,9 +1520,10 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-overview-card',
       liveSource: 'stock',
       stock: {
-        src: '/images/provided/services/web-development/overview-card-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/overview-card-web-development-industrial-platform.jpg',
         alt: '',
-        label: 'web-development-overview-card Kevin provided image',
+        label:
+          'web-development-overview-card Kevin provided industrial platform image',
         candidateId: null,
         model: null,
         promptId: null,
@@ -1531,8 +1532,8 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         createdAt: null,
         licenseNote: 'Rally Technology proprietary provided visual asset.',
         notes:
-          'Kevin-provided visual selected for the Web Development new service overview card.',
-        objectPosition: '55% 44%'
+          'Kevin-provided 2026-05-07 industrial platform visual selected for the Web Development overview card.',
+        objectPosition: '50% 46%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1541,9 +1542,10 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-detail-hero',
       liveSource: 'stock',
       stock: {
-        src: '/images/provided/services/web-development/detail-hero-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/detail-hero-web-development-industrial-platform.jpg',
         alt: '',
-        label: 'web-development-detail-hero Kevin provided image',
+        label:
+          'web-development-detail-hero Kevin provided industrial platform image',
         candidateId: null,
         model: null,
         promptId: null,
@@ -1552,8 +1554,8 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         createdAt: null,
         licenseNote: 'Rally Technology proprietary provided visual asset.',
         notes:
-          'Kevin-provided visual selected for the Web Development detail hero.',
-        objectPosition: '56% 44%'
+          'Kevin-provided 2026-05-07 title background visual selected for the Web Development detail hero.',
+        objectPosition: '50% 48%'
       },
       liveNano: null,
       latestCandidate: null
@@ -1562,9 +1564,10 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
       slot: 'web-development-detail-feature',
       liveSource: 'stock',
       stock: {
-        src: '/images/provided/services/web-development/detail-feature-web-development-kevin-workspace.jpg',
+        src: '/images/provided/services/web-development/detail-feature-web-development-industrial-platform.jpg',
         alt: '',
-        label: 'web-development-detail-feature Kevin provided image',
+        label:
+          'web-development-detail-feature Kevin provided industrial platform image',
         candidateId: null,
         model: null,
         promptId: null,
@@ -1573,8 +1576,8 @@ export const servicePageImageRegistry: ServicePageImageRegistry = {
         createdAt: null,
         licenseNote: 'Rally Technology proprietary provided visual asset.',
         notes:
-          'Kevin-provided visual selected for the Web Development detail feature.',
-        objectPosition: '56% 44%'
+          'Kevin-provided 2026-05-07 content visual selected for the Web Development detail feature.',
+        objectPosition: '50% 48%'
       },
       liveNano: null,
       latestCandidate: null

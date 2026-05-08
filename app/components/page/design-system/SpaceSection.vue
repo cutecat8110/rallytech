@@ -43,7 +43,7 @@ const spaceTokens: SpaceToken[] = [
             {{ token.token }}
           </p>
           <div
-            class="bg-primary-500 h-3 rounded-full"
+            class="bg-primary-500 h-3 rounded-xs"
             :class="token.widthClass"
           />
           <p class="type-sys-body-s text-neutral-700">

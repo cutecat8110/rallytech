@@ -119,7 +119,7 @@ const serviceItems = computed(() =>
   right: 0.85rem;
   bottom: 0.45rem;
   height: 2px;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xs);
   background: transparent;
   transition: background-color 180ms ease;
 }
@@ -219,7 +219,7 @@ const serviceItems = computed(() =>
     bottom: 0.15rem;
     width: 2px;
     height: auto;
-    border-radius: var(--radius-full);
+    border-radius: var(--radius-xs);
   }
 
   .services-sys-detail-sidebar__link:hover::after,

@@ -1083,12 +1083,11 @@ export const serviceDetailPagesEn = {
     seo: {
       title: 'Web Development | Rally Technology',
       description:
-        'Rally Technology provides custom web development for corporate websites, service pages, member portals, and admin systems based on brand, workflows, and real operating needs.'
+        'Rally Technology provides web development for industrial operations, turning SCADA / HMI data, PI Server, historians, alarms, reports, and admin workflows into maintainable browser-based platforms.'
     },
     heroFocusItems: [],
     introParagraphs: [
-      'Rally Technology provides custom web development services for corporate websites, product and service pages, member portals, and admin systems. We define the site structure, user flow, and technical implementation around each client’s brand, business process, and real operating needs, so the website becomes more than a visual presence.',
-      'We work to high industry standards across frontend, backend, integrations, testing, and deployment, with close attention to performance, security, maintainability, and scalability. Whether the project is a new build, a redesign, or a functional upgrade, the result is delivered on a stable and extensible foundation.'
+      'Rally Technology provides web development for industrial operations, helping teams turn SCADA / HMI data, PI Server, historians, alarms, reports, and admin workflows into maintainable browser-based platforms where operations, maintenance, engineering, and IT teams can read status, use data, and complete daily work from one shared entry point.'
     ],
     sidebar: sharedSidebar,
     blocks: [
@@ -1097,18 +1096,18 @@ export const serviceDetailPagesEn = {
         eyebrow: false,
         mediaSlot: 'web-development',
         imageAlt:
-          'Desktop and laptop screens showing website interfaces and development work',
+          'Industrial operations platform and web development interface illustration',
         layout: 'image-right',
         title:
-          'Web development should turn a company website into a digital platform the business can truly operate on',
+          'Web development should turn industrial data and operating workflows into a digital platform teams can actually use',
         paragraphs: [
-          'Strong web development is not only about polished pages. It is about making brand presentation, content management, user interaction, and connected data work together reliably over time.',
-          'We begin by clarifying information architecture, user scenarios, and system boundaries, then implement the frontend, backend, admin workflow, and integrations in a coordinated way.'
+          'In industrial environments, a website is not only a brand or content page. It can be the entry point for equipment data, alarm events, reporting, maintenance records, and management workflows. Strong web development has to connect user experience, backend logic, data flow, and real operating routines.',
+          'We begin by clarifying data sources, user roles, operating steps, and integration needs, then design the browser interface, admin modules, and API structure around them. This gives different teams a consistent, secure, and maintainable way to work with industrial data.'
         ],
         highlights: [
-          'Tailored to business needs',
-          'Integrated across frontend and backend',
-          'Built for stable launch and future growth'
+          'Industrial data visibility',
+          'Frontend, backend, and system integration',
+          'Built for long-term operations and expansion'
         ]
       },
       {
@@ -1117,67 +1116,67 @@ export const serviceDetailPagesEn = {
         title: 'Key priorities',
         items: [
           {
-            title: 'Business-fit architecture',
+            title: 'Industrial-context architecture',
             description:
-              'We shape the website structure around real business goals, services, and workflows instead of forcing the project into a generic template.'
+              'We shape the platform around site workflows, data sources, user roles, and maintenance needs instead of forcing industrial requirements into a generic website structure.'
           },
           {
-            title: 'Integrated implementation',
+            title: 'OT / IT data integration',
             description:
-              'We build pages, functions, admin tools, and data flow together so the platform works as one system.'
+              'We help connect SCADA, PI Server, historians, alarms, reports, and existing backend systems so data can be used consistently across user interfaces and workflows.'
           },
           {
-            title: 'Standards-based delivery',
+            title: 'Usable data interfaces',
             description:
-              'We use leading frameworks, version control, testing, and deployment practices to improve quality, security, and long-term maintainability.'
+              'We organize live status, historical trends, event records, search conditions, and reporting needs into clear interfaces that reduce friction for cross-team data use.'
           },
           {
-            title: 'Scalable foundation',
+            title: 'Maintainable foundation',
             description:
-              'We leave room for future pages, languages, modules, and integrations so expansion does not require starting over.'
+              'We build on readable architecture, version control, testing, and deployment practices so future sites, languages, modules, and integrations can be added without starting over.'
           }
         ]
       },
       {
         type: 'process-steps',
         eyebrow: 'Scope and Method',
-        title: 'Plan from discovery through launch and future growth',
+        title: 'Plan from requirements through launch and future support',
         items: [
           {
             stepLabel: '01',
-            title: 'Discovery and architecture planning',
+            title: 'Requirements and system boundaries',
             description:
-              'We define audience, content structure, feature scope, and data boundaries before design and development begin.'
+              'We define user roles, site workflows, data sources, existing systems, and access boundaries before implementation begins.'
           },
           {
             stepLabel: '02',
             title: 'Interface and responsive experience',
             description:
-              'We create clear interfaces that remain consistent and usable across desktop and mobile.'
+              'We design dashboards, data search, lists, forms, reports, and admin workflows so desktop and mobile use remain clear and consistent.'
           },
           {
             stepLabel: '03',
             title: 'Frontend and backend development',
             description:
-              'We implement customer-facing pages, business logic, content handling, and admin functions as one coordinated build.'
+              'We implement user interfaces, backend services, data models, business rules, and management modules as one working platform.'
           },
           {
             stepLabel: '04',
-            title: 'CMS and workflow support',
+            title: 'Data visualization and reporting flow',
             description:
-              'We structure the backend so teams can manage updates, content, and daily operations more efficiently after launch.'
+              'We organize real-time status, historical trends, event records, and query conditions around practical operating and reporting needs.'
           },
           {
             stepLabel: '05',
-            title: 'API and system integration',
+            title: 'API and industrial system integration',
             description:
-              'We connect forms, memberships, CRM, ERP, or other systems where the website needs reliable data exchange.'
+              'We connect SCADA / HMI, PI Server, historians, alarm systems, internal databases, or enterprise systems where reliable data exchange is required.'
           },
           {
             stepLabel: '06',
-            title: 'Testing, launch, and growth planning',
+            title: 'Testing, deployment, and maintenance readiness',
             description:
-              'We prepare validation, deployment, and future expansion so the platform stays stable as it evolves.'
+              'We validate data accuracy, access flows, user experience, and deployment settings before launch, with a clear baseline for future support and troubleshooting.'
           }
         ]
       },
@@ -1188,34 +1187,34 @@ export const serviceDetailPagesEn = {
         title: 'Typical support scenarios',
         items: [
           {
-            title: 'Corporate websites',
+            title: 'Industrial portals and admin workflows',
             description:
-              'Present the company clearly across brand, services, and contact channels.'
+              'Combine service information, system entry points, documents, accounts, permissions, sites, and equipment settings in one browser-based management portal.'
           },
           {
-            title: 'Product and service pages',
+            title: 'Monitoring dashboards',
             description:
-              'Explain value, differentiation, and solutions in a more structured way.'
+              'Present site status, equipment information, trends, and key indicators so teams can read conditions faster.'
           },
           {
-            title: 'Member and admin systems',
+            title: 'Data search and reporting platforms',
             description:
-              'Support account-based features, operational workflows, and managed content.'
+              'Integrate PI Server, historians, or other data sources to support historical search, filtering, and reporting needs.'
           },
           {
-            title: 'Campaign and project pages',
+            title: 'Alarm and event management interfaces',
             description:
-              'Build focused digital experiences for launches, promotions, or lead-generation goals.'
+              'Centralize alarms, events, and response workflows to reduce manual tracking and system switching.'
           },
           {
-            title: 'Multilingual websites',
+            title: 'Notification and collaboration integrations',
             description:
-              'Keep multiple language versions aligned within one maintainable structure.'
+              'Connect Microsoft Teams, LINE, or other notification channels to alarms, events, or workflow steps so responsible teams can receive critical messages and keep response context visible.'
           },
           {
-            title: 'Business system integration',
+            title: 'Multilingual and multi-site support',
             description:
-              'Extend the website into an active business touchpoint instead of leaving it as a standalone front end.'
+              'Keep content and functions manageable across different languages, sites, and user roles within one structure.'
           }
         ]
       },
@@ -1224,8 +1223,8 @@ export const serviceDetailPagesEn = {
         eyebrow: 'Timing Considerations',
         title: 'When to bring web development planning in early',
         paragraphs: [
-          'Bring web development planning in early when launching a new corporate website, redesigning an existing one, improving digital workflows, or preparing to connect the site with memberships, forms, CRM, ERP, or internal systems.',
-          'The earlier the structure and data flow are defined, the easier it is to control future expansion, maintenance, and redesign costs.'
+          'Bring web development planning in early when SCADA / HMI, PI Server, historians, alarm information, reports, or internal systems need to become a browser-based platform that teams can use more easily.',
+          'The earlier the data sources, access model, workflows, and system boundaries are defined, the easier it is to control future site expansion, module growth, data integration, and long-term maintenance cost.'
         ]
       }
     ]

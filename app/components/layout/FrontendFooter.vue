@@ -89,7 +89,7 @@ const contactMetaItems = computed(() =>
 
 const newsletterInputUi = {
   base: [
-    'rounded-sm',
+    'rounded-md',
     'border-0',
     'bg-white/10',
     'text-white',
@@ -601,6 +601,7 @@ onBeforeUnmount(() => {
   width: 2.85rem;
   height: 2.85rem;
   justify-content: center;
+  border-radius: var(--radius-full);
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
@@ -639,9 +640,14 @@ onBeforeUnmount(() => {
 }
 
 @media (max-width: 767px) {
+  .home-sys-footer__connector {
+    --connector-band-min-height: clamp(8rem, 34vw, 9rem);
+  }
+
   .home-sys-footer__connector-layout {
     justify-items: center;
-    gap: 1.15rem;
+    gap: 0.85rem;
+    padding-block: clamp(1.35rem, 5.8vw, 1.65rem);
     text-align: center;
   }
 
@@ -650,7 +656,9 @@ onBeforeUnmount(() => {
   }
 
   .home-sys-footer__connector-copy :deep(.shared-content-header__title) {
-    max-width: min(100%, 16rem);
+    max-width: min(100%, 19rem);
+    font-size: clamp(1.55rem, 7vw, 1.85rem);
+    line-height: 1.08;
   }
 
   .home-sys-footer__connector-action {
@@ -659,7 +667,7 @@ onBeforeUnmount(() => {
 
   .home-sys-footer__connector-cta {
     min-width: 8rem;
-    min-height: 2.9rem;
+    min-height: 2.75rem;
   }
 
   .home-sys-footer__content-grid {
@@ -771,6 +779,10 @@ onBeforeUnmount(() => {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .home-sys-footer__connector-copy :deep(.shared-content-header__title) {
+    max-width: min(100%, 11.5ch);
+  }
+
   .home-sys-footer__content-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2.35rem 2.6rem;

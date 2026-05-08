@@ -32,10 +32,10 @@ const activeMissionState = computed(
 
 const missionTabsUi = {
   root: 'w-full xl:w-fit',
-  list: 'grid w-full grid-cols-2 rounded-xs border border-neutral-200 bg-white p-1 shadow-none xl:inline-flex xl:w-auto',
-  indicator: 'rounded-xs bg-primary-700 shadow-none',
+  list: 'grid w-full grid-cols-2 rounded-sm border border-neutral-200 bg-white p-1 shadow-none xl:inline-flex xl:w-auto',
+  indicator: 'rounded-sm bg-primary-700 shadow-none',
   trigger:
-    'min-w-0 cursor-pointer justify-center rounded-xs px-2 py-2 type-sys-label-s text-center text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white xl:min-w-[7.25rem] xl:px-4',
+    'min-w-0 cursor-pointer justify-center rounded-sm px-2 py-2 type-sys-label-s text-center text-neutral-600 transition-colors disabled:cursor-not-allowed aria-disabled:cursor-not-allowed data-[state=active]:text-white xl:min-w-[7.25rem] xl:px-4',
   label:
     'whitespace-normal leading-snug tracking-[0.06em] uppercase xl:whitespace-nowrap xl:tracking-[0.08em]'
 } as const
@@ -261,7 +261,7 @@ const missionTabsUi = {
   position: absolute;
   inset: 17% 3% 4% 20%;
   z-index: 0;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-xl);
   background:
     radial-gradient(circle at 58% 42%, rgb(48 187 165 / 0.2), transparent 58%),
     radial-gradient(circle at 78% 72%, rgb(10 18 22 / 0.1), transparent 64%);

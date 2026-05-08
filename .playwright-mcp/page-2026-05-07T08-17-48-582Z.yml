@@ -1,0 +1,150 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - link "+886-3-552-9933" [ref=e8] [cursor=pointer]:
+        - /url: tel:+88635529933
+        - text: +886-3-552-9933
+      - link "sales@rallytech.com.tw" [ref=e10] [cursor=pointer]:
+        - /url: mailto:sales@rallytech.com.tw
+        - text: sales@rallytech.com.tw
+    - generic [ref=e13]:
+      - link "雷力科技首頁" [ref=e14] [cursor=pointer]:
+        - /url: /
+        - img "雷力科技" [ref=e15]
+      - navigation [ref=e16]:
+        - link "關於我們" [ref=e17] [cursor=pointer]:
+          - /url: /about
+        - link "產品" [ref=e19] [cursor=pointer]:
+          - /url: /products
+          - generic [ref=e20]: 產品
+        - link "服務項目" [ref=e23] [cursor=pointer]:
+          - /url: /services
+          - generic [ref=e24]: 服務項目
+        - link "全方位整合服務" [ref=e26] [cursor=pointer]:
+          - /url: /one-touch-experience
+      - generic [ref=e27]:
+        - link "切換語言：英文" [ref=e28] [cursor=pointer]:
+          - /url: /en/contact
+          - generic [ref=e30]: EN
+        - link "聯絡我們" [ref=e31] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e32]: 聯絡我們
+  - main [ref=e33]:
+    - generic [ref=e34]:
+      - heading "聯絡我們" [level=1] [ref=e40]
+      - generic [ref=e43]:
+        - article [ref=e44]:
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: 聯絡我們
+            - heading "開始洽詢" [level=2] [ref=e47]
+          - generic [ref=e48]:
+            - paragraph [ref=e49]: 若您要討論自動化整合、控制系統、試車支援或工廠資料需求，可從這裡開始。
+            - paragraph [ref=e50]: 我們會先協助確認範圍、釐清工作邊界，整理出下一步可執行的方向。
+          - generic [ref=e51]:
+            - link "來電洽詢" [ref=e52] [cursor=pointer]:
+              - /url: tel:+88635529933
+            - link "傳真聯繫" [ref=e54] [cursor=pointer]:
+              - /url: tel:+88635529797
+            - link "來信洽詢" [ref=e56] [cursor=pointer]:
+              - /url: mailto:sales@rallytech.com.tw
+            - link "查看地圖" [ref=e58] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan
+        - article [ref=e60]:
+          - generic [ref=e61]:
+            - heading "聯絡表單" [level=2] [ref=e62]
+            - paragraph [ref=e63]: 留下聯絡資訊與專案重點，讓我們更快理解範圍並回覆。
+          - generic [ref=e64]:
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - generic [ref=e69]: 姓名*
+                - textbox "姓名*" [ref=e72]:
+                  - /placeholder: 請輸入您的姓名
+              - generic [ref=e73]:
+                - generic [ref=e76]: Email*
+                - textbox "Email*" [ref=e79]:
+                  - /placeholder: you@example.com
+              - generic [ref=e80]:
+                - generic [ref=e83]: 公司 / 單位*
+                - textbox "公司 / 單位*" [ref=e86]:
+                  - /placeholder: 請輸入公司或單位名稱
+              - generic [ref=e87]:
+                - generic [ref=e90]: 主旨*
+                - textbox "主旨*" [ref=e93]:
+                  - /placeholder: 例如：SCADA 升級或 PLC / DCS 搬遷評估
+              - generic [ref=e94]:
+                - generic [ref=e97]: 聯絡電話
+                - textbox "聯絡電話" [ref=e100]:
+                  - /placeholder: 請輸入可聯繫電話
+              - generic [ref=e101]:
+                - generic [ref=e104]: 需求內容*
+                - textbox "需求內容*" [ref=e107]:
+                  - /placeholder: 請描述現況、需求範圍、期望時程或關鍵限制
+            - button "送出洽詢" [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]: 送出洽詢
+      - generic [ref=e113]:
+        - article [ref=e114]:
+          - paragraph [ref=e115]: 電話 / 傳真
+          - link "+886-3-552-9933" [ref=e116] [cursor=pointer]:
+            - /url: tel:+88635529933
+          - generic [ref=e117]:
+            - paragraph [ref=e118]: 傳真
+            - link "+886-3-552-9797" [ref=e119] [cursor=pointer]:
+              - /url: tel:+88635529797
+        - article [ref=e120]:
+          - paragraph [ref=e121]: 公司地址
+          - link "302081 新竹縣竹北市惟馨街 95 號 3 樓之 5" [ref=e122] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan
+        - article [ref=e123]:
+          - paragraph [ref=e124]: 電子郵件
+          - link "sales@rallytech.com.tw" [ref=e125] [cursor=pointer]:
+            - /url: mailto:sales@rallytech.com.tw
+      - generic "雷力科技辦公室 Google Maps 位置" [ref=e128]:
+        - iframe [ref=e129]:
+          - link "在 Google 地圖中開啟 (在新分頁中開啟)" [ref=f9e4] [cursor=pointer]:
+            - /url: about:invalid#zClosurez
+            - text: 在 Google 地圖中開啟
+            - img [ref=f9e6]
+  - contentinfo [ref=e130]:
+    - region "工業自動化整合夥伴" [ref=e131]:
+      - figure [ref=e132]
+      - generic [ref=e134]:
+        - heading "工業自動化整合夥伴" [level=2] [ref=e137]
+        - link "聯絡我們" [ref=e139] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e140]: 聯絡我們
+    - generic [ref=e143]:
+      - article [ref=e144]:
+        - paragraph [ref=e145]: 雷力科技 Rally Technology
+        - paragraph [ref=e146]: 雷力科技股份有限公司
+      - article "電子報" [ref=e147]:
+        - generic [ref=e148]:
+          - heading "電子報" [level=3] [ref=e149]
+          - paragraph [ref=e150]: 訂閱電子報，掌握雷力科技最新消息。
+        - generic [ref=e152]:
+          - textbox "輸入 Email" [ref=e154]
+          - button "訂閱" [ref=e155] [cursor=pointer]
+      - article "聯絡方式" [ref=e157]:
+        - heading "聯絡方式" [level=3] [ref=e159]
+        - generic [ref=e160]:
+          - link "電話 +886-3-552-9933" [ref=e161] [cursor=pointer]:
+            - /url: tel:+88635529933
+            - generic [ref=e163]:
+              - generic [ref=e164]: 電話
+              - generic [ref=e165]: +886-3-552-9933
+          - link "電子郵件 sales@rallytech.com.tw" [ref=e166] [cursor=pointer]:
+            - /url: mailto:sales@rallytech.com.tw
+            - generic [ref=e168]:
+              - generic [ref=e169]: 電子郵件
+              - generic [ref=e170]: sales@rallytech.com.tw
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - term [ref=e173]: 傳真
+            - definition [ref=e174]:
+              - link "+886-3-552-9797" [ref=e175] [cursor=pointer]:
+                - /url: tel:+88635529797
+          - generic [ref=e176]:
+            - term [ref=e177]: 地址
+            - definition [ref=e178]:
+              - link "302081 新竹縣竹北市惟馨街 95 號 3 樓之 5" [ref=e179] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan
+    - paragraph [ref=e182]: © 2026 雷力科技。版權所有。
