@@ -116,7 +116,7 @@ const serviceItems = computed(() =>
   position: absolute;
   top: clamp(4.6rem, 7vw, 6.1rem);
   right: auto;
-  left: max(1rem, calc(50% - 42rem));
+  left: max(0.5rem, calc(50% - 44rem));
   z-index: 0;
 }
 
@@ -125,8 +125,9 @@ const serviceItems = computed(() =>
 }
 
 .home-sys-services__grid {
-  margin-top: 2.5rem;
-  max-width: 76rem;
+  position: relative;
+  margin-top: clamp(2.4rem, 4vw, 3.25rem);
+  max-width: min(100%, 76rem);
   margin-inline: auto;
   display: grid;
   gap: 1.8rem 1.5rem;
@@ -138,13 +139,18 @@ const serviceItems = computed(() =>
   min-height: 13.2rem;
   flex-direction: column;
   padding: 1.18rem 0.95rem 1.18rem 0.2rem;
-  border-top: 1px solid rgb(255 255 255 / 0.15);
+  border-top: 0 solid transparent;
   text-decoration: none;
   isolation: isolate;
   transition:
     border-color 180ms ease,
     color 180ms ease,
     background-color 180ms ease;
+}
+
+.home-sys-services__column + .home-sys-services__column {
+  border-top-width: 1px;
+  border-top-color: rgb(255 255 255 / 0.15);
 }
 
 .home-sys-services__column::before {
@@ -265,6 +271,17 @@ const serviceItems = computed(() =>
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.95rem 2rem;
   }
+
+  .home-sys-services__column,
+  .home-sys-services__column + .home-sys-services__column {
+    border-top-width: 0;
+    border-top-color: transparent;
+  }
+
+  .home-sys-services__column:nth-child(n + 3) {
+    border-top-width: 1px;
+    border-top-color: rgb(255 255 255 / 0.15);
+  }
 }
 
 @media (max-width: 767px) {
@@ -323,6 +340,17 @@ const serviceItems = computed(() =>
   .home-sys-services__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2rem 1.8rem;
+  }
+
+  .home-sys-services__column,
+  .home-sys-services__column + .home-sys-services__column {
+    border-top-width: 0;
+    border-top-color: transparent;
+  }
+
+  .home-sys-services__column:nth-child(n + 5) {
+    border-top-width: 1px;
+    border-top-color: rgb(255 255 255 / 0.15);
   }
 }
 </style>

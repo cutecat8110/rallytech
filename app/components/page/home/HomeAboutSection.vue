@@ -42,7 +42,7 @@ const aboutFrontImage = computed(() => ({
 </script>
 
 <template>
-  <section id="about" class="section-sys-shell bg-white">
+  <section id="about" class="home-sys-about section-sys-shell bg-white">
     <div class="page-sys-shell">
       <div
         class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-14 xl:gap-16"
@@ -90,6 +90,17 @@ const aboutFrontImage = computed(() => ({
 </template>
 
 <style scoped>
+.home-sys-about {
+  position: relative;
+  overflow-x: clip;
+  padding-top: clamp(4.5rem, 7vw, 6rem);
+  background:
+    linear-gradient(90deg, rgb(10 18 22 / 0.045) 0, transparent 1px)
+      calc(50% - min(50vw, 42.5rem)) 0 / clamp(11rem, 16vw, 16.5rem) 100%
+      no-repeat,
+    linear-gradient(180deg, rgb(248 250 251 / 0.96), rgb(255 255 255 / 1));
+}
+
 .home-sys-about__copy {
   display: flex;
   flex-direction: column;
@@ -108,6 +119,10 @@ const aboutFrontImage = computed(() => ({
   margin-top: 0.25rem;
 }
 
+.home-sys-about__motif {
+  display: block;
+}
+
 @media (min-width: 1024px) {
   .home-sys-about__media-composite {
     margin-inline: 0;
@@ -115,9 +130,23 @@ const aboutFrontImage = computed(() => ({
   }
 }
 
+@media (min-width: 1280px) {
+  .home-sys-about__motif {
+    transform: translateX(clamp(9.5rem, 12.5vw, 12rem));
+  }
+}
+
 @media (max-width: 767px) {
+  .home-sys-about {
+    padding-top: 3.75rem;
+  }
+
   .home-sys-about__media-composite {
-    margin-top: -0.5rem;
+    margin-top: -0.85rem;
+  }
+
+  .home-sys-about__motif {
+    transform: translateX(-0.6rem);
   }
 }
 </style>

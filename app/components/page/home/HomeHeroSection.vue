@@ -10,7 +10,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 <template>
   <section
     id="top"
-    class="relative overflow-hidden bg-sys-rally-hero-industrial text-white"
+    class="home-sys-hero relative overflow-hidden bg-sys-rally-hero-industrial text-white"
   >
     <div class="home-sys-hero__media" aria-hidden="true">
       <img
@@ -56,6 +56,10 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 </template>
 
 <style scoped>
+.home-sys-hero {
+  min-height: clamp(34rem, 78svh, 44rem);
+}
+
 .home-sys-hero__media {
   position: absolute;
   inset: 0;
@@ -102,10 +106,10 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 
 .home-sys-hero__content {
   display: flex;
-  min-height: clamp(32rem, 78svh, 44rem);
+  min-height: clamp(34rem, 78svh, 44rem);
   align-items: center;
   justify-content: center;
-  padding-block: clamp(3.75rem, 6vw, 5.5rem);
+  padding-block: clamp(3.75rem, 6vw, 5.5rem) clamp(5rem, 8vw, 7rem);
 }
 
 .home-sys-hero__inner {
@@ -117,6 +121,11 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 @media (max-width: 767px) {
   .home-sys-hero__motif {
     display: none;
+  }
+
+  .home-sys-hero,
+  .home-sys-hero__content {
+    min-height: clamp(34rem, 74svh, 41rem);
   }
 }
 </style>

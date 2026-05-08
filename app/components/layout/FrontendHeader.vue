@@ -545,6 +545,23 @@ watch(isMobileMenuOpen, (open) => {
       var(--home-sys-header-main-padding-block) +
       var(--home-sys-header-main-padding-block) + 1px
   );
+  box-shadow: 0 1px 0 rgb(10 18 22 / 0.04);
+}
+
+.home-sys-header::after {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(48 187 165 / 0.28) 16%,
+    rgb(10 18 22 / 0.1) 50%,
+    transparent 84%
+  );
+  pointer-events: none;
 }
 
 .home-sys-header__top {
@@ -554,6 +571,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   gap: 0.2rem var(--home-sys-header-top-column-gap);
   padding-block: var(--home-sys-header-top-padding-block);
+  padding-inline-start: clamp(0rem, 1.3vw, 1rem);
 }
 
 .home-sys-header__main {
@@ -563,6 +581,7 @@ watch(isMobileMenuOpen, (open) => {
   align-items: center;
   gap: var(--home-sys-header-main-gap);
   padding-block: var(--home-sys-header-main-padding-block);
+  padding-inline: clamp(0rem, 1vw, 0.75rem);
 }
 
 .home-sys-header__brand-link {

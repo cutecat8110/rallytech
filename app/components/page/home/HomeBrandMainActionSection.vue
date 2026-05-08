@@ -121,14 +121,15 @@ const missionTabsUi = {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 76% 18%, rgb(48 187 165 / 0.12), transparent 24%),
-    linear-gradient(180deg, rgb(255 255 255 / 0.96), rgb(245 247 248 / 0.94));
+    linear-gradient(90deg, rgb(10 18 22 / 0.045) 0, transparent 1px)
+      calc(50% - min(50vw, 42rem)) 0 / clamp(10rem, 15vw, 15rem) 100% no-repeat,
+    linear-gradient(180deg, rgb(248 250 251 / 0.98), rgb(255 255 255 / 1));
 }
 
 .home-sys-mission__layout {
   display: grid;
   align-items: start;
-  gap: clamp(2rem, 3.2vw, 2.75rem);
+  gap: clamp(2rem, 3.2vw, 3rem);
 }
 
 .home-sys-mission__copy {
@@ -369,12 +370,13 @@ const missionTabsUi = {
 
 @media (min-width: 1280px) {
   .home-sys-mission__layout {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: clamp(3rem, 3.2vw, 3.85rem);
+    grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+    gap: clamp(3.5rem, 5vw, 6rem);
   }
 
   .home-sys-mission__copy {
     min-height: clamp(21rem, 34vw, 29rem);
+    justify-self: start;
   }
 
   .home-sys-mission__state {
@@ -401,6 +403,8 @@ const missionTabsUi = {
 
   .home-sys-mission__figure {
     display: block;
+    justify-self: end;
+    width: min(100%, 28rem);
   }
 }
 </style>

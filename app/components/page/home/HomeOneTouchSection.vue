@@ -116,19 +116,19 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
 
 .home-sys-ote__stage {
   width: 100%;
-  max-width: 64rem;
+  max-width: min(100%, 76rem);
   margin-inline: auto;
 }
 
 .home-sys-ote__layout {
   display: grid;
   align-items: center;
-  gap: 1.85rem;
+  gap: clamp(1.85rem, 4vw, 4.25rem);
 }
 
 .home-sys-ote__copy {
   display: flex;
-  width: min(100%, 21.75rem);
+  width: min(100%, 30rem);
   flex-direction: column;
   align-items: flex-start;
   gap: 1.25rem;
@@ -140,18 +140,17 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
 }
 
 .home-sys-ote__intro {
-  max-width: 20.75rem;
+  max-width: 28rem;
 }
 
 .home-sys-ote__list {
-  width: min(100%, 28.5rem);
+  width: min(100%, 31rem);
   margin-inline: auto;
 }
 
 @media (min-width: 768px) {
   .home-sys-ote__layout {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: clamp(2.25rem, 4vw, 2.5rem);
+    grid-template-columns: minmax(0, 0.92fr) minmax(22rem, 1.08fr);
   }
 
   .home-sys-ote__copy {
@@ -161,7 +160,14 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
   }
 
   .home-sys-ote__list {
-    justify-self: start;
+    justify-self: end;
+    margin-inline: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-sys-ote__copy,
+  .home-sys-ote__list {
     margin-inline: 0;
   }
 }

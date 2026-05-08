@@ -351,6 +351,23 @@ onBeforeUnmount(() => {
   color: var(--color-white);
 }
 
+.home-sys-footer::before {
+  content: '';
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  z-index: 2;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgb(48 187 165 / 0.32) 18%,
+    rgb(255 255 255 / 0.16) 50%,
+    transparent 84%
+  );
+  pointer-events: none;
+}
+
 .home-sys-footer__connector {
   --connector-band-min-height: 9.2rem;
   --connector-seam-width: 0rem;
@@ -442,6 +459,8 @@ onBeforeUnmount(() => {
 .home-sys-footer__content-band {
   background:
     radial-gradient(circle at 18% 12%, rgb(48 187 165 / 0.08), transparent 36%),
+    linear-gradient(90deg, rgb(255 255 255 / 0.055) 0, transparent 1px)
+      calc(50% - min(50vw, 42rem)) 0 / clamp(10rem, 15vw, 15rem) 100% no-repeat,
     linear-gradient(180deg, rgb(8 16 22 / 0.98) 0%, rgb(7 19 30 / 1) 100%);
 }
 
@@ -821,10 +840,10 @@ onBeforeUnmount(() => {
 
   .home-sys-footer__content-grid {
     grid-template-columns:
-      minmax(13.5rem, 0.8fr)
-      minmax(20rem, 1.12fr)
-      minmax(17rem, 0.95fr);
-    gap: clamp(2.25rem, 3.2vw, 3.9rem);
+      minmax(13.5rem, 0.78fr)
+      minmax(20rem, 1.18fr)
+      minmax(17rem, 0.98fr);
+    gap: clamp(2.5rem, 4vw, 4.5rem);
   }
 }
 </style>

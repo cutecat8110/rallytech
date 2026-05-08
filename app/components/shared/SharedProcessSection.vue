@@ -30,7 +30,11 @@ const processSteps = computed(() =>
 </script>
 
 <template>
-  <section id="process" class="section-sys-shell bg-white">
+  <section
+    id="process"
+    class="shared-sys-process section-sys-shell bg-white"
+    :class="`shared-sys-process--${source}`"
+  >
     <div class="page-sys-shell--wide">
       <SharedSectionIntro
         class="shared-sys-process__heading"
@@ -67,6 +71,14 @@ const processSteps = computed(() =>
 </template>
 
 <style scoped>
+.shared-sys-process--home {
+  position: relative;
+  background:
+    linear-gradient(90deg, rgb(10 18 22 / 0.04) 0, transparent 1px)
+      calc(50% - min(50vw, 42rem)) 0 / clamp(10rem, 15vw, 15rem) 100% no-repeat,
+    linear-gradient(180deg, var(--color-white), rgb(247 250 250 / 0.92));
+}
+
 .shared-sys-process__heading {
   max-width: 32rem;
 }
@@ -75,6 +87,11 @@ const processSteps = computed(() =>
   margin-top: 3rem;
   display: grid;
   gap: 2.25rem 1.5rem;
+}
+
+.shared-sys-process--home .shared-sys-process__grid {
+  max-width: min(100%, 76rem);
+  margin-inline: auto;
 }
 
 .shared-sys-process__step {
@@ -231,6 +248,10 @@ const processSteps = computed(() =>
     gap: 2rem 1.25rem;
   }
 
+  .shared-sys-process--home .shared-sys-process__grid {
+    gap: 2rem 1.75rem;
+  }
+
   .shared-sys-process__step:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -242,6 +263,11 @@ const processSteps = computed(() =>
     border-right: 2px solid rgb(148 163 184 / 0.42);
     transform: skewX(-26deg);
     opacity: 0.85;
+  }
+
+  .shared-sys-process--home .shared-sys-process__step:not(:last-child)::after {
+    right: -1.35rem;
+    width: 2.6rem;
   }
 }
 

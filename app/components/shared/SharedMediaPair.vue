@@ -168,29 +168,29 @@ const frontImageStyle = computed(() => ({
 
 .shared-media-pair--compact {
   width: min(100%, 35rem);
-  min-height: clamp(21rem, 25vw, 24rem);
+  min-height: clamp(21.5rem, 25vw, 24rem);
 }
 
 .shared-media-pair--compact .shared-media-pair__frame--back {
-  top: clamp(0.15rem, 0.65vw, 0.45rem);
-  right: clamp(0.15rem, 0.8vw, 0.55rem);
-  width: 62%;
-  height: 56%;
+  top: clamp(0.1rem, 0.5vw, 0.35rem);
+  right: clamp(0.1rem, 0.65vw, 0.45rem);
+  width: 64%;
+  height: 60%;
   border-radius: var(--radius-xl);
 }
 
 .shared-media-pair--compact .shared-media-pair__frame--front {
-  bottom: clamp(1.45rem, 2vw, 1.9rem);
+  bottom: clamp(1.75rem, 2.2vw, 2.1rem);
   left: 0;
-  width: 79%;
-  height: 64%;
+  width: 80%;
+  height: 68%;
   border-radius: var(--radius-lg);
   box-shadow: var(--shared-media-pair-front-shadow);
 }
 
 .shared-media-pair--compact .shared-media-pair__decor {
-  right: 0;
-  bottom: 0.1rem;
+  right: -0.5rem;
+  bottom: -0.15rem;
   transform: scale(0.88);
   transform-origin: right bottom;
 }
@@ -233,7 +233,7 @@ const frontImageStyle = computed(() => ({
 @media (max-width: 767px) {
   .shared-media-pair--compact {
     width: min(100%, 20.75rem);
-    min-height: 18.75rem;
+    min-height: 18.9rem;
   }
 
   .shared-media-pair--compact .shared-media-pair__frame {
@@ -242,17 +242,17 @@ const frontImageStyle = computed(() => ({
 
   .shared-media-pair--compact .shared-media-pair__frame--back {
     top: 0.1rem;
-    right: 2.4rem;
-    width: 64%;
-    height: 54%;
+    right: 2.6rem;
+    width: 62%;
+    height: 55%;
     border-radius: var(--radius-xl);
   }
 
   .shared-media-pair--compact .shared-media-pair__frame--front {
-    bottom: 1.2rem;
+    bottom: 1.25rem;
     left: 0;
-    width: 78%;
-    height: 58%;
+    width: 79%;
+    height: 61%;
     border-radius: var(--radius-lg);
   }
 
