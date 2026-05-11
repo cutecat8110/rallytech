@@ -1,20 +1,21 @@
 # references 對照導覽
 
-最後更新：2026-04-08
-來源網址：https://pentagoneng.com/（multi-page reference）
+最後更新：2026-05-08
+來源網址：<https://pentagoneng.com/>（multi-page reference）
 
 ## 文件目的
 
 - 提供 `source / en / zh-tw` 三層 references 的統一閱讀方式。
-- 讓管理、業務、設計、工程與 AI agent 都能直接看懂參考站怎麼對照，並知道改稿時應該看哪一層。
+- 讓管理、業務、設計、工程與 AI agent 能直接看懂參考站如何對照，並知道改稿時應該看哪一層。
+- 保存 reference evidence、素材來源、異常紀錄與 prompt research appendix；不承擔 workflow owner。
 
 ## 適用角色
 
-- 管理、業務、老闆：快速理解這頁在參考站出現了哪些區塊與文字。
+- 管理、業務、老闆：快速理解頁面在參考站出現哪些區塊與文字。
 - 設計、前端、PM：依同一組 block 對照文案、區塊與互動資訊。
 - AI agent：維持 `source / en / zh-tw` 的區塊順序、命名與對照邏輯一致。
 
-## 三層檔案（固定）
+## 三層檔案
 
 - `source/*`：參考站可見原文基準稿，保留原句、typo、矛盾與模板殘留。
 - `en/*`：Rally Technology 官方英文對外文案層，依現行 runtime i18n 與專案命名決策回寫。
@@ -23,15 +24,15 @@
 ## Public-Layer 維護順序
 
 - `source` 只負責 reference evidence，不回寫成 Rally Technology 文案。
-- `en / zh-tw` 的維護順序固定為：`i18n/locales/en.ts`、`i18n/locales/zh-tw.ts` → `docs/project/02` → `docs/project/03` → `docs/references/en|zh-tw/*`。
+- `en / zh-tw` 的維護順序固定為：`i18n/locales/en.ts`、`i18n/locales/zh-tw.ts` -> `docs/project/02` -> `docs/project/03` -> `docs/references/en|zh-tw/*`。
 - 若 `docs/references/en|zh-tw/*` 有更新，必須同步執行 `npm run generate:i18n-reference-pages`，讓 `i18n/locales/reference-pages.generated.ts` 保持一致。
 
-## 擷取基準
+## Capture Baseline
 
-- `source` 內容以 `MCP + desktop viewport + full-page scroll` 為基準整理。
+- `source` 內容是歷史 reference capture baseline，當時以 desktop viewport、full-page scroll 與可見內容對照整理。
 - 任何滾動到位才顯示的區塊，也算進當頁可見內容。
-- 以 full-page screenshot 對照的「實際可見文字」優先於 raw DOM inventory；hidden tab、未展開 accordion、display none 模板殘留不直接算進 block。
-- 本輪文件重整不重新做全站 MCP 擷取；若需重新校正內容，以同一基準進行。
+- 以 full-page screenshot 對照的實際可見文字優先於 raw DOM inventory；hidden tab、未展開 accordion、display none 模板殘留不直接算進 block。
+- 本文件不代表新機需要常駐 MCP。若未來要重新校正 reference evidence，依 [../project/04-協作與交付規範.md](../project/04-協作與交付規範.md) 的 task-activated policy 啟用當前 session 可用工具。
 
 ## 先怎麼讀
 
@@ -44,36 +45,29 @@
 若任務是首頁高擬真重構，再補看：
 
 6. [首頁視覺真相與殘留判讀.md](./首頁視覺真相與殘留判讀.md)
-7. 執行 `npm run capture:reference:home` 與 `npm run capture:local:home`，以完整載入截圖做反覆對照。
+7. `npm run capture:reference:home` 與 `npm run capture:local:home`，以完整載入截圖做反覆對照。
 
 ## AI 圖像研究附錄
 
-AI 圖像流程的正式 owner 是 [`../project/05-Reference-Clone工作流與降級規範.md`](../project/05-Reference-Clone工作流與降級規範.md)。
+AI 圖像流程的正式 owner 是 [../project/05-Reference-Clone工作流與降級規範.md](../project/05-Reference-Clone工作流與降級規範.md)。
 
 本資料夾只保留研究附錄與 prompt appendix：
 
-- [首頁媒體素材來源.md](./首頁媒體素材來源.md)
-  用於記錄 source / licensed visuals 的來源、授權與 local filename。
-- [一站式整合媒體素材來源.md](./一站式整合媒體素材來源.md)
-  用於記錄 `/one-touch-experience` 的免費圖庫候選、採用素材與授權備註。
-- [Nano-Banana-提示詞與生成流程.md](./Nano-Banana-提示詞與生成流程.md)
-  用於 AI 圖像提示詞優化、研究來源分級、候選圖判讀與 promotion 前檢查。
-- [Nano-Banana-提示詞模式附錄.md](./Nano-Banana-提示詞模式附錄.md)
-  用於挑選可重用 recipe、建立 `recipe_ids`、對應失敗模式與下一輪 prompt 迭代。
+- [首頁媒體素材來源.md](./首頁媒體素材來源.md)：記錄 source / licensed visuals 的來源、授權與 local filename。
+- [一站式整合媒體素材來源.md](./一站式整合媒體素材來源.md)：記錄 `/one-touch-experience` 的免費圖庫候選、採用素材與授權備註。
+- [Nano-Banana-提示詞與生成流程.md](./Nano-Banana-提示詞與生成流程.md)：記錄 AI 圖像提示詞優化、研究來源分級、候選圖判讀與 promotion 前檢查。
+- [Nano-Banana-提示詞模式附錄.md](./Nano-Banana-提示詞模式附錄.md)：整理可重用 recipe、`recipe_ids`、失敗模式與下一輪 prompt 迭代。
 
 規則：
 
 - `references` 可以保存 prompt research、對照筆記與候選圖判讀。
 - `references` 不保存 execution state，例如 active brief、active prompt、manifest 或 candidate history。
-- 真正的 canonical path 在 [`../../data/nano-banana/README.md`](../../data/nano-banana/README.md)：
-  - `../../data/nano-banana/briefs/`
-  - `../../data/nano-banana/prompts/`
-  - `../../data/nano-banana/manifests/`
-- 長期圖像 guardrails 在 [`../../.agents/ai-image-context.md`](../../.agents/ai-image-context.md)。
-- 真正的 phase gate、claim labels、acceptance metadata 仍以 `project/05` 為準。
+- Canonical execution path 在 [../../data/nano-banana/README.md](../../data/nano-banana/README.md)。
+- 長期圖像 guardrails 在 [../../.agents/ai-image-context.md](../../.agents/ai-image-context.md)。
+- phase gate、claim labels、acceptance metadata 仍以 `project/05` 為準。
 - 不把 Nano / imagegen research appendix 當成 clone workflow 主檔。
 
-## 區塊結構（固定）
+## 區塊結構
 
 - `source` 與 `en`：
   - `## Block Map`

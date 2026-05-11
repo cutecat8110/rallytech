@@ -1,68 +1,52 @@
 # GEMINI.md
 
-本文件為參與雷力科技官網重建專案的 AI Agent 提供核心背景、技術規範與協作指令。
+最後更新：2026-05-08
 
-## 1. 專案概觀
+本文件是給 Gemini 或其他 AI agent 的相容性導覽，不再維護另一套完整 SOP。所有協作、文件治理、skills / MCP、驗證與回報規範，請以 [AGENTS.md](./AGENTS.md) 與 `docs/` 主檔為準。
 
-- **專案目的**：重建雷力科技企業官網，清楚呈現服務能力、建立信任並提升聯絡轉換率。
-- **技術基線**：Nuxt 4, Vue 3, TypeScript, Nuxt UI (v3/v4), Tailwind CSS 4。
-- **專案特性**：
-  - **B2B 定位**：受眾為工程、自動化、儀控、廠務等專業領域客戶。
-  - **Reference Clone 工作流**：以參考站 (`pentagoneng.com`) 為結構基準，同時套用本專案設計系統 token。
-  - **三層語系策略**：`zh-tw` (首要)、`en` 以及 `source` (參考站原文，僅供 QA 對照)。
-  - **AI 資產維運**：使用 "Nano-Banana" 流程進行 AI 圖像生成與素材管理。
+## 必讀入口
 
-## 2. 技術架構
+1. [AGENTS.md](./AGENTS.md)
+2. [docs/README.md](./docs/README.md)
+3. [docs/project/README.md](./docs/project/README.md)
+4. [docs/project/04-協作與交付規範.md](./docs/project/04-協作與交付規範.md)
+5. [docs/design/README.md](./docs/design/README.md)
+6. [docs/references/README.md](./docs/references/README.md)
 
-- `app/`：Nuxt 應用程式主目錄。
-  - `components/`：UI 元件，遵循 Nuxt UI 規範。
-  - `pages/`：網站頁面與路由。
-  - `layouts/`：共用版型 (`frontend.vue`, `backend.vue`)。
-  - `assets/css/`：以 Tailwind CSS 4 為基礎的全域樣式。
-  - `composables/` & `utils/`：圖像註冊、i18n 邏輯與服務資料處理。
-- `docs/`：專案治理與設計規範的唯一真理來源 (實作前必讀)。
-- `i18n/`：`i18n/locales/` 下的語系翻譯檔。
-- `data/`：AI 圖像生成之 manifest、catalog 與提示詞。
-- `scripts/`：i18n 稽核、圖像推廣與頁面擷取等自動化腳本。
+## 專案摘要
 
-## 3. 開發流程與規範
+- 專案：雷力科技企業官網重構。
+- 目標：清楚呈現服務能力、建立信任、提升聯絡轉換。
+- 技術基線：Nuxt 4、Vue 3、TypeScript、@nuxt/ui、Tailwind CSS 4。
+- 語言策略：繁體中文優先，英文並列維護；`source` 只作 reference evidence。
+- Reference strategy：參考站內容作為結構與 evidence 對照，正式決策回到 `docs/project/` 與 `docs/design/`。
 
-### 基礎指令
+## 工作原則
 
-- **安裝**：`npm install`
-- **開發環境**：`npm run dev`
-- **建置與預覽**：`npm run build` && `npm run preview`
-- **提交流程前驗證 (PR 前必做)**：`npm run verify`
-  - 包含 `format:check`, `lint`, `guard:ui-buttons`, `typecheck`。
+- 全程使用繁體中文。
+- 先對齊目標、範圍與成功條件，再小步實作。
+- 不擴張需求，不覆寫 manual-locked copy，不回滾使用者變更。
+- 文件任務使用 `document-writer`。
+- 前端任務必須使用 `nuxt-ui`，並依需要補 `nuxt`、`vue`、`frontend-skill` 或 `visual-qa-review`。
+- Skills、MCP、plugin、Codex app capability 與 degraded claim，以 `docs/project/04` 為唯一詳細來源。
 
-### AI 協作 SOP (`AGENTS.md`)
+## 常用指令
 
-AI Agent 必須嚴格遵守 `AGENTS.md` 定義的流程：
+```bash
+npm install
+npm run dev
+npm run format:check
+npm run lint
+npm run guard:ui-buttons
+npm run typecheck
+npm run verify
+```
 
-1. **研究優先**：實作前必先閱讀 `docs/` 下的對應文件。
-2. **Skill 判定**：每一輪對話需重新評估所需的專門 Skill。
-3. **強制驗證**：修改後必須執行 `npm run lint` 與 `npm run typecheck`。
-4. **回報格式**：必須包含 Objective, Constraints, Options, Recommendation, Decision 與設計合規清單。
+文件任務至少執行 `npm run format:check`。若修改 `.ts`、`.vue`、config 或 scripts，需追加 lint / typecheck 與相關 guard。
 
-### 設計與實作細則
+## 重要邊界
 
-- **Nuxt UI First**：優先選用 `@nuxt/ui` 元件，避免自行實作。
-- **CSS Ownership**：遵循 `docs/design/01` 定義的四層 ownership 規則。
-- **按鈕規範**：主按鈕 (Primary Button) 必須使用白字 (由 `npm run guard:ui-buttons` 驗證)。
-- **RWD 響應式**：所有實作必須同時驗證 Desktop 與 Mobile 表現。
-
-## 4. 重要參考文件
-
-- **協作 SOP**：`AGENTS.md`
-- **專案策略**：`docs/project/01-專案策略與基線總綱.md`
-- **設計系統**：`docs/design/01-設計系統規則總綱.md`
-- **交付規範**：`docs/project/04-協作與交付規範.md`
-- **Clone 工作流**：`docs/project/05-Reference-Clone工作流與降級規範.md`
-
-## 5. 提交與貢獻規範
-
-- **Commit Message**：採用 `<type>(<scope>): <subject>`。
-  - 範例：`feat(ui): 實作首頁 Hero 區塊`。
-  - `type` 使用英文，`subject` 使用繁體中文。
-- **禁止繞過驗證**：禁止使用 `--no-verify`，所有檢查失敗皆不可提交。
-- **範圍控制**：僅修改任務請求範圍內的檔案，避免無關的重構。
+- `docs/project/` 管專案策略、IA、服務命名、協作流程、skills / MCP policy、clone workflow 與文案節奏。
+- `docs/design/` 管設計系統、Nuxt UI implementation、styling ownership、Vision-to-Code grammar。
+- `docs/references/` 管 reference evidence、素材來源、異常紀錄與 prompt research appendix。
+- `tools/codex-toolkit/` 是可重建模板，不是 live profile；私人狀態不進 git。

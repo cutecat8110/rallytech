@@ -155,7 +155,7 @@ function formatNumber(index: number) {
 
 .shared-point-list--variant-icon .shared-point-list__item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.875rem;
 }
 
