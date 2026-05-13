@@ -158,12 +158,14 @@ const messages = {
     englishName: 'Pentagon Engineering',
     chineseName: '',
     foundedYear: '2010 / 2022 source conflict',
+    taxId: '',
     phoneDisplay: '630.550.6902',
     phoneHref: 'tel:6305506902',
     faxDisplay: '',
     faxHref: '',
     email: 'info@pentagoneng.com',
     emailHref: 'mailto:info@pentagoneng.com',
+    linkedinUrl: '',
     address: 'Chicago, Illinois',
     addressEnglish: 'Chicago, Illinois',
     mapEmbedUrl:
@@ -555,6 +557,26 @@ const messages = {
     connectorHeading: 'Engineering + Design Experts',
     ctaLabel: 'Contact Us',
     brandLine: 'Pentagon Engineering',
+    brandProofLine: 'Industrial automation engineering and control systems',
+    linksHeading: 'Key Links',
+    links: [
+      {
+        label: 'Services',
+        to: '/services'
+      },
+      {
+        label: 'Products',
+        to: '/products'
+      },
+      {
+        label: 'One-Touch Experience',
+        to: '/one-touch-experience'
+      },
+      {
+        label: 'Contact',
+        to: '/contact'
+      }
+    ],
     newsletterHeading: 'Newsletter',
     newsletterDescription:
       'Subscribe to our newsletter to receive updates on the latest news!',
@@ -567,6 +589,7 @@ const messages = {
     phoneLabel: 'Contact Us',
     faxLabel: 'Fax',
     emailLabel: 'Mail Us',
+    linkedinLabel: 'LinkedIn',
     addressLabel: 'Address',
     backToTopLabel: 'Back to top',
     copyright: '© 2023 Pentagon Engineering. Powered by Fidelity Creative'

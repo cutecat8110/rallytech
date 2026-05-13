@@ -28,7 +28,14 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
       <div class="content-sys-rail">
         <div class="home-sys-ote__stage">
           <div class="home-sys-ote__layout">
-            <article class="home-sys-ote__copy">
+            <article
+              v-motion-reveal="{
+                preset: 'fade-right',
+                distance: 24,
+                duration: 0.78
+              }"
+              class="home-sys-ote__copy"
+            >
               <SharedSectionIntro
                 class="home-sys-ote__intro"
                 :title="messages.home.oneTouch.title"
@@ -50,7 +57,15 @@ const oneTouchPath = computed(() => localePath('/one-touch-experience'))
               </div>
             </article>
 
-            <div class="home-sys-ote__list">
+            <div
+              v-motion-reveal="{
+                preset: 'fade-left',
+                distance: 24,
+                duration: 0.78,
+                delay: 0.05
+              }"
+              class="home-sys-ote__list"
+            >
               <SharedPointList
                 class="home-sys-ote__panel"
                 :items="oneTouchItems"

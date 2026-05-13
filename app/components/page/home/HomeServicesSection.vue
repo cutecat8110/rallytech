@@ -31,6 +31,7 @@ const serviceItems = computed(() =>
     :style="servicesSurfaceStyle"
   >
     <BrandBlockMotif
+      v-motion-parallax="{ yPercent: -6, scrub: 1, desktopOnly: true }"
       class="home-sys-services__motif"
       variant="section"
       tone="dark"
@@ -47,7 +48,16 @@ const serviceItems = computed(() =>
           density="compact"
         />
 
-        <div class="home-sys-services__grid">
+        <div
+          v-motion-group="{
+            children: '.home-sys-services__column',
+            preset: 'fade-up',
+            stagger: 0.08,
+            distance: 26,
+            start: 'top 78%'
+          }"
+          class="home-sys-services__grid"
+        >
           <NuxtLink
             v-for="item in serviceItems"
             :key="item.slug"
@@ -116,7 +126,7 @@ const serviceItems = computed(() =>
   position: absolute;
   top: clamp(4.6rem, 7vw, 6.1rem);
   right: auto;
-  left: max(0.5rem, calc(50% - 44rem));
+  left: clamp(1.5rem, 8vw, 8.25rem);
   z-index: 0;
 }
 
@@ -224,6 +234,7 @@ const serviceItems = computed(() =>
 .home-sys-services__item-header {
   margin-top: 0.95rem;
   max-width: 18rem;
+  flex: 1 1 auto;
   --shared-content-header-description-color: rgb(255 255 255 / 0.82);
   transition:
     color 180ms ease,
@@ -281,6 +292,12 @@ const serviceItems = computed(() =>
   .home-sys-services__column:nth-child(n + 3) {
     border-top-width: 1px;
     border-top-color: rgb(255 255 255 / 0.15);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-sys-services__grid {
+    max-width: min(100%, 38rem);
   }
 }
 

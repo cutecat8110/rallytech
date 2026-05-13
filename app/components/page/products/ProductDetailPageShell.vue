@@ -18,6 +18,12 @@ const props = defineProps<{
     <div class="page-sys-shell">
       <div class="products-sys-detail-shell">
         <ProductDetailSidebar
+          v-motion-reveal="{
+            preset: 'fade-right',
+            distance: 18,
+            duration: 0.66,
+            mobile: 'off'
+          }"
           class="products-sys-detail-shell__sidebar"
           :product="props.product"
           :heading="props.detailPage.sidebar.productsHeading"
@@ -26,6 +32,11 @@ const props = defineProps<{
         <div class="products-sys-detail-shell__main">
           <SharedTextStack
             v-if="props.detailPage.introParagraphs.length"
+            v-motion-reveal="{
+              preset: 'fade-up',
+              distance: 20,
+              duration: 0.72
+            }"
             class="products-sys-detail-main-lead"
             :paragraphs="props.detailPage.introParagraphs"
             tone="light"

@@ -26,7 +26,15 @@ const highlightItems = computed(() =>
 
 <template>
   <section class="services-sys-detail-media-feature" :class="blockClassName">
-    <div class="services-sys-detail-media-feature__media">
+    <div
+      v-motion-parallax="{
+        yPercent: 5,
+        scale: 1.025,
+        scrub: 0.85,
+        desktopOnly: true
+      }"
+      class="services-sys-detail-media-feature__media"
+    >
       <img
         :src="resolvedImage.src"
         :alt="block.imageAlt || resolvedImage.alt"

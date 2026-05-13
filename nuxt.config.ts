@@ -34,6 +34,17 @@ export default defineNuxtConfig({
     }
   },
 
+  vite: {
+    optimizeDeps: {
+      include: [
+        'gsap',
+        'gsap/ScrollTrigger',
+        '@vue/devtools-core',
+        '@vue/devtools-kit'
+      ]
+    }
+  },
+
   eslint: {
     config: {
       stylistic: {

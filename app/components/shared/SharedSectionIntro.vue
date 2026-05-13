@@ -34,7 +34,11 @@ const rootClass = computed(() => [
 </script>
 
 <template>
-  <div class="shared-section-intro" :class="rootClass">
+  <div
+    v-motion-reveal="{ preset: 'fade-up', distance: 24, duration: 0.72 }"
+    class="shared-section-intro"
+    :class="rootClass"
+  >
     <p
       v-if="props.kicker"
       class="shared-section-intro__kicker type-sys-kicker uppercase"

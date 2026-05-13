@@ -162,12 +162,14 @@ const messages = {
     englishName: 'Rally Technology Co., Ltd.',
     chineseName: '雷力科技股份有限公司',
     foundedYear: '2014',
+    taxId: '24740602',
     phoneDisplay: '+886-3-552-9933',
     phoneHref: 'tel:+88635529933',
     faxDisplay: '+886-3-552-9797',
     faxHref: 'tel:+88635529797',
     email: 'sales@rallytech.com.tw',
     emailHref: 'mailto:sales@rallytech.com.tw',
+    linkedinUrl: 'https://tw.linkedin.com/company/rally-technology-co-ltd',
     address:
       '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
     addressEnglish:
@@ -533,7 +535,7 @@ const messages = {
       description:
         'If you are ready to move forward, you can also reach us through the channels below.',
       cards: {
-        phoneTitle: 'Phone / Fax',
+        phoneTitle: 'Phone',
         faxLabel: 'Fax',
         locationTitle: 'Office',
         emailTitle: 'Email'
@@ -564,6 +566,27 @@ const messages = {
     connectorHeading: 'Industrial Automation Integration Partner',
     ctaLabel: 'Contact Us',
     brandLine: 'Rally Technology',
+    brandProofLine:
+      'Industrial automation, monitoring systems, and data integration services',
+    linksHeading: 'Key Links',
+    links: [
+      {
+        label: 'Services',
+        to: '/services'
+      },
+      {
+        label: 'Products',
+        to: '/products'
+      },
+      {
+        label: 'Unified Customer Journey',
+        to: '/one-touch-experience'
+      },
+      {
+        label: 'Contact Us',
+        to: '/contact'
+      }
+    ],
     newsletterHeading: 'Newsletter',
     newsletterDescription: 'Subscribe for updates from Rally Technology.',
     newsletterPlaceholder: 'Your email',
@@ -575,9 +598,11 @@ const messages = {
     phoneLabel: 'Phone',
     faxLabel: 'Fax',
     emailLabel: 'Email',
+    linkedinLabel: 'LinkedIn',
     addressLabel: 'Address',
     backToTopLabel: 'Back to Top',
-    copyright: '© {year} Rally Technology. All rights reserved.'
+    copyright:
+      'Copyright © 雷力科技股份有限公司 統編:24740602 Rally Technology Co., Ltd. All Rights Reserved'
   },
   referencePages: referencePagesEn
 } satisfies RallyTechLocaleMessages

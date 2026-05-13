@@ -45,9 +45,17 @@ const frontImageStyle = computed(() => ({
 </script>
 
 <template>
-  <figure class="shared-media-pair" :class="rootClass" :aria-label="ariaLabel">
+  <figure
+    v-motion-reveal="{ preset: 'scale-soft', distance: 22, duration: 0.82 }"
+    class="shared-media-pair"
+    :class="rootClass"
+    :aria-label="ariaLabel"
+  >
     <div class="shared-media-pair__clip">
-      <div class="shared-media-pair__frame shared-media-pair__frame--back">
+      <div
+        v-motion-parallax="{ yPercent: -5, scrub: 0.9, desktopOnly: true }"
+        class="shared-media-pair__frame shared-media-pair__frame--back"
+      >
         <img
           :src="backImage.src"
           :alt="backImage.alt"
@@ -57,7 +65,10 @@ const frontImageStyle = computed(() => ({
         />
       </div>
 
-      <div class="shared-media-pair__frame shared-media-pair__frame--front">
+      <div
+        v-motion-parallax="{ yPercent: 7, scrub: 0.9, desktopOnly: true }"
+        class="shared-media-pair__frame shared-media-pair__frame--front"
+      >
         <img
           :src="frontImage.src"
           :alt="frontImage.alt"
@@ -189,7 +200,7 @@ const frontImageStyle = computed(() => ({
 }
 
 .shared-media-pair--compact .shared-media-pair__decor {
-  right: -0.5rem;
+  right: 0;
   bottom: -0.15rem;
   transform: scale(0.88);
   transform-origin: right bottom;

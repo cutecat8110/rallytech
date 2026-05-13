@@ -31,12 +31,14 @@ export interface CompanyMessages {
   englishName: string
   chineseName: string
   foundedYear: string
+  taxId: string
   phoneDisplay: string
   phoneHref: string
   faxDisplay: string
   faxHref: string
   email: string
   emailHref: string
+  linkedinUrl: string
   address: string
   addressEnglish: string
   mapEmbedUrl: string
@@ -547,6 +549,12 @@ export interface FooterMessages {
   connectorHeading: string
   ctaLabel: string
   brandLine: string
+  brandProofLine: string
+  linksHeading: string
+  links: readonly {
+    label: string
+    to: string
+  }[]
   newsletterHeading: string
   newsletterDescription: string
   newsletterPlaceholder: string
@@ -557,6 +565,7 @@ export interface FooterMessages {
   phoneLabel: string
   faxLabel: string
   emailLabel: string
+  linkedinLabel: string
   addressLabel: string
   backToTopLabel: string
   copyright: string

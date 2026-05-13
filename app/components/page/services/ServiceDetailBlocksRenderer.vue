@@ -69,7 +69,17 @@ function getRenderedBlockEyebrow(block: ServiceDetailBlockMessages) {
 </script>
 
 <template>
-  <div v-if="blocks.length" class="services-sys-detail-blocks">
+  <div
+    v-if="blocks.length"
+    v-motion-group="{
+      children: '.services-sys-detail-block',
+      preset: 'fade-up',
+      stagger: 0.06,
+      distance: 24,
+      start: 'top 82%'
+    }"
+    class="services-sys-detail-blocks"
+  >
     <section
       v-for="(block, index) in blocks"
       :key="`${block.type}-${index}`"

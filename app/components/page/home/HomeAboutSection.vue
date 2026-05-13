@@ -43,6 +43,13 @@ const aboutFrontImage = computed(() => ({
 
 <template>
   <section id="about" class="home-sys-about section-sys-shell bg-white">
+    <BrandBlockMotif
+      v-motion-parallax="{ yPercent: -6, scrub: 1, desktopOnly: true }"
+      class="home-sys-about__motif"
+      variant="media"
+      tone="light"
+    />
+
     <div class="page-sys-shell">
       <div
         class="grid items-center gap-12 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-14 xl:gap-16"
@@ -59,6 +66,12 @@ const aboutFrontImage = computed(() => ({
           />
 
           <SharedPointList
+            v-motion-reveal="{
+              preset: 'fade-up',
+              distance: 18,
+              duration: 0.7,
+              delay: 0.04
+            }"
             class="home-sys-about__points"
             :items="aboutPoints"
             variant="icon"
@@ -75,15 +88,7 @@ const aboutFrontImage = computed(() => ({
           :aria-label="messages.home.about.mediaLabel"
           @back-error="handleAboutDetailError"
           @front-error="handleAboutPrimaryError"
-        >
-          <template #decor>
-            <BrandBlockMotif
-              class="home-sys-about__motif"
-              variant="media"
-              tone="light"
-            />
-          </template>
-        </SharedMediaPair>
+        />
       </div>
     </div>
   </section>
@@ -106,12 +111,33 @@ const aboutFrontImage = computed(() => ({
   flex-direction: column;
 }
 
+.home-sys-about > .page-sys-shell {
+  position: relative;
+  z-index: 2;
+}
+
 .home-sys-about__intro {
   max-width: 34rem;
 }
 
 .home-sys-about__points {
+  --shared-point-list-marker-color: color-mix(
+    in srgb,
+    var(--color-primary-800) 76%,
+    var(--color-secondary-950)
+  );
+  --shared-point-list-marker-bg: color-mix(
+    in srgb,
+    var(--color-primary-500) 10%,
+    transparent
+  );
+
   margin-top: 1.75rem;
+}
+
+.home-sys-about__points :deep(.shared-point-list__marker) {
+  box-shadow: inset 0 0 0 1px
+    color-mix(in srgb, var(--color-primary-700) 18%, transparent);
 }
 
 .home-sys-about__media-composite {
@@ -120,19 +146,76 @@ const aboutFrontImage = computed(() => ({
 }
 
 .home-sys-about__motif {
-  display: block;
+  --motif-position: absolute;
+
+  position: absolute;
+  top: auto;
+  right: clamp(1.5rem, 4vw, 5.25rem);
+  bottom: clamp(4.5rem, 7vw, 6rem);
+  z-index: 1;
+}
+
+.home-sys-about__motif :deep(.brand-block-motif__block--primary) {
+  left: 0.45rem;
+}
+
+.home-sys-about__motif :deep(.brand-block-motif__block--secondary) {
+  left: 4.65rem;
+  width: 1.55rem;
+  height: 1.55rem;
+}
+
+.home-sys-about__motif :deep(.brand-block-motif__block--highlight) {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-secondary-950) 9%, transparent),
+    0 0.45rem 0.9rem
+      color-mix(in srgb, var(--color-secondary-950) 12%, transparent);
+}
+
+@media (max-width: 1023px) {
+  .home-sys-about__copy {
+    width: min(100%, 38rem);
+    max-width: none;
+    margin-inline: auto;
+  }
+
+  .home-sys-about__intro {
+    max-width: 38rem;
+  }
+
+  .home-sys-about__intro :deep(.shared-section-intro__description) {
+    max-width: 38rem;
+  }
+
+  .home-sys-about__media-composite {
+    width: min(100%, 38rem);
+  }
+
+  .home-sys-about__motif {
+    top: auto;
+    right: clamp(1.5rem, 4vw, 3rem);
+    bottom: clamp(4.75rem, 7vw, 5.5rem);
+    transform: scale(0.88);
+    transform-origin: right top;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-sys-about__intro {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .home-sys-about__intro :deep(.shared-section-intro__description) {
+    margin-inline: auto;
+  }
 }
 
 @media (min-width: 1024px) {
   .home-sys-about__media-composite {
+    justify-self: center;
     margin-inline: 0;
     margin-top: 0;
-  }
-}
-
-@media (min-width: 1280px) {
-  .home-sys-about__motif {
-    transform: translateX(clamp(9.5rem, 12.5vw, 12rem));
   }
 }
 
@@ -142,11 +225,11 @@ const aboutFrontImage = computed(() => ({
   }
 
   .home-sys-about__media-composite {
-    margin-top: -0.85rem;
+    display: none;
   }
 
   .home-sys-about__motif {
-    transform: translateX(-0.6rem);
+    display: none;
   }
 }
 </style>

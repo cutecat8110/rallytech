@@ -45,7 +45,16 @@ const normalizedItems = computed(() =>
 </script>
 
 <template>
-  <div class="shared-text-tile-grid" :class="rootClass">
+  <div
+    v-motion-group="{
+      children: '.shared-text-tile-grid__item',
+      preset: 'fade-up',
+      stagger: 0.07,
+      distance: 22
+    }"
+    class="shared-text-tile-grid"
+    :class="rootClass"
+  >
     <article
       v-for="item in normalizedItems"
       :key="item.title"

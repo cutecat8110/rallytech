@@ -2,17 +2,9 @@
 import { computed } from 'vue'
 import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 
-const props = defineProps<{
-  source: 'home' | 'about'
-}>()
-
 const messages = useRallyMessages()
 
-const processData = computed(() =>
-  props.source === 'home'
-    ? messages.value.home.process
-    : messages.value.aboutPage.process
-)
+const processData = computed(() => messages.value.home.process)
 
 const processIcons = [
   'i-lucide-clipboard-list',
@@ -30,14 +22,10 @@ const processSteps = computed(() =>
 </script>
 
 <template>
-  <section
-    id="process"
-    class="shared-sys-process section-sys-shell bg-white"
-    :class="`shared-sys-process--${source}`"
-  >
+  <section id="process" class="home-sys-process section-sys-shell bg-white">
     <div class="page-sys-shell--wide">
       <SharedSectionIntro
-        class="shared-sys-process__heading"
+        class="home-sys-process__heading"
         :kicker="processData.kicker"
         :title="processData.title"
         tone="light"
@@ -45,23 +33,30 @@ const processSteps = computed(() =>
         density="compact"
       />
 
-      <div class="shared-sys-process__grid">
+      <div
+        v-motion-group="{
+          children: '.home-sys-process__step',
+          preset: 'scale-soft',
+          stagger: 0.09,
+          distance: 24,
+          start: 'top 80%'
+        }"
+        class="home-sys-process__grid"
+      >
         <article
           v-for="step in processSteps"
           :key="step.number"
-          class="shared-sys-process__step cursor-pointer"
+          class="home-sys-process__step cursor-pointer"
         >
-          <div class="shared-sys-process__orbit">
-            <span class="shared-sys-process__icon">
+          <div class="home-sys-process__orbit">
+            <span class="home-sys-process__icon">
               <UIcon :name="step.icon" class="size-8" />
             </span>
-            <span class="shared-sys-process__number type-sys-label-m">
+            <span class="home-sys-process__number type-sys-label-m">
               {{ step.number }}
             </span>
           </div>
-          <p
-            class="shared-sys-process__label type-sys-title-m text-neutral-900"
-          >
+          <p class="home-sys-process__label type-sys-title-m text-neutral-900">
             {{ step.title }}
           </p>
         </article>
@@ -71,7 +66,7 @@ const processSteps = computed(() =>
 </template>
 
 <style scoped>
-.shared-sys-process--home {
+.home-sys-process {
   position: relative;
   background:
     linear-gradient(90deg, rgb(10 18 22 / 0.04) 0, transparent 1px)
@@ -79,22 +74,19 @@ const processSteps = computed(() =>
     linear-gradient(180deg, var(--color-white), rgb(247 250 250 / 0.92));
 }
 
-.shared-sys-process__heading {
+.home-sys-process__heading {
   max-width: 32rem;
 }
 
-.shared-sys-process__grid {
+.home-sys-process__grid {
   margin-top: 3rem;
   display: grid;
   gap: 2.25rem 1.5rem;
-}
-
-.shared-sys-process--home .shared-sys-process__grid {
   max-width: min(100%, 76rem);
   margin-inline: auto;
 }
 
-.shared-sys-process__step {
+.home-sys-process__step {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,11 +95,11 @@ const processSteps = computed(() =>
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.shared-sys-process__step:hover {
+.home-sys-process__step:hover {
   transform: translateY(-0.75rem);
 }
 
-.shared-sys-process__orbit {
+.home-sys-process__orbit {
   position: relative;
   display: grid;
   place-items: center;
@@ -128,14 +120,14 @@ const processSteps = computed(() =>
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.shared-sys-process__step:hover .shared-sys-process__orbit {
+.home-sys-process__step:hover .home-sys-process__orbit {
   box-shadow:
     inset 0 0 0 1rem rgb(255 255 255 / 0.9),
     0 1.75rem 3.5rem rgb(15 23 42 / 0.12);
   border-color: rgb(15 23 42 / 0.1);
 }
 
-.shared-sys-process__orbit::before {
+.home-sys-process__orbit::before {
   content: '';
   position: absolute;
   inset: 1.1rem;
@@ -143,7 +135,7 @@ const processSteps = computed(() =>
   border: 1px solid rgb(15 23 42 / 0.06);
 }
 
-.shared-sys-process__icon {
+.home-sys-process__icon {
   display: inline-flex;
   width: 4.75rem;
   height: 4.75rem;
@@ -154,12 +146,12 @@ const processSteps = computed(() =>
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.shared-sys-process__step:hover .shared-sys-process__icon {
+.home-sys-process__step:hover .home-sys-process__icon {
   color: var(--color-primary-600);
   transform: scale(1.1);
 }
 
-.shared-sys-process__number {
+.home-sys-process__number {
   position: absolute;
   right: 0.9rem;
   bottom: 0.8rem;
@@ -176,12 +168,12 @@ const processSteps = computed(() =>
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.shared-sys-process__step:hover .shared-sys-process__number {
+.home-sys-process__step:hover .home-sys-process__number {
   background: var(--color-primary-600);
   transform: scale(1.05);
 }
 
-.shared-sys-process__label {
+.home-sys-process__label {
   max-width: 12ch;
   margin-top: 1.35rem;
   line-height: 1.18;
@@ -189,46 +181,46 @@ const processSteps = computed(() =>
 }
 
 @media (min-width: 768px) {
-  .shared-sys-process__grid {
+  .home-sys-process__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  .shared-sys-process__grid {
+  .home-sys-process__grid {
     width: min(100%, 44rem);
     margin-inline: auto;
     gap: 1.65rem 2rem;
   }
 
-  .shared-sys-process__step:hover {
+  .home-sys-process__step:hover {
     transform: translateY(-0.35rem);
   }
 
-  .shared-sys-process__orbit {
+  .home-sys-process__orbit {
     width: min(100%, 10.25rem);
     box-shadow:
       inset 0 0 0 0.72rem rgb(255 255 255 / 0.72),
       0 1rem 2rem rgb(15 23 42 / 0.055);
   }
 
-  .shared-sys-process__step:hover .shared-sys-process__orbit {
+  .home-sys-process__step:hover .home-sys-process__orbit {
     box-shadow:
       inset 0 0 0 0.72rem rgb(255 255 255 / 0.88),
       0 1.25rem 2.4rem rgb(15 23 42 / 0.09);
   }
 
-  .shared-sys-process__orbit::before {
+  .home-sys-process__orbit::before {
     inset: 0.82rem;
   }
 
-  .shared-sys-process__icon {
+  .home-sys-process__icon {
     width: 3.7rem;
     height: 3.7rem;
   }
 
-  .shared-sys-process__number {
+  .home-sys-process__number {
     right: 0.45rem;
     bottom: 0.42rem;
     width: 2.65rem;
@@ -237,47 +229,38 @@ const processSteps = computed(() =>
     box-shadow: 0 0.75rem 1.35rem rgb(15 23 42 / 0.14);
   }
 
-  .shared-sys-process__label {
+  .home-sys-process__label {
     margin-top: 1rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .shared-sys-process__grid {
+  .home-sys-process__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 2rem 1.25rem;
-  }
-
-  .shared-sys-process--home .shared-sys-process__grid {
     gap: 2rem 1.75rem;
   }
 
-  .shared-sys-process__step:not(:last-child)::after {
+  .home-sys-process__step:not(:last-child)::after {
     content: '';
     position: absolute;
     top: 5.5rem;
-    right: -1rem;
-    width: 2.3rem;
+    right: -1.35rem;
+    width: 2.6rem;
     height: 0.9rem;
     border-top: 2px solid rgb(148 163 184 / 0.42);
     border-right: 2px solid rgb(148 163 184 / 0.42);
     transform: skewX(-26deg);
     opacity: 0.85;
   }
-
-  .shared-sys-process--home .shared-sys-process__step:not(:last-child)::after {
-    right: -1.35rem;
-    width: 2.6rem;
-  }
 }
 
 @media (max-width: 767px) {
-  .shared-sys-process__grid {
+  .home-sys-process__grid {
     margin-top: 2rem;
     gap: 0;
   }
 
-  .shared-sys-process__step {
+  .home-sys-process__step {
     display: grid;
     grid-template-columns: 4rem minmax(0, 1fr);
     align-items: center;
@@ -292,31 +275,31 @@ const processSteps = computed(() =>
     text-align: left;
   }
 
-  .shared-sys-process__step:first-child {
+  .home-sys-process__step:first-child {
     border-top: none;
   }
 
-  .shared-sys-process__step:hover {
+  .home-sys-process__step:hover {
     transform: none;
   }
 
-  .shared-sys-process__orbit {
+  .home-sys-process__orbit {
     width: 3.6rem;
     box-shadow:
       inset 0 0 0 0.35rem rgb(255 255 255 / 0.74),
       0 0.75rem 1.4rem rgb(15 23 42 / 0.06);
   }
 
-  .shared-sys-process__orbit::before {
+  .home-sys-process__orbit::before {
     inset: 0.5rem;
   }
 
-  .shared-sys-process__icon {
+  .home-sys-process__icon {
     width: 2rem;
     height: 2rem;
   }
 
-  .shared-sys-process__number {
+  .home-sys-process__number {
     right: -0.4rem;
     bottom: -0.25rem;
     width: 1.7rem;
@@ -326,7 +309,7 @@ const processSteps = computed(() =>
     font-size: 0.62rem;
   }
 
-  .shared-sys-process__label {
+  .home-sys-process__label {
     max-width: none;
     margin-top: 0;
   }

@@ -36,7 +36,17 @@ const capabilitySurfaceStyle = computed(() => ({
     :style="capabilitySurfaceStyle"
   >
     <div class="page-sys-shell--wide relative z-10">
-      <div class="about-sys-capabilities__grid">
+      <div
+        v-motion-group="{
+          children:
+            '.about-sys-capabilities__lead, .about-sys-capabilities__tile',
+          preset: 'fade-up',
+          stagger: 0.055,
+          distance: 20,
+          start: 'top 78%'
+        }"
+        class="about-sys-capabilities__grid"
+      >
         <div class="about-sys-capabilities__lead">
           <SharedContentHeader
             class="about-sys-capabilities__title"

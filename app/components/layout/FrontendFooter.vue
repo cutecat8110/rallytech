@@ -3,16 +3,13 @@ import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
 import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import {
   contrastSolidLightButtonTheme,
-  iconUtilityDarkButtonTheme,
   iconUtilityEmphasisButtonTheme
 } from '~/utils/button-themes'
 
 const currentYear = new Date().getFullYear()
 const messages = useRallyMessages()
 const { t } = useI18n()
-const toast = useToast()
 const localePath = useLocalePath()
-const newsletterEmail = ref('')
 const isBackToTopVisible = ref(false)
 const BACK_TO_TOP_REVEAL_OFFSET = 320
 const {
@@ -40,28 +37,47 @@ const brandSupportingLine = computed(() => {
   )
 })
 
-const primaryContactItems = computed(() => [
-  {
-    key: 'phone',
-    icon: 'i-lucide-phone-call',
-    label: footerMessages.value.phoneLabel,
-    value: company.value.phoneDisplay,
-    href: company.value.phoneHref
-  },
-  {
-    key: 'email',
-    icon: 'i-lucide-mail',
-    label: footerMessages.value.emailLabel,
-    value: company.value.email,
-    href: company.value.emailHref
-  }
-])
+const footerLinkItems = computed(() =>
+  footerMessages.value.links.map((item) => ({
+    ...item,
+    to: localePath(item.to)
+  }))
+)
 
-const contactMetaItems = computed(() =>
+const contactItems = computed(() =>
   [
+    company.value.phoneDisplay
+      ? {
+          key: 'phone',
+          icon: 'i-lucide-phone-call',
+          label: footerMessages.value.phoneLabel,
+          value: company.value.phoneDisplay,
+          href: company.value.phoneHref
+        }
+      : null,
+    company.value.email
+      ? {
+          key: 'email',
+          icon: 'i-lucide-mail',
+          label: footerMessages.value.emailLabel,
+          value: company.value.email,
+          href: company.value.emailHref
+        }
+      : null,
+    company.value.linkedinUrl
+      ? {
+          key: 'linkedin',
+          icon: 'i-lucide-linkedin',
+          label: footerMessages.value.linkedinLabel,
+          value: 'Rally Technology Co., Ltd.',
+          href: company.value.linkedinUrl,
+          target: '_blank'
+        }
+      : null,
     company.value.faxDisplay
       ? {
           key: 'fax',
+          icon: 'i-lucide-printer',
           label: footerMessages.value.faxLabel,
           value: company.value.faxDisplay,
           href: company.value.faxHref
@@ -70,9 +86,11 @@ const contactMetaItems = computed(() =>
     company.value.address
       ? {
           key: 'address',
+          icon: 'i-lucide-map-pinned',
           label: footerMessages.value.addressLabel,
           value: company.value.address,
-          href: company.value.mapDirectionsUrl
+          href: company.value.mapDirectionsUrl,
+          target: '_blank'
         }
       : null
   ].filter(
@@ -80,45 +98,27 @@ const contactMetaItems = computed(() =>
       item
     ): item is {
       key: string
+      icon: string
       label: string
       value: string
       href: string
+      target?: '_blank'
     } => Boolean(item)
   )
 )
 
-const newsletterInputUi = {
-  base: [
-    'rounded-md',
-    'border-0',
-    'bg-white/10',
-    'text-white',
-    'placeholder:text-white/52',
-    'ring-1',
-    'ring-inset',
-    'ring-white/12',
-    'shadow-none',
-    'min-h-[3.2rem]',
-    'pr-16',
-    'pl-4',
-    'focus-visible:ring-2',
-    'focus-visible:ring-white/28'
-  ].join(' ')
-} as const
-
-const newsletterSubmitUi = {
-  base: 'justify-center px-0 py-0 gap-0 ring-0 shadow-none'
-} as const
-
-function handleNewsletterSubmit() {
-  toast.add({
-    title: footerMessages.value.newsletterUnavailableTitle,
-    description: footerMessages.value.newsletterUnavailableDescription,
-    icon: 'i-lucide-circle-alert'
-  })
-
-  newsletterEmail.value = ''
-}
+const brandProofItems = computed(() =>
+  [
+    {
+      key: 'legal',
+      value: brandSupportingLine.value
+    },
+    {
+      key: 'service',
+      value: footerMessages.value.brandProofLine
+    }
+  ].filter((item) => Boolean(item.value))
+)
 
 function updateBackToTopVisibility() {
   if (!import.meta.client) return
@@ -150,7 +150,11 @@ onBeforeUnmount(() => {
       class="home-sys-footer__connector"
       aria-labelledby="footer-connector-heading"
     >
-      <figure class="home-sys-footer__connector-media" aria-hidden="true">
+      <figure
+        v-motion-parallax="{ yPercent: 6, scale: 1.02, scrub: 0.9 }"
+        class="home-sys-footer__connector-media"
+        aria-hidden="true"
+      >
         <img
           :src="connectorImage.src"
           alt=""
@@ -164,6 +168,11 @@ onBeforeUnmount(() => {
           <div class="home-sys-footer__connector-spacer" aria-hidden="true" />
 
           <SharedContentHeader
+            v-motion-reveal="{
+              preset: 'fade-up',
+              distance: 18,
+              duration: 0.72
+            }"
             class="home-sys-footer__connector-copy"
             :title="footerMessages.connectorHeading"
             title-id="footer-connector-heading"
@@ -173,7 +182,14 @@ onBeforeUnmount(() => {
             title-tag="h2"
           />
 
-          <div class="home-sys-footer__connector-action">
+          <div
+            v-motion-reveal="{
+              preset: 'fade-left',
+              distance: 16,
+              duration: 0.7
+            }"
+            class="home-sys-footer__connector-action"
+          >
             <UTheme :ui="contrastSolidLightButtonTheme">
               <UButton
                 :to="contactPath"
@@ -190,63 +206,75 @@ onBeforeUnmount(() => {
     </section>
 
     <section class="home-sys-footer__content-band">
-      <div class="page-sys-shell">
-        <div class="home-sys-footer__content-grid">
+      <div class="page-sys-shell home-sys-footer__content-shell">
+        <div
+          v-motion-group="{
+            children:
+              '.home-sys-footer__brand, .home-sys-footer__links, .home-sys-footer__contacts',
+            preset: 'fade-up',
+            stagger: 0.075,
+            distance: 22
+          }"
+          class="home-sys-footer__content-grid"
+        >
           <article class="home-sys-footer__brand">
             <p class="type-sys-headline-s home-sys-footer__brand-line">
               {{ footerMessages.brandLine }}
             </p>
-            <p
-              v-if="brandSupportingLine"
-              class="type-sys-body-s home-sys-footer__brand-subline"
+            <ul
+              class="home-sys-footer__brand-proof"
+              :aria-label="footerMessages.brandLine"
             >
-              {{ brandSupportingLine }}
-            </p>
+              <li
+                v-for="item in brandProofItems"
+                :key="item.key"
+                class="type-sys-body-s home-sys-footer__brand-subline"
+              >
+                {{ item.value }}
+              </li>
+            </ul>
+
+            <img
+              src="/images/brand/RallyTech_Logo.svg"
+              alt=""
+              class="home-sys-footer__brand-mark"
+              aria-hidden="true"
+            />
           </article>
 
           <article
-            class="home-sys-footer__newsletter"
-            aria-labelledby="footer-newsletter-heading"
+            class="home-sys-footer__links"
+            aria-labelledby="footer-links-heading"
           >
             <SharedContentHeader
-              class="home-sys-footer__section-header home-sys-footer__section-header--newsletter"
-              :title="footerMessages.newsletterHeading"
-              :description="footerMessages.newsletterDescription"
-              title-id="footer-newsletter-heading"
+              class="home-sys-footer__section-header"
+              :title="footerMessages.linksHeading"
+              title-id="footer-links-heading"
               tone="dark"
               scale="block"
               density="compact"
               title-tag="h3"
             />
 
-            <form
-              class="home-sys-footer__newsletter-form"
-              @submit.prevent="handleNewsletterSubmit"
+            <nav
+              class="home-sys-footer__link-list"
+              :aria-label="footerMessages.linksHeading"
             >
-              <div class="home-sys-footer__newsletter-field">
-                <UInput
-                  v-model="newsletterEmail"
-                  type="email"
-                  required
-                  :placeholder="footerMessages.newsletterPlaceholder"
-                  class="w-full"
-                  :ui="newsletterInputUi"
+              <NuxtLink
+                v-for="item in footerLinkItems"
+                :key="item.to"
+                :to="item.to"
+                class="home-sys-footer__link-item"
+              >
+                <span class="type-sys-title-m home-sys-footer__link-label">
+                  {{ item.label }}
+                </span>
+                <UIcon
+                  name="i-lucide-arrow-up-right"
+                  class="home-sys-footer__link-icon"
                 />
-
-                <UTheme :ui="iconUtilityDarkButtonTheme">
-                  <UButton
-                    type="submit"
-                    color="neutral"
-                    variant="ghost"
-                    size="sm"
-                    icon="i-lucide-send"
-                    :aria-label="footerMessages.newsletterButtonLabel"
-                    :ui="newsletterSubmitUi"
-                    class="home-sys-footer__newsletter-submit"
-                  />
-                </UTheme>
-              </div>
-            </form>
+              </NuxtLink>
+            </nav>
           </article>
 
           <article
@@ -265,9 +293,11 @@ onBeforeUnmount(() => {
 
             <div class="home-sys-footer__contact-list">
               <a
-                v-for="item in primaryContactItems"
+                v-for="item in contactItems"
                 :key="item.key"
                 :href="item.href"
+                :target="item.target"
+                :rel="item.target ? 'noreferrer' : undefined"
                 class="home-sys-footer__contact-item"
               >
                 <UIcon
@@ -285,31 +315,6 @@ onBeforeUnmount(() => {
                 </span>
               </a>
             </div>
-
-            <dl
-              v-if="contactMetaItems.length"
-              class="home-sys-footer__contact-meta"
-            >
-              <div
-                v-for="item in contactMetaItems"
-                :key="item.key"
-                class="home-sys-footer__contact-meta-item"
-              >
-                <dt
-                  class="type-sys-label-s home-sys-footer__contact-meta-label"
-                >
-                  {{ item.label }}
-                </dt>
-                <dd class="type-sys-body-s home-sys-footer__contact-meta-value">
-                  <a
-                    :href="item.href"
-                    class="home-sys-footer__contact-meta-link"
-                  >
-                    {{ item.value }}
-                  </a>
-                </dd>
-              </div>
-            </dl>
           </article>
         </div>
       </div>
@@ -464,6 +469,10 @@ onBeforeUnmount(() => {
     linear-gradient(180deg, rgb(8 16 22 / 0.98) 0%, rgb(7 19 30 / 1) 100%);
 }
 
+.home-sys-footer__content-shell {
+  margin-inline: auto;
+}
+
 .home-sys-footer__content-grid {
   display: grid;
   gap: 2rem;
@@ -472,11 +481,30 @@ onBeforeUnmount(() => {
 
 .home-sys-footer__brand {
   display: grid;
-  gap: 0.3rem;
+  align-content: start;
+  gap: 0.85rem;
+}
+
+.home-sys-footer__brand-mark {
+  width: clamp(4.25rem, 6vw, 5rem);
+  height: auto;
+  margin-top: 0.65rem;
+  filter: brightness(0) invert(1);
+  opacity: 0.16;
+  transform: translateX(-27.1%);
+  transform-origin: left center;
 }
 
 .home-sys-footer__brand-line {
   color: var(--color-text-inverse);
+}
+
+.home-sys-footer__brand-proof {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .home-sys-footer__brand-subline {
@@ -484,55 +512,88 @@ onBeforeUnmount(() => {
   color: rgb(255 255 255 / 0.58);
 }
 
-.home-sys-footer__newsletter {
+.home-sys-footer__links {
   display: grid;
-  gap: 0.9rem;
+  align-content: start;
+  gap: 1.05rem;
 }
 
 .home-sys-footer__section-header {
   --shared-content-header-title-color: var(--color-text-inverse);
 }
 
-.home-sys-footer__section-header--newsletter
-  :deep(.shared-content-header__description) {
-  max-width: 24rem;
+.home-sys-footer__link-list {
+  display: grid;
+  gap: 0.6rem;
+  width: min(100%, 22rem);
 }
 
-.home-sys-footer__newsletter-form {
-  margin-top: 0.2rem;
+.home-sys-footer__link-item {
+  display: flex;
+  min-height: 2.65rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+  color: rgb(255 255 255 / 0.78);
+  text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
 }
 
-.home-sys-footer__newsletter-field {
-  position: relative;
-  max-width: 22rem;
+.home-sys-footer__link-item:hover,
+.home-sys-footer__link-item:focus-visible {
+  border-color: rgb(48 187 165 / 0.42);
+  color: var(--color-white);
+  transform: translateX(0.2rem);
 }
 
-.home-sys-footer__newsletter-submit {
-  position: absolute;
-  inset-block-start: 50%;
-  inset-inline-end: 0.35rem;
-  width: 2.55rem;
-  height: 2.55rem;
-  transform: translateY(-50%);
-  justify-content: center;
+.home-sys-footer__link-item:focus-visible {
+  outline: 2px solid rgb(112 223 205 / 0.52);
+  outline-offset: 4px;
+}
+
+.home-sys-footer__link-label {
+  color: currentColor;
+}
+
+.home-sys-footer__link-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: 0 0 auto;
+  color: rgb(112 223 205 / 0.72);
+  transition: color 180ms ease;
+}
+
+.home-sys-footer__link-item:hover .home-sys-footer__link-icon,
+.home-sys-footer__link-item:focus-visible .home-sys-footer__link-icon {
+  color: rgb(112 223 205 / 0.98);
 }
 
 .home-sys-footer__contacts {
   display: grid;
-  gap: 1rem;
+  align-content: start;
+  gap: 1.05rem;
 }
 
 .home-sys-footer__contact-list {
   display: grid;
-  gap: 1rem;
+  gap: 0.78rem;
 }
 
 .home-sys-footer__contact-item {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.9rem;
-  align-items: center;
+  min-height: 3.35rem;
+  grid-template-columns: 2.45rem minmax(0, 1fr);
+  gap: 0.95rem;
+  align-items: start;
+  color: rgb(255 255 255 / 0.78);
   text-decoration: none;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
 }
 
 .home-sys-footer__contact-item:hover .home-sys-footer__contact-label,
@@ -542,9 +603,19 @@ onBeforeUnmount(() => {
   color: var(--color-white);
 }
 
+.home-sys-footer__contact-item:hover,
+.home-sys-footer__contact-item:focus-visible {
+  transform: translateX(0.2rem);
+}
+
+.home-sys-footer__contact-item:focus-visible {
+  outline: 2px solid rgb(112 223 205 / 0.52);
+  outline-offset: 4px;
+}
+
 .home-sys-footer__contact-icon {
-  width: 2.35rem;
-  height: 2.35rem;
+  width: 2.2rem;
+  height: 2.2rem;
   color: rgb(255 255 255 / 0.92);
 }
 
@@ -559,36 +630,6 @@ onBeforeUnmount(() => {
 
 .home-sys-footer__contact-value {
   color: rgb(255 255 255 / 0.82);
-}
-
-.home-sys-footer__contact-meta {
-  display: grid;
-  gap: 0.7rem;
-  margin: 0;
-  padding-top: 0.15rem;
-}
-
-.home-sys-footer__contact-meta-item {
-  display: grid;
-  gap: 0.15rem;
-}
-
-.home-sys-footer__contact-meta-label {
-  color: rgb(255 255 255 / 0.5);
-}
-
-.home-sys-footer__contact-meta-value {
-  margin: 0;
-}
-
-.home-sys-footer__contact-meta-link {
-  color: rgb(255 255 255 / 0.72);
-  text-decoration: none;
-}
-
-.home-sys-footer__contact-meta-link:hover,
-.home-sys-footer__contact-meta-link:focus-visible {
-  color: var(--color-white);
 }
 
 .home-sys-footer__legal-band {
@@ -696,48 +737,47 @@ onBeforeUnmount(() => {
   }
 
   .home-sys-footer__brand,
-  .home-sys-footer__newsletter,
+  .home-sys-footer__links,
   .home-sys-footer__contacts {
     width: min(100%, 22rem);
     justify-items: center;
   }
 
-  .home-sys-footer__brand-subline,
-  .home-sys-footer__section-header--newsletter
-    :deep(.shared-content-header__description) {
+  .home-sys-footer__brand-proof,
+  .home-sys-footer__brand-subline {
     margin-inline: auto;
   }
 
-  .home-sys-footer__newsletter-form,
-  .home-sys-footer__newsletter-field {
+  .home-sys-footer__brand-mark {
+    width: 4.25rem;
+    margin-inline: auto;
+    opacity: 0.14;
+    transform: none;
+  }
+
+  .home-sys-footer__link-list,
+  .home-sys-footer__contact-list {
     width: 100%;
   }
 
-  .home-sys-footer__newsletter-field {
-    max-width: 22rem;
-    margin-inline: auto;
+  .home-sys-footer__link-item {
+    text-align: left;
   }
 
   .home-sys-footer__contact-list {
-    width: min(100%, 18.5rem);
     justify-items: stretch;
   }
 
   .home-sys-footer__contact-item {
-    justify-content: center;
+    width: 100%;
     text-align: left;
-  }
-
-  .home-sys-footer__contact-meta {
-    justify-items: center;
-    text-align: center;
   }
 }
 
 @media (min-width: 768px) {
   .home-sys-footer__connector {
     --connector-band-min-height: clamp(9.4rem, 10.8vw, 11.1rem);
-    --connector-seam-width: clamp(14rem, 16vw, 16.5rem);
+    --connector-seam-width: clamp(12.5rem, 14vw, 14.5rem);
     --connector-media-width: clamp(18rem, 22vw, 21rem);
   }
 
@@ -764,6 +804,7 @@ onBeforeUnmount(() => {
   }
 
   .home-sys-footer__connector-copy {
+    justify-self: center;
     text-align: center;
   }
 
@@ -783,17 +824,17 @@ onBeforeUnmount(() => {
 
   .home-sys-footer__content-grid {
     grid-template-columns:
-      minmax(0, 0.75fr)
-      minmax(18rem, 1.05fr)
-      minmax(16rem, 0.9fr);
-    gap: clamp(1.8rem, 3vw, 3.4rem);
+      minmax(13rem, 0.86fr)
+      minmax(14.5rem, 0.86fr)
+      minmax(18rem, 1fr);
+    align-items: start;
+    gap: clamp(2.2rem, 3.6vw, 4rem);
     min-height: 16.35rem;
     padding-block: 3.85rem 3.45rem;
   }
 
   .home-sys-footer__brand {
-    align-self: end;
-    padding-bottom: 0.15rem;
+    align-self: start;
   }
 }
 
@@ -821,7 +862,7 @@ onBeforeUnmount(() => {
     margin-inline: auto;
   }
 
-  .home-sys-footer__newsletter,
+  .home-sys-footer__links,
   .home-sys-footer__contacts {
     min-width: 0;
   }
@@ -840,10 +881,17 @@ onBeforeUnmount(() => {
 
   .home-sys-footer__content-grid {
     grid-template-columns:
-      minmax(13.5rem, 0.78fr)
-      minmax(20rem, 1.18fr)
-      minmax(17rem, 0.98fr);
-    gap: clamp(2.5rem, 4vw, 4.5rem);
+      minmax(13rem, 0.86fr)
+      minmax(15rem, 0.86fr)
+      minmax(18rem, 1fr);
+    gap: clamp(2.6rem, 4.4vw, 4.75rem);
+  }
+
+  .home-sys-footer__content-shell {
+    max-width: min(
+      calc(100vw - (var(--layout-content-padding-inline) * 2)),
+      75rem
+    );
   }
 }
 </style>

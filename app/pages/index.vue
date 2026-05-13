@@ -3,8 +3,8 @@ import HomeAboutSection from '~/components/page/home/HomeAboutSection.vue'
 import HomeBrandMainActionSection from '~/components/page/home/HomeBrandMainActionSection.vue'
 import HomeHeroSection from '~/components/page/home/HomeHeroSection.vue'
 import HomeOneTouchSection from '~/components/page/home/HomeOneTouchSection.vue'
+import HomeProcessSection from '~/components/page/home/HomeProcessSection.vue'
 import HomeServicesSection from '~/components/page/home/HomeServicesSection.vue'
-import SharedProcessSection from '~/components/shared/SharedProcessSection.vue'
 import { SITE_NAME, withSiteUrl } from '~~/shared/seo'
 
 definePageMeta({
@@ -36,7 +36,7 @@ useSeoMeta({
     <HomeHeroSection />
     <HomeAboutSection />
     <HomeServicesSection />
-    <SharedProcessSection source="home" />
+    <HomeProcessSection />
     <HomeOneTouchSection />
     <HomeBrandMainActionSection />
   </div>

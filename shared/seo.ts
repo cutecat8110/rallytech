@@ -150,8 +150,10 @@ export function createSiteGraph(input: {
   organizationName: string
   alternateNames: string[]
   description: string
+  taxId: string
   telephone: string
   email: string
+  sameAs: string[]
   address: string
   addressEnglish: string
 }) {
@@ -170,6 +172,8 @@ export function createSiteGraph(input: {
         logo: withSiteUrl('/images/brand/RallyTech_FullLogo.svg'),
         description: input.description,
         foundingDate: '2014',
+        ...(input.taxId ? { taxID: input.taxId } : {}),
+        sameAs: input.sameAs.filter(Boolean),
         email: input.email,
         telephone: input.telephone,
         address: {

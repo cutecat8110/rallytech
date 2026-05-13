@@ -72,8 +72,10 @@ const siteSchema = computed(() =>
       messages.value.company.chineseName
     ],
     description: messages.value.home.seo.description,
+    taxId: messages.value.company.taxId,
     telephone: messages.value.company.phoneDisplay,
     email: messages.value.company.email,
+    sameAs: [messages.value.company.linkedinUrl],
     address: messages.value.company.address,
     addressEnglish: messages.value.company.addressEnglish
   })

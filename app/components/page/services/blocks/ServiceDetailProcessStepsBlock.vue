@@ -21,7 +21,15 @@ defineProps<{
       title-tag="h3"
     />
 
-    <div class="services-sys-detail-process-steps">
+    <div
+      v-motion-group="{
+        children: '.services-sys-detail-process-steps__item',
+        preset: 'fade-up',
+        stagger: 0.08,
+        distance: 18
+      }"
+      class="services-sys-detail-process-steps"
+    >
       <article
         v-for="(item, index) in block.items"
         :key="`${item.stepLabel ?? index}-${item.title}`"

@@ -1,0 +1,235 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e7]:
+      - link "+886-3-552-9933" [ref=e8] [cursor=pointer]:
+        - /url: tel:+88635529933
+        - text: +886-3-552-9933
+      - link "sales@rallytech.com.tw" [ref=e10] [cursor=pointer]:
+        - /url: mailto:sales@rallytech.com.tw
+        - text: sales@rallytech.com.tw
+    - generic [ref=e13]:
+      - link "雷力科技首頁" [ref=e14] [cursor=pointer]:
+        - /url: /
+        - img "雷力科技" [ref=e15]
+      - generic [ref=e16]:
+        - link "切換語言：英文" [ref=e17] [cursor=pointer]:
+          - /url: /en
+          - generic [ref=e19]: EN
+        - button "開啟選單" [ref=e20] [cursor=pointer]
+  - main [ref=e22]:
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - img [ref=e26]
+        - generic [ref=e30]:
+          - paragraph [ref=e31]: 自動化控制與監控整合
+          - heading "自動化控制與監控整合，支援工業現場運轉" [level=1] [ref=e32]
+          - paragraph [ref=e33]: 協助專案與現場團隊把控制、監控與試車工作接在同一條較清楚的交付路徑上。
+          - link "查看服務" [ref=e35] [cursor=pointer]:
+            - /url: /services
+            - generic [ref=e36]: 查看服務
+      - article [ref=e40]:
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: 為什麼選擇雷力
+          - heading "承接控制、監控與試車交付的整合夥伴" [level=2] [ref=e43]
+          - paragraph [ref=e44]: 雷力科技成立於 2014 年，承接自動化控制、監控系統、試車支援與客製系統交付，服務專案端與現場端需求。
+        - list [ref=e45]:
+          - listitem [ref=e46]:
+            - generic [ref=e49]:
+              - paragraph [ref=e50]: 公司角色
+              - paragraph [ref=e52]: 承接控制系統、監控平台、試車支援與客製整合工作。
+          - listitem [ref=e53]:
+            - generic [ref=e56]:
+              - paragraph [ref=e57]: 品質與合作
+              - paragraph [ref=e59]: 以 ISO 9001、ISO 45001 與 WinCC OA Partner 基礎支撐穩定交付。
+          - listitem [ref=e60]:
+            - generic [ref=e63]:
+              - paragraph [ref=e64]: 常見場域
+              - paragraph [ref=e66]: 常見於再生能源、離岸風電、化工、製藥、EPC 與工業場域。
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - paragraph [ref=e71]: 服務項目
+          - heading "工業自動化服務範圍" [level=2] [ref=e72]
+        - generic [ref=e73]:
+          - link "SCADA / HMI 圖控 承接 SCADA / HMI、WinCC OA 與 AVEVA System Platform 類監控畫面規劃，讓狀態、告警與操作脈絡更容易判讀。 查看詳情" [ref=e74] [cursor=pointer]:
+            - /url: /services/scada-hmi-graphics
+            - generic [ref=e77]:
+              - heading "SCADA / HMI 圖控" [level=3] [ref=e78]
+              - paragraph [ref=e79]: 承接 SCADA / HMI、WinCC OA 與 AVEVA System Platform 類監控畫面規劃，讓狀態、告警與操作脈絡更容易判讀。
+            - generic [ref=e81]: 查看詳情
+          - link "儀電整合 確認儀表、回路與試車檢查，協助設備訊號一路銜接到啟動與排障。 查看詳情" [ref=e83] [cursor=pointer]:
+            - /url: /services/ie-services
+            - generic [ref=e86]:
+              - heading "儀電整合" [level=3] [ref=e87]
+              - paragraph [ref=e88]: 確認儀表、回路與試車檢查，協助設備訊號一路銜接到啟動與排障。
+            - generic [ref=e90]: 查看詳情
+          - link "PLC / DCS 程式與搬遷 處理控制邏輯調整、程式搬遷與切換規劃，讓既有系統能分段更新。 查看詳情" [ref=e92] [cursor=pointer]:
+            - /url: /services/plc-dcs-programming-and-migration
+            - generic [ref=e95]:
+              - heading "PLC / DCS 程式與搬遷" [level=3] [ref=e96]
+              - paragraph [ref=e97]: 處理控制邏輯調整、程式搬遷與切換規劃，讓既有系統能分段更新。
+            - generic [ref=e99]: 查看詳情
+          - link "PI Server 把即時製程資料收進 PI Server / PI System 架構，建立可查詢、計算與跨系統使用的工業資料平台。 查看詳情" [ref=e101] [cursor=pointer]:
+            - /url: /services/pi-server
+            - generic [ref=e104]:
+              - heading "PI Server" [level=3] [ref=e105]
+              - paragraph [ref=e106]: 把即時製程資料收進 PI Server / PI System 架構，建立可查詢、計算與跨系統使用的工業資料平台。
+            - generic [ref=e108]: 查看詳情
+          - link "Historians 保存長期製程紀錄，讓趨勢回顧、報表追蹤與異常排查有穩定資料來源。 查看詳情" [ref=e110] [cursor=pointer]:
+            - /url: /services/historians
+            - generic [ref=e113]:
+              - heading "Historians" [level=3] [ref=e114]
+              - paragraph [ref=e115]: 保存長期製程紀錄，讓趨勢回顧、報表追蹤與異常排查有穩定資料來源。
+            - generic [ref=e117]: 查看詳情
+          - link "IT 建置 規劃企業 IT 架構、伺服器、儲存與虛擬化資源，支撐穩定營運與未來擴充。 查看詳情" [ref=e119] [cursor=pointer]:
+            - /url: /services/it-infrastructure
+            - generic [ref=e122]:
+              - heading "IT 建置" [level=3] [ref=e123]
+              - paragraph [ref=e124]: 規劃企業 IT 架構、伺服器、儲存與虛擬化資源，支撐穩定營運與未來擴充。
+            - generic [ref=e126]: 查看詳情
+          - link "資安網路建置 整合網路分段、存取控管、威脅防護與資安設計，降低企業 IT / OT 環境的暴露風險。 查看詳情" [ref=e128] [cursor=pointer]:
+            - /url: /services/cybersecurity-network
+            - generic [ref=e131]:
+              - heading "資安網路建置" [level=3] [ref=e132]
+              - paragraph [ref=e133]: 整合網路分段、存取控管、威脅防護與資安設計，降低企業 IT / OT 環境的暴露風險。
+            - generic [ref=e135]: 查看詳情
+          - link "工業網路設計 整理控制網路拓樸、通訊分層與擴充邊界，支撐穩定連線與後續維護。 查看詳情" [ref=e137] [cursor=pointer]:
+            - /url: /services/network-design
+            - generic [ref=e140]:
+              - heading "工業網路設計" [level=3] [ref=e141]
+              - paragraph [ref=e142]: 整理控制網路拓樸、通訊分層與擴充邊界，支撐穩定連線與後續維護。
+            - generic [ref=e144]: 查看詳情
+          - link "離岸風場維運 建立離岸風場 SCADA 監控、遠端維運與安全連線流程，支援 offshore wind monitoring 與偏遠場域穩定運作。 查看詳情" [ref=e146] [cursor=pointer]:
+            - /url: /services/offshore-wind-operations
+            - generic [ref=e149]:
+              - heading "離岸風場維運" [level=3] [ref=e150]
+              - paragraph [ref=e151]: 建立離岸風場 SCADA 監控、遠端維運與安全連線流程，支援 offshore wind monitoring 與偏遠場域穩定運作。
+            - generic [ref=e153]: 查看詳情
+          - link "遠端監控與資料備援 讓分散設備與站點資料能遠端查看、回傳與備援，支援 infrastructure monitoring 與跨據點營運判讀。 查看詳情" [ref=e155] [cursor=pointer]:
+            - /url: /services/remote-monitoring-and-data
+            - generic [ref=e158]:
+              - heading "遠端監控與資料備援" [level=3] [ref=e159]
+              - paragraph [ref=e160]: 讓分散設備與站點資料能遠端查看、回傳與備援，支援 infrastructure monitoring 與跨據點營運判讀。
+            - generic [ref=e162]: 查看詳情
+          - link "告警監控 規劃告警分類、即時通知與升級規則，讓事件從發生到處置更容易追蹤。 查看詳情" [ref=e164] [cursor=pointer]:
+            - /url: /services/alarm-monitoring
+            - generic [ref=e167]:
+              - heading "告警監控" [level=3] [ref=e168]
+              - paragraph [ref=e169]: 規劃告警分類、即時通知與升級規則，讓事件從發生到處置更容易追蹤。
+            - generic [ref=e171]: 查看詳情
+          - link "網頁開發 將 SCADA / HMI、PI Server、Historians、告警、報表與後台流程整合成可維護、可擴充的瀏覽器端平台。 查看詳情" [ref=e173] [cursor=pointer]:
+            - /url: /services/web-development
+            - generic [ref=e176]:
+              - heading "網頁開發" [level=3] [ref=e177]
+              - paragraph [ref=e178]: 將 SCADA / HMI、PI Server、Historians、告警、報表與後台流程整合成可維護、可擴充的瀏覽器端平台。
+            - generic [ref=e180]: 查看詳情
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - paragraph [ref=e185]: 交付流程
+          - heading "工作怎麼往下走" [level=2] [ref=e186]
+        - generic [ref=e187]:
+          - article [ref=e188] [cursor=pointer]:
+            - generic [ref=e192]: "01"
+            - paragraph [ref=e193]: 範圍確認
+          - article [ref=e194] [cursor=pointer]:
+            - generic [ref=e198]: "02"
+            - paragraph [ref=e199]: 技術規劃
+          - article [ref=e200] [cursor=pointer]:
+            - generic [ref=e204]: "03"
+            - paragraph [ref=e205]: 執行支援
+          - article [ref=e206] [cursor=pointer]:
+            - generic [ref=e210]: "04"
+            - paragraph [ref=e211]: 驗證與交接
+      - generic [ref=e216]:
+        - article [ref=e217]:
+          - generic [ref=e218]:
+            - heading "全方位整合服務" [level=2] [ref=e219]
+            - paragraph [ref=e220]: 把 SCADA、告警流程、Historian 與公用系統資料接在同一層整合邏輯裡。
+          - link "查看整合方式" [ref=e222] [cursor=pointer]:
+            - /url: /one-touch-experience
+            - generic [ref=e223]: 查看整合方式
+        - list [ref=e225]:
+          - listitem [ref=e226]:
+            - paragraph [ref=e230]: SCADA 資料
+          - listitem [ref=e231]:
+            - paragraph [ref=e235]: 告警流程
+          - listitem [ref=e236]:
+            - paragraph [ref=e240]: Historian 資料
+          - listitem [ref=e241]:
+            - paragraph [ref=e245]: 公用系統資料
+          - listitem [ref=e246]:
+            - paragraph [ref=e250]: 跨系統流程
+      - article [ref=e255]:
+        - heading "雷力怎麼跟專案團隊合作" [level=2] [ref=e257]
+        - tablist [ref=e259]:
+          - tab "專業與迅速" [selected] [ref=e260] [cursor=pointer]:
+            - generic [ref=e261]: 專業與迅速
+          - tab "團隊與誠信" [ref=e262] [cursor=pointer]:
+            - generic [ref=e263]: 團隊與誠信
+        - generic [ref=e264]:
+          - generic [ref=e265]:
+            - generic [ref=e266]:
+              - heading "先把範圍與介面釐清，再讓後續跟得上" [level=3] [ref=e267]
+              - paragraph [ref=e268]: 我們重視提早釐清決策、系統介面與下一步工作，避免設計、會議與現場執行之間斷線。
+            - link "討論需求" [ref=e269] [cursor=pointer]:
+              - /url: /contact
+              - generic [ref=e270]: 討論需求
+          - figure [ref=e271]:
+            - img "工程師於控制盤前檢視與調整工業設備" [ref=e272]
+  - contentinfo [ref=e273]:
+    - region "工業自動化整合夥伴" [ref=e274]:
+      - generic [ref=e276]:
+        - heading "工業自動化整合夥伴" [level=2] [ref=e278]
+        - link "聯絡我們" [ref=e280] [cursor=pointer]:
+          - /url: /contact
+          - generic [ref=e281]: 聯絡我們
+    - generic [ref=e284]:
+      - article [ref=e285]:
+        - paragraph [ref=e286]: 雷力科技 Rally Technology
+        - list "雷力科技 Rally Technology" [ref=e287]:
+          - listitem [ref=e288]: 雷力科技股份有限公司
+          - listitem [ref=e289]: 工業自動化、監控系統與數據整合服務
+        - img [ref=e290]
+      - article "重點入口" [ref=e291]:
+        - heading "重點入口" [level=3] [ref=e293]
+        - navigation "重點入口" [ref=e294]:
+          - link "服務總覽" [ref=e295] [cursor=pointer]:
+            - /url: /services
+            - generic [ref=e296]: 服務總覽
+          - link "產品方案" [ref=e298] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e299]: 產品方案
+          - link "全方位整合服務" [ref=e301] [cursor=pointer]:
+            - /url: /one-touch-experience
+            - generic [ref=e302]: 全方位整合服務
+          - link "聯絡我們" [ref=e304] [cursor=pointer]:
+            - /url: /contact
+            - generic [ref=e305]: 聯絡我們
+      - article "聯絡方式" [ref=e307]:
+        - heading "聯絡方式" [level=3] [ref=e309]
+        - generic [ref=e310]:
+          - link "電話 +886-3-552-9933" [ref=e311] [cursor=pointer]:
+            - /url: tel:+88635529933
+            - generic [ref=e313]:
+              - generic [ref=e314]: 電話
+              - generic [ref=e315]: +886-3-552-9933
+          - link "電子郵件 sales@rallytech.com.tw" [ref=e316] [cursor=pointer]:
+            - /url: mailto:sales@rallytech.com.tw
+            - generic [ref=e318]:
+              - generic [ref=e319]: 電子郵件
+              - generic [ref=e320]: sales@rallytech.com.tw
+          - link "LinkedIn Rally Technology Co., Ltd." [ref=e321] [cursor=pointer]:
+            - /url: https://tw.linkedin.com/company/rally-technology-co-ltd
+            - generic [ref=e323]:
+              - generic [ref=e324]: LinkedIn
+              - generic [ref=e325]: Rally Technology Co., Ltd.
+          - link "傳真 +886-3-552-9797" [ref=e326] [cursor=pointer]:
+            - /url: tel:+88635529797
+            - generic [ref=e328]:
+              - generic [ref=e329]: 傳真
+              - generic [ref=e330]: +886-3-552-9797
+          - link "地址 302081 新竹縣竹北市惟馨街 95 號 3 樓之 5" [ref=e331] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/?api=1&query=3F-5%2C%20No.%2095%2C%20Weixin%20St.%2C%20Zhubei%20City%2C%20Hsinchu%20County%20302081%2C%20Taiwan
+            - generic [ref=e333]:
+              - generic [ref=e334]: 地址
+              - generic [ref=e335]: 302081 新竹縣竹北市惟馨街 95 號 3 樓之 5
+    - paragraph [ref=e338]: Copyright © 雷力科技股份有限公司 統編:24740602 Rally Technology Co., Ltd. All Rights Reserved

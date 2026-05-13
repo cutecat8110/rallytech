@@ -63,7 +63,17 @@ function hasBlockMedia(block: ProductDetailBlockMessages) {
 </script>
 
 <template>
-  <div v-if="props.blocks.length" class="products-sys-detail-blocks">
+  <div
+    v-if="props.blocks.length"
+    v-motion-group="{
+      children: '.products-sys-detail-block',
+      preset: 'fade-up',
+      stagger: 0.06,
+      distance: 24,
+      start: 'top 82%'
+    }"
+    class="products-sys-detail-blocks"
+  >
     <section
       v-for="(block, index) in props.blocks"
       :key="`${block.type}-${index}`"
@@ -79,7 +89,15 @@ function hasBlockMedia(block: ProductDetailBlockMessages) {
         v-if="block.type === 'platform-overview'"
         class="products-sys-detail-platform"
       >
-        <div class="products-sys-detail-platform__media">
+        <div
+          v-motion-parallax="{
+            yPercent: 5,
+            scale: 1.025,
+            scrub: 0.85,
+            desktopOnly: true
+          }"
+          class="products-sys-detail-platform__media"
+        >
           <img
             :src="detailFeatureImage.src"
             :alt="detailFeatureImage.alt"
@@ -217,7 +235,15 @@ function hasBlockMedia(block: ProductDetailBlockMessages) {
           title-tag="h3"
         />
 
-        <div class="products-sys-detail-process-steps">
+        <div
+          v-motion-group="{
+            children: '.products-sys-detail-process-steps__item',
+            preset: 'fade-up',
+            stagger: 0.08,
+            distance: 18
+          }"
+          class="products-sys-detail-process-steps"
+        >
           <article
             v-for="(item, stepIndex) in block.items"
             :key="`${item.stepLabel ?? stepIndex}-${item.title}`"
@@ -254,6 +280,12 @@ function hasBlockMedia(block: ProductDetailBlockMessages) {
 
       <figure
         v-if="block.type !== 'platform-overview' && hasBlockMedia(block)"
+        v-motion-parallax="{
+          yPercent: 4,
+          scale: 1.015,
+          scrub: 0.9,
+          desktopOnly: true
+        }"
         class="products-sys-detail-block-media"
         :class="{
           'products-sys-detail-block-media--grid':

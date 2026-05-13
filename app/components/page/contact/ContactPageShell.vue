@@ -56,6 +56,20 @@ const contactQuickActionUi = {
   base: 'ring-0 hover:ring-0 active:ring-0 focus-visible:ring-0'
 } as const
 
+interface DirectContactCard {
+  key: 'phone' | 'location' | 'email'
+  title: string
+  primary: {
+    value: string
+    href: string
+  }
+  secondary: {
+    label: string
+    value: string
+    href: string
+  } | null
+}
+
 const formState = reactive({
   name: '',
   company: '',
@@ -74,15 +88,6 @@ const introActions = computed(() => {
       href: company.value.phoneHref,
       target: undefined
     },
-    company.value.faxDisplay
-      ? {
-          key: 'fax',
-          icon: 'i-lucide-printer',
-          label: contactMessages.value.actions.faxLabel,
-          href: company.value.faxHref,
-          target: undefined
-        }
-      : null,
     {
       key: 'email',
       icon: 'i-lucide-mail',
@@ -105,7 +110,7 @@ const introActions = computed(() => {
 })
 
 const directContactCards = computed(() => {
-  const cards = []
+  const cards: DirectContactCard[] = []
 
   if (company.value.phoneDisplay) {
     cards.push({
@@ -115,13 +120,7 @@ const directContactCards = computed(() => {
         value: company.value.phoneDisplay,
         href: company.value.phoneHref
       },
-      secondary: company.value.faxDisplay
-        ? {
-            label: contactMessages.value.direct.cards.faxLabel,
-            value: company.value.faxDisplay,
-            href: company.value.faxHref
-          }
-        : null
+      secondary: null
     })
   }
 
@@ -188,7 +187,14 @@ function handleFormSubmit() {
     <section class="section-sys-shell contact-sys-main-section">
       <div class="page-sys-shell--wide">
         <div class="content-sys-rail contact-sys-main-grid">
-          <article class="contact-sys-copy-panel">
+          <article
+            v-motion-reveal="{
+              preset: 'fade-right',
+              distance: 22,
+              duration: 0.72
+            }"
+            class="contact-sys-copy-panel"
+          >
             <SharedSectionIntro
               class="contact-sys-copy-panel__intro"
               :kicker="contactMessages.intro.kicker"
@@ -229,7 +235,15 @@ function handleFormSubmit() {
             </div>
           </article>
 
-          <article class="contact-sys-form-panel">
+          <article
+            v-motion-reveal="{
+              preset: 'fade-left',
+              distance: 22,
+              duration: 0.72,
+              mobile: 'reduced'
+            }"
+            class="contact-sys-form-panel"
+          >
             <SharedContentHeader
               class="contact-sys-form-panel__header"
               :title="contactMessages.form.title"
@@ -372,7 +386,15 @@ function handleFormSubmit() {
 
     <section class="contact-sys-direct-section">
       <div class="contact-sys-direct-rail">
-        <div class="contact-sys-direct-frame">
+        <div
+          v-motion-group="{
+            children: '.contact-sys-direct-card',
+            preset: 'fade-up',
+            stagger: 0.08,
+            distance: 18
+          }"
+          class="contact-sys-direct-frame"
+        >
           <article
             v-for="card in directContactCards"
             :key="card.key"
@@ -411,6 +433,7 @@ function handleFormSubmit() {
 
     <section class="contact-sys-map-section">
       <div
+        v-motion-reveal="{ preset: 'scale-soft', distance: 16, duration: 0.72 }"
         class="contact-sys-map-frame"
         :class="{ 'contact-sys-map-frame--loaded': isMapFrameLoaded }"
       >

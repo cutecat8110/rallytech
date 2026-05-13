@@ -30,6 +30,12 @@ const isDenseMobileService = computed(() =>
         }"
       >
         <ServiceDetailSidebar
+          v-motion-reveal="{
+            preset: 'fade-right',
+            distance: 18,
+            duration: 0.66,
+            mobile: 'off'
+          }"
           class="services-sys-detail-shell__sidebar"
           :service="props.service"
           :heading="props.detailPage.sidebar.servicesHeading"
@@ -38,6 +44,11 @@ const isDenseMobileService = computed(() =>
         <div class="services-sys-detail-shell__main">
           <SharedTextStack
             v-if="props.detailPage.introParagraphs.length"
+            v-motion-reveal="{
+              preset: 'fade-up',
+              distance: 20,
+              duration: 0.72
+            }"
             class="services-sys-detail-main-lead"
             :paragraphs="props.detailPage.introParagraphs"
             tone="light"

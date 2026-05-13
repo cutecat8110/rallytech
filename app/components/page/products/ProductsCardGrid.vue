@@ -30,14 +30,31 @@ const productItems = computed(() =>
           density="compact"
         />
 
-        <div class="products-sys-grid">
+        <div
+          v-motion-group="{
+            children: '.products-sys-listing',
+            preset: 'fade-up',
+            stagger: 0.07,
+            distance: 24,
+            start: 'top 78%'
+          }"
+          class="products-sys-grid"
+        >
           <NuxtLink
             v-for="item in productItems"
             :key="item.slug"
             :to="item.to"
             class="products-sys-listing"
           >
-            <div class="products-sys-listing__badge-frame">
+            <div
+              v-motion-reveal="{
+                preset: 'scale-soft',
+                distance: 12,
+                duration: 0.62,
+                start: 'top 84%'
+              }"
+              class="products-sys-listing__badge-frame"
+            >
               <img
                 :src="item.badge.src"
                 :alt="item.badge.alt"

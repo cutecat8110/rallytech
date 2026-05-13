@@ -32,7 +32,12 @@ const shellClass = computed(() =>
       `page-hero-shell--tone-${props.tone}`
     ]"
   >
-    <div v-if="slots.media" class="page-hero-shell__media" aria-hidden="true">
+    <div
+      v-if="slots.media"
+      v-motion-parallax="{ yPercent: 7, scale: 1.035, scrub: 0.8 }"
+      class="page-hero-shell__media"
+      aria-hidden="true"
+    >
       <slot name="media" />
     </div>
 
@@ -48,7 +53,11 @@ const shellClass = computed(() =>
       <slot name="decor" />
     </div>
 
-    <div :class="shellClass" class="page-hero-shell__shell relative z-10">
+    <div
+      v-motion-reveal="{ preset: 'fade-up', distance: 22, duration: 0.78 }"
+      :class="shellClass"
+      class="page-hero-shell__shell relative z-10"
+    >
       <div class="page-hero-shell__content">
         <div class="page-hero-shell__rail">
           <slot />

@@ -160,12 +160,14 @@ const messages = {
     englishName: 'Rally Technology Co., Ltd.',
     chineseName: '雷力科技股份有限公司',
     foundedYear: '2014',
+    taxId: '24740602',
     phoneDisplay: '+886-3-552-9933',
     phoneHref: 'tel:+88635529933',
     faxDisplay: '+886-3-552-9797',
     faxHref: 'tel:+88635529797',
     email: 'sales@rallytech.com.tw',
     emailHref: 'mailto:sales@rallytech.com.tw',
+    linkedinUrl: 'https://tw.linkedin.com/company/rally-technology-co-ltd',
     address: '302081 新竹縣竹北市惟馨街 95 號 3 樓之 5',
     addressEnglish:
       '3F-5, No. 95, Weixin St., Zhubei City, Hsinchu County 302081, Taiwan',
@@ -527,7 +529,7 @@ const messages = {
       title: '直接聯絡',
       description: '若已準備好進一步對談，也可直接透過以下方式與我們聯繫。',
       cards: {
-        phoneTitle: '電話 / 傳真',
+        phoneTitle: '電話',
         faxLabel: '傳真',
         locationTitle: '公司地址',
         emailTitle: '電子郵件'
@@ -557,6 +559,26 @@ const messages = {
     connectorHeading: '工業自動化整合夥伴',
     ctaLabel: '聯絡我們',
     brandLine: '雷力科技 Rally Technology',
+    brandProofLine: '工業自動化、監控系統與數據整合服務',
+    linksHeading: '重點入口',
+    links: [
+      {
+        label: '服務總覽',
+        to: '/services'
+      },
+      {
+        label: '產品方案',
+        to: '/products'
+      },
+      {
+        label: '全方位整合服務',
+        to: '/one-touch-experience'
+      },
+      {
+        label: '聯絡我們',
+        to: '/contact'
+      }
+    ],
     newsletterHeading: '電子報',
     newsletterDescription: '訂閱電子報，掌握雷力科技最新消息。',
     newsletterPlaceholder: '輸入 Email',
@@ -568,9 +590,11 @@ const messages = {
     phoneLabel: '電話',
     faxLabel: '傳真',
     emailLabel: '電子郵件',
+    linkedinLabel: 'LinkedIn',
     addressLabel: '地址',
     backToTopLabel: '回到頂端',
-    copyright: '© {year} 雷力科技。版權所有。'
+    copyright:
+      'Copyright © 雷力科技股份有限公司 統編:24740602 Rally Technology Co., Ltd. All Rights Reserved'
   },
   referencePages: referencePagesZhTw
 } satisfies RallyTechLocaleMessages

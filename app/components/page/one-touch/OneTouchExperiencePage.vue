@@ -112,8 +112,19 @@ const secondVisual = computed(() => ({
     >
       <div class="page-sys-shell">
         <div class="one-touch-page__split">
-          <figure class="one-touch-page__visual one-touch-page__visual--left">
-            <div class="one-touch-page__visual-accent" aria-hidden="true">
+          <figure
+            v-motion-reveal="{ preset: 'scale-soft', distance: 20 }"
+            class="one-touch-page__visual one-touch-page__visual--left"
+          >
+            <div
+              v-motion-parallax="{
+                yPercent: -6,
+                scrub: 0.9,
+                desktopOnly: true
+              }"
+              class="one-touch-page__visual-accent"
+              aria-hidden="true"
+            >
               <img
                 :src="firstVisual.accent.src"
                 alt=""
@@ -121,7 +132,15 @@ const secondVisual = computed(() => ({
                 :style="{ objectPosition: firstVisual.accent.objectPosition }"
               />
             </div>
-            <div class="one-touch-page__visual-main">
+            <div
+              v-motion-parallax="{
+                yPercent: 5,
+                scale: 1.02,
+                scrub: 0.9,
+                desktopOnly: true
+              }"
+              class="one-touch-page__visual-main"
+            >
               <img
                 :src="firstVisual.main.src"
                 :alt="firstVisual.main.alt"
@@ -131,7 +150,15 @@ const secondVisual = computed(() => ({
             </div>
           </figure>
 
-          <div class="one-touch-page__module-stack">
+          <div
+            v-motion-group="{
+              children: '.one-touch-page__module',
+              preset: 'fade-left',
+              stagger: 0.09,
+              distance: 24
+            }"
+            class="one-touch-page__module-stack"
+          >
             <article
               v-for="item in firstModules"
               :key="item.id"
@@ -156,7 +183,15 @@ const secondVisual = computed(() => ({
     <section class="one-touch-page__body-section">
       <div class="page-sys-shell">
         <div class="one-touch-page__split one-touch-page__split--reverse">
-          <div class="one-touch-page__module-stack">
+          <div
+            v-motion-group="{
+              children: '.one-touch-page__module',
+              preset: 'fade-right',
+              stagger: 0.09,
+              distance: 24
+            }"
+            class="one-touch-page__module-stack"
+          >
             <article
               v-for="item in secondModules"
               :key="item.id"
@@ -175,8 +210,19 @@ const secondVisual = computed(() => ({
             </article>
           </div>
 
-          <figure class="one-touch-page__visual one-touch-page__visual--right">
-            <div class="one-touch-page__visual-accent" aria-hidden="true">
+          <figure
+            v-motion-reveal="{ preset: 'scale-soft', distance: 20 }"
+            class="one-touch-page__visual one-touch-page__visual--right"
+          >
+            <div
+              v-motion-parallax="{
+                yPercent: -6,
+                scrub: 0.9,
+                desktopOnly: true
+              }"
+              class="one-touch-page__visual-accent"
+              aria-hidden="true"
+            >
               <img
                 :src="secondVisual.accent.src"
                 alt=""
@@ -184,7 +230,15 @@ const secondVisual = computed(() => ({
                 :style="{ objectPosition: secondVisual.accent.objectPosition }"
               />
             </div>
-            <div class="one-touch-page__visual-main">
+            <div
+              v-motion-parallax="{
+                yPercent: 5,
+                scale: 1.02,
+                scrub: 0.9,
+                desktopOnly: true
+              }"
+              class="one-touch-page__visual-main"
+            >
               <img
                 :src="secondVisual.main.src"
                 :alt="secondVisual.main.alt"

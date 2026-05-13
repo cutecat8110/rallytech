@@ -40,7 +40,14 @@ const introFrontImage = computed(() => ({
           @front-error="handlePrimaryImageError"
         />
 
-        <article class="about-sys-intro__copy">
+        <article
+          v-motion-reveal="{
+            preset: 'fade-left',
+            distance: 22,
+            duration: 0.74
+          }"
+          class="about-sys-intro__copy"
+        >
           <SharedSectionIntro
             class="about-sys-intro__section-intro"
             :kicker="messages.aboutPage.intro.kicker"

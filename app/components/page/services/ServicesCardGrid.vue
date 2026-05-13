@@ -70,14 +70,31 @@ const serviceItems = computed(() =>
           density="compact"
         />
 
-        <div class="services-sys-grid">
+        <div
+          v-motion-group="{
+            children: '.services-sys-listing',
+            preset: 'fade-up',
+            stagger: 0.07,
+            distance: 24,
+            start: 'top 78%'
+          }"
+          class="services-sys-grid"
+        >
           <NuxtLink
             v-for="item in serviceItems"
             :key="item.slug"
             :to="item.to"
             class="services-sys-listing"
           >
-            <div class="services-sys-listing__media">
+            <div
+              v-motion-parallax="{
+                yPercent: 4,
+                scale: 1.025,
+                scrub: 0.85,
+                desktopOnly: true
+              }"
+              class="services-sys-listing__media"
+            >
               <img
                 :src="item.image.src"
                 :alt="item.image.alt"

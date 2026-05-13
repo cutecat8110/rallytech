@@ -21,7 +21,15 @@ const partnerItems = computed(() => messages.value.aboutPage.partners.items)
         />
       </div>
 
-      <div class="about-sys-partners__grid">
+      <div
+        v-motion-group="{
+          children: '.about-sys-partners__item',
+          preset: 'fade-up',
+          stagger: 0.075,
+          distance: 22
+        }"
+        class="about-sys-partners__grid"
+      >
         <article
           v-for="partner in partnerItems"
           :key="partner.name"

@@ -46,7 +46,14 @@ const missionTabsUi = {
     <div class="page-sys-shell--wide">
       <div class="content-sys-rail">
         <div class="home-sys-mission__layout">
-          <article class="home-sys-mission__copy">
+          <article
+            v-motion-reveal="{
+              preset: 'fade-right',
+              distance: 22,
+              duration: 0.76
+            }"
+            class="home-sys-mission__copy"
+          >
             <SharedSectionIntro
               class="home-sys-mission__intro"
               :title="messages.home.mission.heading"
@@ -86,6 +93,11 @@ const missionTabsUi = {
               </div>
 
               <figure
+                v-motion-reveal="{
+                  preset: 'scale-soft',
+                  distance: 14,
+                  duration: 0.72
+                }"
                 class="home-sys-mission__state-media home-sys-media-frame home-sys-media-frame--light home-sys-media-frame--square home-sys-media-frame--trapezoid"
               >
                 <img
@@ -101,7 +113,11 @@ const missionTabsUi = {
             </div>
           </article>
 
-          <div class="home-sys-mission__figure" aria-hidden="true">
+          <div
+            v-motion-parallax="{ yPercent: 6, scale: 1.02, scrub: 0.9 }"
+            class="home-sys-mission__figure"
+            aria-hidden="true"
+          >
             <div class="home-sys-mission__figure-glow" />
             <img
               :src="missionCutoutImage.src"
@@ -178,8 +194,9 @@ const missionTabsUi = {
   width: min(100%, 9rem);
   aspect-ratio: 1;
   box-shadow:
-    inset 0 1px 0 rgb(255 255 255 / 0.62),
-    0 14px 28px rgb(10 18 22 / 0.08);
+    inset 0 0 0 1px rgb(34 48 56 / 0.08),
+    inset 0 1px 0 rgb(255 255 255 / 0.66),
+    0 16px 30px rgb(10 18 22 / 0.085);
 }
 
 .home-sys-media-frame--light {
@@ -195,7 +212,7 @@ const missionTabsUi = {
 
 .home-sys-media-frame--trapezoid {
   border-radius: 0;
-  clip-path: polygon(11% 0, 100% 0, 100% 89%, 89% 100%, 0 100%, 0 11%);
+  clip-path: polygon(7% 0, 100% 0, 100% 93%, 93% 100%, 0 100%, 0 7%);
 }
 
 .home-sys-media-frame__image--focus-center {
@@ -232,7 +249,7 @@ const missionTabsUi = {
   box-shadow:
     inset 0 1px 0 rgb(255 255 255 / 0.72),
     0 20px 44px rgb(10 18 22 / 0.09);
-  clip-path: polygon(9% 0, 100% 0, 100% 90%, 89% 100%, 0 100%, 0 9%);
+  clip-path: polygon(7% 0, 100% 0, 100% 92%, 92% 100%, 0 100%, 0 7%);
   content: '';
 }
 
@@ -245,7 +262,7 @@ const missionTabsUi = {
   object-fit: cover;
   object-position: 46% center;
   filter: saturate(0.92) contrast(1.03);
-  clip-path: polygon(11% 0, 100% 0, 100% 91%, 89% 100%, 0 100%, 0 11%);
+  clip-path: polygon(8% 0, 100% 0, 100% 92%, 92% 100%, 0 100%, 0 8%);
   -webkit-mask-image:
     linear-gradient(to left, black 94%, rgb(0 0 0 / 0.72) 100%),
     linear-gradient(to top, black 96%, rgb(0 0 0 / 0.82) 100%);
@@ -285,7 +302,7 @@ const missionTabsUi = {
     width: 100%;
     max-width: none;
     aspect-ratio: 16 / 7;
-    clip-path: none;
+    clip-path: polygon(3% 0, 100% 0, 100% 94%, 97% 100%, 0 100%, 0 6%);
   }
 
   .home-sys-mission__state-copy {
@@ -303,12 +320,12 @@ const missionTabsUi = {
 
   .home-sys-mission__figure::before {
     inset: 0.5rem 0.45rem 0.45rem 0.55rem;
-    clip-path: polygon(8% 0, 100% 0, 100% 91%, 90% 100%, 0 100%, 0 8%);
+    clip-path: polygon(6% 0, 100% 0, 100% 93%, 93% 100%, 0 100%, 0 6%);
   }
 
   .home-sys-mission__cutout {
     object-position: 50% 39%;
-    clip-path: polygon(9% 0, 100% 0, 100% 92%, 90% 100%, 0 100%, 0 9%);
+    clip-path: polygon(6% 0, 100% 0, 100% 94%, 94% 100%, 0 100%, 0 6%);
   }
 }
 
@@ -356,7 +373,7 @@ const missionTabsUi = {
   .home-sys-mission__state-media {
     max-width: none;
     aspect-ratio: 21 / 8;
-    clip-path: none;
+    clip-path: polygon(4.5% 0, 100% 0, 100% 93%, 95.5% 100%, 0 100%, 0 7%);
   }
 
   .home-sys-mission__figure {
@@ -382,23 +399,23 @@ const missionTabsUi = {
   .home-sys-mission__state {
     margin-top: auto;
     grid-template-columns: minmax(0, 11rem) minmax(0, 1fr);
-    align-items: end;
+    align-items: start;
     column-gap: 1.65rem;
     row-gap: 1rem;
   }
 
   .home-sys-mission__state-copy {
     order: 2;
-    align-self: end;
+    align-self: start;
   }
 
   .home-sys-mission__state-media {
     order: 1;
     width: 100%;
     max-width: 11rem;
-    align-self: end;
+    align-self: start;
     aspect-ratio: 1;
-    clip-path: polygon(11% 0, 100% 0, 100% 89%, 89% 100%, 0 100%, 0 11%);
+    clip-path: polygon(7% 0, 100% 0, 100% 93%, 93% 100%, 0 100%, 0 7%);
   }
 
   .home-sys-mission__figure {

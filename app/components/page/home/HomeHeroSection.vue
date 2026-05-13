@@ -12,7 +12,11 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
     id="top"
     class="home-sys-hero relative overflow-hidden bg-sys-rally-hero-industrial text-white"
   >
-    <div class="home-sys-hero__media" aria-hidden="true">
+    <div
+      v-motion-parallax="{ yPercent: 8, scale: 1.05, scrub: 0.75 }"
+      class="home-sys-hero__media"
+      aria-hidden="true"
+    >
       <img
         :src="heroImage.src"
         :alt="heroImage.alt || messages.home.hero.imageAlt"
@@ -22,11 +26,24 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
       <div class="home-sys-hero__overlay" />
     </div>
 
-    <BrandBlockMotif class="home-sys-hero__motif" variant="hero" tone="dark" />
+    <BrandBlockMotif
+      v-motion-parallax="{ yPercent: -5, scrub: 0.9, desktopOnly: true }"
+      class="home-sys-hero__motif"
+      variant="hero"
+      tone="dark"
+    />
 
     <div class="page-sys-shell--wide relative z-10">
       <div class="content-sys-rail home-sys-hero__content">
-        <div class="home-sys-hero__inner">
+        <div
+          v-motion-reveal="{
+            preset: 'fade-up',
+            distance: 18,
+            duration: 0.86,
+            start: 'top 72%'
+          }"
+          class="home-sys-hero__inner"
+        >
           <p class="type-sys-kicker text-primary-200 uppercase">
             {{ messages.home.hero.kicker }}
           </p>
@@ -71,6 +88,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
   object-fit: cover;
   object-position: center;
   filter: saturate(0.96) contrast(1.03) brightness(1.05);
+  transform: translate3d(0, 0, 0) scale(1.035);
 }
 
 .home-sys-hero__overlay {
@@ -100,7 +118,7 @@ const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
 
   position: absolute;
   top: clamp(4.5rem, 12vw, 7.25rem);
-  left: clamp(1.25rem, 8vw, 8.25rem);
+  left: clamp(1.5rem, 8vw, 8.25rem);
   z-index: 2;
 }
 
