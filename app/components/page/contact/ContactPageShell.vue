@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import { computed, reactive, ref } from 'vue'
+import {
+  computed,
+  nextTick,
+  onBeforeUnmount,
+  onMounted,
+  reactive,
+  ref
+} from 'vue'
 import PageHeroShell from '~/components/shared/PageHeroShell.vue'
 import SharedContentHeader from '~/components/shared/SharedContentHeader.vue'
 import SharedPageHeroTitle from '~/components/shared/SharedPageHeroTitle.vue'
@@ -7,8 +14,38 @@ import SharedSectionIntro from '~/components/shared/SharedSectionIntro.vue'
 import SharedTextStack from '~/components/shared/SharedTextStack.vue'
 import { iconUtilityLightButtonTheme } from '~/utils/button-themes'
 
+type ContactFormStatus = 'idle' | 'success' | 'error'
+
+type TurnstileInstance = {
+  render: (container: HTMLElement, options: TurnstileRenderOptions) => string
+  reset: (widgetId?: string) => void
+  remove: (widgetId?: string) => void
+}
+
+type TurnstileRenderOptions = {
+  sitekey: string
+  action: string
+  theme: 'auto'
+  size: 'flexible'
+  callback: (token: string) => void
+} & Record<
+  | 'error-callback'
+  | 'expired-callback'
+  | 'timeout-callback'
+  | 'unsupported-callback',
+  () => void
+>
+
+declare global {
+  interface Window {
+    turnstile?: TurnstileInstance
+  }
+}
+
 const messages = useRallyMessages()
 const toast = useToast()
+const runtimeConfig = useRuntimeConfig()
+const { locale } = useI18n()
 const company = computed(() => messages.value.company)
 const contactMessages = computed(() => messages.value.contactPage)
 const { resolvedImage: heroImage, handleImageError: handleHeroImageError } =
@@ -45,7 +82,15 @@ const contactFormTextareaUi = {
 
 const contactFormFeedbackId = 'contact-form-submit-feedback'
 const contactFormFeedbackVisible = ref(false)
+const contactFormStatus = ref<ContactFormStatus>('idle')
+const contactFormFeedbackDescription = ref('')
 const isMapFrameLoaded = ref(false)
+const isSubmitting = ref(false)
+const isTurnstileLoading = ref(false)
+const isTurnstileReady = ref(false)
+const turnstileContainer = ref<HTMLElement | null>(null)
+const turnstileWidgetId = ref<string | null>(null)
+const turnstileToken = ref('')
 const contactFormFeedbackUi = {
   root: 'rounded-md',
   title: 'type-sys-label-m',
@@ -77,6 +122,54 @@ const formState = reactive({
   subject: '',
   phone: '',
   details: ''
+})
+
+const turnstileSiteKey = computed(
+  () => runtimeConfig.public.turnstileSiteKey || ''
+)
+
+const isSubmitDisabled = computed(
+  () =>
+    isSubmitting.value ||
+    !turnstileSiteKey.value ||
+    !turnstileToken.value ||
+    !isTurnstileReady.value
+)
+
+const contactFormFeedbackTitle = computed(() => {
+  if (contactFormStatus.value === 'success') {
+    return contactMessages.value.form.successTitle
+  }
+
+  if (contactFormStatus.value === 'error') {
+    return contactMessages.value.form.errorTitle
+  }
+
+  return contactMessages.value.form.unavailableTitle
+})
+
+const contactFormFeedbackIcon = computed(() => {
+  if (contactFormStatus.value === 'success') {
+    return 'i-lucide-circle-check'
+  }
+
+  if (contactFormStatus.value === 'error') {
+    return 'i-lucide-circle-alert'
+  }
+
+  return 'i-lucide-circle-alert'
+})
+
+const contactFormFeedbackColor = computed(() => {
+  if (contactFormStatus.value === 'success') {
+    return 'success'
+  }
+
+  if (contactFormStatus.value === 'error') {
+    return 'error'
+  }
+
+  return 'neutral'
 })
 
 const introActions = computed(() => {
@@ -151,15 +244,236 @@ const directContactCards = computed(() => {
   return cards
 })
 
-function handleFormSubmit() {
-  contactFormFeedbackVisible.value = true
+onMounted(() => {
+  void renderTurnstile()
+})
 
-  toast.add({
-    title: contactMessages.value.form.unavailableTitle,
-    description: contactMessages.value.form.unavailableDescription,
-    icon: 'i-lucide-circle-alert',
-    color: 'neutral'
+onBeforeUnmount(() => {
+  if (!turnstileWidgetId.value) {
+    return
+  }
+
+  window.turnstile?.remove(turnstileWidgetId.value)
+})
+
+async function handleFormSubmit() {
+  if (isSubmitting.value) {
+    return
+  }
+
+  if (!turnstileToken.value) {
+    showContactFormError(
+      contactMessages.value.form.verificationRequiredDescription
+    )
+
+    toast.add({
+      title: contactMessages.value.form.errorTitle,
+      description: contactMessages.value.form.verificationRequiredDescription,
+      icon: 'i-lucide-circle-alert',
+      color: 'error'
+    })
+
+    return
+  }
+
+  isSubmitting.value = true
+  contactFormFeedbackVisible.value = false
+
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        ...formState,
+        locale: locale.value,
+        turnstileToken: turnstileToken.value
+      }
+    })
+
+    resetContactForm()
+    contactFormStatus.value = 'success'
+    contactFormFeedbackDescription.value =
+      contactMessages.value.form.successDescription
+    contactFormFeedbackVisible.value = true
+
+    toast.add({
+      title: contactMessages.value.form.successTitle,
+      description: contactMessages.value.form.successDescription,
+      icon: 'i-lucide-circle-check',
+      color: 'success'
+    })
+  } catch (error) {
+    const description = resolveSubmitErrorDescription(error)
+    showContactFormError(description)
+
+    toast.add({
+      title: contactMessages.value.form.errorTitle,
+      description,
+      icon: 'i-lucide-circle-alert',
+      color: 'error'
+    })
+  } finally {
+    isSubmitting.value = false
+    resetTurnstile()
+  }
+}
+
+async function renderTurnstile() {
+  if (!turnstileSiteKey.value) {
+    showContactFormError(
+      contactMessages.value.form.verificationUnavailableDescription
+    )
+    return
+  }
+
+  if (!import.meta.client || turnstileWidgetId.value) {
+    return
+  }
+
+  isTurnstileLoading.value = true
+
+  try {
+    await loadTurnstileScript()
+    await nextTick()
+
+    if (!turnstileContainer.value || !window.turnstile) {
+      throw new Error('turnstile_unavailable')
+    }
+
+    const options: Partial<TurnstileRenderOptions> = {
+      sitekey: turnstileSiteKey.value,
+      action: 'contact_form',
+      theme: 'auto',
+      size: 'flexible',
+      callback: (token: string) => {
+        turnstileToken.value = token
+        isTurnstileReady.value = true
+      }
+    }
+
+    options['error-callback'] = () => {
+      turnstileToken.value = ''
+      isTurnstileReady.value = false
+      showContactFormError(
+        contactMessages.value.form.verificationFailedDescription
+      )
+    }
+
+    options['expired-callback'] = () => {
+      turnstileToken.value = ''
+      isTurnstileReady.value = false
+    }
+
+    options['timeout-callback'] = () => {
+      turnstileToken.value = ''
+      isTurnstileReady.value = false
+    }
+
+    options['unsupported-callback'] = () => {
+      turnstileToken.value = ''
+      isTurnstileReady.value = false
+      showContactFormError(
+        contactMessages.value.form.verificationUnavailableDescription
+      )
+    }
+
+    turnstileWidgetId.value = window.turnstile.render(
+      turnstileContainer.value,
+      options as TurnstileRenderOptions
+    )
+  } catch {
+    showContactFormError(
+      contactMessages.value.form.verificationUnavailableDescription
+    )
+  } finally {
+    isTurnstileLoading.value = false
+  }
+}
+
+function loadTurnstileScript() {
+  if (window.turnstile) {
+    return Promise.resolve()
+  }
+
+  const existingScript = document.querySelector<HTMLScriptElement>(
+    'script[data-rally-turnstile]'
+  )
+
+  if (existingScript) {
+    return new Promise<void>((resolve, reject) => {
+      existingScript.addEventListener('load', () => resolve(), { once: true })
+      existingScript.addEventListener('error', () => reject(), { once: true })
+    })
+  }
+
+  return new Promise<void>((resolve, reject) => {
+    const script = document.createElement('script')
+    script.src =
+      'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit'
+    script.async = true
+    script.defer = true
+    script.dataset.rallyTurnstile = 'true'
+    script.addEventListener('load', () => resolve(), { once: true })
+    script.addEventListener('error', () => reject(), { once: true })
+    document.head.appendChild(script)
   })
+}
+
+function resetTurnstile() {
+  turnstileToken.value = ''
+  isTurnstileReady.value = false
+
+  if (turnstileWidgetId.value) {
+    window.turnstile?.reset(turnstileWidgetId.value)
+  }
+}
+
+function resetContactForm() {
+  formState.name = ''
+  formState.company = ''
+  formState.email = ''
+  formState.subject = ''
+  formState.phone = ''
+  formState.details = ''
+}
+
+function showContactFormError(description: string) {
+  contactFormStatus.value = 'error'
+  contactFormFeedbackDescription.value = description
+  contactFormFeedbackVisible.value = true
+}
+
+function resolveSubmitErrorDescription(error: unknown) {
+  const statusCode = getFetchStatusCode(error)
+
+  if (statusCode === 429) {
+    return contactMessages.value.form.rateLimitedDescription
+  }
+
+  if (statusCode === 400) {
+    return contactMessages.value.form.validationErrorDescription
+  }
+
+  if (statusCode === 502 || statusCode === 503) {
+    return contactMessages.value.form.serviceErrorDescription
+  }
+
+  return contactMessages.value.form.submitErrorDescription
+}
+
+function getFetchStatusCode(error: unknown) {
+  if (typeof error !== 'object' || error === null) {
+    return undefined
+  }
+
+  if ('statusCode' in error && typeof error.statusCode === 'number') {
+    return error.statusCode
+  }
+
+  if ('status' in error && typeof error.status === 'number') {
+    return error.status
+  }
+
+  return undefined
 }
 </script>
 
@@ -354,13 +668,34 @@ function handleFormSubmit() {
                 </UFormField>
               </div>
 
+              <div class="contact-sys-form__turnstile">
+                <div
+                  v-if="turnstileSiteKey"
+                  ref="turnstileContainer"
+                  class="contact-sys-form__turnstile-widget"
+                  :aria-label="contactMessages.form.turnstileLabel"
+                />
+                <p
+                  v-if="isTurnstileLoading"
+                  class="type-sys-body-s contact-sys-form__turnstile-status"
+                >
+                  {{ contactMessages.form.verifyingLabel }}
+                </p>
+              </div>
+
               <div class="contact-sys-form__actions">
                 <UButton
                   type="submit"
                   color="primary"
                   variant="solid"
                   size="lg"
-                  :label="contactMessages.form.submitLabel"
+                  :label="
+                    isSubmitting
+                      ? contactMessages.form.sendingLabel
+                      : contactMessages.form.submitLabel
+                  "
+                  :loading="isSubmitting"
+                  :disabled="isSubmitDisabled"
                   class="contact-sys-form__submit"
                 />
               </div>
@@ -371,11 +706,11 @@ function handleFormSubmit() {
                 class="contact-sys-form__feedback"
                 role="status"
                 aria-live="polite"
-                color="neutral"
+                :color="contactFormFeedbackColor"
                 variant="subtle"
-                icon="i-lucide-circle-alert"
-                :title="contactMessages.form.unavailableTitle"
-                :description="contactMessages.form.unavailableDescription"
+                :icon="contactFormFeedbackIcon"
+                :title="contactFormFeedbackTitle"
+                :description="contactFormFeedbackDescription"
                 :ui="contactFormFeedbackUi"
               />
             </form>
@@ -558,6 +893,20 @@ function handleFormSubmit() {
 
 .contact-sys-form__field--full {
   grid-column: 1 / -1;
+}
+
+.contact-sys-form__turnstile {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 32rem;
+}
+
+.contact-sys-form__turnstile-widget {
+  min-height: 4.25rem;
+}
+
+.contact-sys-form__turnstile-status {
+  color: var(--color-text-muted);
 }
 
 .contact-sys-form__actions {

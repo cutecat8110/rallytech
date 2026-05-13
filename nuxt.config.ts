@@ -4,6 +4,20 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  runtimeConfig: {
+    turnstileSecretKey: '',
+    contactMail: {
+      graphTenantId: '',
+      graphClientId: '',
+      graphClientSecret: '',
+      graphSenderMailbox: '',
+      recipient: 'sales@rallytech.com.tw'
+    },
+    public: {
+      turnstileSiteKey: ''
+    }
+  },
+
   routeRules: {
     '/': { prerender: true },
     '/en': { prerender: true },

@@ -524,8 +524,21 @@ export interface ContactPageMessages {
     title: string
     description: string
     submitLabel: string
+    sendingLabel: string
     unavailableTitle: string
     unavailableDescription: string
+    successTitle: string
+    successDescription: string
+    errorTitle: string
+    submitErrorDescription: string
+    validationErrorDescription: string
+    verificationRequiredDescription: string
+    verificationFailedDescription: string
+    verificationUnavailableDescription: string
+    serviceErrorDescription: string
+    rateLimitedDescription: string
+    turnstileLabel: string
+    verifyingLabel: string
     fields: {
       name: ContactPageFieldMessages
       company: ContactPageFieldMessages

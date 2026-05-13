@@ -483,9 +483,26 @@ const messages = {
       title: '聯絡表單',
       description: '留下聯絡資訊與專案重點，讓我們更快理解範圍並回覆。',
       submitLabel: '送出洽詢',
+      sendingLabel: '送出中',
       unavailableTitle: '送出功能尚未開放',
       unavailableDescription:
         '此版本先完成聯絡頁與表單介面，請先透過電話或 Email 與我們聯繫。',
+      successTitle: '洽詢已送出',
+      successDescription: '我們已收到您的聯絡資訊，後續會由專人依內容回覆。',
+      errorTitle: '送出失敗',
+      submitErrorDescription:
+        '目前暫時無法送出表單，請稍後再試，或直接透過電話或 Email 與我們聯繫。',
+      validationErrorDescription:
+        '請確認必填欄位、Email 格式與內容長度後再送出。',
+      verificationRequiredDescription: '請先完成機器人驗證後再送出表單。',
+      verificationFailedDescription: '驗證未通過，請重新完成驗證後再送出。',
+      verificationUnavailableDescription:
+        '目前驗證服務尚未設定完成，請先透過電話或 Email 與我們聯繫。',
+      serviceErrorDescription:
+        '表單已通過驗證，但寄信服務暫時無法使用，請稍後再試。',
+      rateLimitedDescription: '短時間內送出次數過多，請稍後再試。',
+      turnstileLabel: 'Cloudflare Turnstile 驗證',
+      verifyingLabel: '驗證元件載入中',
       fields: {
         name: {
           label: '姓名',

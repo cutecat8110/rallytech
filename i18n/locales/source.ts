@@ -477,9 +477,30 @@ const messages = {
       description:
         'This source-reference page keeps the visible contact form structure and the direct-contact block from the live contact page.',
       submitLabel: 'Send Inquiry',
+      sendingLabel: 'Sending',
       unavailableTitle: 'Form submission is not available yet',
       unavailableDescription:
         'This implementation currently delivers routing and UI only. Use the direct contact details on this page if you need to reach the team.',
+      successTitle: 'Inquiry sent',
+      successDescription:
+        'The source-reference form submission flow has received the request.',
+      errorTitle: 'Submission failed',
+      submitErrorDescription:
+        'The source-reference form cannot be submitted right now.',
+      validationErrorDescription:
+        'Check the required fields, email format, and content length before sending again.',
+      verificationRequiredDescription:
+        'Complete the bot verification before sending the form.',
+      verificationFailedDescription:
+        'Verification did not pass. Please complete the verification again before sending.',
+      verificationUnavailableDescription:
+        'The verification service is not configured yet. Use the direct contact details on this page.',
+      serviceErrorDescription:
+        'The form passed verification, but the mail service is temporarily unavailable.',
+      rateLimitedDescription:
+        'Too many submissions were sent in a short time. Please try again later.',
+      turnstileLabel: 'Cloudflare Turnstile verification',
+      verifyingLabel: 'Loading verification',
       fields: {
         name: {
           label: 'Your Name',

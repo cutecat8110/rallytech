@@ -487,9 +487,30 @@ const messages = {
       description:
         'Share your contact details and key project information so we can review the scope more clearly.',
       submitLabel: 'Send Inquiry',
+      sendingLabel: 'Sending',
       unavailableTitle: 'Form submission is not available yet',
       unavailableDescription:
         'This release includes the contact-page flow and form UI first. Please reach us by phone or email for now.',
+      successTitle: 'Inquiry sent',
+      successDescription:
+        'We have received your contact details and will follow up based on the information provided.',
+      errorTitle: 'Submission failed',
+      submitErrorDescription:
+        'The form cannot be submitted right now. Please try again later, or reach us by phone or email.',
+      validationErrorDescription:
+        'Check the required fields, email format, and content length before sending again.',
+      verificationRequiredDescription:
+        'Complete the bot verification before sending the form.',
+      verificationFailedDescription:
+        'Verification did not pass. Please complete the verification again before sending.',
+      verificationUnavailableDescription:
+        'The verification service is not configured yet. Please reach us by phone or email for now.',
+      serviceErrorDescription:
+        'The form passed verification, but the mail service is temporarily unavailable. Please try again later.',
+      rateLimitedDescription:
+        'Too many submissions were sent in a short time. Please try again later.',
+      turnstileLabel: 'Cloudflare Turnstile verification',
+      verifyingLabel: 'Loading verification',
       fields: {
         name: {
           label: 'Name',
